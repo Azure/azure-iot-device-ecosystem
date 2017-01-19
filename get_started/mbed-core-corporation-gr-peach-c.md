@@ -34,7 +34,7 @@ Run a simple C sample on GR-PEACH device running Mbed
  
 
 <a name="Prerequisites"></a>
-re# Azure IoT Hub の設定 
+# Azure IoT Hub の設定 
 
 ## セットアップ 
 
