@@ -79,7 +79,7 @@ The same sample can be used to test AMQP, AMQP over Websockets, HTTP and MQTT. I
 
 # Debugging the samples (and/or your code)
 [Visual Studio Code](https://code.visualstudio.com/) provides an excellent environment to write and debug Node.js code:
-- [Debugging with Visual Studio Code](../../doc/get_started/node-debug-vscode.md)
+- [Debugging with Visual Studio Code](./node-debug-vscode.md)
 
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md

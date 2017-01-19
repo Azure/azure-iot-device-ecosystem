@@ -54,14 +54,14 @@ Please download the [IOMote Devices Configurator Software](http://www.iomote.com
 
 -   Using the provided software you have to configure a brand new device. Click on the *New Device* button and follow the step-by-step instructions
 
-    ![](images/iomote-conf-01.png)
+    ![](media/iomote-conf-01.png)
 
 -   Fill the configuration form
     -   Paste your *Device Connection String* on the related input box
     -   *If you are using a Wi-Fi device*, please fill the SSID and Password fields with your network parameters
     -   Choose the DHCP method to use
 
-    ![](images/iomote-conf-02.png)
+    ![](media/iomote-conf-02.png)
 
 <a name="Build"></a>
 ## Step 3: Build

@@ -68,7 +68,7 @@ To run DeviceExplorer tool, use following configuration string as described in [
 
 **Steps:**
 
-1.  Click [here](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/readme.md) to download and install DeviceExplorer.
+1.  Click [here](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/readme.md) to download and install DeviceExplorer.
 
 2.  Add connection information under the **Configuration** tab and click the **Update** button.
 
@@ -104,7 +104,7 @@ This section walks you through building, deploying and validating the IoT Client
 <a name="Step_3_2_Build"></a>
 ## 3.2  Build the Samples
 
-1. Follow the instructions [here](<https://github.com/Azure/azure-iot-sdks/blob/master/c/doc/devbox_setup.md>) to prepare your development environment. 
+1. Follow the instructions [here](<https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md>) to prepare your development environment. 
 
 2. A folder **cmake_Win32** will be created under your user profile folder e.g. **c:\user\[yourusername]\cmake_Win32**. 
 
