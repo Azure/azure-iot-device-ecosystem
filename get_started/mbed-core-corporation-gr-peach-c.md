@@ -70,7 +70,7 @@ GR-PEACH のハードリセットボタンの横にある microUSB 端子と、�
 
 以下の URL を参照し、自身の mbed 開発者ページにサンプルプログラムをインポートし、接続文字列を置き換える。 
  
-<https://github.com/neeraj-khanna/azure-iot-device-ecosystem/blob/master/get_started/mbed-renesas-gr-peach-c.md#create-mbed-project-and-import-the-sample-code>
+<https://github.com/azure/azure-iot-device-ecosystem/blob/master/get_started/mbed-renesas-gr-peach-c.md#create-mbed-project-and-import-the-sample-code>
 
 ## ビルド 
 
@@ -78,7 +78,7 @@ GR-PEACH のハードリセットボタンの横にある microUSB 端子と、�
 ビルドが成功すると自動的にバイナリファイルがダウンロードされる。 
 エクスプローラを開き、外付けUSBドライブとして認識されているMBEDドライブにダウンロードされたバイナリファイルをドラッグ＆ドロップしコピーする。 
  
-<https://github.com/Azure/azure-iot-sdks/blob/master/doc/get_started/mbed-renesasgr-peach-c.md#build-and-run-the-program> 
+<https://github.com/azure/azure-iot-device-ecosystem/blob/master/get_started/mbed-renesas-gr-peach-c.md#build-and-run-the-program> 
  
 ## 実行 
 
