@@ -159,7 +159,7 @@ To learn how to run a simple *Getting started* Java application that sends messa
 
 For testing the **Android sample** on Android device follow [certify IoT device running Android] [certify-iot-device-android] documentation
 
-[readme]: ../../java/device/readme.md
+[readme]: https://github.com/Azure/azure-iot-sdk-java/blob/master/device/readme.md
 [lnk-getstarted]: java-run-sample.md
 [android-studio]: https://developer.android.com/studio/index.html
 [certify-iot-device-android]:https://github.com/Azure/azure-iot-sdks/blob/master/doc/iotcertification/iot_certification_android_java/iot_certification_android_java.md
