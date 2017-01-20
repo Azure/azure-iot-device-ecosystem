@@ -204,6 +204,10 @@ section. These will be needed in [Step 4](#Step_4_2).*
     **If using MQTT protocol:**
 
         java -jar ./send-event-{version}-with-deps.jar "{connection string}" "{number of requests to send}" "mqtt"
+	
+    **If using AMQP-WebSocket protocol:**
+
+        java -jar ./send-event-{version}-with-deps.jar "{connection string}" "{number of requests to send}" "amqps_ws"	
 
     Replace the following in above command:
     
@@ -222,6 +226,9 @@ section. These will be needed in [Step 4](#Step_4_2).*
     **If using MQTT protocol:**  
     ![Terminal\_MQTT\_send\_event](images/terminal_mqtt_send_event.png)
 
+    **If using AMQP WebSocket protocol:**  
+    ![Terminal\_AMQP_WS\_send\_event](images/terminal_amqps_ws_send_event.png)
+
 6.  DeviceExplorer should show that IoT Hub has successfully received data sent by sample test.
 
     **If using AMQP protocol:**  
@@ -232,6 +239,9 @@ section. These will be needed in [Step 4](#Step_4_2).*
 
     **If using MQTT protocol:**  
     ![DeviceExplorer\_MQTT\_message\_received](images/device_explorer_mqtt_message_received.png)
+
+    **If using AMQP WebSocket protocol:**  
+    ![DeviceExplorer\_AMQP_WS\_message\_received](images/device_explorer_amqp_ws_message_received.png)
 
 <a name="Step_3_2_2"></a>
 ### 3.2.2 Receive messages from IoT Hub
@@ -262,6 +272,10 @@ section. These will be needed in [Step 4](#Step_4_2).*
    
         java -jar ./handle-messages-{version}-with-deps.jar "{connection string}" "mqtt"
 
+    **If using AMQP-WebSocket protocol:**
+   
+        java -jar ./handle-messages-{version}-with-deps.jar "{connection string}" "amqps_ws"
+
     Replace the following in above command:
     
     -   `{version}`: Version of binaries you have build
@@ -278,6 +292,9 @@ section. These will be needed in [Step 4](#Step_4_2).*
 
     **If using MQTT protocol:**  
     ![Terminal\_MQTT\_message\_received](images/terminal_mqtt_message_received.png)
+
+    **If using AMQP WebSocket protocol:**  
+    ![Terminal\_AMQP_WS\_message\_received](images/terminal_amqp_ws_message_received.png)
 
 <a name="Step_4"></a>
 # Step 4: Package and Share
