@@ -129,7 +129,7 @@ Using Maven 3 is the recommended way to install Azure IoT device SDK for Java.
     -   `{connection string}`: Your device connection string
     -   `{number of requests to send}`: Number of messages you want to send to IoT Hub
 
--   On Windows, refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to see the data your device is sending.
+-   On Windows, refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to see the data your device is sending.
 
 <a name="Step_3_2_2"/>
 ### 3.2.2 Receive messages from IoT Hub
@@ -158,8 +158,8 @@ Using Maven 3 is the recommended way to install Azure IoT device SDK for Java.
     -   `{connection string}`: Your device connection string
     -   `{number of requests to send}`: Number of messages you want to send to IoT Hub
 
--   On Windows, refer "Send cloud-to-device messages" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) for instructions on sending messages to device.
+-   On Windows, refer "Send cloud-to-device messages" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) for instructions on sending messages to device.
 
-[setup-devbox-windows]: https://github.com/Azure/azure-iot-sdks/blob/master/doc/get_started/java-devbox-setup.md
+[setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-java/blob/master/doc/java-devbox-setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md

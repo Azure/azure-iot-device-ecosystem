@@ -90,4 +90,4 @@ You should have the following items ready before beginning the process:
 
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
-[lnk-devbox-setup]: https://github.com/Azure/azure-iot-sdks/blob/master/csharp/device/doc/devbox_setup.md
+[lnk-devbox-setup]: https://github.com/Azure/azure-iot-sdk-csharp/blob/master/device/doc/devbox_setup.md

@@ -183,5 +183,5 @@ In this section you will run the Azure IoT client SDK samples to validate commun
 
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
-[android-sample-code]: https://github.com/Azure/azure-iot-sdks/tree/master/java/device/samples/android-sample
-[mainactivity-source-code]: https://github.com/Azure/azure-iot-sdks/blob/master/java/device/samples/android-sample/app/src/main/java/com/iothub/azure/microsoft/com/androidsample/MainActivity.java
+[android-sample-code]: https://github.com/Azure/azure-iot-sdk-java/tree/master/device/iot-device-samples/android-sample
+[mainactivity-source-code]: https://github.com/Azure/azure-iot-sdk-java/blob/master/device/iot-device-samples/android-sample/app/src/main/java/com/iothub/azure/microsoft/com/androidsample/MainActivity.java

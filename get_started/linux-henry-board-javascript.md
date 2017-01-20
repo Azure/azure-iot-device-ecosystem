@@ -178,7 +178,7 @@ This section walks you through building, deploying and validating the IoT Client
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages to the application.
 
 
-[setup-devbox-linux]: https://github.com/Azure/azure-iot-sdks/blob/master/doc/get_started/node-devbox-setup.md
+[setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-node/blob/master/doc/node-devbox-setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
 [IntelEdisonGettingStarted]: https://software.intel.com/iot/library/edison-getting-started

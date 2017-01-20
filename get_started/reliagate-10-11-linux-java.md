@@ -187,7 +187,7 @@ Open a SSH terminal on the EUROTECH ReliaGATE 10-11. From your host system use O
 
 
 
-[setup-devbox-linux]: https://github.com/Azure/azure-iot-sdks/blob/master/doc/get_started/java-devbox-setup.md
-[lnk-setup-iot-hub]: https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md
-[lnk-manage-iot-hub]: https://github.com/Azure/azure-iot-sdks/blob/master/doc/setup_iothub.md
+[setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-java/blob/master/doc/java-devbox-setup.md
+[lnk-setup-iot-hub]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md
+[lnk-manage-iot-hub]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md
 [lnk-eth-reliagate-10-11]: https://www.eurotech.com/en/products/iot/IoT+Development+Kits
