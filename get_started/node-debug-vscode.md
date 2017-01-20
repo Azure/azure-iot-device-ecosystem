@@ -69,9 +69,9 @@ Basically, instead of giving the name of the javascript file we want to debug as
 }
 ```
 
-Running integration tests requires a little more configuration because integration and end-to-end tests require configuring some environment variables as describe in [running end-to-end tests](https://github.com/Azure/azure-iot-sdks/blob/master/c/doc/run_end_to_end_tests.md).
+Running integration tests requires a little more configuration because integration and end-to-end tests require configuring some environment variables as describe in [running end-to-end tests](https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/run_end_to_end_tests.md).
 Luckily, we can edit environment variables directly in the debugger configuration file so that they are set only for the debugging session.
-See the 'env' subsection of the 'Device client integration tests' section in [launch.json](https://gist.github.com/pierreca/aef0548d88b37a0f37d8) and fill in the blanks according to [the previously mentionned document](https://github.com/Azure/azure-iot-sdks/blob/master/c/doc/run_end_to_end_tests.md).
+See the 'env' subsection of the 'Device client integration tests' section in [launch.json](https://gist.github.com/pierreca/aef0548d88b37a0f37d8) and fill in the blanks according to [the previously mentionned document](https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/run_end_to_end_tests.md).
 ```json
 {
 	"name": "Device client integration tests",
@@ -102,7 +102,7 @@ See the 'env' subsection of the 'Device client integration tests' section in [la
 ```
 
 ## Debugging iothub-explorer
-[iothub-explorer](https://github.com/Azure/azure-iot-sdks/tree/master/tools/iothub-explorer) is a lot like debugging the sample code file: we specify the main iothub-explorer javascript file as the program to start.
+[iothub-explorer](https://github.com/azure/iothub-explorer/tree/master) is a lot like debugging the sample code file: we specify the main iothub-explorer javascript file as the program to start.
 A nice trick though is to add the connection string and the command that you want to run to the list of arguments. Also, if you'd rather run iothub-explorer in an interactive console (in which you can type) as opposed to the Visual Studio Code debug prompt, switch the `externalConsole` property to `true`.
 ```json
 {

@@ -220,7 +220,7 @@ In this section you will run the Azure IoT client SDK samples of communication b
 1.  Launch the DeviceExplorer as explained in [Step 1](#Prerequisites) and
     navigate to **Data** tab. Select the device name you created from the drop-down list of device IDs and click **Monitor** button.
 
-	![](https://github.com/Azure/azure-iot-sdks/raw/master/doc/iotcertification/iot_certification_linux_c/images/3_3_1_01.png)
+	![](https://github.com/Azure/azure-iot-device-ecosystem/raw/master/iotcertification/iot_certification_linux_c/images/3_3_1_01.png)
 	
 	DeviceExplorer is now monitoring data sent from the selected device to the IoT Hub.
 
@@ -237,20 +237,20 @@ In this section you will run the Azure IoT client SDK samples of communication b
 4.  Verify that the confirmation messages show an OK. If not, then you may have incorrectly copied the device hub connection information.
 
     **If using AMQP protocol:**
-    ![SampleAMQP\_result\_terminal](https://github.com/Azure/azure-iot-sdks/raw/master/doc/iotcertification/iot_certification_linux_c/images/3_3_1_02.png)
+    ![SampleAMQP\_result\_terminal](https://github.com/Azure/azure-iot-device-ecosystem/raw/master/iotcertification/iot_certification_linux_c/images/3_3_1_02.png)
 
     **If using HTTP protocol:**
-    ![SampleHTTP\_result\_terminal](https://github.com/Azure/azure-iot-sdks/raw/master/doc/iotcertification/iot_certification_linux_c/images/3_3_1_03.png)
+    ![SampleHTTP\_result\_terminal](https://github.com/Azure/azure-iot-device-ecosystem/raw/master/iotcertification/iot_certification_linux_c/images/3_3_1_03.png)
 
 5.  DeviceExplorer should show that IoT Hub has successfully received data sent by sample test.
 
     **If using AMQP protocol:**
     
-    ![SampleAMQP\_result\_DeviceExplorer](https://github.com/Azure/azure-iot-sdks/raw/master/doc/iotcertification/iot_certification_linux_c/images/3_3_1_04.png)
+    ![SampleAMQP\_result\_DeviceExplorer](https://github.com/Azure/azure-iot-device-ecosystem/raw/master/iotcertification/iot_certification_linux_c/images/3_3_1_04.png)
 
     **If using HTTP protocol:**
     
-    ![SampleHTTP\_result\_DeviceExplorer](https://github.com/Azure/azure-iot-sdks/raw/master/doc/iotcertification/iot_certification_linux_c/images/3_3_1_05.png)
+    ![SampleHTTP\_result\_DeviceExplorer](https://github.com/Azure/azure-iot-device-ecosystem/raw/master/iotcertification/iot_certification_linux_c/images/3_3_1_05.png)
 
 ### 3.3.2 Receive messages from IoT Hub
 
@@ -260,15 +260,15 @@ In this section you will run the Azure IoT client SDK samples of communication b
 
 3.  Add some text to the Message field, then click Send.
 
-    ![MessageSend\_DeviceExplorer](https://github.com/Azure/azure-iot-sdks/raw/master/doc/iotcertification/iot_certification_linux_c/images/3_3_1_06.png)
+    ![MessageSend\_DeviceExplorer](https://github.com/Azure/azure-iot-device-ecosystem/raw/master/iotcertification/iot_certification_linux_c/images/3_3_1_06.png)
 
 4.  You should be able to see the command received in the console window for the client sample.
 
     **If using AMQP protocol:**
-    ![MessageSend\_terminal](https://github.com/Azure/azure-iot-sdks/raw/master/doc/iotcertification/iot_certification_linux_c/images/3_3_1_07.png)
+    ![MessageSend\_terminal](https://github.com/Azure/azure-iot-device-ecosystem/raw/master/iotcertification/iot_certification_linux_c/images/3_3_1_07.png)
 
     **If using HTTP protocol:**
-    ![MessageSend\_terminal](https://github.com/Azure/azure-iot-sdks/raw/master/doc/iotcertification/iot_certification_linux_c/images/3_3_1_08.png)
+    ![MessageSend\_terminal](https://github.com/Azure/azure-iot-device-ecosystem/raw/master/iotcertification/iot_certification_linux_c/images/3_3_1_08.png)
 
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md

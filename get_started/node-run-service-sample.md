@@ -33,7 +33,7 @@ You should have the following items ready before beginning the process:
 <a name="Build"></a>
 # Step 2: Build and run the sample
 
-- Get the following sample files from https://github.com/Azure/azure-iot-sdks/tree/master/node/service/samples
+- Get the following sample files from https://github.com/Azure/azure-iot-sdk-node/tree/master/service/samples
     - **package.json**
     - **registry_sample.js**
 

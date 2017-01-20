@@ -31,7 +31,7 @@ This document describes how to connect TB71A-W-SI2 device running Windows 10 Ent
 
 You should have the following items ready before beginning the process:
 
-- 	[Prepare your development environment](https://github.com/Azure/azure-iot-sdks/blob/master/c/doc/devbox_setup.md)
+- 	[Prepare your development environment](https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md)
 -   [Setup your IoT hub](lnk-setup-iot-hub)
 -   [Provision your device and get its credentials](lnk-manage-iot-hub)
 -   TB71A-W-SI2 device.
@@ -76,7 +76,7 @@ Internet connection
 ### 3.3.1 Send Device Events to IoT Hub
 - In Visual Studio, from Solution Explorer, right-click the ***UWPSample(Universal Windows)*** project, click Debug −> ***Start new instance*** to build and run the sample. 
 
--	See [Manage IoT Hub](https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the application.
+-	See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the application.
 
 ### 3.3.2 Receive messages from IoT Hub
--	See [Manage IoT Hub](https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md) to learn how to send cloud-to-device messages to the application.
+-	See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to send cloud-to-device messages to the application.

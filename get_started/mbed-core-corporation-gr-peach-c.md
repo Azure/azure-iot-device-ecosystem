@@ -40,13 +40,13 @@ Run a simple C sample on GR-PEACH device running Mbed
 
 以下の URL を参照し、Azure IoT Hub の設定を行う。
 
-<https://github.com/Azure/azure-iot-sdks/blob/master/doc/setup_iothub.md> 
+<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md> 
 
 ## Device Explorer のインストール
  
 以下の URL を参照し、Device Explorer をインストールし、デバイス名を登録する。 
 
-<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md> 
+<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md> 
 
 
 <a name="PrepareDevice"></a>

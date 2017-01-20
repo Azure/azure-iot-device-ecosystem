@@ -55,7 +55,7 @@ Before you get started, you should:
 
 [device-explorer]: ../../tools/DeviceExplorer/readme.md
 [toradex_image_update]: http://developer.toradex.com/knowledge-base/how-to-setup-environment-for-embedded-linux-application-development#Linux_Image_Update
-[node-sample-apps]: https://github.com/Azure/azure-iot-sdks/tree/master/node/device/samples
+[node-sample-apps]: https://github.com/Azure/azure-iot-sdk-node/tree/master/device/samples
 
 [setup-iothub]: ../setup_iothub.md
 [lnk-setup-iot-hub]: ../setup_iothub.md

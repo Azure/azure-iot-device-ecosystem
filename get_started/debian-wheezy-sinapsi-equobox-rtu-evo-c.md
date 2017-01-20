@@ -98,7 +98,7 @@ this command remounts the root partition in read-write mode.
     -   **IOTHUB_EVENTHUB_CONSUMER_GROUP:** Set value as **$Default**
     -   **IOTHUB_PARTITION_COUNT:** Partition count from azure portal, as shown in figure below.
 
-        ![](https://github.com/Azure/azure-iot-sdks/raw/master/doc/iotcertification/iot_certification_linux_c/images/azure-portal-partition-count.png)
+        ![](https://github.com/Azure/azure-iot-device-ecosystem/raw/master/iotcertification/iot_certification_linux_c/images/azure-portal-partition-count.png)
 
 -   Set environment variables by running following command on your device:
 
@@ -130,5 +130,5 @@ this command remounts the root partition in read-write mode.
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages to the application.
 
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
-[lnk-setup-iot-hub]: https://github.com/Azure/azure-iot-sdks/blob/master/doc/setup_iothub.md
-[lnk-manage-iot-hub]: https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md
+[lnk-setup-iot-hub]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md
+[lnk-manage-iot-hub]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md

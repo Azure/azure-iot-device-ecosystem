@@ -37,8 +37,8 @@ You should have the following prerequisities ready to begin process:
 -   SSH client on your desktop computer, such as [PuTTY](http://www.putty.org/). (You should access remotely the command line on the BBAir.)
 -   USB Mini cable.
 -   Ethernet cable or Setting BBAir Wi-Fi. (Folow the instruction on this [wiki](http://wiki.neuromeka.net/index.php?title=WiFi_setting))
--   [Setup your IoT hub](https://github.com/Azure/azure-iot-sdks/blob/master/doc/setup_iothub.md)
--   [Provision your device and get its credentials](https://github.com/Azure/azure-iot-sdks/blob/develop/tools/DeviceExplorer/doc/how_to_use_device_explorer.md)
+-   [Setup your IoT hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md)
+-   [Provision your device and get its credentials](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md)
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
@@ -116,11 +116,11 @@ If version is 0.12.x or greater, then skip next step of installing prerequisite 
 
         node ~/azure-iot-sdks/node/device/samples/simple_sample_device.js
 
--   See [Manage IoT Hub](https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md) to learn how to read messages IoT Hub receives from the application.
+-   See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to read messages IoT Hub receives from the application.
 
 ### 3.3.2 Receive messages from IoT Hub
 
--   See [Manage IoT Hub](https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md) to learn how to send cloud-to-device messages to the application.
+-   See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to send cloud-to-device messages to the application.
 
 
 [lnk-setup-iot-hub]: ../setup_iothub.md

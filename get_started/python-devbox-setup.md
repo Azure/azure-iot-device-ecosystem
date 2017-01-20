@@ -107,7 +107,7 @@ This repository contains various Python sample applications that illustrate how 
 [python-2.7 or python-3.5]: https://www.python.org/downloads/
 [PyPI]: https://pypi.python.org/pypi/iothub-client/
 [Python Tools for Visual Studio]: https://www.visualstudio.com/en-us/features/python-vs.aspx
-[setup-devbox]: https://github.com/Azure/azure-iot-sdks/blob/master/c/doc/devbox_setup.md
+[setup-devbox]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [getstarted]: python-run-sample.md
 [boost-zip]: http://www.boost.org/users/history/version_1_60_0.html
 [lnk-c-redist]: https://www.microsoft.com/download/details.aspx?id=48145

@@ -38,12 +38,12 @@ You should have the following items ready before beginning the process:
 -   LINUX VM-Instance 
 -   ECLIPSE running on the LINUX VM-Instance 
 -   Cross compiler settings from YOCTO 
--   Download and install [DeviceExplorer](https://github.com/Azure/azure-iot-sdks/releases/download/2015-11-13/SetupDeviceExplorer.msi).
--   [Set up your IoT hub](https://github.com/Azure/azure-iot-sdks/blob/master/doc/setup_iothub.md).
+-   Download and install [DeviceExplorer](https://github.com/Azure/azure-iot-sdks/releases).
+-   [Set up your IoT hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md).
 #### Create a device on IoT Hub
--   With your IoT hub configured and running in Azure, follow the instructions in **"Create Device"** section of [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md).
+-   With your IoT hub configured and running in Azure, follow the instructions in **"Create Device"** section of [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md).
 #### Write down device credentials
--   Make note of the Connection String for your device by following the instructions in **"Get device connection string or configuration data"** section of [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md).
+-   Make note of the Connection String for your device by following the instructions in **"Get device connection string or configuration data"** section of [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md).
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device

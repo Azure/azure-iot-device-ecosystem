@@ -70,4 +70,4 @@ You should have the following items ready before beginning the process:
 
 -	In **Solution Explorer**, right-click the **DeviceClientHttpSample** project, click **Debug**, and then click **Start new instance** to build and run the sample. The console displays messages as the application sends device-to-cloud messages to IoT Hub.
 
--	See [Manage IoT Hub](https://github.com/Azure/azure-iot-sdks/blob/d5435b940253fc90cfd38ac3ab33b63300a4942c/doc/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the application and how to send cloud-to-device messages to the application.
+-	See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the application and how to send cloud-to-device messages to the application.
