@@ -326,7 +326,7 @@ The end result will be a functional command center where you can view the histor
 <a name="section2.4" />
 ## 2.4 Create a New Microsoft Azure IoT Hub and Add Device
 
-- To create your Microsoft Azure IoT Hub and add a device, follow the instructions outlined in the [Setup IoT Hub Microsoft Azure Iot SDK page](https://github.com/Azure/azure-iot-sdks/blob/master/doc/setup_iothub.md).
+- To create your Microsoft Azure IoT Hub and add a device, follow the instructions outlined in the [Setup IoT Hub Microsoft Azure Iot SDK page](../setup_iothub.md).
 - After creating your device, make note of your connection string to enter into the code you’ll run on your device later
 
 ***
@@ -495,7 +495,7 @@ bower install
         - Click on the "CONNECTION INFORMATION" button along the bottom.
         - From there, click the button to copy the readwrite shared access policy connection string.
     - deviceConnString:
-        - Use the information on the [Manage IoT Hub](https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md) to retrieve your device connection string using either the Device Explorer or iothub-explorer tools.
+        - Use the information on the [Manage IoT Hub](../manage_iot_hub.md) to retrieve your device connection string using either the Device Explorer or iothub-explorer tools.
     - iotHubConnString:
         - In the [Azure Portal](https://portal.azure.com)
         - Open the IoT Hub you created previously.
