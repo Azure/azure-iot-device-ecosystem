@@ -268,6 +268,10 @@ section. These will be needed in [Step 4](#Step_4_2).*
     **If using MQTT protocol:**
 
         java -jar ./send-event-{version}-with-deps.jar "{connection string}" "{number of requests to send}" "mqtt"
+	
+    **If using Web Sockets with AMQP protocol:**
+
+        java -jar ./send-event-{version}-with-deps.jar "{connection string}" "{number of requests to send}" "amqps_ws"	
 
     Replace the following in above command:
     
@@ -285,6 +289,9 @@ section. These will be needed in [Step 4](#Step_4_2).*
 
     **If using MQTT protocol:**  
     ![Terminal\_MQTT\_send\_event](images/terminal_mqtt_send_event.png)
+
+    **If using Web Sockets with AMQP protocol:**
+    ![Terminal\_AMQP_WS\_send\_event](images/terminal_amqps_ws_send_event.png)
 
 6.  DeviceExplorer should show that IoT Hub has successfully received data sent by sample test.
 
@@ -325,6 +332,10 @@ section. These will be needed in [Step 4](#Step_4_2).*
     **If using MQTT protocol:**
    
         java -jar ./handle-messages-{version}-with-deps.jar "{connection string}" "mqtt"
+
+    **If using Web Sockets with AMQP protocol:**
+   
+        java -jar ./handle-messages-{version}-with-deps.jar "{connection string}" "amqps_ws"
 
     Replace the following in above command:
     
