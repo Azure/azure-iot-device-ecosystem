@@ -1,6 +1,6 @@
 ---
 services: iot-hub, stream-analytics, event-hubs, web-apps, documentdb, storage-accounts
-platforms: arduino
+platform: arduino
 author: hegate
 ---
 
