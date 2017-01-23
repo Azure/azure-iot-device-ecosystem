@@ -151,6 +151,14 @@ This section walks you through building, deploying and validating the IoT Client
 
         npm install azure-iot-device-mqtt	
 
+    **For Web Sockets with AMQP Protocol:**
+
+        npm install azure-iot-device-amqp
+
+    **For Web Sockets with MQTT Protocol:**
+
+        npm install azure-iot-device-mqtt
+
 -   Update the sample to set the protocol.
 
         cd azure-iot-sdks\node\device\samples
