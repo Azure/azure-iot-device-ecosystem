@@ -162,6 +162,14 @@ This section walks you through building, deploying and validating the IoT Client
 
         nano azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
 
+    **For WebSocket with AMQP protocol:**
+
+        nano azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_amqp_websockets/iothub_client_sample_amqp_websockets.c
+
+    **For WebSocket with MQTT protocol:**
+
+        nano azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_mqtt_websockets/iothub_client_sample_mqtt_ws.c
+
 -   This launches a console-based text editor. Scroll down to the
     connection information.
 
@@ -207,6 +215,10 @@ This section walks you through building, deploying and validating the IoT Client
 
         sudo ./azure-iot-sdks/c/build_all/linux/build.sh --run-e2e-tests | tee LogFile.txt
 
+    For WebSocket Protocols, use below command to build the SDK***
+	
+        sudo ./azure-iot-sdk-c/build_all/linux/build.sh --use-websockets
+    
     ***Note:*** *LogFile.txt in above command should be replaced with a file name where build output will be written.*
     
     *build.sh creates a folder called "cmake" under "~/azure-iot-sdks/c/". Inside "cmake" are all the results of the compilation of the complete software.*
@@ -246,7 +258,14 @@ section. These will be needed in [Step 4](#Step-4-2-Share)
     **If using MQTT protocol:** Run sample *iothub\_client\_sample\_mqtt*
 
 		~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt
+	
+    **If using WebSocket with AMQP protocol:** Run sample *iothub\_client\_sample\_amqp_websocket*
 
+                ~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp_websockets/iothub_client_sample_amqp_websockets
+
+    **If using WebSocket with MQTT protocol:** Run sample *iothub\_client\_sample\_mqtt_websocket*
+
+		~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt_websockets/iothub_client_sample_mqtt_websockets
 
 4.  Verify that the confirmation messages show an OK. If not, then you may have
     incorrectly copied the device hub connection information.
@@ -259,6 +278,12 @@ section. These will be needed in [Step 4](#Step-4-2-Share)
 
     **If using MQTT protocol:**
     ![SampleMQTT\_result\_terminal](images/3_3_1_09.png)
+
+    **If using WebSocket with AMQP protocol:**
+    ![SampleAMQPWS\_result\_terminal](images/terminal_amqps_ws_send_event.png)
+	
+    **If using WebSocket with MQTT protocol:**
+    ![SampleMQTTWS\_result\_terminal](images/terminal_mqtt_ws_send_event.png)
 
 5.  DeviceExplorer should show that IoT Hub has successfully received data sent
     by sample test.
@@ -274,6 +299,14 @@ section. These will be needed in [Step 4](#Step-4-2-Share)
     **If using MQTT protocol:**
     
     ![SampleMQTT\_result\_DeviceExplorer](images/3_3_1_10.png)
+
+    **If using WebSocket with AMQP protocol:**
+
+    ![SampleAMQPWS\_result\_DeviceExplorer](images/device_explorer_amqp_ws_message_received.png)
+	
+    **If using WebSocket with MQTT protocol:**
+
+    ![SampleMQTTWS\_result\_DeviceExplorer](images/device_explorer_mqtt_ws_message_received.png)
 
 ### 3.3.2 Receive messages from IoT Hub
 
@@ -297,6 +330,12 @@ section. These will be needed in [Step 4](#Step-4-2-Share)
 
     **If using MQTT protocol:**
     ![MessageSend\_terminal](images/3_3_1_11.png)
+
+    **If using WebSocket with AMQP protocol:**
+    ![MessageSend\_terminal](images/terminal_amqp_ws_message_received.png)
+	
+    **If using WebSocket with MQTT protocol:**
+    ![MessageSend\_terminal](images/terminal_mqtt_ws_message_received.png)
 
 <a name="Step-4-Package_Share"></a>
 # Step 4: Package and Share
