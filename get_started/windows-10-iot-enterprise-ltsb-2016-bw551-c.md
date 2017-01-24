@@ -62,7 +62,7 @@ This multi-step process includes:
         static const char* connectionString = "[device connection string]";
         
 -   Replace `<replace>` with the connection string for your device.
--   In visual Studio, under Solution Explorer, right-click the **iothub_client_sample_amqp** project, click ***Debug &minus;&gt; Start new instance*** to build and run the sample. The console displays messages as the application sends device-to-cloud messages to IoT Hub.
+-   In visual Studio, under Solution Explorer, right-click the **simplesample_http** project, click ***Debug &minus;&gt; Start new instance*** to build and run the sample. The console displays messages as the application sends device-to-cloud messages to IoT Hub.
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application and how to send cloud-to-device messages to the application.
 
 [setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
