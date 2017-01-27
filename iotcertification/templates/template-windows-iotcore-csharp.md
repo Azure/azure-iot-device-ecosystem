@@ -77,7 +77,7 @@ You should have the following items ready before beginning the process:
 
         public const string DeviceConnectionString = "<replace>";
 
--   Replace the above placeholder with device connection string you obtained in [Step 1](#Step-1:-Prerequisites) and save the changes.
+-   Replace the above placeholder with device connection string you obtained in [Step 1](#Prerequisites) and save the changes.
 
 -   Choose the right architecture (x86 or ARM, depending on your device) and set the debugging method to "Remote Machine":
     
