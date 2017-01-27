@@ -97,8 +97,8 @@ You should have the following items ready before beginning the process:
 
 ## 3.3 Receive messages from IoT Hub
 
--   See [Manage IoT Hub](https://github.com/Azure/azure-iot-sdks/blob/develop/doc/manage_iot_hub.md) to learn how to send cloud-to-device messages to the application.
+-   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages to the application.
 
-[setup-devbox-python]: <https://github.com/Azure/azure-iot-sdks/blob/master/doc/get_started/python-devbox-setup.md>
+[setup-devbox-python]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/get_started/python-devbox-setup.md
 [lnk-setup-iot-hub]: ../../setup_iothub.md
 [lnk-manage-iot-hub]: ../../manage_iot_hub.md
