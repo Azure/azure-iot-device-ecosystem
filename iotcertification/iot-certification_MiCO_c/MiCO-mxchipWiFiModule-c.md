@@ -53,7 +53,7 @@ You should have the following items ready before beginning the process:
 following the instructions in the [MiCO开发者中心](http://developer.mico.io/docs/13).
 -   When the installation process is complete, the MiCoderIDE software have cotain latest MiCO SDK.You need to add azureIotclient files to MiCOderIDE project explorer's demos directory, you can directly copy [“demo/azureIotclient” files](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/demo/azureIotclient) here.And you need to add [“libraries/azureiot” files](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/libraries/azureiot) to MiCOderIDE project explorer's libraries directory.
 
-  ![](./media/Azure--iothubmico-setup/micoderIDE01.png)
+  ![](./../../media/Azure--iothubmico-setup/micoderIDE01.png)
 
 -	[Regist azure.microsoft account](https://azure.microsoft.com/zh-cn/free/) to get free account for iothub.
 -	Add iothub service in azure cloud control center.
