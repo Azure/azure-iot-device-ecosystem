@@ -31,9 +31,9 @@ This document describes how to connect supported MiCOKit device running MiCO wit
 MiCOKit board is ShangHai MXCHIP's development kits for developer and engineer to fast connect the iot internet.
 Static state show:
 
-![](./media/Azure--iothubmico-setup/MiCOKit development kit01.png)
+![](./../../get_started/media/Azure--iothubmico-setup/MiCOKit development kit01.png)
 
-![](./media/Azure--iothubmico-setup/MiCOKit development kit02.jpg)
+![](./../../get_started/media/Azure--iothubmico-setup/MiCOKit development kit02.jpg)
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
@@ -62,7 +62,7 @@ You should have the following items ready before beginning the process:
 following the instructions in the [MiCO开发者中心](http://developer.mico.io/docs/13).
 -   When the installation process is complete, the MiCoderIDE software have cotain latest MiCO SDK.You need to add azureIotclient files to MiCOderIDE project explorer's demos directory, you can directly copy [“demo/azureIotclient” files](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/demo/azureIotclient) here.And you need to add [“libraries/azureiot” files](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/libraries/azureiot) to MiCOderIDE project explorer's libraries directory.
 
-  ![](./../../media/Azure--iothubmico-setup/micoderIDE01.png)
+  ![](./../../get_started/media/Azure--iothubmico-setup/micoderIDE01.png)
 
 -	[Regist azure.microsoft account](https://azure.microsoft.com/zh-cn/free/) to get free account for iothub.
 -	Add iothub service in azure cloud control center.
@@ -70,7 +70,7 @@ following the instructions in the [MiCO开发者中心](http://developer.mico.io
 -	Click here to download and install DeviceExplorer，you will register your device using DeviceExplorer. Fllowing [here](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/iotcertification/iot_certification_port_c_libraries_other_platforms/iot_certification_port_c_libraries_other_platforms.md) to study how to regist your device.
 -	When have you regested your device, you can get DEVICE ID and connect string-primary key in your devices list. Copy the connect string-primary key and pasted on micoderIDE's "/demos/azureIotclient/mqtt/azure_mqtt_client.c".(static const char* connectionString = "xxx";)
 
-  ![](./../../media/Azure--iothubmico-setup/micoderIDE02.png)
+  ![](./../../get_started/media/Azure--iothubmico-setup/micoderIDE02.png)
 
 <a name="Build"></a>
 # Step 3: Build SDK and Run the sample

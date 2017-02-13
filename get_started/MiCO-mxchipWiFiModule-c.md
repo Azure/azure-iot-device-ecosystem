@@ -26,6 +26,15 @@ This document describes how to connect supported MiCOKit device running MiCO wit
 -   Build and deploy Azure IoT SDK using [azure-iot-sdk-c-MiCO-DEMO](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/demo/azureIotclient/mqtt) on supported device
 -	Validate the sample using secureCRT-serial-debug-tool and Device-Explorer
 
+**About the MiCOKit**
+
+MiCOKit board is ShangHai MXCHIP's development kits for developer and engineer to fast connect the iot internet.
+Static state show:
+
+![](./media/Azure--iothubmico-setup/MiCOKit development kit01.png)
+
+![](./media/Azure--iothubmico-setup/MiCOKit development kit02.jpg)
+
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
 
