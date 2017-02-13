@@ -1,60 +1,90 @@
-# Set up IoT Hub
+# Set up and manage Azure IoT Hub
 
-[Azure IoT Hub][iothub-landing] is a fully managed service that enables reliable and secure bi-directional communications between millions of IoT devices and an application back end. Azure IoT Hub offers reliable device-to-cloud and cloud-to-device hyper-scale messaging, enables secure communications using per-device security credentials and access control, and includes device libraries for the most popular languages and platforms.
+Azure IoT Hub is a fully managed service that enables reliable and secure bi-directional communications between millions of IoT devices and an application back end. You can learn more about Azure IoT Hub visiting the [documentation site][iothub-landing].
 
-Before you can communicate with IoT Hub from a device you must create an IoT hub instance in your Azure subscription and then provision your device in your IoT hub. You must complete these steps before you try to run any of the sample IoT Hub device client applications in this repository ([azure-iot-sdks](https://github.com/Azure/azure-iot-sdks)).
+Before you can communicate with IoT Hub from a device you must **create an IoT hub instance** in your Azure subscription and then **provision your device in your IoT hub**.
 
-## Create an IoT hub
+Because of developers preferences and constrains, there are several ways you can create an instance of Azure IoT Hub service and manage this instance. Below are links to resources that will walk you through the steps required to setup an IoT hub and manage it.
 
-You can use the [Azure Portal][azure-portal] to create an IoT hub to use with your devices.
-
-1. Log on to the [Azure Portal][azure-portal].
-
-2. In the jumpbar, click **New**, then click **Internet of Things**, and then click **Azure IoT Hub**.
-
-   ![][1]
-
-3. In the **New IoT Hub** blade, specify the desired configuration for the IoT Hub.
-
-   ![][2]
-
-    * In the **Name** box, enter a name to identify your IoT hub. When the **Name** is validated, a green check mark appears in the **Name** box.
-    * Change the **Pricing and scale tier** as desired. The getting started samples do not require a specific tier.
-    * In the **Resource group** box, create a new resource group, or select and existing one. For more information, see [Using resource groups to manage your Azure resources][resource-group-portal].
-    * Use **Location** to specify the geographic location in which to host your IoT hub.  
+## Create an Azure IoT hub... 
+* ... [using the Azure portal]
+* ... [using the Azure CLI 2.0]  (Python command line)
+* ... [using the Azure CLI 1.0]  (Node.js command line)
+* ... [using PowerShell and a resource manager template]
+* ... [using C# and a resource manager template]
+* ... [using C# and the resource provider REST APIs]
 
 
-4. Once the new IoT hub options are configured, click **Create**.  It can take a few minutes for the IoT hub to be created.  To check the status, you can monitor the progress on the Startboard. Or, you can monitor your progress from the Notifications section.
+## Manage an Azure IoT hub
+Once you have an Azure IoT hub instance deployed, you will need to manage and interact with it to perform the following operations:
+* Work with the device registry (Create, Update, Delete device IDs)
+* Retrieve device credentials
+* Retrieve user credentials
+* Send Cloud to Device messages to devices
+* Work with Device Twins
+* Invoke Device Direct Methods
+* Monitor operations of the service
 
-    ![][3]
+There is some of this interaction that can happen through the [Azure portal], but most of the interaction will happen through tools and leveraging the various service client SDKs.
+
+### Retrieving user credentials to interact with the service (not as a device!)
+The first thing  you will need to do before you can use a tool or start developing an application that will interact with the IoT hub using one of the service client SDKs is to retrieve user credentials.
+
+> It is important to understand the different between user credentials and device credentials:
+> * The device credentials are managed by the [IoT Hub identity registry](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-identity-registry) and are to be used by code on **devices**
+> * The user credentials are set at the IoT Hub settings level and allow to define user access policies for applications that will **manage** the IoT hub.
+> Details on Control access to IoT Hub cabn be found [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security).
+
+You will need to get user credentials with the right permissions to interact with the identity registry, to send C2D messages, and to work with the Device Twins and Methods.
+The user credentials can easily be found on the [Azure portal] in the "Shared Access Policies" section of the [IoT hub settings blade](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#change-the-settings-of-the-iot-hub).
+Now you have the credentials, you can create 
+
+### Create new device in the IoT Hub device identity registry...
+* ... using [iothub-explorer]  (node.js command line tool)
+* ... using [Device Explorer]  (Windows desktop application)
+* ... using the service client SDK ...
+  * ... [for C#]
+  * ... [for Node.js]
+  * ... [for java]
+  * ... [for Python]
+* ...  [using Azure CLI v2.0]  (Python command line tool)
+  
+### Monitor IoT Hub operations
+There is a way to monitor an Azure IoT hub operations as all of these are logged into an Event Hub. This can help debug applications developed to interact and manage an IoT hub.
+Every you need to know about IoT Hub operations monitoring is [here][azure iot operations monitoring].
+
+### Work and interact with Devices using the tools and SDKs
+Once you have a device ID, you can provision your device with it and start interacting with it from the Cloud through IoT Hub.
+
+When developing, you can leverage some tools that will make your life easier. The below will allow you to do pretty much eveything you need to do when developing and testing IoT devices connecting to Azure IoT:
+* [iothub-explorer]  (node.js command line tool)
+* [Device Explorer]  (Windows desktop application)
+
+To build applications to manage the IoT hub and interact with devices from the Cloud, you can leverage one of our service client SDKs:
+* [Azure IoT service client SDK for C#]
+* [Azure IoT service client SDK for Node.js]
+* [Azure IoT service client SDK for Java]
+* [Azure IoT service client SDK for Python]
 
 
-5. After the IoT hub has been created successfully, open the blade of the new IoT hub, take note of the hostname URI, and click **Shared access policies**.
-
-    ![][4]
-
-6. Select the Shared access policy called **iothubowner**, then copy and take note of the connection string on the right blade.
-
-    ![][5]
-
-Your IoT hub is now created, and you have the connection string you need to use the [iothub-explorer or the Device Explorer][lnk-manage-iothub] tool. This connection string enables applications to perform management operations on the IoT hub such as adding a new device to the IoT hub.
-
-
-## Add devices to IoT Hub
-
-You must add details your device to IoT Hub before that device can communicate with the hub. When you add a device to an IoT hub, the hub generates the connection string that the device must use when it establishes the secure connection to the IoT hub.
-
-To add a device to your IoT hub, you can use the [iothub-explorer or the Device Explorer][lnk-manage-iothub] utility in this repository ([azure-iot-sdks](https://github.com/Azure/azure-iot-sdks)). These tools will generate a device specific connection string that you need to copy and paste in the source code of the application running on the device.
-
-
-[iothub-landing]: http://azure.microsoft.com/documentation/services/iot-hub/
+[iothub-landing]: https://docs.microsoft.com/en-us/azure/iot-hub
+[Azure portal]: https://portal.azure.com
+[using the Azure portal]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal
+[using the Azure CLI 2.0]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-using-cli
+[using the Azure CLI 1.0]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-using-cli-nodejs
+[using C# and a resource manager template]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-rm-template
+[using PowerShell and a resource manager template]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-rm-template-powershell
+[using C# and the resource provider REST APIs]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-rm-rest
 [azure-portal]: https://portal.azure.com
-[manage-iothub-portal]: http://azure.microsoft.com/documentation/articles/iot-hub-manage-portal/
-[lnk-manage-iothub]: manage_iot_hub.md
-[resource-group-portal]: https://azure.microsoft.com/documentation/articles/resource-group-portal/
-
-[1]: media/create-iot-hub1.png
-[2]: media/create-iot-hub2.png
-[3]: media/create-iot-hub3.png
-[4]: media/create-iot-hub4.png
-[5]: media/create-iot-hub5.png
+[azure iot operations monitoring]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-operations-monitoring
+[iothub-explorer]: https://github.com/Azure/iothub-explorer
+[Device Explorer]: https://github.com/Azure/azure-iot-sdk-csharp/tree/master/tools/DeviceExplorer
+[for C#]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-csharp-csharp-getstarted#create-a-device-identity
+[for Node.js]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted#create-a-device-identity
+[for java]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-java-java-getstarted#create-a-device-identity
+[for Python]: https://github.com/Azure/azure-iot-sdk-python/tree/master/service/samples
+[using Azure CLI v2.0]: https://docs.microsoft.com/en-us/cli/azure/iot/device#create
+[Azure IoT service client SDK for C#]: https://github.com/Azure/azure-iot-sdk-csharp/tree/master/service
+[Azure IoT service client SDK for Node.js]: https://github.com/azure/azure-iot-sdk-node/tree/master/service
+[Azure IoT service client SDK for Java]: https://github.com/azure/azure-iot-sdk-java/tree/master/service
+[Azure IoT service client SDK for Python]: https://github.com/azure/azure-iot-sdk-python/tree/master/service
