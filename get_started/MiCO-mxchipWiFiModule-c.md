@@ -23,7 +23,7 @@ Run a simple C sample on supported MiCOKit device running MiCO
 This document describes how to connect supported MiCOKit device running MiCO with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
--   Build and deploy Azure IoT SDK using [azure-iot-sdk-c-MiCO-DEMO](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/demo/azureIotclient/mqtt) on supported device
+-   Build and deploy Azure IoT SDK using [azure-iot-sdk-c-MiCO-DEMO](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/AzureForMiCO-SDK/demos/azureIotclient/mqtt) on supported device
 -	Validate the sample using secureCRT-serial-debug-tool and Device-Explorer
 
 **About the MiCOKit**
@@ -44,9 +44,8 @@ to ensure end to end understanding.
 You should have the following items ready before beginning the process:
 
 -   Computer with GitHub installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) and [azure-iot-sdk-c-MiCO-DEMO](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/demo/azureIotclient/mqtt) GitHub
+    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) and [azure-iot-sdk-c-MiCO-DEMO](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/AzureForMiCO-SDK/demos/azureIotclient/mqtt) GitHub
     public repository.
--   SSH client, such as [PuTTY](http://www.putty.org/), so you can access the command line.
 -   Required hardware:
 	-	Prepare [mxchip wifi module board](http://www.mxchip.com/product/wifi),for example MiCOKit3239.Please submit Sample application information on [mico.io](http://bbs.mico.io/),if you have not a mxchip wifi module board.
 	-	Download and install [MiCoder IDE](http://developer.mico.io/downloads)
@@ -60,7 +59,7 @@ You should have the following items ready before beginning the process:
 
 -   Install the latest MiCoderIDE software on your computer by
 following the instructions in the [MiCO开发者中心](http://developer.mico.io/docs/13).
--   When the installation process is complete, the MiCoderIDE software have cotain latest MiCO SDK.You need to add azureIotclient files to MiCOderIDE project explorer's demos directory, you can directly copy [“demo/azureIotclient” files](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/demo/azureIotclient) here.And you need to add [“libraries/azureiot” files](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/libraries/azureiot) to MiCOderIDE project explorer's libraries directory.
+-   When the installation process is complete, the MiCoderIDE software have cotain latest MiCO SDK.You need to add azureIotclient files to MiCOderIDE project explorer's demos directory, you can directly copy [“demo/azureIotclient” files](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/AzureForMiCO-SDK/demos/azureIotclient) here.And you need to add [“libraries/azureiot” files](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/AzureForMiCO-SDK/libraries/azureiot) to MiCOderIDE project explorer's libraries directory.
 
   ![](./../../media/Azure--iothubmico-setup/micoderIDE01.png)
 
