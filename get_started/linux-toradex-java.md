@@ -1,17 +1,43 @@
-# Getting started - running a Java sample application on Toradex modules with Linux
+---
+platform: linux
+device: toradex modules
+language: java
+---
 
-This "Getting Started" document shows you how to setup OpenJDK and run the sample Java device applications on a Toradex module with Linux.
+Run a simple Java sample on Toradex Modules device running Linux
+===
+---
 
-## Prerequisites
+# Table of Contents
 
-Before you get started, you should:
+-   [Introduction](#Introduction)
+-   [Step 1: Prerequisites](#Prerequisites)
+-   [Step 2: Prepare your Device](#PrepareDevice)
+-   [Step 3: Build and Run the Sample](#Build)
 
-- [Setup your IoT hub][lnk-setup-iot-hub]
-- [Provision your device and get its credentials][lnk-manage-iot-hub]
-- Use the [Azure IoT Java Application Development guides][java-dev-guides] to build example Java applications (e.g. send-event.java).
-- Ensure the module is flashed with [Toradex V2.5 Linux image or newer][toradex_image_update].
+<a name="Introduction"></a>
+# Introduction
 
-## Configure OpenJDK on Toradex module with Linux
+**About this document**
+
+This document describes how to connect Toradex Modules with Azure IoT SDK. This multi-step process includes:
+
+-   Configuring Azure IoT Hub
+-   Registering your IoT device
+-   Build and deploy Azure IoT SDK on device
+
+<a name="Prerequisites"></a>
+# Step 1: Prerequisites
+
+You should have the following items ready before beginning the process:
+
+-   [Setup your IoT hub][lnk-setup-iot-hub]
+-   [Provision your device and get its credentials][lnk-manage-iot-hub]
+-   Use the [Azure IoT Java Application Development guides][java-dev-guides] to build example Java applications (e.g. send-event.java).
+-   Ensure the module is flashed with [Toradex V2.5 Linux image or newer][toradex_image_update].
+
+<a name="PrepareDevice"></a>
+# Step 2: Prepare your Device
 
 1.  Insert the module into a compatible carrier board.  Power on the system and connect to the internet.
 
@@ -33,13 +59,14 @@ Before you get started, you should:
 	/usr/lib/jvm/java-7-openjdk/jre/bin/keytool -list -keystore ~/cacerts
 	```
 
-## Run Java Sample Application
+<a name="Build"></a>
+# Step 3: Build and Run the sample
 
-1. Transfer the compiled Java example applications to the device.
+1.  Transfer the compiled Java example applications to the device.
 
-2. On the host machine, start a new instance of the [Device Explorer][device-explorer], select or create a new device, obtain and note the connection string for the device, and begin monitoring under the Data tab.
+2.  On the host machine, start a new instance of the [Device Explorer][device-explorer], select or create a new device, obtain and note the connection string for the device, and begin monitoring under the Data tab.
 
-3. Back on the device, navigate to the folder containing the executable JAR file for the sample that you wish to run and run the samples as follows:
+3.  Back on the device, navigate to the folder containing the executable JAR file for the sample that you wish to run and run the samples as follows:
 
 	The executable JAR file for sending event
 	can be found at:

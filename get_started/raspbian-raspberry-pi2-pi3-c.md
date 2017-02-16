@@ -1,10 +1,10 @@
 ---
 platform: raspbian
-device: raspberrypi2
+device: raspberry pi2/pi3
 language: c
 ---
 
-Run a simple C sample on Raspberry Pi 2 device running Raspbian
+Run a simple C sample on Raspberry PI2/PI3 device running Raspbian
 ===
 ---
 
@@ -22,6 +22,7 @@ Run a simple C sample on Raspberry Pi 2 device running Raspbian
 **About this document**
 
 This document describes the process of setting up a [Raspberry Pi 2](https://www.raspberrypi.org/) device to connect to an Azure IoT hub. This multi-step process includes:
+
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -30,6 +31,7 @@ This document describes the process of setting up a [Raspberry Pi 2](https://www
 # Step 1: Prerequisites
 
 You should have the following items ready before beginning the process:
+
 -   Computer with Git client installed and access to the
     [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
     public repository.
@@ -54,13 +56,8 @@ You should have the following items ready before beginning the process:
 
 -   Install the latest Raspbian operating system on your Raspberry Pi 2 by
 following the instructions in the [NOOBS setup guide](http://www.raspberrypi.org/help/noobs-setup/).
--   When the installation process is complete, the Raspberry Pi configuration menu
-(raspi-config) loads. Here you are able to set the time and date for your region
-and enable a Raspberry Pi camera board, or even create users. Under **Advanced
-Options**, enable **ssh** so you can access the device remotely with
-PuTTY or WinSCP. For more information, see <https://www.raspberrypi.org/documentation/remote-access/ssh/>.
--   Connect your Raspberry Pi to your network using an ethernet cable or by using
-a WiFi dongle on the device.
+-   When the installation process is complete, the Raspberry Pi configuration menu (raspi-config) loads. Here you are able to set the time and date for your region and enable a Raspberry Pi camera board, or even create users. Under **Advanced Options**, enable **ssh** so you can access the device remotely with PuTTY or WinSCP. For more information, see <https://www.raspberrypi.org/documentation/remote-access/ssh/>.
+-   Connect your Raspberry Pi to your network using an ethernet cable or by using a WiFi dongle on the device.
 -   You need to determine the IP address of your Raspberry Pi in order to connect over the network. For more information, see
 <https://www.raspberrypi.org/documentation/remote-access/ip-address.md>.
 -   Once you see that your board is working, open an SSH terminal program such as [PuTTY](http://www.putty.org/) on your desktop machine.
@@ -68,9 +65,9 @@ a WiFi dongle on the device.
 -   When prompted, log in with username **pi**, and password **raspberry**.
 -   Create a **root** account using the following command `sudo passwd root` and choosing a new password:
 
-  ![](./media/service-bus-iot-raspberrypi-raspbian-setup/raspbian01.png)
+    ![](./media/service-bus-iot-raspberrypi-raspbian-setup/raspbian01.png)
 
-The root account is necessary in order to install some libraries required by the device SDK.
+    The root account is necessary in order to install some libraries required by the device SDK.
 
 <a name="Step-3-Build"></a>
 # Step 3: Build and Run the sample
@@ -108,7 +105,7 @@ Run the following commands in the terminal window connected to your Raspberry Pi
     ./c/build_all/linux/build.sh --skip-unittests
     ```
 
-<a name="buildsimplesample"/>
+<a name="buildsimplesample"></a>
 ## Run the AMQP simple sample
 
 -   Run the **simplesample_amqp** sample:

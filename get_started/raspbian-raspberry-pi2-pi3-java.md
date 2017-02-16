@@ -1,10 +1,10 @@
 ---
-platform: debian, fedora, Linux, opensuse, raspbian, Ubuntu, windows, yocto 
-device: any
+platform: raspbian 
+device: raspberry pi2/pi3
 language: java
 ---
 
-Run a simple Java sample on device
+Run a simple Java sample on Raspberry PI2/PI3 device running Raspbian
 ===
 ---
 
@@ -14,7 +14,6 @@ Run a simple Java sample on device
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
--   [Command Line Arguments](#command_line_arguments) 
 
 <a name="Introduction"></a>
 # Introduction
@@ -71,26 +70,6 @@ On build completion, you will see summary of what got built.
 
 	Note that the double quotes around each argument are required, but the braces '{' and '}' should be removed.
 
-<a name="command_line_arguments"></a>
-## More details on command line arguments
-Samples would use following command line arguments:
-
-1. [Device connection string] - `HostName=<iothub_host_name>;DeviceId=<device_id>;SharedAccessKey=<device_key>`
-
-2. [Number of requests to send]: For example, **5** 
-
-3. [`https | amqps | mqtt | amqps_ws`]: For example, amqps_ws (AMQP over WebSocket)
-
-4. [Path to certificate to enable 1-way authentication]: For example, `azure-iot-sdk-c\tree\master\certs\ms.der` **optional argument**
-
-Path to certificate is an **optional** argument and would be needed in case you want to point it to the local copy of the Server side certificate. Please note that this option is used by client for validating Root CA sent by Azure IoT Hub Server as part of TLS handshake. It is for 1-way TLS authentication and is **not** for specifying client side certificate (2-way TLS authentication).
-
-## Next Steps
-To learn how to create a Java application that communicates with an IoT hub from scratch, see [Get started with Azure IoT Hub for Java][how-to-build-a-java-app-from-scratch].
-
-## Documentation
-
-The documentation can be found [here](https://azure.github.io/azure-iot-sdks/java/device/api_reference/index.html).
 
 [devbox-setup]: java-devbox-setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
