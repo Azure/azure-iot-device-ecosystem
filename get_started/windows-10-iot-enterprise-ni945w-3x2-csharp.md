@@ -20,7 +20,7 @@ Run a simple Csharp sample on NI945W-3X2 device running Windows 10 IoT Enterpris
 
 **About this document**
 
-This document describes how to connect F610 device running Windows 10 IoT Enterprise with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect NI945W-3X2 device running Windows 10 IoT Enterprise with Azure IoT SDK. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
