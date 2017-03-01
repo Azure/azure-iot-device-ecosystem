@@ -8,8 +8,8 @@ Because of developers preferences and constrains, there are several ways you can
 
 ## Create an Azure IoT hub... 
 * ... [using the Azure portal]
-* ... [using the Azure CLI 2.0]  (Python command line)
-* ... [using the Azure CLI 1.0]  (Node.js command line)
+* ... [using the Azure CLI 2.0]  - Python command line
+* ... [using the Azure CLI 1.0]  - Node.js command line
 * ... [using PowerShell and a resource manager template]
 * ... [using C# and a resource manager template]
 * ... [using C# and the resource provider REST APIs]
