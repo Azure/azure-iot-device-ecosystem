@@ -1,7 +1,7 @@
---
+---
 platform: windows 10 professional
 device: bwd051
-language: Csharp
+language: csharp
 ---
 
 Run a simple Csharp sample on BWD051 device running Windows 10 Professional
