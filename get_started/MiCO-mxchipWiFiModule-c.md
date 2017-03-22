@@ -1,6 +1,6 @@
 ---
 platform: MiCO
-device: mxchip wifi module board(MiCOKit3239/MiCOKit3165/MiCOKit3166)
+device: mxchip wifi module board(MiCOKit3239/MiCOKit3166)
 language: c
 ---
 
@@ -15,7 +15,6 @@ Run a simple C sample on supported MiCOKit device running MiCO
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
 
-<a name="Introduction"/>
 # Introduction
 
 **About this document**
@@ -23,17 +22,23 @@ Run a simple C sample on supported MiCOKit device running MiCO
 This document describes how to connect supported MiCOKit device running MiCO with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
--   Build and deploy Azure IoT SDK using [azure-iot-sdk-c-MiCO-DEMO](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/AzureForMiCO-SDK/demos/azureIotclient/mqtt) on supported device
--	Validate the sample using secureCRT-serial-debug-tool and Device-Explorer
+-   Build and deploy Azure IoT SDK using [azure-iot-c-sdk-mico](https://github.com/zhaojuntao/azure-iot-c-sdk-mico) on supported device
+-	Validate the sample using secureCRT-serial-debug-tool and Device-Explorer-Twin
 
 **About the MiCOKit**
 
 MiCOKit board is ShangHai MXCHIP's development kits for developer and engineer to fast connect the iot internet.
 Static state show:
 
-![](./media/Azure--iothubmico-setup/MiCOKit development kit01.png)
+-   MXCHIP's WiFi module picture
 
-![](./media/Azure--iothubmico-setup/MiCOKit development kit02.jpg)
+![](./media/Azure--iothubmico-setup/MXCHIP-EMW3239-E.jpg)
+
+-   MXCHIP's development kits picture
+
+![](./media/Azure--iothubmico-setup/MiCOKit_development_kit01.png)
+
+![](./media/Azure--iothubmico-setup/MiCOKit_development_kit02.jpg)
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
@@ -44,7 +49,7 @@ to ensure end to end understanding.
 You should have the following items ready before beginning the process:
 
 -   Computer with GitHub installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) and [azure-iot-sdk-c-MiCO-DEMO](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/AzureForMiCO-SDK/demos/azureIotclient/mqtt) GitHub
+    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) and [azure-iot-c-sdk-mico](https://github.com/zhaojuntao/azure-iot-c-sdk-mico) GitHub
     public repository.
 -   Required hardware:
 	-	Prepare [mxchip wifi module board](http://www.mxchip.com/product/wifi),for example MiCOKit3239.Please submit Sample application information on [mico.io](http://bbs.mico.io/),if you have not a mxchip wifi module board.
@@ -59,7 +64,7 @@ You should have the following items ready before beginning the process:
 
 -   Install the latest MiCoderIDE software on your computer by
 following the instructions in the [MiCO开发者中心](http://developer.mico.io/docs/13).
--   When the installation process is complete, the MiCoderIDE software have cotain latest MiCO SDK.You need to add azureIotclient files to MiCOderIDE project explorer's demos directory, you can directly copy [“demo/azureIotclient” files](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/AzureForMiCO-SDK/demos/azureIotclient) here.And you need to add [“libraries/azureiot” files](https://github.com/zhaojuntao/azure-iot-sdk-c/tree/master/AzureForMiCO-SDK/libraries/azureiot) to MiCOderIDE project explorer's libraries directory.
+-   When the installation process is complete, the MiCoderIDE software have cotain latest MiCO SDK.You need to add azureIotclient files to MiCOderIDE project explorer's demos directory, you can directly copy [“demos\application\azure\azure_iothub_mqtt_demo” files](https://github.com/zhaojuntao/azure-iot-c-sdk-mico/tree/master/demos/application/azure/azure_iothub_mqtt_demo) here.And you need to add [“libraries\protocols\azure” files](https://github.com/zhaojuntao/azure-iot-c-sdk-mico/tree/master/libraries/protocols/azure) to MiCOderIDE project explorer's libraries directory.
 
   ![](./media/Azure--iothubmico-setup/micoderIDE01.png)
 
@@ -80,3 +85,7 @@ following the instructions in the [MiCO开发者中心](http://developer.mico.io
 [setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../../setup_iothub.md
 [lnk-manage-iot-hub]: ../../manage_iot_hub.md
+
+
+
+
