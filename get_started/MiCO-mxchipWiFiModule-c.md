@@ -36,7 +36,7 @@ Static state show:
 
 -   MXCHIP's development kits picture
 
-![](./media/Azure--iothubmico-setup/MiCOKit_development_kit01.jpg)
+![](./media/Azure--iothubmico-setup/MiCOKit_development_kit01.png)
 
 ![](./media/Azure--iothubmico-setup/MiCOKit_development_kit02.jpg)
 
