@@ -1,6 +1,6 @@
 ---
-platform: {enter the OS name running on device}
-device: {enter your device name here}
+platform: Ubuntu
+device: ADLE3800PC
 language: c
 ---
 
@@ -14,7 +14,6 @@ Run a simple C sample on {enter your device name here} device running {enter the
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
--   [Tips](#tips)
 
 # Instructions for using this template
 
@@ -28,7 +27,7 @@ Run a simple C sample on {enter your device name here} device running {enter the
 
 **About this document**
 
-This document describes how to connect {enter your device name here} device running {enter the OS name running on device} with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect ADLE3800PC device running Ubuntu with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -46,7 +45,7 @@ You should have the following items ready before beginning the process:
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+-   Install Ubuntu on [ADLE3800PC](http://www.adl-usa.com/product/adle3800pc/)
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
@@ -57,25 +56,12 @@ You should have the following items ready before beginning the process:
 -   Open a PuTTY session and connect to the device.
 
 -   Install the prerequisite packages for the Microsoft Azure IoT Device SDK for C by issuing the following commands from the command line on your board:
-{{***Keep the command set based on your OS and remove the rest.***}}
-
-    {{**Debian or Ubuntu**}}
 
         sudo apt-get update
 
         sudo apt-get install -y curl libcurl4-openssl-dev uuid-dev uuid g++ make cmake git unzip openjdk-7-jre
 
-    {{**Fedora**}}
-
-        sudo dnf check-update -y
-
-        sudo dnf install libcurl-devel openssl-devel libuuid-devel uuid-devel gcc-c++ make cmake git unzip java-1.7.0-openjdk
-
-    {{**Any Other Linux OS**}}
-
-        Write equivalent commands on the target OS
-
-    {{***If any other software is required, please specify here the command(s) for installing same.***}}
+- Note: This setup process requires cmake version 2.8.12 or higher. This library also requires gcc version 4.9 or higher.
 
 -   Download the Microsoft Azure IoT Device SDK for C to the board by issuing the following command on the board::
 
