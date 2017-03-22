@@ -33,7 +33,7 @@ Static state show:
 
 -   MXCHIP's WiFi module picture
 
-![](./media/Azure--iothubmico-setup/MXCHIP-EMW3239-E.jpg)
+![](./../../get_started/media/Azure--iothubmico-setup/MXCHIP-EMW3239-E.jpg)
 
 -   MXCHIP's development kits picture
 
