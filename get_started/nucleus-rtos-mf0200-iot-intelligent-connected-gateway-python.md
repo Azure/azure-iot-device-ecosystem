@@ -1,10 +1,10 @@
 ---
 platform: nucleus rtos
 device: mf0200 iot intelligent connected gateway
-language: python
+language: c
 ---
 
-Run a simple Python sample on MF0200 IoT Intelligent Connected Gateway device running Nucleus RTOS
+Run a simple C sample on MF0200 IoT Intelligent Connected Gateway device running Nucleus RTOS
 ===
 ---
 
