@@ -36,9 +36,9 @@ Static state show:
 
 -   MXCHIP's development kits picture
 
-![](./media/Azure--iothubmico-setup/MiCOKit development kit01.png)
+![](./media/Azure--iothubmico-setup/MiCOKit_development_kit01.jpg)
 
-![](./media/Azure--iothubmico-setup/MiCOKit development kit02.jpg)
+![](./media/Azure--iothubmico-setup/MiCOKit_development_kit02.jpg)
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites

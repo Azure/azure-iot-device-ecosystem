@@ -31,9 +31,15 @@ This document describes how to connect supported MiCOKit device running MiCO wit
 MiCOKit board is ShangHai MXCHIP's development kits for developer and engineer to fast connect the iot internet.
 Static state show:
 
-![](./../../get_started/media/Azure--iothubmico-setup/MiCOKit development kit01.png)
+-   MXCHIP's WiFi module picture
 
-![](./../../get_started/media/Azure--iothubmico-setup/MiCOKit development kit02.jpg)
+![](./media/Azure--iothubmico-setup/MXCHIP-EMW3239-E.jpg)
+
+-   MXCHIP's development kits picture
+
+![](./../../get_started/media/Azure--iothubmico-setup/MiCOKit_development_kit01.jpg)
+
+![](./../../get_started/media/Azure--iothubmico-setup/MiCOKit_development_kit02.jpg)
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
