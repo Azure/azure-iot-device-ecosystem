@@ -35,7 +35,7 @@ Before executing any of the steps below, read through each process, step by step
 You should have the following items ready before beginning the process:
 
 -   Computer with GitHub installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub public repository.
 -   SSH client, such as [PuTTY](http://www.putty.org/), so you can access the
     command line.
 -   Required hardware to certify.
@@ -90,7 +90,7 @@ To run DeviceExplorer tool, use following configuration string as described in [
     f. Save this information in Notepad. You will need this information in
     later steps.
 
-***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) to provision your device and get its credentials.
+***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) to provision your device and get its credentials.
 
 <a name="Step_3"></a>
 # Step 3: Build and Validate the sample using C client libraries
@@ -100,7 +100,7 @@ To run DeviceExplorer tool, use following configuration string as described in [
 
 Following document provide guidance on how to port the C Internet of Things (IoT) client library to platforms not supported out of the box. The document does cover the specifics of any particular platform.
 
-<https://github.com/Azure/azure-iot-sdks/blob/master/c/doc/porting_guide.md>
+<https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/porting_guide.md>
 
 <a name="Step_3_2"></a>
 ## 3.2 Run and Validate the Samples
@@ -149,7 +149,7 @@ Package the following artifacts from your device:
 
 3.  All the screenshots that belong to "**Receive messages from IoT Hub**" section.
 
-4.  Create a document that explains how to run the sample with your hardware (explicitly highlighting the new steps for customers). As a guideline on how the instructions should look please refer the examples published on GitHub repository [here](<https://github.com/Azure/azure-iot-sdks/tree/master/doc/get_started>).
+4.  Create a document that explains how to run the sample with your hardware (explicitly highlighting the new steps for customers). As a guideline on how the instructions should look please refer the examples published on GitHub repository [here](<https://github.com/neeraj-khanna/azure-iot-device-ecosystem/tree/master/get_started>).
 
 <a name="Step_4_2"></a>
 ## 4.2 Share with the Azure IoT Certification team
