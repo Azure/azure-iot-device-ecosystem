@@ -168,37 +168,47 @@ In this section we will use the [Device Explorer](https://github.com/Azure/azure
 
 4.  Verify that the confirmation messages show an OK. If not, then you may have incorrectly copied the device hub connection information. The following screenshots show the output from the default application that is used for the device certification.
 
-    **If using AMQP protocol:**
-    ![SampleAMQP\_result\_terminal](images/3_3_1_02.png)
+**If using AMQP protocol:**
 
-    **If using HTTP protocol:**
-    ![SampleHTTP\_result\_terminal](images/3_3_1_03.png)
+![SampleAMQP\_result\_terminal](images/3_3_1_02.png)
 
-    **If using MQTT protocol:**
-    ![SampleMQTT\_result\_terminal](images/3_3_1_09.png)
+**If using HTTP protocol:**
 
-    **If using WebSocket with AMQP protocol:**
-    ![SampleAMQPWS\_result\_terminal](images/terminal_amqps_ws_send_event.png)
+![SampleHTTP\_result\_terminal](images/3_3_1_03.png)
+
+**If using MQTT protocol:**
+
+![SampleMQTT\_result\_terminal](images/3_3_1_09.png)
+
+**If using WebSocket with AMQP protocol:**
+
+![SampleAMQPWS\_result\_terminal](images/terminal_amqps_ws_send_event.png)
 	
-    **If using WebSocket with MQTT protocol:**
-    ![SampleMQTTWS\_result\_terminal](images/terminal_mqtt_ws_send_event.png)
+**If using WebSocket with MQTT protocol:**
+
+![SampleMQTTWS\_result\_terminal](images/terminal_mqtt_ws_send_event.png)
 
 Explorer should show that IoT Hub has successfully received data sent by sample test. The following screenshots show the output from the default application that is used for the device certification.
 
-   **If using AMQP protocol:**
-    ![SampleAMQP\_result\_DeviceExplorer](images/3_3_1_04.png)
+**If using AMQP protocol:**
 
-   **If using HTTP protocol:**
-   ![SampleHTTP\_result\_DeviceExplorer](images/3_3_1_05.png)
+![SampleAMQP\_result\_DeviceExplorer](images/3_3_1_04.png)
 
-   **If using MQTT protocol:**
-  ![SampleMQTT\_result\_DeviceExplorer](images/3_3_1_10.png)
+**If using HTTP protocol:**
 
-   **If using WebSocket with AMQP protocol:**
-    ![SampleAMQPWS\_result\_DeviceExplorer](images/device_explorer_amqp_ws_message_received.png)
+![SampleHTTP\_result\_DeviceExplorer](images/3_3_1_05.png)
+
+**If using MQTT protocol:**
+
+![SampleMQTT\_result\_DeviceExplorer](images/3_3_1_10.png)
+
+**If using WebSocket with AMQP protocol:**
+
+![SampleAMQPWS\_result\_DeviceExplorer](images/device_explorer_amqp_ws_message_received.png)
 	
-   **If using WebSocket with MQTT protocol:**
-    ![SampleMQTTWS\_result\_DeviceExplorer](images/device_explorer_mqtt_ws_message_received.png)
+**If using WebSocket with MQTT protocol:**
+
+![SampleMQTTWS\_result\_DeviceExplorer](images/device_explorer_mqtt_ws_message_received.png)
 
 <a name="Step3-2"></a>
 ## 3.2 Receive messages from IoT Hub
@@ -215,20 +225,25 @@ Explorer should show that IoT Hub has successfully received data sent by sample 
 
 You should be able to see the command received in the console window for the client sample.
 
-   **If using AMQP protocol:**
-    ![MessageSend\_terminal](images/3_3_1_07.png)
+**If using AMQP protocol:**
 
-   **If using HTTP protocol:**
-    ![MessageSend\_terminal](images/3_3_1_08.png)
+![MessageSend\_terminal](images/3_3_1_07.png)
 
-   **If using MQTT protocol:**
-    ![MessageSend\_terminal](images/3_3_1_11.png)
+**If using HTTP protocol:**
 
-   **If using WebSocket with AMQP protocol:**
-    ![MessageSend\_terminal](images/terminal_amqp_ws_message_received.png)
+![MessageSend\_terminal](images/3_3_1_08.png)
+
+**If using MQTT protocol:**
+
+![MessageSend\_terminal](images/3_3_1_11.png)
+
+**If using WebSocket with AMQP protocol:**
+
+![MessageSend\_terminal](images/terminal_amqp_ws_message_received.png)
 	
-   **If using WebSocket with MQTT protocol:**
-    ![MessageSend\_terminal](images/terminal_mqtt_ws_message_received.png)
+**If using WebSocket with MQTT protocol:**
+
+![MessageSend\_terminal](images/terminal_mqtt_ws_message_received.png)
 
 <a name="Step"></a>
 # Step 4: Verify that your sample works with our IoT tutorials
@@ -289,11 +304,11 @@ Package following artifacts from your device:
 1.  Go to [Partner Dashboard](<https://catalog.azureiotsuite.com/devices>).
 2.  Click on Upload icon at top-right corner of your kit.
 
-    ![Share\_Results\_upload\_icon](images/4_2_01.png)
+![Share\_Results\_upload\_icon](images/4_2_01.png)
 
 3.  This will open an upload dialog. Browse your file(s) by clicking **Upload** button.
 
-    ![Share\_Results\_upload\_dialog](images/4_2_02.png)
+![Share\_Results\_upload\_dialog](images/4_2_02.png)
 
     You can upload multiple files for same device.
 
