@@ -1,10 +1,10 @@
 ---
-platform: Arduino
-device: ReSpeaker Core
+platform: openwrt
+device: linkit smart 7688 duo
 language: c
 ---
 
-Run a simple C sample on ReSpeaker Core device running Arduino
+Run a simple C sample on LinkIt Smart 7688 Duo device running OpenWrt
 ===
 ---
 
@@ -16,13 +16,12 @@ Run a simple C sample on ReSpeaker Core device running Arduino
 -   [Step 3: Build and Run the Sample](#Build)
 -   [Tips](#tips)
 
-
 <a name="Introduction"></a>
 # Introduction
 
 **About this document**
 
-This document describes how to connect ReSpeaker Core device running ReSpeaker Core with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect LinkIt Smart 7688 Duo device running OpenWrt with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -32,15 +31,15 @@ This document describes how to connect ReSpeaker Core device running ReSpeaker C
 
 You should have the following items ready before beginning the process:
 
- 1.1 Set up the ubuntu x86 machine (for cross compiling)
+-    1.1 Set up the ubuntu x86 machine (for cross compiling)
     1.2 Create an Azure IoT hub, install DeviceExplorer tool, add a IoT devicce
-    1.3 Hardware - ReSpeaker - https://www.seeedstudio.com/ReSpeaker-Core-Based-On-MT7688-and-OpenWRT-p-2716.html
+    1.3 Hardware - LinkIt Smart 7688 Duo - https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html
 
 
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
-2.1 Use PUTTY tool connect ReSpeaker to a usable network, can make reference to this wiki - https://github.com/respeaker/get_started_with_respeaker
+   2.1 Use PUTTY tool connect LinkIt Smart 7688 Duo to a usable network, can make reference to this wiki - http://wiki.seeed.cc/LinkIt_Smart_7688_Duo/
 
 
 <a name="Build"></a>
@@ -120,7 +119,7 @@ You should have the following items ready before beginning the process:
 
         3.4.1 Use DeviceExplorer send message
 		
-			"Message amqp send to ReSpeaker" or "Message http send to ReSpeaker"
+			"Message amqp send to MT7688" or "Message http send to MT7688"
 			
 <a name="tips"></a>
 # Tips
