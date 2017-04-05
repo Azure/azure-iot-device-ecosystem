@@ -1,10 +1,10 @@
 ---
 platform: openwrt
-device: linkit smart 7688
+device: linkit smart 7688 duo
 language: c
 ---
 
-Run a simple C sample on LinkIt Smart 7688  device running OpenWrt
+Run a simple C sample on LinkIt Smart 7688 Duo device running OpenWrt
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple C sample on LinkIt Smart 7688  device running OpenWrt
 
 **About this document**
 
-This document describes how to connect LinkIt Smart 7688  device running OpenWrt with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect LinkIt Smart 7688 Duo device running OpenWrt with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -31,23 +31,22 @@ This document describes how to connect LinkIt Smart 7688  device running OpenWrt
 
 You should have the following items ready before beginning the process:
 
-  1.1 Set up the ubuntu x86 machine (for cross compiling)
+    1.1 Set up the ubuntu x86 machine (for cross compiling)
     1.2 Create an Azure IoT hub, install DeviceExplorer tool, add a IoT devicce
-    1.3 Hardware - LinkIt Smart 7688 - https://www.seeedstudio.com/LinkIt-Smart-7688-p-2573.html
+    1.3 Hardware - LinkIt Smart 7688 Duo - https://www.seeedstudio.com/LinkIt-Smart-7688-Duo-p-2574.html
 
 
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
-  2.1 Use PUTTY tool connect LinkIt Smart 7688 to a usable network, can make reference to this wiki - http://wiki.seeedstudio.com/wiki/LinkIt_Smart_7688
-
+   2.1 Use PUTTY tool connect LinkIt Smart 7688 Duo to a usable network, can make reference to this wiki - http://wiki.seeed.cc/LinkIt_Smart_7688_Duo/
 
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
 
 <a name="Load"></a>
-    3.1 Build SDK on ubuntu machine
+  3.1 Build SDK on ubuntu machine
     
         3.1.1 Install cmake and gcc
         
