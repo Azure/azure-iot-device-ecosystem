@@ -5,7 +5,7 @@ Raspberry Pi to Cloud kit running Raspbian Jessie
 # Table of Contents
 
 -   Instructions for using this template
--   {Enter your kit name here} kit
+-   Raspberry Pi to Cloud kit
 -   Connect the sensors
 -   Build and Run the sample
 -   Send Device Events to IoT Hub
