@@ -53,9 +53,9 @@ You should have the following items ready before beginning the process:
 -   Select flattened PLC hierarchy.
 -   Set the MQTT payload format string:
 
-´´´
+```
 {"HostName":"Softing","MonitoredItem":{"Id":"s=@ITEM@","Uri":"http://industrial.softing.com/echocollect"},"Value":{"Value":"@VALUE@","SourceTimestamp":"@TIME@","ServerTimestamp":"@TIME@","quality":"@QUALITY@"}}
-´´´
+```
 
 -   Select QoS0 or QoS1
 -   Set the minimum sampling intervall as needed by your application. *ATTENTION:* The PLC data would be sampled with this rate, which could cause a huge ammount of messages to the Azure IoT hub!
