@@ -41,21 +41,27 @@ You should have the following items ready before beginning the process:
 -   Login as `administrator` or `itadmin`.
 -   Navigate to the `MQTT Broker configuration` page, as in the screen shot below.
 ![firstMqttpage](media/uagate-mqtt1.png)
--   On the MQTT Broker Configuration page you need to enter the following:
--      The URI of your Azure IoT hub for MQTT connections. In the screenshot above: `IoT-Hub-paid-S1.azure-devices.net`.
--      The port number for secure MQTT connections: 8883.
--      The IoT-hub device-id of your device as client id. In the screenshot above the device-id is "uagate".
--      As user name you need to enter the name of your Azure IoT hub, ´.azure-devices.net/´ and the device-id. In the screenshot above: ´IoT-Hub-paid-S1.azure-devices.net/echocollect´.
--      You need to enter the SAS token, which you have created with the deviceExplorer for your device.
-       You need to enter/copy the part after the ´SharedAccessSignature=´ part as password!
+
+On the MQTT Broker Configuration page you need to enter the following:
+-   The URI of your Azure IoT hub for MQTT connections.
+    In the screenshot above: `IoT-Hub-paid-S1.azure-devices.net`.
+-   The port number for secure MQTT connections: 8883.
+-   The IoT-hub device-id of your device as client id.
+    In the screenshot above the device-id is "uagate".
+-   As user name you need to enter the name of your Azure IoT hub, `.azure-devices.net/` and the device-id.
+    In the screenshot above: `IoT-Hub-paid-S1.azure-devices.net/uagate`.
+-   You need to enter the SAS token, which you have created with the deviceExplorer for your device.
+    You need to enter/copy the part after the ´SharedAccessSignature=´ part as password!
 -   Use the save button to write your configuration changes into the device.
 
 -   Navigate to the `MQTT Topic Settings` page, as in the screen shot below.
 ![firstMqttpage](media/uagate-mqtt2.png)
--   On the `MQTT Topic Settings` page you need to enter the following:
--      Set the MQTT Root Topic: `devices/<device-id>/messages/events`. In the screenshot above: `devices/uagate/messages/events`.
--      Select flattened PLC hierarchy.
--      Set the MQTT payload format string:
+
+On the `MQTT Topic Settings` page you need to enter the following:
+-   Set the MQTT Root Topic: `devices/<device-id>/messages/events`.
+In the screenshot above: `devices/uagate/messages/events`.
+-   Select flattened PLC hierarchy.
+-   Set the MQTT payload format string:
 
 ```
 {
@@ -73,8 +79,10 @@ You should have the following items ready before beginning the process:
 }
 ```
 
--       Select QoS0 or QoS1
--       Set the minimum sampling intervall as needed by your application. *ATTENTION:* The PLC data would be sampled with this rate, which could cause a huge ammount of messages to the Azure IoT hub!
+-   Select QoS0 or QoS1
+-   Set the minimum sampling intervall as needed by your application.
+    *ATTENTION:* The PLC data would be sampled with this rate,
+    which could cause a huge ammount of messages to the Azure IoT hub!
 -   Use the save button to write your configuration changes into the device.
 
 -   Navigate to the `MQTT Topic Selection` page.
