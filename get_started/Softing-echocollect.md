@@ -32,6 +32,7 @@ You should have the following items ready before beginning the process:
 
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
+-   Create a SAS token for your device as described in [iot-hub-mqtt-support](https://docs.microsoft.com/en-Us/azure/iot-hub/iot-hub-mqtt-support)
 -   echocollect (e or r-m) device configured to connect to PLCs.
 
 <a name="PrepareDevice"></a>
@@ -64,6 +65,8 @@ You should have the following items ready before beginning the process:
 
 <a name="tips"></a>
 # Tips
+
+Read [iot-hub-mqtt-support](https://docs.microsoft.com/en-Us/azure/iot-hub/iot-hub-mqtt-support) for further information how to publish data to IoT hub with protocoll MQTT.
 
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
