@@ -134,4 +134,4 @@ Use the breadboard and jumper wires to connect an LED and a BME280 to Pi as foll
 -   Integrate with Logic Apps to email user about data anomalies
 
 
-[lnk-manage-iot-hub]: ../../get_started/manage_iot_hub.md
+[lnk-manage-iot-hub]: ../../manage_iot_hub.md
