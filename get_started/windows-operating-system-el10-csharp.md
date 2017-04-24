@@ -62,13 +62,13 @@ Windows 10, Windows Server 2012R2, and Windows Server 2016. This multi-step proc
 -   Start a new instance of Visual Studio 2015,
 -   Open the **iothub_csharp_deviceclient.sln** solution in the `device` folder in the local copy of the repository,
 -   In Visual Studio, from Solution Explorer:
-    -   navigate to the **samples** folder,
-    -   In the **DeviceClientAmqpSample** project, open the ***Program.cs*** file,
-    -   Locate the following code in the file:
+    -    navigate to the **samples** folder,
+    -    In the **DeviceClientAmqpSample** project, open the ***Program.cs*** file,
+    -    Locate the following code in the file:
                private const string DeviceConnectionString = "<replace>";        
-    -   Replace `<replace>` with the connection string for the device,
-    -   right-click the **DeviceClientAmqpSample** project,
-    -   click ***Debug &minus;&gt; Start new instance*** to build and run the sample. The console displays messages as the application sends device-to-cloud messages to IoT Hub,
+    -    Replace `<replace>` with the connection string for the device,
+    -    right-click the **DeviceClientAmqpSample** project,
+    -    click ***Debug &minus;&gt; Start new instance*** to build and run the sample. The console displays messages as the application sends device-to-cloud messages to IoT Hub,
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application and how to send cloud-to-device messages to the application.
 
 [lnk-setup-iot-hub]: ../setup_iothub.md
