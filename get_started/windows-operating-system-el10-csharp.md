@@ -10,10 +10,10 @@ Run a simple sample on EL10 device running a Windows Operating System
 
 # Table of Contents
 
--   [Introduction](#Introduction)
--   [Step 1: Prerequisites](#Step-1:-Prerequisites)
--   [Step 2: Prepare the Device](#Step-2:-PrepareDevice)
--   [Step 3: Build and Run the Sample](#Step-3:-Build)
+-  [Introduction](#Introduction)
+-  [Step 1: Prerequisites](#Prerequisites)
+-  [Step 2: Prepare the Device](#PrepareDevice)
+-  [Step 3: Build and Run the Sample](#Build)
 
 <a name="Introduction"></a>
 # Introduction
@@ -28,7 +28,7 @@ Windows 10, Windows Server 2012R2, and Windows Server 2016. This multi-step proc
 -   Registering the IoT device, and
 -   Build and deploy Azure IoT SDK on device
 
-<a name="Step-1:-Prerequisites"></a>
+<a name="Prerequisites"></a>
 # Step 1: Prerequisites
 
 -    An EL10 device,
@@ -42,7 +42,7 @@ Windows 10, Windows Server 2012R2, and Windows Server 2016. This multi-step proc
 -   [Setup the IoT hub][lnk-setup-iot-hub],
 -   [Provision the device and get its credentials][lnk-manage-iot-hub]
 
-<a name="Step-2:-PrepareDevice"></a>
+<a name="PrepareDevice"></a>
 # Step 2: Prepare the Device
 ##  Install Windows Operating System on the EL10
 -   Obtain an iso for the specific operating system and copy it to the USB drive,
@@ -54,7 +54,7 @@ Windows 10, Windows Server 2012R2, and Windows Server 2016. This multi-step proc
 -   Save changes and restart the EL10,
 -   Follow the on screen instructions to install Windows Operating System on the EL10
 
-<a name="Step-3:-Build"></a>
+<a name="Build"></a>
 # Step 3: Build and Run the sample
 
 -   Clone the Azure IoT SDK,
