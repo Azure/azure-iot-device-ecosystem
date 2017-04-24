@@ -46,9 +46,9 @@ Windows 10, Windows Server 2012R2, and Windows Server 2016. This multi-step proc
 # Step 2: Prepare the Device
 ##  Install Windows Operating System on the EL10
 -   Obtain an iso for the specific operating system and copy it to the USB drive,
--   Make the USB drive bootable. Please follow this guide on how to create a bootable drive (<https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool>),
+-   Make the USB drive bootable. Follow this guide on how to create a bootable drive (<https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool>),
 -   Insert the bootable USB Drive from the previous step into the EL10,
--   Turn on the EL10 device and press the **Delete** key,
+-   Turn on the EL10 device and press the **Delete** key to enter the BIOS settings,
 -   Change the BIOS Boot option filter to **UEFI and Legacy**,
 -   Change the **Boot Option Priorities** to boot from the USB Drive,
 -   Save changes and restart the EL10,
@@ -58,18 +58,18 @@ Windows 10, Windows Server 2012R2, and Windows Server 2016. This multi-step proc
 # Step 3: Build and Run the sample
 
 -   Clone the Azure IoT SDK,
--   Clone the Azure Iot SDK CSharp,
--   Start a new instance of Visual Studio 2015,
+-   Clone the Azure Iot SDK CSharp,
+-   Start a new instance of Visual Studio 2015,
 -   Open the **iothub_csharp_deviceclient.sln** solution in the `device` folder in the local copy of the repository,
--   In Visual Studio, from Solution Explorer:
+-   In Visual Studio, from Solution Explorer:
     -    navigate to the **samples** folder,
-    -    In the **DeviceClientAmqpSample** project, open the ***Program.cs*** file,
-    -    Locate the following code in the file:
-               private const string DeviceConnectionString = "<replace>";        
-    -    Replace `<replace>` with the connection string for the device,
-    -    right-click the **DeviceClientAmqpSample** project,
-    -    click ***Debug &minus;&gt; Start new instance*** to build and run the sample. The console displays messages as the application sends device-to-cloud messages to IoT Hub,
--   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application and how to send cloud-to-device messages to the application.
+    -    In the **DeviceClientAmqpSample** project, open the ***Program.cs*** file,
+    -    Locate the following code in the file:
+                  private const string DeviceConnectionString = "<replace>";
+    -    Replace `<replace>` with the connection string for the device,
+    -    right-click the **DeviceClientAmqpSample** project,
+    -   click ***Debug &minus;&gt; Start new instance*** to build and run the sample. The console displays messages as the application sends device-to-cloud messages to IoT Hub,
+-   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application and how to send cloud-to-device messages to the application.
 
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
