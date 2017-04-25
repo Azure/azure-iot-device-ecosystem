@@ -190,5 +190,6 @@ You have now learned how to run a sample application that collects sensor data a
 
 
 [lnk-setup-iot-hub]: ../setup_iothub.md
+[lnk-manage-iot-hub]: ../manage_iot_hub.md
 [lnk-setup-devbox]: node-devbox-setup.md
 
