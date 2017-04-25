@@ -71,7 +71,7 @@ You should have the following items ready before beginning the process:
 
 -   Download the SDK 
 
-            git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+            git clone --recursive https://github.com/Azure/azure-iot-sdk-node.git
 
 
 <a name="BuildSamples"></a>
@@ -79,7 +79,7 @@ You should have the following items ready before beginning the process:
 
 -   To validate the source code run the following commands on Node.js command prompt on Device.
 
-        cd azure-iot-sdks\node
+        cd azure-iot-sdk-node\node
         build\dev-setup.cmd
         build\build.cmd > LogFile.txt
 
@@ -87,7 +87,7 @@ You should have the following items ready before beginning the process:
 
 -   Install npm package to run sample.
 
-      	cd \azure-iot-sdks\node\device\samples
+      	cd \azure-iot-sdk-node\node\device\samples
 
         **For AMQP Protocol:**
 
@@ -103,7 +103,7 @@ You should have the following items ready before beginning the process:
 
 -   Update the sample to set the protocol.
 
-            cd azure-iot-sdks\node\device\samples
+            cd azure-iot-sdk-node\node\device\samples
             notepad simple_sample_device.js
 
 -   This launches a text editor. Scroll down to the protocol information and find the below code:
@@ -121,7 +121,7 @@ You should have the following items ready before beginning the process:
 
 -   Save your changes and close the notepad.
 
--   Run the following command on Node.js command prompt before leaving the **azure-iot-sdks\node\device\samples** directory
+-   Run the following command on Node.js command prompt before leaving the **azure-iot-sdk-node\node\device\samples** directory
 
             npm link azure-iot-device
 
@@ -133,7 +133,7 @@ You should have the following items ready before beginning the process:
 
 -   Run the sample by issuing following command and verify that data has been successfully sent and received.
 
-        node azure-iot-sdks\node\device\samples\simple_sample_device.js
+        node azure-iot-sdk-node\node\device\samples\simple_sample_device.js
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 

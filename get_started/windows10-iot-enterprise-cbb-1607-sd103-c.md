@@ -30,7 +30,7 @@ This multi-step process includes:
 # Step 1: Prerequisites
 
 -   Computer with GitHub installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub
     private repository.
 -   SD103.
 -   Install any version of [Visual Studio 2015](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx).
@@ -50,7 +50,7 @@ This multi-step process includes:
 <a name="Step-3-Build"></a>
 # Step 3: Build and Run the sample
 
--   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdks) and save them to your local repository.
+-   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdk-c) and save them to your local repository.
 -   Start a new instance of Visual Studio 2015.
 -   Open the **iothub_client_sample_amqp.sln** solution in the `azureIotSDks\c\iothub_client\samples\iothub_client_sample_amqp\windows` folder in your local copy of the repository.
 -   In Visual Studio, from Solution Explorer, navigate to the **samples** folder.

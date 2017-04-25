@@ -71,7 +71,7 @@ You should have the following items ready before beginning the process:
 
 -   Download the Microsoft Azure IoT Device SDK to the OpenWare device by issuing the following command on the OpenWare device:
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
 
 -   Run following commands to build the SDK:
 
@@ -82,7 +82,7 @@ You should have the following items ready before beginning the process:
 
 - Navigate to samples folder by executing following command:
 
-        cd azure-iot-sdks/python/device/samples/
+        cd azure-iot-sdk-python/python/device/samples/
 
 -   Edit the following file using any text editor of your choice:
 

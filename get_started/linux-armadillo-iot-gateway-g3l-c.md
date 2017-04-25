@@ -85,11 +85,11 @@ You should have the following items ready before beginning the process:
 
 -   Download the Microsoft Azure IoT Device SDK for C to the board by issuing the following command on the ATDE:
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
 
 -	Edit/Create the following file using any text editor of your choice (this file is necessary to cross build the SDK):
 
-		azure-iot-sdks/c/build_all/linux/toolchain-armadillo.cmake
+		azure-iot-sdk-c/c/build_all/linux/toolchain-armadillo.cmake
 
 	-	Insert the following lines to the file:
 
@@ -101,7 +101,7 @@ You should have the following items ready before beginning the process:
 
 -	Edit the following file using any text editor of your choice (without this modification, the e2e-tests test cases will fail):
 
-		azure-iot-sdks/c/testtools/iothub_test/src/iothub_account.c
+		azure-iot-sdk-c/c/testtools/iothub_test/src/iothub_account.c
 
 	-	Make following modification aroud line 526 (at IoTHubAccount_GetEventhubListenName()):
 
@@ -129,15 +129,15 @@ You should have the following items ready before beginning the process:
 
     **For AMQP protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+        azure-iot-sdk-c/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
 
     **For HTTPS protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+        azure-iot-sdk-c/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
 
     **For MQTT protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
+        azure-iot-sdk-c/c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
 
 -   Find the following place holder for IoT connection string:
 
@@ -147,14 +147,14 @@ You should have the following items ready before beginning the process:
 
 -   Build the SDK using following command. (**This is cross building**; so after build is complete, all test cases will fail since it cannot execute the ARM binary on the x86 PC**)
 
-        sudo azure-iot-sdks/c/build_all/linux/build.sh -cl -fsigned-char --toolchain-file azure-iot-sdks/c/build_all/linux/toolchain-armadillo.cmake --skip-e2e-tests --skip-unittests
+        sudo azure-iot-sdk-c/c/build_all/linux/build.sh -cl -fsigned-char --toolchain-file azure-iot-sdk-c/c/build_all/linux/toolchain-armadillo.cmake --skip-e2e-tests --skip-unittests
 	-	You should remember the following two options:
 	-	(1) -cl -fsigned-char :without this option, one of the test case in unittests will fail
 	-	(2) --toolchain-file :for the cross build
 
 -	Then, modify the build.sh to keep the already built binaries (edit the file using any text editor of your choice):
 
-		azure-iot-sdks/c/build_all/linux/build.sh
+		azure-iot-sdk-c/c/build_all/linux/build.sh
 
 	- comment out the line 95 and 96:
 
@@ -163,15 +163,15 @@ You should have the following items ready before beginning the process:
 
 -   Then, Build the SDK using following command again. 
 
-        sudo azure-iot-sdks/c/build_all/linux/build.sh -cl -fsigned-char --toolchain-file azure-iot-sdks/c/build_all/linux/toolchain-armadillo.cmake
+        sudo azure-iot-sdk-c/c/build_all/linux/build.sh -cl -fsigned-char --toolchain-file azure-iot-sdk-c/c/build_all/linux/toolchain-armadillo.cmake
 
 
 ### 3.1.1 Copy the built image to the device:
 
 
--	At first, archive the two directory (azure-iot-sdks/ and cmake/):
+-	At first, archive the two directory (azure-iot-sdk-c/ and cmake/):
 
-		$ tar cvf azure-iot-sdks.tar ./azure-iot-sdks
+		$ tar cvf azure-iot-sdk-c.tar ./azure-iot-sdk-c
 		$ su
 		# cd
 		# tar cvf cmake.tar ./cmake
@@ -179,13 +179,13 @@ You should have the following items ready before beginning the process:
 
 -	Copy above two archives to the device via network:
 
-		scp azure-iot-sdks.tar atmark@{device's IP address}:~/work/IoT_SDK/
+		scp azure-iot-sdk-c.tar atmark@{device's IP address}:~/work/IoT_SDK/
 		sudo scp /root/cmake.tar atmark@{device's IP address}:~/work/IoT_SDK/
 
 -	On the device, extract the archive and run the build.sh to execute SDK's test cases.
 
 		$ cd ~/work/IoT_SDK
-		$ tar xvf ./azure-iot-sdks.tar
+		$ tar xvf ./azure-iot-sdk-c.tar
 		$ su
 		# cd
 		# tar xvf ~atmark/work/IoT_SDK/cmake.tar
@@ -193,11 +193,11 @@ You should have the following items ready before beginning the process:
 
 -	Then, open the deviceparams.txt to edit and set environment variables (edit the file using any text editor of your choice):
 
-		azure-iot-sdks/tools/iot_hub_e2e_tests_params/iot_device_params.txt
+		azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/iot_device_params.txt
 
 -	Set environment variables by running following command on your device:
 
-		cd ./azure-iot-sdks/tools/iot_hub_e2e_tests_params/
+		cd ./azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/
 		chmod +x setiotdeviceparametersfore2etests.sh
 		sudo ./setiotdeviceparametersfore2etests.sh
 
@@ -207,7 +207,7 @@ You should have the following items ready before beginning the process:
 
 		$ cd work/IoT_SDK
 		$ su
-		# ./azure-iot-sdks/c/build_all/linux/build.sh -cl -fsigned-char | tee LogFile.txt
+		# ./azure-iot-sdk-c/c/build_all/linux/build.sh -cl -fsigned-char | tee LogFile.txt
 
 
 ## 3.2 Send Device Events to IoT Hub:
@@ -216,15 +216,15 @@ You should have the following items ready before beginning the process:
 
     **If using AMQP protocol:**
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
+        azure-iot-sdk-c/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
 
     **If using HTTPS protocol:**
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
+        azure-iot-sdk-c/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
 
     **If using MQTT protocol:**
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt
+        azure-iot-sdk-c/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 

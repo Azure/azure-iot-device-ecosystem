@@ -57,7 +57,7 @@ You should have the following items ready before beginning the process:
 -   Connect the board to your network using an Ethernet cable. This step is required, as the sample depends on internet access.
 
 ## 3.2 Build the Samples
--   Start a new instance of Visual Studio 2015. Open the **iothub_csharp_client.sln** solution (/azure-iot-sdks/csharp) from your local copy of the repository.
+-   Start a new instance of Visual Studio 2015. Open the **iothub_csharp_client.sln** solution (/azure-iot-sdk-csharp/csharp) from your local copy of the repository.
 
 -   In Visual Studio, from **Solution Explorer**, navigate to the **UWPSample(Universal Windows)** project.
  

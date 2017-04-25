@@ -68,7 +68,7 @@ The Python iothub_client supports python versions 2.7.x, 3.4.x or 3.5.x. Know th
 
 -   Download the Microsoft Azure IoT Device SDK to the board by issuing the following command on the board::
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
 
 -   Run following commands to build the SDK:
 
@@ -79,7 +79,7 @@ The Python iothub_client supports python versions 2.7.x, 3.4.x or 3.5.x. Know th
 
 - Navigate to samples folder by executing following command:
 
-        cd azure-iot-sdks/python/device/samples/
+        cd azure-iot-sdk-python/python/device/samples/
 
 -   Edit the following file using any text editor of your choice:
     

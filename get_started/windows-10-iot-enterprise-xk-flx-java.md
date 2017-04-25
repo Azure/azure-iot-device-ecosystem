@@ -115,9 +115,9 @@ Using Maven 3 is the recommended way to install Azure IoT device SDK for Java.
 
 1.  Download the SDK to the board by issuing the following command:
 
-        git clone https://github.com/Azure/azure-iot-sdks.git
+        git clone https://github.com/Azure/azure-iot-sdk-java.git
 
-2.  Verify that you now have a copy of the source code under the directory **azure-iot-sdks**.
+2.  Verify that you now have a copy of the source code under the directory **azure-iot-sdk-java**.
 
 3.  Run the following commands on device in sequence to build Azure IoT SDK.
 

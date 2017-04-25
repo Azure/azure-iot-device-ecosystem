@@ -31,7 +31,7 @@ This document describes how to connect Neuromeka BeagleBone Air (referred "BBAir
 You should have the following prerequisities ready to begin process:
 
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
+    [azure-iot-sdk-node](https://github.com/Azure/azure-iot-sdk-node) GitHub
     public repository.
 -   BeagleBone Air. (BBAir)
 -   SSH client on your desktop computer, such as [PuTTY](http://www.putty.org/). (You should access remotely the command line on the BBAir.)
@@ -70,18 +70,18 @@ If version is 0.12.x or greater, then skip next step of installing prerequisite 
         
 -   Download the SDK to the board by the following command in PuTTY:
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-node.git
 
 ## 3.2 Build the sample
 -   To validate the source code, Run the following commands on the device.
 
-        cd ~/azure-iot-sdks/node
+        cd ~/azure-iot-sdk-node/node
         build/dev-setup.sh
         build/build.sh | tee LogFile.txt
 
 -   Edit the below file using any text editor program:
 
-        cd ~/azure-iot-sdks/node/device/samples
+        cd ~/azure-iot-sdk-node/node/device/samples
 
     **For AMQP Protocol:**
 
@@ -89,7 +89,7 @@ If version is 0.12.x or greater, then skip next step of installing prerequisite 
 
 -   To update the sample, run the following command on device.
 
-        cd ~/azure-iot-sdks/node/device/samples
+        cd ~/azure-iot-sdk-node/node/device/samples
         nano simple_sample_device.js
 
 -   It will launch console-based text editor. Scroll down to the
@@ -105,7 +105,7 @@ If version is 0.12.x or greater, then skip next step of installing prerequisite 
 
 -   Replace the above placeholder to device connection string.
 
--   Run the following command before leaving the **~/azure-iot-sdks/node/device/samples** directory
+-   Run the following command before leaving the **~/azure-iot-sdk-node/node/device/samples** directory
 
         npm link azure-iot-device
 ## 3.3 Run the sample
@@ -114,7 +114,7 @@ If version is 0.12.x or greater, then skip next step of installing prerequisite 
 
 -   Run the sample by issuing following command:
 
-        node ~/azure-iot-sdks/node/device/samples/simple_sample_device.js
+        node ~/azure-iot-sdk-node/node/device/samples/simple_sample_device.js
 
 -   See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to read messages IoT Hub receives from the application.
 

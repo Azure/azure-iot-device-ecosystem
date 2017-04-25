@@ -52,7 +52,7 @@ You should have the following items ready before beginning the process:
 -	Connect the device to your network using a WiFi connection. This step is required, as the sample depends on internet access.
 
 ## 3.2 Build and Run the Samples
--	Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdks) and the sample programs and save them to your local repository.
+-	Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdk-csharp) and the sample programs and save them to your local repository.
 
 -	Start a new instance of Visual Studio 2015.
 

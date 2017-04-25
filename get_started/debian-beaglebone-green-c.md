@@ -32,7 +32,7 @@ This document describes how to connect BeagleBone Green device running Debian wi
 You should have the following items ready before beginning the process:
 
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks-c](https://github.com/Azure/azure-iot-sdk-c.git) GitHub
+    [azure-iot-sdk-c-c](https://github.com/Azure/azure-iot-sdk-c.git) GitHub
     public repository.
 -   [BeagleBone Green](http://beagleboard.org/Green).
 -   USB Mini cable.

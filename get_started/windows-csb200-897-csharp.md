@@ -32,7 +32,7 @@ This document describes how to connect CSB200-897 device running Windows 10 Ente
 
 You should have the following items ready before beginning the process:
 
--   Computer with GitHub installed and access to the [azure-iot-sdks GitHub](https://github.com/Azure/azure-iot-sdks) private repository.
+-   Computer with GitHub installed and access to the [azure-iot-sdk-csharp GitHub](https://github.com/Azure/azure-iot-sdk-csharp) private repository.
 -   Install any version of [Visual Studio 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). 
     Make sure you have following components selected:
     -   Programming Languages
@@ -65,7 +65,7 @@ You should have the following items ready before beginning the process:
 <a name="Build"></a>
 # Step 3: Build and Run the sample
 
--   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdks) and the sample programs and save them to your local repository.
+-   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdk-csharp) and the sample programs and save them to your local repository.
 -   Start a new instance of Visual Studio 2015.
 -   Open the **iothub_csharp_client.sln** solution in the `csharp\device` folder in your local copy of the repository.
 -   In Visual Studio, from Solution Explorer, navigate to the **samples** folder.

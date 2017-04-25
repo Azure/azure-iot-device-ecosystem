@@ -83,7 +83,7 @@ However, in the set-up purpose of the sample Azure IoT SDK run, they are not nec
     cd ~
     mkdir Source
     cd Source
-    git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+    git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
     ```
 
 -   Obtain RaspberryPi development package.
@@ -107,7 +107,7 @@ However, in the set-up purpose of the sample Azure IoT SDK run, they are not nec
 
 -   Create the required file for cross-compiling SDK at following location:
 
-        cd ~/Source/azure-iot-sdks/c/build_all/linux
+        cd ~/Source/azure-iot-sdk-c/c/build_all/linux
 
 -   Use any text editor and create the file named as **toolchain-rip.cmake**, and copy and paste the following content:
 
@@ -135,7 +135,7 @@ However, in the set-up purpose of the sample Azure IoT SDK run, they are not nec
 
 -   Edit the following file using any text editor of your choice:
 
-        ~/Sources/azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c 
+        ~/Sources/azure-iot-sdk-c/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c 
 
 -   Find the following place holder for IoT connection string:
 
@@ -145,11 +145,11 @@ However, in the set-up purpose of the sample Azure IoT SDK run, they are not nec
 
 -   Edit following file to set environment variables:
 
-        ~/Sources/azure-iot-sdks/tools/iot_hub_e2e_tests_params/iot_device_params.txt
+        ~/Sources/azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/iot_device_params.txt
 
 -   Set environment variables by running following command on your device:
 
-        cd ~/Sources/azure-iot-sdks/tools/iot_hub_e2e_tests_params/
+        cd ~/Sources/azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/
         chmod +x setiotdeviceparametersfore2etests.sh
         sudo ./setiotdeviceparametersfore2etests.sh
 
@@ -157,12 +157,12 @@ However, in the set-up purpose of the sample Azure IoT SDK run, they are not nec
 
 -   Build the SDK using following command.
 
-        cd ~/Source/azure-iot-sdks/c/build_all/linux 
+        cd ~/Source/azure-iot-sdk-c/c/build_all/linux 
         ./build.sh --toolchain-file toolchain-rpi.cmake --skip-unittests --no-amqp --no-mqtt -cl -D__STDC_NO_ATOMICS__ -cl --sysroot=$RPI_ROOT | tee ~/Sources/LogFile.txt       
 
 -   Copy the samples to Bitjoule Magic Box.
 
-        cd ~/Source/azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/
+        cd ~/Source/azure-iot-sdk-c/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/
         scp iothub_client_sample_http pi@<Bitjoule Magic Box>/home/pi/
 
     *Please specify the IP address of the Bitjoule Magic Box, which is displayed in its LCD screen, if LCD screen is not equipped, log in the console and check `ifconfig wlan0`*
