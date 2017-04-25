@@ -56,7 +56,7 @@ The following list shows the requirements that must be met by a 3rd-party kit, i
     e.g.
     Foo Bar Kit
     Microsoft Azure IoT Starter Kit
--   Includes the [Azure Certified for IoT logo] (https://catalogstorageprod.blob.core.windows.net/devicecatalogimageserver/microsoft-azure-certified.png) in a visible external location
+-   Includes the [Azure Certified for IoT logo](images/logo.png) in a visible external location
 
 **Kit contents**
 
@@ -74,7 +74,7 @@ Note: optionally, a kit can also include other items, (e.g. paper inserts, manua
 The following URLs need to be visible either in the external packaging or inside the box (e.g. in a paper insert, manual, etc)
 
 -   The URL to the kit web page
--   Microsoft Azure IoT Starter Kits URL
+-   Microsoft Azure IoT Starter Kits URL: [http://aka.ms/iotstarterkits](http://aka.ms/iotstarterkits)
 
 **Kit web page**
 
@@ -263,17 +263,16 @@ However, even if your kit does not have temperature and humidity sensors, then t
 
 Providing support for these tutorials is optional, however it will be a great addition to your kit.
 
-The URLs for the tutorials arev:
+The URLs for the tutorials are:
 
--   [Manage message exchanges between your device and IoT Hub using
-    iothub-explorer](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-explorer-cloud-device-messaging)
--   [Store data in Azure Storage](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-store-data-in-azure-table-storage)
--   [Visualize data using PowerBI](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi)
--   [Visualize data using Web Apps](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps)
--   Use Machine Learning to predict upcoming data
--   Use Device Management to control devices from the cloud
+-   [Manage cloud device messaging with iothub-explorer](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-explorer-cloud-device-messaging)
+-   [Save IoT Hub messages to Azure data storage](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-store-data-in-azure-table-storage)
+-   [Use Power BI to visualize real-time sensor data from Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi)
+-   [Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps)
+-   [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning)
+-   [Remote monitoring and notifications with ​​Logic ​​Apps](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps)
+-   [Device management with iothub-explorer](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-device-management-iothub-explorer)
     -   Note: For your application to support Device Management (DM), you will need to make additional changes that are not covered in this document. We suggest that you look at the DM tutorial, to understand how you can add DM support to your application. However, if you do not modify your application accordingly, then you should not provide links to this tutorial.
--   Integrate with Logic Apps to email user about data anomalies
 
 <a name="Step5"></a>
 # Step 5: Package and Share
@@ -288,9 +287,9 @@ Package following artifacts from your device:
 
 3.  All the screenshots that are above in "**Receive messages from IoT Hub**" section.
 
-4.  Send us a Pull Request with your code samples at [https://github.com/Azure/azure-iot-device-ecosystem/blob/master/iotcertification/kits/samples/&lt;companyname&gt;/&lt;kitname&gt;/](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/iotcertification/kits/samples/%3ccompanyname%3e/%3ckitname%3e/%20)
+4.  Send us a Pull Request with your code samples at [https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/&lt;companyname&gt;/&lt;kitname&gt;/](https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/%3ccompanyname%3e/%3ckitname%3e/%20)
     e.g.
-    <https://github.com/Azure/azure-iot-device-ecosystem/blob/master/iotcertification/kits/samples/contoso/iotdevkit/>
+    <https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/contoso/iotdevkit/>
 
 5.  Send us clear instructions of how to run these samples with your kit (explicitly highlighting the new steps for customers). Please use the template available [here](https://github.com/Azure/azure-iot-device-ecosystem/kits/getstarted/template-kits.md) to create your kit-specific instructions. These instructions will be     appended as a separate section at the bottom of the "Get Started" tutorial for the corresponding device.
 
