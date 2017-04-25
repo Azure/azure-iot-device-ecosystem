@@ -39,7 +39,7 @@ to ensure end to end understanding.
 You should have the following items ready before beginning the process:
 
 -   Computer with GitHub installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
+    [azure-iot-sdk-python](https://github.com/Azure/azure-iot-sdk-python) GitHub
     private repository.
 -   SSH client, such as [PuTTY](http://www.putty.org/), so you can access the
     command line.
@@ -59,7 +59,7 @@ Follow the instructions [here](https://account.windowsazure.com/signup?offer=ms-
 <a name="Step-2-Register"></a>
 # Step 2: Register Device
 
--   Follow the instructions [here](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) on how to provision your device and get its credentials.
+-   Follow the instructions [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) on how to provision your device and get its credentials.
 
 <a name="Step-3-Build"></a>
 # Step 3: Build and Validate the sample using Python libraries
@@ -107,10 +107,10 @@ This section walks you through building, deploying and validating the IoT Client
 
 -   Download the SDK to the board by issuing the following command in PuTTY:
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
 
 -   Verify that you now have a copy of the source code under the
-    directory ~/azure-iot-sdks.
+    directory ~/azure-iot-sdk-python.
 
 <a name="Step-3-2-Build"></a>
 ## 3.2 Build the samples
@@ -133,7 +133,7 @@ communication between your device and Azure IoT Hub. You will send messages to t
 
 -   Navigate to samples folder by executing following command:
 
-        cd azure-iot-sdks/python/device/samples/
+        cd azure-iot-sdk-python/device/samples/
 
 -   Run the following command on the device:
 
@@ -171,7 +171,7 @@ section. These will be needed in [Step 4](#Step-4-2-Share)
 
         python iothub_client_sample.py -p mqtt
 
--   See [Manage IoT Hub](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) to learn how to observe the messages IoT Hub receives from the application.
+-   See [Manage IoT Hub](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) to learn how to observe the messages IoT Hub receives from the application.
 
 -   Verify that the confirmation messages show an OK. If not, then you may have
     incorrectly copied the device connection string.
@@ -205,7 +205,7 @@ section. These will be needed in [Step 4](#Step-4-2-Share)
 
 ### 3.3.2 Receive messages from IoT Hub
 
--   See [Manage IoT Hub](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) to learn how to send cloud-to-device messages to the application.
+-   See [Manage IoT Hub](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) to learn how to send cloud-to-device messages to the application.
 
 -   You should be able to see the command received in the console window for the
     client sample.

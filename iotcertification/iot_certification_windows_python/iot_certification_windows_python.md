@@ -38,7 +38,7 @@ by step to ensure end to end understanding.
 
 You should have the following items ready before beginning the process:
 
--   Computer with GitHub installed and access to the [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+-   Computer with GitHub installed and access to the [azure-iot-sdk-python](https://github.com/Azure/azure-iot-sdk-python) GitHub public repository.
 -   Install Visual Studio 2015 and Tools. You can install any edition of Visual Studio, including the free Community edition.
 
 <a name="Step_1_Sign_Up"></a>
@@ -55,7 +55,7 @@ As part of the sign up process, you will receive the connection string.
 <a name="Step_2_Register"></a>
 # Step 2: Register Device
 
-- [Provision your device and get its credentials](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>)
+- [Provision your device and get its credentials](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>)
 
 <a name="Step_3_Build_and_Validate"></a>
 # Step 3: Build and Validate the Sample using Python Client Libraries 
@@ -78,7 +78,7 @@ Complete the following steps to set up your development environment:
 1. Download latest SDK using following command:
   
   ```
-  git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+  git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
   ```
 
 2. Install the latest x86 or x64 Python 2.7 client. The build needs a valid Python.exe in the path. Based on the active Python version (e.g. Python 2.7.11 x86 32bit) the build script choses the compiler.

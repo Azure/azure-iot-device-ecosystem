@@ -86,7 +86,7 @@ To run DeviceExplorer tool, follow the configuration strings as described in  [S
 
     f. Save this information in Notepad. You will need this information in later steps.
 
-***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) to provision your device and get its credentials.
+***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) to provision your device and get its credentials.
 
 <a name="Build"></a>
 # Step 3: Build and validate the sample using Node JS client libraries
@@ -111,9 +111,9 @@ This section walks you through building, deploying and validating the IoT Client
 
 -   Download the SDK to the board by issuing the following command in Termux app
 
-        git clone https://github.com/Azure/azure-iot-sdks.git
+        git clone https://github.com/Azure/azure-iot-sdk-node.git
 
--   Verify that you now have a copy of the source code under the directory ~/azure-iot-sdks.
+-   Verify that you now have a copy of the source code under the directory ~/azure-iot-sdk-node.
 
 <a name="BuildSamples"></a>
 ## 3.2 Build the samples
@@ -126,7 +126,7 @@ Replace the above placeholder with "IoT Hub Connection String" which you used in
 
 -   Run the below commands to build development environment
 
-        cd ~/azure-iot-sdks/node
+        cd ~/azure-iot-sdk-node
         sh build/dev-setup.sh
         sh build/build.sh | tee LogFile.txt
 
@@ -134,7 +134,7 @@ Replace the above placeholder with "IoT Hub Connection String" which you used in
 
 -   Go to samples.
 
-    cd ~/azure-iot-sdks/node/device/samples
+    cd ~/azure-iot-sdk-node/node/device/samples
 
 -   Install npm package to run sample.
 
@@ -178,7 +178,7 @@ Replace the above placeholder with "IoT Hub Connection String" which you used in
 
 -   Press Ctrl+X to exit nano.
 
--   Run the following command before leaving the **~/azure-iot-sdks/node/device/samples** directory
+-   Run the following command before leaving the **~/azure-iot-sdk-node/device/samples** directory
 
         npm link azure-iot-device
 
@@ -199,7 +199,7 @@ In this section you will run the Azure IoT client SDK samples to validate commun
 
 3.  Run the sample by issuing following command on Termux app:
 
-        node ~/azure-iot-sdks/node/device/samples/simple_sample_device.js
+        node ~/azure-iot-sdk-node/device/samples/simple_sample_device.js
 
 4.  Verify that data has been successfully sent and received. If any, then you may have incorrectly copied the device hub connection information.
 

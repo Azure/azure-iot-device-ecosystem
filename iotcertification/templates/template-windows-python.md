@@ -56,7 +56,7 @@ You should have the following items ready before beginning the process:
 
 -   Download latest SDK using following command:
 
-		git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+		git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
 
 - Ensure that the desired Python version is installed (2.7.x, 3.4.x or 3.5.x). Run python --version or python3 --version at the command line to check the version. 
 

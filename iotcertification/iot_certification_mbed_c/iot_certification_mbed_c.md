@@ -37,7 +37,7 @@ by step to ensure end to end understanding.
 You should have the following items ready before beginning the process:
 
 -   Computer with GitHub installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks)
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c)
     GitHub private repository
 -   SSH client, such as [PuTTY](http://www.putty.org/), so you can
     access the command line
@@ -91,7 +91,7 @@ To run DeviceExplorer tool, use following configuration string as described in [
 
     f. Save this information in Notepad. You will need this information in later steps.
 
-***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) to provision your device and get its credentials.
+***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) to provision your device and get its credentials.
 
 <a name="Step-3-Build"></a>
 # Step 3: Build and Validate the sample using C client libraries
@@ -115,12 +115,12 @@ This section walks you through building, deploying and validating the IoT Client
 ## 3.2  Build the samples
 
 1. Clone [GitHub
-    SDK](https://github.com/Azure/azure-iot-sdks.git) repository
+    SDK](https://github.com/Azure/azure-iot-sdk-c.git) repository
     to your machine.
 
 2.  Browse to the folder
 
-        /azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/mbed
+        /azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_amqp/mbed
 
 3.  Run the **mkmbedzip.bat** file. This will generate
     **iothub\_client\_sample\_amqp.zip** file in the same folder.
@@ -284,7 +284,7 @@ Package following artifacts from your device:
 3.  Send us clear instructions of how to run this sample with your hardware
     (explicitly highlighting the new steps for customers). As a
     guideline on how the instructions should look please refer the
-    examples published on github repository [here](<https://github.com/Azure/azure-iot-sdks/tree/master/doc/get_started>)
+    examples published on github repository [here](<https://github.com/Azure/azure-iot-device-ecosystem/tree/master/get_started>)
 
 <a name="Step-4-2-Share"></a>
 ## 4.2 Share package with Engineering Support

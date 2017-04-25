@@ -37,7 +37,7 @@ to ensure end to end understanding.
 You should have the following items ready before beginning the process:
 
 -   Computer with GitHub installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+    [azure-iot-sdk-java](https://github.com/Azure/azure-iot-sdk-java) GitHub public repository.
 -   SSH client, such as [PuTTY](http://www.putty.org/), so you can access the
     command line.
 -   Required hardware to certify.
@@ -93,7 +93,7 @@ To run DeviceExplorer tool, use following configuration string as described in
     f. Save this information in Notepad. You will need this information in
     later steps.
 
-***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) to provision your device and get its credentials.
+***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) to provision your device and get its credentials.
 
 <a name="Step_3"></a>
 # Step 3: Build and Validate the sample using Java client libraries
@@ -156,18 +156,18 @@ Using Maven 3 is the recommended way to install Azure IoT device SDK for Java.
 
 1.  Download the SDK to the board by issuing the following command in PuTTY:
 
-        git clone https://github.com/Azure/azure-iot-sdks.git
+        git clone https://github.com/Azure/azure-iot-sdk-java.git
 
-2.  Verify that you now have a copy of the source code under the directory **azure-iot-sdks**.
+2.  Verify that you now have a copy of the source code under the directory **azure-iot-sdk-java**.
 
 3.  Run the following commands on device in sequence to build Azure IoT SDK.
 
-        cd azure-iot-sdks/java/device
+        cd azure-iot-sdk-java/device
         mvn install
 
 4.  Above command will generate the compiled JAR files with all dependencies. This bundle can be found at:
 
-        azure-iot-sdks/java/device/iothub-java-client/target/iothub-java-client-{version}-with-deps.jar
+        azure-iot-sdk-java/device/iothub-java-client/target/iothub-java-client-{version}-with-deps.jar
 
 <a name="Step_3_2"></a>
 ## 3.2 Run and Validate the Samples
@@ -189,7 +189,7 @@ section. These will be needed in [Step 4](#Step_4_2).*
 
 3.  Navigate to the folder containing the executable JAR file for send event sample.
 
-        cd /azure-iot-sdks/java/device/samples/send-event/target
+        cd /azure-iot-sdk-java/device/samples/send-event/target
 
 4.  Run the sample by issuing following command.
 
@@ -256,7 +256,7 @@ section. These will be needed in [Step 4](#Step_4_2).*
 
 4.  Navigate to the folder containing the executable JAR file for the receive message sample.
 
-        cd /azure-iot-sdks/java/device/samples/handle-messages/target
+        cd /azure-iot-sdk-java/device/samples/handle-messages/target
      
 5.  Run the sample by issuing following command.
 

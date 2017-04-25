@@ -96,7 +96,7 @@ To run DeviceExplorer tool, follow the configuration strings as described in  [S
 
     f. Save this information in Notepad. You will need this information in later steps.
 
-***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) to provision your device and get its credentials.
+***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-sdk-node/blob/master/doc/manage_iot_hub.md>) to provision your device and get its credentials.
 
 <a name="Build"></a>
 # Step 3: Build and validate the sample using Node JS client libraries
@@ -122,14 +122,14 @@ This section walks you through building, deploying and validating the IoT Client
 	
 -   Download the SDK 
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-node.git
 
 <a name="BuildSamples"></a>
 ## 3.2 Build the samples
 
 -   To validate the source code run the following commands on Node.js command prompt on Device.
 
-        cd azure-iot-sdks\node
+        cd azure-iot-sdk-node
         build\dev-setup.cmd
         build\build.cmd > LogFile.txt
 
@@ -137,7 +137,7 @@ This section walks you through building, deploying and validating the IoT Client
 
 -   Install npm package to run sample.
 
-		cd \azure-iot-sdks\node\device\samples
+		cd \azure-iot-sdk-node\device\samples
 
     **For AMQP Protocol:**
 	
@@ -161,7 +161,7 @@ This section walks you through building, deploying and validating the IoT Client
 
 -   Update the sample to set the protocol.
 
-        cd azure-iot-sdks\node\device\samples
+        cd azure-iot-sdk-node\device\samples
         notepad simple_sample_device.js
 
 -   This launches a text editor. Scroll down to the protocol information and find the below code:
@@ -179,7 +179,7 @@ This section walks you through building, deploying and validating the IoT Client
 
 -   Save your changes and close the notepad.
 
--   Run the following command on Node.js command prompt before leaving the **azure-iot-sdks\node\device\samples** directory
+-   Run the following command on Node.js command prompt before leaving the **azure-iot-sdk-node\device\samples** directory
 
         npm link azure-iot-device
 
@@ -200,7 +200,7 @@ In this section you will run the Azure IoT client SDK samples to validate commun
 
 3.  Run the sample by issuing following command on Node.js command prompt
 
-        node azure-iot-sdks\node\device\samples\simple_sample_device.js
+        node azure-iot-sdk-node\device\samples\simple_sample_device.js
 	
 4.  Verify that data has been successfully sent. If not, then you may have incorrectly copied the device connection information.
 
