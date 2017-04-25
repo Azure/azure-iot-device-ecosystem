@@ -42,7 +42,7 @@ You should have the following items ready before beginning the process:
 # Step 2: Prepare your Device
 -   Setup OEM Netbiter SDK Cross-Development Toolchain, this will be used to cross compile Azure IoT SDK examples
 -   Run the environment setup script ( source environment-setup-cortexa8hf-vfp-neon-oe-linux-gnueabi), this will define many environmental variables that will be used later
--   create a cmake toolchain file, called toolchain-oemNetbiter.cmake, in the directory /azure-iot-sdks/c/build_all/linux/
+-   create a cmake toolchain file, called toolchain-oemNetbiter.cmake, in the directory /azure-iot-sdk-c/c/build_all/linux/
 -   The following is an example of toolchain-oemNetbiter.cmake
 
 ```
@@ -85,15 +85,15 @@ SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
     **For AMQP protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+        azure-iot-sdk-c/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
 
     **For HTTPS protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+        azure-iot-sdk-c/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
 
      **For MQTT protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_mqtt.c
+        azure-iot-sdk-c/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_mqtt.c
 
 -   Find the following place holder for IoT connection string:
 
@@ -134,17 +134,17 @@ SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
     #endif // USED_TRUSTED_CERTS // MBED_BUILD_TIMESTAMP
 ```    
 
--   Copy the cmake toolchain file to the following directory azure-iot-sdks/c/build_all/linux/   
--   Cross compile the SDK by executing build.sh in the directory azure-iot-sdks/c/build_all/linux/
+-   Copy the cmake toolchain file to the following directory azure-iot-sdk-c/c/build_all/linux/   
+-   Cross compile the SDK by executing build.sh in the directory azure-iot-sdk-c/c/build_all/linux/
     specify the toolchain file by adding the --toolchain-file parameter
 
         ./build.sh --toolchain-file toolchain-oemNetbiter.cmake
 
 
 -  If the builds are successfull, you will find the executables in the following directories:
-    ~/azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
-    ~/azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
-    ~/azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt
+    ~/azure-iot-sdk-c/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
+    ~/azure-iot-sdk-c/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
+    ~/azure-iot-sdk-c/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt
 
 -   Copy the executables to the Netibiter
 ```

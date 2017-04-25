@@ -44,7 +44,7 @@ You should have the following items ready before beginning the process:
 <a name="Build"></a>
 # Step 3: Build and Run the sample
 
--   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdks) and the sample programs and save them to your local repository.
+-   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdk-csharp) and the sample programs and save them to your local repository.
 -   Start a new instance of Visual Studio 2015.
 -   Open the **iothub_csharp_client.sln** solution in the `csharp\device` folder in your local copy of the repository.
 -   In Visual Studio, from Solution Explorer, navigate to the **samples** folder.
@@ -58,6 +58,6 @@ You should have the following items ready before beginning the process:
 -   Use the **DeviceExplorer** utility to observe the messages IoT Hub receives from the **Device Client AMQP Sample** application.
 
 
-[setup-devbox-windows]: https://github.com/Azure/azure-iot-sdks/blob/master/c/doc/devbox_setup.md
+[setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-csharp/blob/master/c/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md

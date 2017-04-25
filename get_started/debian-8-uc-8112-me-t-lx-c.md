@@ -57,7 +57,7 @@ You should have the following items ready before beginning the process:
 
 -   Download the Microsoft Azure IoT Device SDK for C to the board by issuing the following command on the board::
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
 
 -   Edit the following file using any text editor of your choice:
 

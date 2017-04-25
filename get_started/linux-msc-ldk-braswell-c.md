@@ -47,7 +47,7 @@ You should have the following items ready before beginning the process:
 <a name="Load"></a>
 ## 3.1 Build SDK and sample
 
--   The Microsoft Azure IoT Device SDK for C is already installed in the standard images as the package "azure-iot-sdks-samples".
+-   The Microsoft Azure IoT Device SDK for C is already installed in the standard images as the package "azure-iot-sdk-c-samples".
 
 -   These images can be built after MSC-LDK installation with:
 
@@ -79,9 +79,9 @@ You should have the following items ready before beginning the process:
 
 - If you just want to build the serializer samples, run the following commands:
 
-        ./build.sh bitbake -c cleanall azure-iot-sdks
-        ./build.sh bitbake -c compile azure-iot-sdks
-        ./build.sh bitbake -c devshell azure-iot-sdks
+        ./build.sh bitbake -c cleanall azure-iot-sdk-c
+        ./build.sh bitbake -c compile azure-iot-sdk-c
+        ./build.sh bitbake -c devshell azure-iot-sdk-c
 
   and in the devshell
 

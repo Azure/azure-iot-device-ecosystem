@@ -31,7 +31,7 @@ This document describes how to connect devices running openSUSE with Azure IoT S
 You should have the following items ready before beginning the process:
 
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub public repository.
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
 
@@ -51,7 +51,7 @@ You should have the following items ready before beginning the process:
 
 This section shows you how to set up a development environment for the Azure IoT device SDK for C on openSUSE.
 
-1. Clone this repository ([azure-iot-sdks](https://github.com/Azure/azure-iot-sdks)) to the machine you are using.
+1. Clone this repository ([azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c)) to the machine you are using.
 2. Open a shell and navigate to the folder **c/build_all/linux** in your local copy of the repository.
 
 3. Run the `setup_opensuse.sh` script to install the prerequisite packages and the dependent libraries.
@@ -75,7 +75,7 @@ This script builds the **iothub_client** and **serializer** libraries and their 
 
 5. Save your changes and build the samples. To build your sample you can run the build.sh script in the **c/build_all/linux** directory.
 
-6. Run the **azure-iot-sdks/c/cmake/iotsdk_linux/serializer/samples/simplesample_amqp/simplesample_amqp** sample application.
+6. Run the **azure-iot-sdk-c/c/cmake/iotsdk_linux/serializer/samples/simplesample_amqp/simplesample_amqp** sample application.
 
 7.   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the **simplesample_amqp** application and how to send cloud-to-device messages to the **simplesample_amqp** application.
 

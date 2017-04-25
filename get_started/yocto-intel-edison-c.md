@@ -94,13 +94,13 @@ We recommend using the default folder located in /home/root to keep the reposito
         Then, on the desktop, cd to the folder containing the repository and run rsync:
 
         ```
-        rsync -azP --exclude=.vscode --exclude=.git ./azure-iot-sdks/ root@<<edison ip>>:/home/root/azure-iot-sdks
+        rsync -azP --exclude=.vscode --exclude=.git ./azure-iot-sdk-c/ root@<<edison ip>>:/home/root/azure-iot-sdk-c
         ```
 
     -   For scp, cd to the folder containing the repository and run scp:
 
         ```
-        scp -Cvr ./azure-iot-sdks/ root@<<edison ip>>:/home/root/azure-iot-sdks/
+        scp -Cvr ./azure-iot-sdk-c/ root@<<edison ip>>:/home/root/azure-iot-sdk-c/
         ```
 
     -   For FileZilla, run "wpa_cli status" on your Intel Edison to find your IP address, then use "sftp://your.ip.address", use password "root" and your Intel Edison password to establish an SFTP connection via FileZilla. Once you have done that, you can drag and drop files over the network directly.
@@ -112,7 +112,7 @@ We recommend using the default folder located in /home/root to keep the reposito
 The default installation of git does not support submodules, but if you install a submodule enabled version of git, or [build git from source][gitIntallFromSource], you may use Git and clone the Azure SDK repository directly to your Edison using the following commands:
 
 ```
-$ git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+$ git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
 ```
 
 -   You may be prompted to add an RSA key to your device, respond with "yes".
@@ -142,17 +142,17 @@ We first need to update the credentials in the sample AMPQ app to match those of
    
     -   Edit build.sh script to get rid of the command nproc
    
-          cd azure-iot-sdks/c/build_all/linux
+          cd azure-iot-sdk-c/c/build_all/linux
           vi ./build.sh
     
     -   Change line "make --jobs=nproc" to "make --jobs=2"
 
     -   Build the Azure IoT sdk
    
-            cd ~/azure-iot-sdks/c/build_all/linux
+            cd ~/azure-iot-sdk-c/c/build_all/linux
             ./build.sh --no-mqtt 
     
--   Navigate to: ~/azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/ and run the following commands
+-   Navigate to: ~/azure-iot-sdk-c/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/ and run the following commands
   
         ./iothub_client_sample_amqp
     

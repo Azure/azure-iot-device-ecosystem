@@ -34,7 +34,7 @@ You should have the following items ready before beginning the process:
 
     -   Download and install latest JDK from [here](<http://www.oracle.com/technetwork/java/javase/downloads/index.html>).
     -   Download [Android Studio](<https://developer.android.com/studio/index.html>) on your Windows machine and follow the installation instructions.
-    -   Computer with Git client installed and access to the [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+    -   Computer with Git client installed and access to the [azure-iot-sdk-java](https://github.com/Azure/azure-iot-sdk-java) GitHub public repository.
 
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 
@@ -181,7 +181,7 @@ In [MainActivity.java][mainactivity-source-code]:
 
 1.  Start a new instance of Android Studio and open Android project from here:
 
-        azure-iot-sdks/java/device/samples/android-sample/
+        azure-iot-sdk-java/java/device/samples/android-sample/
 
 2.  Go to **MainActivity.java**, replace the **[device connection string]** placeholder with connection string of the device you have created in [Provision your device and get its credentials][lnk-manage-iot-hub] and save the file.  An example of IoT Hub Connection String is as below:
 

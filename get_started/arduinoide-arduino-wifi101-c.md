@@ -30,7 +30,7 @@ This document describes the process of connecting an Arduino WiFi Shield 101 or 
 
 You should have the following items ready before beginning the process:
 - Computer with Git client installed and access to the
-  [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+  [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub public repository.
 - A computer with the [Arduino IDE](https://www.arduino.cc/en/Main/Software) version 1.6.6 or later installed.
 - One of the following:
   - [Arduiono or Genuino MKR1000](https://www.arduino.cc/en/Main/ArduinoMKR1000)

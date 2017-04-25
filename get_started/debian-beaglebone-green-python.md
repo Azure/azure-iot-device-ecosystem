@@ -33,7 +33,7 @@ This document describes how to connect BeagleBone Green device running Debian wi
 You should have the following items ready before beginning the process:
 
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
+    [azure-iot-sdk-python](https://github.com/Azure/azure-iot-sdk-python) GitHub
     public repository.
 -   [BeagleBone Green](http://beagleboard.org/Green).
 -   USB Mini cable.
@@ -94,7 +94,7 @@ You should have the following items ready before beginning the process:
 
 -   Download the Microsoft Azure IoT Device SDK for Python to the board by issuing the following command on the board::
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
 
 	***Note:*** *It is recommended to get an USB disk and clone the SDK into it and do the compilation there.*
 
@@ -121,7 +121,7 @@ You should have the following items ready before beginning the process:
 
 -   Build the SDK samples using the following command:
 
-        sudo ./azure-iot-sdks/python/build_all/linux/build.sh
+        sudo ./azure-iot-sdk-python/python/build_all/linux/build.sh
 
 ## 3.2 Send/Receive messages to/from IoT Hub:
 

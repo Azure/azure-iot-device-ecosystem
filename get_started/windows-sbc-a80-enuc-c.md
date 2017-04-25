@@ -44,7 +44,7 @@ You should have the following items ready before beginning the process:
 <a name="Build"></a>
 # Step 3: Build SDK and Run the sample
 
--   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdks) and the sample programs and save them to your local repository.
+-   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdk-c) and the sample programs and save them to your local repository.
 
 -   Start a new instance of Visual Studio 2015.
 
@@ -52,15 +52,15 @@ You should have the following items ready before beginning the process:
   
     **For AMQP protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+        azure-iot-sdk-c/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
   
     **For HTTP protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+        azure-iot-sdk-c/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
 	
     **For MQTT protocol:**
 		
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
+        azure-iot-sdk-c/c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
 
 -   Find the following place holder for IoT connection string:
 

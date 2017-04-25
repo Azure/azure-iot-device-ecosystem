@@ -62,8 +62,8 @@ You should have the following items ready before beginning the process:
 
 -   Edit the following files using any text editor of your choice:
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
+        azure-iot-sdk-c/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+        azure-iot-sdk-c/c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
 
 -   Find the following place holder for IoT connection string:
 
@@ -82,12 +82,12 @@ You should have the following items ready before beginning the process:
 -   Use "scp" command copy files to the path /root of Seeeduino Cloud
 
     ```
-    scp ~/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/serializer/samples/iothub_client_sample_amqp/iothub_client_sample_amqp root@Seeeduino_Cloud_IP_Address:/root
+    scp ~/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdk-c-1/serializer/samples/iothub_client_sample_amqp/iothub_client_sample_amqp root@Seeeduino_Cloud_IP_Address:/root
     ```
 	or
 	
     ```
-    scp ~/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/serializer/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt root@Seeeduino_Cloud_IP_Address:/root
+    scp ~/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdk-c-1/serializer/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt root@Seeeduino_Cloud_IP_Address:/root
     ```
 
 -   Install ca-certificates on Seeeduino Cloud board

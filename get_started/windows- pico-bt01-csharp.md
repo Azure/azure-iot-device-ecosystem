@@ -31,7 +31,7 @@ This document describes how to connect PICO-BT01 device running Windows 10 with 
 You should have the following items ready before beginning the process:
 
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
+    [azure-iot-sdk-csharp](https://github.com/Azure/azure-iot-sdk-csharp) GitHub
     public repository.
 -   PICO-BT01 device.
 -   [Setup your IoT hub][lnk-setup-iot-hub]
@@ -45,7 +45,7 @@ You should have the following items ready before beginning the process:
 <a name="Build"></a>
 # Step 3: Build and Run the sample
 
--   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdks) and the sample programs and save them to your local repository.
+-   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdk-csharp) and the sample programs and save them to your local repository.
 -   Start a new instance of Visual Studio 2015.
 -   Open the **iothub_csharp_client.sln** solution in the `csharp\device` folder in your local copy of the repository.
 -   In Visual Studio, from Solution Explorer, navigate to the **samples** folder.

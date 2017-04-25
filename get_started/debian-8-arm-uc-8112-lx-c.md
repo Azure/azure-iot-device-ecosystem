@@ -80,7 +80,7 @@ You should have the following items ready before beginning the process:
 
 -   Build the SDK using following command.
 
-        sudo ./azure-iot-sdks-c/build_all/linux/build.sh
+        sudo ./azure-iot-sdk-c-c/build_all/linux/build.sh
 
 ## 3.2 Send Device Events to IoT Hub:
 

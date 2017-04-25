@@ -50,7 +50,7 @@ Follow the instructions in the generic chapter "Getting Started" of the [devices
 
 -   Open a PuTTY session and connect to the device.
 
--   The Microsoft Azure IoT Device SDK for C is already installed in the standard images as the package "azure-iot-sdks-samples".
+-   The Microsoft Azure IoT Device SDK for C is already installed in the standard images as the package "azure-iot-sdk-c-samples".
 
 -   Build the SDK using following command:
 
@@ -81,9 +81,9 @@ Follow the instructions in the generic chapter "Getting Started" of the [devices
 
 - If you just want to build the serializer samples, run the following commands:
 
-        ./build.sh bitbake -c cleanall azure-iot-sdks
-        ./build.sh bitbake -c compile azure-iot-sdks
-        ./build.sh bitbake -c devshell azure-iot-sdks
+        ./build.sh bitbake -c cleanall azure-iot-sdk-c
+        ./build.sh bitbake -c compile azure-iot-sdk-c
+        ./build.sh bitbake -c devshell azure-iot-sdk-c
 
   and in the devshell
   
