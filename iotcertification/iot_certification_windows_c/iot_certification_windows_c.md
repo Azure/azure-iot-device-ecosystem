@@ -35,7 +35,7 @@ Before executing any of the steps below, read through each process, step by step
 
 You should have the following items ready before beginning the process:
 
--   Computer with GitHub installed and access to the [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+-   Computer with GitHub installed and access to the [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub public repository.
 -   Install Visual Studio 2015 and Tools. You can install any edition of Visual Studio, including the free Community edition.
 
 <a name="Step_1_Sign_Up"></a>
@@ -86,7 +86,7 @@ To run DeviceExplorer tool, use following configuration string as described in [
     
     f. Save this information in Notepad. You will need this information in later steps.
 
-***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) to provision your device and get its credentials.
+***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) to provision your device and get its credentials.
 
 <a name="Step_3_Build_and_Validate"></a>
 # Step 3: Build and Validate the Sample using C Client Libraries 

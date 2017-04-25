@@ -36,7 +36,7 @@ by step to ensure end to end understanding.
 
 You should have the following items ready before beginning the process:
 
--   Computer with GitHub installed and access to the [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+-   Computer with GitHub installed and access to the [azure-iot-sdk-csharp](https://github.com/Azure/azure-iot-sdk-csharp) GitHub public repository.
 -   Install Visual Studio 2015 and Tools. You can install any edition of Visual Studio, including the free Community edition.
 
 <a name="Step_1:_Sign_Up"></a>
@@ -111,7 +111,7 @@ This document describes how to prepare your development environment to use the M
 <a name="Step_3_2:_Build"></a>
 ## 3.2  Build the Samples
 
-1.  Start a new instance of Visual Studio 2015. Open the **iothub_csharp_deviceclient.sln** solution in the **csharp\device** folder in your local SDK **azure-iot-sdks** directory.
+1.  Start a new instance of Visual Studio 2015. Open the **iothub_csharp_deviceclient.sln** solution in the **csharp\device** folder in your local SDK **azure-iot-sdk-csharp** directory.
 
 2.  In Visual Studio, from **Solution Explorer**, navigate to project based on your choice of protocol:
 

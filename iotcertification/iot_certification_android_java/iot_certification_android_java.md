@@ -34,7 +34,7 @@ Before executing any of the steps below, read through each process, step by step
 You should have the following items ready before beginning the process:
 
 -   Computer with GitHub installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+    [azure-iot-sdk-java](https://github.com/Azure/azure-iot-sdk-java) GitHub public repository.
 -   Required hardware to certify.
 
 <a name="Step_1"></a>
@@ -51,7 +51,7 @@ As part of the sign up process, you will receive the connection string.
 <a name="Step_2"></a>
 # Step 2: Register Device
 
--   Follow the instructions [here](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) on how to provision your device and get its credentials.
+-   Follow the instructions [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) on how to provision your device and get its credentials.
 
 <a name="Step_3"></a>
 # Step 3: Build and Validate the sample using Java client libraries
@@ -75,7 +75,7 @@ This section walks you through building, deploying and validating the IoT Client
 
 1.  Start a new instance of Android Studio and open Android project from here:
 
-        azure-iot-sdks/java/device/samples/android-sample/
+        azure-iot-sdk-java/java/device/samples/android-sample/
 
 2.  Go to **MainActivity.java**, replace the **[device connection string]** placeholder with connection string of the device you have created in [Step 2](#Step_2) and save the file.
 
@@ -173,7 +173,6 @@ Package the following artifacts from your device:
 4.  Send us clear instructions of how to run this sample with your hardware
     (explicitly highlighting the new steps for customers). 
     
-    As a guideline on how the instructions should look please refer the examples published on GitHub repository [here](<https://github.com/Azure/azure-iot-sdks/tree/master/doc/get_started>).
 
 <a name="Step_4_2"></a>
 ## 4.2 Share with the Azure IoT Certification team

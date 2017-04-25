@@ -36,7 +36,7 @@ by step to ensure end to end understanding.
 
 You should have the following items ready before beginning the process:
 
--   Computer with **Windows 10** having Git client installed and access to the [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+-   Computer with **Windows 10** having Git client installed and access to the [azure-iot-sdk-node](https://github.com/Azure/azure-iot-sdk-node) GitHub public repository.
 -   Install Visual Studio 2015 and Tools. You can install any edition of Visual Studio, including the free Community edition.
 
     Make sure to select the "Universal Windows App Development Tools", the component required for writing apps Windows 10:
@@ -63,7 +63,7 @@ As part of the sign up process, you will receive the connection string.
 <a name="Step_2:_Register"></a>
 # Step 2: Register Device
 
--   Follow the instructions [here](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) on how to provision your device and get its credentials.
+-   Follow the instructions [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) on how to provision your device and get its credentials.
 
 <a name="Step_3:_Build_and_Validate"></a>
 # Step 3: Build and Validate the Sample using Node.js Client Libraries 
@@ -92,9 +92,9 @@ This section walks you through the steps to create a UWP Node.js wrapper over ex
 
       ![VisualStudio\_delete\_oldfiles](images/Delete_old_files.png)
           
-4. Clone [Azure IoT SDK](https://github.com/Azure/azure-iot-sdks.git) repository to your Windows 10 machine. 
+4. Clone [Azure IoT SDK](https://github.com/Azure/azure-iot-sdk-node.git) repository to your Windows 10 machine. 
 
-5. In File explorer, Copy **package.json** and **simple_sample_device.js** files available under Node.js sample of the repository on your machine. For example if you cloned the **azure-iot-sdks** repository under C:\IOT directory, Go to **(C:\azure-iot-sdks\node\device\samples\)**
+5. In File explorer, Copy **package.json** and **simple_sample_device.js** files available under Node.js sample of the repository on your machine. For example if you cloned the **azure-iot-sdk-node** repository under C:\IOT directory, Go to **(C:\azure-iot-sdk-node\device\samples\)**
 
     ![FileExplorere\_copy\_files](images/copy_files.png)
           

@@ -35,7 +35,7 @@ This document provides step-by-step guidance to IoT hardware publishers on how t
 
 Before executing any of the steps below, read through each process, step by step to ensure end to end understanding. You should have the following items ready before beginning the process:
 
--   Computer with GitHub installed and access to the [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub private repository
+-   Computer with GitHub installed and access to the [azure-iot-sdk-node](https://github.com/Azure/azure-iot-sdk-node) GitHub private repository
 -   SSH client, such as [PuTTY](http://www.putty.org/), so you can access the command line
 -   Required hardware to certify
 
@@ -88,7 +88,7 @@ To run DeviceExplorer tool, follow the configuration strings as described in  [S
 
     f. Save this information in Notepad. You will need this information in later steps.
 
-***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) to provision your device and get its credentials.
+***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) to provision your device and get its credentials.
 
 <a name="Build"></a>
 # Step 3: Build and validate the sample using Node JS client libraries
@@ -151,9 +151,9 @@ This section walks you through building, deploying and validating the IoT Client
 -   Download the SDK to the board by issuing the following command in
     PuTTY:
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-node.git
 
--   Verify that you now have a copy of the source code under the directory ~/azure-iot-sdks.
+-   Verify that you now have a copy of the source code under the directory ~/azure-iot-sdk-node.
 
 <a name="BuildSamples"></a>
 ## 3.2 Build the samples
@@ -166,7 +166,7 @@ This section walks you through building, deploying and validating the IoT Client
 
 -   Run the following commands 
 
-        cd ~/azure-iot-sdks/node
+        cd ~/azure-iot-sdk-node
         build/dev-setup.sh
         build/build.sh | tee LogFile.txt
 
@@ -174,7 +174,7 @@ This section walks you through building, deploying and validating the IoT Client
 
 -   Install npm package to run sample.
 
-        cd ~/azure-iot-sdks/node/device/samples
+        cd ~/azure-iot-sdk-node/device/samples
 
     **For AMQP Protocol:**
 	
@@ -198,7 +198,7 @@ This section walks you through building, deploying and validating the IoT Client
 
 -   To update sample, run the following command on device.
 
-        cd ~/azure-iot-sdks/node/device/samples
+        cd ~/azure-iot-sdk-node/device/samples
         nano simple_sample_device.js
 
 -   This launches a console-based text editor. Scroll down to the
@@ -223,7 +223,7 @@ This section walks you through building, deploying and validating the IoT Client
 
 -   Press Ctrl+X to exit nano.
 
--   Run the following command before leaving the **~/azure-iot-sdks/node/device/samples** directory
+-   Run the following command before leaving the **~/azure-iot-sdk-node/device/samples** directory
 
         npm link azure-iot-device
 
@@ -244,7 +244,7 @@ In this section you will run the Azure IoT client SDK samples to validate commun
 
 3.  Run the sample by issuing following command:
 
-        node ~/azure-iot-sdks/node/device/samples/simple_sample_device.js
+        node ~/azure-iot-sdk-node/device/samples/simple_sample_device.js
 
 4. Verify that data has been successfully sent and received. If any, then you may have incorrectly copied the device hub connection information.
 

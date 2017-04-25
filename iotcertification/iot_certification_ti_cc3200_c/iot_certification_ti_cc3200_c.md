@@ -36,7 +36,7 @@ Before executing any of the steps below, read through each process, step by step
 You should have the following items ready before beginning the process:
 
 -   Computer with GitHub installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub public repository.
 -   SSH client, such as [PuTTY](http://www.putty.org/), so you can access the
     command line.
 -   Required hardware [CC3200 Launchpad](http://www.ti.com/tool/cc3200-launchxl).
@@ -91,7 +91,7 @@ To run DeviceExplorer tool, use following configuration string as described in [
     f. Save this information in Notepad. You will need this information in
     later steps.
 
-***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-sdks/blob/master/doc/manage_iot_hub.md>) to provision your device and get its credentials.
+***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) to provision your device and get its credentials.
 
 <a name="Step_3"></a>
 # Step 3: Build and Validate the sample using C client libraries
@@ -116,7 +116,7 @@ While not strictly required, we recommend that you install the following tools f
 <a name="Step_3_2"></a>
 ## 3.2 Build Azure IoT SDK
 
-1.  Edit file `products.mak` (*azure-iot-sdks\c\build_all\tirtos*). 
+1.  Edit file `products.mak` (*azure-iot-sdk-c\build_all\tirtos*). 
     Update the value of following variables:
     
     `XDCTOOLS_INSTALLATION_DIR`: install location of Uniflash Tool.
@@ -130,7 +130,7 @@ While not strictly required, we recommend that you install the following tools f
 3. In the Windows command prompt, run the following commands (be sure to replace the paths with your installation paths).
 
   ```
-  cd <AZURE_INSTALL_DIR>\azure-iot-sdks\c\build_all\tirtos
+  cd <AZURE_INSTALL_DIR>\azure-iot-sdk-c\build_all\tirtos
   C:\ti\xdctools_3_31_01_33_core\gmake.exe clean
   C:\ti\xdctools_3_31_01_33_core\gmake.exe all
   ```
@@ -146,7 +146,7 @@ section. These will be needed in [Step 4](#Step_4_2).*
 <a name="Step_3_2_1"></a>
 ### 3.3.1 Build the sample simplesample_http application
 
-1.  Open the `simplesample_http.c` file from the directory `azure-iot-sdks\c\serializer\samples\simplesample_http`.
+1.  Open the `simplesample_http.c` file from the directory `azure-iot-sdk-c\serializer\samples\simplesample_http`.
 
 2.  Find the following place holder for IoT connection string:
     
@@ -154,7 +154,7 @@ section. These will be needed in [Step 4](#Step_4_2).*
 
 3.  Replace the above placeholder with device connection string. You can get this from DeviceExplorer as explained in Step 2, that you copied into Notepad.
 
-4.  Open the file `main.c` from the directory `azure-iot-sdks/c/serializer/samples/simplesample_http/tirtos/cc3200`. 
+4.  Open the file `main.c` from the directory `azure-iot-sdk-c/serializer/samples/simplesample_http/tirtos/cc3200`. 
 
 5.  Find the following comment for date-time:
 
@@ -171,7 +171,7 @@ section. These will be needed in [Step 4](#Step_4_2).*
     #define SECOND  0
     ```
 
-7. Open the file `wificonfig.h` from the directory `azure-iot-sdks/c/serializer/samples/simplesample_http/tirtos/cc3200`.
+7. Open the file `wificonfig.h` from the directory `azure-iot-sdk-c/serializer/samples/simplesample_http/tirtos/cc3200`.
 
 8.  Find the following comment for USER STEP:
 
@@ -182,13 +182,13 @@ section. These will be needed in [Step 4](#Step_4_2).*
         #define SSID ""
         #define SECURITY_KEY ""
 
-10. Download the [elf2cc32 executable for Windows](https://github.com/tisb-vikram/azure-iot-sdks/blob/7da24633b2c4af3bc779998e9950146f061a8a10/c/serializer/samples/simplesample_http/tirtos/cc3200/tools/elf2cc32.exe?raw=true) or [elf2cc32 executable for Linux](https://github.com/tisb-vikram/azure-iot-sdks/blob/7da24633b2c4af3bc779998e9950146f061a8a10/c/serializer/samples/simplesample_http/tirtos/cc3200/tools/elf2cc32?raw=true) to the folder `azure-iot-sdks\c\serializer\samples\simplesample_http\tirtos\cc3200\tools`. 
+10. Download the [elf2cc32 executable for Windows](https://github.com/tisb-vikram/azure-iot-sdks/blob/7da24633b2c4af3bc779998e9950146f061a8a10/c/serializer/samples/simplesample_http/tirtos/cc3200/tools/elf2cc32.exe?raw=true) or [elf2cc32 executable for Linux](https://github.com/tisb-vikram/azure-iot-sdks/blob/7da24633b2c4af3bc779998e9950146f061a8a10/c/serializer/samples/simplesample_http/tirtos/cc3200/tools/elf2cc32?raw=true) to the folder `azure-iot-sdk-c\serializer\samples\simplesample_http\tirtos\cc3200\tools`. 
 This tool is needed for converting the **simplesample_http.out** to **simplesample_http.bin** file.
 
 11. Build the sample by executing following commands:
 
     ```
-    cd <AZURE_INSTALL_DIR>\azure-iot-sdks\c\serializer\samples\simplesample_http\tirtos\cc3200
+    cd <AZURE_INSTALL_DIR>\azure-iot-sdk-c\serializer\samples\simplesample_http\tirtos\cc3200
     C:\ti\xdctools_3_31_01_33_core\gmake.exe clean
     C:\ti\xdctools_3_31_01_33_core\gmake.exe all
     ```
@@ -202,7 +202,7 @@ Flash the `simplesample_http.bin` file to your CC3200 Launchpad.
 
 The detailed information about the flash tool can be found in the [CC3200 UniFlash wiki](http://processors.wiki.ti.com/index.php/CC31xx_%26_CC32xx_UniFlash). The section [GUI Interface](http://processors.wiki.ti.com/index.php/CC31xx_%26_CC32xx_UniFlash#GUI_Interface) walks through the steps for using the UniFlash tool.
 
-Flash the application (.bin file) to the `/sys/mcuimg.bin` under System Files. For the certificate, [add a new file](http://processors.wiki.ti.com/index.php/CC31xx_%26_CC32xx_UniFlash#Adding_a_new_file_to_the_device) in the path `/cert/ms.der` and provide the path to the "Baltimore CyberTrust Root" certificate (.der format). The ms.der file is available at <AZURE_INSTALL_DIR>\azure-iot-sdks\c\certs\ms.der.
+Flash the application (.bin file) to the `/sys/mcuimg.bin` under System Files. For the certificate, [add a new file](http://processors.wiki.ti.com/index.php/CC31xx_%26_CC32xx_UniFlash#Adding_a_new_file_to_the_device) in the path `/cert/ms.der` and provide the path to the "Baltimore CyberTrust Root" certificate (.der format). The ms.der file is available at <AZURE_INSTALL_DIR>\azure-iot-sdk-c\certs\ms.der.
 
 <a name="Step_3_3_3"></a>
 ### Running the sample simplesample_http
@@ -245,7 +245,7 @@ Package the following artifacts from your device:
 
 2.  All the screenshots that belong to "**Running the sample simplesample_http**" section.
 
-3.  Create a document that explains how to run the sample with your hardware (explicitly highlighting the new steps for customers). As a guideline on how the instructions should look please refer the examples published on GitHub repository [here](<https://github.com/Azure/azure-iot-sdks/tree/master/doc/get_started>).
+3.  Create a document that explains how to run the sample with your hardware (explicitly highlighting the new steps for customers). As a guideline on how the instructions should look please refer the examples published on GitHub repository [here](<https://github.com/Azure/azure-iot-device-ecosystem/tree/master/get_started>).
 
 <a name="Step_4_2"></a>
 ## 4.2 Share with the Azure IoT Certification team
