@@ -98,16 +98,16 @@ You should have the following items ready before beginning the process:
 -   Download the SDK to the board by issuing the following command in
     PuTTY:
 
-        git clone https://github.com/Azure/azure-iot-sdks.git
+        git clone https://github.com/Azure/azure-iot-sdk-node.git
 
--   Verify that you now have a copy of the source code under the directory ~/azure-iot-sdks.
+-   Verify that you now have a copy of the source code under the directory ~/azure-iot-sdk-node.
 
 <a name="BuildSamples"/>
 ## 3.2 Build the samples
 
 -   To validate the source code run the following commands on the device.
 
-        cd ~/azure-iot-sdks/node
+        cd ~/azure-iot-sdk-node
         build/dev-setup.sh
         build/build.sh | tee LogFile.txt
 
@@ -117,17 +117,17 @@ You should have the following items ready before beginning the process:
 
     **For simple_sample_http.js:**
 
-        cd ~/azure-iot-sdks/node/device/samples
+        cd ~/azure-iot-sdk-node/device/samples
         nano simple_sample_http.js
 
     **For send_batch_http.js:**
 
-        cd ~/azure-iot-sdks/node/device/samples
+        cd ~/azure-iot-sdk-node/device/samples
         nano send_batch_http.js
         
     **For registry_sample.js:**
 
-        cd ~/azure-iot-sdks/node/service/samples
+        cd ~/azure-iot-sdk-node/service/samples
         nano registry_sample.js
 
 -   This launches a console-based text editor. Scroll down to the
@@ -139,7 +139,7 @@ You should have the following items ready before beginning the process:
 
 -   Replace the above placeholder with device connection string you obtained in [Step 1](#Step-1:-Prerequisites) and save the changes.
 
--   Run the following command before leaving the **~/azure-iot-sdks/node/device/samples** directory
+-   Run the following command before leaving the **~/azure-iot-sdk-node/device/samples** directory
 
         npm link azure-iot-device
 
@@ -150,17 +150,17 @@ You should have the following items ready before beginning the process:
 
 -   Run the sample by issuing following command and verify that data has been successfully sent and received.
 
-        node ~/azure-iot-sdks/node/device/samples/simple_sample_http.js
+        node ~/azure-iot-sdk-node/device/samples/simple_sample_http.js
 
 -   Run the sample by issuing following command and verify that data has been successfully sent and received.
 
-        node ~/azure-iot-sdks/node/device/samples/send_batch_http.js
+        node ~/azure-iot-sdk-node/device/samples/send_batch_http.js
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 
 -   Run the sample to register a device by issuing following command. Verify that you receive information for new device created in the messages.
 
-        node ~/azure-iot-sdks/node/service/samples/registry_sample.js
+        node ~/azure-iot-sdk-node/service/samples/registry_sample.js
 
 **Note:** The registry_sample.js sample will create and delete a device. In order to see it in the DeviceExplorer tool you will need to refresh your devices before the sample finishes running.
 

@@ -32,7 +32,7 @@ This document describes how to connect Samsung ARTIK device running Fedora 22 wi
 You should have the following items ready before beginning the process:
 
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub
     public repository.
 -   Samsung ARTIK device to certify.
 -   [Setup your IoT hub][lnk-setup-iot-hub]
@@ -60,17 +60,17 @@ ARTIK supports both Ethernet and WiFi. If you want to use WiFi on your ARTIK, pl
 
 -   Download the Microsoft Azure IoT Device SDK for C to the board by issuing the following command on the board::
 
-        git clone https://github.com/Azure/azure-iot-sdks.git
+        git clone https://github.com/Azure/azure-iot-sdk-c.git
 
 -   Edit the following file using any text editor of your choice:
   
     **For AMQP protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
 
     **For HTTPS protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
 
 -   Find the following place holder for IoT connection string:
 
@@ -80,7 +80,7 @@ ARTIK supports both Ethernet and WiFi. If you want to use WiFi on your ARTIK, pl
 
 -   Build the SDK samples using the following command:
 
-        ./azure-iot-sdks/c/build_all/linux/build.sh
+        ./azure-iot-sdk-c/build_all/linux/build.sh
 
 ## 3.2 Send Device Events to IoT Hub
 
@@ -88,11 +88,11 @@ ARTIK supports both Ethernet and WiFi. If you want to use WiFi on your ARTIK, pl
 
     **For AMQP protocol:**
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
+        azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
 
     **For HTTPS protocol:**
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
+        azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 

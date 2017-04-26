@@ -67,11 +67,11 @@ this command remounts the root partition in read-write mode.
 
         cd /apps
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
 
 -   Edit the following file using any text editor of your choice:
 
-        nano azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+        nano azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
 
 -   Find the following place holder for IoT connection string:
 
@@ -85,7 +85,7 @@ this command remounts the root partition in read-write mode.
 
 -   Open **IOT_DEVICE_PARAMS.TXT** to edit.
 
-        nano azure-iot-sdks/tools/iot_hub_e2e_tests_params/iot_device_params.txt
+        nano azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/iot_device_params.txt
 
 -   Set the values for all the variables listed in the file as explained below.
 
@@ -102,7 +102,7 @@ this command remounts the root partition in read-write mode.
 
 -   Set environment variables by running following command on your device:
 
-        cd ./azure-iot-sdks/tools/iot_hub_e2e_tests_params/
+        cd ./azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/
         chmod +x setiotdeviceparametersfore2etests.sh
         sudo ./setiotdeviceparametersfore2etests.sh
 
@@ -115,13 +115,13 @@ this command remounts the root partition in read-write mode.
         sudo su
         export LDFLAGS=-lrt
         cd /apps
-        ./azure-iot-sdks/c/build_all/linux/build.sh
+        ./azure-iot-sdk-c/build_all/linux/build.sh
 
 ## 3.2 Send Device Events to IoT Hub:
 
 -   Run the sample by issuing following command:
 
-        /apps/azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
+        /apps/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 

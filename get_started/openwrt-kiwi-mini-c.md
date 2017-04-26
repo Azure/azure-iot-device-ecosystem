@@ -29,7 +29,7 @@ The following document describes the process of connecting an Kiwi Mini system t
 # Step 1: Prerequisites
 
 You should have the following items ready before beginning the process:
--   Computer with a Git client installed so that you can access the azure-iot-sdks code on GitHub.
+-   Computer with a Git client installed so that you can access the azure-iot-sdk-c code on GitHub.
 -   Kiwi Mini board.
 -   Ubuntu machine (for cross compiling) 
 -   [Setup your IoT hub](../setup_iothub.md) 

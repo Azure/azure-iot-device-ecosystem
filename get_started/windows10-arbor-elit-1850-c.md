@@ -30,7 +30,7 @@ This document describes how to connect Elit-1850 device running Windows 10 IoT E
 
 You should have the following items ready before beginning the process:
 
--   Computer with GitHub installed and access to the [azure-iot-sdks GitHub](https://github.com/Azure/azure-iot-sdks) private repository.
+-   Computer with GitHub installed and access to the [azure-iot-sdk-c GitHub](https://github.com/Azure/azure-iot-sdk-c) private repository.
 -   Install any version of [Visual Studio 2015](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). 
     Make sure you have following components selected:
     -   Programming Languages

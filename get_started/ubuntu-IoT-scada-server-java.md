@@ -119,18 +119,18 @@ The IoT SCADA SERVER is sold with a pre-installed Ubuntu based operating system.
 
 1.  Download the SDK to the board by issuing the following command in PuTTY:
 
-        git clone https://github.com/Azure/azure-iot-sdks.git
+        git clone https://github.com/Azure/azure-iot-sdk-java.git
 
-2.  Verify that you now have a copy of the source code under the directory **azure-iot-sdks**.
+2.  Verify that you now have a copy of the source code under the directory **azure-iot-sdk-java**.
 
 3.  Run the following commands on device in sequence to build Azure IoT SDK.
 
-        cd azure-iot-sdks/java/device
+        cd azure-iot-sdk-java/device
         mvn install | tee JavaSDK_Build_Logs.txt
 
 4.  Above command will generate the compiled JAR files with all dependencies. This bundle can be found at:
 
-        azure-iot-sdks/java/device/iothub-java-client/target/iothub-java-client-{version}-with-deps.jar
+        azure-iot-sdk-java/device/iothub-java-client/target/iothub-java-client-{version}-with-deps.jar
 
 <a name="Step_3_2"/>
 ## 3.2 Run and Validate the Samples
@@ -140,7 +140,7 @@ The IoT SCADA SERVER is sold with a pre-installed Ubuntu based operating system.
 
 -   Navigate to the folder containing the executable JAR file for send event sample.
 
-        cd azure-iot-sdks/java/device/samples/send-event/target
+        cd azure-iot-sdk-java/device/samples/send-event/target
 
 -   Run the sample by issuing following command.
 
@@ -159,7 +159,7 @@ The IoT SCADA SERVER is sold with a pre-installed Ubuntu based operating system.
 
 -   Navigate to the folder containing the executable JAR file for the receive message sample.
 
-        cd azure-iot-sdks/java/device/samples/handle-messages/target
+        cd azure-iot-sdk-java/device/samples/handle-messages/target
      
 -   Run the sample by issuing following command.
 

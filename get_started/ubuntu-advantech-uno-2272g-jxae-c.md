@@ -65,23 +65,23 @@ You should have the following items ready before beginning the process:
 
 -  Download the Microsoft Azure IoT Device SDK for C to the device by issuing the following command on the board::
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
 
--  Verify that you now have a copy of the source code under the directory ~/azure-iot-sdks.
+-  Verify that you now have a copy of the source code under the directory ~/azure-iot-sdk-c.
 
 -   Edit the following file using any text editor of your choice:
   
     **For AMQP protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
 
     **For HTTP protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
 	
     **For MQTT protocol:**
 		
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
 
 -   Find the following place holder for IoT connection string:
 
@@ -91,17 +91,17 @@ You should have the following items ready before beginning the process:
 
 -   Open **IOT_DEVICE_PARAMS.TXT** to edit and set environment variables.
 
-        azure-iot-sdks/tools/iot_hub_e2e_tests_params/iot_device_params.txt
+        azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/iot_device_params.txt
 
 -   Set environment variables by running following command on your device:
 
-        sudo ./azure-iot-sdks/tools/iot_hub_e2e_tests_params/setiotdeviceparametersfore2etests.sh
+        sudo ./azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/setiotdeviceparametersfore2etests.sh
 
 -   Restart the Linux machine.
 
 -   Build the SDK using following command.
 
-        ./azure-iot-sdks/c/build_all/linux/build.sh
+        ./azure-iot-sdk-c/build_all/linux/build.sh
 
 ## 3.2 Send Device Events to IoT Hub:
 
@@ -109,15 +109,15 @@ You should have the following items ready before beginning the process:
 
     **For AMQP protocol:** Run sample iothub_client_sample_amqp
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
+        azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
 
     **For HTTP protocol:** Run sample iothub_client_sample_http
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
+        azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
 
  	  **For MQTT protocol:** Run sample iothub_client_sample_mqtt
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt
+        azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 

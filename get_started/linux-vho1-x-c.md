@@ -30,7 +30,7 @@ This document describes how to connect **VHo1-X** device running **Linux** with 
 # Step 1: Prerequisites
 
 You should have the following items ready before beginning the process:
--   Computer with a Git client installed so that you can access the azure-iot-sdks code on GitHub.
+-   Computer with a Git client installed so that you can access the azure-iot-sdk-c code on GitHub.
 -   VHo1-X Device.
 -   Ubuntu x86 machine (for cross compiling) 
 -   [Setup your IoT hub][lnk-setup-iot-hub]
@@ -51,7 +51,7 @@ This section shows you how to set up a development environment for the Azure IoT
 
 -  Download the Microsoft Azure IoT Device SDK by issuing following command:
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
 
 -   Navigate to the folder **c/build_all/linux** in your local copy of the repository.
 
@@ -63,7 +63,7 @@ This section shows you how to set up a development environment for the Azure IoT
 -   Switch to the SDK directory tree.
 
     ```
-    cd ~/azure-iot-sdks/c/build_all/linux
+    cd ~/azure-iot-sdk-c/build_all/linux
     ```
 
 -   Using the text editor of your choice, create a new file in this directory and call it toolchain-rpi.cmake and add following lines to it:
@@ -93,7 +93,7 @@ This section shows you how to set up a development environment for the Azure IoT
 ## 4.2 Build the sample
 
 -   Edit the following file using any text editor of your choice:
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
 
 -   Find the following place holder for IoT connection string:
 
@@ -127,7 +127,7 @@ This section shows you how to set up a development environment for the Azure IoT
 -   Build the SDK using following command.
 
     ```
-    sudo ./azure-iot-sdks/c/build_all/linux/build.sh --toolchain-file toolchain-rpi.cmake  --no-amqp --no-http --skip-unittests  -cl -DMBED_BUILD_TIMESTAMP | tee LogFile.txt
+    sudo ./azure-iot-sdk-c/build_all/linux/build.sh --toolchain-file toolchain-rpi.cmake  --no-amqp --no-http --skip-unittests  -cl -DMBED_BUILD_TIMESTAMP | tee LogFile.txt
     ```
 
 <a name="deploy"/>

@@ -139,7 +139,7 @@ Check software version. **cmake** version is 3.x or higher. **gcc** version is 4
 
 -   Download Azure IoT Device SDK for Python by following commands.
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
 
 -   Archive and copy into microSD card by following commands.
 
@@ -152,10 +152,10 @@ Check software version. **cmake** version is 3.x or higher. **gcc** version is 4
 
 -   Insert microSD card into ConnectCore 6 SBC.
 -   Connect USB cable to the board then it turns on.
--   Login and move directory /home/root then extract `azure-iot-sdks.tar` file.
+-   Login and move directory /home/root then extract `azure-iot-sdk-python.tar` file.
 
         cd /home/root
-        tar xvf azure-iot-sdks.tar
+        tar xvf azure-iot-sdk-python.tar
 
 
 ## 3.1 Build SDK and sample
@@ -169,7 +169,7 @@ Check software version. **cmake** version is 3.x or higher. **gcc** version is 4
 
 - Navigate to samples folder by executing following command:
 
-        cd azure-iot-sdks/python/device/samples/
+        cd azure-iot-sdk-python/device/samples/
 
 -   Edit the following file using `vi`text editor:
 

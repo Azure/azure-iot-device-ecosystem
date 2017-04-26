@@ -30,7 +30,7 @@ This document describes how to run the **iothub_client_sample.py** Python sample
 
 You should have the following items ready before beginning the process:
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+    [azure-iot-sdk-python](https://github.com/Azure/azure-iot-sdk-python) GitHub public repository.
 -   [Prepare your development environment][lnk-python-devbox-setup]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]

@@ -30,7 +30,7 @@ This document describes how to build and run the **simplesample_http** applicati
 
 You should have the following items ready before beginning the process:
 - Computer with Git client installed and access to the
-  [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+  [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub public repository.
 - [Colibri Modules][colibri-modules] running the [Windows Embedded Compact 2013 image provided by Toradex][toradex-images]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]

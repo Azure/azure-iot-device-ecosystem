@@ -167,25 +167,25 @@ You should have the following items ready before beginning the process:
 
 -   Download the Microsoft Azure IoT Device SDK for Java to the board by issuing the following command on the ATDE:
 
-        git clone https://github.com/Azure/azure-iot-sdks.git
+        git clone https://github.com/Azure/azure-iot-sdk-java.git
 
 -   Build the SDK using following command. 
 
-        cd azure-iot-sdks/java/device
+        cd azure-iot-sdk-java/device
         mvn install -DskipTests=true | tee JavaSDK_Build_Logs.txt
 
 ### 3.1.1 Copy the built image to the device:
--	At first, archive the two directory (azure-iot-sdks/ and ~/.m2/repository/):
+-	At first, archive the two directory (azure-iot-sdk-java/ and ~/.m2/repository/):
 
 		cd ~/work/IoT_SDK_Java
-		tar cvf azure-iot-sdks.tar ./azure-iot-sdks
+		tar cvf azure-iot-sdk-java.tar ./azure-iot-sdk-java
 		tar cvf repository.tar -C ~/.m2 ./repository
 
 -	Mount the SD card which contain the rootfs of the device to ATDE.
 
 -	Copy above two archives to the rootfs on the SD card:
 
-		cp azure-iot-sdks.tar /media/rootfs/home/atmark/work/IoT_SDK_Java/
+		cp azure-iot-sdk-java.tar /media/rootfs/home/atmark/work/IoT_SDK_Java/
 		cp repository.tar /media/rootfs/home/atmark/work/IoT_SDK_Java/
 
 -	Unmount the SD card from the ATDE, and attach the device
@@ -195,10 +195,10 @@ You should have the following items ready before beginning the process:
 -	When the Debian booted on the device, extract the archive and run the maven to execute SDK's test cases.
 
 		cd ~/work/IoT_SDK_Java
-		tar xvf ./azure-iot-sdks.tar
+		tar xvf ./azure-iot-sdk-java.tar
 		mkdir ~/.m2
 		tar xvf repository.tar -C ~/.m2
-		cd azure-iot-sdks/java/device
+		cd azure-iot-sdk-java/device
 		mvn install | tee JavaSDK_Build_Logs.txt
 
 <a name="Step_3_2"/></a>
@@ -209,7 +209,7 @@ You should have the following items ready before beginning the process:
 
 -   Navigate to the folder containing the executable JAR file for send event sample.
 
-        cd azure-iot-sdks/java/device/samples/send-event/target
+        cd azure-iot-sdk-java/device/samples/send-event/target
 
 -   Run the sample by issuing following command.
 
@@ -238,7 +238,7 @@ You should have the following items ready before beginning the process:
 
 -   Navigate to the folder containing the executable JAR file for the receive message sample.
 
-        cd azure-iot-sdks/java/device/samples/handle-messages/target
+        cd azure-iot-sdk-java/device/samples/handle-messages/target
      
 -   Run the sample by issuing following command.
 

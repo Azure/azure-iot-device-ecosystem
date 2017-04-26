@@ -49,11 +49,11 @@ You should have the following items ready before beginning the process:
 
 -   Download the Microsoft Azure IoT Device SDK to the board by issuing the following command on the board::
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
 
 -   Run following commands to build the SDK:
 
-        cd azure-iot-sdks/python/build_all/linux
+        cd azure-iot-sdk-python/build_all/linux
 		./setup.sh --python-version 3.5
 	    sudo ./build.sh --build-python 3.5    
 
@@ -61,7 +61,7 @@ You should have the following items ready before beginning the process:
 
 - Navigate to samples folder by executing following command:
 
-        cd azure-iot-sdks/python/device/samples/
+        cd azure-iot-sdk-python/device/samples/
 
 -   Edit the following file using any text editor of your choice:
 

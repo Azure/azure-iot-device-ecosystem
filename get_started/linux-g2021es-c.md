@@ -29,7 +29,7 @@ This document describes how to connect G2021ES device running Linux Kernel 3.14 
 <a name="Before you begin></a>
 You should have the following items ready before beginning the process:
 
--   Computer with Git client installed and access to the azure-iot-sdks(https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+-   Computer with Git client installed and access to the azure-iot-sdk-c(https://github.com/Azure/azure-iot-sdk-c) GitHub public repository.
 -   G2021ES device. 
 -   Install the cross tool chain poky-eglibc-i686-g2021es-console-basic-cortexa8t2hf-vfp-neon-toolchain-1.6.3.sh on your desktop, this is required to build and run applications on G2021ES device. 
 -   [Prepare your development environment][setup-devbox-linux]
@@ -57,7 +57,7 @@ Note: You can skip this step if you just want to build the sample application wi
     
 -   Download the Microsoft Azure IoT Device SDK for C to the desktop by issuing the following command::
 
-        git clone https://github.com/Azure/azure-iot-sdks.git
+        git clone https://github.com/Azure/azure-iot-sdk-c.git
 		
 -   Build the sample application with the tool chain poky-eglibc-i686-g2021es-console-basic-cortexa8t2hf-vfp-neon-toolchain-1.6.3.sh (contact systems@pacificcontrols.net for tool chain) on your desktop by using the makefile.
 

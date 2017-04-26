@@ -121,15 +121,15 @@ You should have the following items ready before beginning the process:
 
     **For AMQP protocol:**
 
-        scp ~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp root@<IP address of SENSPLORER SPx-B1616>:
+        scp ~/azure-iot-sdk-cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp root@<IP address of SENSPLORER SPx-B1616>:
 
     **For HTTPS protocol:**
 
-        scp ~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http root@<IP address of SENSPLORER SPx-B1616>:
+        scp ~/azure-iot-sdk-cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http root@<IP address of SENSPLORER SPx-B1616>:
 
     **For MQTT protocol:**
 
-        scp ~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt root@<IP address of SENSPLORER SPx-B1616>:
+        scp ~/azure-iot-sdk-cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt root@<IP address of SENSPLORER SPx-B1616>:
         
 
 ## 3.2 Send Device Events to IoT Hub:

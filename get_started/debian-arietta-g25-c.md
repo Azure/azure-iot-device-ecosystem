@@ -51,7 +51,7 @@ Before executing any of the steps below, read through each process, step by step
 You should have the following items ready, before beginning the process:
 
 -   A computer with GitHub installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub
     private repository.
 -   SSH client, such as [PuTTY](http://www.putty.org/), to access the
     command line.
@@ -145,9 +145,9 @@ A Linux PC is required.
 
 -   Download the SDK to the board by issuing the following command in PuTTY:
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
 
--   Verify that you now have a copy of the source code under the directory ~/azure-iot-sdks.
+-   Verify that you now have a copy of the source code under the directory ~/azure-iot-sdk-c.
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
@@ -156,11 +156,11 @@ A Linux PC is required.
 
 	For AMQP protocol:
 
-		nano azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+		nano azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
 
 	For HTTP protocol:
 
-		nano azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+		nano azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
 
 	This launches a console-based text editor. 
 	Scroll down to the connection information.
@@ -177,7 +177,7 @@ A Linux PC is required.
 
 - Open IOT_DEVICE_PARAMS.TXT to edit.
 
-		nano azure-iot-sdks/tools/iot_hub_e2e_tests_params/iot_device_params.txt
+		nano azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/iot_device_params.txt
 
 	Set the values for all the variables listed in the file as explained below.
 	
@@ -195,7 +195,7 @@ A Linux PC is required.
 
 	Running following command on your device:
 			
-		cd ./azure-iot-sdks/tools/iot_hub_e2e_tests_params/
+		cd ./azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/
 		chmod +x setiotdeviceparametersfore2etests.sh
 		free && sync && echo 3 > /proc/sys/vm/drop_caches && free
 		./setiotdeviceparametersfore2etests.sh
@@ -205,7 +205,7 @@ A Linux PC is required.
 - Build the SDK using following command.
 
 		free && sync && echo 3 > /proc/sys/vm/drop_caches && free
-		./azure-iot-sdks/c/build_all/linux/build.sh | tee LogFile.txt
+		./azure-iot-sdk-c/build_all/linux/build.sh | tee LogFile.txt
 
 	Note:*LogFile.txt in above command should be replaced with a file name where build output will be written, build.sh creates a folder called "cmake" in your home folder. 
 	Inside "cmake" are all the results of the compilation of the complete software.*
@@ -228,11 +228,11 @@ In this section you will run the Azure IoT client SDK samples of communication b
 
     **If using AMQP protocol:** Run sample *iothub_client_sample_amqp*
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
+        azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
 
     **If using HTTP protocol:** Run sample *iothub_client_sample_http*
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
+        azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
 
 4.  Verify that the confirmation messages show an OK. If not, then you may have incorrectly copied the device hub connection information.
 

@@ -32,7 +32,7 @@ This multi-step process includes:
 # Step 1: Prerequisites
 
 You should have the following items ready before beginning the process:
--   [UP-board](http://up-shop.org/) with access to the [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+-   [UP-board](http://up-shop.org/) with access to the [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub public repository.
 -   USB keyboard
 -   USB mouse
 -   HDMI cable
@@ -60,18 +60,18 @@ Run the following commands in the terminal.
 -   Download the Azure IoT device SDK:
 
     ```
-    git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+    git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
     ```
 
--   Confirm that you now have a copy of the SDK under the directory ./azure-iot-sdks. Then cd to the directory:
+-   Confirm that you now have a copy of the SDK under the directory ./azure-iot-sdk-c. Then cd to the directory:
 
     ```
-    cd azure-iot-sdks
+    cd azure-iot-sdk-c
     ```
 
 -   Prepare your environment by running. Answer **y** when you are prompted to install the additional components needed to run the samples:
     ```
-    sudo c/build_all/linux/setup.sh
+    sudo /build_all/linux/setup.sh
     ```
 
 -   Edit the file ./c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c and replace connection string placeholder with the connection string
@@ -86,7 +86,7 @@ you obtained in the [step](#DeviceConnectionString) above.
 -   Finally, build the SDK and sample applications:
 
     ```
-    ./c/build_all/linux/build.sh
+    ./build_all/linux/build.sh
     ```
 
 <a name="buildsimplesample"/>
@@ -95,7 +95,7 @@ you obtained in the [step](#DeviceConnectionString) above.
 -   Run the **iothub_client_sample_http** sample:
 
     ```
-    sudo azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
+    sudo azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
     ```
 
 This sample application sends simulated sensor data to your IoT Hub.

@@ -32,7 +32,7 @@ This document describes how to connect BeagleBone Green device running Debian wi
 You should have the following items ready before beginning the process:
 
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks-c](https://github.com/Azure/azure-iot-sdk-c.git) GitHub
+    [azure-iot-sdk-c-c](https://github.com/Azure/azure-iot-sdk-c.git) GitHub
     public repository.
 -   [BeagleBone Green](http://beagleboard.org/Green).
 -   USB Mini cable.
@@ -114,7 +114,7 @@ You should have the following items ready before beginning the process:
 
 -   Run the sample by issuing following command:
 
-        azure-iot-sdk-c/cmake/iotsdk_linux/serializer/samples/simplesample_amqp/simplesample_amqp
+        azure-iot-sdk-cmake/iotsdk_linux/serializer/samples/simplesample_amqp/simplesample_amqp
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application and how to send cloud-to-device messages to the application.
 
@@ -124,7 +124,7 @@ You should have the following items ready before beginning the process:
 
 -   If you just want to build the serializer samples, run the following commands:
 
-     	cd azure-iot-sdk-c/cmake/iotsdk_linux/serializer/samples
+     	cd azure-iot-sdk-cmake/iotsdk_linux/serializer/samples
         make -f Makefile all
 
 [lnk-setup-iot-hub]: ../setup_iothub.md

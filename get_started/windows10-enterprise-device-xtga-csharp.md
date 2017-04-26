@@ -32,7 +32,7 @@ This document describes how to connect device-xtga (DS-96128/96256N-I24) device 
 
 You should have the following items ready before beginning the process:
 
--   Computer with GitHub installed and access to the azure-iot-sdks GitHub private repository
+-   Computer with GitHub installed and access to the azure-iot-sdk-csharp GitHub private repository
 -   Install any version of Visual Studio 2015.
 -   Install Microsoft Azure SDK.
 -   [Setup your IoT hub][lnk-setup-iot-hub]

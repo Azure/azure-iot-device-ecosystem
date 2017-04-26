@@ -103,9 +103,9 @@ For installing, open an SSH session, connect to the device and do the following:
         cd /mnt/mmc0p1
     
         # Clone Azure IoT SDK
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-node.git
 
--   Verify that you now have a copy of the source code under the directory /mnt/mmc0p1/azure-iot-sdks.
+-   Verify that you now have a copy of the source code under the directory /mnt/mmc0p1/azure-iot-sdk-node.
 
 <a name="BuildSamples"></a>
 ## 3.2 Build the samples
@@ -118,7 +118,7 @@ For installing, open an SSH session, connect to the device and do the following:
 
 -   Run the following commands 
 
-        cd /mnt/mmc0p1/azure-iot-sdks/node
+        cd /mnt/mmc0p1/azure-iot-sdk-node
         build/dev-setup.sh
         build/build.sh | tee LogFile.txt
 
@@ -126,7 +126,7 @@ For installing, open an SSH session, connect to the device and do the following:
 
 -   Install npm package to run sample.
 
-        cd /mnt/mmc0p1/azure-iot-sdks/node/device/samples
+        cd /mnt/mmc0p1/azure-iot-sdk-node/device/samples
 
     **For AMQP Protocol:**
 	
@@ -164,7 +164,7 @@ For installing, open an SSH session, connect to the device and do the following:
 
 -   Press F10 once again to close Midnight Commander.
 
--   Run the following command before leaving the **/mnt/mmc0p1/azure-iot-sdks/node/device/samples** directory
+-   Run the following command before leaving the **/mnt/mmc0p1/azure-iot-sdk-node/device/samples** directory
 
         npm link azure-iot-device
 
@@ -175,7 +175,7 @@ For installing, open an SSH session, connect to the device and do the following:
 
 -   Run the sample by issuing following command and verify that data has been successfully sent and received.
 
-        node /mnt/mmc0p1/azure-iot-sdks/node/device/samples/simple_sample_device.js
+        node /mnt/mmc0p1/azure-iot-sdk-node/device/samples/simple_sample_device.js
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 

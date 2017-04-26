@@ -750,5 +750,5 @@ Please visit our [Azure IoT Dev Center](https://azure.microsoft.com/en-us/develo
 
 In this section we will explain how to see the data flowing from the Arduino application to the Node.js application:
 - Arduino application: In the Arduino IDE go to Tools -> Serial Monitor
-- IoT Hub: Use [Device Explorer](https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md)
+- IoT Hub: Use [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md)
 - Azure Storage Table: Use [Azure Storage Explorer](http://storageexplorer.com/)

@@ -55,9 +55,9 @@ You should have the following items ready before beginning the process:
 -   Download the SDK to the board by issuing the following command in
     PuTTY:
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-node.git
 
--   Verify that you now have a copy of the source code under the directory ~/azure-iot-sdks.
+-   Verify that you now have a copy of the source code under the directory ~/azure-iot-sdk-node.
 
 <a name="BuildSamples"></a>
 ## 3.2 Build the samples
@@ -70,7 +70,7 @@ You should have the following items ready before beginning the process:
 
 -   Run the following commands 
 
-        cd ~/azure-iot-sdks/
+        cd ~/azure-iot-sdk-node/
 		rm /home/ionsign/gmu.log.* -rf
 		rm /home/ionsign/pins/*log -rf
 		rm c docs .git csharp java -rf
@@ -86,7 +86,7 @@ You should have the following items ready before beginning the process:
 
 -   Install npm package to run sample.
 
-        cd ~/azure-iot-sdks/node/device/samples
+        cd ~/azure-iot-sdk-node/device/samples
 
     **For AMQP Protocol:**
 	
@@ -102,7 +102,7 @@ You should have the following items ready before beginning the process:
 
 -   To update sample, run the following command on device.
 
-        cd ~/azure-iot-sdks/node/device/samples
+        cd ~/azure-iot-sdk-node/device/samples
         nano simple_sample_device.js
 
 -   This launches a console-based text editor. Scroll down to the
@@ -127,7 +127,7 @@ You should have the following items ready before beginning the process:
 
 -   Press Ctrl+X to exit nano.
 
--   Run the following command before leaving the **~/azure-iot-sdks/node/device/samples** directory
+-   Run the following command before leaving the **~/azure-iot-sdk-node/device/samples** directory
 
         npm link azure-iot-device
 
@@ -138,7 +138,7 @@ You should have the following items ready before beginning the process:
 
 -   Run the sample by issuing following command and verify that data has been successfully sent and received.
 
-        node ~/azure-iot-sdks/node/device/samples/simple_sample_device.js
+        node ~/azure-iot-sdk-node/device/samples/simple_sample_device.js
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 

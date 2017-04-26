@@ -69,7 +69,7 @@ You should have the following items ready before beginning the process:
 
 -   To update sample, run the following command on device.
 
-        cd ~/azure-iot-sdks/node/device/samples
+        cd ~/azure-iot-sdk-node/device/samples
         vi simple_sample_device.js
 
 -   This launches a console-based text editor. Scroll down to the
@@ -94,7 +94,7 @@ You should have the following items ready before beginning the process:
 
 -   Press Ctrl+X to exit nano.
 
--   Run the following command before leaving the **~/azure-iot-sdks/node/device/samples** directory
+-   Run the following command before leaving the **~/azure-iot-sdk-node/device/samples** directory
 
         npm link azure-iot-device
 
@@ -105,7 +105,7 @@ You should have the following items ready before beginning the process:
 
 -   Run the sample by issuing following command and verify that data has been successfully sent and received.
 
-        node ~/azure-iot-sdks/node/device/samples/simple_sample_device.js
+        node ~/azure-iot-sdk-node/device/samples/simple_sample_device.js
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 
