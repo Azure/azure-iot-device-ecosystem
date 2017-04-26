@@ -49,7 +49,7 @@ to ensure end to end understanding.
 You should have the following items ready before beginning the process:
 
 -   Computer with GitHub installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) and [azure-iot-c-sdk-mico](https://github.com/zhaojuntao/azure-iot-c-sdk-mico) GitHub
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) and [azure-iot-c-sdk-mico](https://github.com/zhaojuntao/azure-iot-c-sdk-mico) GitHub
     public repository.
 -   Required hardware:
 	-	Prepare [mxchip wifi module board](http://www.mxchip.com/product/wifi),for example MiCOKit3239.Please submit Sample application information on [mico.io](http://bbs.mico.io/),if you have not a mxchip wifi module board.
