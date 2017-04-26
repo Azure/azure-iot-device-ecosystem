@@ -14,6 +14,7 @@ Run a simple Csharp sample on device running Windows 10 IoT Core
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
+-   [Next Steps](#NextSteps)
 
 <a name="Introduction"></a>
 # Introduction
@@ -193,8 +194,27 @@ Now set the breakpoint at the `await` statement and start the application. When 
 
 Congratulations! You have successfully received your string from Azure IoT Hub.
 
+<a name="NextSteps"></a>
+# Next Steps
+
+You have now learned how to run a sample application that collects sensor data and sends it to your IoT hub. To explore how to store, analyze and visualize the data from this application in Azure using a variety of different services, please click on the following lessons:
+
+-   [Manage cloud device messaging with iothub-explorer]
+-   [Save IoT Hub messages to Azure data storage]
+-   [Use Power BI to visualize real-time sensor data from Azure IoT Hub]
+-   [Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub]
+-   [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]
+-   [Remote monitoring and notifications with Logic Apps]   
+
+[Manage cloud device messaging with iothub-explorer]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-explorer-cloud-device-messaging
+[Save IoT Hub messages to Azure data storage]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-store-data-in-azure-table-storage
+[Use Power BI to visualize real-time sensor data from Azure IoT Hub]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi
+[Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps
+[Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning
+[Remote monitoring and notifications with Logic Apps]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps
 [device-explorer]: ../../tools/DeviceExplorer/doc/how_to_use_device_explorer.md
 [hello-sample]: http://ms-iot.github.io/content/win10/samples/HelloWorld.htm
 [iot-dev-center]: https://dev.windows.com/iot
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
+

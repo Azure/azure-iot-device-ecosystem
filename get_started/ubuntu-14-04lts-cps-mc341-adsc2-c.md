@@ -14,6 +14,7 @@ Run a simple C sample on CPS-MC341-ADSC2 device running Ubuntu 14.04LTS
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
+-   [Next Steps](#NextSteps)
 
 
 <a name="Introduction"></a>
@@ -478,4 +479,5 @@ See the setting details below.
 ## 3.3 Receive messages from IoT Hub
 
 -   On Windows, refer "Send cloud-to-device messages" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) for instructions on sending messages to device.
+
 

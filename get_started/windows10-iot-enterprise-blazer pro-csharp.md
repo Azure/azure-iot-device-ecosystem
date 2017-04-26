@@ -14,6 +14,7 @@ Run a simple Csharp sample on Blazer Pro device running Windows 10 IoT Enterpris
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
+-   [Next Steps](#NextSteps)
 
 
 <a name="Introduction"></a>
@@ -64,4 +65,5 @@ You should have the following items ready before beginning the process:
 
 -	Refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to see the data your device is sending.
 -	Refer "Send cloud-to-device messages" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) for instructions on sending messages to device.
+
 

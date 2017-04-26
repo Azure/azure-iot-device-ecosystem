@@ -14,6 +14,7 @@ Run a simple C-Sharp sample on  DASH T3 device running Windows 10 IoT Enterprise
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
+-   [Next Steps](#NextSteps)
 
 <a name="Introduction"></a>
 # Introduction
@@ -71,3 +72,4 @@ You should have the following items ready before beginning the process:
 -	In **Solution Explorer**, right-click the **DeviceClientHttpSample** project, click **Debug**, and then click **Start new instance** to build and run the sample. The console displays messages as the application sends device-to-cloud messages to IoT Hub.
 
 -	See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the application and how to send cloud-to-device messages to the application.
+

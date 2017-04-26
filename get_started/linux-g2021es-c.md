@@ -15,6 +15,7 @@ Run a simple C sample on G2021ES device running Linux Kernel 3.14 Ubuntu distrib
 -   [Step 2: Prepare G2021ES]
 -   [Step 3: Build and Run the HTTPS Sample]
 -   [Tips]
+-   [Next Steps](#NextSteps)
 
 <a name="Requirements"></a>
 -   SSH client on your desktop computer, such as PuTTY, so you can remotely access the command line on the G2021ES device.
@@ -94,6 +95,25 @@ Note: You can skip this step if you just want to build the sample application wi
 -	For addtion information and support, please get in touch with systems@pacificcontrols.net
 
 
+<a name="NextSteps"></a>
+# Next Steps
+
+You have now learned how to run a sample application that collects sensor data and sends it to your IoT hub. To explore how to store, analyze and visualize the data from this application in Azure using a variety of different services, please click on the following lessons:
+
+-   [Manage cloud device messaging with iothub-explorer]
+-   [Save IoT Hub messages to Azure data storage]
+-   [Use Power BI to visualize real-time sensor data from Azure IoT Hub]
+-   [Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub]
+-   [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]
+-   [Remote monitoring and notifications with Logic Apps]   
+
+[Manage cloud device messaging with iothub-explorer]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-explorer-cloud-device-messaging
+[Save IoT Hub messages to Azure data storage]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-store-data-in-azure-table-storage
+[Use Power BI to visualize real-time sensor data from Azure IoT Hub]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi
+[Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps
+[Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning
+[Remote monitoring and notifications with Logic Apps]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
+

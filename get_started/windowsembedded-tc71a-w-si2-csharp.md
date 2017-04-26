@@ -14,6 +14,7 @@ Run a simple Csharp sample on TC71A-W-SI2 device running Windows Embedded 8.1 In
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
+-   [Next Steps](#NextSteps)
 
 
 <a name="Introduction"></a>

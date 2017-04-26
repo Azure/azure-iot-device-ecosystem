@@ -14,6 +14,7 @@ Run a simple C sample on GR-PEACH device running Mbed
 -   [Step 1: Azure IoT Hub の設定](#Prerequisites)
 -   [Step 2: デバイスの準備](#PrepareDevice)
 -   [Step 3: サンプルプログラムのビルドと実行](#Build)
+-   [Next Steps](#NextSteps)
 
 <a name="Introduction"></a>
 # はじめに 
@@ -112,3 +113,4 @@ Tera Term や Device Explorer を用いて Azure IoT Hub とのデータ通信�
 -   GR-PEACH のハードリセットボタンを押すとプログラムが再実行され、結果が出力される。 
 
     ![GRPeach\_image09](media/mbed-gr-peach-c-image09.png)
+
