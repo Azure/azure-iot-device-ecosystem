@@ -88,11 +88,11 @@ You should have the following items ready before beginning the process:
         
         3.1.5 Use "scp" command copy files to the boad
 		
-			scp ~openwrt/sdk/build_dir/target-mipsel_24kec+dsp_uClibc-0.9.33.2/azure-iot-sdks-1/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp root@mylinkit.local:/tmp
+			scp ~openwrt/sdk/build_dir/target-mipsel_24kec+dsp_uClibc-0.9.33.2/azure-iot-sdk-c-1/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp root@mylinkit.local:/tmp
 			
 			or
 			
-			scp ~openwrt/sdk/build_dir/target-mipsel_24kec+dsp_uClibc-0.9.33.2/azure-iot-sdks-1/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http root@mylinkit.local:/tmp
+			scp ~openwrt/sdk/build_dir/target-mipsel_24kec+dsp_uClibc-0.9.33.2/azure-iot-sdk-c-1/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http root@mylinkit.local:/tmp
 			
 	3.2 Run the command on board
 	

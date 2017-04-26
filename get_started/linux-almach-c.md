@@ -32,7 +32,7 @@ This document describes how to connect Almach device running Yocto Linux with Az
 You should have the following items ready before beginning the process:
 
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub
     public repository.
 -   Almach device
 -   For wired connection, [USB Ethernet board](http://www.e-consystems.com/DM3730-development-board.asp#accessories)
@@ -83,11 +83,11 @@ You can build the azure-iot-sdk and samples directly in Almach or from PC where 
 
     **For AMQP protocol:**
 
-        vi azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+        vi azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
 
     **For HTTPS protocol:**
 
-        vi azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+        vi azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
 
 -   Find the following place holder for IoT connection string:
 
@@ -97,7 +97,7 @@ You can build the azure-iot-sdk and samples directly in Almach or from PC where 
 
 -   You can now build the SDK samples using the following command from ***$HOME***:
 
-        ./azure-iot-sdks/c/build_all/linux/build.sh
+        ./azure-iot-sdk-c/build_all/linux/build.sh
 
 ## 3.2 Build SDK and sample in PC
 
@@ -111,11 +111,11 @@ You can build the azure-iot-sdk and samples directly in Almach or from PC where 
 
     **For AMQP protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
 
     **For HTTPS protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
 
 -   Find the following place holder for IoT connection string:
 
@@ -144,11 +144,11 @@ You can build the azure-iot-sdk and samples directly in Almach or from PC where 
 
     **If using AMQP protocol:**
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
+        azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
 
     **If using HTTPS protocol:**
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
+        azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 

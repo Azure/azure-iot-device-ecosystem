@@ -30,7 +30,7 @@ This document describes the process of setting up a [Raspberry Pi 2](https://www
 
 You should have the following items ready before beginning the process:
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub public repository.
 -   Terminal emulator on your desktop computer, such as [Tera Term](https://osdn.jp/projects/ttssh2/) or [PuTTY](http://www.putty.org/), so you can access the command line on the Raspberry Pi.
 - Required hardware:  
   - [Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/)  
@@ -62,13 +62,13 @@ Run the following commands in the terminal window connected to your Raspberry Pi
 - Download the Azure IoT device SDK to your Raspberry Pi:
 
   ```
-  git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+  git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
   ```
 
-- Confirm that you now have a copy of the SDK under the directory ./azure-iot-sdks.
+- Confirm that you now have a copy of the SDK under the directory ./azure-iot-sdk-c.
 Then cd to the directory:
   ```
-  cd azure-iot-sdks
+  cd azure-iot-sdk-c
   ```
 
 - Prepare your environment by running. Answer **y** when you are prompted to install the additional components needed to run the samples:
@@ -89,7 +89,7 @@ Then cd to the directory:
 
 	- On the board, run the following command:
 
-			nano azure-iot-sdks/c/serializer/samples/simplesample_http/simplesample_http.c
+			nano azure-iot-sdk-c/serializer/samples/simplesample_http/simplesample_http.c
 
 	- This launches a console-based text editor. Scroll down to the connection information.
 
@@ -103,7 +103,7 @@ Then cd to the directory:
 
 - You can now build the SDK code using the following command.
 
-		~/azure-iot-sdks/c/build_all/linux/build.sh
+		~/azure-iot-sdk-c/build_all/linux/build.sh
 
 	**Note:** build.sh creates a folder called "cmake" in your home folder. Inside "cmake" are all the results of the compilation of the complete software.
 
@@ -112,7 +112,7 @@ Then cd to the directory:
 
 - Run the **simplesample_http** sample by issuing the following command:
 
-        azure-iot-sdks/c/cmake/iotsdk_linux/serializer/samples/simplesample_http/simplesample_http
+        azure-iot-sdk-c/cmake/iotsdk_linux/serializer/samples/simplesample_http/simplesample_http
 
 - Verify that the **Confirmation** messages show an **OK**. If not, then you may have incorrectly pasted the device hub connection information.
 

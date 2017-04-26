@@ -62,21 +62,21 @@ You should have the following items ready before beginning the process:
 
 -   Download the Microsoft Azure IoT Device SDK for C to the development machine by issuing the following command:
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
 
 -   Edit the following file using any text editor of your choice:
 
     **For AMQP protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
 
     **For MQTT protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt.c
         
     **For HTTPS protocol:**
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
 
 -   Find the following place holder for IoT connection string:
 
@@ -86,7 +86,7 @@ You should have the following items ready before beginning the process:
 
 -   Download the Azure cmake cross compile toolchain file (toolchain-nixcore.cmake) from the NixCores website [http://nixcores.com/azure/](http://nixcores.com/azure/).
 
--   Store the Toolchain file in ./azure-iot-sdks/c/ folder
+-   Store the Toolchain file in ./azure-iot-sdk-c/ folder
 
 -   Edit the Toolchain file, set the following variables you gathered from [Step 2](#PrepareDevice)
     
@@ -100,7 +100,7 @@ You should have the following items ready before beginning the process:
 
 -   Build the SDK using following command, replacing the RFS path with the location you gathered in [Step 2](#PrepareDevice)
 
-        sudo ./azure-iot-sdks/c/build_all/linux/build.sh -cl --sysroot=<openwrt_RFS_path> --toolchain-file ./azure-iot-sdks/c/toolchain-nixcore.cmake
+        sudo ./azure-iot-sdk-c/build_all/linux/build.sh -cl --sysroot=<openwrt_RFS_path> --toolchain-file ./azure-iot-sdk-c/toolchain-nixcore.cmake
 
 ## 3.2 Send Device Events to IoT Hub:
 
@@ -108,19 +108,19 @@ You should have the following items ready before beginning the process:
 
     **If using HTTP protocol:**
     
-        scp azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
+        scp azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
 
         root@<nixcore_ip>:~
 
     **If using MQTT protocol:**
     
-        scp azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt
+        scp azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt
 
         root@<nixcore_ip>:~
         
     **If using AMQP protocol:**
 
-        scp azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
+        scp azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
 
         root@<nixcore_ip>:~
     

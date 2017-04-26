@@ -18,7 +18,7 @@ Complete the following steps to set up your development environment:
 - Ensure that the desired Python version is installed (2.7.x, 3.4.x or 3.5.x). Run `python --version` or `python3 --version` at the command line to check the version. 
     - On Linux, Python 2.7 is typically already installed and active. 
     - On Windows, install the latest x86 or x64 Python 2.7 or 3.x client from ([python.org](https://www.python.org/downloads/)). The build needs a valid Python.exe in the path. Based on the active Python version (e.g. Python 2.7.11 x86 32bit) the build script choses the compiler settings for the Python extension module build accordingly and copies the extension to the test and sample folder.
-- When you have installed Python, make sure you cloned the latest version of this repository ([azure-iot-sdks](https://github.com/Azure/azure-iot-sdks)) to your development machine or device. You should always use the **master** branch for the latest version of the libraries and samples.
+- When you have installed Python, make sure you cloned the latest version of this repository ([azure-iot-sdk-python](https://github.com/Azure/azure-iot-sdk-python)) to your development machine or device. You should always use the **master** branch for the latest version of the libraries and samples.
 
 <a name="linux"/>
 ## Build the Python iothub_client module on Linux

@@ -165,10 +165,10 @@ See the setting details below.
         df
 
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub
     public repository.
 -   CPS-MC341-ADSC2 device.
--   Download and install [DeviceExplorer](https://github.com/Azure/azure-iot-sdks/releases).
+-   Download and install [DeviceExplorer](https://github.com/Azure/azure-iot-sdk-c/releases).
 -   [Set up your IoT hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md).
 #### Create a device on IoT Hub
 -   With your IoT hub configured and running in Azure, follow the instructions in **"Create Device"** section of [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md).
@@ -207,11 +207,11 @@ See the setting details below.
 
 -   Download the Microsoft Azure IoT Device SDK for C to the board by issuing the following command on the board::
 
-	git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+	git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
 
 -   Edit the following file using vi editor:
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
 
 -   Find the following place holder for device connection string:
 
@@ -221,7 +221,7 @@ See the setting details below.
 
 -   Edit the following file using vi editor:
 
-        azure-iot-sdks/tools/iot_hub_e2e_tests_params/iot_device_params.txt
+        azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/iot_device_params.txt
 
         IOTHUB_CONNECTION_STRING=<HostName=...>
         IOTHUB_DEVICE_ID=
@@ -237,7 +237,7 @@ See the setting details below.
 
 -   On the board, run the following command to change params:
 
-        cd ./azure-iot-sdks/tools/iot_hub_e2e_tests_params/
+        cd ./azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/
         sudo chmod +x setiotdeviceparametersfore2etests.sh
         sudo ./setiotdeviceparametersfore2etests.sh
 
@@ -249,7 +249,7 @@ See the setting details below.
 
 -   Edit the following file using vi editor:
 
-        azure-iot-sdks/c/build_all/linux/build.sh
+        azure-iot-sdk-c/build_all/linux/build.sh
 
 -   Find the following place holder:
 
@@ -261,7 +261,7 @@ See the setting details below.
 
 -   Edit the following file using vi editor:
 
-        azure-iot-sdks/c/azure-c-shared-utility/tests/condition_unittests/CMakeLists.txt
+        azure-iot-sdk-c/azure-c-shared-utility/tests/condition_unittests/CMakeLists.txt
 
 -   Add, and then save the changes:
 
@@ -284,13 +284,13 @@ An example: Creating 1Gbyte of SWAP memory
 
 -   Build the SDK samples using the following command:
 
-        ./azure-iot-sdks/c/build_all/linux/build.sh 
+        ./azure-iot-sdk-c/build_all/linux/build.sh 
 
 ## 3.2 Send Device Events to IoT Hub:
 
 -   Run the sample by issuing following command:
 
-	~/azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
+	~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
 
 
 -   On Windows, refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to see the data your device is sending.
@@ -348,10 +348,10 @@ See the setting details below.
         - Password:contec
 
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub
     public repository.
 -   CPS-MC341-ADSC2 device.
--   Download and install [DeviceExplorer](https://github.com/Azure/azure-iot-sdks/releases).
+-   Download and install [DeviceExplorer](https://github.com/Azure/azure-iot-sdk-c/releases).
 -   [Set up your IoT hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md).
 #### Create a device on IoT Hub
 -   With your IoT hub configured and running in Azure, follow the instructions in **"Create Device"** section of [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md).
@@ -390,17 +390,17 @@ See the setting details below.
 
 -   Download the Microsoft Azure IoT Device SDK for C to the board by issuing the following command on the board::
 
-	git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+	git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
 
 -   Edit the following file using vi editor:
 
     {{**For AMQP protocol:**}}
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
 
     {{**For HTTPS protocol:**}}
 
-        azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
 
 -   Find the following place holder for device connection string:
 
@@ -410,7 +410,7 @@ See the setting details below.
 
 -   Edit the following file using vi editor:
 
-        azure-iot-sdks/tools/iot_hub_e2e_tests_params/iot_device_params.txt
+        azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/iot_device_params.txt
 
         IOTHUB_CONNECTION_STRING=<HostName=...>
         IOTHUB_DEVICE_ID=
@@ -426,7 +426,7 @@ See the setting details below.
 
 -   On the board, run the following command to change params:
 
-        cd ./azure-iot-sdks/tools/iot_hub_e2e_tests_params/
+        cd ./azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/
         sudo chmod +x setiotdeviceparametersfore2etests.sh
         sudo ./setiotdeviceparametersfore2etests.sh
 
@@ -438,7 +438,7 @@ See the setting details below.
 
 -   Edit the following file using vi editor:
 
-        azure-iot-sdks/c/build_all/linux/build.sh
+        azure-iot-sdk-c/build_all/linux/build.sh
 
 -   Find the following place holder:
 
@@ -450,7 +450,7 @@ See the setting details below.
 
 -   Edit the following file using vi editor:
 
-        azure-iot-sdks/c/azure-c-shared-utility/tests/condition_unittests/CMakeLists.txt
+        azure-iot-sdk-c/azure-c-shared-utility/tests/condition_unittests/CMakeLists.txt
 
 -   Add, and then save the changes:
 
@@ -458,7 +458,7 @@ See the setting details below.
 
 -   Build the SDK samples using the following command:
 
-        sudo -E ./azure-iot-sdks/c/build_all/linux/build.sh 
+        sudo -E ./azure-iot-sdk-c/build_all/linux/build.sh 
 
 ## 3.2 Send Device Events to IoT Hub:
 
@@ -466,11 +466,11 @@ See the setting details below.
 
     {{**If using AMQP protocol:**}}
 
-	~/azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
+	~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
 
     {{**If using HTTPS protocol:**}}
 
-	~/azure-iot-sdks/c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
+	~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
 
 
 -   On Windows, refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to see the data your device is sending.

@@ -29,7 +29,7 @@ The following document describes the process of connecting an HoneyBee Repeater 
 # Step 1: Prerequisites
 
 You should have the following items ready before beginning the process:
--   Computer with a Git client installed so that you can access the azure-iot-sdks code on GitHub.
+-   Computer with a Git client installed so that you can access the azure-iot-sdk-c code on GitHub.
   - HoneyBee Repeater board.
   - Ubuntu x86 machine (for cross compiling) 
 -   [Setup your IoT hub](../setup_iothub.md) 
@@ -52,7 +52,7 @@ Install dependencies under root/sudo.
 apt-get install curl libcurl4-openssl-dev uuid-dev uuid g++ make cmake git unzip openjdk-7-jre libssl-dev libncurses-dev subversion gawk
 ```
 
-- Clone this repository ([azure-iot-sdks](https://github.com/Azure/azure-iot-sdks)) to the machine you are using, being sure to do a recursive clone (git clone --recursive <repo address>).
+- Clone this repository ([azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c)) to the machine you are using, being sure to do a recursive clone (git clone --recursive <repo address>).
 - Navigate to the folder **c/build_all/arduino** in your local copy of the repository.
 - Run the `./setup.sh` script to install the OpenWRT SDK and prerequisites. By default, the SDK will be installed at **~/openwrt/sdk**
 - (Optional) Enter 'Y' to build the Azure IoT SDK.
@@ -77,13 +77,13 @@ static const char* connectionString = "[device connection string]";
 OpenWRT Image:
 
 ```
-scp ~/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/serializer/samples/simplesample_http/simplesample_http root@OpenWrt:/tmp
+scp ~/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdk-c-1/serializer/samples/simplesample_http/simplesample_http root@OpenWrt:/tmp
 ```
 
 LininoIO Image:
 
 ```
-scp ~/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdks-1/serializer/samples/simplesample_http/simplesample_http root@OpenWrt:/tmp
+scp ~/openwrt/sdk/build_dir/target-mips_r2_uClibc-0.9.33.2/azure-iot-sdk-c-1/serializer/samples/simplesample_http/simplesample_http root@OpenWrt:/tmp
 ```
 
 ***Note: The uClibc version might be different on your setup and you might need to adjust the path accordingly.***

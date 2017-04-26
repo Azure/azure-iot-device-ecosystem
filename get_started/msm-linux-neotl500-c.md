@@ -52,7 +52,7 @@ You should have the following items ready before beginning the process:
 
 -  Download the Microsoft Azure IoT Device SDK for C to your LINUX development VM by issuing the following command:
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdks.git
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
 
 -  Set up the cross compiler setting.
 
@@ -104,7 +104,7 @@ You should have the following items ready before beginning the process:
 
 *  Edit the following file (this file is necessary to cross build the SDK):
 
-        azure-iot-sdks/CMakeLists.txt
+        azure-iot-sdk-c/CMakeLists.txt
      
     * Make warning as error Rules Remove
         

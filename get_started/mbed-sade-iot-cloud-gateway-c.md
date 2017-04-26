@@ -31,7 +31,7 @@ This document describes the steps for connecting an [mbed-SADEIotCloudGateway](<
 
 You should have the following items ready before beginning the process:
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub public repository.
 -   SSH client on your desktop computer, such as [PuTTY](http://www.putty.org/), so you can remotely access the command line on the SadeIOTCloudGateway.
 -   Required hardware: [mbed-SADEIotCloudGateway](<http://developer.mbed.org/platforms/IBMEthernetKit>), SADETemperatureExtensionBoard
 -   [Setup your IoT hub][lnk-setup-iot-hub]

@@ -36,7 +36,7 @@ You should have the following items ready before beginning the process:
     -   Set environment variable JAVA_HOME with path to JDK.
     -   Download [Android Studio](<https://developer.android.com/studio/index.html>) on your Windows machine and follow the installation instructions.
     -   Install android sdk 22 5.1.1 Lollipop.
-    -   Computer with Git client installed and access to the [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+    -   Computer with Git client installed and access to the [azure-iot-sdk-java](https://github.com/Azure/azure-iot-sdk-java) GitHub public repository.
     -   Download Maven from [here](<https://maven.apache.org/download.cgi>).
     -   Install Maven by following instructions available [here](<https://maven.apache.org/install.html>).
     -   Add path to Maven bin folder to environment variable PATH.
@@ -84,7 +84,7 @@ Please find Azure Android java device sample code [here][android-sample-code].
 
 1.  Start a new instance of Android Studio and open Android project from here:
 
-        azure-iot-sdks/java/device/samples/android-sample/
+        azure-iot-sdk-java/device/samples/android-sample/
 
 2.  Go to **MainActivity.java**, replace the **[device connection string]** placeholder with connection string of the device you have created in [Provision your device and get its credentials][lnk-manage-iot-hub] and save the file.  An example of IoT Hub Connection String is as below:
 

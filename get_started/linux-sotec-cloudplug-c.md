@@ -32,13 +32,13 @@ This document describes how to connect SOTEC CloudPlug device running on a custo
 You should have the following items ready before beginning the process:
 
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub
+    [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub
     public repository.
 -   SOTEC CloudPlug device
 -   LINUX VM-Instance 
 -   ECLIPSE running on the LINUX VM-Instance 
 -   Cross compiler settings from YOCTO 
--   Download and install [DeviceExplorer](https://github.com/Azure/azure-iot-sdks/releases).
+-   Download and install [DeviceExplorer](https://github.com/Azure/azure-iot-sdk-c/releases).
 -   [Set up your IoT hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md).
 #### Create a device on IoT Hub
 -   With your IoT hub configured and running in Azure, follow the instructions in **"Create Device"** section of [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md).
@@ -61,14 +61,14 @@ You should have the following items ready before beginning the process:
 
 -   Download the Microsoft Azure IoT Device SDK for C to your LINUX development VM by issuing the following command:
 
-        git clone https://github.com/Azure/azure-iot-sdks.git
+        git clone https://github.com/Azure/azure-iot-sdk-c.git
 
 - 	Open a ECLIPSE Project and create a new Hello-World C++-Project
 	Creating a Hello World C++-Project with the name iothub_client_sample_amqp is the fastest way to get a project and make the extensions for the azure IoT example.
 
 -   Set up the cross compiler setting
 	
--   Copy the Sample Code found in azure-iot-sdks/c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c into main.c
+-   Copy the Sample Code found in azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c into main.c
 
 -   Find the following place holder for IoT connection string:
 
