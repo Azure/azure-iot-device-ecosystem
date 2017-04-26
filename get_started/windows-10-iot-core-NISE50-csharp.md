@@ -31,7 +31,7 @@ This document describes how to connect NISE50 device running Windows 10 IoT Core
 You should have the following items ready before beginning the process:
 
 -   Computer with Git client installed and access to the
-    [azure-iot-sdks](https://github.com/Azure/azure-iot-sdks) GitHub public repository.
+    [azure-iot-sdk-csharp](https://github.com/Azure/azure-iot-sdk-csharp) GitHub public repository.
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
 -   NISE50 device.
@@ -60,7 +60,7 @@ You should have the following items ready before beginning the process:
 <a name="Step_3_2:_Build"/>
 ## 3.2  Build the Samples
 
--   Start a new instance of Visual Studio 2015. Open the **iothub_csharp_client.sln** solution (/azure-iot-sdks/csharp) from your local copy of the repository.
+-   Start a new instance of Visual Studio 2015. Open the **iothub_csharp_client.sln** solution (/azure-iot-sdk-csharp) from your local copy of the repository.
 
 -   In Visual Studio, from **Solution Explorer**, navigate to the **UWPSample(Universal Windows)** project.
 

@@ -57,7 +57,7 @@ You should have the following items ready before beginning the process:
 <a name="Step_3_2:_Build"></a>
 ## 3.2  Build the Samples
 
--   Start a new instance of Visual Studio 2015. Open the **iothub_csharp_client.sln** solution (/azure-iot-sdks/csharp) from your local copy of the repository.
+-   Start a new instance of Visual Studio 2015. Open the **iothub_csharp_client.sln** solution (/azure-iot-sdk-csharp) from your local copy of the repository.
 
 -   In Visual Studio, from **Solution Explorer**, navigate to the **UWPSample(Universal Windows)** project.
 
