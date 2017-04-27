@@ -1,7 +1,7 @@
 ---
-services: iot-hub, stream-analytics, event-hubs, web-apps, documentdb, storage-accounts
 platform: arduino
-author: hegate
+services: iot-hub, stream-analytics, event-hubs, web-apps, documentdb, storage-accounts
+language: c
 ---
 
 # Get Started with Microsoft Azure IoT Starter Kit - Adafruit Feather M0 WiFi (Arduino-compatible)
