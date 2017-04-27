@@ -15,6 +15,7 @@ Run a simple C sample on the UP-board running ubilinux 3.0
 -   [Step 2: Prepare your Device](#Step-2-PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Step-3-Build)
 -   [Tips](#tips)
+-   [Next Steps](#NextSteps)
 
 <a name="Introduction"></a>
 # Introduction

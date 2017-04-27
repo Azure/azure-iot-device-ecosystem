@@ -14,7 +14,6 @@ Run a simple C sample on GR-PEACH device running Mbed
 -   [Step 1: Azure IoT Hub の設定](#Prerequisites)
 -   [Step 2: デバイスの準備](#PrepareDevice)
 -   [Step 3: サンプルプログラムのビルドと実行](#Build)
--   [Next Steps](#NextSteps)
 
 <a name="Introduction"></a>
 # はじめに 
