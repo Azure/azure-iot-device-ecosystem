@@ -16,6 +16,7 @@ Run a simple C sample on STM32 Nucleo
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
+-   [Next Steps](#NextSteps)
 
 
 <a name="Introduction"></a>
@@ -124,6 +125,24 @@ Some cloud-to-device messages are also interpreted by the embedded application:
 
 A QuickStart guide to setup and run the application can also be downloaded [here][lnk-quickstart-st].
 
+<a name="NextSteps"></a>
+# Next Steps
+
+You have now learned how to run a sample application that collects sensor data and sends it to your IoT hub. To explore how to store, analyze and visualize the data from this application in Azure using a variety of different services, please click on the following lessons:
+
+-   [Manage cloud device messaging with iothub-explorer]
+-   [Save IoT Hub messages to Azure data storage]
+-   [Use Power BI to visualize real-time sensor data from Azure IoT Hub]
+-   [Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub]
+-   [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]
+-   [Remote monitoring and notifications with Logic Apps]   
+
+[Manage cloud device messaging with iothub-explorer]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-explorer-cloud-device-messaging
+[Save IoT Hub messages to Azure data storage]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-store-data-in-azure-table-storage
+[Use Power BI to visualize real-time sensor data from Azure IoT Hub]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi
+[Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps
+[Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning
+[Remote monitoring and notifications with Logic Apps]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
 [lnk-nucleo-f4]:http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-nucleo/nucleo-f401re.html
@@ -146,5 +165,6 @@ A QuickStart guide to setup and run the application can also be downloaded [here
 [5]: ./media/nucleo5_runconf.png
 [6]: ./media/nucleo6_runconfApply.png
 [7]: ./media/nucleo6_teraTerm.png
+
 
 
