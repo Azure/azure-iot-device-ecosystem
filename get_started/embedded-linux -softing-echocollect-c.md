@@ -1,7 +1,7 @@
 ---
 platform: embedded Linux device
 device: echocollect e and echocollect r-m
-language: Device configuration for end-user
+language: c
 ---
 
 Configure [echocollect e](https://industrial.softing.com/en/products/plc-connectivity/integration-of-plc-data/stand-alone-application-gateways-multiprotocol/echocollect-e.html) or [echocollect r-m](https://industrial.softing.com/en/products/plc-connectivity/integration-of-plc-data/stand-alone-application-gateways-multiprotocol/echocollect-rm.html) as Azure IoT-device
