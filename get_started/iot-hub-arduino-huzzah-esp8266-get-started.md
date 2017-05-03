@@ -13,7 +13,7 @@ language: c
 
 Connect Adafruit Feather HUZZAH ESP8266 to an IoT hub that you create. Then you run a sample application on ESP8266 to collect the temperature and humidity data from a DHT22 sensor. Finally, you send the sensor data to your IoT hub.
 
-> [!NOTE]
+> **NOTE:**
 > If you're using other ESP8266 boards, you can still follow these steps to connect it to your IoT hub. Depending on the ESP8266 board you're using, you might need to reconfigure the `LED_PIN`. For example, if you're using ESP8266 from AI-Thinker, you might change it from `0` to `2`. Don't have a kit yet? Get it from the [Azure website](http://azure.com/iotstarterkits).
 
 
@@ -95,7 +95,7 @@ In this section, you use a CLI tool called *iothub explorer*. Use this tool to r
 
 
 
-> [!NOTE]
+> **NOTE:**
 > iothub explorer requires Node.js 4.x or later to work properly.
 
 To register a device for Feather HUZZAH ESP8266, follow these steps:
@@ -142,7 +142,7 @@ To register a device for Feather HUZZAH ESP8266, follow these steps:
 Make a note of the connection string of the registered device. It's used later.
 
 
-> [!NOTE]
+> **NOTE:**
 > To view the connection string of registered devices, run the `iothub-explorer list` command.
 
 
@@ -292,7 +292,7 @@ After the upload completes successfully, follow these steps to enter your creden
    * Wi-Fi password
    * Device connection string
 
-> [!Note]
+> **Note:**
 > The credential information is stored in the EEPROM of Feather HUZZAH ESP8266. If you click the reset button on the Feather HUZZAH ESP8266 board, the sample application asks if you want to erase the information. Enter `Y` to have the information erased. You are asked to provide the information a second time.
 
 ### Verify the sample application is running successfully

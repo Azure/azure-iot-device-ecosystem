@@ -189,7 +189,7 @@ After the upload completes successfully, follow these steps to enter your creden
    * Wi-Fi password
    * Device connection string
 
-> [!Note]
+> **Note:**
 > The credential information is stored in the EEPROM of Feather M0 WiFi. If you click the reset button on the Feather M0 WiFi board, the sample application asks if you want to erase the information. Enter `Y` to have the information erased. You are asked to provide the information a second time.
 
 ### Verify the sample application is running successfully
