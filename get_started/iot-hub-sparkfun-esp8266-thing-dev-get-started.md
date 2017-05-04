@@ -12,7 +12,7 @@ language: c
 
 Connect Sparkfun ESP8266 Thing Dev to an IoT hub you will create. Then run a sample application on ESP8266 to collect temperature and humidity data from a DHT22 sensor. Finally, send the sensor data to your IoT hub.
 
-> [!NOTE]
+> **NOTE:**
 > If you are using other ESP8266 boards, you can still follow these steps to connect it to your IoT hub. Depending on the ESP8266 board you are using, you may need to reconfigure the `LED_PIN`. For example, if you are using ESP8266 from AI-Thinker, you may change it from `0` to `2`. Don't have a kit yet?: Click [here](http://azure.com/iotstarterkits)
 
 ## What you will learn
@@ -82,7 +82,7 @@ Every IoT hub has an identity registry that stores information about the devices
 
 In this section, you will use a CLI tool iothub explorer to register a device for ESP8266 Thing Dev in the identity registry of your IoT hub.
 
-> [!NOTE]
+> **NOTE:**
 > iothub explorer requires Node.js 4.x or higher to work properly.
 
 To register a device for ESP8266 Thing Dev, follow these steps:
@@ -259,7 +259,7 @@ After the upload completes successfully, follow the steps to enter your credenti
    * Wi-Fi password
    * Device connection string
 
-> [!Note]
+> **Note:**
 > The credential information is stored in the EEPROM of Sparkfun ESP8266 Thing Dev. If you click the reset button on the Sparkfun ESP8266 Thing Dev board, the sample application asks you if you want to erase the information. Enter `Y` to have the information erased and you are asked to provide the information again.
 
 ### Verify the sample application is running successfully
