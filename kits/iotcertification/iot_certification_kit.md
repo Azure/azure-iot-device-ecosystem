@@ -14,7 +14,7 @@ How to certify Microsoft Azure IoT Starter Kits
 -   [Step 5: Package and Share](#Step5)
     -   [5.1 Package build logs and sample test results](#Step5-1)
     -   [5.2 Share package with Engineering Support](#Step5-2)
-    -   [5.3 Next steps](#Step5-3)
+    -   [5.3 OPTIONAL STEP: Send a kit to Microsoft](#Step5-3)
 -   [Troubleshooting](#Troubleshooting)
 
 <a name="Introduction"></a>
@@ -287,15 +287,17 @@ Package following artifacts from your device:
 
 3.  All the screenshots that are above in "**Receive messages from IoT Hub**" section.
 
-4.  Send us a Pull Request with your code samples at [https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/&lt;companyname&gt;/&lt;kitname&gt;/](https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/%3ccompanyname%3e/%3ckitname%3e/%20)
+4.  A picture of your kit external package and a screenshot of the kit web page. Both of them need to show the correct name of the kit, based on the [Kit Requirements](#Requirements). 
+
+5.  If the kit includes a paper insert/manual, then provide us either with a digital copy or a picture. We want to verify that the urls described in the [Kit Requirements](#Requirements) are shown. If the kit does not have a paper manual/insert, then we need to see the urls in the external packaging, so please make sure that the picture in artifact #3 shows this.
+
+6.  Send us a Pull Request with your code samples at [https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/&lt;companyname&gt;/&lt;kitname&gt;/](https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/%3ccompanyname%3e/%3ckitname%3e/%20)
     e.g.
     <https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/contoso/iotdevkit/>
 
-5.  Send us clear instructions of how to run these samples with your kit (explicitly highlighting the new steps for customers). Please use the template available [here](https://github.com/Azure/azure-iot-device-ecosystem/kits/getstarted/template-kits.md) to create your kit-specific instructions. These instructions will be     appended as a separate section at the bottom of the "Get Started" tutorial for the corresponding device.
+7.  Send us clear instructions of how to run these samples with your kit (explicitly highlighting the new steps for customers). Please use the template available [here](https://github.com/Azure/azure-iot-device-ecosystem/kits/getstarted/template-kits.md) to create your kit-specific instructions. These instructions will be appended as a separate section at the bottom of the "Get Started" tutorial for the corresponding device.
 
     As a guideline on how the instructions should look please refer to the existing "Get Started" guides from the other kits in the [Device Catalog](http://catalog.azureiotsuite.com).
-
-6.  If you are interested in providing us with a kit, so that we can do periodic checks of your code and investigate whether it is still it is still compatible with our Azure IoT SDK, then please email us at <iotcert@microsoft.com>, after you complete your submission and we will provide you with further instructions.
 
 <a name="Step5-2"></a>
 ## 5.2 Share package with Microsoft Azure IoT team
@@ -316,6 +318,12 @@ Package following artifacts from your device:
     ***Note:*** *Please contact iotcert team to change/remove the files once you submit them for review.*
 
 5. Once you shared the documents with us, we will contact you in the following 48 to 72 business hours with next steps.
+
+<a name="Step5-3"></a>
+## 5.3 OPTIONAL STEP: Send a kit to Microsoft 
+If you are interested in providing us with a kit, so that we can do periodic checks of your code and investigate whether it is still it is still compatible with our Azure IoT SDK, then please email us at <iotcert@microsoft.com>, after you complete your submission and we will provide you with further instructions.
+
+If you are not interested in this, then you do not need to provide us with a kit.
 
 <a name="Troubleshooting"></a>
 # Troubleshooting
