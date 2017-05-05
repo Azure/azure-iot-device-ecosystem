@@ -287,17 +287,19 @@ Package following artifacts from your device:
 
 3.  All the screenshots that are above in "**Receive messages from IoT Hub**" section.
 
-4.  A picture of your kit external package and a screenshot of the kit web page. Both of them need to show the correct name of the kit, based on the [Kit Requirements](#Requirements). 
+4.  A picture of your kit's external packaging and a screenshot of the kit web page. Both of them need to show the correct name of the kit, based on the [Kit Requirements](#Requirements). 
 
 5.  If the kit includes a paper insert/manual, then provide us either with a digital copy or a picture. We want to verify that the urls described in the [Kit Requirements](#Requirements) are shown. If the kit does not have a paper manual/insert, then we need to see the urls in the external packaging, so please make sure that the picture in artifact #3 shows this.
 
-6.  Send us a Pull Request with your code samples at [https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/&lt;companyname&gt;/&lt;kitname&gt;/](https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/%3ccompanyname%3e/%3ckitname%3e/%20)
+7.  Send us a Pull Request with your code samples at [https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/&lt;companyname&gt;/&lt;kitname&gt;/](https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/%3ccompanyname%3e/%3ckitname%3e/%20)
     e.g.
     <https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/kits/samples/contoso/iotdevkit/>
 
-7.  Send us clear instructions of how to run these samples with your kit (explicitly highlighting the new steps for customers). Please use the template available [here](https://github.com/Azure/azure-iot-device-ecosystem/kits/getstarted/template-kits.md) to create your kit-specific instructions. These instructions will be appended as a separate section at the bottom of the "Get Started" tutorial for the corresponding device.
+8.  Send us clear instructions of how to run these samples with your kit (explicitly highlighting the new steps for customers). Please use [the template available here](https://github.com/Azure/azure-iot-device-ecosystem/kits/getstarted/template-kits.md) to create your kit-specific instructions. These instructions will be appended as a separate section at the bottom of the "Get Started" tutorial for the corresponding device.
 
     As a guideline on how the instructions should look please refer to the existing "Get Started" guides from the other kits in the [Device Catalog](http://catalog.azureiotsuite.com).
+
+9.  All the pictures that you used in the above instructions, in order to show how the sensors are connected. This includes a picture of the kit with the sensors and the sensor board (if any) , as well as the fritizing diagram (if you used a breadboard).
 
 <a name="Step5-2"></a>
 ## 5.2 Share package with Microsoft Azure IoT team
