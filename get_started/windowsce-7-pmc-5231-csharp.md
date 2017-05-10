@@ -88,11 +88,11 @@ Connect the modules as bellow provided by the IoT kit.
 
 - 	PMC-5231: Industrial IoT Power Meter Concentrator
 		
-	![pmc5231\3-0](media\icp-das-power-management-iot-kit\pmc-5231.png)
+	![pmc5231\3-0](media/icp-das-power-management-iot-kit/pmc-5231.png)
 
 - 	PM-3114-100: 4 Loops single-phase Power Meter
 	
-	![pmc5231\3-0](media\icp-das-power-management-iot-kit\PM-3114-100_01.png)
+	![pmc5231\3-0](media/icp-das-power-management-iot-kit/PM-3114-100_01.png)
 
 - 	MDR-20-24: 24W Industrial Power Supply
 
