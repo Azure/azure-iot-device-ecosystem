@@ -104,7 +104,7 @@ The FATBOX G3 Azure IoT Gateway Starter kit includes:
 -   1x temperature sensor (0c - 400c) with 1m wire
 
 
-![image01](media/fatbox_g3_azure_ iot_gateway_starter_kit/getting_started_kit.png)
+![image01](media\fatbox_g3_azure_ iot_gateway_starter_kit\getting_started_kit.png)
 
 ### Connect the sensors
 
