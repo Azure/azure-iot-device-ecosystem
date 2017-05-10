@@ -14,6 +14,8 @@ Run a simple Csharp sample on CPS-200 device running Windows 10 IoT Core
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
+    -   [Option 1: Use the development board, without sensors](#Device-Sample)
+    -   [Option 2: Use the Machinery Predictive Diagnostic Maintenance System kit from NEXCOM](#Kit01-Sample)
 -   [Next Steps](#NextSteps)
 
 <a name="Introduction"></a>
@@ -61,6 +63,9 @@ You should have the following items ready before beginning the process:
 <a name="Step_3_2_Build"></a>
 ## 3.2  Build the Samples
 
+<a name="Device-Sample"></a>
+## Option 1: Use the development board, without sensors
+
 -   Start a new instance of Visual Studio 2015. Open the **iothub_csharp_client.sln** solution (/azure-iot-sdk-csharp) from your local copy of the repository.
 
 -   In Visual Studio, from **Solution Explorer**, navigate to the **UWPSample(Universal Windows)** project.
@@ -79,7 +84,7 @@ You should have the following items ready before beginning the process:
 
 -   Build the solution.
 
-<a name="Step_3_3_Run"/>
+<a name="Step_3_3_Run"></a>
 ## 3.3 Run and Validate the Samples
 
 ### 3.3.1 Send Device Events to IoT Hub
@@ -91,6 +96,75 @@ You should have the following items ready before beginning the process:
 ### 3.3.2 Receive messages from IoT Hub
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages to the application.
+
+<a name="Kit01-Sample"></a>
+## Option 2: Use the WISE Monitoring IoT Kit from ICP DAS
+
+### Machinery Predictive Diagnostic Maintenance System kit
+
+The Machinery Predictive Diagnostic Maintenance System kit includes:
+
+-   NEXCOM CPS 200 device + *Rockwell PLC/ Dector, XM Module*
+
+-   Rotor kit
+
+-   Inverter with Modbus/TCP Gateway
+
+> [*http://www.nexcom.com/Products/industrial-computing-solutions/iot-solutions/iot-gateway/rotor-w-iot-gateway-iot-gateway*](http://www.nexcom.com/Products/industrial-computing-solutions/iot-solutions/iot-gateway/rotor-w-iot-gateway-iot-gateway)
+>
+> ![image01](media/nexcom-machinery-predictive-diagnostic-maintenance-system-kit/image1.jpeg)
+
+### Connect the sensors
+
+There are three parts: Main Set, Rotor kit and Inverter. Follow the
+picture below to connect CH1 to CH1, CH2 to CH2 and Accelerometer to
+Tachometer.
+
+![image02](media/nexcom-machinery-predictive-diagnostic-maintenance-system-kit/image2.jpeg)
+
+![image03](media/nexcom-machinery-predictive-diagnostic-maintenance-system-kit/image3.jpeg)
+
+**Build and Run the sample**
+
+GitHub source code
+
+[*https://github.com/allanchen1971/IOTHubSample01*](https://github.com/allanchen1971/IOTHubSample01)
+
+Run the application and click the “Connect” button to get the Modbus
+data.
+
+**Send Device Events to IoT Hub**
+
+Then start send to IoT Hub.
+
+We sent the Temperature/Humidity/MotoSpeed/DI/Input and control
+Lamp/Fan/MotoSpeed to IoT Hub
+
+![image04](media/nexcom-machinery-predictive-diagnostic-maintenance-system-kit/image4.jpeg)
+
+**Receive messages from IoT Hub**
+
+We receive the Temperature/Humidity/MotoSpeed/DI/Input and control
+command: Lamp/Fan/MotoSpeed from IoT Hub
+
+On the remote side, we send command (list below) from IotHub to device,
+
+Speed: (0-100)/lamp:on/lamp:off/fan:on/fan:off
+
+After device(Gateway) got the command, it will control the device to set
+Fan On/Off and Lamp On/Off and control the motor speed.
+
+Lamp On:
+
+![image05](media/nexcom-machinery-predictive-diagnostic-maintenance-system-kit/image5.png)
+
+Fan On:
+
+![image06](media/nexcom-machinery-predictive-diagnostic-maintenance-system-kit/image6.png)
+
+Speed:
+
+![image07](media/nexcom-machinery-predictive-diagnostic-maintenance-system-kit/image7.png)
 
 <a name="NextSteps"></a>
 # Next Steps
