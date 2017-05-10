@@ -98,7 +98,7 @@ You should have the following items ready before beginning the process:
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages to the application.
 
 <a name="Kit01-Sample"></a>
-## Option 2: Use the WISE Monitoring IoT Kit from ICP DAS
+## Option 2: Use the Machinery Predictive Diagnostic Maintenance System kit from NEXCOM
 
 ### Machinery Predictive Diagnostic Maintenance System kit
 
