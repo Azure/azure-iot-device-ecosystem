@@ -104,7 +104,7 @@ The FATBOX G3 Azure IoT Gateway Starter kit includes:
 -   1x temperature sensor (0c - 400c) with 1m wire
 
 
-![image01](media\fatbox_g3_azure_ iot_gateway_starter_kit\getting_started_kit.png)
+![image01](media/fatbox_g3_azure_iot_gateway_starter_kit/getting_started_kit.png)
 
 ### Connect the sensors
 
@@ -118,11 +118,11 @@ The Modbus I/O modules included in the starter kit is already prewired – Modbu
 
 In your starter kit, a temperature sensor is pre-wired as following to the Digirail-2A analog module to facilitate immediate testing of transmission of field data to your Azure platform. 
 
-![image02](media/fatbox_g3_azure_ iot_gateway_starter_kit/temperature_sensor.png)
+![image02](media/fatbox_g3_azure_iot_gateway_starter_kit/temperature_sensor.png)
 
 You may attach more switches or digital inputs to the Digirail-4C module or additional analog output devices to the Digirail-2A as following.
 
-![image03](media/fatbox_g3_azure_ iot_gateway_starter_kit/modules.png)
+![image03](media/fatbox_g3_azure_iot_gateway_starter_kit/modules.png)
 
 ## Configure & Test the ModBus Device Server
 
@@ -148,14 +148,14 @@ The configuration file needs to be transferred to the FATBOX G3. Please refer to
 
 To enable auto-start of the Modbus master, please configure 'Azure IoT' as following.
 
-![image03](media/fatbox_g3_azure_ iot_gateway_starter_kit/fatbox_g3.png)
+![image03](media/fatbox_g3_azure_iot_gateway_starter_kit/fatbox_g3.png)
 
 "DeviceID" is the name of the FATBOX G3 as a device in your Azure IoT Hub (see section 4). This name is unique and should describe the site or role of the sets of Modbus field devices attached to the FATBOX G3. E.g. in our example, it is a pump control station at SouthLake for a local council.
 Click 'Update' and either 'Reset Device' in 'Management' or just power off, wait 5 seconds and power back up the FATBOX.Technical :: we suggest doing an 'interim' test that your Modbus master, network and I/O modules are working before interacting with the Azure system.
 
 Power up the FATBOX G3 and the Modbus I/O modules. After about 2 minutes, if board is outside of its enclosure, you can observe the TX/RX leds (below) on the board blinking at the specified polling period. The Tx and Rx leds on the I/O Modules should also blink at the same time. This means the Modbus master is successfully polling data from the attached Modbus I/O slave modules.
 
-![image03](media/fatbox_g3_azure_ iot_gateway_starter_kit/board.png)
+![image03](media/fatbox_g3_azure_iot_gateway_starter_kit/board.png)
 
 To further check if device data has been successfully collected into the buffer of the FATBOX G3, we need to do a SSH console session. Please set 'Enable Secure Shell (SSH)' to '1' in 'Management', then 'Update' and reboot the FATBOX.
 
@@ -177,7 +177,7 @@ We worked hard and closely to integrate AZURE IoT Hub client. You can securely c
 
 From the new Azure Portal (https://portal.azure.com), add a new IoT Hub to your account at New >Internet of Things > IoT Hub.
 
-![image03](media/fatbox_g3_azure_ iot_gateway_starter_kit/iothub.png)
+![image03](media/fatbox_g3_azure_iot_gateway_starter_kit/iothub.png)
 
 Copy your IoT Hub Connection String like above, it will be in the form of (example),
 
@@ -185,17 +185,15 @@ HostName=name.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=
 
 ### Register Your New Device (FATBOX G3)
 
-The Device Explorer will be used to create new devices (e.g. to connect to a FATBOX G3 gateway), generate the device connection string and also for monitoring data from devices and sending data to devices for testing.
-
-[Download the Device Explorer here​](https://github.com/Azure/azure-iot-sdk-csharp/tree/master/tools/DeviceExplorer)
+The [Device Explorer](https://github.com/Azure/azure-iot-sdk-csharp/tree/master/tools/DeviceExplorer) will be used to create new devices (e.g. to connect to a FATBOX G3 gateway), generate the device connection string and also for monitoring data from devices and sending data to devices for testing.
 
 Install and run the Device Explorer. Paste the IoT Hub Connection String from the Azure Portal into the Device Explorer > Configuration as following.
 
-![image03](media/fatbox_g3_azure_ iot_gateway_starter_kit/send_message.png)
+![image03](media/fatbox_g3_azure_iot_gateway_starter_kit/send_message.png)
 
 We will add a new FATBOX G3 as “SOUTHLAKE” in Management > Create. From the table, you will see your new device. Right-click the new device and copy the device connection string.
 
-![image03](media/fatbox_g3_azure_ iot_gateway_starter_kit/add_device.png)
+![image03](media/fatbox_g3_azure_iot_gateway_starter_kit/add_device.png)
 
 Copy and paste this device connection string into a text file named connstr(.txt). It will be used to setup and configure your FATBOX G3 as a secure device to connect to your IoT Hub
 
@@ -207,7 +205,7 @@ Now login to your FATBOX G3 using the LAN port. We suggest 2 ways to upload your
     -   Name you USB drive 'FATBOX'. Then copy the connstr.txt file into your USB drive /user folder. Insert USB drive into FATBOX G3's USB port in the rear.
     -   From 'Management', click on 'Download to FATBOX' and check that 'OK' led on FATBOX blinks once.  
     
-![image03](media/fatbox_g3_azure_ iot_gateway_starter_kit/download_fatbox.png)
+![image03](media/fatbox_g3_azure_iot_gateway_starter_kit/download_fatbox.png)
 
 - Using SCP or WINSCP over Ethernet connection
     -   If you prefer, you can enable SSH on the FATBOX (reboot after 'Update') and use SCP or WINSCP to transfer the connstr.txt from your computer to the FATBOX /user folder.​
@@ -216,11 +214,11 @@ Now login to your FATBOX G3 using the LAN port. We suggest 2 ways to upload your
 
 Check the correct APN for your 3G or 4G provider of your SIM card. Enter the provider's APN into the 'APN' field in the 'WAN Settings' page.
 
-![image03](media/fatbox_g3_azure_ iot_gateway_starter_kit/configure_fatbox.png)
+![image03](media/fatbox_g3_azure_iot_gateway_starter_kit/configure_fatbox.png)
    
 Click 'Update' and then 'Reboot Device' in 'Management' or press the RESET button in the front of FATBOX. After boot-up, login and check in 'System Status' for an IP address to be assigned by your cellular service provider. This is a confirmation that data connection is successful over 3G (or 4G).
 
-![image03](media/fatbox_g3_azure_ iot_gateway_starter_kit/reboot_fatbox.png)
+![image03](media/fatbox_g3_azure_iot_gateway_starter_kit/reboot_fatbox.png)
     
 ## Switch On!
 
@@ -228,7 +226,7 @@ The FATBOX G3 Azure IoT client auto-starts after boot-up as it has been enable. 
 
 Data sent to Azure IoT Hub can be monitored in 'Data' tab of the Device Explorer. For example, from your starter kit you should see the temperature data within the JSON messages sent to Azure IoT Hub.
 
-![image03](media/fatbox_g3_azure_ iot_gateway_starter_kit/eventhub_data.png)
+![image03](media/fatbox_g3_azure_iot_gateway_starter_kit/eventhub_data.png)
     
 <a name="NextSteps"></a>
 # Next Steps
