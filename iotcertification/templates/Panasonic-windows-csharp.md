@@ -1,10 +1,10 @@
 ---
-platform: {enter the OS name running on device}
-device: {enter your device name here}
+platform: Windows 10 Pro
+device: Panasonic Toughbook CF-33
 language: csharp
 ---
 
-Run a simple Csharp sample on {enter your device name here} device running {enter the OS name running on device}
+Run a simple Csharp sample on Panasonic Toughbook CF-33 device running Windows 10 Pro
 ===
 ---
 
@@ -28,7 +28,7 @@ Run a simple Csharp sample on {enter your device name here} device running {ente
 
 **About this document**
 
-This document describes how to connect {enter your device name here} device running {enter the OS name running on device} with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect Panasonic Toughbook CF-33 device running Windows 10 Pro with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -41,13 +41,12 @@ You should have the following items ready before beginning the process:
 -   [Prepare your development environment][setup-devbox-windows]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   {enter your device name here} device.
--   {{Please specify if any other software(s) or hardware(s) are required.}}
+-   Panasonic Toughbook CF-33 device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+-  You will need to have the Panasonic Toughbook CF-33 configured with Setting to be on Developer Mode. Please refer [here](https://docs.microsoft.com/en-us/windows/uwp/get-started/enable-your-device-for-development) for details.
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
