@@ -62,7 +62,7 @@ Combine [NUCLEO-F476RG][lnk-nucleo-l4] with [Wi-Fi expansion board][lnk-nucleo-w
 <a name="Load"></a>
 ## 3.1 Build SDK and sample code
 
-1. Download [FP-CLD-AZURE1][lnk-fp-cld-azure] Function Pack (__**plese note: the version of FP-CLD-AZURE1 is being updated; web link may still be pointing at the older version of the firmware**__). The Function Pack contains all the required drivers to use the [NUCLEO-F476RG][lnk-nucleo-l4] board with Wi-Fi expansion boards, together with pre-integrated Microsoft Azure IoT SDK. 
+1. Download [FP-CLD-AZURE1][lnk-fp-cld-azure] Function Pack (__**temporary link**__). The Function Pack contains all the required drivers to use the [NUCLEO-F476RG][lnk-nucleo-l4] board with Wi-Fi expansion boards, together with pre-integrated Microsoft Azure IoT SDK. 
 2. Unzip the package and open one of the pre-configured project files available in ```Projects/STM32L476RG-Nucleo/Applications/Azure_Sns_DM```, according to the IDE installed (for [SystemWorkbench for STM32][lnk-ide-sw4stm32] project files can be found inside folder ```SW4STM32```). 
 3. In [SystemWorkbench for STM32][lnk-ide-sw4stm32] select the project from menu ```File -> Import -> Existing Projects into Workspace```; browse folders and select as root directory ```Projects/STM32L476RG-Nucleo/Applications/Azure_Sns_DM/SW4STM32/STM32L476RG-Nucleo``` then click ```Finish```.
 ![][2]
@@ -124,7 +124,7 @@ The application also support [direct methods][lnk-direct-methods] and [desired p
 [lnk-direct-methods]:https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-direct-methods
 [lnk-desired-prop]:https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins
 [lnk-dev-man]:https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-device-management-overview
-[lnk-fp-cld-azure]:http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32-ode-function-pack-sw/fp-cld-azure1.html
+[lnk-fp-cld-azure]:https://onedrive.live.com/?authkey=%21AA3Nn3C4VxGpjqQ&id=D0937BB59FC4DE68#authkey=%21AA3Nn3C4VxGpjqQ&id=D0937BB59FC4DE68%21100702&cid=D0937BB59FC4DE68
 
 
 
