@@ -109,6 +109,8 @@ iothub-explorer monitor-events AirConditionDevice_001 --login '<connection-strin
 -  Restart ESP32 after bin had flashed,you would see the ESP32 send data to lothub-explorer by minicom,and iothub-explorer would receive data!
 - At the same time,you can send message to ESP32 by iothub-explorer until you send a quit message
 
+![](media/m5stack_starter_kit/ReceiveMessageFromDevice.png)
+
 <a name="TroubleShoot"></a>
 Trouble Shoot
  ------------------------------
