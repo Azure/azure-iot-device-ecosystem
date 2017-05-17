@@ -4,14 +4,14 @@ P-NUCLEO-AZURE1 kit connected to Azure IoT
 
 # Table of Contents
 
--   [P-NUCLEO-AZURE1 kit](P-NUCLEO-AZURE1 kit)
--   [Connect the sensors](Connect the sensors)
--   [Build and Run the sample](Build and Run the sample)
--   [Send Device Events to IoT Hub](Send Device Events to IoT Hub)
--   [Receive messages from IoT Hub](Receive messages from IoT Hub)
--	[Trigger remote firmware update using Direct Methods and monitor device status with Reported Properties](Trigger remote firmware update using Direct Methods and monitor device status with Reported Properties) 
--	[Use NFC to configure Wi-Fi Access Point parameters](Use NFC to configure Wi-Fi Access Point parameters)  
--   [Next steps](Next steps)
+-   [P-NUCLEO-AZURE1 kit](# P-NUCLEO-AZURE1 kit)
+-   [Connect the sensors](# Connect the sensors)
+-   [Build and Run the sample](# Build and Run the sample)
+-   [Send Device Events to IoT Hub](# Send Device Events to IoT Hub)
+-   [Receive messages from IoT Hub](# Receive messages from IoT Hub)
+-	[Trigger remote firmware update using Direct Methods and monitor device status with Reported Properties](# Trigger remote firmware update using Direct Methods and monitor device status with Reported Properties) 
+-	[Use NFC to configure Wi-Fi Access Point parameters](# Use NFC to configure Wi-Fi Access Point parameters)  
+-   [Next steps](# Next steps)
 
 
 # P-NUCLEO-AZURE1 kit
