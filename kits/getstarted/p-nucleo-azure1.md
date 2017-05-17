@@ -133,7 +133,7 @@ iothub-explorer monitor-events <device name> --login <iot-hub-connection-string>
 ```
 
 
-![[p-nucleo-azure-monitor](images/p-nucleo-azure1-monitor.png)
+![p-nucleo-azure-monitor](images/p-nucleo-azure1-monitor.png)
 
 
 # Receive messages from IoT Hub
@@ -146,10 +146,10 @@ iothub-explorer send <device name> <message> --ack=full
 
 Messages received by STM32 [NUCLEO-F476RG][lnk-nucleo-l4] are printed over serial terminal interface once received. 
 Some cloud-to-device messages are also interpreted by the application: 
--		Pause : pause the application 
--		Play : restart the application after a pause 
--		LedOn/LedOff : turn on/off LED2 onboard Nucleo
--		LedBlink : LED2 onboard Nucleo will blink for each message transmitted.
+-   Pause : pause the application
+-   Play : restart the application after a pause
+-   LedOn/LedOff : turn on/off LED2 onboard Nucleo
+-   LedBlink : LED2 onboard Nucleo will blink for each message transmitted 
 
 See [Manage IoT Hub][lnk-manage-iot-hub] to learn more on how to send cloud-to-device messages from IoT Hub.
 
@@ -163,14 +163,13 @@ iothub-explorer device-method <device name> <method name> <method properties> <t
 ```
 
 where
-  -		```<method name>``` : ```FirmwareUpdate```
-  -		```<method properties>``` : URI where to download the new firmware version, in 
-  the format ```"{\"FwPackageUri\":\"https:....\"}"```
-  -		```<timeout>``` : timeout to receive feedback from device 
+-   ```<method name>``` : ```FirmwareUpdate```
+-   ```<method properties>``` : URI where to download the new firmware version, in the format ```"{\"FwPackageUri\":\"https:....\"}"```
+-   ```<timeout>``` : timeout to receive feedback from device 
 
 It possible to monitor the execution of the firmware update procedure in the serial terminal:
 
-![[p-nucleo-azure-fwupdate](images/p-nucleo-azure1-fwupdate.png)
+![p-nucleo-azure-fwupdate](images/p-nucleo-azure1-fwupdate.png)
 
 The application also reports its current status to the IoT Hub; device status can be monitored in iothub-explorer with the following command:
 
@@ -178,25 +177,26 @@ The application also reports its current status to the IoT Hub; device status ca
 iothub-explorer get-twin <device name>
 ```
 
-![[p-nucleo-azure-fwupdate2](images/p-nucleo-azure1-fwupdate2.png)
+![p-nucleo-azure-fwupdate2](images/p-nucleo-azure1-fwupdate2.png)
 
 
 # Use NFC to configure Wi-Fi Access Point parameters  
 
 [NFC expansion board][lnk-nucleo-nfc] can be used to configure embedded application parameters. 
 In FP-CLD-AZURE1 NFC board is used for example to modify SSID and PWD for Wi-Fi AP.
--		Install in an Android phone [ST25 NFC App][lnk-nfc-app] mobile app
--		Launch the application; click on Compose NDEF then select in menu the Wi-Fi option. Insert SSID and Password, then approach the 
+-   Install in an Android phone [ST25 NFC App][lnk-nfc-app] mobile app
+-   Launch the application; click on Compose NDEF then select in menu the Wi-Fi option. Insert SSID and Password, then approach the 
 mobile phone to the NFC expansion board and click on ```Write to tag``` 
 
 
-![[p-nucleo-azure-android](images/p-nucleo-azure1-android.png)
--		Press Reset Button to restart the application
--		Press twice the User Button (Blue Button) when requested (after 3 seconds timeout default values will be used). The application 
+![p-nucleo-azure-android](images/p-nucleo-azure1-android.png)
+
+-   Press Reset Button to restart the application
+-   Press twice the User Button (Blue Button) when requested (after 3 seconds timeout default values will be used). The application 
 will read NDEF parameters from NFC and will connect to the Access Point.
 
 
-![[p-nucleo-azure-android](images/p-nucleo-azure1-nfc-serial.png)
+![p-nucleo-azure-android](images/p-nucleo-azure1-nfc-serial.png)
 
 
 # Next steps
