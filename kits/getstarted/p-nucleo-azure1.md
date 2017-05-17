@@ -4,12 +4,14 @@ P-NUCLEO-AZURE1 kit connected to Azure IoT
 
 # Table of Contents
 
--   P-NUCLEO-AZURE1 kit
--   Connect the sensors
--   Build and Run the sample
--   Send Device Events to IoT Hub
--   Receive messages from IoT Hub
--   Next steps
+-   [P-NUCLEO-AZURE1 kit](P-NUCLEO-AZURE1 kit)
+-   [Connect the sensors](Connect the sensors)
+-   [Build and Run the sample](Build and Run the sample)
+-   [Send Device Events to IoT Hub](Send Device Events to IoT Hub)
+-   [Receive messages from IoT Hub](Receive messages from IoT Hub)
+-	[Trigger remote firmware update using Direct Methods and monitor device status with Reported Properties](Trigger remote firmware update using Direct Methods and monitor device status with Reported Properties) 
+-	[Use NFC to configure Wi-Fi Access Point parameters](Use NFC to configure Wi-Fi Access Point parameters)  
+-   [Next steps](Next steps)
 
 
 # P-NUCLEO-AZURE1 kit
@@ -123,7 +125,7 @@ Application can be stopped by pressing USER button.
 
 Messages successfully transmitted to your Azure IoT Hub are printed over your serial terminal interface. 
 
-![p-nucleo-azure1-msg-sent-terminal](images/p-nucleo-azure1-msg-sent-terminal.png)
+![p-nucleo-azure1-msg-sent-teraterm](images/p-nucleo-azure1-msg-sent-terminal.png)
 
 To visualize messages received in IoT Hub with iothub-explorer, open Node.js command prompt and insert the 
 following commands:
@@ -154,7 +156,7 @@ Some cloud-to-device messages are also interpreted by the application:
 See [Manage IoT Hub][lnk-manage-iot-hub] to learn more on how to send cloud-to-device messages from IoT Hub.
 
 
-# Trigger remote firmware update using Direct Methods and monitor device status with reported properties 
+# Trigger remote firmware update using Direct Methods and monitor device status with Reported Properties 
 The application support firmware update procedure; when triggered, it stops its normal exection, download and install a new firmware version. 
 By using [direct methods][lnk-direct-methods], it is possible to trigger firmware update procedure using iothub-explorer; 
 open Node.js command prompt and insert the following commands:
@@ -164,7 +166,7 @@ iothub-explorer device-method <device name> <method name> <method properties> <t
 
 where
 -   ```<method name>``` : ```FirmwareUpdate```
--   ```<method properties>``` : URI where to download the new firmware version, in the format ```"{\"FwPackageUri\":\"https:....\"}"```
+-   ```<method properties>``` : URL of the web-link where the new firmware version is hosted; to be written in the format ```"{\"FwPackageUri\":\"https:....\"}"```
 -   ```<timeout>``` : timeout to receive feedback from device 
 
 It possible to monitor the execution of the firmware update procedure in the serial terminal:
