@@ -3,17 +3,16 @@ P-NUCLEO-AZURE1 kit connected to Azure IoT
 ---
 
 # Table of Contents
+-   [P-NUCLEO-AZURE1 kit](#P-NUCLEO-AZURE1kit)
+-   [Connect the sensors](#Connectthesensors)
+-   [Build and Run the sample](#BuildandRun)
+-   [Send Device Events to IoT Hub](#SendDeviceEvents)
+-   [Receive messages from IoT Hub](#Receivemessages)
+-	[Trigger remote firmware update using Direct Methods and monitor device status with Reported Properties](#Trigger) 
+-	[Use NFC to configure Wi-Fi Access Point parameters](#UseNFC)  
+-   [Next steps](#Nextsteps)
 
--   [P-NUCLEO-AZURE1 kit](#P-NUCLEO-AZURE1 kit)
--   [Connect the sensors](#Connect the sensors)
--   [Build and Run the sample](#Build and Run the sample)
--   [Send Device Events to IoT Hub](#Send Device Events to IoT Hub)
--   [Receive messages from IoT Hub](#Receive messages from IoT Hub)
--	[Trigger remote firmware update using Direct Methods and monitor device status with Reported Properties](#Trigger remote firmware update using Direct Methods and monitor device status with Reported Properties) 
--	[Use NFC to configure Wi-Fi Access Point parameters](#Use NFC to configure Wi-Fi Access Point parameters)  
--   [Next steps](#Next steps)
-
-
+<a name="P-NUCLEO-AZURE1kit"></a>
 # P-NUCLEO-AZURE1 kit
 
 The P-NUCLEO-AZURE1 kit includes:
@@ -25,7 +24,7 @@ The P-NUCLEO-AZURE1 kit includes:
 
 ![p-nucleo-azure](images/p-nucleo-azure1-intro.png)
 
-
+<a name="Connectthesensors"></a>
 # Connect the sensors 
 
 Combine STM32 NUCLEO-F476RG, Wi-Fi, Sensors and NFC expansion boards using the ST morpho and Arduino UNO R2 connectors, 
@@ -35,6 +34,7 @@ following the order shown in the picture.
 
 Then connect P-NUCLEO-AZURE1 to your laptop using the Micro USB to USB cable.
 
+<a name="BuildandRun"></a>
 # Build and Run the sample
 
 ### Check pre-requisites
@@ -111,7 +111,7 @@ Configure your serial terminal as shown in the following picture for TeraTerm (b
 Reset the kit by pressing the RESET button on [NUCLEO-F476RG][lnk-nucleo-l4] board to start the application.
 
 
-
+<a name="SendDeviceEvents"></a>
 # Send Device Events to IoT Hub
 
 After RESET, the application join the Wi-Fi access point and connect to your Azure IoT Hub. When connection 
@@ -137,7 +137,7 @@ iothub-explorer monitor-events <device name> --login <iot-hub-connection-string>
 
 ![p-nucleo-azure-monitor](images/p-nucleo-azure1-monitor.png)
 
-
+<a name="Receivemessages"></a>
 # Receive messages from IoT Hub
 To send a message from IoT Hub to [NUCLEO-F476RG][lnk-nucleo-l4] board with iothub-explorer, open Node.js 
 command prompt and insert the following commands:
@@ -155,7 +155,7 @@ Some cloud-to-device messages are also interpreted by the application:
 
 See [Manage IoT Hub][lnk-manage-iot-hub] to learn more on how to send cloud-to-device messages from IoT Hub.
 
-
+<a name="Trigger"></a>
 # Trigger remote firmware update using Direct Methods and monitor device status with Reported Properties 
 The application support firmware update procedure; when triggered, it stops its normal exection, download and install a new firmware version. 
 By using [direct methods][lnk-direct-methods], it is possible to trigger firmware update procedure using iothub-explorer; 
@@ -182,6 +182,7 @@ iothub-explorer get-twin <device name>
 ![p-nucleo-azure-fwupdate2](images/p-nucleo-azure1-fwupdate2.png)
 
 
+<a name="UseNFC"></a>
 # Use NFC to configure Wi-Fi Access Point parameters  
 
 [NFC expansion board][lnk-nucleo-nfc] can be used to configure embedded application parameters. 
@@ -200,7 +201,7 @@ will read NDEF parameters from NFC and will connect to the Access Point.
 
 ![p-nucleo-azure-android](images/p-nucleo-azure1-nfc-serial.png)
 
-
+<a name="Nextsteps"></a>
 # Next steps
 
 You have now learned how to run a sample application that collects sensor data and sends it to your IoT hub. To explore how to store, analyze and visualize the data from this application in Azure using a variety of different services, please click on the following lessons:
