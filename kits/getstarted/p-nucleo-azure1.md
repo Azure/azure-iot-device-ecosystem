@@ -70,7 +70,7 @@ click ```Finish```.
 
 Open  file ```azure1_config.h``` and update ```AZUREDEVICECONNECTIONSTRING``` with the credentials 
 retrieved once completed device 
-registration in IoT Hub as described in [Step 1.1][lnk-setup-iot-hub]. You have also to set here SSID and 
+registration in IoT Hub as described in [here][lnk-setup-iot-hub]. You have also to set here SSID and 
 Password for Wi-Fi access point 
 by replacing ```AZURE_DEFAULT_SSID``` and ```AZURE_DEFAULT_SECKEY```.
 
@@ -125,7 +125,7 @@ Application can be stopped by pressing USER button.
 
 Messages successfully transmitted to your Azure IoT Hub are printed over your serial terminal interface. 
 
-![p-nucleo-azure1-msg-sent-teraterm](images/p-nucleo-azure1-msg-sent-terminal.png)
+![p-nucleo-azure1-msg-sent-teraterm](images/p-nucleo-azure1-msg-sent-teraterm.png)
 
 To visualize messages received in IoT Hub with iothub-explorer, open Node.js command prompt and insert the 
 following commands:
