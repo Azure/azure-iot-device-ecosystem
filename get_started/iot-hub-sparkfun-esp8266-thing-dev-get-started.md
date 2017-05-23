@@ -44,45 +44,44 @@ The following items are optional in case you don’t have a sensor. You also hav
 * A breadboard.
 * M/M jumper wires.
 
-## Create an IoT hub and register a device for Sparkfun ESP8266 Thing Dev
+## Create an IoT hub
 
-### Create your Azure IoT hub in the Azure portal
+1. In the [Azure portal](https://portal.azure.com/), click **New** > **Internet of Things** > **IoT Hub**.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. Click **New** > **Internet of Things** > **IoT Hub**.
+   ![Create an iot hub in the Azure portal](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-create-hub-and-device/1_create-azure-iot-hub-portal.png)
+2. In the **IoT hub** pane, enter the following information for your IoT hub:
 
-   ![create iot hub](media/iot-hub-sparkfun-thing-dev-get-started/3_iot-hub-creation.png)
+   **Name**: It is the name for your IoT hub. If the name you enter is valid, a green check mark appears.
 
-1. In the **IoT hub** pane, enter the necessary information for your IoT hub:
+   **Pricing and scale tier**: Select the free F1 tier. This option is sufficient for this demo. See [pricing and scale tier](https://azure.microsoft.com/pricing/details/iot-hub/).
 
-   ![basic information for iot hub creation](media/iot-hub-sparkfun-thing-dev-get-started/4_iot-hub-provide-basic-info.png)
+   **Resource group**: Create a resource group to host the IoT hub or use an existing one. See [Using resource groups to manage your Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
 
-   * **Name**: The name for your IoT hub. If the name you enter is valid, a green check mark appears.
-   * **Pricing and scale tier**: Select the free F1 tier, will suffice for this demo. See [pricing and scale tier](https://azure.microsoft.com/pricing/details/iot-hub/).
-   * **Resource group**: Create a resource group to host the IoT hub or use an existing one. See [Using resource groups to manage your Azure resources](../azure-resource-manager/resource-group-portal.md).
-   * **Location**: Select the closest location to you where the IoT hub is created.
-   * **Pin the dashboard**: Check this option for easy access to your IoT hub from the dashboard.
-1. Click **Create**. It could take a few minutes for your IoT hub to be created. You can see progress in the **Notifications** pane.
+   **Location**: Select the closest location to you where the IoT hub is created.
 
-   ![monitor the iot hub creation progress in the notification pane](media/iot-hub-sparkfun-thing-dev-get-started/5_iot-hub-monitor-creation-progress-notification-pane.png)
+   **Pin the dashboard**: Check this option for easy access to your IoT hub from the dashboard.
 
-1. Once your IoT hub is created, click it from the dashboard. Make a note of the **Hostname** that is used later, and then click **Shared access policies**.
+   ![Fill in the fields for creating your Azure IoT hub](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-create-hub-and-device/2_fill-in-fields-for-azure-iot-hub-portal.png)
 
-   ![get hostname of your IoT hub](media/iot-hub-sparkfun-thing-dev-get-started/6_iot-hub-get-hostname.png)
+3. Click **Create**. It could take a few minutes for your IoT hub to be created. You can see progress in the **Notifications** pane.
 
-1. In the **Shared access policies** pane, click the **iothubowner** policy, and then copy and make a note of the **Connection string** of your IoT hub that is used later. For more information, see [Control access to IoT Hub](iot-hub-devguide-security.md).
+   ![See notifications of your IoT hub creation progress](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-create-hub-and-device/3_notification-azure-iot-hub-creation-progress-portal.png)
 
-   ![get iot hub connection string](media/iot-hub-sparkfun-thing-dev-get-started/7_iot-hub-get-connection-string.png)
+4. Once your IoT hub is created, click it from the dashboard. Make a note of the **Hostname**, and then click **Shared access policies**.
 
-You have now created your IoT hub. The host name and connection string that you noted down will be used later.
+   ![Get the hostname of your IoT hub](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-create-hub-and-device/4_get-azure-iot-hub-hostname-portal.png)
 
-### Register a device for Sparkfun ESP8266 Thing Dev in your IoT hub
+5. In the **Shared access policies** pane, click the **iothubowner** policy, and then copy and make a note of the **Connection string** of your IoT hub. For more information, see [Control access to IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security).
+
+   ![Get your IoT hub connection string](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-create-hub-and-device/5_get-azure-iot-hub-connection-string-portal.png)
+
+## Register a device for Sparkfun ESP8266 Thing Dev in your IoT hub
 
 Every IoT hub has an identity registry that stores information about the devices that are permitted to connect to the IoT hub. Before a device can connect to an IoT hub, there must be an entry for that device in the IoT hub's identity registry.
 
 In this section, you will use a CLI tool iothub explorer to register a device for ESP8266 Thing Dev in the identity registry of your IoT hub.
 
-> **NOTE:**
+> [!NOTE]
 > iothub explorer requires Node.js 4.x or higher to work properly.
 
 To register a device for ESP8266 Thing Dev, follow these steps:
@@ -170,7 +169,7 @@ If you use Ubuntu, make sure a normal user has the permissions to operate on the
 
 1. Add the user to the group by running the following command:
 
-   ```bash
+   ```bashControl access to IoT Hub.
    sudo usermod -a -G <group-owner-name> <username>
    ```
 
