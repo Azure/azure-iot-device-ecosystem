@@ -6,7 +6,7 @@ language: node
 
 # Connect Raspberry Pi to Azure IoT Hub in the cloud
 
-In this tutorial, you begin by learning the basics of working with Raspberry Pi that's running Raspbian. You then learn how to seamlessly connect your devices to the cloud by using Azure IoT Hub. For Windows 10 IoT Core samples, go to the [Windows Dev Center](http://www.windowsondevices.com/).
+In this tutorial, you begin by learning the basics of working with Raspberry Pi that's running Raspbian. You then learn how to seamlessly connect your devices to the cloud by using [Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-what-is-iot-hub). For Windows 10 IoT Core samples, go to the [Windows Dev Center](http://www.windowsondevices.com/).
 
 Don't have a kit yet? Buy a new kit [here](https://azure.microsoft.com/develop/iot/starter-kits).
 
@@ -50,6 +50,60 @@ The following items are optional:
 
 > **NOTE:** 
 These items are optional because the code sample support simulated sensor data.
+
+## Create an IoT hub
+
+1. In the [Azure portal](https://portal.azure.com/), click **New** > **Internet of Things** > **IoT Hub**.
+
+   ![Create an iot hub in the Azure portal](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-create-hub-and-device/1_create-azure-iot-hub-portal.png)
+1. In the **IoT hub** pane, enter the following information for your IoT hub:
+
+   **Name**: It is the name for your IoT hub. If the name you enter is valid, a green check mark appears.
+
+   **Pricing and scale tier**: Select the free F1 tier. This option is sufficient for this demo. See [pricing and scale tier](https://azure.microsoft.com/pricing/details/iot-hub/).
+
+   **Resource group**: Create a resource group to host the IoT hub or use an existing one. See [Using resource groups to manage your Azure resources](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-portal).
+
+   **Location**: Select the closest location to you where the IoT hub is created.
+
+   **Pin the dashboard**: Check this option for easy access to your IoT hub from the dashboard.
+
+   ![Fill in the fields for creating your Azure IoT hub](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-create-hub-and-device/2_fill-in-fields-for-azure-iot-hub-portal.png)
+
+1. Click **Create**. It could take a few minutes for your IoT hub to be created. You can see progress in the **Notifications** pane.
+
+   ![See notifications of your IoT hub creation progress](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-create-hub-and-device/3_notification-azure-iot-hub-creation-progress-portal.png)
+
+1. Once your IoT hub is created, click it from the dashboard. Make a note of the **Hostname**, and then click **Shared access policies**.
+
+   ![Get the hostname of your IoT hub](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-create-hub-and-device/4_get-azure-iot-hub-hostname-portal.png)
+
+1. In the **Shared access policies** pane, click the **iothubowner** policy, and then copy and make a note of the **Connection string** of your IoT hub. For more information, see [Control access to IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security).
+
+   ![Get your IoT hub connection string](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-create-hub-and-device/5_get-azure-iot-hub-connection-string-portal.png)
+
+## Register a device in the IoT hub for the your device
+
+1. In the [Azure portal](https://portal.azure.com/), open your IoT hub.
+1. Click **Device Explorer**.
+1. In the Device Explorer pane, click **Add** to add a device to your IoT hub.
+
+   **Device ID**: The ID of the new device.
+
+   **Authentication Type**: Select **Symmetric Key**.
+
+   **Auto Generate Keys**: Check this field.
+
+   **Connect device to IoT Hub**: Click **Enable**.
+
+   ![Add a device in the device explorer of your IoT hub](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-create-hub-and-device/6_add-device-in-azure-iot-hub-device-explorer-portal.png)
+
+1. Click **Save**.
+1. After the device is created, open the device in the **Device Explorer** pane.
+1. Make a note of the primary key of the connection string.
+
+   ![Get the device connection string](https://github.com/Microsoft/azure-docs/raw/master/articles/iot-hub/media/iot-hub-create-hub-and-device/7_get-device-connection-string-in-device-explorer-portal.png)
+
 
 ## Setup Raspberry Pi
 
@@ -106,7 +160,9 @@ After you've successfully connected BME280 to your Raspberry Pi, it should be li
 
 ![Connected Pi and BME280](media/iot-hub-raspberry-pi-kit-node-get-started/4_connected-pi.jpg)
 
-Turn on Pi by using the micro USB cable and the power supply. Use the Ethernet cable to connect Pi to your wired network or follow the [instructions from the Raspberry Pi Foundation](https://www.raspberrypi.org/learning/software-guide/wifi/) to connect Pi to your wireless network.
+### Connect Pi to the network
+
+Turn on Pi by using the micro USB cable and the power supply. Use the Ethernet cable to connect Pi to your wired network or follow the [instructions from the Raspberry Pi Foundation](https://www.raspberrypi.org/learning/software-guide/wifi/) to connect Pi to your wireless network. After your Pi has been successfully connected to the network, you need to take a note of the [IP address of your Pi](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/finding-your-pis-ip-address).
 
 ![Connected to wired network](media/iot-hub-raspberry-pi-kit-node-get-started/5_power-on-pi.jpg)
 
