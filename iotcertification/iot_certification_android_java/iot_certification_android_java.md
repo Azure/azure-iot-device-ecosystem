@@ -75,7 +75,7 @@ This section walks you through building, deploying and validating the IoT Client
 
 1.  Start a new instance of Android Studio and open Android project from here:
 
-        azure-iot-sdk-java/java/device/samples/android-sample/
+        azure-iot-sdk-java/device/iot-device-samples/android-sample/        
 
 2.  Go to **MainActivity.java**, replace the **[device connection string]** placeholder with connection string of the device you have created in [Step 2](#Step_2) and save the file.
 
