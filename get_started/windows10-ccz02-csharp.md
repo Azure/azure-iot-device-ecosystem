@@ -31,9 +31,11 @@ This document describes how to connect CCZ02 device running Windows 10 with Azur
 
 You should have the following items ready before beginning the process:
 
--   [Prepare your development environment](https://catalog.azureiotsuite.com/docs?title=Azure/azure-iot-sdk-c/doc/devbox_setup)
--   [Setup your IoT hub](https://catalog.azureiotsuite.com/docs?title=Azure/azure-iot-device-ecosystem/setup_iothub)
--   [Provision your device and get its credentials](https://catalog.azureiotsuite.com/docs?title=Azure/azure-iot-device-ecosystem/manage_iot_hub)
+-   [Prepare your development environment][setup-devbox-windows]
+-   [Setup your IoT hub][lnk-setup-iot-hub]
+
+-   [Provision your device and get its credentials][lnk-manage-iot-hub]
+
 -  CCZ02 device.
 
 <a name="PrepareDevice"></a>
@@ -44,7 +46,7 @@ You should have the following items ready before beginning the process:
 <a name="Build"></a>
 # Step 3: Build and Run the sample
 
--   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdks) and the sample programs and save them to your local repository.
+-   Download the [Azure IoT SDK](https://github.com/azure/azure-iot-sdk-csharp) and the sample programs and save them to your local repository.
 -   Start a new instance of Visual Studio 2015.
 -   Open the **iothub_csharp_client.sln** solution in the `csharp\device` folder in your local copy of the repository.
 -   In Visual Studio, from Solution Explorer, navigate to the **samples** folder.
