@@ -14,6 +14,8 @@ Run a simple C sample on supported MiCOKit device running MiCO
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
+    -   [Option 1: Use the development board, without sensors](#Device-Sample)
+    -   [Option 2: Use the AZ3166 IoT development kit from Shanghai MXCHIP Information Technology Co., Ltd.](#Kit01-Sample)
 -   [Next Steps](#NextSteps)
 
 # Introduction
@@ -80,8 +82,102 @@ following the instructions in the [MiCO开发者中心](http://developer.mico.io
 <a name="Build"></a>
 # Step 3: Build SDK and Run the sample
 
+<a name="Device-Sample"></a>
+## Option 1: Use the development board, without sensors
+
  -	In micoderIDE, using "azureIotclient.mqtt@MK3165 total download run JTAG=stlink-v2" command to compile and download to the board.
  -	In this section you will run the Azure IoT client SDK samples and DeviceExplorer to validate communication between your device and Azure IoT Hub. You will send messages to the Azure IoT Hub service and validate that IoT Hub has successfully receive the data.
+
+<a name="Kit01-Sample"></a>
+## Option 2: Use the AZ3166 IoT development kit from Shanghai MXCHIP Information Technology Co., Ltd.
+
+### AZ3166 IoT development kit
+
+The AZ3166 IoT development kit includes:
+
+ - AZ3166 board
+ - Micro USB cable
+
+Main control unit of AZ3166 is EMW3166---a low power consumption Wi-Fi module developed by MXCHIP, with DAP Link emulator and 128x64 OLED and other resources such as LED light. Sensors are integrated on the board including Motion sensor, Magnetometer sensor, Atmospheric pressure sensor, Temperature and humidity sensor. The development kit also has audio processing unit to connect to Azure for vioce recognition and voice play. 
+
+![getting-started-hardware](media/az3166-iot-development-kit/getting-started-hardware.PNG)
+
+### Connect the sensors
+
+Sensors are integrated on the board including Motion sensor, Magnetometer sensor, Atmospheric pressure sensor, Temperature and humidity sensor.
+
+![sensor](media/az3166-iot-development-kit/sensor.png)
+
+### Prepare SDK
+
+**Download SDK**
+
+SDK could be download from [here](https://github.com/Neo117/AZ3166-connect-Azure).
+
+**Compiling Environment**
+
+ - Python is required in compiling. Download python from [here](https://www.python.org/downloads/release/python-2713/).
+ - mbed CLI. For how to Install mbed CLI, please follow the link: [https://docs.mbed.com/docs/mbed-os-handbook/en/latest/dev_tools/cli/](https://docs.mbed.com/docs/mbed-os-handbook/en/latest/dev_tools/cli/)
+ - GNU ARM Embedded Toolchain 4.9-2015-q3 is required in compiling. Download [here](https://www.python.org/downloads/release/python-2713/).
+
+After install mbed CLI and GNU ARM Embedded Toolchain, configure mbed in sdk file by using cmd command:
+
+<pre>
+mbed config -G GCC_ARM_PATH ****
+</pre>
+
+### Build and Run the sample
+
+**A. Configure WiFi**
+
+Configure WiFi in mbed_app.json. Input Wifi SSID and password in main.app as shown below.
+
+<pre>
+        "wifi-ssid": {
+            "value": "\"****\""
+        },
+        "wifi-password": {
+            "value": "\"****\""
+        }
+</pre>
+
+**B. Configure Device Registration**
+
+ -	[Regist azure.microsoft account](https://azure.microsoft.com/zh-cn/free/) to get free account for iothub.
+ -	Add iothub service in azure cloud control center.
+ -	Install [Azure tool(Azure CLI)](https://docs.microsoft.com/zh-cn/azure/iot-hub/iot-hub-raspberry-pi-kit-node-lesson2-get-azure-tools-win32) on your computer.
+ -	Click [here](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to download and install DeviceExplorer，you will register your device using DeviceExplorer. Fllowing [here](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/iotcertification/iot_certification_port_c_libraries_other_platforms/iot_certification_port_c_libraries_other_platforms.md) to study how to regist your device.
+ - Configure device information in iothub_client_sample_mqtt.c. As shown below.
+
+<pre>
+static const char* connectionString = "HostName=****;DeviceId=****;SharedAccessKey=****";
+</pre>
+
+**C. Build the Sample**
+
+Use the following command(Command Prompt on Windows, or Terminal on Mac OS X)
+
+<pre>
+     mbed compile -m AZ3166 -t GCC_ARM
+</pre>
+
+After compile the sample. a `.bin` file with the same name of the SDK would be generated in the path: `...\mbed-wifi-example\BUILD\AZ3166\GCC_ARM`.
+
+**D. Download Firmware to DevKit**
+
+Once the DevKit is connected, you will see a new USB mass storage device in your File Explorer.
+
+Drag & drop the `.bin` file you compiled to AZ3166 device.
+
+Wait until file copied, the DevKit will reboot to the latest firmware.
+
+### Results
+
+Az3166 would send data to Iothub-explorer and Iothub-explorer would receive the data.
+
+At the same time,you can send message to Az3166 from iothub-explorer.
+
+![az3166-device-to-hub-data](media/az3166-iot-development-kit/az3166-device-to-hub-data.png)
 
 <a name="NextSteps"></a>
 # Next Steps
