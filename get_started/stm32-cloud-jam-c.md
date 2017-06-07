@@ -136,7 +136,7 @@ On the board:
 
 ![Receive](media/cloud-jam/receive-02.png)
 
-A QuickStart guide to setup and run the application can also be downloaded [here](http://www.st.com/content/ccc/resource/sales_and_marketing/presentation/product_presentation/group0/1f/8c/03/3b/a4/da/49/b4/FP-CLD-AZURE1 quick start guide/files/fp-cld-azure1_quick_start_guide.pdf/jcr:content/translations/en.fp-cld-azure1_quick_start_guide.pdf).
+A QuickStart guide to setup and run the application can also be downloaded [here](http://www.st.com/content/ccc/resource/sales_and_marketing/presentation/product_presentation/group0/1f/8c/03/3b/a4/da/49/b4/FP-CLD-AZURE1%20quick%20start%20guide/files/fp-cld-azure1_quick_start_guide.pdf/jcr:content/translations/en.fp-cld-azure1_quick_start_guide.pdf).
 
 <a name="NextSteps"></a>
 # Next Steps
