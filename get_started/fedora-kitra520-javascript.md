@@ -1,7 +1,7 @@
 ---
 platform: fedora linux
 device: kitra520
-language: javascript
+language: javaScript(Node)/node-red
 ---
 
 Run a simple JavaScript sample on Kitra520 device running Fedora Linux
