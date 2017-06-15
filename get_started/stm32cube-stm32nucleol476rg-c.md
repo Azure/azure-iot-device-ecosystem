@@ -111,9 +111,9 @@ The application also support [direct methods][lnk-direct-methods] and [desired p
 <a name="Kit01-Sample"></a>
 ## Option 2: Use the P-NUCLEO-AZURE1 kit from ST Microelectronics
 
-### P-NUCLEO-AZURE1 kit
+### [P-NUCLEO-AZURE1][lnk-p-nucleo-azure1] kit
 
-The P-NUCLEO-AZURE1 kit includes:
+The [P-NUCLEO-AZURE1][lnk-p-nucleo-azure1] kit includes:
 
 -   IoT Wi-Fi node based on STM32 NUCLEO-L476RG (STM32 [NUCLEO-L476RG][lnk-nucleo-l4] + [Wi-Fi expansion board][lnk-nucleo-wifi]) 
 -   [X-NUCLEO-IKS01A2][lnk-nucleo-mems] (Motion MEMS and environmental sensor expansion board for STM32 Nucleo)
@@ -325,6 +325,7 @@ You have now learned how to run a sample application that collects sensor data a
 [lnk-desired-prop]:https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins
 [lnk-dev-man]:https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-device-management-overview
 [lnk-fp-cld-azure]:http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32-ode-function-pack-sw/fp-cld-azure1.html
+[lnk-p-nucleo-azure1]:http://www.st.com/content/st_com/en/products/evaluation-tools/solution-evaluation-tools/communication-and-connectivity-solution-eval-boards/p-nucleo-azure1.html
 
 [1]: ./media/nucleol4.png
 [2]: ./media/nucleol4-sw-import.png
