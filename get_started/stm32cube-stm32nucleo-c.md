@@ -7,7 +7,7 @@ language: c
 
 ---
 
-Run a simple C sample on STM32 Nucleo  
+Run a simple C sample on STM32 Nucleo F401RE 
 ===
 ---
 
@@ -24,9 +24,9 @@ Run a simple C sample on STM32 Nucleo
 
 **About this document**
 
-This document describes how to connect STM32 Nucleo based sensor node to the Microsoft Azure IoT Hub, by leveraging on Azure IoT Device SDK. This multi-step process includes:
+This document describes how to connect STM32 [NUCLEO-F401RE][lnk-nucleo-f4] board together with [WiFi expansion board][lnk-nucleo-wifi] to the Microsoft Azure IoT Hub, by leveraging on Azure IoT Device SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
--   Registering STM32 Nucleo to Azure IoT Hub
+-   Registering STM32 [NUCLEO-F401RE][lnk-nucleo-f4] to Azure IoT Hub
 -   Build and deploy Azure IoT SDK on STM32 Nucleo
  
 
@@ -37,7 +37,8 @@ You should have the following items ready before beginning the process.
 
 ## 1.1 Development environment
 - One among these three IDEs installed in your PC: [Keil MDK-ARM][lnk-ide-keil], [IAR Embedded Workbench][lnk-ide-iar], [AC6 System Workbench for STM32][lnk-ide-sw4stm32]
-- A serial terminal installed in your PC (e.g. [TeraTerm][lnk-teraterm]) 
+- For WindowsOS, the [STM32 ST-Link Utility][lnk-stlink] (requires registration to my.st.com)
+- A serial terminal installed in your PC (e.g. [TeraTerm][lnk-teraterm] for Windows) 
 - [Setup your IoT hub][lnk-setup-iot-hub]
 - [Provision your device and get its credentials][lnk-manage-iot-hub]
 
@@ -47,14 +48,10 @@ You should have the following items ready before beginning the process.
 ## 1.2 Hardware components
  - STM32 Nucleo development board ([NUCLEO-F401RE][lnk-nucleo-f4])
  - Wi-Fi expansion board for STM32 Nucleo ([X-NUCLEO-IDW01M1][lnk-nucleo-wifi])
- - Motion MEMS and environmental sensor expansion board for STM32 Nucleo ([X-NUCLEO-IKS01A1][lnk-nucleo-sensors] or [X-NUCLEO-IKS01A2][lnk-nucleo-sensors2]).
- - Dynamic NFC tag expansion board for STM32 Nucleo (optional, [X-NUCLEO-NFC01A1][lnk-nucleo-nfc]) 
- - When the X-NUCLEO-NFC01A1 board is mounted, an NFC enabled Android phone is necessary to set WiFi SSID and Password with a mobile application.
- 
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
-Combine STM32 Nucleo with expansion boards as shown in the figure below. Then connect the STM32 Nucleo board to your PC using a mini USB cable.
+Combine [NUCLEO-F401RE][lnk-nucleo-f4] with [Wi-Fi expansion board][lnk-nucleo-wifi] as shown in the figure below. Then connect the [NUCLEO-F401RE][lnk-nucleo-f4] board to your PC using a mini USB cable.
 
 ![][1]
  
@@ -65,65 +62,51 @@ Combine STM32 Nucleo with expansion boards as shown in the figure below. Then co
 <a name="Load"></a>
 ## 3.1 Build SDK and sample code
 
-1. Download [FP-CLD-AZURE1 Function Pack][lnk-nucleo-fp]. The Function Pack contains all the required drivers to use the STM32 Nucleo board with Wi-Fi, Sensors and NFC expansion boards, together with pre-integrated Microsoft Azure IoT SDK. 
-2. Unzip the package and open one of the pre-configured project files available in ```AZURE1_F4_V2.0.0/Projects/Multi/Applications/HTTPS_Azure```, according to the IDE installed (for [SystemWorkbench for STM32][lnk-ide-sw4stm32] project files can be found inside folder ```SW4STM32```). In [SystemWorkbench for STM32][lnk-ide-sw4stm32] select the project from menu ```File -> Import -> Existing Projects into Workspace```; browse folders and select as root directory ```AZURE1_F4_V2.0.0/Projects/Multi/Applications/HTTPS_Azure/SW4STM32/STM32F401RE-Nucleo``` then click ```Finish```.
-3. Open  file ```AzureIOTSDKConfig.h``` (inside folder ```AZURE1_F4_V2.0.0/Projects/Multi/Applications/HTTPS_Azure/Inc```) and update ```AZUREIOTHUBCONNECTIONSTRING``` with the credentials retrieved once completed device registration in IoT Hub as described in [Step 1.1][lnk-setup-iot-hub].
-4. Build the project according to the selected IDE. In [SystemWorkbench for STM32][lnk-ide-sw4stm32], select the Build configuration with ```Project -> Build Configurations -> Set Active``` based on the sensors expansion board mounted (see picture below); then select ```Project -> Build All``` (or shortcut ```Ctrl+B```).
+1. Download [FP-CLD-AZURE1][lnk-fp-cld-azure] Function Pack. The Function Pack contains all the required drivers to use the [NUCLEO-F401RE][lnk-nucleo-f4] board with Wi-Fi expansion boards, together with pre-integrated Microsoft Azure IoT SDK. 
+2. Unzip the package and open one of the pre-configured project files available in ```Projects/STM32F401RE-Nucleo/Applications/Azure_Sns```, according to the IDE installed (for [SystemWorkbench for STM32][lnk-ide-sw4stm32] project files can be found inside folder ```SW4STM32```). 
+3. In [SystemWorkbench for STM32][lnk-ide-sw4stm32] select the project from menu ```File -> Import -> Existing Projects into Workspace```; browse folders and select as root directory ```Projects/STM32F401RE-Nucleo/Applications/Azure_Sns/SW4STM32/STM32F401RE-Nucleo``` then click ```Finish```.
 ![][2]
-5. Flash the binary to Nucleo board according to the selected IDE. In [SystemWorkbench for STM32][lnk-ide-sw4stm32] select ```Run -> Run Configurations```; click on ```New launch configuration``` (see below) and select available configuration (X-NUCLEO-IKS01A1 or X-NUCLEO-IKS01A2); then in text box ```C/C++ Applications``` type in ```X-NUCLEO-IKS01A1\STM32F4xx-Nucleo.elf``` or ```X-NUCLEO-IKS01A2\STM32F4xx-Nucleo.elf``` depending on the configuration built; then click on ```Apply``` and ```Run```.
+4. Open  file ```azure1_config.h``` and update ```AZUREDEVICECONNECTIONSTRING``` with the credentials retrieved once completed device registration in IoT Hub as described in [Step 1.1][lnk-setup-iot-hub]. You have also to set here SSID and Password for Wi-Fi access point by replacing ```AZURE_DEFAULT_SSID``` and ```AZURE_DEFAULT_SECKEY```.
+![][3]
+5. Build the project according to the selected IDE. In [SystemWorkbench for STM32][lnk-ide-sw4stm32], click on ```Project -> Build All``` (or shortcut ```Ctrl+B```).
+![][4]
+6. Flash the binary to [NUCLEO-F401RE][lnk-nucleo-f4] board according to the selected IDE. In [SystemWorkbench for STM32][lnk-ide-sw4stm32] select ```Run -> Run Configurations```; click on ```Ac6 STM32 Debugging``` then ```STM32F4xx-Nucleo mbedTLS```  (see below); then in text box ```C/C++ Applications``` type in ```mbedTLS\STM32F4xx-Nucleo.elf```; then click on ```Apply``` and ```Run```.
 
 ![][5]
-
-![][6]
 
 
 
 ## 3.2 Connect STM32 Nucleo board to a WiFi access point 
 
-Configure your serial terminal (e.g. [TeraTerm][lnk-teraterm]) with the following parameters to visualize log messages from Nucleo board:
-- BaudRate : 460800
+To visualize log messages from [NUCLEO-F401RE][lnk-nucleo-f4] board, configure your serial terminal (e.g. [TeraTerm][lnk-teraterm] for Windows) with the following parameters 
+- BaudRate : 115200
 - Data : 8 bit
 - Parity : none
 - Stop : 1 bit 
 - Flow Control : none
 
-In order to set or to overwrite WiFi access point parameters (SSID and Password), keep pressed USER button in STM32 Nucleo after RESET. 
-
-If NFC board is mounted and if SSID and Password were previously written to NFC with a mobile application (i.e. [ST25 application][lnk-android-st25] for Android can be used), these will be read and used to connect with the Access Point. In order to copy parameters to NFC board, an Android mobile phone equipped with an NFC WriteTag application need to be used. 
-
-Alternatively WiFi parameters can be entered using serial terminal (see below), or directly set in source code by using ```X_CLOUD_SSID```, ```X_CLOUD_KEY``` defines in file ```AzureIOTSDKConfig.h``` (```EMBEDDED_WIFI_PARAMETERS``` has also to be set to 1 in the latter case).
-
-![][7]
-
-After first time WiFi parameters are set, these are permanently written to FLASH memory and used each time the board is RESET, unless USER button is kept pressed (see figure below to use USER or RESET button on STM32 Nucleo). 
-
-![][3]
-
-LED2 onboard Nucleo is turned on once WiFi has joined AP and connection with Azure IoT Hub is established.  
-
-![][4]
-
-## 3.3 Send Device Events to IoT Hub
-
-Once connected to Azure IoT Hub, the application transmits sample data read from sensor board (motion MEMS, temperature, pressure, humidity) using HTTPS protocol. If neither X-NUCLEO-IKS01A1 or X-NUCLEO-IKS01A2 are mounted, the application will transmit a fixed temperature value to IoTHub.
-
+Press ```RESET``` button onboard [NUCLEO-F401RE][lnk-nucleo-f4] to restart the application; 
+```LED2``` will blink once connection with Azure IoT Hub is established. Once connected to the IoT Hub, the application transmits periodically messages containing emulated sensors data.
+Application can be stopped by pressing ```USER``` button. 
 See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe in DeviceExplorer the messages IoT Hub receives from STM32 Nucleo.
 
-Messages sent to Azure IoT are also printed in serial terminal interface. 
+Messages successfully transmitted to your Azure IoT Hub are also printed over your serial terminal interface. 
+![][6]
+
+
 
 
 ## 3.3 Receive messages from IoT Hub
 
-See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages to STM32 Nucleo.
-Messages received by STM32 Nucleo are printed over serial terminal interface once received. 
-Some cloud-to-device messages are also interpreted by the embedded application: 
-- quit : quit application 
-- reset : reset board
-- led on : LED2 onboard Nucleo on
-- led off : LED2 off
-- delay <seconds> : change samples frequency 
+See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages from IoT Hub.
+Messages received by STM32 [NUCLEO-F401RE][lnk-nucleo-f4] are printed over serial terminal interface once received. 
+Some cloud-to-device messages are also interpreted by the application: 
+- Pause : pause the application (message need to be typed in the form ```{"Name":"Pause", "Parameters":{}}``` )
+- Play : restart the application after a pause (message need to be typed in the form ```{"Name":"Play", "Parameters":{}}``` )
+- LedOn/LedOff : turn on/off LED2 onboard Nucleo (message need to be typed in the form ```{"Name":"LedOn", "Parameters":{}}``` )
+- LedBlink : LED2 onboard Nucleo will blink for each message transmitted (message need to be typed in the form ```{"Name":"LedBlink", "Parameters":{}}``` ).
 
-A QuickStart guide to setup and run the application can also be downloaded [here][lnk-quickstart-st].
+A QuickStart guide to setup and run the application can also be downloaded from st.com at [this link][lnk-quickstart-st].
 
 <a name="NextSteps"></a>
 # Next Steps
@@ -147,10 +130,7 @@ You have now learned how to run a sample application that collects sensor data a
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
 [lnk-nucleo-f4]:http://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/mcu-eval-tools/stm32-mcu-eval-tools/stm32-mcu-nucleo/nucleo-f401re.html
 [lnk-nucleo-wifi]:http://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32-nucleo-expansion-boards/stm32-ode-connect-hw/x-nucleo-idw01m1.html
-[lnk-nucleo-sensors]:http://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32-nucleo-expansion-boards/stm32-ode-sense-hw/x-nucleo-iks01a1.html
-[lnk-nucleo-sensors2]:http://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32-nucleo-expansion-boards/stm32-ode-sense-hw/x-nucleo-iks01a2.html
-[lnk-nucleo-nfc]:http://www.st.com/content/st_com/en/products/ecosystems/stm32-open-development-environment/stm32-nucleo-expansion-boards/stm32-ode-connect-hw/x-nucleo-nfc01a1.html
-[lnk-nucleo-fp]:http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32-ode-function-pack-sw/fp-cld-azure1.html
+[lnk-fp-cld-azure]:http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32-ode-function-pack-sw/fp-cld-azure1.html
 [lnk-ide-keil]:http://www.keil.com/
 [lnk-ide-iar]:http://www.iar.com/
 [lnk-ide-sw4stm32]:http://www.openstm32.org/System+Workbench+for+STM32
@@ -158,13 +138,12 @@ You have now learned how to run a sample application that collects sensor data a
 [lnk-android-st25]:https://play.google.com/store/apps/details?id=com.st.demo
 [lnk-quickstart-st]:http://www.st.com/content/ccc/resource/sales_and_marketing/presentation/product_presentation/group0/1f/8c/03/3b/a4/da/49/b4/FP-CLD-AZURE1%20quick%20start%20guide/files/fp-cld-azure1_quick_start_guide.pdf/jcr:content/translations/en.fp-cld-azure1_quick_start_guide.pdf
 
-[1]: ./media/nucleo1.png
-[2]: ./media/nucleo2_setconf.png
-[3]: ./media/nucleo3.png
-[4]: ./media/nucleo4.png
-[5]: ./media/nucleo5_runconf.png
-[6]: ./media/nucleo6_runconfApply.png
-[7]: ./media/nucleo6_teraTerm.png
+[1]: ./media/nucleol4.png
+[2]: ./media/nucleol4-sw-import.png
+[3]: ./media/nucleol4-sw-connstring.png
+[4]: ./media/nucleol4-sw-build.png
+[5]: ./media/nucleof4-run.png
+[6]: ./media/nucleol4-msg-sent-terminal.PNG
 
 
 
