@@ -37,7 +37,6 @@ You should have the following items ready before beginning the process.
 
 ## 1.1 Development environment
 - One among these three IDEs installed in your PC: [Keil MDK-ARM][lnk-ide-keil], [IAR Embedded Workbench][lnk-ide-iar], [AC6 System Workbench for STM32][lnk-ide-sw4stm32]
-- For WindowsOS, the [STM32 ST-Link Utility][lnk-stlink] (requires registration to my.st.com)
 - A serial terminal installed in your PC (e.g. [TeraTerm][lnk-teraterm] for Windows) 
 - [Setup your IoT hub][lnk-setup-iot-hub]
 - [Provision your device and get its credentials][lnk-manage-iot-hub]
