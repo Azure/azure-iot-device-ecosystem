@@ -93,8 +93,6 @@ Press ```RESET``` button onboard [NUCLEO-L476RG][lnk-nucleo-l4] to restart the a
 ```LED2``` will blink once connection with Azure IoT Hub is established. Once connected to the IoT Hub, the application transmits periodically messages containing emulated sensors data.
 Application can be stopped by pressing ```USER``` button. 
 Messages successfully transmitted to your Azure IoT Hub are also printed over your serial terminal interface. 
-![][6]
-
 
 ### 3.3 Receive messages from IoT Hub
 
