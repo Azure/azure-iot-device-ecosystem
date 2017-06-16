@@ -136,10 +136,10 @@ You have now learned how to run a sample application that collects sensor data a
 [lnk-teraterm]:https://ttssh2.osdn.jp
 [lnk-quickstart-st]:http://www.st.com/content/ccc/resource/sales_and_marketing/presentation/product_presentation/group0/1f/8c/03/3b/a4/da/49/b4/FP-CLD-AZURE1%20quick%20start%20guide/files/fp-cld-azure1_quick_start_guide.pdf/jcr:content/translations/en.fp-cld-azure1_quick_start_guide.pdf
 
-[1]: ./media/nucleol4.png
-[2]: ./media/nucleol4-sw-import.png
-[3]: ./media/nucleol4-sw-connstring.png
-[4]: ./media/nucleol4-sw-build.png
+[1]: ./media/nucleof4.png
+[2]: ./media/nucleof4-sw-import.png
+[3]: ./media/nucleof4-sw-connstring.png
+[4]: ./media/nucleof4-sw-build.png
 [5]: ./media/nucleof4-run.png
 
 
