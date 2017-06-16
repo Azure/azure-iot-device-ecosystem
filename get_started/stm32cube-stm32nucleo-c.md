@@ -1,7 +1,7 @@
 ---
 platform: STM32 Cube 
 
-device: STM32 Nucleo
+device: STM32 Nucleo F401RE
 
 language: c
 
@@ -91,7 +91,6 @@ Application can be stopped by pressing ```USER``` button.
 See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe in DeviceExplorer the messages IoT Hub receives from STM32 Nucleo.
 
 Messages successfully transmitted to your Azure IoT Hub are also printed over your serial terminal interface. 
-![][6]
 
 
 
@@ -101,10 +100,10 @@ Messages successfully transmitted to your Azure IoT Hub are also printed over yo
 See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages from IoT Hub.
 Messages received by STM32 [NUCLEO-F401RE][lnk-nucleo-f4] are printed over serial terminal interface once received. 
 Some cloud-to-device messages are also interpreted by the application: 
-- Pause : pause the application (message need to be typed in the form ```{"Name":"Pause", "Parameters":{}}``` )
-- Play : restart the application after a pause (message need to be typed in the form ```{"Name":"Play", "Parameters":{}}``` )
-- LedOn/LedOff : turn on/off LED2 onboard Nucleo (message need to be typed in the form ```{"Name":"LedOn", "Parameters":{}}``` )
-- LedBlink : LED2 onboard Nucleo will blink for each message transmitted (message need to be typed in the form ```{"Name":"LedBlink", "Parameters":{}}``` ).
+- Pause : pause the application (message to be entered in the form ```{"Name":"Pause", "Parameters":{}}``` )
+- Play : restart the application after a pause (message to be entered in the form ```{"Name":"Play", "Parameters":{}}``` )
+- LedOn/LedOff : turn on/off LED2 onboard Nucleo (message to be entered in the form ```{"Name":"LedOn", "Parameters":{}}``` )
+- LedBlink : LED2 onboard Nucleo will blink for each message transmitted (message to be entered in the form ```{"Name":"LedBlink", "Parameters":{}}``` ).
 
 A QuickStart guide to setup and run the application can also be downloaded from st.com at [this link][lnk-quickstart-st].
 
@@ -135,7 +134,6 @@ You have now learned how to run a sample application that collects sensor data a
 [lnk-ide-iar]:http://www.iar.com/
 [lnk-ide-sw4stm32]:http://www.openstm32.org/System+Workbench+for+STM32
 [lnk-teraterm]:https://ttssh2.osdn.jp
-[lnk-android-st25]:https://play.google.com/store/apps/details?id=com.st.demo
 [lnk-quickstart-st]:http://www.st.com/content/ccc/resource/sales_and_marketing/presentation/product_presentation/group0/1f/8c/03/3b/a4/da/49/b4/FP-CLD-AZURE1%20quick%20start%20guide/files/fp-cld-azure1_quick_start_guide.pdf/jcr:content/translations/en.fp-cld-azure1_quick_start_guide.pdf
 
 [1]: ./media/nucleol4.png
@@ -143,7 +141,6 @@ You have now learned how to run a sample application that collects sensor data a
 [3]: ./media/nucleol4-sw-connstring.png
 [4]: ./media/nucleol4-sw-build.png
 [5]: ./media/nucleof4-run.png
-[6]: ./media/nucleol4-msg-sent-terminal.PNG
 
 
 
