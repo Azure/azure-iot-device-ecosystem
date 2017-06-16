@@ -23,9 +23,9 @@ Run a simple C sample on STM32 NUCLEO-L476RG
 
 **About this document**
 
-This document describes how to connect STM32 [NUCLEO-F476RG][lnk-nucleo-l4] board together with [WiFi expansion board][lnk-nucleo-wifi] to the Microsoft Azure IoT Hub, by leveraging on Azure IoT Device SDK. This multi-step process includes:
+This document describes how to connect STM32 [NUCLEO-L476RG][lnk-nucleo-l4] board together with [WiFi expansion board][lnk-nucleo-wifi] to the Microsoft Azure IoT Hub, by leveraging on Azure IoT Device SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
--   Registering STM32 [NUCLEO-F476RG][lnk-nucleo-l4] to Azure IoT Hub
+-   Registering STM32 [NUCLEO-L476RG][lnk-nucleo-l4] to Azure IoT Hub
 -   Build and deploy Azure IoT SDK on STM32 Nucleo
  
 
@@ -45,13 +45,13 @@ You should have the following items ready before beginning the process.
 [SystemWorkbench for STM32][lnk-ide-sw4stm32] is the free integrated development environment for STM32, and it is used as reference in this guide.
 
 ## 1.2 Hardware components
- - STM32 [NUCLEO-F476RG][lnk-nucleo-l4] development board 
+ - STM32 [NUCLEO-L476RG][lnk-nucleo-l4] development board 
  - Wi-Fi expansion board for STM32 Nucleo ([X-NUCLEO-IDW01M1][lnk-nucleo-wifi])
  
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
-Combine [NUCLEO-F476RG][lnk-nucleo-l4] with [Wi-Fi expansion board][lnk-nucleo-wifi] as shown in the figure below. Then connect the [NUCLEO-F476RG][lnk-nucleo-l4] board to your PC using a mini USB cable.
+Combine [NUCLEO-L476RG][lnk-nucleo-l4] with [Wi-Fi expansion board][lnk-nucleo-wifi] as shown in the figure below. Then connect the [NUCLEO-L476RG][lnk-nucleo-l4] board to your PC using a mini USB cable.
 
 ![][1]
  
@@ -65,7 +65,7 @@ Combine [NUCLEO-F476RG][lnk-nucleo-l4] with [Wi-Fi expansion board][lnk-nucleo-w
 <a name="Load"></a>
 ### 3.1 Build SDK and sample code
 
-1. Download [FP-CLD-AZURE1][lnk-fp-cld-azure] Function Pack (__**temporary link**__). The Function Pack contains all the required drivers to use the [NUCLEO-F476RG][lnk-nucleo-l4] board with Wi-Fi expansion boards, together with pre-integrated Microsoft Azure IoT SDK. 
+1. Download [FP-CLD-AZURE1][lnk-fp-cld-azure] Function Pack. The Function Pack contains all the required drivers to use the [NUCLEO-L476RG][lnk-nucleo-l4] board with Wi-Fi expansion boards, together with pre-integrated Microsoft Azure IoT SDK. 
 2. Unzip the package and open one of the pre-configured project files available in ```Projects/STM32L476RG-Nucleo/Applications/Azure_Sns_DM```, according to the IDE installed (for [SystemWorkbench for STM32][lnk-ide-sw4stm32] project files can be found inside folder ```SW4STM32```). 
 3. In [SystemWorkbench for STM32][lnk-ide-sw4stm32] select the project from menu ```File -> Import -> Existing Projects into Workspace```; browse folders and select as root directory ```Projects/STM32L476RG-Nucleo/Applications/Azure_Sns_DM/SW4STM32/STM32L476RG-Nucleo``` then click ```Finish```.
 ![][2]
@@ -73,7 +73,7 @@ Combine [NUCLEO-F476RG][lnk-nucleo-l4] with [Wi-Fi expansion board][lnk-nucleo-w
 ![][3]
 5. Build the project according to the selected IDE. In [SystemWorkbench for STM32][lnk-ide-sw4stm32], click on ```Project -> Build All``` (or shortcut ```Ctrl+B```).
 ![][4]
-6. Flash the binary to [NUCLEO-F476RG][lnk-nucleo-l4] board. The sample application you have compiled include a procedure to implement Over-The-Air (OTA) Firmware upadate, which can be combined with [Azure IoT Hub primitives for device management][lnk-dev-man]. 
+6. Flash the binary to [NUCLEO-L476RG][lnk-nucleo-l4] board. The sample application you have compiled include a procedure to implement Over-The-Air (OTA) Firmware upadate, which can be combined with [Azure IoT Hub primitives for device management][lnk-dev-man]. 
 Firmware update procedure requires a bootloader to be installed together with the Firmware binary; in order to properly flash both, scripts are provided for each IDE used. 
 In [SystemWorkbench for STM32][lnk-ide-sw4stm32] scripts for Windows/OSx/Ubuntu can be found in ```Projects/STM32L476RG-Nucleo/Application/Azure_Sns_DM/SW4STM32/STM32L476RG-Nucleo```. 
 In Windows simply click on ```CleanAzure1mbedTLS.bat```; for OSx and Ubuntu, scripts require configuration according to your setup, please refer to ```readme.txt``` in 
@@ -82,40 +82,38 @@ folder ```Projects/STM32L476RG-Nucleo/Application/Azure_Sns_DM``` to learn how t
 
 ### 3.2 Connect and send messages to Azure IoT Hub 
 
-To visualize log messages from [NUCLEO-F476RG][lnk-nucleo-l4] board, configure your serial terminal (e.g. [TeraTerm][lnk-teraterm] for Windows) with the following parameters 
+To visualize log messages from [NUCLEO-L476RG][lnk-nucleo-l4] board, configure your serial terminal (e.g. [TeraTerm][lnk-teraterm] for Windows) with the following parameters 
 - BaudRate : 115200
 - Data : 8 bit
 - Parity : none
 - Stop : 1 bit 
 - Flow Control : none
 
-Press ```RESET``` button onboard [NUCLEO-F476RG][lnk-nucleo-l4] to restart the application; 
+Press ```RESET``` button onboard [NUCLEO-L476RG][lnk-nucleo-l4] to restart the application; 
 ```LED2``` will blink once connection with Azure IoT Hub is established. Once connected to the IoT Hub, the application transmits periodically messages containing emulated sensors data.
 Application can be stopped by pressing ```USER``` button. 
 Messages successfully transmitted to your Azure IoT Hub are also printed over your serial terminal interface. 
-![][6]
-
 
 ### 3.3 Receive messages from IoT Hub
 
 See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages from IoT Hub.
-Messages received by STM32 [NUCLEO-F476RG][lnk-nucleo-l4] are printed over serial terminal interface once received. 
+Messages received by STM32 [NUCLEO-L476RG][lnk-nucleo-l4] are printed over serial terminal interface once received. 
 Some cloud-to-device messages are also interpreted by the application: 
-- Pause : pause the application 
-- Play : restart the application after a pause 
-- LedOn/LedOff : turn on/off LED2 onboard Nucleo
-- LedBlink : LED2 onboard Nucleo will blink for each message transmitted.
+- Pause : pause the application (message to be entered in the form ```{"Name":"Pause", "Parameters":{}}``` )
+- Play : restart the application after a pause (message to be entered in the form ```{"Name":"Play", "Parameters":{}}``` )
+- LedOn/LedOff : turn on/off LED2 onboard Nucleo (message to be entered in the form ```{"Name":"LedOn", "Parameters":{}}``` )
+- LedBlink : LED2 onboard Nucleo will blink for each message transmitted (message to be entered in the form ```{"Name":"LedBlink", "Parameters":{}}``` ).
 
 The application also support [direct methods][lnk-direct-methods] and [desired properties][lnk-desired-prop] as alternative methods to remotely control the device.
  
 <a name="Kit01-Sample"></a>
 ## Option 2: Use the P-NUCLEO-AZURE1 kit from ST Microelectronics
 
-### P-NUCLEO-AZURE1 kit
+### [P-NUCLEO-AZURE1][lnk-p-nucleo-azure1] kit
 
-The P-NUCLEO-AZURE1 kit includes:
+The [P-NUCLEO-AZURE1][lnk-p-nucleo-azure1] kit includes:
 
--   IoT Wi-Fi node based on STM32 NUCLEO-F476RG (STM32 [NUCLEO-F476RG][lnk-nucleo-l4] + [Wi-Fi expansion board][lnk-nucleo-wifi]) 
+-   IoT Wi-Fi node based on STM32 NUCLEO-L476RG (STM32 [NUCLEO-L476RG][lnk-nucleo-l4] + [Wi-Fi expansion board][lnk-nucleo-wifi]) 
 -   [X-NUCLEO-IKS01A2][lnk-nucleo-mems] (Motion MEMS and environmental sensor expansion board for STM32 Nucleo)
 -   [X-NUCLEO-NFC01A1][lnk-nucleo-nfc] (Dynamic NFC tag expansion board based on M24SR for STM32 Nucleo)
 -   Micro USB to USB cable 
@@ -124,7 +122,7 @@ The P-NUCLEO-AZURE1 kit includes:
 
 ### Connect the sensors 
 
-Combine STM32 NUCLEO-F476RG, Wi-Fi, Sensors and NFC expansion boards using the ST morpho and Arduino UNO R2 connectors, 
+Combine STM32 NUCLEO-L476RG, Wi-Fi, Sensors and NFC expansion boards using the ST morpho and Arduino UNO R2 connectors, 
 following the order shown in the picture. 
 
 ![p-nucleo-azure-connect](media/stmicroelectronics-p-nucleo-azure1/p-nucleo-azure1-connect.png)
@@ -144,9 +142,9 @@ Then connect P-NUCLEO-AZURE1 to your laptop using the Micro USB to USB cable.
 
 #### Download firmware
 
-Download [FP-CLD-AZURE1][lnk-fp-cld-azure] Function Pack (__**[temporary link][lnk-fp-cld-azure]**__). 
+Download [FP-CLD-AZURE1][lnk-fp-cld-azure] Function Pack. 
 The Function Pack contains all the required drivers 
-to use the [NUCLEO-F476RG][lnk-nucleo-l4] board with Wi-Fi, sensors and NFC expansion boards, 
+to use the [NUCLEO-L476RG][lnk-nucleo-l4] board with Wi-Fi, sensors and NFC expansion boards, 
 together with pre-integrated Microsoft Azure IoT SDK. 
 
 #### Import solution file
@@ -181,7 +179,7 @@ shortcut ```Ctrl+B```).
 
 #### Flash the binary 
 
-Flash the binary to [NUCLEO-F476RG][lnk-nucleo-l4] board. 
+Flash the binary to [NUCLEO-L476RG][lnk-nucleo-l4] board. 
 The sample application you have compiled include a procedure to implement 
 Over-The-Air (OTA) Firmware upadate, which can be combined with [Azure IoT Hub primitives for device management][lnk-dev-man] (see following sections). 
 Firmware update procedure requires a bootloader to be installed together with the Firmware binary; in order to properly flash both, scripts are 
@@ -204,7 +202,7 @@ Configure your serial terminal as shown in the following picture for TeraTerm (b
 
 ![p-nucleo-azure-serial](media/stmicroelectronics-p-nucleo-azure1/p-nucleo-azure1-serial.png)
 
-Reset the kit by pressing the RESET button on [NUCLEO-F476RG][lnk-nucleo-l4] board to start the application.
+Reset the kit by pressing the RESET button on [NUCLEO-L476RG][lnk-nucleo-l4] board to start the application.
 
 
 ### Send Device Events to IoT Hub
@@ -214,7 +212,7 @@ is established,
 the application transmits periodically messages containing inertial and environmental data read 
 from [X-NUCLEO-IKS01A2][lnk-nucleo-mems] sensors board. 
 
-LED2 onboard [NUCLEO-F476RG][lnk-nucleo-l4] blinks once connection with Azure IoT Hub is established. 
+LED2 onboard [NUCLEO-L476RG][lnk-nucleo-l4] blinks once connection with Azure IoT Hub is established. 
 Application can be stopped by pressing USER button. 
 
 
@@ -234,14 +232,14 @@ iothub-explorer monitor-events <device name> --login <iot-hub-connection-string>
 
 ### Receive messages from IoT Hub
 
-To send a message from IoT Hub to [NUCLEO-F476RG][lnk-nucleo-l4] board with iothub-explorer, open Node.js 
+To send a message from IoT Hub to [NUCLEO-L476RG][lnk-nucleo-l4] board with iothub-explorer, open Node.js 
 command prompt and insert the following commands:
 ```
 iothub-explorer send <device name> <message> --ack=full
 ```
 
 
-Messages received by STM32 [NUCLEO-F476RG][lnk-nucleo-l4] are printed over serial terminal interface once received. 
+Messages received by STM32 [NUCLEO-L476RG][lnk-nucleo-l4] are printed over serial terminal interface once received. 
 Some cloud-to-device messages are also interpreted by the application: 
 -   Pause : pause the application
 -   Play : restart the application after a pause
@@ -324,7 +322,8 @@ You have now learned how to run a sample application that collects sensor data a
 [lnk-direct-methods]:https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-direct-methods
 [lnk-desired-prop]:https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins
 [lnk-dev-man]:https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-device-management-overview
-[lnk-fp-cld-azure]:https://onedrive.live.com/?authkey=%21AA3Nn3C4VxGpjqQ&id=D0937BB59FC4DE68#authkey=%21AA3Nn3C4VxGpjqQ&id=D0937BB59FC4DE68%21100702&cid=D0937BB59FC4DE68
+[lnk-fp-cld-azure]:http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32-ode-function-pack-sw/fp-cld-azure1.html
+[lnk-p-nucleo-azure1]:http://www.st.com/content/st_com/en/products/evaluation-tools/solution-evaluation-tools/communication-and-connectivity-solution-eval-boards/p-nucleo-azure1.html
 
 [1]: ./media/nucleol4.png
 [2]: ./media/nucleol4-sw-import.png
