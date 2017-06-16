@@ -101,10 +101,10 @@ Messages successfully transmitted to your Azure IoT Hub are also printed over yo
 See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages from IoT Hub.
 Messages received by STM32 [NUCLEO-L476RG][lnk-nucleo-l4] are printed over serial terminal interface once received. 
 Some cloud-to-device messages are also interpreted by the application: 
-- Pause : pause the application 
-- Play : restart the application after a pause 
-- LedOn/LedOff : turn on/off LED2 onboard Nucleo
-- LedBlink : LED2 onboard Nucleo will blink for each message transmitted.
+- Pause : pause the application (message need to be typed in the form ```{"Name":"Pause", "Parameters":{}}``` )
+- Play : restart the application after a pause (message need to be typed in the form ```{"Name":"Play", "Parameters":{}}``` )
+- LedOn/LedOff : turn on/off LED2 onboard Nucleo (message need to be typed in the form ```{"Name":"LedOn", "Parameters":{}}``` )
+- LedBlink : LED2 onboard Nucleo will blink for each message transmitted (message need to be typed in the form ```{"Name":"LedBlink", "Parameters":{}}``` ).
 
 The application also support [direct methods][lnk-direct-methods] and [desired properties][lnk-desired-prop] as alternative methods to remotely control the device.
  
