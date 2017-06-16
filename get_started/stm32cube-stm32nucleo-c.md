@@ -1,13 +1,13 @@
 ---
 platform: STM32 Cube 
 
-device: STM32 Nucleo F401RE
+device: STM32 Nucleo-F401RE
 
 language: c
 
 ---
 
-Run a simple C sample on STM32 Nucleo F401RE 
+Run a simple C sample on STM32 Nucleo-F401RE 
 ===
 ---
 
