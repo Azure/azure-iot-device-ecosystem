@@ -57,7 +57,7 @@ You should have the following items ready before beginning the process:
 
 ##  3.1 Build SDK and sample code
 
-1.  Download the [SecureIoT1702_Azure_IoT_build_0100.zip](http://ww1.microchip.com/downloads/en/softwarelibrary/cec1702_azure_iot/secureiot1702_azure_iot_build_0100.zip) package. This package contains all the required drivers to use with the SecureIoT1702 board with Winc1500 clicker board, together with pre-integrated Microsoft Azure IoT C SDK.
+1.  Download the [SecureIoT1702_Azure_IoT_build_0100.zip](http://www.microchip.com/SWLibraryWeb/product.aspx?product=CEC1702_AZURE_IOT) package. This package contains all the required drivers to use with the SecureIoT1702 board with Winc1500 clicker board, together with pre-integrated Microsoft Azure IoT C SDK.
 The project uses mbedTLS as the TLS stack, which has been added to the project as a library:
 
     `SecureIoT1702_Azure_IoT\framework\mbedTLS\libmbedtls240.lib`
