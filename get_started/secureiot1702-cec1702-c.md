@@ -57,14 +57,14 @@ You should have the following items ready before beginning the process:
 
 ##  3.1 Build SDK and sample code
 
-1.  Download the SecureIoT1702_Azure_IoT.zip package. This package contains all the required drivers to use with the SecureIoT1702 board with Winc1500 clicker board, together with pre-integrated Microsoft Azure IoT C SDK.
+1.  Download the [SecureIoT1702_Azure_IoT_build_0100.zip](http://ww1.microchip.com/downloads/en/softwarelibrary/cec1702_azure_iot/secureiot1702_azure_iot_build_0100.zip) package. This package contains all the required drivers to use with the SecureIoT1702 board with Winc1500 clicker board, together with pre-integrated Microsoft Azure IoT C SDK.
 The project uses mbedTLS as the TLS stack, which has been added to the project as a library:
 
-    `msft_azure_iot_cec1702\framework\mbedTLS\libmbedtls240.lib`
+    `SecureIoT1702_Azure_IoT\framework\mbedTLS\libmbedtls240.lib`
 
 2.  Unzip the package and open the Keil project file
 
-    `msft_azure_iot_cec1702\demo_projects\SecureIoT1702\azure_iot_cec1702.uvprojx`
+    `SecureIoT1702_Azure_IoT\demo_projects\SecureIoT1702\azure_iot_cec1702.uvprojx`
 
 3.  The MQTT application is **iothub_client_sample_x509**. It uses MQTT as the transport for communicating to the AZURE IOT hub.
 
@@ -74,7 +74,7 @@ The project uses mbedTLS as the TLS stack, which has been added to the project a
     -   static const char* x509certificate = “ “ 
     -   static const char* x509privatekey = “ “
 
-    `msft_azure_iot_cec1702_\demo_projects\SecureIoT1702\src\apps\iothub_client_sample_x509.c`
+    `SecureIoT1702_Azure_IoT\demo_projects\SecureIoT1702\src\apps\iothub_client_sample_x509.c`
 
 The rootCA for Azure IoT – Baltimore root CA is pre-programmed in iothub_client_sample_x509. 
 
@@ -82,9 +82,11 @@ Update the x509certificate and x509privatekey to match your X.509 credentials.
 
 Please refer [Secure your IoT deployment](https://github.com/Microsoft/azure-docs/blob/master/includes/iot-secure-your-deployment.md) and [Use IoT Hub security tokens and X.509](https://github.com/Azure/azure-content-nlnl/blob/master/articles/iot-hub/iot-hub-sas-tokens.md) certificates for more details on X.509 security.
 
+The IoT Hub connection string is present in the connectionString variable; update this value to match your connection string.
+
 4.  Wifi Configuration - Currently the code is configured to connect through WPA-PSK. The SSID and password are set statically in **winc1500_connect.c**
 
-    `msft_azure_iot_cec1702_\demo_projects\SecureIoT1702\src\platform\winc\ winc1500_connect.c`
+    `SecureIoT1702_Azure_IoT\demo_projects\SecureIoT1702\src\platform\winc\ winc1500_connect.c`
 
     ```
     #define CONN_SSID						"TP-LINK_6934"
@@ -99,7 +101,7 @@ Please refer [Secure your IoT deployment](https://github.com/Microsoft/azure-doc
  
     Compiler: Keil uVision V5.20.0.0
 
-    The spi_image (spi_image.bin) is created as part of the post-build process. The output files are placed in: `msft_azure_iot_cec1702\demo_projects\SecureIoT1702\targets`
+    The spi_image (spi_image.bin) is created as part of the post-build process. The output files are placed in: `SecureIoT1702_Azure_IoT\demo_projects\SecureIoT1702\targets`
 
 ## 3.2 Build Firmware into Flash
 
@@ -113,7 +115,7 @@ To view the UART traces:
 
 1.  Connect USB cable between SecureIoT1702 board and Windows host 
 2.  After driver installation, start ComXDBG.exe 
-msft_azure_iot_cec1702\utilities\ ComEDBG \ ComXDBG.exe
+SecureIoT1702_Azure_IoT\utilities\ ComEDBG \ ComXDBG.exe
 3.  Select FTDIBUS COM port 
     For example: for the below options we would enter 0
 
