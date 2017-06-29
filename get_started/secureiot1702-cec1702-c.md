@@ -38,7 +38,6 @@ You should have the following items ready before beginning the process:
 -   **ComXDBG.exe** (provided with package) or any other serial terminal installed in your PC – for viewing trace messages from SecureIoT1702 board
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   BIOS PS306 device.
 
 ## 1.2 Hardware components
 
@@ -57,7 +56,7 @@ You should have the following items ready before beginning the process:
 
 ##  3.1 Build SDK and sample code
 
-1.  Download the [SecureIoT1702_Azure_IoT_build_0100.zip](http://www.microchip.com/SWLibraryWeb/product.aspx?product=CEC1702_AZURE_IOT) package. This package contains all the required drivers to use with the SecureIoT1702 board with Winc1500 clicker board, together with pre-integrated Microsoft Azure IoT C SDK.
+1.  Download the [SecureIoT1702_Azure_IoT_build](http://www.microchip.com/SWLibraryWeb/product.aspx?product=CEC1702_AZURE_IOT) package. This package contains all the required drivers to use with the SecureIoT1702 board with Winc1500 clicker board, together with pre-integrated Microsoft Azure IoT C SDK.
 The project uses mbedTLS as the TLS stack, which has been added to the project as a library:
 
     `SecureIoT1702_Azure_IoT\framework\mbedTLS\libmbedtls240.lib`
@@ -187,7 +186,7 @@ SecureIoT1702_Azure_IoT\utilities\ ComEDBG \ ComXDBG.exe
 
 ## 3.4 Receive messages to Azure IoT Hub 
 
-    See [Device Explorer](https://github.com/fsautomata/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to learn how to send cloud-to-device messages from IoT hub. The received messages are displayed in the serial terminal. 
+   See [Device Explorer](https://github.com/fsautomata/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to learn how to send cloud-to-device messages from IoT hub. The received messages are displayed in the serial terminal. 
 
     Example:
 
