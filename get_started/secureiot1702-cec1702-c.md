@@ -50,7 +50,7 @@ You should have the following items ready before beginning the process:
 
 -   Attach the ATWINC1510 Clicker board on mikroBUS slot 1 on SecureIoT1702 board as shown in the figure.
 
-    ![board](media\microchip-secureiot1702\board.jpg)
+    ![board](media/microchip-secureiot1702/board.jpg)
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
@@ -95,7 +95,7 @@ Please refer [Secure your IoT deployment](https://github.com/Microsoft/azure-doc
 
 5.  Build Output
 
-    ![board](media\microchip-secureiot1702\build-output.png)
+    ![build](media/microchip-secureiot1702/build-output.png)
  
     Compiler: Keil uVision V5.20.0.0
 
@@ -117,7 +117,7 @@ msft_azure_iot_cec1702\utilities\ ComEDBG \ ComXDBG.exe
 3.  Select FTDIBUS COM port 
     For example: for the below options we would enter 0
 
-    ![connect](media\microchip-secureiot1702\connect.png)
+    ![connect](media/microchip-secureiot1702/connect.png)
 
 4.  You should be able to view UART traces from the SecureIoT1702 board.
 
