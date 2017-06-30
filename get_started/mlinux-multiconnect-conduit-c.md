@@ -52,7 +52,7 @@ Follow the appropriate Getting Started guide for your Conduit to connect to the 
 <a name="Load"></a>
 ## 3.1 Build SDK and sample
 
--   If you have not already done so, install the mLinux C/C++ Toolchain: <http://www.multitech.net/developer/software/mlinux/mlinux-software-development/mlinux-c-toolchain/>
+-   If you have not already done so, [install the mLinux C/C++ Toolchain](http://www.multitech.net/developer/software/mlinux/mlinux-software-development/mlinux-c-toolchain/)
 -   From a terminal on the host, load the cross compilation environment using:
 
         $ source /<path to sdk>/environment-setup-arm926ejste-mlinux-linux-gnueabi
@@ -85,9 +85,26 @@ Follow the appropriate Getting Started guide for your Conduit to connect to the 
 
 -   Replace the above placeholder with device connection string you obtained in [Step 1](#Prerequisites) and save the changes.
 
+-   Create a new file "toolchain.cmake" in the azure-iot-sdk-c directory and enter the text
+
+    ```
+    INCLUDE(CMakeForceCompiler)
+
+    SET(CMAKE_SYSTEM_NAME Linux)
+    SET(CMAKE_SYSTEM_PROCESSOR ARM)
+
+    SET(CMAKE_SYSTEM_VERSION 1)
+    SET(CROSS_COMPILE arm-mlinux-linux-eabi-)
+
+    SET(CMAKE_FIND_ROOT_PATH $ENV{OECORE_TARGET_SYSROOT})
+    SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+    SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+    SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+    ```
+
 -   Build the SDK using following command.
 
-        ./azure-iot-sdk-c/build_all/linux/build.sh
+        ./build_all/linux/build.sh --toolchain-file toolchain.cmake
 		
 -   Transfer the compiled example(s) to your MultiConnect Conduit:
 
