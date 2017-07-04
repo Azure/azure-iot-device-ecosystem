@@ -14,9 +14,11 @@ Run a simple JAVA sample on Meshlium device running Debian GNU/Linux 8
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Build and Run the Sample](#Build)
+    -   [Option 1: Use the development board, without sensors](#Device-Sample)
+    -   [Option 2: Use the Libelium-Azure Development Kit from Libelium](#Kit01-Sample)
 -   [Next Steps](#NextSteps)
 
-<a name="Introduction"/>
+<a name="Introduction"></a>
 # Introduction
 
 **About this document**
@@ -49,12 +51,15 @@ Manager System. If your network does not offer DHCP service, Meshlium starts wit
 <a name="Build"></a>
 # Step 3: Build SDK and Run the sample
 
-<a name="Step_3_1"/>
+<a name="Device-Sample"></a>
+## Option 1: Use the development board, without sensors
+
+<a name="Step_3_1"></a>
 ## 3.1 Install Azure IoT Device SDK and prerequisites on device
 
 -   Install the prerequisite packages by issuing the following commands from the command line on the device.
 
-<a name="Step_3_1_1"/>
+<a name="Step_3_1_1"></a>
 ### 3.1.1  Install Java JDK and set up environment variables
         
 1. Install openjdk-8
@@ -96,7 +101,7 @@ Manager System. If your network does not offer DHCP service, Meshlium starts wit
 
     ***Note***: *Here [PathToJDK] is JDK directory. For example if jdk directory is /usr/lib/jvm/java-8-openjdk-amd64/, export command will be* **export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/**
 
-<a name="Step_3_1_2"/>
+<a name="Step_3_1_2"></a>
 ### 3.1.2  Install Maven and set up environment variables
 
 1.  Install maven
@@ -119,12 +124,12 @@ Manager System. If your network does not offer DHCP service, Meshlium starts wit
    
 5.  You can verify that the environment variables necessary to run Maven 3 have been set correctly by running `mvn --version`.
 
-<a name="Step_3_1_3"/>
+<a name="Step_3_1_3"></a>
 ### 3.1.3  Install GIT
 
         sudo apt-get install git
 
-<a name="Step_3_1_4"/>
+<a name="Step_3_1_4"></a>
 ### 3.1.4  Build Qpid JMS
 
 1.  Clone the repository for Qpid JMS.
@@ -141,7 +146,7 @@ Manager System. If your network does not offer DHCP service, Meshlium starts wit
     
         mvn install -DskipTests
 
-<a name="Step_3_1_5"/>
+<a name="Step_3_1_5"></a>
 ### 3.1.5 Build the Azure IoT Device SDK for Java
 
 1.  Download the SDK to the board by issuing the following command in PuTTY:
@@ -159,10 +164,134 @@ Manager System. If your network does not offer DHCP service, Meshlium starts wit
 
         azure-iot-sdk-java/device/iothub-java-client/target/iothub-java-client-{version}-with-deps.jar
 
-<a name="Step_3_2"/>
+<a name="Kit01-Sample"></a>
+## Option 2: Use the Libelium-Azure Development Kit from Libelium
+
+The Libelium-Azure development kit includes:
+
+-   Meshlium 4G 802.15.4 AP device
+-   Plug & Sense! SC-PRO 802.15.4-PRO 5dBi
+-   Plug & Sense! SA 802.15.4-PRO 5dBi
+-   Noise / Sound Level Sensor
+-   Luminosity (luxes accuracy)
+-   Ultrasound probe
+-   Temperature, Humidity and Pressure Sensor Probe
+-   Calibrated Carbon Dioxide (CO2) gas Sensor Probe
+-   Soil moisture 1.5 probe
+-   Weather Station WS-3000 probe
+-   2x Outdoors USB cable
+-   3x International adapter
+-   2x 6600mA·h rechargeable battery+external solar panel 7V + 500m
+-   Plug & Sense! Documentation
+-   Meshlium Documentation
+-   Technical Consultancy (2 hours included)
+-   Programming Service
+-   Technical Support Forum (Free)
+
+### Connect the sensors
+
+For connecting the sensors, please follow the [P&S Quick Start Guide](http://www.libelium.com/downloads/quick-start-guides/quick_start_guide_azure_development_kit.pdf).
+
+Specially the chapter "14. Check conecction diagram"
+
+### Build and Run the sample
+
+#### 1. Install in Meshlium:
+
+-   [Maven](https://maven.apache.org/)
+
+    Execute the command below in your Meshlium:
+
+    ```bash
+    $ remountrw && sudo apt-get install maven
+    ```
+
+-   [Azure IoT Java sdk](https://github.com/Azure/azure-iot-sdk-java)
+
+    Download and compile Azure IoT Java sdk in your Meshlium executing the commands below:.
+
+    ```bash
+    $ cd /mnt/user/
+    $ wget https://github.com/Azure/azure-iot-sdk-java/archive/master.zip
+    $ cd azure-iot-sdk-java-master/
+    $ mvn install
+    ```
+
+#### 2. Install in your computer:
+
+-   [iothub-explorer](https://github.com/Azure/iothub-explorer).
+
+### Send Device Events to IoT Hub
+
+#### 1. IN MESHLIUM:
+
+-   Configure and run the plugin for sending waspmotes messages to IoT-Hub following the instructions in the ["Quickstart Guide"](http://www.libelium.com/downloads/quick-start-guides/quick_start_guide_azure_development_kit.pdf) **page 15** section **20.2. Setup in Azure**
+
+    ![Meshlium Azure cloud connector](media/libelium-azure-development-kit/A-1.png)
+    *Figure 1: Meshlium Azure cloud connector*
+
+
+#### 2. IN YOUR COMPUTER
+
+-   Using the IoT-HuB **Connection String** obtained in the previous step, execute [iothub-explorer](https://github.com/Azure/iothub-explorer) with the parameters **login** and **monitor-events** as in this example:
+
+    ```bash
+    $ iothub-explorer -l 'HostName=MeshliumTest.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=NH6uECygmSpJ4ttmYeUBTUD6WfFRbJFXipbKxqLvWz0=' monitor-events
+    ```
+
+    ![Monitor events](media/libelium-azure-development-kit/A-2.png)
+    *Figure 2: Monitor events*
+
+### Receive messages from IoT Hub
+
+#### 1. IN YOUR COMPUTER
+
+-   Get the Connection String of one of the **Waspmote** devices using the IoT Hub **Connection String**. In the example the device is *WASP_AW_0*:
+
+    ```bash
+    $ iothub-explorer login 'HostName=MeshliumTest.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=NH6uECygmSpJ4ttmYeUBTUD6WfFRbJFXipbKxqLvWz0='
+    $ iothub-explorer get WASP_AW_0 --connection-string
+    ```
+
+    ![Get the Waspmote Connection String](media/libelium-azure-development-kit/B-1.png)
+    *Figure 3: Get the Waspmote Connection String*
+
+-   Copy the parameter **connectionString** displayed. In the example the parameter is:
+
+    ```bash
+    "HostName=MeshliumTest.azure-devices.net;DeviceId=WASP_AW_0;SharedAccessKey=5XEErBhtGG7/GkashF7/5kerIuRQ70vWxcy6yOh7A6g="
+    ```
+
+    We will use this parameter later to send a message to the *WASP_AW_0*
+
+#### 2. IN MESHLIUM:
+
+-   Execute sample for reading messages from IoT-HuB using the previously obtained Waspmote **Connection String**:
+
+    ```bash
+    $ cd /mnt/user/azure-iot-sdk-java-master/device/iot-device-samples/handle-messages/target
+    $ java -jar handle-messages-1.3.29-with-deps.jar 'HostName=MeshliumTest.azure-devices.net;DeviceId=WASP_AW_0;SharedAccessKey=5XEErBhtGG7/GkashF7/5kerIuRQ70vWxcy6yOh7A6g=' amqps
+    ```
+
+    ![Read messages in Meshlium](media/libelium-azure-development-kit/B-5.png)
+    *Figure 4: Read messages in Meshlium*
+
+#### 3. IN YOUR COMPUTER:
+
+-   Send a message to the *WASP_AW_0*:
+
+    ```bash
+    $ iothub-explorer -l 'HostName=MeshliumTest.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=NH6uECygmSpJ4ttmYeUBTUD6WfFRbJFXipbKxqLvWz0=' send WASP_AW_0 'My command to the device' --ack=full
+    ```
+
+    ![Receive messages from Meshlium](media/libelium-azure-development-kit/B-6.png)
+    *Figure 5: Receive messages from Meshlium*
+
+
+<a name="Step_3_2"></a>
 ## 3.2 Run and Validate the Samples
 
-<a name="Step_3_2_1"/>
+<a name="Step_3_2_1"></a>
 ### 3.2.1 Send Device Events to IoT Hub:
 
 -   Navigate to the folder containing the executable JAR file for send event sample.
@@ -181,7 +310,7 @@ Manager System. If your network does not offer DHCP service, Meshlium starts wit
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 
-<a name="Step_3_2_2"/>
+<a name="Step_3_2_2"></a>
 ### 3.2.2 Receive messages from IoT Hub
 
 -   Navigate to the folder containing the executable JAR file for the receive message sample.
