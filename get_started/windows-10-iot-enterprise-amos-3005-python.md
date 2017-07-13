@@ -1,5 +1,5 @@
 ---
-platform: windows-10-iot-enterprise
+platform: windows 10 iot enterprise
 device: amos-3005
 language: python
 ---
