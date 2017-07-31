@@ -7,7 +7,7 @@ language: c
 
 ---
 
-Run a simple C sample on STM32 Nucleo-F401RE 
+Run a simple C sample on STM32 Nucleo-F429ZI 
 ===
 ---
 
@@ -23,7 +23,7 @@ Run a simple C sample on STM32 Nucleo-F401RE
 
 **About this document**
 
-This document describes how to connect STM32 [NUCLEO-F429ZI][lnk-nucleo-144] board together with [NFC expansion board][lnk-nucleo-nfc] to the Microsoft Azure IoT Hub, by leveraging on Azure IoT Device SDK. This multi-step process includes:
+This document describes how to connect STM32 [NUCLEO-F429ZI][lnk-nucleo-144] board to the Microsoft Azure IoT Hub, by leveraging on Azure IoT Device SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering STM32 [NUCLEO-F429ZI][lnk-nucleo-144] to Azure IoT Hub
 -   Build and deploy Azure IoT SDK on STM32 Nucleo
@@ -43,13 +43,12 @@ You should have the following items ready before beginning the process.
 [SystemWorkbench for STM32][lnk-ide-sw4stm32] is the free integrated development environment for STM32, and it is used as reference in this guide.
 
 ## 1.2 Hardware components
- - STM32 Nucleo development board ([NUCLEO-F429ZI][lnk-nucleo-144])
- - NFC expansion board for STM32 Nucleo ([X-NUCLEO-NFC01A1][lnk-nucleo-nfc])
-
+ - STM32 Nucleo development board ([NUCLEO-F429ZI][lnk-nucleo-144]) with integrated Ethernet connectivity
+ 
 
  
 # Step 2: Prepare your Device
-Combine [NUCLEO-F429ZI][lnk-nucleo-144] with [NFC expansion board][lnk-nucleo-nfc] as shown in the figure below. Then connect the [NUCLEO-F429ZI][lnk-nucleo-144] board to your PC using a micro USB cable.
+Connect the [NUCLEO-F429ZI][lnk-nucleo-144] board to your PC using a micro USB cable and plug an Ethernet RJ-45 cable.
 
 ![][1]
  
@@ -57,10 +56,10 @@ Combine [NUCLEO-F429ZI][lnk-nucleo-144] with [NFC expansion board][lnk-nucleo-nf
 
 # Step 3: Build and Run the sample 
 
-<a name="Load"></a>
+
 ## 3.1 Build SDK and sample code
 
-1. Download [FP-CLD-AZURE1][lnk-fp-cld-azure] Function Pack. The Function Pack contains all the required drivers to use the [NUCLEO-F429ZI][lnk-nucleo-144] board with [NFC expansion board][lnk-nucleo-nfc], together with pre-integrated Microsoft Azure IoT SDK. 
+1. Download [FP-CLD-AZURE1][lnk-fp-cld-azure] Function Pack. The Function Pack contains all the required drivers to use the [NUCLEO-F429ZI][lnk-nucleo-144] board together with pre-integrated Microsoft Azure IoT SDK. 
 2. Unzip the package and open one of the pre-configured project files available in ```Projects/STM32F429ZI-Nucleo/Applications/Azure_Sns```, according to the IDE installed (for [SystemWorkbench for STM32][lnk-ide-sw4stm32] project files can be found inside folder ```SW4STM32```). 
 3. In [SystemWorkbench for STM32][lnk-ide-sw4stm32] select the project from menu ```File -> Import -> Existing Projects into Workspace```; browse folders and select as root directory ```Projects/STM32F429ZI-Nucleo/Applications/Azure_Sns/SW4STM32/STM32F429ZI-Nucleo``` then click ```Finish```.
 ![][2]
@@ -82,13 +81,13 @@ To visualize log messages from [NUCLEO-F429ZI][lnk-nucleo-144] board, configure 
 - Stop : 1 bit 
 - Flow Control : none
 
-To connect to Ethernet it is necessary to provide the MAC address and the IP addresses. They can be provided via NFC using a NDEF text message in the form ```MAC XX:XX:XX:XX:XX:XX IP yyy.yyy.yyy.yyy```. When the IP address is static, it must be provided as specified. Otherwise, if DHCP is used, it is sufficient to replace the address with ```dhcp```.
-
-To write the NFC tag, it is possible to use the [ST25][lnk-st25-app] app.
+The system is pre-configured to use DHCP (Dynamic Host Configuration Protocol) to obtain the IP address which is needed to access the IP network.
 
 Press ```RESET``` button onboard [NUCLEO-F429ZI][lnk-nucleo-144] to restart the application; 
 ```LED2``` will blink once connection with Azure IoT Hub is established. Once connected to the IoT Hub, the application transmits periodically messages containing emulated sensors data.
+
 Application can be stopped by pressing ```USER``` button. 
+
 See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe in DeviceExplorer the messages IoT Hub receives from STM32 Nucleo.
 
 Messages successfully transmitted to your Azure IoT Hub are also printed over your serial terminal interface. 
