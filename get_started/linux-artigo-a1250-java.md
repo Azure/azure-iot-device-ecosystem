@@ -1,10 +1,10 @@
 ---
-platform: Linux
-device: artigo-a1250
+platform: linux
+device: artigo a1250
 language: java
 ---
 
-Run a simple JAVA sample on ARTiGO-A1250 device running Linux
+Run a simple JAVA sample on ARTiGO A1250 device running Linux
 ===
 ---
 
@@ -28,7 +28,7 @@ Run a simple JAVA sample on ARTiGO-A1250 device running Linux
 
 **About this document**
 
-This document describes how to connect ARTiGO-A1250 device running Linux with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect ARTiGO A1250 device running Linux with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
