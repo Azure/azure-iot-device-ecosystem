@@ -44,19 +44,18 @@ You should have the following items ready before beginning the process:
 # Step 3: Build and Run the Sample
 
 
--   	Download the [Azure IoT SDK][Azure IoT SDK] and the sample programs and save them to your local repository.
-
--   	Start a new instance of Visual Studio 2015.
--   	Open the iothub_csharp_client.sln solution in the (azure-iot-sdk-csharp-master\device) folder in your local copy of the repository.
--   	In Visual Studio, from Solution Explorer, navigate to the samples folder.
--   	In the DeviceClientAmqpSample project, open the Program.cs file.
--   	Locate the following code in the file:
--   	private const string DeviceConnectionString = "<replace>";
--   	Replace <replace> with the connection string for your device.
--   	In Solution Explorer, right-click the DeviceClientAmqpSample project, click Debug, and then click Start new instance to build and run the sample. The console displays messages as the application sends device-to-cloud messages to IoT Hub.
--   	Use the DeviceExplorer utility to observe the messages IoT Hub receives from the Device Client AMQP Sample application.
--   	Refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document][DeviceExplorer Usage] to see the data your device is sending.
--   	Refer "Send cloud-to-device messages" in [DeviceExplorer Usage document][DeviceExplorer Usage] for instructions on sending messages to device.
+-   Download the [Azure IoT SDK][Azure IoT SDK] and the sample programs and save them to your local repository.
+-   Start a new instance of Visual Studio 2015.
+-   Open the iothub_csharp_client.sln solution in the (azure-iot-sdk-csharp-master\device) folder in your local copy of the repository.
+-   In Visual Studio, from Solution Explorer, navigate to the samples folder.
+-   In the DeviceClientAmqpSample project, open the Program.cs file.
+-   Locate the following code in the file:
+-   private const string DeviceConnectionString = "<replace>";
+-   Replace <replace> with the connection string for your device.
+-   In Solution Explorer, right-click the DeviceClientAmqpSample project, click Debug, and then click Start new instance to build and run the sample. The console displays messages as the application sends device-to-cloud messages to IoT Hub.
+-   Use the DeviceExplorer utility to observe the messages IoT Hub receives from the Device Client AMQP Sample application.
+-   Refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document][DeviceExplorer Usage] to see the data your device is sending.
+-   Refer "Send cloud-to-device messages" in [DeviceExplorer Usage document][DeviceExplorer Usage] for instructions on sending messages to device.
 
 
 [Manage cloud device messaging with iothub-explorer]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-explorer-cloud-device-messaging
