@@ -17,7 +17,6 @@ How to certify IoT devices running Linux with Azure IoT SDK
     -   [4.2 Share package with Engineering Support](#Step-4-2-Share)
     -   [4.3 Next steps](#Step-4-3-Next)
 -   [Step 5: Troubleshooting](#Step-5-Troubleshooting)
-    -   [5.1 E2E Test Cases](#Step-5-1-E2E)
 
 <a name="Introduction"></a>
 # Introduction
@@ -181,33 +180,6 @@ This section walks you through building, deploying and validating the IoT Client
 -   Save your changes by pressing Ctrl+O and when nano prompts you to save it as the same file, just press ENTER.
 
 -   Press Ctrl+X to exit nano.
-
--   Set environment variables.
-
--   Open **IOT_DEVICE_PARAMS.TXT** to edit.
-
-        nano azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/iot_device_params.txt
-
--   Set the values for all the variables listed in the file as explained below.
-
-    -   **IOTHUB_CONNECTION_STRING:** Connection string to your IoT Hub you have received in [Step 1](#Step-1-Configure)
-
-    -   **IOTHUB_EVENTHUB_CONNECTION_STRING:** Connection string to your Event Hub. It should be in the form:
-    
-            Endpoint=[Event Hub-compatible endpoint];SharedAccessKeyName=[IOTHUB_POLICY_NAME];SharedAccessKey=[IOTHUB_POLICY_KEY]
-        
-    -   **IOTHUB_EVENTHUB_CONSUMER_GROUP:** Set value as **$Default**
-    -   **IOTHUB_PARTITION_COUNT:** Partition count from azure portal, as shown in figure below.
-
-        ![](images/azure-portal-partition-count.png)
-
--   Set environment variables by running following command on your device:
-
-        cd ./azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/
-        chmod +x setiotdeviceparametersfore2etests.sh
-        sudo ./setiotdeviceparametersfore2etests.sh
-
--   Restart the Linux machine.
 
 -   Build the SDK using following command. If you are facing any issues during build, follow troubleshooting [Step 5](#Step-5-Troubleshooting).
 
