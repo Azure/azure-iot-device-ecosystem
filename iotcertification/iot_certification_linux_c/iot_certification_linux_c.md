@@ -17,16 +17,14 @@ How to certify IoT devices running Linux with Azure IoT SDK
     -   [4.2 Share package with Engineering Support](#Step-4-2-Share)
     -   [4.3 Next steps](#Step-4-3-Next)
 -   [Step 5: Troubleshooting](#Step-5-Troubleshooting)
-    -   [5.1 E2E Test Cases](#Step-5-1-E2E)
 
 <a name="Introduction"></a>
 # Introduction
 
 **About this document**
 
-This document provides step-by-step guidance to IoT hardware publishers on how
-to certify an IoT enabled hardware with Azure IoT SDK. This multi-step process
-includes:
+This document provides step-by-step guidance to IoT hardware publishers on how to certify an IoT enabled hardware with Azure IoT SDK. This multi-step process includes:
+
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -34,8 +32,7 @@ includes:
 
 **Prepare**
 
-Before executing any of the steps below, read through each process, step by step
-to ensure end to end understanding.
+Before executing any of the steps below, read through each process, step by step to ensure end to end understanding.
 
 You should have the following items ready before beginning the process:
 
@@ -184,38 +181,11 @@ This section walks you through building, deploying and validating the IoT Client
 
 -   Press Ctrl+X to exit nano.
 
--   Set environment variables.
-
--   Open **IOT_DEVICE_PARAMS.TXT** to edit.
-
-        nano azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/iot_device_params.txt
-
--   Set the values for all the variables listed in the file as explained below.
-
-    -   **IOTHUB_CONNECTION_STRING:** Connection string to your IoT Hub you have received in [Step 1](#Step-1-Configure)
-
-    -   **IOTHUB_EVENTHUB_CONNECTION_STRING:** Connection string to your Event Hub. It should be in the form:
-    
-            Endpoint=[Event Hub-compatible endpoint];SharedAccessKeyName=[IOTHUB_POLICY_NAME];SharedAccessKey=[IOTHUB_POLICY_KEY]
-        
-    -   **IOTHUB_EVENTHUB_CONSUMER_GROUP:** Set value as **$Default**
-    -   **IOTHUB_PARTITION_COUNT:** Partition count from azure portal, as shown in figure below.
-
-        ![](images/azure-portal-partition-count.png)
-
--   Set environment variables by running following command on your device:
-
-        cd ./azure-iot-sdk-c/tools/iot_hub_e2e_tests_params/
-        chmod +x setiotdeviceparametersfore2etests.sh
-        sudo ./setiotdeviceparametersfore2etests.sh
-
--   Restart the Linux machine.
-
 -   Build the SDK using following command. If you are facing any issues during build, follow troubleshooting [Step 5](#Step-5-Troubleshooting).
 
-        sudo ./azure-iot-sdk-c/build_all/linux/build.sh --run-e2e-tests | tee LogFile.txt
+        sudo ./azure-iot-sdk-c/build_all/linux/build.sh | tee LogFile.txt
 
-    For WebSocket Protocols, use below command to build the SDK***
+    For WebSocket Protocols, use below command to build the SDK
 	
         sudo ./azure-iot-sdk-c/build_all/linux/build.sh --use-websockets
     
@@ -345,8 +315,7 @@ section. These will be needed in [Step 4](#Step-4-2-Share)
 
 Package following artifacts from your device:
 
-1.  Build logs and E2E test results that were logged in the log files during
-    build run.
+1.  Build logs that were logged in the log files during build run.
 
 2.  All the screenshots that are shown above in "**Send Device Events to IoT Hub**" section.
 
@@ -379,38 +348,10 @@ Package following artifacts from your device:
 <a name="Step-4-3-Next"></a>
 ## 4.3 Next steps
 
-Once you shared the documents with us, we will contact you in the following 48
-to 72 business hours with next steps.
+Once you shared the documents with us, we will contact you in the following 48 to 72 business hours with next steps.
 
 <a name="Step-5-Troubleshooting"></a>
 # Step 5: Troubleshooting
-
-<a name="Step-5-1-E2E"></a>
-## 5.1 E2E Test Cases
-
-Please make sure that you have performed below tasks:
-
--   **iot_device_params.txt** should have correct values. Double-check these items:
-
-    -   **IOTHUB_EVENTHUB_CONNECTION_STRING** should be in the below format
-    
-            Endpoint=[Event Hub-compatible endpoint];SharedAccessKeyName=[IOTHUB_POLICY_NAME];SharedAccessKey=[IOTHUB_POLICY_KEY]
-
-    -   **IOTHUB_PARTITION_COUNT** should have matching value as in the azure portal.
-    
--   Environment variables are set using the script file **setiotdeviceparametersfore2etests.sh**.
-
--   Machine/device is restarted after executing above script.
-
--   To confirm that environment variables are set correctly execute following command and verify the values.
-
-        set | grep IOT
-
-If you still face any problem with E2E test cases, then please share following artifacts with us:
-
--   iot_device_params.txt
--   Result of command `set | grep IOT`
--   Build logs
 
 Please contact engineering support on <iotcert@microsoft.com> for help with
 troubleshooting.
