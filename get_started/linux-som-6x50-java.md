@@ -4,7 +4,7 @@ device: som-6x50
 language: java
 ---
 
-Run a simple JAVA sample on SOM-6X50 device running Debian
+Run a simple JAVA sample on SOM-6X50 device running Linux (Debian)
 ===
 ---
 
