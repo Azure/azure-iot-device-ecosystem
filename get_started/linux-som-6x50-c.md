@@ -1,5 +1,5 @@
 ---
-platform: linux (debian)
+platform: debian
 device: som-6x50
 language: c
 ---
