@@ -1,10 +1,10 @@
 ---
-platform: linux
+platform: debian
 device: som-6x50
 language: python
 ---
 
-Run a simple PYTHON sample on SOM-6X50 device running Linux
+Run a simple PYTHON sample on SOM-6X50 device running Linux (Debian)
 ===
 ---
 
