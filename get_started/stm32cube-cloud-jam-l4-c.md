@@ -145,9 +145,9 @@ To visualize messages received in IoT Hub with iothub-explorer, open Node.js com
 
 ## 3.3 Receive messages from IoT Hub
 
-To send a message from IoT Hub to [Cloud-JAM L4](http://rushup.tech/) board with iothub-explorer, open Node.js command prompt and insert the following commands:
+To send a message from IoT Hub to [Cloud-JAM L4](http://rushup.tech/) board with iothub-explorer, open the command prompt and insert the following commands:
 
-    iothub-explorer send <device name> <message> --ack=full
+    Iothub-explorer send <DEVICE_NAME> {"""Name""":"""<Message>""","""Parameters""":{}}  --ack=full
 
 Messages received by STM32 Cloud-JAM L4 are printed over serial terminal interface once received. Some cloud-to-device messages are also interpreted by the application:
 
@@ -155,6 +155,10 @@ Messages received by STM32 Cloud-JAM L4 are printed over serial terminal interfa
 -   Play : restart the application after a pause
 -   LedOn/LedOff : turn on/off LED2 onboard Nucleo
 -   LedBlink : LED2 onboard Nucleo will blink for each message transmitted
+
+To see those events from another terminal you can run:
+
+    Iothub-explorer monitor-feedback <DEVICE_NAME>
 
 See [Manage IoT Hub][lnk-manage-iot-hub] to learn more on how to send cloud-to-device messages from IoT Hub.
 
