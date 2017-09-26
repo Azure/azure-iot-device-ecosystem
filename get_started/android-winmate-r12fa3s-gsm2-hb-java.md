@@ -1,10 +1,10 @@
 ---
 platform: android
-device: winmate-r12fa3s-gsm2(hb)
+device: winmate-r12fa3s-gsm2-hb
 language: java
 ---
 
-Run a simple java sample on Winmate-R12FA3S-GSM2(HB)device running Android 4.4.2
+Run a simple java sample on Winmate-R12FA3S-GSM2(HB) device running Android 4.4.2
 ===
 ---
 
@@ -58,7 +58,7 @@ your Windows machine and follow the installation instructions.
 placeholder with connection string of the device you have created in Step 2
 and save the file.
 - Build your project by going to Project menu > Build Project.
--  Select one of your project¡¯s files and right click Run As ->Andorid
+-  Select one of your projectÂ¡Â¯s files and right click Run As ->Andorid
 Application.
 -  In the Choose Device window that appears, select the Choose a running
 Android device radio button, select your device, and click OK .
@@ -67,22 +67,22 @@ Android device radio button, select your device, and click OK .
 ## 3.1 Send Device Events to IoT Hub
 
 1.	Launch the DeviceExplorer as explained in Step 2 and navigate to Data tab.Select the device name you created from the drop-down list of device IDs and click Monitor button.
-![1](winmate-r12fa3s-gsm2/1.png)
+![1](media/winmate-r12fa3s-gsm2/1.png)
 2. DeviceExplorer is now monitoring data sent from the selected device to the IoTHub.
 3. As soon as you run the app on Winmate-R12FA3S-GSM2(HB) device, it will start sending messages to IoTHub.
 4. Check the LogCat window. Verify that the confirmation messages show an OK.If not, then you may have incorrectly copied the device hub connection information.
-![2](winmate-r12fa3s-gsm2/2.png)
+![2](media/winmate-r12fa3s-gsm2/2.png)
 5. DeviceExplorer should show that IoT Hub has successfully received data sent by sample test.
-![3](winmate-r12fa3s-gsm2/3.png)
+![3](media/winmate-r12fa3s-gsm2/3.png)
 
 ## 3.2 Receive messages from IoT Hub
   1. To verify that you can send messages from the IoT Hub to Winmate-R12FA3S-GSM2(HB) device, go to the Messages To Device tab in DeviceExplorer.
   2. Select the device you created using Device ID drop down.
   3. Add some text to the Message field, then click Send.DeviceExplorer_message_send
-  ![4](winmate-r12fa3s-gsm2/4.png)
+  ![4](media/winmate-r12fa3s-gsm2/4.png)
   4. Click the Receive Messages button from the sample App UI loaded on your device or in the emulator.
   5. Check the LogCat window. You should be able to see the command received. HTTP protocol:
-![5](winmate-r12fa3s-gsm2/5.png)
+![5](media/winmate-r12fa3s-gsm2/5.png)
 
 <a name="NextSteps"></a>
 # Next Steps
