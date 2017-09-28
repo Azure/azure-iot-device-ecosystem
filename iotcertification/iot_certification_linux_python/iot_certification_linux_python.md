@@ -230,7 +230,7 @@ section. These will be needed in [Step 4](#Step-4-2-Share)
 
 Package following artifacts from your device:
 
-1.  Build logs and E2E test results that were logged in the log files during
+1.  Build logs that were logged in the log files during
     build run.
 
 2.  All the screenshots that are shown above in "**Send Device Events to IoT Hub**" section.
