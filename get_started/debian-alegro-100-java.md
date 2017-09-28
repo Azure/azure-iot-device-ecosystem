@@ -1,5 +1,5 @@
 ---
-platform: debian
+platform: linux (debian)
 device: alegro 100
 language: java
 ---
