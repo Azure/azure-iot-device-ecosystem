@@ -1,10 +1,10 @@
 ---
 platform: fedora
-device: samsung-artik
+device: artik-1020
 language: c
 ---
 
-Run a simple C sample on Samsung ARTIK device running Fedora 22
+Run a simple C sample on Samsung ARTIK-1020 device running Fedora 22
 ===
 ---
 
@@ -22,7 +22,7 @@ Run a simple C sample on Samsung ARTIK device running Fedora 22
 
 **About this document**
 
-This document describes how to connect Samsung ARTIK device running Fedora 22 with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect Samsung ARTIK-1020 device running Fedora 22 with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -35,15 +35,15 @@ You should have the following items ready before beginning the process:
 -   Computer with Git client installed and access to the
     [azure-iot-sdk-c](https://github.com/Azure/azure-iot-sdk-c) GitHub
     public repository.
--   Samsung ARTIK device to certify.
+-   Samsung ARTIK-1020 device to certify.
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
-After unboxing your Samsung ARTIK devices, please follow our Getting Started documentations at <https://developer.artik.io/documentation/getting-started-beta/> to power up your board, and set up the serial communication between your ARTIK device and your host computer.
+After unboxing your Samsung ARTIK-1020 devices, please follow our Getting Started documentations at <https://developer.artik.io/documentation/getting-started-beta/> to power up your board, and set up the serial communication between your ARTIK-1020 device and your host computer.
 
-ARTIK supports both Ethernet and WiFi. If you want to use WiFi on your ARTIK, please refer to <https://developer.artik.io/documentation/developer-guide/configuring-wifi-on-artik-10.html> to configure WiFi on your board.
+ARTIK-1020 supports both Ethernet and WiFi. If you want to use WiFi on your ARTIK-1020, please refer to <https://developer.artik.io/documentation/developer-guide/configuring-wifi-on-artik-10.html> to configure WiFi on your board.
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
