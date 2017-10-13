@@ -77,7 +77,7 @@ The SDK contains build scripts and Makefiles for the following toolchains:
 
 
 <a name="BuildSample02"></a>
-## Step 2.1: Other requirements
+## Step 2.2: Other requirements
 
 -   **Python:**
 
