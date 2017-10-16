@@ -100,7 +100,7 @@ To run DeviceExplorer tool, use following configuration string as described in [
 
 Following document provide guidance on how to port the C Internet of Things (IoT) client library to platforms not supported out of the box. The document does cover the specifics of any particular platform.
 
-<https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/porting_guide.md>
+<https://github.com/Azure/azure-c-shared-utility/blob/master/devdoc/porting_guide.md>
 
 <a name="Step_3_2"></a>
 ## 3.2 Run and Validate the Samples
