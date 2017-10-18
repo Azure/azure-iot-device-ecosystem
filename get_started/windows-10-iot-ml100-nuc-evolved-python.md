@@ -1,6 +1,6 @@
 ---
 platform: windows 10 iot
-device: device: ml100 nuc evolved
+device: ml100 nuc evolved
 language: python
 ---
 
