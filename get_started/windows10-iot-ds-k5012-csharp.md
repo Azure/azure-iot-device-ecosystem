@@ -4,7 +4,7 @@ device: ds-k5012
 language: csharp
 ---
 
-Run a simple Csharp sample on DS-K5012  device running Windows 10
+Run a simple Csharp sample on DS-K5012  device running Windows 10 IoT Ent
 ===
 ---
 
