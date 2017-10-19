@@ -4,7 +4,7 @@ device: mv-vb2100-032g
 language: csharp
 ---
 
-Run a simple Csharp sample on MV-VB2100-032G  device running Windows 10
+Run a simple Csharp sample on MV-VB2100-032G  device running Windows 10 IoT Ent
 ===
 ---
 
