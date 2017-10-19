@@ -4,7 +4,7 @@ device: ds-k5002
 language: csharp
 ---
 
-Run a simple Csharp sample on DS-K5002  device running Windows 10
+Run a simple Csharp sample on DS-K5002  device running Windows 10 IoT Ent
 ===
 ---
 
