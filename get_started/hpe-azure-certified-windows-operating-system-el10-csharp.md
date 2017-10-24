@@ -1,19 +1,19 @@
 ---
-platform: windows-8.1-embedded-industry-enterprise
+platform: hpe-azure-certified-windows-operating-system
 device: el10
 language: csharp
 ---
 
-Run a simple sample on EL10 device running Windows 8.1 Embedded Industry Enterprise
+Run a simple sample on EL10 device running HPE Azure Certified Windows Operating System
 ===
 ---
 
 # Table of Contents
 
--   [Introduction](#Introduction)
--   [Step 1: Prerequisites](#Step-1:-Prerequisites)
--   [Step 2: Prepare your Device](#Step-2:-PrepareDevice)
--   [Step 3: Build and Run the Sample](#Step-3:-Build)
+-  [Introduction](#Introduction)
+-  [Step 1: Prerequisites](#Prerequisites)
+-  [Step 2: Prepare your Device](#PrepareDevice)
+-  [Step 3: Build and Run the Sample](#Build)
 -   [Next Steps](#NextSteps)
 
 <a name="Introduction"></a>
@@ -21,12 +21,16 @@ Run a simple sample on EL10 device running Windows 8.1 Embedded Industry Enterpr
 
 **About this document**
 
-This document provides step-by-step guidance on how to connect an EL10 device running **Windows 8.1 Embedded Industry Enterprise** with Azure IoT SDK. This multi-step process includes:
+This document provides step-by-step guidance on how to connect an EL10 device running **a HPE Azure Certified Windows Operating
+System** with Azure IoT SDK. A HPE Azure Certified Windows operating system is one in which a number of tests were run with the 
+EL10 device and the test results were submitted to Microsoft for certification. These include Windows 8.1 Embedded Industry Enterprise,
+Windows 10, Windows Server 2012R2, and Windows Server 2016. This multi-step process includes:
+
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
 
-<a name="Step-1:-Prerequisites"></a>
+<a name="Prerequisites"></a>
 # Step 1: Prerequisites
 
 -    Computer with GitHub installed and access to the
@@ -37,22 +41,26 @@ This document provides step-by-step guidance on how to connect an EL10 device ru
 -   Install [Microsoft Azure SDK](http://www.microsoft.com/download/details.aspx?id=48178).
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
+-    An empty USB drive.
 
-<a name="Step-2:-PrepareDevice"></a>
+<a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
-##  Install Windows 8.1 Embedded Industry Enterprise on EL10
--   Create a bootable USB Drive. Please follow this guide on how to create a bootable drive (<https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool>).
--   Insert the bootable USB Drive from the previous step into your EL10. Turn on your EL10 device and press the **Delete** key.
--   Change the BIOS Boot option filter to **UEFI and Legacy**.
--   Change the **Boot Option Priorities** to boot from your USB Drive.
--   Save changes and restart your EL10. Follow on screen instructions to install Windows Operating System on your EL10.
+##  Install Windows Operating System on the EL10
+-   Obtain an iso for the specific operating system and copy it to the USB drive,
+-   Make the USB drive bootable. Follow this guide on how to create a bootable drive (<https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool>),
+-   Insert the bootable USB Drive from the previous step into the EL10,
+-   Turn on the EL10 device and press the **Delete** key to enter the BIOS settings,
+-   Change the BIOS Boot option filter to **UEFI and Legacy**,
+-   Change the **Boot Option Priorities** to boot from the USB Drive,
+-   Save changes and restart the EL10,
+-   Follow the on screen instructions to install Windows Operating System on the EL10
 
-<a name="Step-3:-Build"></a>
+<a name="Build"></a>
 # Step 3: Build and Run the sample
 
 -   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdk-csharp) and save them to your local repository.
 -   Start a new instance of Visual Studio 2015.
--   Open the **iothub_csharp_client.sln** solution in the `csharp\device` folder in your local copy of the repository.
+-   Open the **iothub\_csharp\_deviceclient.sln** solution in the `device` folder in the local copy of the repository,
 -   In Visual Studio, from Solution Explorer, navigate to the **samples** folder.
 -   In the **DeviceClientAmqpSample** project, open the ***Program.cs*** file.
 -   Locate the following code in the file:
