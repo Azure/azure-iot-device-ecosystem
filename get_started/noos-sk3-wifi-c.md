@@ -93,10 +93,10 @@ Once compliation is completed successfully, you should see something that looks 
 ### 3.2.1 Use FLASH_DOWNLOAD_TOOLS tools to upgrade WIFI firmware:
  - Download [wifi.hex](https://github.com/meijjun/SK3_WIFI/blob/master/wifi.hex) into SK3.
  - upgrade WIFI firmware
- ![](./media/sk3-wifi-c/1.jpg)
- ![](./media/sk3-wifi-c/2.jpg)
- ![](./media/sk3-wifi-c/3.jpg)
- ![](./media/sk3-wifi-c/4.jpg)
+ ![](./media/sk3-wifi-c/1.png)
+ ![](./media/sk3-wifi-c/2.png)
+ ![](./media/sk3-wifi-c/3.png)
+ ![](./media/sk3-wifi-c/4.png)
 
 
 ### 3.2.2 Send Device Events to IoT Hub:
@@ -107,7 +107,7 @@ Once compliation is completed successfully, you should see something that looks 
 ### 3.2.3 Receive messages from IoT Hub
 - 	See [Manage IoT Hub]([lnk-manage-iot-hub]) to learn how to observe the messages IoT Hub receives from the application.
 - 	In SK3 WIFI log, you can see the received data
-   ![](./media/sk3-wifi-c/5.jpg)
+   ![](./media/sk3-wifi-c/5.png)
 
 
 <a name="NextSteps"></a>
