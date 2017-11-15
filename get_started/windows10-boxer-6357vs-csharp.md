@@ -1,10 +1,10 @@
 ---
-platform: Windows 10
+platform: Windows 8
 device: boxer-6357vs
 language: csharp
 ---
 
-Run a simple Csharp sample on BOXER-6357VS device running Windows 10
+Run a simple Csharp sample on BOXER-6357VS device running Windows 8
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple Csharp sample on BOXER-6357VS device running Windows 10
 
 **About this document**
 
-This document describes how to connect BOXER-6357VS device running Windows 10 with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect BOXER-6357VS device running Windows 8 with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
