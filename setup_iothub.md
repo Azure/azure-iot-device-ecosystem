@@ -30,7 +30,7 @@ There is some of this interaction that can happen through the [Azure portal], bu
 ### Retrieving user credentials to interact with the service (not as a device!)
 The first thing  you will need to do before you can use a tool or start developing an application that will interact with the IoT hub using one of the service client SDKs is to retrieve user credentials.
 
-> It is important to understand the different between user credentials and device credentials:
+> It is important to understand the difference between user credentials and device credentials:
 > * The device credentials are managed by the [IoT Hub identity registry](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-identity-registry) and are to be used by code on **devices**
 > * The user credentials are set at the IoT Hub settings level and allow to define user access policies for applications that will **manage** the IoT hub.
 > Details on Control access to IoT Hub cabn be found [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security).
