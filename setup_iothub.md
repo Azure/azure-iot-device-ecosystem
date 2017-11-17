@@ -51,7 +51,7 @@ Now you have the credentials, you can create
   
 ### Monitor IoT Hub operations
 There is a way to monitor an Azure IoT hub operations as all of these are logged into an Event Hub. This can help debug applications developed to interact and manage an IoT hub.
-Every you need to know about IoT Hub operations monitoring is [here][azure iot operations monitoring].
+Everything you need to know about IoT Hub operations monitoring is [here][azure iot operations monitoring].
 
 ### Work and interact with Devices using the tools and SDKs
 Once you have a device ID, you can provision your device with it and start interacting with it from the Cloud through IoT Hub.
