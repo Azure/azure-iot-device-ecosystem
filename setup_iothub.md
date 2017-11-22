@@ -33,7 +33,7 @@ The first thing  you will need to do before you can use a tool or start developi
 > It is important to understand the difference between user credentials and device credentials:
 > * The device credentials are managed by the [IoT Hub identity registry](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-identity-registry) and are to be used by code on **devices**
 > * The user credentials are set at the IoT Hub settings level and allow to define user access policies for applications that will **manage** the IoT hub.
-> Details on Control access to IoT Hub cabn be found [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security).
+> Details on Control access to IoT Hub can be found [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security).
 
 You will need to get user credentials with the right permissions to interact with the identity registry, to send C2D messages, and to work with the Device Twins and Methods.
 The user credentials can easily be found on the [Azure portal] in the "Shared Access Policies" section of the [IoT hub settings blade](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#change-the-settings-of-the-iot-hub).
@@ -56,7 +56,7 @@ Everything you need to know about IoT Hub operations monitoring is [here][azure 
 ### Work and interact with Devices using the tools and SDKs
 Once you have a device ID, you can provision your device with it and start interacting with it from the Cloud through IoT Hub.
 
-When developing, you can leverage some tools that will make your life easier. The below will allow you to do pretty much eveything you need to do when developing and testing IoT devices connecting to Azure IoT:
+When developing, you can leverage some tools that will make your life easier. The below will allow you to do pretty much everything you need to do when developing and testing IoT devices connecting to Azure IoT:
 * [iothub-explorer]  (node.js command line tool)
 * [Device Explorer]  (Windows desktop application)
 
