@@ -1,10 +1,10 @@
 ---
 platform: Windows 10 LTSB 2016
-device: eis-2013E
+device: eis-2103E
 language: c
 ---
 
-Run a simple C sample on EIS-2013E device running Windows 10 LTSB 2016
+Run a simple C sample on EIS-2103E device running Windows 10 LTSB 2016
 ===
 ---
 
@@ -22,7 +22,7 @@ Run a simple C sample on EIS-2013E device running Windows 10 LTSB 2016
 
 **About this document**
 
-This document describes how to connect EIS-2013E device running Windows 10 LTSB 2016 with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect EIS-2103E device running Windows 10 LTSB 2016 with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -35,7 +35,7 @@ You should have the following items ready before beginning the process:
 -   [Prepare your development environment][setup-devbox-windows]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   EIS-2013E device.
+-   EIS-2103E device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
