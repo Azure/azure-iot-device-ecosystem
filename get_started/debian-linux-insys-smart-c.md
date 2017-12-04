@@ -1,10 +1,10 @@
 ---
 platform: debian linux
-device: insys smart 
+device: industrial 4g router mro-l200 
 language: c
 ---
 
-Run a simple C sample on an INSYS Smart device running Debian Linux
+Run a simple C sample on an Industrial 4G Router MRO-L200 running Debian Linux
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple C sample on an INSYS Smart device running Debian Linux
 
 **About this document**
 
-This document describes how to connect an INSYS Smart device running Debian Linux with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect an Industrial 4G Router MRO-L200 device running Debian Linux with Azure IoT SDK. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
@@ -44,7 +44,7 @@ You should have the following items ready before beginning the process:
 -   In the Administration -> Container menu, click on Browse in the Import container section. Select the container file and click on Import container.
 -   Generate a configuration for the imported container by clicking on the magic wand symbol.
 -   Configure the imported container by clicking on the pen symbol.
--   Under Bridge to IP net, select the network of the INSYS Smart Device to which your application is connected.
+-   Under Bridge to IP net, select the network of the Industrial 4G Router MRO-L200 Device to which your application is connected.
 -   Specify an IP address for the container in this network.
 -  Under User group for CLI without authentication, select Read/Write.
 -   Click on Save Settings.
