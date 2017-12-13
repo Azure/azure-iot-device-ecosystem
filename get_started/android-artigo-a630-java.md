@@ -1,4 +1,4 @@
- ---
+---
 platform: android
 device: artigo-a630
 language: java
