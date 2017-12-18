@@ -1,11 +1,16 @@
 ---
 platform: embedded Linux device
-device: dataFEED uaGate SI and dataFEED edgeGate
+device: dataFEED uaGate SI, dataFEED uaGate MB and dataFEED edgeGate
 language: c
 ---
 
-Configure [Stand-alone Application Gateways - Single Protocol](https://industrial.softing.com/en/products/plc-connectivity/integration-of-plc-data.html): dataFEED uaGate SI and dataFEED edgeGate as Azure IoT-device
-===
+Configure dataFEED uaGate SI, dataFEED uaGate MB or dataFEED edgeGate as Azure IoT-device
+
+For further device descriptions see:
+- [dataFEED uaGate SI](https://industrial.softing.com/en/products/plc-connectivity/integration-of-plc-data/gateways-single-protocol/uagate-si.html)
+- [dataFEED uaGate MB](https://industrial.softing.com/en/products/plc-connectivity/integration-of-plc-data/gateways-single-protocol/uagate-mb.html)
+- [dataFEED edgeGate](https://industrial.softing.com/en/products/plc-connectivity/integration-of-plc-data/gateways-multiprotocol/edgegate.html)
+
 ---
 
 # Table of Contents
