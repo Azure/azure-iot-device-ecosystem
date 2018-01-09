@@ -55,7 +55,7 @@ Attach the ATWINC1510 Clicker board on mikroBUS slot 1 on CEC1702 devBoard board
 
 ### 3.1 Build SDK and sample
 
--   Download the [devBoard\_Azure\_IoT\_build](http://www.microchip.com/SWLibraryWeb/product.aspx?product=CEC1702_AZURE_IOT) package. This package contains all the required drivers to use with the CEC1x02 devBoard board with Winc1500 clicker board, together with pre-integrated Microsoft Azure IoT C SDK.
+-   Download the [devBoard\_Azure\_IoT\_build](http://www.microchip.com/SWLibraryWeb/product.aspx?product=CEC1702_AZURE_DICE) package. This package contains all the required drivers to use with the CEC1x02 devBoard board with Winc1500 clicker board, together with pre-integrated Microsoft Azure IoT C SDK.
 The project uses mbedTLS as the TLS stack, which has been added to the project as a library:
 
     `devBoard\_Azure\_IoT\Src\APP\framework\mbedTLS\libmbedtls240.lib`
