@@ -16,13 +16,6 @@ Run a simple C sample on Hisense HK800 device running Windows 10 LTSB 2016
 -   [Step 3: Build and Run the Sample](#Build)
 -   [Next Steps](#NextSteps)
 
-# Instructions for using this template
-
--   Replace the text in {placeholders} with correct values.
--   Delete the lines {{enclosed}} after following the instructions enclosed between them.
--   It is advisable to use external links, wherever possible.
--   Remove this section from final document.
-
 <a name="Introduction"></a>
 # Introduction
 
@@ -47,7 +40,7 @@ You should have the following items ready before beginning the process:
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   Install the OS(Windows10 LTSB 2016)£¬make sure that your device could normal running
+- Â  Install the OS(Windows10 LTSB 2016), make sure that your device could normal running
 -   Make sure that the device to be network connected
 
 <a name="Build"></a>
