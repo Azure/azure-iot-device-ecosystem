@@ -1,10 +1,10 @@
 ---
-platform: Windows 10 LTSB 2016
-device: Hisense HK800
+platform: windows 10 iot enterprise
+device: rt-5015
 language: c
 ---
 
-Run a simple C sample on Hisense HK800 device running Windows 10 LTSB 2016
+Run a simple C sample on RT-5015 device running Windows 10 IoT Enterprise
 ===
 ---
 
@@ -16,12 +16,14 @@ Run a simple C sample on Hisense HK800 device running Windows 10 LTSB 2016
 -   [Step 3: Build and Run the Sample](#Build)
 -   [Next Steps](#NextSteps)
 
+
+
 <a name="Introduction"></a>
 # Introduction
 
 **About this document**
 
-This document describes how to connect Hisense HK800 device running Windows 10 LTSB 2016 with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect RT-5015 device running Windows 10 IoT Enterprise with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -31,22 +33,24 @@ This document describes how to connect Hisense HK800 device running Windows 10 L
 
 You should have the following items ready before beginning the process:
 
+-   Install [Windows 10 SDK](https://developer.microsoft.com/zh-tw/windows/downloads/windows-10-sdk)
+-   Install [Visual Studio 2015](https://www.visualstudio.com/zh-hans/vs/older-downloads/)
 -   [Prepare your development environment][setup-devbox-windows]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   Hisense HK800 device.
+-   RT-5015 device.
 
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   Install the OS(Windows10 LTSB 2016), make sure that your device could normal running
--   Make sure that the device to be network connected
+-   Visit [here](https://www.qnap.com/en/how-to/tutorial/article/how-to-use-container-station).
+-   Power on RT-5015 and connect to Internet.
 
 <a name="Build"></a>
 # Step 3: Build SDK and Run the sample
 
--   Start a new instance of Visual Studio 2017. Open the **azure_iot_sdks.sln** solution in the **cmake** folder in your home directory.
+-   Start a new instance of Visual Studio 2015. Open the **azure_iot_sdks.sln** solution in the **cmake** folder in your home directory.
 
 -   In Visual Studio, in **Solution Explorer**, navigate to **simplesample_amqp** project, open the **simplesample_amqp.c** file.
 
