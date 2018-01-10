@@ -1,7 +1,7 @@
 ---
-platform: {enter the OS name running on device}
+platform: {Linux}
 device: {enter your device name here}
-language: c
+language: java
 ---
 
 Run a simple C sample on {enter your device name here} device running {enter the OS name running on device}
