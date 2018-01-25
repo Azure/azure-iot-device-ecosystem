@@ -6,15 +6,13 @@ language: csharp
 
 Run a simple Csharp sample on a Softing IISK GL20 device.
 
-===
 ---
 
 # Table of Contents
 
 -   [Introduction](#Introduction)
--   [Step 1: Prerequisites](#Prerequisites)
--   [Step 2: Prepare the Device](#PrepareDevice)
--   [Step 3: Build and Run the Sample](#Build)
+-   [Step: Prerequisites](#Prerequisites)
+-   [Step: Build and Run the Sample](#Build)
 -   [Next Steps](#NextSteps)
 
 <a name="Introduction"></a>
@@ -28,9 +26,10 @@ This document describes how to connect a Softing IISK GL20 device with Azure IoT
 -   Build and deploy Azure IoT SDK on device
 
 **Note:** The Softing IISK GL20 is a Hewlett Packard Enterprise GL20 IoT Gateway device, with additional software pre-installed. So this getting started is nearly the same as [hpe-azure-certified-windows-operating-systems-gl20-csharp](hpe-azure-certified-windows-operating-systems-gl20-csharp.md). Especially the following software is installed:
--   Microsoft Windows 10 IoT Enterprise
+-   Microsoft Windows 10 IoT Enterprise LTSB 1607
 -   Softing dataFEED suite
 -   Docker Community Edition (Installer)
+
 So for the end user, it might be more beneficial to use the docker containers of [Azure/iot-edge-opc-proxy](https://github.com/Azure/iot-edge-opc-proxy) and [Azure/iot-edge-opc-publisher](https://github.com/Azure/iot-edge-opc-publisher) to connect OPC UA endpoints with the Azure IoT-hub.
 
 <a name="Prerequisites"></a>
