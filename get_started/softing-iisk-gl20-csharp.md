@@ -34,21 +34,22 @@ This document describes how to connect a Softing IISK GL20 device with Azure IoT
 So for the end user, it might be more beneficial to use the docker containers of [Azure/iot-edge-opc-proxy](https://github.com/Azure/iot-edge-opc-proxy) and [Azure/iot-edge-opc-publisher](https://github.com/Azure/iot-edge-opc-publisher) to connect OPC UA endpoints with the Azure IoT-hub.
 
 <a name="Prerequisites"></a>
-# Step 1: Prerequisites
+# Step: Prerequisites
 
 Have the following items ready before beginning the process:
 
 -   [Setup the IoT hub][lnk-setup-iot-hub]
 -   [Provision the device and get its credentials][lnk-manage-iot-hub]
--   Hewlett Packard Enterprise GL20 IoT Gateway device.
--   Empty USB drive
+-   Softing IISK GL20 device.
+-   Connection to internet, outgoing traffic not blocked by firewall.
 
 <a name="Build"></a>
-# Step 3: Build and Run the sample
+# Step: Build and Run the sample
 
 -   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdk-csharp) and the sample programs and save them to a local repository.
--   Start a new instance of Visual Studio 2015.
+-   Start a new instance of Visual Studio 2017.
 -   Open the **iothub\_csharp\_client.sln** solution in the `device` folder in the local copy of the repository.
+-   Enable developer mode in Windows 10 settings: ![developer-mode](media/developer-mode.png)
 -   In Visual Studio, from Solution Explorer, navigate to the **samples** folder.
 -   In the **DeviceClientAmqpSample** project, open the ***Program.cs*** file.
 -   Locate the following code in the file:
