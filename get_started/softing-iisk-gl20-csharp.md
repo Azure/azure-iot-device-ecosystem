@@ -1,10 +1,11 @@
 ---
-platform: hpe-azure-certified-windows-operating-systems
-device: hpe gl20 iot gateway
+platform: softing-iisk-gl20
+device: softing iisk gl20
 language: csharp
 ---
 
-Run a simple Csharp sample on a Hewlett Packard Enterprise GL20 IoT Gateway device running a HPE Azure Certified Windows Operating System
+Run a simple Csharp sample on a Softing IISK GL20 device.
+
 ===
 ---
 
@@ -21,49 +22,26 @@ Run a simple Csharp sample on a Hewlett Packard Enterprise GL20 IoT Gateway devi
 
 **About this document**
 
-This document describes how to connect a Hewlett Packard Enterprise GL20 IoT Gateway device running a HPE Azure Certified Windows Operating System with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect a Softing IISK GL20 device with Azure IoT SDK. This multi-step process includes:
 -   Configuring the  Azure IoT Hub
 -   Registering the IoT device
 -   Build and deploy Azure IoT SDK on device
+
+**Note:** The Softing IISK GL20 is a Hewlett Packard Enterprise GL20 IoT Gateway device, with additional software pre-installed. So this getting started is nearly the same as [hpe-azure-certified-windows-operating-systems-gl20-csharp](hpe-azure-certified-windows-operating-systems-gl20-csharp.md). Especially the following software is installed:
+-   Microsoft Windows 10 IoT Enterprise
+-   Softing dataFEED suite
+-   Docker Community Edition (Installer)
+So for the end user, it might be more beneficial to use the docker containers of [Azure/iot-edge-opc-proxy](https://github.com/Azure/iot-edge-opc-proxy) and [Azure/iot-edge-opc-publisher](https://github.com/Azure/iot-edge-opc-publisher) to connect OPC UA endpoints with the Azure IoT-hub.
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
 
 Have the following items ready before beginning the process:
 
--   [Prepare the development environment][setup-devbox-windows]
 -   [Setup the IoT hub][lnk-setup-iot-hub]
 -   [Provision the device and get its credentials][lnk-manage-iot-hub]
 -   Hewlett Packard Enterprise GL20 IoT Gateway device.
 -   Empty USB drive
-
-<a name="PrepareDevice"></a>
-# Step 2: Prepare the Device
-
-Install Windows Operating System on Hewlett Packard Enterprise GL20 IoT Gateway device
---------------------------------------------------------
-
-1.  Obtain an iso for the specific operating system and copy it to the
-    USB drive.
-
-2.  Make the USB drive bootable. Follow
-    [this](https://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool)
-    guide on how to create a bootable drive.
-
-3.  Insert the bootable USB Drive from the previous step into the GL20
-    IoT Gateway.
-
-4.  Turn on the GL20 IoT Gateway device and press the **Delete** key to
-    enter the BIOS settings.
-
-5.  Change the BIOS Boot option filter to **UEFI and Legacy**.
-
-6.  Change the **Boot Option Priorities** to boot from the USB Drive.
-
-7.  Save changes and restart the GL20 IoT Gateway.
-
-8.  Follow the on screen instructions to install the Windows Operating
-    System on the GL20 IoT Gateway.
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
