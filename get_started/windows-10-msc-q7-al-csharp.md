@@ -4,7 +4,7 @@ device: msc q7-al
 language: csharp
 ---
 
-Run a simple Csharp sample on Windows 10 device running MSC Q7-AL
+Run a simple Csharp sample on MSC Q7-AL device running Windows 10
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple Csharp sample on Windows 10 device running MSC Q7-AL
 
 **About this document**
 
-This document describes how to connect {enter your device name here} device running {enter the OS name running on device} with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect MSC Q7-AL device running Windows 10 with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
