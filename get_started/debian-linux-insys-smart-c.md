@@ -1,10 +1,10 @@
 ---
-platform: debian linux
+platform: industrial hardened linux
 device: industrial 4g router mro-l200 
 language: c
 ---
 
-Run a simple C sample on an Industrial 4G Router MRO-L200 running Debian Linux
+Run a simple C sample on an Industrial 4G Router MRO-L200 running Industrial Hardened Linux
 ===
 ---
 
