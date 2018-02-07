@@ -7,8 +7,7 @@ How to certify IoT devices running Linux with Azure IoT SDK
 -   [Introduction](#Introduction)
 -   [Step 1: Configure Azure IoT Hub](#Step-1-Configure)
 -   [Step 2: Register Device](#Step-2-Register)
--   [Step 3: Build and Validate the sample using C client
-    libraries](#Step-3-Build)
+-   [Step 3: Build and Validate the sample using C client libraries](#Step-3-Build)
     -   [3.1 Load the Azure IoT bits and prerequisites on device](#Step-3-1-Load)
     -   [3.2 Build the samples](#Step-3-2-Build)
     -   [3.3 Run and Validate the Samples](#Step-3-3-Run)
@@ -153,7 +152,7 @@ There are two samples one for sending messages to IoT Hub and another for receiv
 
 		nano azure-iot-sdk-c/iothub_client/samples/iothub_ll_telemetry_sample/iothub_ll_telemetry_sample.c     
 
-2. Find the following place holder for IoT connection string:
+2. Find the following placeholder for IoT connection string:
 
         static const char* connectionString = "[device connection string]";
 
@@ -175,8 +174,7 @@ There are two samples one for sending messages to IoT Hub and another for receiv
 		    //protocol = HTTP_Protocol;
 		#endif
 	
-5. Please uncomment the protocol that you would like to test with and comment other protocols. If testing for multiple protocols,     
-     please repeat above step for each protocol. 
+5. Please uncomment the protocol that you would like to test with and comment other protocols. If testing for multiple protocols, please repeat above step for each protocol. 
 
 6. Save your changes by pressing Ctrl+O and when nano prompts you to save it as the same file, just press ENTER.
 
@@ -222,23 +220,22 @@ section. These will be needed in [Step 4](#Step-4-2-Share)
 
 3.  Run the sample by issuing following command.    
 
-		~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_ll_telemetry_sample/iothub_ll_telemetry_sample
+		azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_ll_telemetry_sample/iothub_ll_telemetry_sample
 
 4.  Verify that the confirmation messages show an OK. If not, then you may have
     incorrectly copied the device hub connection information.
 
     ![SampleAMQP\_result\_terminal](images/3_3_1_02.png)    
 
-5.  DeviceExplorer should show that IoT Hub has successfully received data sent
-    by sample test.
+5.  DeviceExplorer should show that IoTHub has successfully received data sent by sample test.
 
-    ![SampleAMQP\_result\_DeviceExplorer](images/3_3_1_04.png)    
+    ![Sample\_result\_DeviceExplorer](images/3_3_1_04.png)    
 
 ### 3.3.2 Receive messages from IoT Hub
 
 1.  Run the sample by issuing following command.
 
-		~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_ll_c2d_sample/iothub_ll_c2d_sample
+		azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_ll_c2d_sample/iothub_ll_c2d_sample
 		
 2. To verify that you can send messages from the IoT Hub to your device,
     go to the **Message To Device** tab in DeviceExplorer.
