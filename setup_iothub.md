@@ -67,23 +67,23 @@ To build applications to manage the IoT hub and interact with devices from the C
 * [Azure IoT service client SDK for Python]
 
 
-[iothub-landing]: https://docs.microsoft.com/en-us/azure/iot-hub
+[iothub-landing]: https://docs.microsoft.com/azure/iot-hub
 [Azure portal]: https://portal.azure.com
-[using the Azure portal]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal
-[using the Azure CLI 2.0]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-using-cli
-[using the Azure CLI 1.0]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-using-cli-nodejs
-[using C# and a resource manager template]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-rm-template
-[using PowerShell and a resource manager template]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-rm-template-powershell
-[using C# and the resource provider REST APIs]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-rm-rest
+[using the Azure portal]: https://docs.microsoft.com/azure/iot-hub/iot-hub-create-through-portal
+[using the Azure CLI 2.0]: https://docs.microsoft.com/azure/iot-hub/iot-hub-create-using-cli
+[using the Azure CLI 1.0]: https://docs.microsoft.com/azure/iot-hub/iot-hub-create-using-cli-nodejs
+[using C# and a resource manager template]: https://docs.microsoft.com/azure/iot-hub/iot-hub-rm-template
+[using PowerShell and a resource manager template]: https://docs.microsoft.com/azure/iot-hub/iot-hub-rm-template-powershell
+[using C# and the resource provider REST APIs]: https://docs.microsoft.com/azure/iot-hub/iot-hub-rm-rest
 [azure-portal]: https://portal.azure.com
-[azure iot operations monitoring]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-operations-monitoring
+[azure iot operations monitoring]: https://docs.microsoft.com/azure/iot-hub/iot-hub-operations-monitoring
 [iothub-explorer]: https://github.com/Azure/iothub-explorer
 [Device Explorer]: https://github.com/Azure/azure-iot-sdk-csharp/tree/master/tools/DeviceExplorer
-[for C#]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-csharp-csharp-getstarted#create-a-device-identity
-[for Node.js]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted#create-a-device-identity
-[for java]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-java-java-getstarted#create-a-device-identity
+[for C#]: https://docs.microsoft.com/azure/iot-hub/iot-hub-csharp-csharp-getstarted#create-a-device-identity
+[for Node.js]: https://docs.microsoft.com/azure/iot-hub/iot-hub-node-node-getstarted#create-a-device-identity
+[for java]: https://docs.microsoft.com/azure/iot-hub/iot-hub-java-java-getstarted#create-a-device-identity
 [for Python]: https://github.com/Azure/azure-iot-sdk-python/tree/master/service/samples
-[using Azure CLI v2.0]: https://docs.microsoft.com/en-us/cli/azure/iot/device#create
+[using Azure CLI v2.0]: https://docs.microsoft.com/cli/azure/iot/device#create
 [Azure IoT service client SDK for C#]: https://github.com/Azure/azure-iot-sdk-csharp/tree/master/service
 [Azure IoT service client SDK for Node.js]: https://github.com/azure/azure-iot-sdk-node/tree/master/service
 [Azure IoT service client SDK for Java]: https://github.com/azure/azure-iot-sdk-java/tree/master/service
