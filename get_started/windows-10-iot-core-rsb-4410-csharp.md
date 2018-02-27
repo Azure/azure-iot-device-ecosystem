@@ -21,7 +21,7 @@ Run a simple Csharp sample on RSB-4411 device running Windows 10 IoT Core
 
 **About this document**
 
-This document describes how to connect RSB-4410 device running Windows 10 IoT Core with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect RSB-4411 device running Windows 10 IoT Core with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -48,7 +48,7 @@ You should have the following items ready before beginning the process:
 # Step 2: Prepare your Device
 
 -   Install Windows 10 IoT Core on your device.
--   [RSB-4410](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858)
+-   [RSB-4411](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858)
 
 <a name="Build"></a>
 # Step 3: Build and Run the Sample
