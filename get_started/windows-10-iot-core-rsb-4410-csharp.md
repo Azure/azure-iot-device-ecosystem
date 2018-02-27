@@ -1,10 +1,10 @@
 ---
 platform: windows 10 iot core
-device: rsb-4410
+device: rsb-4411
 language: csharp
 ---
 
-Run a simple Csharp sample on RSB-4410 device running Windows 10 IoT Core
+Run a simple Csharp sample on RSB-4411 device running Windows 10 IoT Core
 ===
 ---
 
@@ -35,7 +35,7 @@ You should have the following items ready before beginning the process:
     [azure-iot-sdk-csharp](https://github.com/Azure/azure-iot-sdk-csharp) GitHub public repository.
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   RSB-4410 device with Windows 10 IoT Core running on it.
+-   RSB-4411 device with Windows 10 IoT Core running on it.
 
 #### Install Visual Studio 2015 and Tools
 
@@ -48,7 +48,7 @@ You should have the following items ready before beginning the process:
 # Step 2: Prepare your Device
 
 -   Install Windows 10 IoT Core on your device.
--   [RSB-4410](http://www.advantech.com/products/single_board_computer/rsb-4410/mod_9d52626a-ba37-46b1-a053-8220d17c9a1d)
+-   [RSB-4410](http://www.advantech.com/products/single_board_computer/rsb-4411/mod_d3901250-b0a0-4a5f-9762-b26fa0c36858)
 
 <a name="Build"></a>
 # Step 3: Build and Run the Sample
