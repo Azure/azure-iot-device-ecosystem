@@ -163,10 +163,10 @@ You have now learned how to run a sample application that collects sensor data a
 
 
 
-[1]: ./media/b-l475e-iot01a.png
-[2]: ./media/b-l475e-iot01a-connect.png
-[3]: ./media/b-l475e-iot01a-drag.png
-[4]: ./media/b-l475e-iot01a-wifi.png
-[5]: ./media/b-l475e-iot01a-conn-string.png
+[1]: ./media/stmicroelectronics-iot-discovery-kit/b-l475e-iot01a.png
+[2]: ./media/stmicroelectronics-iot-discovery-kit/b-l475e-iot01a-connect.png
+[3]: ./media/stmicroelectronics-iot-discovery-kit/b-l475e-iot01a-drag.png
+[4]: ./media/stmicroelectronics-iot-discovery-kit/b-l475e-iot01a-wifi.png
+[5]: ./media/stmicroelectronics-iot-discovery-kit/b-l475e-iot01a-conn-string.png
 
 
