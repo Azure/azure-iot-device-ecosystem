@@ -63,7 +63,7 @@ marked as ```USB STLink```. Once connected to your PC, the board will appear as 
 <a name="Load"></a>
 ### 3.1 Download firmware and use pre-compiled binary
 
-1. Download [FP-CLD-AZURE1][lnk-fp-cld-azure] Function Pack. The Function Pack contains all the required drivers to use the [STM32L4 Discovery Kit][lnk-discovery] board with Wi-Fi expansion boards, together with pre-integrated Microsoft Azure IoT SDK. 
+1. Download [FP-CLD-AZURE1][lnk-fp-cld-azure] Function Pack. The Function Pack contains all the required drivers to use the [STM32L4 Discovery Kit][lnk-discovery] board together with pre-integrated Microsoft Azure IoT SDK, sample applications and solution files for three different development environments ([ARM MDK][lnk-arm-mdk], [IAR Embedded Workbench][lnk-iar-ew], [System Workbench for STM32][lnk-sw4stm32]). 
 2. Unzip the package and look for the pre-compiled binary named ```Projects\Multi\Applications\Azure_Sns_DM\Binaries\B-L475E-IOT01\Azure_Sns_DM_BL.bin```. 
 3. Flash the microcontroller by dragging the binary as shown in picture below 
  
@@ -72,7 +72,7 @@ marked as ```USB STLink```. Once connected to your PC, the board will appear as 
 
 ### 3.2 Connect and send messages to Azure IoT Hub 
 
-To visualize log messages from [STM32L4 Discovery Kit][lnk-discovery] board, configure your serial terminal (e.g. [TeraTerm][lnk-teraterm] for Windows) with the following parameters 
+To visualize the log of messages from [STM32L4 Discovery Kit][lnk-discovery] board, configure your serial terminal (e.g. [TeraTerm][lnk-teraterm] for Windows) with the following parameters 
 - BaudRate : 115200
 - Data : 8 bit
 - Parity : none
@@ -85,7 +85,7 @@ Press ```RESET``` button onboard [STM32L4 Discovery Kit][lnk-discovery] to resta
 ![][4]
 
 
-Paste the device connection string when requested.
+Paste the device connection string in the serial terminal when requested.
  
 ![][5]
 
@@ -98,7 +98,7 @@ following commands:
 iothub-explorer login <iot-hub-connection-string>
 iothub-explorer monitor-events <device name> --login <iot-hub-connection-string>
 ```
-The application can be stopped by pressing blue ```USER``` button.
+The application running on [STM32L4 Discovery Kit][lnk-discovery] can be stopped by pressing blue ```USER``` button.
 
 ### 3.3 Receive messages from IoT Hub
 
@@ -154,6 +154,10 @@ You have now learned how to run a sample application that collects sensor data a
 [lnk-minicom]:https://help.ubuntu.com/community/Minicom 
 [lnk-iothub-explorer]:https://github.com/Azure/iothub-explorer
 [lnk-direct-methods]:https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-direct-methods
+[lnk-arm-mdk]:http://www2.keil.com/mdk5/
+[lnk-iar-ew]:https://www.iar.com/iar-embedded-workbench/
+[lnk-sw4stm32]:http://www.openstm32.org/HomePage
+
 [lnk-desired-prop]:https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins
 [lnk-dev-man]:https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-device-management-overview
 [lnk-fp-cld-azure]:http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32-ode-function-pack-sw/fp-cld-azure1.html
