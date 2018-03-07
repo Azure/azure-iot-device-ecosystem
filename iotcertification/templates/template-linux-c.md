@@ -52,89 +52,123 @@ You should have the following items ready before beginning the process:
 <a name="Build"></a>
 # Step 3: Build and Run the sample
 
-<a name="Load"></a>
-## 3.1 Build SDK and sample
+## 3.1 Load the Azure IoT bits and prerequisites on device
 
 -   Open a PuTTY session and connect to the device.
 
--   Install the prerequisite packages for the Microsoft Azure IoT Device SDK for C by issuing the following commands from the command line on your board:
-{{***Keep the command set based on your OS and remove the rest.***}}
+-   Install the prerequisite packages by issuing the following commands from the command line on the device. Choose your commands based on the OS running on your device.
 
-    {{**Debian or Ubuntu**}}
+    **Debian or Ubuntu**
 
         sudo apt-get update
 
-        sudo apt-get install -y curl libcurl4-openssl-dev uuid-dev uuid g++ make cmake git unzip openjdk-7-jre
+        sudo apt-get install -y curl uuid-dev libcurl4-openssl-dev build-essential cmake git
 
-    {{**Fedora**}}
+    **Fedora**
 
         sudo dnf check-update -y
 
-        sudo dnf install libcurl-devel openssl-devel libuuid-devel uuid-devel gcc-c++ make cmake git unzip java-1.7.0-openjdk
+        sudo dnf install uuid-devel libcurl-devel openssl-devel gcc-c++ make cmake git
 
-    {{**Any Other Linux OS**}}
+    **Any Other Linux OS**
 
-        Write equivalent commands on the target OS
+        Use equivalent commands on the target OS
 
-    {{***If any other software is required, please specify here the command(s) for installing same.***}}
+    ***Note:*** *This setup process requires cmake version 2.8.12 or higher.* 
+    
+    *You can verify the current version installed in your environment using the  following command:*
 
--   Download the Microsoft Azure IoT Device SDK for C to the board by issuing the following command on the board::
+        cmake --version
+
+    *This library also requires gcc version 4.9 or higher. You can verify the current version installed in your environment using the following command:*
+    
+        gcc --version 
+
+    *For information about how to upgrade your version of gcc on Ubuntu 14.04, see <http://askubuntu.com/questions/466651/how-do-i-use-the-latest-gcc-4-9-on-ubuntu-14-04>.*
+    
+-   Download the SDK to the board by issuing the following command in PuTTY:
 
         git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
 
--   Edit the following file using any text editor of your choice:
-    {{***Keep the file based on your protocol(s) and remove the rest.***}}
+-   Verify that you now have a copy of the source code under the
+    directory ~/azure-iot-sdk-c.
 
-    {{**For AMQP protocol:**}}
+<a name="Step-3-2-Build"></a>
+## 3.2 Build the samples
 
-        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp.c
+There are two samples one for sending messages to IoT Hub and another for receiving messages from IoT Hub. Both samples supports different protocols. You can make modification to the samples with your choice of protocol before building the samples. By default the samples will build for AMQP protocol.  Follow the below instructions to edit the samples before building: 
+    
+### 3.2.1 Send Telemetry to IoT Hub Sample:
 
-    {{**For HTTPS protocol:**}}
+1.  Open the telemetry sample file in a text editor
 
-        azure-iot-sdk-c/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http.c
+		nano azure-iot-sdk-c/iothub_client/samples/iothub_ll_telemetry_sample/iothub_ll_telemetry_sample.c     
 
--   Find the following place holder for IoT connection string:
+2. Find the following placeholder for IoT connection string:
 
         static const char* connectionString = "[device connection string]";
 
--   Replace the above placeholder with device connection string you obtained in [Step 1](#Prerequisites) and save the changes.
+3. Replace the above placeholder with device connection string.
+    
+4. Find the following place holder for editing protocol:
 
--   Build the SDK using following command.
+          // Select the Protocol to use with the connection
+		#ifdef USE_AMQP
+		    //protocol = AMQP_Protocol_over_WebSocketsTls;
+		    protocol = AMQP_Protocol;
+		#endif
+		#ifdef USE_MQTT
+		    //protocol = MQTT_Protocol;
+		    //protocol = MQTT_WebSocket_Protocol;
+		#endif
+		#ifdef USE_HTTP
+		    //protocol = HTTP_Protocol;
+		#endif
+	
+5. Please uncomment the protocol that you would like to test with and comment other protocols. If testing for multiple protocols, please repeat above step for each protocol. 
 
-        sudo ./azure-iot-sdk-c/build_all/linux/build.sh
+6. Save your changes by pressing Ctrl+O and when nano prompts you to save it as the same file, just press ENTER.
 
-## 3.2 Send Device Events to IoT Hub:
+7. Press Ctrl+X to exit nano.
 
--   Run the sample by issuing following command:
-{{***Keep the command set based on your protocol(s) and remove the rest.***}}
+### 3.2.1 Send message from IoT Hub to Device Sample:
 
-    {{**If using AMQP protocol:**}}
+1. Open the telemetry sample file in a text editor
 
-        ~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_amqp/iothub_client_sample_amqp
+	 	nano azure-iot-sdk-c/iothub_client/samples/iothub_ll_c2d_sample/iothub_ll_c2d_sample.c
 
-    {{**If using HTTP protocol:**}}
+2. Follow same steps 1-7 as above to edit this sample.
 
-        ~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_http/iothub_client_sample_http
+### 3.2.1 Build the samples:
 
-    {{**If using MQTT protocol:**}}
+-   Build the SDK using following command. If you are facing any issues during build.
 
-        ~/azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_client_sample_mqtt/iothub_client_sample_mqtt
+        sudo ./azure-iot-sdk-c/build_all/linux/build.sh | tee LogFile.txt
+    
+    ***Note:*** *LogFile.txt in above command should be replaced with a file name where build output will be written.*
+    
+    *build.sh creates a folder called "cmake" under "~/azure-iot-sdk-c/". Inside "cmake" are all the results of the compilation of the complete software.*
 
--   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 
-## 3.3 Receive messages from IoT Hub
+<a name="Step-3-3-Run"></a>
+## 3.3 Run and Validate the Samples
 
--   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages to the application.
+In this section you will run the Azure IoT client SDK samples to validate
+communication between your device and Azure IoT Hub. You will send messages to the Azure IoT Hub service and validate that IoT Hub has successfully receive the data. You will also monitor any messages send from the Azure IoT Hub to client.
 
-<a name="tips"></a>
-# Tips
+### 3.3.1 Send Device Events to IOT Hub:
 
-- If you just want to build the serializer samples, run the following commands:
+-   Run the sample by issuing following command.    
 
-  ```
-  cd ./c/serializer/build/linux
-  make -f makefile.linux all
-  ```
+		azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_ll_telemetry_sample/iothub_ll_telemetry_sample
+
+
+### 3.3.2 Receive messages from IoT Hub
+
+-   Run the sample by issuing following command.
+
+		azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_ll_c2d_sample/iothub_ll_c2d_sample
+		
 
 <a name="NextSteps"></a>
 # Next Steps
@@ -157,4 +191,3 @@ You have now learned how to run a sample application that collects sensor data a
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../../setup_iothub.md
 [lnk-manage-iot-hub]: ../../manage_iot_hub.md
-
