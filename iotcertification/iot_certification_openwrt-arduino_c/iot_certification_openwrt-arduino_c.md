@@ -245,33 +245,6 @@ to 72 business hours with next steps.
 <a name="Step-5-Troubleshooting"></a>
 # Step 5: Troubleshooting
 
-<a name="Step-5-1-E2E"></a>
-## 5.1 E2E Test Cases
-
-Please make sure that you have performed below tasks:
-
--   **iot_device_params.txt** should have correct values. Double-check these items:
-
-    -   **IOTHUB_EVENTHUB_CONNECTION_STRING** should be in the below format
-    
-            Endpoint=[Event Hub-compatible endpoint];SharedAccessKeyName=[IOTHUB_POLICY_NAME];SharedAccessKey=[IOTHUB_POLICY_KEY]
-
-    -   **IOTHUB_PARTITION_COUNT** should have matching value as in the azure portal.
-    
--   Environment variables are set using the script file **setiotdeviceparametersfore2etests.sh**.
-
--   Machine/device is restarted after executing above script.
-
--   To confirm that environment variables are set correctly execute following command and verify the values.
-
-        set | grep IOT
-
-If you still face any problem with E2E test cases, then please share following artifacts with us:
-
--   iot_device_params.txt
--   Result of command `set | grep IOT`
--   Build logs
-
 Please contact engineering support on <iotcert@microsoft.com> for help with
 troubleshooting.
 
