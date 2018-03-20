@@ -1,10 +1,10 @@
 ---
 platform: free rtos
-device: firmwave edge lte gateway
+device: firmwave edge industrial cellular gateway
 language: c
 ---
 
-Run a simple C sample on a Firmwave Edge LTE Gateway device running FreeRTOS
+Run a simple C sample on a Firmwave Edge Industrial Cellular Gateway device running FreeRTOS
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple C sample on a Firmwave Edge LTE Gateway device running FreeRTOS
 
 **About this document**
 
-This document describes how to connect a LTE Gateway device running FreeRTOS with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect a Edge Industrial Cellular Gateway device running FreeRTOS with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Deploy Azure IoT SDK on device
@@ -33,7 +33,7 @@ You should have the following items ready before beginning the process:
 
 -   [Setup your IoT hub](https://github.com/azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md)
 -   [Provision your device and get its credentials](https://github.com/azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md).
--   Firmwave Edge LTE Gateway device
+-   Firmwave Edge Industrial Cellular Gateway device
 
 ![Edge Breakout Board](media/breakout.png)
 
