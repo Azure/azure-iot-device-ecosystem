@@ -1,7 +1,7 @@
 ---
-Platform: free-rtos
-Device: vl-wfp-p-8266 module
-Language: c
+platform: free-rtos
+device: vl-wfp-p-8266 module
+language: c
 ---
 
 # Table of Contents
