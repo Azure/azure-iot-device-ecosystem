@@ -161,18 +161,13 @@ There are two samples one for sending messages to IoT Hub and another for receiv
     
 4. Find the following place holder for editing protocol:
 
-          // Select the Protocol to use with the connection
-		#ifdef USE_AMQP
-		    //protocol = AMQP_Protocol_over_WebSocketsTls;
-		    protocol = AMQP_Protocol;
-		#endif
-		#ifdef USE_MQTT
-		    //protocol = MQTT_Protocol;
-		    //protocol = MQTT_WebSocket_Protocol;
-		#endif
-		#ifdef USE_HTTP
-		    //protocol = HTTP_Protocol;
-		#endif
+		// The protocol you wish to use should be uncommented
+		//
+		#define SAMPLE_HTTP
+		//#define SAMPLE_MQTT
+		//#define SAMPLE_MQTT_OVER_WEBSOCKETS
+		//#define SAMPLE_AMQP
+		//#define SAMPLE_AMQP_OVER_WEBSOCKETS
 	
 5. Please uncomment the protocol that you would like to test with and comment other protocols. If testing for multiple protocols, please repeat above step for each protocol. 
 
