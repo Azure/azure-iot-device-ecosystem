@@ -42,7 +42,7 @@ You should have the following items ready before beginning the process:
 <a name="Step_1:_Sign_Up"></a>
 # Step 1: Sign Up To Azure IoT Hub
 
-Follow the instructions [here](https://account.windowsazure.com/signup?offer=ms-azr-0044p) on how to sign up to the Azure IoT Hub service.
+Follow the instructions [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-csharp-csharp-getstarted#create-an-iot-hub) on how to sign up to the Azure IoT Hub service.
 
 As part of the sign up process, you will receive the connection string.
 
@@ -101,8 +101,8 @@ This section walks you through building, deploying and validating the IoT Client
 
 This document describes how to prepare your development environment to use the Microsoft Azure IoT device SDK for C#.
 
-- Install [Visual Studio 2015](https://www.visualstudio.com/). You can use any version of Visual Studio 2015, including the Community edition.
-
+- Install [Visual Studio 2017](https://www.visualstudio.com/). You can use any version of Visual Studio 2017, including the Community edition.
+- Choose Azure SDK for .Net at the time of installation in visual studio installer while doing setup for VS2017
 - Install Azure SDK for .NET
 	-	[VS 2015](http://go.microsoft.com/fwlink/?LinkId=518003)
 	-	[VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510)
@@ -111,30 +111,30 @@ This document describes how to prepare your development environment to use the M
 <a name="Step_3_2:_Build"></a>
 ## 3.2  Build the Samples
 
-1.  Start a new instance of Visual Studio 2015. Open the **iothub_csharp_deviceclient.sln** solution in the **csharp\device** folder in your local SDK **azure-iot-sdk-csharp** directory.
+1.  Start a new instance of Visual Studio 2017. Open the **samples.sln** solution in the **azure-iot-sdk-csharp-master\iothub\device\samples** folder in your local SDK **azure-iot-sdk-csharp** directory.
 
 2.  In Visual Studio, from **Solution Explorer**, navigate to project based on your choice of protocol:
 
 	**For AMQP protocol:**
 
-	Navigate to **DeviceClientAmqpSample** project and open the **Program.cs** file.
+	Navigate to **DeviceClientAmqpSample** project and open the **launchSettings.json** file.
 
 	**For HTTP protocol:**
 	
-	Navigate to **DeviceClientHttpSample** project and open the **Program.cs** file.
+	Navigate to **DeviceClientHttpSample** project and open the **launchSettings.json** file.
 
 	**For MQTT protocol:**
 	
-	Navigate to **DeviceClientMqttSample** project and open the **Program.cs** file.
+	Navigate to **DeviceClientMqttSample** project and open the **launchSettings.json** file.
 
 	![Navigation\_terminal](images/navigation_2.png)
 
 
-3.  Locate the following code in the **Program.cs** in any of sample application based on your protocol:
+3.  Locate the following code in the **launchSettings.json** in any of sample application based on your protocol:
 
-  		private const string DeviceconnectionString = "[device connection string]";
+  		"IOTHUB_DEVICE_CONN_STRING": "<yourDeviceConnectionString>";
 	
-4.  Replace [device connection string] with the connection string for your device and **Save** the changes. You can get the connection string from DeviceExplorer as explained in [Step 2](#Step_2:_Register).
+4.  Replace [yourDeviceConnectionString] with the connection string for your device and **Save** the changes. You can get the connection string from DeviceExplorer as explained in [Step 2](#Step_2:_Register).
 
 <a name="Step_3_3:_Run"></a>
 ## 3.3 Run and Validate the Samples
