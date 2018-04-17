@@ -87,9 +87,7 @@ To run DeviceExplorer tool, use following configuration string as described in [
     
     f. Save this information in Notepad. You will need this information in later steps.
 
-**Not running Windows on your PC?** - Please send us an email on 
-<iotcert@microsoft.com> and we will follow up with you witAzure IoT SDKh
-instructions.
+***Not running Windows on your PC?*** - Please follow the instructions [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md>) to provision your device and get its credentials.
 
 <a name="Step_3:_Build_and_Validate"></a>
 # Step 3: Build and Validate the Sample using C# Client Libraries 
@@ -99,42 +97,25 @@ This section walks you through building, deploying and validating the IoT Client
 <a name="Step_3_1:_Development"></a>
 ## 3.1 Prepare your development environment
 
-This document describes how to prepare your development environment to use the Microsoft Azure IoT device SDK for C#.
-
-- Install [Visual Studio 2017](https://www.visualstudio.com/). You can use any version of Visual Studio 2017, including the Community edition.
-- Choose Azure SDK for .Net at the time of installation in visual studio installer while doing setup for VS2017
-- Install Azure SDK for .NET
-	-	[VS 2015](http://go.microsoft.com/fwlink/?LinkId=518003)
-	-	[VS 2013](http://go.microsoft.com/fwlink/?LinkId=323510)
-	-	[VS 2012](http://go.microsoft.com/fwlink/?LinkId=323511)
+- Install the latest .NET Core from https://dot.net
+- Install .NET Framework 4.7 Developer Pack: https://support.microsoft.com/en-us/help/3186612/the-net-framework-4-7-developer-pack-and-language-packs
+- Install .NET Framework 4.5.1 Developer Pack: https://www.microsoft.com/en-us/download/details.aspx?id=40772
+- As admin (one-time setup):
+    Enable Powershell script execution on your system. See http://go.microsoft.com/fwlink/?LinkID=135170 for more information.
+    `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned`
 
 <a name="Step_3_2:_Build"></a>
 ## 3.2  Build the Samples
 
-1.  Start a new instance of Visual Studio 2017. Open the **samples.sln** solution in the **azure-iot-sdk-csharp-master\iothub\device\samples** folder in your local SDK **azure-iot-sdk-csharp** directory.
+1.  Open a device console (command prompt or a powershell window) and change to your local SDK **azure-iot-sdk-csharp** directory.
 
-2.  In Visual Studio, from **Solution Explorer**, navigate to project based on your choice of protocol:
+2.  Add the Iot Hub device connection string on your device as an environment variable:
 
-	**For AMQP protocol:**
+		setx IOTHUB_DEVICE_CONN_STRING <yourDeviceConnectionString>
 
-	Navigate to **DeviceClientAmqpSample** project and open the **launchSettings.json** file.
+3.  Run the following command to build the SDK:
 
-	**For HTTP protocol:**
-	
-	Navigate to **DeviceClientHttpSample** project and open the **launchSettings.json** file.
-
-	**For MQTT protocol:**
-	
-	Navigate to **DeviceClientMqttSample** project and open the **launchSettings.json** file.
-
-	![Navigation\_terminal](images/navigation_2.png)
-
-
-3.  Locate the following code in the **launchSettings.json** in any of sample application based on your protocol:
-
-  		"IOTHUB_DEVICE_CONN_STRING": "<yourDeviceConnectionString>";
-	
-4.  Replace [yourDeviceConnectionString] with the connection string for your device and **Save** the changes. You can get the connection string from DeviceExplorer as explained in [Step 2](#Step_2:_Register).
+		build.cmd -config Release
 
 <a name="Step_3_3:_Run"></a>
 ## 3.3 Run and Validate the Samples
@@ -153,7 +134,22 @@ section. These will be needed in [Step 4](#Step_4_2:_Share).*
 2.  DeviceExplorer is now monitoring data sent from the selected device to the IoT Hub.
      
 
-3.  In Visual Studio, from **Solution Explorer**, right-click on **DeviceClientAmqpSample** or **DeviceClientHttpSample** or **DeviceClientMqttSample** project, click **Debug**, and then **Start new instance** to build and run the sample. 
+3.  From the device console, run the sample using following command:
+
+	**If HTTP protocol:**
+
+		cd iothub\device\samples\DeviceClientHttpSample\bin\Debug\netcoreapp2.0
+		dotnet DeviceClientHttpSample.dll
+
+	**If MQTT protocol:**
+
+		cd iothub\device\samples\DeviceClientMqttSample\bin\Debug\netcoreapp2.0
+		dotnet DeviceClientMqttSample.dll
+		
+	**If AMQP protocol:**
+
+		cd iothub\device\samples\DeviceClientAmqpSample\bin\Debug\netcoreapp2.0
+		dotnet DeviceClientAmqpSample.dll
    
 4. You should be able to see the events received in device console on successful execution.
 
