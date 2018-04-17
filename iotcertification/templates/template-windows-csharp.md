@@ -53,20 +53,34 @@ You should have the following items ready before beginning the process:
 # Step 3: Build and Run the sample
 
 -   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdk-csharp) and the sample programs and save them to your local repository.
--   Start a new instance of Visual Studio 2017.
--   Open the **samples.sln** solution in the **azure-iot-sdk-csharp-master\iothub\device\samples** folder in your local SDK **azure-iot-sdk-csharp** directory.
+-   Open a device console (command prompt or a powershell window) and change to your local SDK **azure-iot-sdk-csharp** directory.
 
--   In Visual Studio, from **Solution Explorer**, navigate to project of protocol **For AMQP protocol:**
+-  Add the Iot Hub device connection string on your device as an environment variable:
 
-     *Navigate to **DeviceClientAmqpSample** project and open the **launchSettings.json** file.*
+		setx IOTHUB_DEVICE_CONN_STRING <yourDeviceConnectionString>
 
--   Locate the following code in the **launchSettings.json** in any of sample application based on your protocol:
+-  Run the following command to build the SDK:
 
-        "IOTHUB_DEVICE_CONN_STRING": "<yourDeviceConnectionString>";
+		build.cmd -config Release
+        
+- From the device console, run the sample using following command:
 
--   Replace [yourDeviceConnectionString] with the connection string for your device and **Save** the changes.
+	**If HTTP protocol:**
 
--   Use the **DeviceExplorer** utility to observe the messages IoT Hub receives from the **Device Client AMQP Sample** application.
+		cd iothub\device\samples\DeviceClientHttpSample\bin\Debug\netcoreapp2.0
+		dotnet DeviceClientHttpSample.dll
+
+	**If MQTT protocol:**
+
+		cd iothub\device\samples\DeviceClientMqttSample\bin\Debug\netcoreapp2.0
+		dotnet DeviceClientMqttSample.dll
+		
+	**If AMQP protocol:**
+
+		cd iothub\device\samples\DeviceClientAmqpSample\bin\Debug\netcoreapp2.0
+		dotnet DeviceClientAmqpSample.dll
+
+-   Use the **DeviceExplorer** utility to observe the messages IoT Hub receives from the **Device Client Sample** application.
 -   Refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to see the data your device is sending.
 -   Refer "Send cloud-to-device messages" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) for instructions on sending messages to device.
 
@@ -88,6 +102,6 @@ You have now learned how to run a sample application that collects sensor data a
 [Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps
 [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning
 [Remote monitoring and notifications with Logic Apps]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps
-[setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
+[setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-csharp/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../../setup_iothub.md
 [lnk-manage-iot-hub]: ../../manage_iot_hub.md
