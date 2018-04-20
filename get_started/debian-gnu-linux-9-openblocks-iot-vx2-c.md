@@ -126,7 +126,8 @@ There are two samples one for sending messages to IoT Hub and another for receiv
     
     ***Note:*** *LogFile.txt in above command should be replaced with a file name where build output will be written.*
     
-    *build.sh creates a folder called "cmake" under "~/azure-iot-sdk-c/". Inside "cmake" are all the results of the compilation of the complete software.*
+
+*build.sh creates a folder called "cmake" under "~/azure-iot-sdk-c/". Inside "cmake" are all the results of the compilation of the complete software.*
 
 
 <a name="Step-3-3-Run"></a>
