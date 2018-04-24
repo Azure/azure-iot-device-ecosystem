@@ -46,7 +46,7 @@ You should have the following items ready before beginning the process:
 <a name="Step-1-Configure"></a>
 # Step 1: Sign Up To Azure IoT Hub
 
-Follow the instructions [here](https://account.windowsazure.com/signup?offer=ms-azr-0044p) on how to sign up to the Azure IoT Hub service. As part of the sign up process, you will receive the connection string.
+[Sign up](https://account.windowsazure.com/signup?offer=ms-azr-0044p) to the Azure IoT Hub service and follow the instructions mentioned [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-csharp-csharp-getstarted#create-an-iot-hub). As part of the sign up process, you will receive the connection string.
 
 -   **IoT Hub Connection String**: An example of IoT Hub Connection String is as below:
 
