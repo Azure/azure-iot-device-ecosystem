@@ -229,10 +229,6 @@ This section walks you through building, deploying and validating the IoT Client
         cd azure-iot-sdk-java/device
         mvn install | tee JavaSDK_Build_Logs.txt
 
-4.  Above command will generate the compiled JAR files with all dependencies. This bundle can be found at:
-
-        azure-iot-sdk-java/device/iothub-java-client/target/iothub-java-client-{version}-with-deps.jar
-
 <a name="Step_3_2"></a>
 ## 3.2 Run and Validate the Samples
 
@@ -253,7 +249,7 @@ section. These will be needed in [Step 4](#Step_4_2).*
 
 3.  Navigate to the folder containing the executable JAR file for send event sample.
 
-        cd azure-iot-sdk-java/device/samples/send-event/target
+        cd azure-iot-sdk-java/device/iot-device-samples/send-event/target
 
 4.  Run the sample by issuing following command.
 
@@ -317,7 +313,7 @@ section. These will be needed in [Step 4](#Step_4_2).*
 
 4.  Navigate to the folder containing the executable JAR file for the receive message sample.
 
-        cd azure-iot-sdk-java/device/samples/handle-messages/target
+        cd azure-iot-sdk-java/device/iot-device-samples/handle-messages/target
      
 5.  Run the sample by issuing following command.
 
