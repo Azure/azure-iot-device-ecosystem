@@ -36,6 +36,7 @@ The Grove kit includes:
 The full name is "Grove Kit for Win10 IoT Core & Azure Platform". This Kit and Guide book will help quickly familiar win10 Iot and Azure. The hardware party is very to use. We make several classic scenes project.
 
 ![Data flow](media/grove-starter-kit-windows-10-iot-core-csharp/data-flow.png)
+
 ![Physical](media/grove-starter-kit-windows-10-iot-core-csharp/physical.jpg)
 
 ## Install Win10 IoT Core
