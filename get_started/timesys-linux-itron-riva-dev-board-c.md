@@ -1,10 +1,10 @@
 ---
 platform: timesys linux 
-device:  itron riva dev board
+device:  itron riva dev edge board
 language: c
 ---
 
-Run a simple C sample on Itron Riva Dev Board device running TimeSys Linux
+Run a simple C sample on Itron Riva Dev Edge Board device running TimeSys Linux
 ===
 ---
 
@@ -23,7 +23,7 @@ Run a simple C sample on Itron Riva Dev Board device running TimeSys Linux
 
 **About this document**
 
-This document describes how to connect Itron Riva Dev Board device running TimeSys Linux with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect Itron Riva Dev Edge Board device running TimeSys Linux with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -36,19 +36,19 @@ You should have the following items ready before beginning the process:
 -   [Prepare your development environment][setup-devbox-linux]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   Itron Riva Dev Board device.
+-   Itron Riva Dev Edge Board device.
 -   [Download curl library](https://curl.haxx.se/download.html)
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   [Setup Itron Riva Dev Board SDK](https://itronriva.com/article/itron-riva-edge-sdk-setup-guide/)
--   [Connect Itron Riva Dev Board to your host computer](https://itronriva.com/article/itron-riva-edge-getting-started/)
+-   [Setup Itron Riva Dev Edge Board SDK](https://www.itron.com/partners/developer/resources/getting-started-software)
+-   [Connect Itron Riva Dev Edge Board to your host computer](https://www.itron.com/partners/developer/resources/edge-getting-started)
 
 <a name="SetupEnvironment"></a>
 # Step 3: Setup the development environment
 
-This section shows you how to set up a development environment for the Azure IoT device SDK for C on Itron Riva Dev Board.
+This section shows you how to set up a development environment for the Azure IoT device SDK for C on Itron Riva Dev Edge Board.
 
 ### Install dependencies under /usr/lib
 
