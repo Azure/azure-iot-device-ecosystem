@@ -43,7 +43,6 @@ You should have the following items ready before beginning the process:
 -	Install properly all the hardware drivers
 -	Download and install the [DeviceExplorer](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) 
 
-https://download.faytech.com/iothub/
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
