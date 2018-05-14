@@ -27,7 +27,6 @@ This document describes how to connect a C6017 device running Windows with Azure
 -   Install and configure TwinCAT IoT Data Agent
 
 In addition and optionally, this document also describes how to build the Azure IoT SDK and run the sample. 
-
 You only require this step if you do not want to use the Beckhoff TwinCAT IoT Data Agent product and instead want to build your own connector application.
 
 <a name="Prerequisites"></a>
@@ -57,7 +56,7 @@ You should have the following items ready before beginning the process:
 # Step 3: Build SDK and Run the sample
 
 -   Start a new instance of Visual Studio 2015. Open the **azure\_iot\_sdks.sln** solution in the **cmake** folder in your home directory.
--   In Visual Studio, in **Solution Explorer**, navigate to **simplesample\_amqp** project, open the **simplesample\_amqp.c** file.
+-   In Visual Studio, in **Solution Explorer**, navigate to **simplesample\_amqp** project, open the **simplesample_amqp.c** file.
 -   Locate the following code in the file:
 
         static const char* connectionString = "[device connection string]";
