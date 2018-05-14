@@ -1,10 +1,10 @@
 ---
 platform: windows 10 professional
-device: faytech-101j1900cap
+device: faytech-ft101j1900w4g64gcap
 language: csharp
 ---
 
-Run a simple Csharp sample on faytech-101J1900CAP device running Windows 10 Professional
+Run a simple Csharp sample on faytech-FT101J1900W4G64GCAP device running Windows 10 Professional
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple Csharp sample on faytech-101J1900CAP device running Windows 10 Prof
 
 **About this document**
 
-This document describes how to connect faytech-101J1900CAP device running Windows 10 Pro with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect faytech-FT101J1900W4G64GCAP device running Windows 10 Pro with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Deploy Azure IoT SDK on device
@@ -34,7 +34,7 @@ You should have the following items ready before beginning the process:
 -   [Prepare your development environment][setup-devbox-windows]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   [faytech-101J1900CAP device](https://www.faytech.com/catalogue/product/101-capacitive-touch-pc-ft101j1900w4g64gcap/)
+-   [faytech-FT101J1900W4G64GCAP device](https://www.faytech.com/catalogue/product/101-capacitive-touch-pc-ft101j1900w4g64gcap/)
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
