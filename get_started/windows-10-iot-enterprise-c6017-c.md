@@ -27,7 +27,6 @@ This document describes how to connect a C6017 device running Windows with Azure
 -   Install and configure TwinCAT IoT Data Agent
 
 In addition and optionally, this document also describes how to build the Azure IoT SDK and run the sample. 
-
 You only require this step if you do not want to use the Beckhoff TwinCAT IoT Data Agent product and instead want to build your own connector application.
 
 <a name="Prerequisites"></a>
