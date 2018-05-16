@@ -1,10 +1,10 @@
 ---
 platform: debian 8
-device: airreal gt
+device: airreal gt family
 language: python
 ---
 
-Run a simple PYTHON sample on AirREAL GT device running Debian 8
+Run a simple PYTHON sample on AirREAL GT Family of devices running Debian 8
 ===
 ---
 
@@ -34,7 +34,7 @@ You should have the following items ready before beginning the process:
 -   [Prepare your development environment][setup-devbox-linux]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   AirREAL GT device with Debian 8.
+-   Device belonging to AirREAL GT family with Debian 8.
 -   Ethernet cable.
 -   SSH client on your computer, such as PuTTY, so you can remotely access the command line on the AirREAL GT.
 
@@ -42,7 +42,7 @@ You should have the following items ready before beginning the process:
 # Step 2: Prepare your Device
 
 -   Follow the instructions on the [support page](http://www.mi-j.co.jp/support) site to set up your AirREAL GT device and connect it to your computer.
--   Connect your AirREAL GT to your network using an ethernet cable or insert SIM into AirREAL GT and connect to the LTE network.
+-   Connect your device of AirREAL GT Family to your network using an ethernet cable or insert SIM into AirREAL GT and connect to the LTE network.
 -   After booting Debian from the SD card, install packages which neccessary to running the IoT SDK samples:
 
     -   Install sudo package
