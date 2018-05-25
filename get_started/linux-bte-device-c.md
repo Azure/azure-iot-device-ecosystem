@@ -1,6 +1,6 @@
 ---
-platform: bte device
-device: linux 4.16.7
+platform: linux 4.16.7
+device: bte device
 language: c
 ---
 
