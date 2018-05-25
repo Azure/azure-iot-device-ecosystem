@@ -60,16 +60,6 @@ You should have the following items ready before beginning the process:
 
         sudo apt-get install -y curl libcurl4-openssl-dev build-essential cmake git python2.7-dev libboost-python-dev
 
-    **Fedora**
-
-        sudo dnf check-update -y
-
-        sudo dnf install libcurl-devel openssl-devel gcc-c++ make cmake git python2.7-dev libboost-python-dev
-
-    **Any Other Linux OS**
-
-        Use equivalent commands on the target OS
-
 -   Download the Microsoft Azure IoT Device SDK to the board by issuing the following command on the board::
 
         git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
