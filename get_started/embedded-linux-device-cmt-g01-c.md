@@ -4,7 +4,7 @@ device: cmt-g01
 language: c
 ---
 
-Configure cMT-G01 as an Azure IoT Hub device
+Run a simple C sample on cMT-G01 device running embedded linux device
 ===
 ---
 
