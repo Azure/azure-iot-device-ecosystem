@@ -1,10 +1,10 @@
 ---
-platform: linux 4.16.7
-device: bte device
-language: c
+platform: linux
+device: secflow-1v
+language: python
 ---
 
-Run a simple C sample on BTE device running Linux 4.16.7
+Run a simple PYTHON sample on SecFlow-1v device running Linux
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple C sample on BTE device running Linux 4.16.7
 
 **About this document**
 
-This document describes how to connect BTE device running Linux 4.16.7 with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect SecFlow-1v device running Linux with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -31,66 +31,91 @@ This document describes how to connect BTE device running Linux 4.16.7 with Azur
 
 You should have the following items ready before beginning the process:
 
--   [Prepare your development environment][setup-devbox-linux]
+-   [Prepare your development environment][setup-devbox-python]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   BTE device.
+-   SecFlow-1v device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
--   Install Linux 4.16.7
+
+-   Connect to the SecFlow-1v via ssh with putty
+-   Configure interfaces and test internet connection via Cellular or Ethernet connection
+-   Deploy new VE container from Ubuntu Xential image
+-   Connect to the new VE container and proceed to the step 3
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
+
+<a name="Load"></a>
 ## 3.1 Build SDK and sample
 
--   Under development environment Ubuntu 16.04, Install the prerequisite packages for the Microsoft Azure IoT Device SDK for C by issuing the following commands from the command line on your board:
+-   Open a PuTTY session and connect to the device.
+
+-   Install the prerequisite packages for the Microsoft Azure IoT Device SDK for Python by issuing the following commands from the command line on your board:
+
+     **Debian or Ubuntu**
 
         sudo apt-get update
-        sudo apt-get install -y curl libcurl4-openssl-dev uuid-dev uuid g++ make cmake git unzip openjdk-7-jre
 
--   Download the Microsoft Azure IoT Device SDK for C to the board by issuing the following command on the board
+        sudo apt-get install -y curl libcurl4-openssl-dev build-essential cmake git python2.7-dev libboost-python-dev
 
-        git clone --recursive https://github.com/Azure/azure-iot-sdk-c.git
+-   Download the Microsoft Azure IoT Device SDK to the board by issuing the following command on the board::
+
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
+
+-   Run following commands to build the SDK:
+
+        cd python/build_all/linux
+	    sudo ./build.sh    
+
+-   After a successful build, the `iothub_client.so` Python extension module is copied to the **python/device/samples** folder.
+
+-   Navigate to samples folder by executing following command:
+
+        cd azure-iot-sdk-python/device/samples/
 
 -   Edit the following file using any text editor of your choice:
 
-     Send Telemetry to IoT Hub Sample.Find the following place holder for editing protocol:
+    **For AMQP protocol:**
 
-        // The protocol you wish to use should be uncommented
-        //#define SAMPLE_HTTP
-        //#define SAMPLE_MQTT
-        //#define SAMPLE_MQTT_OVER_WEBSOCKETS
-        //#define SAMPLE_AMQP
-        //#define SAMPLE_AMQP_OVER_WEBSOCKETS
+        nano iothub_client_sample_amqp.py
 
--   Replace the above placeholder with device connection string 
+    **For HTTP protocol:**
 
-        static const char* connectionString = "[device connection string]";
+        nano iothub_client_sample_http.py
 
+    **For MQTT protocol:**
 
--   Build the SDK using following command. Set  tool chain cross compiler
+        nano iothub_client_sample_mqtt.py
 
-        export CC=arm-none-linux-gnueabi-gcc
-        sudo ./azure-iot-sdk-c/build_all/linux/build.sh | tee c_log_file.txt
+-   Find the following place holder for device connection string:
 
-**Note:** `c_log_file.txt` in above command should be replaced with a file name where build output will be written.
+        connectionString = "[device connection string]"
+
+-   Replace the above placeholder with device connection string you obtained in [Step 1](#Prerequisites) and save the changes.
 
 ## 3.2 Send Device Events to IoT Hub:
 
--   Run the sample by issuing following command:
+-   Run the sample application using the following command:
 
-        azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_ll_telemetry_sample/iothub_ll_telemetry_sample
+    **For AMQP protocol:**
 
+        python iothub_client_sample_amqp.py
 
--   See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the application.
+    **For HTTP protocol:**
+
+        python iothub_client_sample_http.py
+
+    **For MQTT protocol:**
+
+        python iothub_client_sample_mqtt.py
+
+-   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 
 ## 3.3 Receive messages from IoT Hub
--   Run the sample by issuing following command.
 
-        azure-iot-sdk-c/cmake/iotsdk_linux/iothub_client/samples/iothub_ll_c2d_sample/iothub_ll_c2d_sample
-
--   See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to send cloud-to-device messages to the application.
+-   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages to the application.
 
 <a name="NextSteps"></a>
 # Next Steps
@@ -110,6 +135,8 @@ You have now learned how to run a sample application that collects sensor data a
 [Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps
 [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning
 [Remote monitoring and notifications with Logic Apps]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps
-[setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
+[setup-devbox-python]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/get_started/python-devbox-setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
+
+
