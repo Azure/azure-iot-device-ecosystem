@@ -54,8 +54,6 @@ You should have the following items ready before beginning the process:
 
 -   Install the prerequisite packages for the Microsoft Azure IoT Device SDK for Python by issuing the following commands from the command line on your board:
 
-     **Debian or Ubuntu**
-
         sudo apt-get update
 
         sudo apt-get install -y curl libcurl4-openssl-dev build-essential cmake git python2.7-dev libboost-python-dev
@@ -67,7 +65,7 @@ You should have the following items ready before beginning the process:
 -   Run following commands to build the SDK:
 
         cd python/build_all/linux
-	    sudo ./build.sh    
+        sudo ./build.sh    
 
 -   After a successful build, the `iothub_client.so` Python extension module is copied to the **python/device/samples** folder.
 
@@ -138,5 +136,3 @@ You have now learned how to run a sample application that collects sensor data a
 [setup-devbox-python]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/get_started/python-devbox-setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
-
-
