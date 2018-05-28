@@ -1,10 +1,10 @@
 ---
-platform: windows 10 enterprise
+platform: windows 10
 device: ags100
 language: csharp
 ---
 
-Run a simple Csharp sample on AGS100 device running Windows 10 Enterprise
+Run a simple Csharp sample on AGS100 device running Windows 10
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple Csharp sample on AGS100 device running Windows 10 Enterprise
 
 **About this document**
 
-This document describes how to connect AGS100 device running Windows 10 Enterprise with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect AGS100 device running Windows 10 with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
