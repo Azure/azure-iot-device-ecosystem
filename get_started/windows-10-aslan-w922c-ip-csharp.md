@@ -49,18 +49,18 @@ You should have the following items ready before beginning the process:
 
 -  Add the Iot Hub device connection string on your device as an environment variable:
 
-		setx IOTHUB_DEVICE_CONN_STRING <yourDeviceConnectionString>
+        setx IOTHUB_DEVICE_CONN_STRING <yourDeviceConnectionString>
 
 -  Run the following command to build the SDK:
 
-		build.cmd -config Release
+        build.cmd -config Release
         
 - From the device console, run the sample using following command:
 
-	**HTTP protocol:**
+    **HTTP protocol:**
 
-		cd iothub\device\samples\DeviceClientHttpSample\bin\Debug\netcoreapp2.0
-		dotnet DeviceClientHttpSample.dll
+        cd iothub\device\samples\DeviceClientHttpSample\bin\Debug\netcoreapp2.0
+        dotnet DeviceClientHttpSample.dll
 
 -   Use the **DeviceExplorer** utility to observe the messages IoT Hub receives from the **Device Client Sample** application.
 -   Refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to see the data your device is sending.
