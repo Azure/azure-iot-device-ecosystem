@@ -1,9 +1,9 @@
 ---
-platform: no operating system
+platform: no os
 services: iot-hub
 language: c
 ---
-CEC1702 IoT Development Kit running no operating system
+CEC1702 IoT Development Kit running no OS
 ===
 ---
 
@@ -29,11 +29,11 @@ The CEC1702 IoT Development Kit includes:
 
 The CEC1702 IoT Development Kit includes a mikroe Thermo5 click module which has EMC1414 Temperature sensor from Microchip. The click module is plugged into MIKROBUS2 slot on the CEC1x02Devloment Board as shown below
 
-![CEC1702](media\cec1702-iot-development-kit/1.png)
+![CEC1702](media/cec1702-iot-development-kit/1.png)
 
-![CEC1702](media\cec1702-iot-development-kit/2.png)
+![CEC1702](media/cec1702-iot-development-kit/2.png)
 
-For temperature measurement using external diode on Thermo5 Clicker board an external diode needs to be connected. Please refer section “External diode connections” in the sensor [datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/20005274A.pdf) for more information
+For temperature measurement using external diode on Thermo5 Clicker board an external diode needs to be connected. Please refer section ***External diode connections*** in the sensor [datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/20005274A.pdf) for more information
 
 # Build and Run the sample
 
@@ -46,14 +46,14 @@ For temperature measurement using external diode on Thermo5 Clicker board an ext
 
 2. Extract the contents of the downloaded zip file: **CEC1702\_azure\_mplabx\_build\_0600.zip**
 
-    Clear the ‘Readonly’ attribute for the project folder
-    -   Right click the project folder  and Select ‘Properties’
+    Clear the ***Readonly*** attribute for the project folder
+    -   Right click the project folder  and Select ***Properties***
     -   In the General tab, clear the Read-Only attribute and select Apply
-    -   Select *‘Apply changes to this folder, subfolder and files’* and click OK
+    -   Select ***Apply changes to this folder, subfolder and files*** and click OK
 
 3.    Open MPLAB X Project
 
-    -   In MPLAB X IDE, Select ‘Open Project’ from the File Menu
+    -   In MPLAB X IDE, Select ***Open Project*** from the File Menu
     -   Navigate to the downloaded CEC1702 DICE-RIoT project and open the MPLABX project **devBoard\_diceRIoT\_MPLABX.X**
 
 4. The DPS client application is **prov\_dev\_client\_ll\_sample.c**. It uses HTTPS as the transport for communicating to DPS server and MQTT as transport for communicating with AZURE IOT hub.
@@ -95,15 +95,15 @@ For temperature measurement using external diode on Thermo5 Clicker board an ext
          #define CONN_PSK_PWD                    "69651946"
 
 
-7. Select ‘Clean and Build for Debugging’ option 
+7. Select ***Clean and Build for Debugging*** option 
 
-    ![CEC1702](media\cec1702-iot-development-kit/3.png)
+    ![CEC1702](media/cec1702-iot-development-kit/3.png)
 
 8. Connect the ICD4 using JTAG cable and power up the board. Next select Debug and Click Debug Project. MPLABX would detect the ICD4 automatically and start the debug session
 
-    ![CEC1702](media\cec1702-iot-development-kit/4.png)
+    ![CEC1702](media/cec1702-iot-development-kit/4.png)
 
-    ![CEC1702](media\cec1702-iot-development-kit/5.png)
+    ![CEC1702](media/cec1702-iot-development-kit/5.png)
 
 ### View the UART Traces
 
@@ -118,7 +118,7 @@ Follow the below steps to use ComXDBG.exe
 
 3.    Select port with **VID:PID** as **04D8:00DD**. For example; for the displayed options (in below snapshot) we would enter 0
 
-    ![CEC1702]media\cec1702-iot-development-kit/6.png)
+    ![CEC1702]media/cec1702-iot-development-kit/6.png)
 
 4. You should be able to view UART traces from the devBoard board
 Alternatively, you can use your serial terminal (e.g. TeraTerm for Windows) with the following parameters:
@@ -142,7 +142,7 @@ Alternatively, you can use your serial terminal (e.g. TeraTerm for Windows) with
 
         -----END CERTIFICATE-----
 
-2. Copy the text from ‘BEGIN CERTIFICATE’ to ‘END CERTIFICATE’ to a text editor file. 
+2. Copy the text from ***BEGIN CERTIFICATE*** to ***END CERTIFICATE*** to a text editor file. 
 Remove the time stamps and leading spaces; and save with .pem extension. 
 
 3. Provision this alias certificate .pem file in your DPS dashboard in Azure Portal 
@@ -169,7 +169,7 @@ See [Device Explorer](https://github.com/fsautomata/azure-iot-sdks/blob/master/t
 
 You should be able to see the temperature readings from the Thermo5 Clicker board.
 
-![CEC1702](media\cec1702-iot-development-kit/7.png)
+![CEC1702](media/cec1702-iot-development-kit/7.png)
 
 # Receive messages from Azure IoT Hub
 
@@ -180,7 +180,7 @@ See [Device Explorer](https://github.com/fsautomata/azure-iot-sdks/blob/master/t
 -   Click on Send
 -   Example message: *{“led":“on”}*
 
-![CEC1702](media\cec1702-iot-development-kit/8.png)
+![CEC1702](media/cec1702-iot-development-kit/8.png)
 
 This message should turn ON the RGB led on the board. The received messages are displayed in the serial terminal.
 
