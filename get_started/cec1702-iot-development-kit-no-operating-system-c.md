@@ -39,24 +39,24 @@ For temperature measurement using external diode on Thermo5 Clicker board an ext
 
 ### Build and download the code
 
-1. Download the [devBoard\_Azure\_IoT\_build](https://www.microchip.com/SWLibraryWeb/product.aspx?product=CEC1702_AZURE_IOT) package. This package contains all the required drivers to use with the CEC1x02 devBoard board with Winc1500 clicker board, together with pre-integrated Microsoft Azure IoT C SDK.
+1.  Download the [devBoard\_Azure\_IoT\_build](https://www.microchip.com/SWLibraryWeb/product.aspx?product=CEC1702_AZURE_IOT) package. This package contains all the required drivers to use with the CEC1x02 devBoard board with Winc1500 clicker board, together with pre-integrated Microsoft Azure IoT C SDK.
 
      The project uses mbedTLS as the TLS stack, which has been added to the project as a library:
      `Src/APP/framework/mbedTLS/mbedtls.X/dist/default/production/mbedtls.X.a`
 
-2. Extract the contents of the downloaded zip file: **CEC1702\_azure\_mplabx\_build\_0600.zip**
+2.  Extract the contents of the downloaded zip file: **CEC1702\_azure\_mplabx\_build\_0600.zip**
 
     Clear the ***Readonly*** attribute for the project folder
     -   Right click the project folder  and Select ***Properties***
     -   In the General tab, clear the Read-Only attribute and select Apply
     -   Select ***Apply changes to this folder, subfolder and files*** and click OK
 
-3.    Open MPLAB X Project
+3.  Open MPLAB X Project
 
     -   In MPLAB X IDE, Select ***Open Project*** from the File Menu
     -   Navigate to the downloaded CEC1702 DICE-RIoT project and open the MPLABX project **devBoard\_diceRIoT\_MPLABX.X**
 
-4. The DPS client application is **prov\_dev\_client\_ll\_sample.c**. It uses HTTPS as the transport for communicating to DPS server and MQTT as transport for communicating with AZURE IOT hub.
+4.  The DPS client application is **prov\_dev\_client\_ll\_sample.c**. It uses HTTPS as the transport for communicating to DPS server and MQTT as transport for communicating with AZURE IOT hub.
 
      `Src\APP\apps\ prov_dev_client_ll_sample.c`
 
@@ -79,7 +79,7 @@ For temperature measurement using external diode on Thermo5 Clicker board an ext
 
     `devBoard\_diceRIoT\_MPLABX.X/CEC1702.ld`
 
-5. Update your Device Provisioning Service ID Scope in **prov\_dev\_client\_ll\_sample.c** line 37
+5.  Update your Device Provisioning Service ID Scope in **prov\_dev\_client\_ll\_sample.c** line 37
 
     For example, if Device Provisioning Service ID is 0ne000000A9
 
@@ -87,7 +87,7 @@ For temperature measurement using external diode on Thermo5 Clicker board an ext
 
     The ID scope value is used to identify Registration IDs. This value is retrieved from your DPS dashboard in Azure portal.
 
-6. Wifi Configuration - Currently the code is configured to connect through WPA-PSK. The SSID and password are set statically in winc1500_connect.c , modify these values to match your wifi router
+6.  Wifi Configuration - Currently the code is configured to connect through WPA-PSK. The SSID and password are set statically in winc1500_connect.c , modify these values to match your wifi router
 
     `Src\APP\platform\winc\winc1500_connect.c`
 
@@ -95,11 +95,11 @@ For temperature measurement using external diode on Thermo5 Clicker board an ext
          #define CONN_PSK_PWD                    "69651946"
 
 
-7. Select ***Clean and Build for Debugging*** option 
+7.  Select ***Clean and Build for Debugging*** option 
 
     ![CEC1702](media/cec1702-iot-development-kit/3.png)
 
-8. Connect the ICD4 using JTAG cable and power up the board. Next select Debug and Click Debug Project. MPLABX would detect the ICD4 automatically and start the debug session
+8.  Connect the ICD4 using JTAG cable and power up the board. Next select Debug and Click Debug Project. MPLABX would detect the ICD4 automatically and start the debug session
 
     ![CEC1702](media/cec1702-iot-development-kit/4.png)
 
@@ -110,17 +110,17 @@ For temperature measurement using external diode on Thermo5 Clicker board an ext
 To view the UART traces, it is recommended to download and install [MCP2221 driver for USB to UART](http://ww1.microchip.com/downloads/en/DeviceDoc/MCP2221 Windows Driver 2014-10-09.zip)
 Follow the below steps to use ComXDBG.exe
 
-1.    connect USB cable between devBoard board and Windows host 
+1.  Connect USB cable between devBoard board and Windows host 
 
-2.    After driver installation, start `ComXDBG.exe` 
+2.  After driver installation, start `ComXDBG.exe` 
 
      `utilities\ ComEDBG \ ComXDBG.exe`
 
-3.    Select port with **VID:PID** as **04D8:00DD**. For example; for the displayed options (in below snapshot) we would enter 0
+3.  Select port with **VID:PID** as **04D8:00DD**. For example; for the displayed options (in below snapshot) we would enter 0
 
     ![CEC1702]media/cec1702-iot-development-kit/6.png)
 
-4. You should be able to view UART traces from the devBoard board
+4.  You should be able to view UART traces from the devBoard board
 Alternatively, you can use your serial terminal (e.g. TeraTerm for Windows) with the following parameters:
 
    -   BaudRate : 115200
@@ -131,7 +131,7 @@ Alternatively, you can use your serial terminal (e.g. TeraTerm for Windows) with
 
 ### Deriving the X.509 certificate
 
-1.    The alias certificate is displayed on the serial terminal, after the following the text:
+1.  The alias certificate is displayed on the serial terminal, after the following the text:
 
     RIOT: Alias Certificate
 
@@ -142,10 +142,10 @@ Alternatively, you can use your serial terminal (e.g. TeraTerm for Windows) with
 
         -----END CERTIFICATE-----
 
-2. Copy the text from ***BEGIN CERTIFICATE*** to ***END CERTIFICATE*** to a text editor file. 
+2.  Copy the text from ***BEGIN CERTIFICATE*** to ***END CERTIFICATE*** to a text editor file. 
 Remove the time stamps and leading spaces; and save with .pem extension. 
 
-3. Provision this alias certificate .pem file in your DPS dashboard in Azure Portal 
+3.  Provision this alias certificate .pem file in your DPS dashboard in Azure Portal 
 
     See [Provision device to Hub tutorial](https://docs.microsoft.com/en-us/azure/iot-dps/tutorial-provision-device-to-hub) for provisioning your device using enrollment lists. Follow instructions for X.509 based devices using Individual Enrollment.
 
@@ -186,9 +186,9 @@ This message should turn ON the RGB led on the board. The received messages are 
 
 # Debugging connection failure
 
-1.    Ensure the you have updated the wifi details correctly
-2.    Ensure the MQTT port 8883 is not blocked in your network
-3.    Ensure the device certificate is captured correctly from serial terminal and provisioned in Azure dashboard
+1.  Ensure the you have updated the wifi details correctly
+2.  Ensure the MQTT port 8883 is not blocked in your network
+3.  Ensure the device certificate is captured correctly from serial terminal and provisioned in Azure dashboard
 
 # Next Steps
 
