@@ -1,10 +1,10 @@
 ---
-platform: windows 10 ltsb
+platform: windows 10
 device: ags102
 language: csharp
 ---
 
-Run a simple Csharp sample on AGS102 device running Windows 10 LTSB
+Run a simple Csharp sample on AGS102 device running Windows 10
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple Csharp sample on AGS102 device running Windows 10 LTSB
 
 **About this document**
 
-This document describes how to connect AGS102 device running Windows 10 LTSB with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect AGS102 device running Windows 10 with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -60,11 +60,11 @@ You should have the following items ready before beginning the process:
 
 -   Add the Iot Hub device connection string on your device as an environment variable:
 
-		setx IOTHUB_DEVICE_CONN_STRING <yourDeviceConnectionString>
+        setx IOTHUB_DEVICE_CONN_STRING <yourDeviceConnectionString>
 
 -   Run the following command to build the SDK:
 
-		build.cmd -config Release
+        build.cmd -config Release
 
 -   If build completed but no files is created under iothub\device\samples\DeviceClientHttpSample\ , try to modify build.ps1 to fix this issue. (add **BuildProject iothub\device\samples "IoT Hub DeviceClient Samples"** to building rules)
         
@@ -72,18 +72,18 @@ You should have the following items ready before beginning the process:
 
 	**If HTTP protocol:**
 
-		cd iothub\device\samples\DeviceClientHttpSample\bin\Release\netcoreapp2.0
-		dotnet DeviceClientHttpSample.dll
+        cd iothub\device\samples\DeviceClientHttpSample\bin\Release\netcoreapp2.0
+        dotnet DeviceClientHttpSample.dll
 
 	**If MQTT protocol:**
 
-		cd iothub\device\samples\DeviceClientMqttSample\bin\Release\netcoreapp2.0
-		dotnet DeviceClientMqttSample.dll
+        cd iothub\device\samples\DeviceClientMqttSample\bin\Release\netcoreapp2.0
+        dotnet DeviceClientMqttSample.dll
 		
 	**If AMQP protocol:**
 
-		cd iothub\device\samples\DeviceClientAmqpSample\bin\Release\netcoreapp2.0
-		dotnet DeviceClientAmqpSample.dll
+        cd iothub\device\samples\DeviceClientAmqpSample\bin\Release\netcoreapp2.0
+        dotnet DeviceClientAmqpSample.dll
 
 -   Use the **DeviceExplorer** utility to observe the messages IoT Hub receives from the **Device Client Sample** application.
 -   Refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to see the data your device is sending.
