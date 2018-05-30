@@ -8,7 +8,7 @@ Run a simple C sample on cMT-G01 device running embedded linux
 ===
 ---
 
-#Table of Contents
+# Table of Contents
 
 -   [Introduction](#Introduction)
 -   [Step 1: Prerequisites](#Prerequisites)
@@ -16,7 +16,7 @@ Run a simple C sample on cMT-G01 device running embedded linux
 -   [Next Steps](#NextSteps)
 
 <a name="Introduction"></a>
-#Introduction
+# Introduction
 
 This document describes how to connect cMT-G01 to Azure IoT Hub. It can also be applied to other cMT Gateway products. The multi-step process includes:
 
@@ -25,7 +25,7 @@ This document describes how to connect cMT-G01 to Azure IoT Hub. It can also be 
 -   Configure the device to publish device data to Azure IoT Hub
 
 <a name="Prerequisites"></a>
-#Step 1: Prerequisites
+# Step 1: Prerequisites
 
 You should have the following items ready before beginning the process:
 
@@ -36,7 +36,7 @@ You should have the following items ready before beginning the process:
 -   cMT-G01 or cMT Gateway device
 
 <a name="PrepareDevice"></a>
-#Step 2: Prepare your Device
+# Step 2: Prepare your Device
 
 1.  Open EasyBuilder Pro and create a new cMT-G01 project. 
 
@@ -72,17 +72,17 @@ You should have the following items ready before beginning the process:
 
 10.  In topic's [Address] tab, configure the device data to report.
 
-    ![Topic address mapping to device/controller/PLC data](media/cmt-g01-topic-address.png)
+     ![Topic address mapping to device/controller/PLC data](media/cmt-g01-topic-address.png)
 
     Click [New] to add a new device address.
 
-    ![Add a new device address](media/cmt-g01-topic-address-new.png)
+   ![Add a new device address](media/cmt-g01-topic-address-new.png)
 
 11.  Simulate the result. You may use [Online Simulation] if your PC can connect to the device/controller or use [Offline Simulation] to simulate one. The simulator will behave like a simulated cMT-G01 and connect to Azure IoT Hub. 
 12.  When simulation succeeds, you may donwload this project to cMT-G01.
 
 <a name="NextSteps"></a>
-#Next Steps
+# Next Steps
 
 To explore how to store, analyze and visualize the data from this application in Azure using a variety of different services, please click on the following lessons:
 
