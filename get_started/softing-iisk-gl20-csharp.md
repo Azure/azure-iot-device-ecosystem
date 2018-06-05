@@ -5,7 +5,7 @@ language: csharp
 ---
 
 Run a simple Csharp sample on a Softing IISK GL20 device.
-===
+
 ---
 
 For further device descriptions regarding the device see: [Industrial IoT Starter Kit](https://data-intelligence.softing.com/products/iot-gateways/industrial-iot-starter-kit/)
