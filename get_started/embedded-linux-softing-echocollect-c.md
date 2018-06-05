@@ -4,7 +4,7 @@ device: echocollect e and echocollect r-m
 language: c
 ---
 
-Configure [echocollect e](https://industrial.softing.com/en/products/plc-connectivity/integration-of-plc-data/stand-alone-application-gateways-multiprotocol/echocollect-e.html) or [echocollect r-m](https://industrial.softing.com/en/products/plc-connectivity/integration-of-plc-data/stand-alone-application-gateways-multiprotocol/echocollect-rm.html) as Azure IoT-device
+Configure [echocollect e](https://data-intelligence.softing.com/produkte/iot-gateways/echocollect-e/) or [echocollect r-m](https://data-intelligence.softing.com/produkte/iot-gateways/echocollect-rm/) as Azure IoT-device
 ===
 ---
 
