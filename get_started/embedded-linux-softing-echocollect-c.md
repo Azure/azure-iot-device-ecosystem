@@ -4,7 +4,7 @@ device: echocollect e and echocollect r-m
 language: c
 ---
 
-Configure [echocollect e](https://data-intelligence.softing.com/produkte/iot-gateways/echocollect-e/) or [echocollect r-m](https://data-intelligence.softing.com/produkte/iot-gateways/echocollect-rm/) as Azure IoT-device
+Configure [echocollect e](https://data-intelligence.softing.com/products/iot-gateways/echocollect-e/) or [echocollect r-m](https://data-intelligence.softing.com/products/iot-gateways/echocollect-rm/) as Azure IoT-device
 ===
 ---
 
