@@ -61,16 +61,16 @@ You should have the following items ready before beginning the process:
 <a name="Step_3_1_1"></a>
 ### 3.1.1  Install Java JDK and set up environment variables
         
-1.  install command Ubuntu 14.04
+1.  Install command Ubuntu 14.04
 
         sudo apt-get update
         sudo apt-get install openjdk-8-jdk
 
-2.  check java
+2.  Check java
 
         /usr/bin/java
 
-3.  check PATH
+3.  Check PATH
 
         echo $PATH
         /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
@@ -99,27 +99,27 @@ You should have the following items ready before beginning the process:
         Java HotSpot(TM) 64-Bit Server VM (build 25.60-b23, mixed mode)
 
 
-6.  set JAVA_HOME environment variable
+6.  Set JAVA_HOME environment variable
 
         export JAVA_HOME= /usr/lib/jvm/java-8-openjdk-amd64/
 
 <a name="Step_3_1_2"></a>
 ### 3.1.2  Install Maven and set up environment variables
 
-1.  install maven
+1.  Install maven
 
         sudo apt-get install maven
 
-2.  check which mvn
+2.  Check which mvn
 
         /usr/bin/mvn
 
-3.  check PATH
+3.  Check PATH
 
         echo $PATH
         /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
-4.  check maven
+4.  Check maven
 
         $mvn –version
         Apache Maven 3.0.5
@@ -132,7 +132,7 @@ You should have the following items ready before beginning the process:
 <a name="Step_3_1_3"></a>
 ### 3.1.3  Install GIT
 
-1.  install git
+1.  Install git
 
         sudo apt-get install git
 
