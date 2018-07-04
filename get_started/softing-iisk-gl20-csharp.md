@@ -5,8 +5,10 @@ language: csharp
 ---
 
 Run a simple Csharp sample on a Softing IISK GL20 device.
-
+===
 ---
+
+For further device descriptions regarding the device see: [Industrial IoT Starter Kit](https://data-intelligence.softing.com/products/iot-gateways/industrial-iot-starter-kit/)
 
 # Table of Contents
 
@@ -26,11 +28,12 @@ This document describes how to connect a Softing IISK GL20 device with Azure IoT
 -   Build and deploy Azure IoT SDK on device
 
 **Note:** The Softing IISK GL20 is a Hewlett Packard Enterprise GL20 IoT Gateway device, with additional software pre-installed. So this getting started is nearly the same as [hpe-azure-certified-windows-operating-systems-gl20-csharp](hpe-azure-certified-windows-operating-systems-gl20-csharp.md). Especially the following software is installed:
+
 -   Microsoft Windows 10 IoT Enterprise LTSB 1607
 -   Softing dataFEED suite
 -   Docker Community Edition (Installer)
 
-So for the end user, it might be more beneficial to use the docker containers of [Azure/iot-edge-opc-proxy](https://github.com/Azure/iot-edge-opc-proxy) and [Azure/iot-edge-opc-publisher](https://github.com/Azure/iot-edge-opc-publisher) to connect OPC UA endpoints with the Azure IoT-hub.
+So for the end user, it might be more beneficial to use the docker containers of [Azure/iot-edge-opc-proxy](https://github.com/Azure/iot-edge-opc-proxy) and [Azure/iot-edge-opc-publisher](https://github.com/Azure/iot-edge-opc-publisher) to connect OPC UA endpoints with the Azure IoT-hub. A more detailed description is available within the manual in the [download section](https://data-intelligence.softing.com/products/iot-gateways/industrial-iot-starter-kit/#tx-dftabs-tabContent2).
 
 <a name="Prerequisites"></a>
 # Step: Prerequisites
@@ -48,7 +51,10 @@ Have the following items ready before beginning the process:
 -   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdk-csharp) and the sample programs and save them to a local repository.
 -   Start a new instance of Visual Studio 2017.
 -   Open the **iothub\_csharp\_client.sln** solution in the `device` folder in the local copy of the repository.
--   Enable developer mode in Windows 10 settings: ![developer-mode](media/developer-mode.png)
+-   Enable developer mode in Windows 10 settings:
+
+    ![developer-mode](media/developer-mode.png)
+
 -   In Visual Studio, from Solution Explorer, navigate to the **samples** folder.
 -   In the **DeviceClientAmqpSample** project, open the ***Program.cs*** file.
 -   Locate the following code in the file:
