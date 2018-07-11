@@ -99,7 +99,7 @@ This section walks you through the test to be performed on the Edge devices runn
 
 *Total number of Level : 1*
 
-**Description:** A device which includes the Azure IoT Edge runtime and dependencies.Download the Azure IoT Edge Runtime from the [link]( https://aka.ms/iotedgeruntime).
+**Description:** A device which includes the Azure IoT Edge runtime and dependencies.Download the Azure IoT Edge Runtime from the [link](https://aka.ms/iotedgeruntime-windows).
 
 **Details of the requirement:**
 
