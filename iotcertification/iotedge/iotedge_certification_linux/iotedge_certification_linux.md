@@ -100,7 +100,11 @@ This section walks you through the test to be performed on the Edge devices runn
 ## 3.1 Edge RuntimeEnabled (Mandatory)
 *Total number of Level : 1*
 
-**Description:** A device which includes the Azure IoT Edge runtime and dependencies.Download the Azure IoT Edge Runtime from the [link](https://aka.ms/iotedgeruntime)
+**Description:** A device which includes the Azure IoT Edge runtime and dependencies.Download the Azure IoT Edge Runtime from the following path:
+
+Download [runtime](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/iot-edge/how-to-install-iot-edge-linux-arm.md) to install Linux (ARM32v7/armhf)
+ 
+Download [runtime](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/iot-edge/how-to-install-iot-edge-linux.md) to install Linux (x64)
 
 **Details of the requirement:**
 
