@@ -1,3 +1,9 @@
+---
+platform: windows 10 iot enterprise 2016 ltsb 1609
+device: industrial iot starter kit
+language: csharp
+---
+
 [Industrial IoT Starter Kit](https://data-intelligence.softing.com/products/iot-gateways/industrial-iot-starter-kit/) running Windows 10 IoT Enterprise 2016 LTSB 1609
 ===
 ---
