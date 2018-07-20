@@ -229,6 +229,11 @@ This section walks you through building, deploying and validating the IoT Client
         cd azure-iot-sdk-java/device
         mvn install | tee JavaSDK_Build_Logs.txt
 
+    **Note:** We have noticed that certain unit tests can fail when running mvn install as given above with the latest version of JDK 8 (1.8.0_65 at the time this document was written). It works fine with older versions however. If this occurs please skip running unit tests using following command:
+
+        cd  azure-iot-sdk-java/device/iot-device-samples
+        mvn install -DskipTests
+
 <a name="Step_3_2"></a>
 ## 3.2 Run and Validate the Samples
 
