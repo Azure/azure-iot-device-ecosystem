@@ -35,7 +35,7 @@ You should have the following items ready before beginning the process:
 -   [Download and install FNET][download-fnet]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   [FRDM-K64F device] [FRDM-K64F-board]
+-   [FRDM-K64F device][FRDM-K64F-board]
 -   [Tera Term Pro serial terminal][tera-term-pro]
 
 <a name="PrepareDevice"></a>
