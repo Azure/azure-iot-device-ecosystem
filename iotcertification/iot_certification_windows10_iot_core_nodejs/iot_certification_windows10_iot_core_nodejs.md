@@ -3,7 +3,6 @@ How to Certify IoT devices running Windows 10 IoT core OS with Azure IoT SDK
 ---
 
 
-**Note:** ***We are not supporting Windows 10 IoT Core with NodeJS. Please contact <iotcert@microsoft.com> for futher queries.***
 # Table of Contents
 
 -   [Introduction](#Introduction)
