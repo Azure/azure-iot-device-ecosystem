@@ -44,6 +44,8 @@ The below capabilities describe the risks within the devices mitigation capabili
 
 Read Microsoft’s approach to deliver a secure platform for Azure IoT Edge devices in [Securing the intelligent edge](https://azure.microsoft.com/en-us/blog/securing-the-intelligent-edge/) blog. Microsoft is working on to define validation process for security requirement including exploration of leveraging 3rd party validation labs.
 
+Please click [here](https://github.com/Azure/azure-iotedge/blob/master/LICENSE) for MICROSOFT SOFTWARE LICENSE TERMS for IoT Edge runtime
+
 # Next steps
 
 You have now learned about the overview of Azure Certified for IoT program extending to support Azure IoT Edge devices.
