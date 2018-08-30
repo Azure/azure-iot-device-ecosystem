@@ -34,8 +34,9 @@ You should have the following items ready before beginning the process:
 -   [Prepare your development environment][setup-devbox-windows]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   {enter your device name here} device.
--   {{Please specify if any other software(s) or hardware(s) are required.}}
+-   InsightCM Server device.
+-   InsightCM SDK
+-   Visual Studio 2017
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
@@ -80,6 +81,13 @@ You should have the following items ready before beginning the process:
 
 #Step 3.1: Send live data to Azure
 
+-   Open an [InsightCM dashboard](http://localhost:82) on a web browser
+-   Open the InsightCM Azure Example with Visual Studio 2017
+-   On the Example Service project:
+    -   Update the Connection String, Device Name and Protocol Type with the corresponding information.
+-   Run the ExampleService App.
+-   Force Trigger your monitoring device
+-   The console should show you a message for each time you force trigger your monitoring device.
 
 
 <a name="NextSteps"></a>
