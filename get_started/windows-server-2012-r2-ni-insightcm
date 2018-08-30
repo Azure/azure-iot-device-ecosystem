@@ -40,7 +40,8 @@ You should have the following items ready before beginning the process:
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+-   Follow the instructions on the [InsightCM getting started](http://zone.ni.com/reference/en-XX/help/374498G-01/) guide to configure your server and connect the monitoring devices to it.
+-   Install the [InsightCM SDK package] (http://www.ni.com/download/insightcm-sdk-3.3/7675/en/)
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
@@ -76,6 +77,10 @@ You should have the following items ready before beginning the process:
 -   Use the **DeviceExplorer** utility to observe the messages IoT Hub receives from the **Device Client Sample** application.
 -   Refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to see the data your device is sending.
 -   Refer "Send cloud-to-device messages" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) for instructions on sending messages to device.
+
+#Step 3.1: Send live data to Azure
+
+
 
 <a name="NextSteps"></a>
 # Next Steps
