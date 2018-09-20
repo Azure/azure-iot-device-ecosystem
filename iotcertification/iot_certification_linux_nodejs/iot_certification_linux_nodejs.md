@@ -311,7 +311,7 @@ In this section you will run the Azure IoT client SDK samples to validate commun
 		
 		python platform_data.py
 
-    ![deviceinfo\_screenshot](images/python_modified_output.png)
+    ![deviceinfo\_screenshot](images/python_modified_output.PNG)
 
 -   Please save the device configuration screenshot and upload it as mentioned in [Step 4](#Package).
 
