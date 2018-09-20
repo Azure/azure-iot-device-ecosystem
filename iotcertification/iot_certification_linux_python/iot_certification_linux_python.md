@@ -222,6 +222,32 @@ section. These will be needed in [Step 4](#Step-4-2-Share)
     
     ![MessageSend\_terminal](images/python_mqtt_receive_message_device.png)
 
+### 3.3.3 Verify Device configuration
+
+-   Please install the below modules before you run the `platform_data.py`
+
+    **Debian or Ubuntu** 
+
+        sudo apt-get install python-requests
+        sudo apt-get install python-netifaces
+
+    **Fedora**
+
+        sudo dnf install python-requests
+        sudo dnf install python-netifaces
+
+-   Navigate to tools folder by executing following command:
+
+        cd azure-iot-sdk-python/Tools
+
+-   Run the following command on the device
+		
+        python platform_data.py
+
+    ![deviceinfo\_screenshot](images/python_modified_output.png)
+
+-   Please save the device configuration screenshot and upload it as mentioned in [Step 4](#Step-4-1-Package).
+
 <a name="Step-4-Package_Share"></a>
 # Step 4: Package and Share
 
@@ -237,7 +263,9 @@ Package following artifacts from your device:
 
 3.  All the screenshots that are above in "**Receive messages from IoT Hub**" section.
 
-4.  Send us clear instructions of how to run this sample with your hardware
+4.  All the screenshots that are above in "**Device Configuration**" section.
+
+5.  Send us clear instructions of how to run this sample with your hardware
     (explicitly highlighting the new steps for customers). Please use the template available [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/iotcertification/templates/template-linux-python.md>) to create your device-specific instructions.
     
     As a guideline on how the instructions should look please refer the examples published on GitHub repository [here](<https://github.com/Azure/azure-iot-device-ecosystem/tree/master/get_started>).

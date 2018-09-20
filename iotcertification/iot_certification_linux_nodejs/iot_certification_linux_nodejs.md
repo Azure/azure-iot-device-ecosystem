@@ -271,6 +271,50 @@ In this section you will run the Azure IoT client SDK samples to validate commun
 
     ![MessageSend_terminal](images/3_3_2_02.png)
 
+### 3.3.3 Verify Device configuration
+
+-   Please install python by following below command.
+
+    **Debian or Ubuntu**
+
+        sudo apt-get install python
+
+    **Fedora**
+
+        sudo dnf install python
+
+-    *This library also requires Python version 2.7.x. You can verify the current version installed in your environment using the following command:*
+    
+          python --version
+
+-	Please install the below modules before you run the `platform_data.py`
+
+    **Debian or Ubuntu** 
+
+        sudo apt-get install python-requests
+		sudo apt-get install python-netifaces
+
+    **Fedora**
+
+        sudo dnf install python-requests
+		sudo dnf install python-netifaces
+
+-   Download the SDK by issuing following command:
+
+        git clone https://github.com/Azure/azure-iot-sdk-python.git
+
+-	Navigate to tools folder by executing following command:
+
+		cd azure-iot-sdk-python/Tools
+
+-	Run the following command on the device
+		
+		python platform_data.py
+
+    ![deviceinfo\_screenshot](images/python_modified_output.png)
+
+-   Please save the device configuration screenshot and upload it as mentioned in [Step 4](#Package).
+
 <a name="PackageShare"></a>
 # Step 4: Package and Share
 
@@ -286,7 +330,9 @@ Package following artifacts from your device:
 
 3.  All the screenshots that are above in "**Receive messages from IoT Hub**" section.
 
-4.  Send us clear instructions of how to run this sample with your hardware
+4.  All the screenshots that are above in "**Device Configuration**" section.
+
+5.  Send us clear instructions of how to run this sample with your hardware
     (explicitly highlighting the new steps for customers). Please use the template available [here](<https://github.com/Azure/azure-iot-device-ecosystem/blob/master/iotcertification/templates/template-linux-nodejs.md>) to create your device-specific instructions.
     
     As a guideline on how the instructions should look please refer the examples published on GitHub repository [here](<https://github.com/Azure/azure-iot-device-ecosystem/tree/master/get_started>).
