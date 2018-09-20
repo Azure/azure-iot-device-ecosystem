@@ -244,7 +244,7 @@ section. These will be needed in [Step 4](#Step-4-2-Share)
 		
         python platform_data.py
 
-    ![deviceinfo\_screenshot](images/python_modified_output.png)
+    ![deviceinfo\_screenshot](images/python_modified_output.PNG)
 
 -   Please save the device configuration screenshot and upload it as mentioned in [Step 4](#Step-4-1-Package).
 
