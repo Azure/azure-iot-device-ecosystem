@@ -32,6 +32,8 @@ For the device to be certified as IoT Edge device, the device needs to pass all 
 
 Below describes the IoT Edge device certification criteria and associated capabilities for each level:
 
+-   Currently we only certify against T1 OS
+
 -   Device management: Basic device management operations (reboot, FW/OS upgrades) triggered by messages from IoT Hub.
 
 -   Security: Azure IoT Edge is secure from the ground up.  However, additional threats with operating at the edge demands security enforcements using secure hardware.  This certification aims to communicate diligence to security above and beyond that provided by Azure IoT Edge as in deployment using HSM secured devices. 
