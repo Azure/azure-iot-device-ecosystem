@@ -1,6 +1,6 @@
 ---
 platform: arduino
-device: Seeed ReButton
+device: seeed rebutton
 language: c
 ---
 
