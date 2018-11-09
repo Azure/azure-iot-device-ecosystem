@@ -164,14 +164,6 @@ This section walks you through building, deploying and validating the IoT Client
 
     Replace the `<iothub_connection_string>` placeholder with IoTHub Connection String you got in [Step 1](#Configure).    
 
--   Run the following commands 
-
-        cd ~/azure-iot-sdk-node
-        build/dev-setup.sh
-        build/build.sh | tee LogFile.txt
-
-    ***Note:*** *LogFile.txt in above command should be replaced with a file name where build output will be written.*
-
 -   Install npm package to run sample.
 
         cd ~/azure-iot-sdk-node/device/samples
