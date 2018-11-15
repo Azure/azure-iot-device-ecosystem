@@ -1,10 +1,10 @@
 ---
-platform: ti-rtos
+platform: ti-rtos freertos
 device: cc3220sf launchpad
 language: c
 ---
 
-Run a simple C sample on [CC3220SF Launchpad](http://www.ti.com/tool/cc3220sf-launchxl) device running TI-RTOS
+Run a simple C sample on [CC3220SF Launchpad](http://www.ti.com/tool/cc3220sf-launchxl) device running TI-RTOS or FreeRTOS
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple C sample on [CC3220SF Launchpad](http://www.ti.com/tool/cc3220sf-la
 
 **About this document**
 
-This document describes how to connect [CC3220SF Launchpad](http://www.ti.com/tool/cc3220sf-launchxl) device running TI-RTOS with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect [CC3220SF Launchpad](http://www.ti.com/tool/cc3220sf-launchxl) device running TI-RTOS or FreeRTOS with Azure IoT SDK. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
