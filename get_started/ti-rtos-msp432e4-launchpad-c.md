@@ -1,10 +1,10 @@
 ---
-platform: ti-rtos
+platform: ti-rtos freertos
 device: msp432e4 launchpad
 language: c
 ---
 
-Run a simple C sample on [MSP432E4 Launchpad](http://www.ti.com/tool/MSP-EXP432E401Y) device running TI-RTOS
+Run a simple C sample on [MSP432E4 Launchpad](http://www.ti.com/tool/MSP-EXP432E401Y) device running TI-RTOS or FreeRTOS
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple C sample on [MSP432E4 Launchpad](http://www.ti.com/tool/MSP-EXP432E
 
 **About this document**
 
-This document describes how to connect [MSP432E4 Launchpad](http://www.ti.com/tool/MSP-EXP432E401Y) device running T-RTOS with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect [MSP432E4 Launchpad](http://www.ti.com/tool/MSP-EXP432E401Y) device running T-RTOS or FreeRTOS with Azure IoT SDK. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
