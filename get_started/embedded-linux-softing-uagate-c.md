@@ -65,7 +65,7 @@ On the MQTT Broker Configuration page you need to enter the following:
 On the `MQTT Topic Settings` page you need to enter the following:
 -   Set the MQTT Root Topic: `devices/<device-id>/messages/events`.
 In the screenshot above: `devices/uagate/messages/events`.
--   Select flattened PLC hierarchy.
+-   Select "Suppressed PLC Symbols".
 -   Set the MQTT payload format string:
 
 ```
