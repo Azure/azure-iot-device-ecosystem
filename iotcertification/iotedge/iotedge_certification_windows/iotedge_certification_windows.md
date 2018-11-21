@@ -121,6 +121,7 @@ The IoT Edge runtime becomes functional at boot via DPS integration or by the us
 **Test steps:**
 
 -   Company must send the edge device to Microsoft for additional validation. We will send detail instructions and information we need when the company submit the device for Azure IoT edge certification.
+    -   Note: Certified for Windows Server 2019 devices are exempt from sending the device to Microsoft for additional validation. Microsoft reserves the right to remove devices from the Azure IoT Device Catalog if the Windows Server 2019 device is not in compliance with the Azure IoT Edge certification program requirements. See [the program agreement](https://catalogstorageprod.blob.core.windows.net/devicecatalogimageserver/Program%20Agreement.pdf) in details.
 -   Company needs to ensure sure that the edge device comes both Azure IoT Edge Security daemon and Moby container management system pre-installed
     -   Microsoft will check that the edge device comes with Azure IoT Edge Security Daemon
     -   Microsoft will check that the edge device comes with Moby container management system
