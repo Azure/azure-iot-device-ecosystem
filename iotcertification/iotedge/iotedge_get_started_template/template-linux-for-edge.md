@@ -81,17 +81,17 @@ Open the command prompt on your IoT Edge device , confirm that the Azure IoT edg
 
     systemctl status iotedge
 
- ![](./images/Capture.PNG)
+ ![](./images/Capture.png)
 
 Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
 
     sudo iotedge list
 
- ![](./images/iotedgedaemon.PNG) 
+ ![](./images/iotedgedaemon.png) 
 
 On the device details page of the Azure, you should see the runtime modules - edgeAgent, edgeHub and tempSensor modueles are under running status
 
- ![](./images/tempSensor.PNG)
+ ![](./images/tempSensor.png)
 
 <a name="Step-3-2-DeviceManagement"></a>
 ## 3.2 Device Management (Mandatory)
@@ -116,7 +116,7 @@ To run the back-end application, open another shell or command prompt window. Th
 
 IoT device client will get the message and report the status to the device twin.
 
- ![](./images/devicetwin.PNG)
+ ![](./images/devicetwin.png)
 
 **Update firmware**
 
@@ -125,7 +125,7 @@ Confirm the IoT hub, Device ID, method name and method payload as below:
 -   Press “call Method” button
 -   Check the returning status as below:
 
- ![](./images/firmware.PNG)
+ ![](./images/firmware.png)
 
 
 ## 3.2.2 Reboot (Using Microsoft SDK Samples):
@@ -137,12 +137,12 @@ Confirm the IoT hub, Device ID, method name as below:
 -   Press “call Method” button
 -   Check the returning status as below:
 
- ![](./images/reboot.PNG)
+ ![](./images/reboot.png)
 
 
 IoT device client will get the message and report the status to the device twin.
 
- ![](./images/devicetwinmessage.PNG)
+ ![](./images/devicetwinmessage.png)
   
 ## 3.3.3 Firmware Update (Modified SDK samples/Custom made application):
 
