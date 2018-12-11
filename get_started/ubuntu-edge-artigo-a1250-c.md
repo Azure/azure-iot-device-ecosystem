@@ -1,12 +1,10 @@
 ---
-platform: Ubuntu 16.04 (X64)
-device: AMOS-3005
-language: English
+platform: ubuntu 16.04
+device: artigo a1250
+language: c
 ---
 
-*We highly recommend keeping this document current, and Microsoft reserves a right to remove devices and documents from the Azure IoT Device Catalog if document contains broken URL links, incorrect information etc.*
-
-Run a simple English sample on AMOS-3005 device running Ubuntu 16.04 (x64)
+Run a simple C sample on ARTiGO A1250 device running Ubuntu 16.04 (x64)
 ===
 ---
 
@@ -16,15 +14,13 @@ Run a simple English sample on AMOS-3005 device running Ubuntu 16.04 (x64)
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Manual Test for Azure IoT Edge on device](#Manual)
--   [Step 4: Next Steps](#NextSteps)
--   [Step 5: Troubleshooting](#Step-5-Troubleshooting)
 
 <a name="Introduction"></a>
 # Introduction
 
 **About this document**
 
-This document describes how to connect AMOS-3005 device running Ubuntu 16.04 (x64) with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
+This document describes how to connect ARTiGO A1250 device running Ubuntu 16.04 (x64) with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
@@ -46,7 +42,7 @@ You should have the following items ready before beginning the process:
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   Install Ubuntu 16.04 (X64) OS on AMOS-3005 device
+-   Install Ubuntu 16.04 (X64) OS on ARTiGO A1250 device
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
@@ -73,17 +69,17 @@ Open the command prompt on your IoT Edge device , confirm that the Azure IoT edg
 
     systemctl status iotedge
 
- ![](./images/Capture.png)
+ ![](./media/ArtiGO/Capture.png)
 
 Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
 
     sudo iotedge list
 
- ![](./images/iotedgedaemon.png) 
+ ![](./media/ArtiGO/iotedgedaemon.png) 
 
 On the device details page of the Azure, you should see the runtime modules - edgeAgent, edgeHub and tempSensor modueles are under running status
 
- ![](./images/tempSensor.png)
+ ![](./media/ArtiGO/tempSensor.png)
 
 <a name="Step-3-2-DeviceManagement"></a>
 ## 3.2 Device Management (Mandatory)
@@ -108,7 +104,7 @@ To run the back-end application, open another shell or command prompt window. Th
 
 IoT device client will get the message and report the status to the device twin.
 
- ![](./images/devicetwin.png)
+ ![](./media/ArtiGO/devicetwin.png)
 
 **Update firmware**
 
@@ -117,7 +113,7 @@ Confirm the IoT hub, Device ID, method name and method payload as below:
 -   Press “call Method” button
 -   Check the returning status as below:
 
- ![](./images/firmware.png)
+ ![](./media/ArtiGO/firmware.png)
 
 
 ## 3.2.2 Reboot (Using Microsoft SDK Samples):
@@ -129,12 +125,12 @@ Confirm the IoT hub, Device ID, method name as below:
 -   Press “call Method” button
 -   Check the returning status as below:
 
- ![](./images/reboot.png)
+ ![](./media/ArtiGO/reboot.png)
 
 
 IoT device client will get the message and report the status to the device twin.
 
- ![](./images/devicetwinmessage.png)
+ ![](./media/ArtiGO/devicetwinmessage.png)
   
 ## 3.3.3 Firmware Update (Modified SDK samples/Custom made application):
 
@@ -146,18 +142,6 @@ If the Client components are custom made please add the steps to execute the Fir
 
 If the Client components are custom made please add the steps to execute the Device Reboot through Direct Methods
 
-**Note**: Client Components must be shipped with the device 
-
-<a name="NextSteps"></a>
-# Step 4: Next steps
-
-Once you shared the documents with us, we will contact you in the following 48 to 72 business hours with next steps.
-
-<a name="Step-5-Troubleshooting"></a>
-# Step 5: Troubleshooting
-
-Please contact engineering support on **<mailto:iotcert@microsoft.com>** for help with troubleshooting.
-  
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md

@@ -1,10 +1,10 @@
 ---
 platform: ubuntu 16.04
-device: artigo a1250
-language: C
+device: amos-3005
+language: c
 ---
 
-Run a simple C sample on ARTiGO A1250 device running Ubuntu 16.04 (x64)
+Run a simple C sample on AMOS-3005 device running Ubuntu 16.04 (x64)
 ===
 ---
 
@@ -14,13 +14,15 @@ Run a simple C sample on ARTiGO A1250 device running Ubuntu 16.04 (x64)
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Manual Test for Azure IoT Edge on device](#Manual)
+-   [Step 4: Next Steps](#NextSteps)
+-   [Step 5: Troubleshooting](#Step-5-Troubleshooting)
 
 <a name="Introduction"></a>
 # Introduction
 
 **About this document**
 
-This document describes how to connect ARTiGO A1250 device running Ubuntu 16.04 (x64) with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
+This document describes how to connect AMOS-3005 device running Ubuntu 16.04 (x64) with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
@@ -42,7 +44,7 @@ You should have the following items ready before beginning the process:
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   Install Ubuntu 16.04 (X64) OS on ARTiGO A1250 device
+-   Install Ubuntu 16.04 (X64) OS on AMOS-3005 device
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
