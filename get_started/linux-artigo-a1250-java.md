@@ -16,14 +16,7 @@ Run a simple JAVA sample on ARTiGO A1250 device running Linux
 -   [Step 3: Build and Run the Sample](#Build)
 -   [Next Steps](#NextSteps)
 
-# Instructions for using this template
-
--   Replace the text in {placeholders} with correct values.
--   Delete the lines {{enclosed}} after following the instructions enclosed between them.
--   It is advisable to use external links, wherever possible.
--   Remove this section from final document.
-
-<a name="Introduction"/>
+<a name="Introduction"></a>
 # Introduction
 
 **About this document**
@@ -42,28 +35,26 @@ You should have the following items ready before beginning the process:
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
 -   ARTiGO-A1250 device.
--   {{Please specify if any other software(s) or hardware(s) are required.}}
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+-   ARTiGO-A1250 device.
 
 <a name="Build"></a>
 # Step 3: Build SDK and Run the sample
 
-<a name="Step_3_1"/>
+<a name="Step_3_1"></a>
 ## 3.1 Install Azure IoT Device SDK and prerequisites on device
 
 -   Open a PuTTY session and connect to the device.
 
 -   Install the prerequisite packages by issuing the following commands from the command line on the device.
 
-<a name="Step_3_1_1"/>
+<a name="Step_3_1_1"></a>
 ### 3.1.1  Install Java JDK and set up environment variables
         
-1.  {{Keep the command set based on your OS and remove the rest.}}
-        
-    {{**Debian**}}
+1.      
+    **Debian**
 
         sudo apt-get update        
         sudo apt-get install openjdk-8-jdk      
@@ -76,17 +67,17 @@ You should have the following items ready before beginning the process:
         
         `deb http://ftp.debian.org/debian testing main`
    
-    {{**Ubuntu**}}
+    **Ubuntu**
 
         sudo apt-get update        
         sudo apt-get install openjdk-8-jdk 
    
-    {{**Fedora**}}
+    **Fedora**
    
         sudo dnf check-update -y
         sudo dnf install java-1.8.0-openjdk-devel
         
-    {{**Any Other Linux OS**}}
+    **Any Other Linux OS**
 
         Use equivalent commands on the target OS
        
@@ -116,20 +107,19 @@ You should have the following items ready before beginning the process:
 
     ***Note***: *Here [PathToJDK] is JDK directory. For example if jdk directory is /usr/lib/jvm/java-8-openjdk-amd64/, export command will be* **export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/**
 
-<a name="Step_3_1_2"/>
+<a name="Step_3_1_2"></a>
 ### 3.1.2  Install Maven and set up environment variables
 
-1.  {{Keep the command set based on your OS and remove the rest.}}
-
-    {{**Debian or Ubuntu**}}
+1.  
+    **Debian or Ubuntu**
 
         sudo apt-get install maven
 
-    {{**Fedora**}}
+    **Fedora**
 
         sudo dnf install maven
    
-    {{**Any Other Linux OS**}}
+    **Any Other Linux OS**
 
         Use equivalent commands on the target OS
 
@@ -149,24 +139,23 @@ You should have the following items ready before beginning the process:
    
 5.  You can verify that the environment variables necessary to run Maven 3 have been set correctly by running `mvn --version`.
 
-<a name="Step_3_1_3"/>
+<a name="Step_3_1_3"></a>
 ### 3.1.3  Install GIT
 
-1.  {{Keep the command set based on your OS and remove the rest.}}
-
-    {{**Debian or Ubuntu**}}
+1.  
+    **Debian or Ubuntu**
 
         sudo apt-get install git
 
-    {{**Fedora**}}
+    **Fedora**
 
         sudo dnf install git   
 
-    {{**Any Other Linux OS**}}
+    **Any Other Linux OS**
 
         Use equivalent commands on the target OS
 
-<a name="Step_3_1_4"/>
+<a name="Step_3_1_4"></a>
 ### 3.1.4 Build the Azure IoT Device SDK for Java
 
 1.  Download the SDK to the board by issuing the following command in PuTTY:
@@ -184,10 +173,10 @@ You should have the following items ready before beginning the process:
 
         azure-iot-sdk-java/device/iothub-java-client/target/iothub-java-client-{version}-with-deps.jar
 
-<a name="Step_3_2"/>
+<a name="Step_3_2"></a>
 ## 3.2 Run and Validate the Samples
 
-<a name="Step_3_2_1"/>
+<a name="Step_3_2_1"></a>
 ### 3.2.1 Send Device Events to IoT Hub:
 
 -   Navigate to the folder containing the executable JAR file for send event sample.
@@ -195,17 +184,16 @@ You should have the following items ready before beginning the process:
         cd azure-iot-sdk-java/device/samples/send-event/target
 
 -   Run the sample by issuing following command.
-{{Keep the command set based on your protocol(s) and remove the rest.}}
 
-    {{**If using AMQPS protocol:**}}
+    **If using AMQPS protocol:**
 
         java -jar ./send-event-{version}-with-deps.jar "{connection string}" "{number of requests to send}" "amqps"
     
-    {{**If using HTTPS protocol:**}}
+    **If using HTTPS protocol:**
 
         java -jar ./send-event-{version}-with-deps.jar "{connection string}" "{number of requests to send}" "https"
 
-    {{**If using MQTT protocol:**}}
+    **If using MQTT protocol:**
 
         java -jar ./send-event-{version}-with-deps.jar "{connection string}" "{number of requests to send}" "mqtt"
           
@@ -217,7 +205,7 @@ You should have the following items ready before beginning the process:
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 
-<a name="Step_3_2_2"/>
+<a name="Step_3_2_2"></a>
 ### 3.2.2 Receive messages from IoT Hub
 
 -   Navigate to the folder containing the executable JAR file for the receive message sample.
@@ -226,15 +214,15 @@ You should have the following items ready before beginning the process:
      
 -   Run the sample by issuing following command.
 
-    {{**If using AMQPS protocol:**}}
+    **If using AMQPS protocol:**
    
         java -jar ./handle-messages-{version}-with-deps.jar "{connection string}" "amqps"
     
-    {{**If using HTTPS protocol:**}}
+    **If using HTTPS protocol:**
    
         java -jar ./handle-messages-{version}-with-deps.jar "{connection string}" "https"
 
-    {{**If using MQTT protocol:**}}
+    **If using MQTT protocol:**
    
         java -jar ./handle-messages-{version}-with-deps.jar "{connection string}" "mqtt"
         
@@ -266,6 +254,6 @@ You have now learned how to run a sample application that collects sensor data a
 [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning
 [Remote monitoring and notifications with Logic Apps]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/get_started/java-devbox-setup.md
-[lnk-setup-iot-hub]: ../../setup_iothub.md
-[lnk-manage-iot-hub]: ../../manage_iot_hub.md
+[lnk-setup-iot-hub]: ../setup_iothub.md
+[lnk-manage-iot-hub]: ../manage_iot_hub.md
 
