@@ -54,6 +54,6 @@ AICS is followed by the following steps:
 
 -   Click on Run tests on AICS.
 -   If all test get passed then Submit the test results and apply for the certification.
--   Once you applied for certification, you will receive a confirmation email from <mailto:iotcert@microsoft.com> for further steps to be follow.
+-   Once you applied for certification, you will receive a confirmation email from [iotcert@microsoft.com](mailto:iotcert@microsoft.com) for further steps to be followed.
 
 If you require more information regarding the program or have any specific query, please [contact us](mailto:iotcert@microsoft.com) with your query and concerns.
