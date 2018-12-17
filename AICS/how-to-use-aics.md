@@ -30,7 +30,7 @@ AICS is followed by the following steps:
     **Note:** Follow the step 3(Build and Validate the sample) onwards only (ignore steps 1 and 2)
 
 -   Copy the auto generated connection string received from AICS and provide in the SDK as per the instruction stated in the SDK guidelines document.
--   Verification of Device Configuration: Save the screen shots of the output and share it to the <mailto:iotcert@microsoft.com>.
+-   Verification of Device Configuration: Save the screen shots of the output and share it to the [iotcert@microsoft.com](mailto:iotcert@microsoft.com).
 -   Click next.
  
  ![](./images/preparedevice.png)
