@@ -1,6 +1,6 @@
 ---
 platform: custom linuix
-device: IG912-H
+device: ig912-h
 language: python
 ---
 
