@@ -40,7 +40,7 @@ You should have the following items ready before beginning the process:
 -   Connect the Goblin 2 Plus using the mini-USB cable.
 -   Select the Arduino/Genuino ZERO board in tools.
 
- ![Monitor](media/goblin/arduino_board.png)
+ ![Monitor](./media/goblin/arduino_board.png)
 
 <a name="Step-3-Build"></a>
 # Step 3: Build and Run the sample
@@ -59,15 +59,15 @@ You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-
 
 2.  On the Configuration tab, paste the IoT Hub connection-string for your IoT hub into IoT Hub connection string and click Update:
 
-    ![hostname](media/goblin/dvsas_1.png)
+    ![hostname](./media/goblin/dvsas_1.png)
 
 3.  Go to the Management tab, click on list to see your devices, click on SAS Token.
 
-    ![hostname](media/goblin/dvsas_2.png)
+    ![hostname](./media/goblin/dvsas_2.png)
 
 4.  Select your device, write the days, then click on generate.
 
-    ![hostname](media/goblin/dvsas_3.png)
+    ![hostname](./media/goblin/dvsas_3.png)
 
 ### Using JavaScript code
 
@@ -86,11 +86,11 @@ You can get the SAS (SharedAccessSignature) Token through this methods: [iothub-
 
     You can see the hostname here
 
-    ![hostname](media/goblin/hostname.png)
+    ![hostname](./media/goblin/hostname.png)
 
     You can see the symmetric key here at the time of create your device
 
-    ![hostname](media/goblin/symmetric_key.png)
+    ![hostname](./media/goblin/symmetric_key.png)
 
 3.  Run the file and copy the output (your SAS Token).
 
@@ -117,11 +117,11 @@ The sample application is hosted on GitHub. Clone the sample repository that con
 
 5.  The JSON and request are building here.
 
-    ![Monitor](media/goblin/json_request.png)
+    ![Monitor](./media/goblin/json_request.png)
 
 6. Compile and run in your goblin 2 plus.
 
-    ![Monitor](media/goblin/compile_and_run.png)
+    ![Monitor](./media/goblin/compile_and_run.png)
 
 ## Verify the sample application is running successfully
 
@@ -130,7 +130,7 @@ You can use the monitor of iothub-explorer to watch your messages coming to IoT 
     $ iothub-explorer monitor-events myDevice --login "connection-string"
 
 
- ![Monitor](media/goblin/monitor.png)
+ ![Monitor](./media/goblin/monitor.png)
 
 <a name="NextSteps"></a>
 # Next Steps
