@@ -16,13 +16,6 @@ Run a simple Csharp sample on WAD-A64U device running Windows 10 IoT Core
 -   [Step 3: Build and Run the Sample](#Build)
 -   [Next Steps](#NextSteps)
 
-# Instructions for using this template
-
--   Replace the text in {placeholders} with correct values.
--   Delete the lines {{enclosed}} after following the instructions enclosed between them.
--   It is advisable to use external links, wherever possible.
--   Remove this section from final document.
-
 <a name="Introduction"></a>
 # Introduction
 
@@ -50,12 +43,10 @@ You should have the following items ready before beginning the process:
 
     Make sure to select the **Universal Windows App Development Tools**, the component required for writing apps Windows 10:
 
--   {{Please specify if any other software(s) or hardware(s) are required.}}
-
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+-   Turn on WAD-A64U and connect to Internet
 
 <a name="Build"></a>
 # Step 3: Build and Run the Sample
