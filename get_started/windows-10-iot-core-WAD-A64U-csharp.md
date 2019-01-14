@@ -1,10 +1,10 @@
 ---
-platform: {Windows 10 IoT Core}
-device: {WAD-A64U}
+platform: {enter the OS name running on device}
+device: {enter your device name here}
 language: csharp
 ---
 
-Run a simple Csharp sample on WAD-A64U device running Windows 10 IoT Core
+Run a simple Csharp sample on {enter your device name here} device running {enter the OS name running on device}
 ===
 ---
 
@@ -16,12 +16,19 @@ Run a simple Csharp sample on WAD-A64U device running Windows 10 IoT Core
 -   [Step 3: Build and Run the Sample](#Build)
 -   [Next Steps](#NextSteps)
 
+# Instructions for using this template
+
+-   Replace the text in {placeholders} with correct values.
+-   Delete the lines {{enclosed}} after following the instructions enclosed between them.
+-   It is advisable to use external links, wherever possible.
+-   Remove this section from final document.
+
 <a name="Introduction"></a>
 # Introduction
 
 **About this document**
 
-This document describes how to connect WAD-A64U device running Windows 10 IoT Core with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect {enter your device name here} device running {enter the OS name running on device} with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -31,66 +38,51 @@ This document describes how to connect WAD-A64U device running Windows 10 IoT Co
 
 You should have the following items ready before beginning the process:
 
--   Computer with Git client installed and access to the
-    [azure-iot-sdk-csharp](https://github.com/Azure/azure-iot-sdk-csharp) GitHub public repository.
+-   [Prepare your development environment][setup-devbox-windows]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   WAD-A64U device.
-
-#### Install Visual Studio 2015 and Tools
-
--   To create Windows IoT Core solutions, you will need to install [Visual Studio 2015](https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx). You can install any edition of Visual Studio, including the free Community edition.
-
-    Make sure to select the **Universal Windows App Development Tools**, the component required for writing apps Windows 10:
+-   {enter your device name here} device.
+-   {{Please specify if any other software(s) or hardware(s) are required.}}
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   Turn on WAD-A64U and connect to Internet
+-   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
 
 <a name="Build"></a>
-# Step 3: Build and Run the Sample
+# Step 3: Build and Run the sample
 
-<a name="Step_3_1:_Connect"/>
-## 3.1 Connect the Device
+-   Download the [Azure IoT SDK](https://github.com/Azure/azure-iot-sdk-csharp) and the sample programs and save them to your local repository.
+-   Open a device console (command prompt or a powershell window) and change to your local SDK **azure-iot-sdk-csharp** directory.
 
--   Connect the board to your network using an Ethernet cable. This step is required, as the sample depends on internet access.
+-  Add the Iot Hub device connection string on your device as an environment variable:
 
--   Plug the device into your computer using a micro-USB cable.
+		setx IOTHUB_DEVICE_CONN_STRING <yourDeviceConnectionString>
 
-<a name="Step_3_2:_Build"/>
-## 3.2  Build the Samples
+-  Run the following command to build the SDK:
 
--   Start a new instance of Visual Studio 2015. Open the **iothub_csharp_client.sln** solution (/azure-iot-sdk-csharp) from your local copy of the repository.
+		build.cmd -config Release
+        
+- From the device console, run the sample using following command:
 
--   In Visual Studio, from **Solution Explorer**, navigate to the **UWPSample(Universal Windows)** project.
+	**If HTTP protocol:**
 
--   Locate the following code in the **ConnectionStrings.cs** file:
+		cd iothub\device\samples\DeviceClientHttpSample\bin\Debug\netcoreapp2.0
+		dotnet DeviceClientHttpSample.dll
 
-        public const string DeviceConnectionString = "<replace>";
+	**If MQTT protocol:**
 
--   Replace the above placeholder with device connection string you obtained in [Step 1](#Prerequisites) and save the changes.
+		cd iothub\device\samples\DeviceClientMqttSample\bin\Debug\netcoreapp2.0
+		dotnet DeviceClientMqttSample.dll
+		
+	**If AMQP protocol:**
 
--   Choose the right architecture (x86 or ARM, depending on your device) and set the debugging method to "Remote Machine":
-    
--   To deploy the binaries on your device, right-click on the UWPSample project in the **Solution Explorer**, select **Properties** and navigate to the **Debug** tab:
+		cd iothub\device\samples\DeviceClientAmqpSample\bin\Debug\netcoreapp2.0
+		dotnet DeviceClientAmqpSample.dll
 
-    Type in the name of your device. Make sure the "Use authentication" box is unchecked.
-
--   Build the solution.
-
-<a name="Step_3_3:_Run"/>
-## 3.3 Run and Validate the Samples
-
-### 3.3.1 Send Device Events to IoT Hub
-
--   In Visual Studio, from **Solution Explorer**, right-click the **UWPSample(Universal Windows)** project, click **Debug &minus;&gt; Start new instance** to build and run the sample. 
-
--   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
-
-### 3.3.2 Receive messages from IoT Hub
-
--   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages to the application.
+-   Use the **DeviceExplorer** utility to observe the messages IoT Hub receives from the **Device Client Sample** application.
+-   Refer "Monitor device-to-cloud events" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) to see the data your device is sending.
+-   Refer "Send cloud-to-device messages" in [DeviceExplorer Usage document](https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md) for instructions on sending messages to device.
 
 <a name="NextSteps"></a>
 # Next Steps
@@ -110,6 +102,6 @@ You have now learned how to run a sample application that collects sensor data a
 [Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps
 [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning
 [Remote monitoring and notifications with Logic Apps]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps
+[setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-csharp/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../../setup_iothub.md
 [lnk-manage-iot-hub]: ../../manage_iot_hub.md
-
