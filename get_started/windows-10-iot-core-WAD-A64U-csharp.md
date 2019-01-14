@@ -4,7 +4,7 @@ device: {WAD-A64U}
 language: csharp
 ---
 
-Run a simple Csharp sample on {WAD-A64U} device running {Windows 10 IoT Core}
+Run a simple Csharp sample on WAD-A64U device running Windows 10 IoT Core
 ===
 ---
 
@@ -28,7 +28,7 @@ Run a simple Csharp sample on {WAD-A64U} device running {Windows 10 IoT Core}
 
 **About this document**
 
-This document describes how to connect {enter your device name here} device running {enter the OS name running on device} with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect WAD-A64U device running Windows 10 IoT Core with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -42,7 +42,7 @@ You should have the following items ready before beginning the process:
     [azure-iot-sdk-csharp](https://github.com/Azure/azure-iot-sdk-csharp) GitHub public repository.
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   {enter your device name here} device.
+-   WAD-A64U device.
 
 #### Install Visual Studio 2015 and Tools
 
