@@ -1,10 +1,10 @@
 ---
-platform: {enter the OS name running on device}
-device: {enter your device name here}
+platform: {Windows 10 IoT Core}
+device: {WAD-A64U}
 language: csharp
 ---
 
-Run a simple Csharp sample on {enter your device name here} device running {enter the OS name running on device}
+Run a simple Csharp sample on WAD-A64U device running Windows 10 IoT Core
 ===
 ---
 
@@ -16,19 +16,12 @@ Run a simple Csharp sample on {enter your device name here} device running {ente
 -   [Step 3: Build and Run the Sample](#Build)
 -   [Next Steps](#NextSteps)
 
-# Instructions for using this template
-
--   Replace the text in {placeholders} with correct values.
--   Delete the lines {{enclosed}} after following the instructions enclosed between them.
--   It is advisable to use external links, wherever possible.
--   Remove this section from final document.
-
 <a name="Introduction"></a>
 # Introduction
 
 **About this document**
 
-This document describes how to connect {enter your device name here} device running {enter the OS name running on device} with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect WAD-A64U device running Windows 10 IoT Core with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -42,7 +35,7 @@ You should have the following items ready before beginning the process:
     [azure-iot-sdk-csharp](https://github.com/Azure/azure-iot-sdk-csharp) GitHub public repository.
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   {enter your device name here} device.
+-   WAD-A64U device.
 
 #### Install Visual Studio 2015 and Tools
 
@@ -50,24 +43,22 @@ You should have the following items ready before beginning the process:
 
     Make sure to select the **Universal Windows App Development Tools**, the component required for writing apps Windows 10:
 
--   {{Please specify if any other software(s) or hardware(s) are required.}}
-
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+-   Turn on WAD-A64U and connect to Internet
 
 <a name="Build"></a>
 # Step 3: Build and Run the Sample
 
-<a name="Step_3_1:_Connect"/>
+<a name="Step_3_1:_Connect"></a>
 ## 3.1 Connect the Device
 
 -   Connect the board to your network using an Ethernet cable. This step is required, as the sample depends on internet access.
 
 -   Plug the device into your computer using a micro-USB cable.
 
-<a name="Step_3_2:_Build"/>
+<a name="Step_3_2:_Build"></a>
 ## 3.2  Build the Samples
 
 -   Start a new instance of Visual Studio 2015. Open the **iothub_csharp_client.sln** solution (/azure-iot-sdk-csharp) from your local copy of the repository.
@@ -88,7 +79,7 @@ You should have the following items ready before beginning the process:
 
 -   Build the solution.
 
-<a name="Step_3_3:_Run"/>
+<a name="Step_3_3:_Run"></a>
 ## 3.3 Run and Validate the Samples
 
 ### 3.3.1 Send Device Events to IoT Hub
