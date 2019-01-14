@@ -4,7 +4,7 @@ device: {WAD-A64U}
 language: csharp
 ---
 
-Run a simple Csharp sample on {enter your device name here} device running {enter the OS name running on device}
+Run a simple Csharp sample on {WAD-A64U} device running {Windows 10 IoT Core}
 ===
 ---
 
