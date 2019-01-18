@@ -51,14 +51,13 @@ You should have the following items ready before beginning the process:
 
 ### 3.1.1  Install Java JDK and set up environment variables
         
-1.  
-        
-    **Debian**
+
+   **Debian**
 
         sudo apt-get update        
         sudo apt-get install openjdk-8-jdk      
    
-    ***Note:*** *If openjdk-8-jdk package is not available, use following steps to add source in sources.list and rerun above commands again.*
+   ***Note:*** *If openjdk-8-jdk package is not available, use following steps to add source in sources.list and rerun above commands again.*
     
     -   Edit /etc/apt/sources.list
     
@@ -66,12 +65,12 @@ You should have the following items ready before beginning the process:
         
         `deb http://ftp.debian.org/debian testing main`
    
-    **Ubuntu**
+   **Ubuntu**
 
         sudo apt-get update        
         sudo apt-get install openjdk-8-jdk 
    
-    **Fedora**
+   **Fedora**
    
         sudo dnf check-update -y
         sudo dnf install java-1.8.0-openjdk-devel
@@ -104,13 +103,13 @@ You should have the following items ready before beginning the process:
 
 ### 3.1.2  Install Maven and set up environment variables
 
-1.  
+1.
 
-    **Debian or Ubuntu**
+   **Debian or Ubuntu**
 
         sudo apt-get install maven
 
-    **Fedora**
+   **Fedora**
 
         sudo dnf install maven
    
@@ -172,17 +171,16 @@ You should have the following items ready before beginning the process:
         cd azure-iot-sdk-java/device/samples/send-event/target
 
 -   Run the sample by issuing following command.
-{{Keep the command set based on your protocol(s) and remove the rest.}}
 
-    {{**If using AMQPS protocol:**}}
+    **If using AMQPS protocol:**
 
         java -jar ./send-event-{version}-with-deps.jar "{connection string}" "{number of requests to send}" "amqps"
     
-    {{**If using HTTPS protocol:**}}
+    **If using HTTPS protocol:**
 
         java -jar ./send-event-{version}-with-deps.jar "{connection string}" "{number of requests to send}" "https"
 
-    {{**If using MQTT protocol:**}}
+    **If using MQTT protocol:**
 
         java -jar ./send-event-{version}-with-deps.jar "{connection string}" "{number of requests to send}" "mqtt"
           
