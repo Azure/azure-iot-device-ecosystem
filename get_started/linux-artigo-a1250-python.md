@@ -16,13 +16,6 @@ Run a simple PYTHON sample on ARTiGO-A1250 device running Linux
 -   [Step 3: Build and Run the Sample](#Build)
 -   [Next Steps](#NextSteps)
 
-# Instructions for using this template
-
--   Replace the text in {placeholders} with correct values.
--   Delete the lines {{enclosed}} after following the instructions enclosed between them.
--   It is advisable to use external links, wherever possible.
--   Remove this section from final document.
-
 <a name="Introduction"></a>
 # Introduction
 
@@ -42,11 +35,11 @@ You should have the following items ready before beginning the process:
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
 -   ARTiGO-A1250 device.
--   {{Please specify if any other software(s) or hardware(s) are required.}}
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+
+-   ARTiGO-A1250 device.
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
@@ -57,7 +50,6 @@ You should have the following items ready before beginning the process:
 -   Open a PuTTY session and connect to the device.
 
 -   Install the prerequisite packages for the Microsoft Azure IoT Device SDK for Python by issuing the following commands from the command line on your board:
-{{***Keep the command set based on your OS and remove the rest.***}}
 
      **Debian or Ubuntu**
 
@@ -70,12 +62,6 @@ You should have the following items ready before beginning the process:
         sudo dnf check-update -y
 
         sudo dnf install libcurl-devel openssl-devel gcc-c++ make cmake git python2.7-dev libboost-python-dev
-
-    **Any Other Linux OS**
-
-        Use equivalent commands on the target OS
-
-    {{***If any other software is required, please specify here the command(s) for installing same.***}}
 
 -   Download the Microsoft Azure IoT Device SDK to the board by issuing the following command on the board::
 
@@ -93,7 +79,6 @@ You should have the following items ready before beginning the process:
         cd azure-iot-sdk-python/device/samples/
 
 -   Edit the following file using any text editor of your choice:
-    {{***Keep the file based on your protocol(s) and remove the rest.***}}
 
     **For AMQP protocol:**
 
@@ -116,7 +101,6 @@ You should have the following items ready before beginning the process:
 ## 3.2 Send Device Events to IoT Hub:
 
 -   Run the sample application using the following command:
-{{***Keep the command set based on your protocol(s) and remove the rest.***}}
 
     **For AMQP protocol:**
 
@@ -155,6 +139,6 @@ You have now learned how to run a sample application that collects sensor data a
 [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning
 [Remote monitoring and notifications with Logic Apps]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps
 [setup-devbox-python]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/get_started/python-devbox-setup.md
-[lnk-setup-iot-hub]: ../../setup_iothub.md
-[lnk-manage-iot-hub]: ../../manage_iot_hub.md
+[lnk-setup-iot-hub]: ../setup_iothub.md
+[lnk-manage-iot-hub]: ../manage_iot_hub.md
 
