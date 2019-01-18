@@ -101,11 +101,7 @@ This section walks you through the test to be performed on the Edge devices runn
 
 **Description:** A device which includes the Azure IoT Edge runtime and dependencies.Download the Azure IoT Edge Runtime from the following path:
 
-For Windows IoT Core, install runtime from the [link](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/iot-edge/how-to-install-iot-core.md).
-
-For Windows x64 (AMD/Intel) to use with Linux containers, install runtime from the [link](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/iot-edge/how-to-install-iot-edge-windows-with-linux.md).
-
-For Windows x64 (AMD/Intel) to use with Windows containers, install runtime from the [link](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/iot-edge/how-to-install-iot-edge-windows-with-windows.md).
+Install runtime from the [link](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/iot-edge/how-to-install-iot-edge-windows.md).
 
 **Details of the requirement:**
 
