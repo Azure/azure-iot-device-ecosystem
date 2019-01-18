@@ -56,4 +56,14 @@ AICS is followed by the following steps:
 -   If all test get passed then Submit the test results and apply for the certification.
 -   Once you applied for certification, you will receive a confirmation email from [iotcert@microsoft.com](mailto:iotcert@microsoft.com) for further steps to be followed.
 
+**Status of your device:**
+
+1.  Draft ( everything before submit the test results ) ,
+2.  Submitted ( once you submit the test results ) ,
+3.  Completed ( if device has passed the certification) ,
+4.  Rejected ( if device fails the certification ).
+
+*Note: Inprogress state is removed. Now we have the above device status only.*
+
+
 If you require more information regarding the program or have any specific query, please [contact us](mailto:iotcert@microsoft.com) with your query and concerns.
