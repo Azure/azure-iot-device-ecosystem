@@ -1,5 +1,5 @@
 ---
-platform: ubuntu sever
+platform: edge-ubuntu sever
 device: qnap ts-253b edge
 language: javascript
 ---
