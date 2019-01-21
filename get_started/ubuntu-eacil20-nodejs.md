@@ -1,5 +1,5 @@
 ---
-platform: ubuntu 18.04
+platform: edge-ubuntu
 device: eacil20
 language: nodejs
 ---
