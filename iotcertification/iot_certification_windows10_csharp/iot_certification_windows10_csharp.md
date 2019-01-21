@@ -36,7 +36,7 @@ by step to ensure end to end understanding.
 
 You should have the following items ready before beginning the process:
 
--   Computer with GitHub installed and access to the [azure-iot-sdk-csharp](https://github.com/Azure/azure-iot-sdk-csharp) GitHub public repository.
+-   Computer with GitHub installed and access to the [azure-iot-sdk-csharp](https://github.com/Azure-Samples/azure-iot-samples-csharp) GitHub public repository.
 -   Install Visual Studio 2015 and Tools. You can install any edition of Visual Studio, including the free Community edition.
 
 <a name="Step_1:_Sign_Up"></a>
@@ -107,7 +107,7 @@ This section walks you through building, deploying and validating the IoT Client
 <a name="Step_3_2:_Build"></a>
 ## 3.2  Build the Samples
 
-1.  Open a device console (command prompt or a powershell window) and change to your local SDK **azure-iot-sdk-csharp** directory.
+1.  Open a device console (command prompt or a powershell window) and change to your local SDK **azure-iot-samples-csharp-master** directory.
 
 2.  Add the Iot Hub device connection string on your device as an environment variable:
 
@@ -136,20 +136,29 @@ section. These will be needed in [Step 4](#Step_4_2:_Share).*
 
 3.  From the device console, run the sample using following command:
 
-	**If HTTP protocol:**
+		cd iot-hub\Samples\device\MessageSample\bin\Release\netcoreapp2.1
+		dotnet MessageSample.dll
+        
+**To run for the different protocols:**	
 
-		cd iothub\device\samples\DeviceClientHttpSample\bin\Debug\netcoreapp2.0
-		dotnet DeviceClientHttpSample.dll
+-   Follow the below commands on device.
 
-	**If MQTT protocol:**
+        cd iot-hub\Samples\device\MessageSample
+        notepad Program.cs
 
-		cd iothub\device\samples\DeviceClientMqttSample\bin\Debug\netcoreapp2.0
-		dotnet DeviceClientMqttSample.dll
-		
-	**If AMQP protocol:**
+-   This launches a text editor. Scroll down to the
+    protocol information.
+    
+-   Find the below code:
 
-		cd iothub\device\samples\DeviceClientAmqpSample\bin\Debug\netcoreapp2.0
-		dotnet DeviceClientAmqpSample.dll
+        private static TransportType s_transportType = TransportType.Amqp;
+	
+    The default protocol used is AMQP. Code for other protocols(HTTP/MQTT) are mentioned just below the above line in the script.
+    Comment/Uncomment the line as per the protocol you want to use and Save the changes by pressing Ctrl+S.
+    
+    We need to build the app to apply the changes. For that follow the steps again from [Step 3.2](#Step_3_2:_Build).
+
+***Note:*** *Ignore if you face any build issues related to the “FileUploadSample” section and continue the steps.*
    
 4. You should be able to see the events received in device console on successful execution.
 
