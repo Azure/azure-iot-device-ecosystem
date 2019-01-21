@@ -1,5 +1,5 @@
 ---
-platform: ubuntu 16.04
+platform: edge-ubuntu
 device: artigo a1250
 language: c
 ---
@@ -37,7 +37,7 @@ You should have the following items ready before beginning the process:
 -   [Sign up to IOT Hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
 -   [Add the Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux)
 -   [Add the Edge Modules](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#deploy-a-module)
--   AMOS-3005 device
+-   ARTiGO A1250 device
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
