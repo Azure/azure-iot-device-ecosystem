@@ -1,5 +1,5 @@
 ---
-platform: ubuntu 16.04
+platform: edge-ubuntu
 device: amos-3005
 language: c
 ---

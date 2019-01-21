@@ -1,5 +1,5 @@
 ---
-platform: ubuntu server 18.04.1
+platform: edge-ubuntu
 device: ndis b537
 language: python
 ---
