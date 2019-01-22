@@ -254,7 +254,7 @@ Dec 11 10:40:25 susietec susietec[371]: [12/11/2018 09:40:25 INF] message receiv
 
 Extract from the log files of SUSiEtec:
 
-````
+```
 [12/11/2018 09:36:17 INF] module Azure stopped
 [12/11/2018 09:36:17 INF] module Azure reconfigured
 [12/11/2018 09:36:17 INF] desired properties have changed
@@ -264,17 +264,19 @@ Extract from the log files of SUSiEtec:
 
 Extract from log files of apt-get:
 
-
+```
 Start-Date: 2018-12-04  06:02:55
 Commandline: /usr/bin/unattended-upgrade
 Upgrade: perl-base:amd64 (5.24.1-3+deb9u4, 5.24.1-3+deb9u5), openssl:amd64 (1.1.0f-3+deb9u2, 1.1.0j-1~deb9u1), perl-modules-5.24:amd64 (5.24.1-3+deb9u4, 5.24.1-3+deb9u5), libperl5.24:amd64 (5.24.1-3+deb9u4, 5.24.1-3+deb9u5), libtiff5:amd64 (4.0.8-2+deb9u2, 4.0.8-2+deb9u4), perl:amd64 (5.24.1-3+deb9u4, 5.24.1-3+deb9u5), libssl1.1:amd64 (1.1.0f-3+deb9u2, 1.1.0j-1~deb9u1)
 End-Date: 2018-12-04  06:03:02
+```
 
+```
 Start-Date: 2018-12-06  11:06:11
 Commandline: apt -qy upgrade
 Upgrade: dotnet-host:amd64 (2.1.6-1, 2.2.0-1), teamviewer:amd64 (13.2.26559, 14.0.14470)
 End-Date: 2018-12-06  11:06:25
-
+```
 
 *Detailed explanation of desired property `osUpdate`:*
 >This property triggers the update of the Operating System. Please enter a timestamp in the near future. The Edge device then tries to update its Operating System as soon as possible and within the limitations of the specified timestamp.
