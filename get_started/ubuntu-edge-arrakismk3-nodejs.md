@@ -54,7 +54,7 @@ You should have the following items ready before beginning the process:
 
 -   Configure your PC to 
 
-        IP-Address: 192.168.2.22
+        IP-Address: 192.168.2.2
         Subnet-mask: 255.255.255.0
 
 -   Use a hyperterminal-tool like putty to access the Arrakis-MK3-IoT on `192.168.2.22` with port 22 (SSH)
