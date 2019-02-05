@@ -10,7 +10,7 @@ How to certify IoT devices running Windows with Azure IoT SDK
 -   [Step 3: Build and Validate the sample using Java client libraries](#Step_3)
     -   [3.1 Install Azure IoT Device SDK and prerequisites on device](#Step_3_1)
     -   [3.2 Run and Validate the Samples](#Step_3_2)
-    -   [3.3 Verify Device configuration](#Step_3_3:_Verification)
+    -   [3.3 Verify Device configuration](#Step_3_3)
 -   [Step 4: Package and Share](#Step_4)
     -   [4.1 Package build logs and sample test results](#Step_4_1)
     -   [4.2 Share with the Azure IoT Certification team](#Step_4_2)
@@ -297,7 +297,7 @@ section. These will be needed in [Step 4](#Step_4_2).*
     **If using AMQP WebSocket protocol:**  
     ![Terminal\_AMQP_WS\_message\_received](images/terminal_amqp_ws_message_received.png)
 
-<a name="#Step_3_3:_Verification"></a>
+<a name="#Step_3_3"></a>
 ## 3.3 Verify Device configuration
 
 - Open Powershell on your device and run the below commands as a Administrator
