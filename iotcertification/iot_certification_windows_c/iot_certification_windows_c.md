@@ -12,6 +12,7 @@ How to certify IoT devices running Windows with Azure IoT SDK
     -   [3.1 Connect the Device](#Step_3_1_Connect)
     -   [3.2 Build the Samples](#Step_3_2_Build)
     -   [3.3 Run and Validate the Samples](#Step_3_3_Run)
+    -   [3.4 Verify Device configuration](#Step_3_4:_Verification)
 -   [Step 4: Package and Share](#Step_4_Package_Share)
     -   [4.1 Package build logs and sample test results](#Step_4_1_Package)
     -   [4.2 Share package with Engineering Support](#Step_4_2_Share)
@@ -206,6 +207,33 @@ section. These will be needed in [Step 4](#Step_4_2_Share).
 	**If using MQTT protocol:**
 
 	![Console\_Notification\_Receive\_mqtt](images/terminal_message_receive_from_device_mqtt.png)
+
+<a name="#Step_3_4:_Verification"></a>
+## 3.4 Verify Device configuration
+
+- Open Powershell on your device and run the below commands as a Administrator
+
+        Get-ComputerInfo -property BiosBIOSVersion, BiosManufacturer, BiosSeralNumber, CsManufacturer, CsModel, CsName, CsNumberOfProcessors, CsProcessors, CsSystemSKUNumber, CsSystemType, OsOperatingSystemSKU | Format-List
+          
+        Get-NetAdapter
+    
+    **If Device connected with Ethernet**
+
+        $uri = 'http://macvendors.co/api/{0}' -f (Get-NetAdapter | Where-Object -Property Name -eq -Value "Ethernet" | Select-Object -property macaddress | foreach { $_.MacAddress })
+
+        (Invoke-WebRequest -uri $uri).content | ConvertFrom-Json | Select-Object -Expand result
+
+    **If Device connected with Wi-fi**
+
+        $uri = 'http://macvendors.co/api/{0}' -f (Get-NetAdapter | Where-Object -Property Name -eq -Value "Wi-fi" | Select-Object -property macaddress | foreach { $_.MacAddress })
+
+        (Invoke-WebRequest -uri $uri).content | ConvertFrom-Json | Select-Object -Expand result
+
+-   Please find the output screenshot below
+
+    ![deviceinfo\_screenshot](images/device_configuration.png)
+
+-   Please save the device configuration screenshot and upload it as mentioned in [Step 4](#Package).
 
 <a name="Step_4_Package_Share"></a>
 # Step 4: Package and Share
