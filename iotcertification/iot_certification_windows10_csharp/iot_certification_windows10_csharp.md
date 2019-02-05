@@ -227,7 +227,7 @@ section. These will be needed in [Step 4](#Step_4_2:_Share).*
 
 -   Please find the output screenshot below
 
-    ![deviceinfo\_screenshot](images/device_configuration.PNG)
+    ![deviceinfo\_screenshot](images/device_configuration.png)
 
 -   Please save the device configuration screenshot and upload it as mentioned in [Step 4](#Package).
 
