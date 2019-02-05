@@ -12,7 +12,7 @@ How to certify IoT devices running Windows with Azure IoT SDK
     -   [3.1 Connect the Device](#Step_3_1_Connect)
     -   [3.2 Build the Samples](#Step_3_2_Build)
     -   [3.3 Run and Validate the Samples](#Step_3_3_Run)
-    -   [3.4 Verify Device configuration](#Step_3_4:_Verification)
+    -   [3.4 Verify Device configuration](#Step_3_4)
 -   [Step 4: Package and Share](#Step_4_Package_Share)
     -   [4.1 Package build logs and sample test results](#Step_4_1_Package)
     -   [4.2 Share package with Engineering Support](#Step_4_2_Share)
@@ -208,7 +208,7 @@ section. These will be needed in [Step 4](#Step_4_2_Share).
 
 	![Console\_Notification\_Receive\_mqtt](images/terminal_message_receive_from_device_mqtt.png)
 
-<a name="#Step_3_4:_Verification"></a>
+<a name="#Step_3_4"></a>
 ## 3.4 Verify Device configuration
 
 - Open Powershell on your device and run the below commands as a Administrator
