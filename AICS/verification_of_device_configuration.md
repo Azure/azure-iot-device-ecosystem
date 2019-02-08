@@ -2,6 +2,8 @@ Verification of Device configuration
 ===
 ---
 
+## For Linux:
+
 -   Please install python by following below command:
 
     **Debian or Ubuntu**
@@ -41,6 +43,40 @@ Verification of Device configuration
         python platform_data.py
 
     ![deviceinfo\_screenshot](images/python_modified_output.PNG)
+
+## For Windows:
+
+-  Open PowerShell command prompt as an Administrator on your device and run the below commands
+
+-   First check your PowerShell version by using the following command.
+
+        $PSversionTable
+
+-  If your current PowerShell version is less than 5.0 then download the PowerShell latest version from [here](https://aka.ms/wmf5download)
+
+    After installation please verify the newly installed version, it should be version 5.1 or greater. 
+
+-   Run the commands below to get device configuration information.
+
+        Get-ComputerInfo -property BiosBIOSVersion, BiosManufacturer, BiosSeralNumber, CsManufacturer, CsModel, CsName, CsNumberOfProcessors, CsProcessors, CsSystemSKUNumber, CsSystemType, OsOperatingSystemSKU | Format-List
+          
+        Get-NetAdapter
+    
+    **If Device connected with Ethernet**
+
+        $uri = 'http://macvendors.co/api/{0}' -f (Get-NetAdapter | Where-Object -Property Name -eq -Value "Ethernet" | Select-Object -property macaddress | foreach { $_.MacAddress })
+
+        (Invoke-WebRequest -uri $uri).content | ConvertFrom-Json | Select-Object -Expand result
+
+    **If Device connected with Wi-fi**
+
+        $uri = 'http://macvendors.co/api/{0}' -f (Get-NetAdapter | Where-Object -Property Name -eq -Value "Wi-fi" | Select-Object -property macaddress | foreach { $_.MacAddress })
+
+        (Invoke-WebRequest -uri $uri).content | ConvertFrom-Json | Select-Object -Expand result
+
+- Please find the output screenshot below
+
+    ![deviceinfo\_screenshot](./images/device_configuration.png)
 
 
 ## Share with the Azure IoT Certification team
