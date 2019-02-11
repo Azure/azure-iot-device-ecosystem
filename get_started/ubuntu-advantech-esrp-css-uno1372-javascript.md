@@ -1,7 +1,7 @@
 ---
 platform: ubuntu
-device: ESRP-CSS-UNO1372 series
-language: JavaScript
+device: esrp-cssuno1372 series
+language: javascript
 ---
 
 Run a simple JavaScript sample on ESRP-CSS-UNO1372 device running Ubuntu 16.04
