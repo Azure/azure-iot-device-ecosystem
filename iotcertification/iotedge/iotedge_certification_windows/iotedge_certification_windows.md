@@ -128,7 +128,7 @@ The IoT Edge runtime becomes functional at boot via DPS integration or by the us
 -   Please allow some time to process and complete the certification process. Microsoft will ship back the edge device upon approval.
 
 <a name="Step-3-2-DeviceManagement"></a>
-## 3.2 Device Management (Mandatory)
+## 3.2 Device Management (Optional)
 *Total number of Level : 1*
 
 **Pre-requisites:** Device Connectivity.
