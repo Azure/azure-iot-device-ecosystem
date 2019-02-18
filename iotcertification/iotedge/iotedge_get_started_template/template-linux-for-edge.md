@@ -94,7 +94,7 @@ On the device details page of the Azure, you should see the runtime modules - ed
  ![](./images/tempSensor.png)
 
 <a name="Step-3-2-DeviceManagement"></a>
-## 3.2 Device Management (Mandatory)
+## 3.2 Device Management (Optional)
 
 **Pre-requisites:** Device Connectivity.
 
