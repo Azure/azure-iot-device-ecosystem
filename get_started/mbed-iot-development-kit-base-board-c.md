@@ -58,7 +58,7 @@ Use of [Multi Sensor shield][lnk-hw-multisense] is optional. Simulated sensor da
 Combine [IoT IDK Base Board][lnk-hw-baseboard] with [Multi Sensor shield][lnk-hw-multisense] as shown in the figure below.
 Then connect the [IoT IDK Base Board][lnk-hw-baseboard] board to your PC using a mini USB cable.
 
-![][img-bb-ms-angle]
+![](./media/iot-idk/BaseBoard-MultisensorBoard-Angle.png)
 
 <a name="Build"></a>
 # Step 3: Build SDK and Run the sample
@@ -70,7 +70,9 @@ Then connect the [IoT IDK Base Board][lnk-hw-baseboard] board to your PC using a
 3.  Update opened configuration header definition ```IOTHUB_CONNECTION_STRING``` with the credentials retrieved during device registration as described in [Step 1.1][lnk-manage-iot-hub].
    Also update ```AP_SSID``` and ```AP_PASSPHRASE``` with SSID and password of your Wi-Fi access point.
    Optionally update ```USE_SIMULATED_SENSOR_DATA``` definition to ```true``` if you wish to run the sample without [Multi Sensor shield][lnk-hw-multisense].
-   ![][img-ide-configuration]
+   
+   ![](./media/iot-idk/IDK-ConfigurationHeader.png)
+
 4.  Save updated configuration file and build the project by clicking the build project icon in toolbar.
    ![][img-ide-build]
 5.  To flash the compiled program into [IDK Base Board][lnk-hw-baseboard] follow these steps:
@@ -166,8 +168,6 @@ You have now learned how to run a sample application that collects sensor data a
 
 [lnk-hw-baseboard]:https://www.onsemi.com/PowerSolutions/evalBoard.do?id=BB-GEVK
 [lnk-hw-multisense]:https://www.onsemi.com/PowerSolutions/evalBoard.do?id=MULTI-SENSE-GEVB
-
-[img-bb-ms-angle]: ./media/iot-idk/BaseBoard-MultiSensorBoard-Angle.png
 [img-ide-example-menu]: ./media/iot-idk/IDK-ExamplesMenu.png
 [img-ide-configuration]: ./media/iot-idk/IDK-ConfigurationHeader.png
 [img-ide-build]: ./media/iot-idk/IDK-Build.png
