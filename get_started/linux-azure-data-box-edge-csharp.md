@@ -4,7 +4,7 @@ device: azure data box edge
 language: csharp
 ---
 
-Run a simple C# sample on Azure Data Box Edge device running Ubuntu Sever 16.04
+Run a simple C# sample on Azure Data Box Edge device running Linux
 ===
 ---
 
@@ -20,7 +20,7 @@ Run a simple C# sample on Azure Data Box Edge device running Ubuntu Sever 16.04
 
 ### About this document:
 
-This document describes how to connect Azure Data Box Edge device running enter the OS name running on edge device with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
+This document describes how to connect Azure Data Box Edge device running Linux with IoT Hub with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
 
 **Azure Data Box Edge** is a storage solution that allows you to process data and send it over network to Azure. This article provides you an overview of the **Data Box Edge solution, benefits, key capabilities, and the scenarios** where you can deploy this device.
 
@@ -32,11 +32,11 @@ Data Box Edge has all the gateway capabilities of Data Box Gateway. Data Box is 
 
 **Data Box Edge has the following benefits:**
 
+-   *Transform data* - Enables analysis, processing, or filtering of data as it moves to Azure.
 -   *Easy data transfer* - Makes moving data in and out of Azure storage as easy as working with a local network share.
 -   *High performance* - Enables high-performance transfers to and from Azure.
 -   *Fast access* - Caches most recent files for fast access of on-premises files.
 -   *Limited bandwidth usage* - Data can be written to Azure even when the network is throttled to limit usage during peak business hours.
--   *Transform data* - Enables analysis, processing, or filtering of data as it moves to Azure.
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
