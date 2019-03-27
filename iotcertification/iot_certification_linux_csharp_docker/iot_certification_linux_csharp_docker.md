@@ -108,7 +108,7 @@ This sections walks you through building a Linux Docker image and running the im
 <a name="Step_3_2:_Build"></a>
 ## 3.2 Build and push the Docker image to your registry
 
-Using [this Dockerfile](TODO), build a Docker image that is based on the [.NET Core Arm32 Linux image](https://hub.docker.com/_/microsoft-dotnet-core-samples/):
+Using [this Dockerfile](https://github.com/nicolehaugen79/azure-iot-device-ecosystem/blob/csharp_linux/iotcertification/iot_certification_linux_csharp_docker/Dockerfile), build a Docker image that is based on the [.NET Core Arm32 Linux image](https://hub.docker.com/_/microsoft-dotnet-core-samples/):
 
 -   In your development environment, open the directory containing [azure-iot-sdk-csharp](https://github.com/Azure-Samples/azure-iot-samples-csharp); specifically, open the following directory:
 
