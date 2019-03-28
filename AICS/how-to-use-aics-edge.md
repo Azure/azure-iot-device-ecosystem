@@ -4,7 +4,7 @@ Azure IoT Edge Certification Services
 
 This document describes IoT Edge Certification process through AICS. 
 
-You can submit your device on <https://catalog.azureiotsolutions.com/> devices. Make sure to check the **Edge Certified** checkbox to enable Edge testing. Once the device details are submitted you will be directed to AICS.
+You can submit your device on <https://catalog.azureiotsolutions.com/devices>. Make sure to check the **Edge Certified** checkbox to enable Edge testing. Once the device details are submitted you will be directed to AICS.
 
 AICS Edge Certification consists of the following steps:
 
