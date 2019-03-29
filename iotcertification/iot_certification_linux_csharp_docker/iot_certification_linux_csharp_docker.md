@@ -46,7 +46,7 @@ You should have the following items ready before beginning the process:
 <a name="Step-1-Configure"></a>
 # Step 1: Sign Up To Azure IoT Hub
 
-[Sign up](https://account.windowsazure.com/signup?offer=ms-azr-0044p) to the Azure IoT Hub service and follow the instructions mentioned [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-csharp-csharp-getstarted#create-an-iot-hub). As part of the sign up process, you will receive the connection string.
+[Sign up](https://account.windowsazure.com/signup?offer=ms-azr-0044p) to the Azure IoT Hub service and follow the instructions mentioned [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-csharp-csharp-getstarted#create-an-iot-hub). Refer to [this documentation](https://devblogs.microsoft.com/iotdev/understand-different-connection-strings-in-azure-iot-hub/) on how to find the connection string for your IoT Hub.
 
 -   **IoT Hub Connection String**: An example of IoT Hub Connection String is as below:
 
@@ -108,13 +108,13 @@ This sections walks you through building a Linux Docker image and running the im
 <a name="Step_3_2:_Build"></a>
 ## 3.2 Build and push the Docker image to your registry
 
-Using [this Dockerfile](https://github.com/nicolehaugen79/azure-iot-device-ecosystem/blob/csharp_linux/iotcertification/iot_certification_linux_csharp_docker/Dockerfile), build a Docker image that is based on the [.NET Core Arm32 Linux image](https://hub.docker.com/_/microsoft-dotnet-core-samples/):
+Using [this Dockerfile](https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/iot_certification_linux_csharp_docker/Dockerfile), build a Docker image that is based on the [.NET Core Arm32 Linux image](https://hub.docker.com/_/microsoft-dotnet-core-samples/):
 
 -   In your development environment, open the directory containing [azure-iot-sdk-csharp](https://github.com/Azure-Samples/azure-iot-samples-csharp); specifically, open the following directory:
 
         iot-hub\Samples\device\MessageSample
 
--   Copy and paste [this Dockerfile](TODO) to the MessageSample directory shown above.
+-   Copy and paste [this Dockerfile](https://github.com/Azure/azure-iot-device-ecosystem/iotcertification/iot_certification_linux_csharp_docker/Dockerfile) to the MessageSample directory shown above.
 -   Add the IoT Hub device connection string as an environment variable within the Dockerfile.  Specifically, open the Dockerfile and replace '<your_device_connection_string>' with your device connection string and save your changes.
 -   Using Docker and the Dockerfile, build a Docker image that containerizes the .NET Core Message Sample app.  Next, push this image to your Docker registry.  For example:
 
@@ -190,7 +190,8 @@ section. These will be needed in [Step 4](#Step_4_2:_Share).*
 
 ### 3.3.2 Receive messages from IoT Hub
 
-1.  To verify that you can send messages from the IoT Hub to your device, go to the **Messages to Device** tab in DeviceExplorer.
+1.  To verify that you can send messages from the IoT Hub to your device, go to the **Messages to Device** tab in DeviceExplorer.  Note that you will need to run the sample ap again on your device using the same command as in the previous step, such as:
+        docker run --rm <your_docker_account>/<your_docker_repo>:<your_img_tag>
 
 2.  Select the device you created using Device ID drop down.
 
