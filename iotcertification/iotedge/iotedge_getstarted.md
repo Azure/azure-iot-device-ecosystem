@@ -36,16 +36,6 @@ Below describes the IoT Edge device certification criteria and associated capabi
 
 -   Device management: Basic device management operations (reboot, FW/OS upgrades) triggered by messages from IoT Hub.
 
--   Security: Azure IoT Edge is secure from the ground up.  However, additional threats with operating at the edge demands security enforcements using secure hardware.  This certification aims to communicate diligence to security above and beyond that provided by Azure IoT Edge as in deployment using HSM secured devices. 
-The below capabilities describe the risks within the devices mitigation capabilities. It is neither a security guarantee nor a statement of the strength of security. 
-
-    ![](images/1.PNG)
-
-
-    ![](images/2.PNG)
-
-Read Microsoft’s approach to deliver a secure platform for Azure IoT Edge devices in [Securing the intelligent edge](https://azure.microsoft.com/en-us/blog/securing-the-intelligent-edge/) blog. Microsoft is working on to define validation process for security requirement including exploration of leveraging 3rd party validation labs.
-
 Please click [here](https://github.com/Azure/azure-iotedge/blob/master/LICENSE) for MICROSOFT SOFTWARE LICENSE TERMS for IoT Edge runtime
 
 # Next steps
