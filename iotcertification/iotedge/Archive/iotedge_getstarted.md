@@ -25,7 +25,8 @@ Each capability contains its own leveling with **Level 1** being the lowest.
 For the device to be certified as IoT Edge device, the device needs to pass all mandatory requirements:
 
 -   [Mandatory] Edge runtime (Level 1 only)
--   [Optional] Device management (Level 1 only)
+-   [Mandatory] Device management (Level 1 only)
+-   [Optional] Security (4 levels: Level 1 – 4)
 
 # Certification Criteria: Description of capabilities and levels
 
@@ -36,6 +37,16 @@ Below describes the IoT Edge device certification criteria and associated capabi
 -   Azure IoT Edge Runtime:  Device should be capable of running IoT Edge Runtime.
 
 -   Device management: Basic device management operations (reboot, FW/OS upgrades) triggered by messages from IoT Hub.
+
+-   Security: Azure IoT Edge is secure from the ground up.  However, additional threats with operating at the edge demands security enforcements using secure hardware.  This certification aims to communicate diligence to security above and beyond that provided by Azure IoT Edge as in deployment using HSM secured devices. 
+The below capabilities describe the risks within the devices mitigation capabilities. It is neither a security guarantee nor a statement of the strength of security. 
+
+    ![](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/iotcertification/iotedge/images/1.PNG)
+
+
+    ![](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/iotcertification/iotedge/images/2.PNG)
+
+Read Microsoft’s approach to deliver a secure platform for Azure IoT Edge devices in [Securing the intelligent edge](https://azure.microsoft.com/en-us/blog/securing-the-intelligent-edge/) blog. Microsoft is working on to define validation process for security requirement including exploration of leveraging 3rd party validation labs.
 
 Please click [here](https://github.com/Azure/azure-iotedge/blob/master/LICENSE) for MICROSOFT SOFTWARE LICENSE TERMS for IoT Edge runtime
 
