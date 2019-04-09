@@ -1,4 +1,4 @@
-﻿# Introduction
+# Introduction
 
 **About this document**
 
@@ -25,14 +25,15 @@ Each capability contains its own leveling with **Level 1** being the lowest.
 For the device to be certified as IoT Edge device, the device needs to pass all mandatory requirements:
 
 -   [Mandatory] Edge runtime (Level 1 only)
--   [Mandatory] Device management (Level 1 only)
--   [Optional] Security (4 levels: Level 1 – 4)
+-   [Optional] Device management (Level 1 only)
 
 # Certification Criteria: Description of capabilities and levels
 
 Below describes the IoT Edge device certification criteria and associated capabilities for each level:
 
 **Note:** Currently we only certify against [T1 OS](https://docs.microsoft.com/en-us/azure/iot-edge/support)
+
+-   Azure IoT Edge Runtime:  Device should be capable of running IoT Edge Runtime.
 
 -   Device management: Basic device management operations (reboot, FW/OS upgrades) triggered by messages from IoT Hub.
 
@@ -45,4 +46,3 @@ You have now learned about the overview of Azure Certified for IoT program exten
 Read more details about specific requirements and validation process to be certified as Azure IoT Edge devices. 
 
 If you have any questions, please contact Azure Certified for IoT [iotcert@microsoft.com](mailto:iotcert@microsoft.com).
-
