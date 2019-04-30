@@ -10,11 +10,11 @@ Use a Infineon OPTIGA&trade; TPM SLx 9670 on a Raspberry Pi 3B running Raspbian 
 
 ## Create and provision an IoT Edge device with a Infineon OPTIGA&trade; TPM SLx 9670 on a Raspberry Pi 3B running Raspbian Linux OS.
 
-Azure IoT Edge devices can be automatically provisioned using the [Device Provisioning Service](../iot-dps/index.yml). If you're unfamiliar with the process of autoprovisioning, review the [autoprovisioning concepts](../iot-dps/concepts-auto-provisioning.md) before continuing. 
+Azure IoT Edge devices can be automatically provisioned using the [Device Provisioning Service](https://docs.microsoft.com/en-us/azure/iot-dps/index). If you're unfamiliar with the process of autoprovisioning, review the [autoprovisioning concepts](https://docs.microsoft.com/en-us/azure/iot-dps/concepts-auto-provisioning) before continuing. 
 
 This article shows you how to test autoprovisioning on a IoT Edge device with the following steps: 
 
--   Install Raspbian Linux OS (https://raspberrypi.org)
+-   Install Raspbian Linux OS (<https://raspberrypi.org>)
 -   Enable Support for Infineon OPTIGA&trade; TPM SLx 9670 on Rasbian using a device tree overlay
 -   Create an instance of IoT Hub Device Provisioning Service (DPS).
 -   Create an individual enrollment for the device
@@ -44,7 +44,7 @@ In the following guide SLx 9670 will be used as a placeholder and includes all o
 In this section, you will install and configure Rasbian on a Raspberry Pi and enable support for the TPM, so that you can use it for testing how automatic provisioning works with IoT Edge.
 
 1.  Download latest Raspbian (2018-11) and flash onto SD Card
-   (see https://www.raspberrypi.org/documentation/installation/installing-images/README.md for details)
+   (see <https://www.raspberrypi.org/documentation/installation/installing-images/README.md> for details)
 2.  Plugin IRIDIUM9670 Board on Raspberry Pi Header.
   -   The chips must be facing the outside of the Raspberry Pi.
   -   Pin 1 of the IRIDIUM9670 must align with Pin 1 of the Raspberry Pi.
@@ -85,7 +85,7 @@ On the Raspberry Pi, build a C SDK tool that you can use to retrieve the device'
 
 ## Set up the IoT Hub Device Provisioning Service
 
-Create a new instance of the IoT Hub Device Provisioning Service in Azure, and link it to your IoT hub. You can follow the instructions in [Set up the IoT Hub DPS](../iot-dps/quick-setup-auto-provision.md).
+Create a new instance of the IoT Hub Device Provisioning Service in Azure, and link it to your IoT hub. You can follow the instructions in [Set up the IoT Hub DPS](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision).
 
 After you have the Device Provisioning Service running, copy the value of **ID Scope** from the overview page. You use this value when you configure the IoT Edge runtime. 
 
@@ -93,7 +93,7 @@ After you have the Device Provisioning Service running, copy the value of **ID S
 
 Retrieve the provisioning information from your virtual machine, and use that to create an individual enrollment in Device Provisioning Service. 
 
-When you create an enrollment in DPS, you have the opportunity to declare an **Initial Device Twin State**. In the device twin, you can set tags to group devices by any metric you need in your solution, like region, environment, location, or device type. These tags are used to create [automatic deployments](how-to-deploy-monitor.md). 
+When you create an enrollment in DPS, you have the opportunity to declare an **Initial Device Twin State**. In the device twin, you can set tags to group devices by any metric you need in your solution, like region, environment, location, or device type. These tags are used to create [automatic deployments](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-deploy-monitor). 
 
 
 1.  In the [Azure portal](https://portal.azure.com), and navigate to your instance of IoT Hub Device Provisioning Service. 
@@ -135,7 +135,7 @@ The IoT Edge runtime is deployed on all IoT Edge devices. Its components run in 
 
 Know your DPS **ID Scope** and device **Registration ID** before beginning the article that matches your device type. Make sure to configure the IoT Edge runtime for automatic, not manual, provisioning. For Rasberry Pi we use ARM32v7/armhf.
 
--   [Install the Azure IoT Edge runtime on Linux (ARM32v7/armhf)](how-to-install-iot-edge-linux-arm.md)
+-   [Install the Azure IoT Edge runtime on Linux (ARM32v7/armhf)](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux-arm)
 
 ## Give IoT Edge access to the TPM
 
@@ -241,4 +241,4 @@ You can verify that the individual enrollment that you created in Device Provisi
 
 ## Next steps
 
-The Device Provisioning Service enrollment process lets you set the device ID and device twin tags at the same time as you provision the new device. You can use those values to target individual devices or groups of devices using automatic device management. Learn how to [Deploy and monitor IoT Edge modules at scale using the Azure portal](how-to-deploy-monitor.md) or [using Azure CLI](how-to-deploy-monitor-cli.md).
+The Device Provisioning Service enrollment process lets you set the device ID and device twin tags at the same time as you provision the new device. You can use those values to target individual devices or groups of devices using automatic device management. Learn how to [Deploy and monitor IoT Edge modules at scale using the Azure portal](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-deploy-monitor) or [using Azure CLI](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-deploy-monitor-cli).
