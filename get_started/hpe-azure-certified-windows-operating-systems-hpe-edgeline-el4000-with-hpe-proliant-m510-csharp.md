@@ -1,4 +1,4 @@
-    ---
+---
 platform: hpe-azure-certified-windows-operating-systems
 device: hpe el4000 (with hpe proliant m510)
 language: csharp
