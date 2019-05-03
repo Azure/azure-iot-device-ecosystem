@@ -4,7 +4,7 @@ device: hpe edgeline eL4000 with hpe proLiant m510
 language: csharp
 ---
 
-Create and configure an Azure IoT Edge device using an HPE EL4000 with HPE ProLiant m510 running an Azure IoT Edge supported Ubutnu Server 16.04
+Create and configure an Azure IoT Edge device using an HPE EL4000 with HPE ProLiant m510 running an Azure IoT Edge supported [Tier 1 OS][lnk-edge-support]
 ===
 ---
 
