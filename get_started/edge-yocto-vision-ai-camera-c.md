@@ -118,14 +118,14 @@ To deploy an sample AI model, we will use the **AI Vision Dev Kit Get Started Mo
 
    Version 1.0.16 or higher of the get started module requires updated Container Create Options settings. Please replace the current Container Create Options values with the following and hit `Save`:
 
-![](./media/vision-ai-camera/2.png)
+![](./media/vision-ai-camera/2.PNG)
 
 
 **Note:** *This step won’t be required by customers once released.*
 
 **Note:** *On the latest firmware, a regression has been introduced. To work around it, click on Configure advanced Edge runtime settings and replace the Create Options of the Edge Hub with the following:*
 
-![](./media/vision-ai-camera/3.png)
+![](./media/vision-ai-camera/3.PNG)
 
 **Note:** *Some reliability issues have been found with the current version of the edgeHub. To fix them, click on `Configure advanced Edge runtime settings `replace the Edge Hub Image from `mcr.microsoft.com/azureiotedge-hub:1.0` with `mcr.microsoft.com/azureiotedge-hub:1.0.7-rc2` and the Edge Agent Image from `mcr.microsoft.com/azureiotedge-agent:1.0` with `mcr.microsoft.com/azureiotedge-agent:1.0.7-rc2`. This will be fixed automatically with 1.0.7 release. Click the `Save` button.*
 
