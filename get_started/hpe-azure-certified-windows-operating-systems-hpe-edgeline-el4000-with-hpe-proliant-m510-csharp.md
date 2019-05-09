@@ -4,7 +4,7 @@ device: hpe el4000 (with hpe proliant m510)
 language: csharp
 ---
 
-Run a simple Csharp sample on a Hewlett Packard Enterprose Edgeline EL4000 (with HPE ProLiant m510) device running a HPE Azure Certified Windows Operating System
+Run a simple Csharp sample on a Hewlett Packard Enterprise Edgeline EL4000 (with HPE ProLiant m510) device running a HPE Azure Certified Windows Operating System
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple Csharp sample on a Hewlett Packard Enterprose Edgeline EL4000 (with
 
 **About this document**
 
-This document describes how to connect Hewlett Packard Enterprose Edgeline EL4000 (with HPE ProLiant m510) device running a HPE Azure Certified Windows Operating Sytem with Azure IoT SDK. A HPE Azure Certified Windows operating system is one in which a number of tests were run with the HPE Edgeline EL4000 (with HPE ProLiant m510) device and the test results were submitted to Microsoft for certification. These operating systems include: Windows 10, Windows Server 2012R2, and Windows Server 2016. This multi-step process includes:
+This document describes how to connect Hewlett Packard Enterprise Edgeline EL4000 (with HPE ProLiant m510) device running a HPE Azure Certified Windows Operating System with Azure IoT SDK. A HPE Azure Certified Windows operating system is one in which a number of tests were run with the HPE Edgeline EL4000 (with HPE ProLiant m510) device and the test results were submitted to Microsoft for certification. These operating systems include: Windows 10, Windows Server 2012R2, and Windows Server 2016. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Registering the IoT device
@@ -35,7 +35,7 @@ Have the following items ready before beginning the process:
 -   [Prepare the development environment][setup-devbox-windows]
 -   [Setup the IoT hub][lnk-setup-iot-hub]
 -   [Provision the device and get its credentials][lnk-manage-iot-hub]
--   Hewlett Packard Enterprose Edgeline EL4000 (with HPE ProLiant m510) device.
+-   Hewlett Packard Enterprise Edgeline EL4000 (with HPE ProLiant m510) device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare the Device
