@@ -66,7 +66,7 @@ access policies).
 -   **Policy Key:** Is the Primary key of registryReadWrite
 -   **Endpoint:** Azure endpoint is IoTHubName.azure‑devices.net (e.g. NewSampleIoTHub.azure‑devices.net)
 
-![](./media/cloudrail/1.png)
+![](./media/cloudrail/1.PNG)
 
 ## Adding Azure Credentials to Credentials Manager (Recommended)
 
@@ -74,7 +74,7 @@ access policies).
 
 To add Azure credentials to **Credential Manager**. Click on the credential logo as shown below. Select Azure and afterwards press the **Add Credentials** button.
 
-![](./media/cloudrail/2.png)
+![](./media/cloudrail/2.PNG)
 
 To add Azure Credentials you need the following
 
@@ -84,11 +84,11 @@ To add Azure Credentials you need the following
 
 After you have added all the fields press the Add Credentials button
 
-![](./media/cloudrail/3.png)
+![](./media/cloudrail/3.PNG)
 
 Once you have added the credentials you should see them in the Credential Manager. You can view the credential, edit or delete. Now you can use this credential's to easy add devices by going to the section [Adding a Device](https://devices.cloudrail.com/documentation).
 
-![](./media/cloudrail/4.png)
+![](./media/cloudrail/4.PNG)
 
 ## Manually Creating Device in Azure
 
@@ -117,21 +117,21 @@ Once in the **Device details** you need the following to manually add the device
 
 To add a device go to the **Boxes** page and click on **New Connection**
 
-![](./media/cloudrail/5.png)
+![](./media/cloudrail/5.PNG)
 
 For this example we will use a Temperature sensor and it will send data after every 2 seconds (2000 milliseconds) interval
 
 Select the Temperature sensor (from Port 1) and press **Next Step** button.
 
-![](./media/cloudrail/6.png)
+![](./media/cloudrail/6.PNG)
 
 Select the Frequency as Interval. Enter 2000 ms and press the **Next** button.
 
-![](./media/cloudrail/7.png)
+![](./media/cloudrail/7.PNG)
 
 On the Cloud Platform services select Azure.
 
-![](./media/cloudrail/8.png)
+![](./media/cloudrail/8.PNG)
 
 If you have credentials added for Azure you can go to [Create device](https://devices.cloudrail.com/documentation). For [Automatically add a device](https://devices.cloudrail.com/documentation) or [Manually add a device](https://devices.cloudrail.com/documentation)
 
@@ -161,7 +161,7 @@ To add a device automatically you need the following
 To create a new device, enter a device name (e.g. temp_device) and press the **Create** button.
 **Note:** For manually adding a device, the Device Name must be the same as the one added in Azure
 
-![](./media/cloudrail/9.png)
+![](./media/cloudrail/9.PNG)
 
 ## Device Metadata
 
@@ -171,7 +171,7 @@ The important information is **MQTT** topic subscribe or publish to device depen
 
 Data Scheme (JSON type of data) and **Data Sample** which you receieve from the device or send to device.
 
-![](./media/cloudrail/10.png)
+![](./media/cloudrail/10.PNG)
 
 ## Subscribe to device
 
@@ -179,11 +179,11 @@ For subscibe to device we will use the existing Temperature Sensor that we added
 
 You can connect this device to [Power Bi](https://powerbi.microsoft.com/en-us/) and see the information from the sensor
 
-![](./media/cloudrail/11.png)
+![](./media/cloudrail/11.PNG)
 
 You can also get basic information to tell if the device is active by seeing last activity.
 
-![](./media/cloudrail/12.png)
+![](./media/cloudrail/12.PNG)
 
 ## Publish to device
 
@@ -191,27 +191,27 @@ Before we publish to device we will add new device, Tower Light (e.g tower‑lig
 
 Once we have added the device we can use the Data Sample to publish to device.
 
-![](./media/cloudrail/13.png)
+![](./media/cloudrail/13.PNG)
 
 Now go to the device (e.g. tower‑light) in the IoT devices. On in the Device details click on the **Message to device** button.
 
-![](./media/cloudrail/14.png)
+![](./media/cloudrail/14.PNG)
 
 In **Message** to device add the sample data JSON from the device metadata to the **Mesage Body** and press the **Send Message** button and this will send the data to the device.
 
-![](./media/cloudrail/15.png)
+![](./media/cloudrail/15.PNG)
 
 ## Device Twin (Shadow)
 
 Before we use the Twins (Shadow) feature, we will add new device, Tower Light (e.g tower_light) sensor to port 2. When selecting the device name click in the **advanced configuration** and check the box for **use device shadows**. To add a device see section [Adding a Device](https://devices.cloudrail.com/documentation).
 
-![](./media/cloudrail/16.png)
+![](./media/cloudrail/16.PNG)
 
 Now the device is already configured to use Azure Twins and CloudRail Box will handle the Twins tasks that should be handled by the device, like receiving updates on Twins changes, apply those updates on the device, and report back the state to the Twins.
 
 The topics related to the Twins can be seen in the **details page** configured device.
 
-![](./media/cloudrail/17.png)
+![](./media/cloudrail/17.PNG)
 
 For better understanding on how to operate with device Twins (shadows) from the Azure point of view, you can check their own documentation and specifications, we`ve gathered some of the references that can be helpful:
 
