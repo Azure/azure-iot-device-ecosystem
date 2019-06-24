@@ -1,14 +1,19 @@
 ---
-platform: {enter the OS name running on edge device}
-device: {enter your device name here}
-language: {enter the language used to you edge device}
+platform: {Sumo Yocto 2.5}
+device: {APC3710}
+language: {English}
 ---
+
+
 
 *We highly recommend keeping this document current, and Microsoft reserves a right to remove devices and documents from the Azure IoT Device Catalog if document contains broken URL links, incorrect information etc.*
 
 Run a simple {enter the language used to you edge device} sample on {enter your device name here} device running {enter the OS name running on edge device. Specify distribution or Windows SKU information. Ex: Ubuntu Sever 16.04, Windows 10 IoT Core. Only [Tier 1 OS](https://docs.microsoft.com/en-us/azure/iot-edge/support) is allowed}
 ===
 ---
+
+Create and configure an Azure IoT Edge device using an APC3710 running an Azure IoT Edge supported Tier 1 OS
+
 
 # Table of Contents
 
@@ -54,12 +59,22 @@ You should have the following items ready before beginning the process:
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+-   {Follow the instructions in the Operating System Deployment on APC3710 User Guide to install the Operating System onto the device.(https://pan.wps.cn/l/sK8DnHNeI)}
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
 
 This section walks you through the test to be performed on the Edge devices running the Linux operating system such that it can qualify for Azure IoT Edge certification.
+
+[Prepare device for IoT Edge runtime installation](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux#register-microsoft-key-and-software-repository-feed)
+
+[Install the container runtime](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux#install-the-container-runtime)
+
+[Install the Azure IoT Edge runtime](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux#install-the-azure-iot-edge-security-daemone)
+
+[Configure the Azure IoT Edge runtime](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux#configure-the-azure-iot-edge-security-daemon)
+
+[Verify success](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-linux#verify-successful-installation)
 
 <a name="Step-3-1-IoTEdgeRunTime"></a>
 ## 3.1 Edge RuntimeEnabled (Mandatory)
@@ -160,6 +175,21 @@ If the Client components are custom made please add the steps to execute the Dev
 # Step 4: Next steps
 
 Once you shared the documents with us, we will contact you in the following 48 to 72 business hours with next steps.
+
+[Deploy Azure IoT Edge modules from the Azure portal](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-deploy-modules-portal)
+
+[Manage cloud device messaging with iothub-explorer](https://docs.microsoft.com/zh-cn/azure/iot-hub/iot-hub-vscode-iot-toolkit-cloud-device-messaging)
+
+[Save IoT Hub messages to Azure data storage](https://docs.microsoft.com/zh-cn/azure/iot-hub/tutorial-routing#routing-to-a-storage-account)
+
+[Use Power BI to visualize real-time sensor data from Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi)
+
+[Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps)
+
+[Weather forecast using the sensor data from an IoT hub in Azure Machine Learning](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning)
+
+[Remote monitoring and notifications with Logic Apps](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps)
+
 
 <a name="Step-5-Troubleshooting"></a>
 # Step 5: Troubleshooting
