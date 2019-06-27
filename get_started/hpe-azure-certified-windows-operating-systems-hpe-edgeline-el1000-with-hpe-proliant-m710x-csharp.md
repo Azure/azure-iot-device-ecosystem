@@ -4,7 +4,7 @@ device: hpe el1000 (with hpe proliant m710x)
 language: csharp
 ---
 
-Run a simple Csharp sample on a Hewlett Packard Enterprose Edgeline EL1000 (with HPE ProLiant m710x) device running a HPE Azure Certified Windows Operating System
+Run a simple Csharp sample on a Hewlett Packard Enterprise Edgeline EL1000 (with HPE ProLiant m710x) device running a HPE Azure Certified Windows Operating System
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple Csharp sample on a Hewlett Packard Enterprose Edgeline EL1000 (with
 
 **About this document**
 
-This document describes how to connect Hewlett Packard Enterprose Edgeline EL1000 (with HPE ProLiant m710x) device running a HPE Azure Certified Windows Operating Sytem with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect Hewlett Packard Enterprise Edgeline EL1000 (with HPE ProLiant m710x) device running a HPE Azure Certified Windows Operating System with Azure IoT SDK. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Registering the IoT device

@@ -2,7 +2,6 @@ How to Certify IoT devices running Windows .NET Micro Framework with Azure IoT S
 ===
 ---
 
-
 # Table of Contents
 
 -   [Introduction](#Introduction)
@@ -47,7 +46,6 @@ You should have the following items ready before beginning the process:
     
     ![Install\_required\_tools](images/vs_install_tools.png)
 -   Required hardware running Windows .NET Micro Framework to certify
-
 
 <a name="Step_1:_Sign_Up"></a>
 # Step 1: Sign Up To Azure IoT Hub
@@ -137,7 +135,6 @@ This section walks you through building, deploying and validating the IoT Client
 
 7.  Build the solution.
 
-
 <a name="Step_3_3:_Run"></a>
 ## 3.3 Run and Validate the Samples
     
@@ -155,7 +152,6 @@ section. These will be needed in [Step 4](#Step_4_2:_Share).*
 
 2.  DeviceExplorer is now monitoring data sent from the selected device to the IoT Hub.
      
-
 3.  In Visual Studio, from **Solution Explorer**, right-click the project, click **Debug &minus;&gt; Start new instance** to build and run the sample. 
 
        
@@ -176,7 +172,7 @@ section. These will be needed in [Step 4](#Step_4_2:_Share).*
     ![DeviceExplorer\_Notification\_Send](images/device_explorer_notification_send_view.png)
 
 4.  You should be able to see the message received in the Output window.
-    
+
 <a name="Step_4:_Package_Share"></a>
 # Step 4: Package and Share
 

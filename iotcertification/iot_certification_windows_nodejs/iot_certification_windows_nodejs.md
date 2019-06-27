@@ -12,6 +12,7 @@ How to certify IoT devices running Windows 10 with Azure IoT SDK
     -   [3.1 Load the Azure IoT bits and prerequisites on device](#Load)
     -   [3.2 Build the samples](#BuildSamples)
     -   [3.3 Run and Validate the Samples](#Run)
+    -   [3.4 Verify Device Configuration](#Step3_4)
 -   [Step 4: Package and Share](#PackageShare)
     -   [4.1 Package build logs and sample test results](#Package)
     -   [4.2 Share package with Engineering Support](#Share)
@@ -224,6 +225,42 @@ In this section you will run the Azure IoT client SDK samples to validate commun
 
     ![MessageSend\_terminal](images/3_3_2_02.png)
 
+<a name="#Step3_4"></a>
+### 3.4 Verify Device configuration
+
+-  Open PowerShell command prompt as an Administrator on your device and run the below commands
+
+-   First check your PowerShell version by using the following command.
+
+        $PSversionTable
+
+-  If your current PowerShell version is less than 5.0 then download the PowerShell latest version from [here](https://aka.ms/wmf5download)
+
+    After installation please verify the newly installed version, it should be version 5.1 or greater. 
+
+-   Run the commands below to get device configuration information.
+
+        Get-ComputerInfo -property BiosBIOSVersion, BiosManufacturer, BiosSeralNumber, CsManufacturer, CsModel, CsName, CsNumberOfProcessors, CsProcessors, CsSystemSKUNumber, CsSystemType, OsOperatingSystemSKU | Format-List
+          
+        Get-NetAdapter
+    
+    **If Device connected with Ethernet**
+
+        $uri = 'http://macvendors.co/api/{0}' -f (Get-NetAdapter | Where-Object -Property Name -eq -Value "Ethernet" | Select-Object -property macaddress | foreach { $_.MacAddress })
+
+        (Invoke-WebRequest -uri $uri).content | ConvertFrom-Json | Select-Object -Expand result
+
+    **If Device connected with Wi-fi**
+
+        $uri = 'http://macvendors.co/api/{0}' -f (Get-NetAdapter | Where-Object -Property Name -eq -Value "Wi-fi" | Select-Object -property macaddress | foreach { $_.MacAddress })
+
+        (Invoke-WebRequest -uri $uri).content | ConvertFrom-Json | Select-Object -Expand result
+
+- Please find the output screenshot below
+
+    ![deviceinfo\_screenshot](images/device_configuration.png)
+
+-   Please save the device configuration screenshot and upload it as mentioned in [Step 4](#Package).
 
 <a name="PackageShare"></a>
 # Step 4: Package and Share

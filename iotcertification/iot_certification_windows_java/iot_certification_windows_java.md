@@ -10,6 +10,7 @@ How to certify IoT devices running Windows with Azure IoT SDK
 -   [Step 3: Build and Validate the sample using Java client libraries](#Step_3)
     -   [3.1 Install Azure IoT Device SDK and prerequisites on device](#Step_3_1)
     -   [3.2 Run and Validate the Samples](#Step_3_2)
+    -   [3.3 Verify Device Configuration](#Step3_3)
 -   [Step 4: Package and Share](#Step_4)
     -   [4.1 Package build logs and sample test results](#Step_4_1)
     -   [4.2 Share with the Azure IoT Certification team](#Step_4_2)
@@ -295,6 +296,43 @@ section. These will be needed in [Step 4](#Step_4_2).*
 
     **If using AMQP WebSocket protocol:**  
     ![Terminal\_AMQP_WS\_message\_received](images/terminal_amqp_ws_message_received.png)
+
+<a name="#Step3_3"></a>
+### 3.3 Verify Device configuration
+
+-  Open PowerShell command prompt as an Administrator on your device and run the below commands
+
+-   First check your PowerShell version by using the following command.
+
+        $PSversionTable
+
+-  If your current PowerShell version is less than 5.0 then download the PowerShell latest version from [here](https://aka.ms/wmf5download)
+
+    After installation please verify the newly installed version, it should be version 5.1 or greater. 
+
+-   Run the commands below to get device configuration information.
+
+        Get-ComputerInfo -property BiosBIOSVersion, BiosManufacturer, BiosSeralNumber, CsManufacturer, CsModel, CsName, CsNumberOfProcessors, CsProcessors, CsSystemSKUNumber, CsSystemType, OsOperatingSystemSKU | Format-List
+          
+        Get-NetAdapter
+    
+    **If Device connected with Ethernet**
+
+        $uri = 'http://macvendors.co/api/{0}' -f (Get-NetAdapter | Where-Object -Property Name -eq -Value "Ethernet" | Select-Object -property macaddress | foreach { $_.MacAddress })
+
+        (Invoke-WebRequest -uri $uri).content | ConvertFrom-Json | Select-Object -Expand result
+
+    **If Device connected with Wi-fi**
+
+        $uri = 'http://macvendors.co/api/{0}' -f (Get-NetAdapter | Where-Object -Property Name -eq -Value "Wi-fi" | Select-Object -property macaddress | foreach { $_.MacAddress })
+
+        (Invoke-WebRequest -uri $uri).content | ConvertFrom-Json | Select-Object -Expand result
+
+- Please find the output screenshot below
+
+    ![deviceinfo\_screenshot](images/device_configuration.png)
+
+-   Please save the device configuration screenshot and upload it as mentioned in [Step 4](#Package).
 
 <a name="Step_4"></a>
 # Step 4: Package and Share

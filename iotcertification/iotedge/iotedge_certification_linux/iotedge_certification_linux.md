@@ -130,7 +130,7 @@ The IoT Edge runtime becomes functional at boot via DPS integration or by the us
 -   Please allow some time to process and complete the certification process. Microsoft will ship back the edge device upon approval.
 
 <a name="Step-3-2-DeviceManagement"></a>
-## 3.2 Device Management (Mandatory)
+## 3.2 Device Management (Optional)
 *Total number of Level : 1* 
 
 **Pre-requisites:** Device Connectivity.
@@ -148,7 +148,7 @@ The component may come pre-installed or at the point of distribution to the cust
 
 **Manual test 1:** 
 
-1.  If the component comes at the point of distribution of the device, put the step-by-step instructions for installing the components into a readme.md file and include with your submission
+1.  If the component comes at the point of distribution of the device, put the step-by-step instructions for installing the components into a readme.md file and include with your submission. If you are using Microsoft SDK samples please use the [link](https://docs.microsoft.com/en-us/azure/iot-hub/tutorial-firmware-update#run-the-sample)
 2.  Connect the device to Azure IoT Hub
 3.  Use Windows 10 Problem Steps Recorder (or equivalent) to capture the following steps
 
@@ -163,7 +163,7 @@ The component may come pre-installed or at the point of distribution to the cust
 
 **Manual test 2:**
 
-1.  If the component comes at the point of distribution of the device, put the step-by-step instructions for installing the components into a readme.md file and include with your submission
+1.  If the component comes at the point of distribution of the device, put the step-by-step instructions for installing the components into a readme.md file and include with your submission. If you are using Microsoft SDK samples please use the [link](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-device-management-get-started)
 2.  Connect the device to Azure IoT Hub
 3.  Use Windows 10 Problem Steps Recorder (or equivalent) to capture the following steps
 
