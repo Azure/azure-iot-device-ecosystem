@@ -1,10 +1,10 @@
 ---
-platform: raspbian lite
-device: rio iot gateway
+platform: windows 10 iot enterprise
+device: ib3s
 language: python
 ---
 
-Run a simple PYTHON sample on RIO IoT Gateway device running Raspbian Lite
+Run a simple python sample on IB3S device running Windows 10 IoT Enterprise
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple PYTHON sample on RIO IoT Gateway device running Raspbian Lite
 
 **About this document**
 
-This document describes how to connect RIO IoT Gateway device running Raspbian Lite with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect IB3S device running Windows 10 IoT Enterprise with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -34,23 +34,12 @@ You should have the following items ready before beginning the process:
 -   [Prepare your development environment][setup-devbox-python]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   RIO IoT Gateway device.
+-   IB3S device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
-You should have the following items ready before beginning the process:
 
--   You can remotely access the command line on the Raspberry Pi via SH client (ex: Putty).
--   Required hardware:
-    -   RIO IoT Gateway
-    -   16GB MicroSD Card
-    -   USB keyboard
-    -   USB mouse (optional)
-    -   HDMI cable
-    -   Monitor that supports HDMI
-    -   Ethernet cable or Wi-Fi dongle
--   Setup your IoT hub
--   Provision your device and get its credentials
+-   IB3S device.
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
@@ -58,67 +47,43 @@ You should have the following items ready before beginning the process:
 <a name="Load"></a>
 ## 3.1 Build SDK and sample
 
--   Open a PuTTY session and connect to the device.
-
--   Install the prerequisite packages for the Microsoft Azure IoT Device SDK for Python by issuing the following commands from the command line on your board:
-
-     **Raspbian**
-
-        sudo apt-get update
-
-        sudo apt-get install -y curl libcurl4-openssl-dev build-essential cmake git python2.7-dev libboost-python-dev
-
--   Download the Microsoft Azure IoT Device SDK to the board by issuing the following command on the board::
+-   Download latest SDK using following command:
 
         git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
 
--   Run following commands to build the SDK:
+-   Ensure that the desired Python version is installed (2.7.x, 3.4.x or 3.5.x). Run python --version or python3 --version at the command line to check the version. 
 
-        cd python/build_all/linux
-        sudo ./build.sh    
+-   Open a Visual Studio 2015 x86 Native Tools command prompt and navigate to the folder **python/build_all/windows** in your local copy of the repository.
 
--   After a successful build, the `iothub_client.so` Python extension module is copied to the **python/device/samples** folder.
+-   Run the script build.cmd in the python\build_all\windows directory.
 
--   Navigate to samples folder by executing following command:
+-   As a result, the **iothub\_client.pyd** Python extension module is copied to the python/device/samples folder.
 
-        cd azure-iot-sdk-python/device/samples/
+-   Navigate to the folder python/device/samples in your local copy of the repository.
 
--   Edit the following file using any text editor of your choice:
+-   Open the file **iothub\_client\_sample\_amqp.py**, **iothub\_client\_sample\_http.py** or  **iothub\_client\_sample\_mqtt.py** in a text editor.
 
+-   Locate the following code in the file:
 
-    **For AMQP protocol:**
+         connectionString = "[device connection string]"
 
-        nano iothub_client_sample_amqp.py
-
-    **For HTTP protocol:**
-
-        nano iothub_client_sample_http.py
-
-    **For MQTT protocol:**
-
-        nano iothub_client_sample_mqtt.py
-
--   Find the following place holder for device connection string:
-
-        connectionString = "[device connection string]"
-
--   Replace the above placeholder with device connection string you obtained in [Step 1](#Prerequisites) and save the changes.
+-   Replace [device connection string] with the connection string for your device. Save the changes.
 
 ## 3.2 Send Device Events to IoT Hub:
 
--   Run the sample application using the following command:
+-   Run the sample application using the following command through Visual Studio 2015 x86 Native Tools command prompt and navigate to the folder python/build_all/windows in your local copy of the repository:
 
-    **For AMQP protocol:**
+    **If using AMQP protocol:**
 
-        python iothub_client_sample_amqp.py
+      	python iothub_client_sample_amqp.py
 
-    **For HTTP protocol:**
+    **If using HTTPS protocol:**
 
-        python iothub_client_sample_http.py
+       	python iothub_client_sample_http.py
 
-    **For MQTT protocol:**
+    **If using MQTT protocol:**
 
-        python iothub_client_sample_mqtt.py
+       	python iothub_client_sample_mqtt.py
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 
@@ -147,4 +112,3 @@ You have now learned how to run a sample application that collects sensor data a
 [setup-devbox-python]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/get_started/python-devbox-setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
-

@@ -1,10 +1,10 @@
 ---
 platform: raspbian lite
 device: rio iot gateway
-language: c
+language: javascript
 ---
 
-Run a simple C sample on RIO IoT Gateway device running Raspbian Lite
+Run a simple JavaScript sample on RIO IoT Gateway device running Raspbian Lite
 ===
 ---
 
@@ -31,21 +31,15 @@ This document describes how to connect RIO IoT Gateway device running Raspbian L
 
 You should have the following items ready before beginning the process:
 
--   Linux System for cross-compiling Azure IOT SDK
--   You can remotely access the command line on the Raspberry Pi via SH client (ex: Putty).
--   Required hardware:
-    -   RIO IoT Gateway
-    -   16GB MicroSD Card
-    -   USB keyboard
-    -   USB mouse (optional)
-    -   HDMI cable
-    -   Monitor that supports HDMI
-    -   Ethernet cable or Wi-Fi dongle
--   Setup your IoT hub
--   Provision your device and get its credentials
+-   [Prepare your development environment][setup-devbox-linux]
+-   [Setup your IoT hub][lnk-setup-iot-hub]
+-   [Provision your device and get its credentials][lnk-manage-iot-hub]
+-   Computer with Git client installed 
+-   RIO IoT Gateway device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
+
 -   Install the latest Raspbian operating system on your RIO IoT Gateway.
 -   After installation, the Raspberry Pi configuration menu is ready. You can set the date/time for your region. Under Advanced Options, enable ssh so you can access the device remotely with Putty.
 -   Connect RIO device to your network using an ethernet cable or a wireless
@@ -56,23 +50,75 @@ You should have the following items ready before beginning the process:
 -   When connection is done, login with username (pi) and password (raspberry)
 
 <a name="Build"></a>
-# Step 3: Build and Run the sample
-Prepare the cross-compile host according to the instructions, but make sure you modify the connection string before the "Building the SDK" step.
+# Step 3: Build and Run the Sample
 
--   Edit the file `~/Source/azure-iot-sdk-c/serializer/samples/simplesample_amqp/simplesample_amqp.c` and replace connection string placeholder with the device connection string you obtained when you provisioned your device.The device connection string should be in this format **HostName=<iothub-name>.azure-devices.net;DeviceId=<device-name>;SharedAccessKey=<device-key>**.
-(You can use the console-based text editor nano to edit the file):
+<a name="Load"></a>
+## 3.1 Load the Azure IoT bits and prerequisites on device
 
-        static const char* connectionString = "[device connection string]";
-	
-	**Note:** You can skip this step if you only want to build the samples without running them.
-	
--   Now, follow the instructions in the "Building the SDK" step of the instructions to build the SDK and samples.
+-   Open a PuTTY session and connect to the device.
 
--   Finally, create a tar containing the compiled SDK and samples.
+-   Choose your commands in next steps based on the OS running on your device.
 
-        cd ~/Source/ ; tar czvf iotsdk_linux.tar.gz azure-iot-sdk-c/cmake/iotsdk_linux ; scp iotsdk_linux.tar.gz pi@<YOUR-RASPBIAN-HOST>:
+-   Run following command to check if NodeJS is already installed
 
--   change YOUR-RASPBIAN-HOST to the hostname of your RIO IoT Gateway
+        node --version
+
+    If version is **0.12.x or greater**, then skip next step of installing prerequisite packages. Else uninstall it by issuing following command from command line on the device.{{***Keep the command set based on your OS and remove the rest.***}}
+
+        sudo apt-get remove nodejs
+
+-   Install the prerequisite packages by issuing the following commands from the command line on the device.
+
+        curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -
+
+        sudo apt-get install -y nodejs
+
+    **Note:** To test successful installation of Node JS, try to fetch its version information by running following command:
+
+        node --version
+
+-   Download the SDK to the board by issuing the following command in PuTTY:
+
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-node.git
+
+-   Verify that you now have a copy of the source code under the directory ~/azure-iot-sdk-node.
+
+<a name="BuildSamples"></a>
+## 3.2 Build the samples
+
+-   To validate the source code run the following commands on the device.
+
+        export IOTHUB_CONNECTION_STRING='<iothub_connection_string>'
+
+-   Edit the following file using any text editor of your choice: 
+
+        cd ~/azure-iot-sdk-node/device/samples
+		
+-	Find the following place holder for IoT connection string:
+
+        var connectionString = "[IoT Device Connection String]";
+
+
+-   Run the following commands before leaving the ~/azure-iot-sdk-node/device/samples directory 
+
+        npm link azure-iot-device
+
+<a name="Run"></a>
+## 3.3 Run and Validate the Samples
+
+### 3.3.1 Send Device Events to IOT Hub
+
+-   Run the sample by issuing following command and verify that data has been successfully sent and received.
+
+        node ~/azure-iot-sdk-node/device/samples/simple_sample_device.js
+
+-   Run the sample by issuing following command and verify that data has been successfully sent and received.
+
+        node ~/azure-iot-sdk-node/device/samples/send_batch_http.js
+
+### 3.3.2 Receive messages from IoT Hub
+
+-   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages to the application.
 
 <a name="NextSteps"></a>
 # Next Steps
@@ -92,6 +138,7 @@ You have now learned how to run a sample application that collects sensor data a
 [Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps
 [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning
 [Remote monitoring and notifications with Logic Apps]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps
-[setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
+[setup-devbox-linux]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/get_started/node-devbox-setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
+
