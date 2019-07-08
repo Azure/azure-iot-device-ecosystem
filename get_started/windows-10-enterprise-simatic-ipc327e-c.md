@@ -16,7 +16,7 @@ Run a simple C sample on SIMATIC IPC327E device running Windows 10 Enterprise 20
 -   [Step 3: Build and Run the Sample](#Build)
 -   [Next Steps](#NextSteps)
 
-<a name="Introduction"/>
+<a name="Introduction"></a>
 # Introduction
 
 **About this document**
