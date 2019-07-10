@@ -1,10 +1,10 @@
 ---
 platform: windows 10 enterprise 2016 ltsb
-device: simatic ipc327e
+device: simatic ipc377e
 language: c
 ---
 
-Run a simple C sample on SIMATIC IPC327E device running Windows 10 Enterprise 2016 LTSB
+Run a simple C sample on SIMATIC IPC377E device running Windows 10 Enterprise 2016 LTSB
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple C sample on SIMATIC IPC327E device running Windows 10 Enterprise 20
 
 **About this document**
 
-This document describes how to connect SIMATIC IPC327E device running Windows 10 Enterprise 2016 LTSB with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect SIMATIC IPC377E device running Windows 10 Enterprise 2016 LTSB with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -34,7 +34,7 @@ You should have the following items ready before beginning the process:
 -   [Prepare your development environment][setup-devbox-windows]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   SIMATIC IPC327E device.
+-   SIMATIC IPC377E device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
@@ -82,4 +82,3 @@ You have now learned how to run a sample application that collects sensor data a
 [setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
-
