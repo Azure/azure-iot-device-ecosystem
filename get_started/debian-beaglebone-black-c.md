@@ -65,7 +65,7 @@ You should have the following items ready before beginning the process:
 
         sudo apt-get update
 
-        sudo apt-get install -y curl libcurl4-openssl-dev build-essential cmake git
+        sudo apt-get install -y curl libssl-dev libcurl4-openssl-dev build-essential uuid-dev cmake git
 
     ***Note:*** *This setup process requires cmake version 2.8.12 or higher.* 
     
