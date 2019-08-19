@@ -4,7 +4,7 @@ device: mis-5032
 language: c
 ---
 
-Run an Edge Runtime on MIS-5032 device running Ubuntu 16.04
+Run a simple C sample on MIS-5032 device running Ubuntu 16.04
 ===
 ---
 
@@ -37,11 +37,13 @@ You should have the following items ready before beginning the process:
 -   [Sign up to IOT Hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
 -   [Add the Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux)
 -   [Add the Edge Modules](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#deploy-a-module)
+-   MIS-5032 device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   MIS-5032 device.
+-   the URL for the device is <http://www.tinygo.com/index.php?c=article&id=50>
+-   Connect the MIS-5032 With LCD as computer  
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
@@ -79,66 +81,6 @@ Open the command prompt on your IoT Edge device, confirm that the module deploye
 On the device details page of the Azure, you should see the runtime modules - edgeAgent, edgeHub and tempSensor modueles are under running status
 
  ![](./media/ArtiGO/tempSensor.png)
-
-<a name="Step-3-2-DeviceManagement"></a>
-## 3.2 Device Management
-
-**Pre-requisites:** Device Connectivity.
-
-**Description:** A device that can perform basic device management operations (Reboot and Firmware update) triggered by messages from IoT Hub.
-
-## 3.2.1 Firmware Update (Using Microsoft SDK Samples):
-
-Specify the path {{enter the path}} where the firmwareupdate client components are installed.
-
-To run the simulated device application, open a shell or command prompt window and navigate to the **iot-hub/Tutorials/FirmwareUpdate** folder in the Node.js project you downloaded. Then run the following commands:
-
-    npm install
-    node SimulatedDevice.js "{your device connection string}"
-
-To run the back-end application, open another shell or command prompt window. Then navigate to the **iot-hub/Tutorials/FirmwareUpdate** folder in the Node.js project you downloaded. Then run the following commands:
-
-    npm install
-    node ServiceClient.js "{your service connection string}"
-
-IoT device client will get the message and report the status to the device twin.
-
- ![](./media/ArtiGO/devicetwin.png)
-
-**Update firmware**
-
-Confirm the IoT hub, Device ID, method name and method payload as below:
-
--   Press “call Method” button
--   Check the returning status as below:
-
- ![](./media/ArtiGO/firmware.png)
-
-
-## 3.2.2 Reboot (Using Microsoft SDK Samples):
-
-Specify the path {{enter the path}} where the components are installed 
-
-Confirm the IoT hub, Device ID, method name as below:
-
--   Press “call Method” button
--   Check the returning status as below:
-
- ![](./media/ArtiGO/reboot.png)
-
-
-IoT device client will get the message and report the status to the device twin.
-
- ![](./media/ArtiGO/devicetwinmessage.png)
-  
-## 3.3.3 Firmware Update (Modified SDK samples/Custom made application):
-
-If the Client components are custom made please add the steps to execute the Firmware Update through Device Twin.
-
-
-## 3.3.4 Reboot (Modified SDK samples/Custom made application):
-
-If the Client components are custom made please add the steps to execute the Device Reboot through Direct Methods
 
   
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
