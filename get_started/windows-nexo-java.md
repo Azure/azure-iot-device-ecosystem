@@ -24,7 +24,7 @@ Run a simple JAVA sample on Windows to forward NEXO data to the Azure Cloud.
 
 This document describes how to run a simple JAVA (NexoPublisher.jar) sample on a Windows computer. NexoPublisher JAVA application can receive NEXO data and forward it to the Azure Cloud as illustrated in the image bellow:
 
- ![](https://github.com/JMayrbaeurl/azure-iotedge-boschnexo-sample/blob/master/assets/nexoBidirectArchitecture.png)
+![](./media/nexo/nexoBidirectArchitecture.png)
 
 **This multi-step process includes:**
 
@@ -49,21 +49,21 @@ You should have the following items ready before beginning the process:
 
 1.  Connect your computer to NEXO according to the images bellow: 
  
-     ![](https://github.com/Nexo-BCX19/Nexo-BCX19/blob/master/NEXO%201.PNG)
+     ![](./media/nexo/NEXO_201.png)
 
-     ![](https://github.com/Nexo-BCX19/Nexo-BCX19/blob/master/NEXO%202.PNG)
+     ![](./media/nexo/NEXO_202.png)
 
-     ![](https://github.com/Nexo-BCX19/Nexo-BCX19/blob/master/NEXO%203.PNG)
+     ![](./media/nexo/NEXO_203.png)
 
-     ![](https://github.com/Nexo-BCX19/Nexo-BCX19/blob/master/NEXO%204.PNG)
+     ![](./media/nexo/NEXO_204.png)
 
-     ![](https://github.com/Nexo-BCX19/Nexo-BCX19/blob/master/NEXO%205.PNG)
+     ![](./media/nexo/NEXO_205.png)
 
     *Source:  [NEXO Handbook](https://github.com/NEXOBoschRexroth/Nexo-BCX19/blob/master/3608870EF2_AC.pdf) pg. 267-269*
 
 2.  Second, configure NEXO to send data to the HTTP server running on the java sample (nexopublisher-1.0.0.jar from [JMayrbaeurl](https://github.com/JMayrbaeurl/azure-iotedge-boschnexo-sample)) as follow:
 
-     ![NexoConfiguration](https://github.com/Nexo-BCX19/Nexo-BCX19/blob/master/NEXO%20HTTP%20Settings%201.png)
+     ![NexoConfiguration](./media/nexo/NEXO_20HTTP_20Settings_201.png)
  
     *Adapted from: https://github.com/JMayrbaeurl/azure-iotedge-boschnexo-sample*
 
