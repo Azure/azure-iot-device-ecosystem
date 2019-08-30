@@ -1,13 +1,13 @@
 ---
 platform: azure iot central
 device: mxchip iot devkit
-language:c
+language: c
 ---
 
 Connect an MXChip IoT DevKit device to your Azure IoT Central application
 ===
-
 ---
+
 # Table of Contents
 
 -   [Introduction](#Introduction)
