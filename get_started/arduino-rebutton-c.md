@@ -1,7 +1,7 @@
 ---
 platform: arduino
 device: rebutton
-language:c
+language: c
 ---
 
 Connect ReButton device to your Azure IoT Central Application
