@@ -1,7 +1,7 @@
 ---
 platform: yocto
 device: wistron-tracker
-language:c
+language: c
 ---
 
 Connect Wistron-tracker device to your Azure IoT Central Application
