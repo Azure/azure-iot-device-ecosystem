@@ -33,14 +33,14 @@ with Azure IoT Hub. This multi-step process includes:
 
 You should have the following items ready before beginning the process:
 
--   [Prepare your development environment][setup-devbox-linux]
--   [Provision your device and get its credentials][lnk-manage-iot-hub]
+-   [Setup your IoT hub](https://catalog.azureiotsolutions.com/docs?title=Azure/azure-iot-device-ecosystem/setup_iothub)
 
+-   [Provision your device and get its credentials](https://catalog.azureiotsolutions.com/docs?title=Azure/azure-iot-device-ecosystem/manage_iot_hub)
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   NH-FV Series device
+-   NH-FV Series device[Firmware Version 1.12 or later]
 
 <a name="Build"></a>
 # Step 3: Configure the Device
@@ -179,111 +179,44 @@ Choose the appropriate method depending on the control application.
 
 ## 4.1 Device Twin
 
-Field Name States Description
+|No.|Field name |Value|Description|
+| - | --------- |---- | --------- |
+| 1 |led_red / led_red_c|0: OFF, 1: ON, 2: Flashing 1, 3: Flashing 2|LED Unit (red)|
+| 2 |led_yellow / led_yellow_c|0: OFF, 1: ON, 2: Flashing 1, 3: Flashing 2|LED Unit (yellow)|
+| 3 |led_green / led_green_c|0: OFF, 1: ON, 2: Flashing 1, 3: Flashing 2|LED Unit (green)|
+| 4 |led_blue / led_blue_c|0: OFF, 1: ON, 2: Flashing 1, 3: Flashing 2|LED Unit (blue)|
+| 5 |led_white / led_white_c|0: OFF, 1: ON, 2: Flashing 1, 3: Flashing 2|LED Unit (white)|
+| 6 |buz_pattern / buz_pattern_c|0: Stop, 1 to 4 : Pattern 1 to Pattern 4|Buzzer control|
+| 7 |sound_pattern / sound_pattern_c| Channel 1 to 70 |Audio channel|
+| 8 |digital_output /digital_output_c|0: OFF, 1: ON|Digital output|
 
-led\_red 「0」：Off LED unit 「Red」
-
-led\_yellow LED 「1」：On LED unit 「Yellow」
-
-led\_green LED 「2」：Flashing pattern1 LED unit 「Green」
-
-led\_blue LED 「3」：Flashing pattern2 LED unit 「Blue」
-
-led\_white LED 「9」：No Change LED unit 「White」
-
-buz\_pattern 「0」：Stop Buzzer control
-
-> 「1」：Buzzer pattern1
->
-> 「2」：Buzzer pattern2
->
-> 「3」：Buzzer pattern3
->
-> 「4」：Buzzer pattern4
->
-> 「9」：No change
-
-sound\_pattern 「1」～「70」channel Sound channel
-
-digit\_output\_1 「0」：OFF Digital output
-
-> 「1」：ON
 
 ## 4.2 Direct Method / Cloud-to-device Message
 
-Field Name States Description
+| No.  | Field name | Value         | Description                                                  |
+| ---- | ---------- | ------------- | ------------------------------------------------------------ |
+| 1    | alert      | "6 digits"    | Controls the signal light and buzzer.<br>Set patterns in order: R (red) → Y (yellow) → G (green) → B (blue) → C (white)→ Z (buzzer).<br>[RYGBC] - 0: OFF, 1: ON, 2: flashing 1, 3: flashing 2, 9: no change<br>[Z] - 0: No sound, 1 to 4: Buzzer Pattern 1 to 4, 9: No change |
+| 2    | led        | "5 digits"    | Controls the signal light.<br>Set patterns in order: R (red) → Y (yellow) → G (green) → B (blue) → C (white).<br/>[RYGBC] - 0: OFF, 1: ON, 2: flashing 1, 3: flashing 2, 9: no change |
+| 3    | alert_do   | 0: OFF, 1: ON | Controls digital output.                                     |
+| 4    | clear      | 1             | Turn off all signal lights and stop playing the current channel. |
+| 5    | sound      | 1 to 70       | Play specified audio channel.                                |
+| 6    | repeat     | 0 to 255      | Play the audio channel defined by the [sound] instruction the number of times specified here. |
 
-alert 6-digit ・Control the LED unit and the buzzer
+### 4.3 Device-to-cloud Message
 
-> ・ Specify the pattern in the order of R（Red）→ Y（Yellow）→
-> G（Green）→ B（Blue）→ C（White）→ Z（Buzzer）
->
-> ・ ［RYGBC］：Off「0」、On「1」、Flashing pattern1「2」、Flashing
-> pattern2「3」、No change「9」
->
-> ・ ［Z］：Stop「0」、Buzzer pattern1「1」、Buzzer
-> pattern2「2」、Buzzer pattern3「3」、Buzzer pattern4「4」、No
-> change「9」
+| NO.  | Field Name    | Value       | Description                                                  |
+| ---- | ------------- | ----------- | ------------------------------------------------------------ |
+| 1    | clear_switch  | "on"        | Notify when the Clear switch is pressed                      |
+| 2    | input_state_1 | "on", "off" | Notify when there is a change in state in the digital input 1. |
+| 3    | input_state_2 | "on", "off" | Notify when there is a change in state in the digital input 2. |
+| 4    | input_state_3 | "on", "off" | Notify when there is a change in state in the digital input 3. |
+| 5    | input_state_4 | "on", "off" | Notify when there is a change in state in the digital input 4. |
+| 6    | red_state     | "0" to "3"  | Notify when there is a change in state in the red LED unit.<br>"0": OFF, "1": ON, "2": Flashing 1, "3": Flashing 2 |
+| 7    | yellow_state  | "0" to "3"  | Notify when there is a change in state in the yellow LED unit.<br>"0": OFF, "1": ON, "2": Flashing 1, "3": Flashing 2 |
+| 8    | green_state   | "0" to "3"  | Notify when there is a change in state in the green LED unit.<br>"0": OFF, "1": ON, "2": Flashing 1, "3": Flashing 2 |
+| 9    | blue_state    | "0" to "3"  | Notify when there is a change in state in the blue LED unit.<br>"0": OFF, "1": ON, "2": Flashing 1, "3": Flashing 2 |
+| 10   | white_state   | "0" to "3"  | Notify when there is a change in state in the white LED unit.<br>"0": OFF, "1": ON, "2": Flashing 1, "3": Flashing 2 |
+| 11   | buzzer_state  | "0" to "4"  | Notify when there is a change in the buzzer pattern.<br>"0": Stop, "1" to "4" : Pattern 1 to Pattern 4 |
+| 12   | sound_state   | "0" to "70" | Notify when there is a change in the audio channel.          |
+| 13   | output_state  | "on", "off" | Notify when there is a change in state in the digital  output. |
 
-led 5-digit ・ Specify the pattern in the order of R（Red）→
-Y（Yellow）→ G（Green）→ B（Blue）→ C（White）
-
-> ・ ［RYGBC］：Off「0」、On「1」、Flashing pattern1「2」、Flashing
-> pattern2「3」、No change「9」
-
-alert\_do 0,1,9 ・ Control digital output
-
-> ・ Off「0」、On「1」、No change「9」
-
-Clear 1 All LED unit turn off and the channel currently playing is
-stopped.
-
-Sound 1 ～ 70 Play the specified channel
-
-repeat 0 ～ 255 Play the specified number of times.
-
-## 4.4 Device-to-cloud Message
-
-Field Name States Description
-
-clear\_switch on Notify when the clear switch is pressed.
-
-digital\_input\_1 on Notify when digital input 1 is turned on.
-
-> off Notify when digital input 1 is turned off.
-
-digital\_input\_2 on Notify when digital input 2 is turned on.
-
-> off Notify when digital input 2 is turned off.
-
-digital\_input\_3 on Notify when digital input 3 is turned on.
-
-> off Notify when digital input 3 is turned off.
-
-digital\_input\_4 on Notify when digital input 4 is turned on.
-
-> off Notify when digital input 4 is turned off.
-
-red\_state 0 Notify when LED red goes out.
-
-> 1 Notify when LED red lights up.
->
-> 2 Notify when the LED red operates with flashing pattern 1.
->
-> 3 Notify when the LED red operates with flashing pattern 2
-
-yellow\_state 0,1,2,3 Notify when the LED yellow has changed. The value is the same as No. 6 red\_state.
-
-green\_state 0,1,2,3 Notify when the LED green has changed. The value is the same as No. 6 red\_state.
-
-blue\_state 0,1,2,3 Notify when the LED blue has changed. The value is the same as No. 6 red\_state.
-
-white\_state 0,1,2,3 Notify when the LED white has changed. The value is the same as No. 6 red\_state
-
-buzzer\_state 0,1,2,3 Notify when Buzzer changes. The value is the same as No. 6 red\_state.
-
-sound\_state 1～70 Notify when sound changes.
-
-output\_state on Notify when digital output is turned on.
-
-> off Notify when digital output is turned off.
