@@ -50,7 +50,7 @@ In this tutorial, you will learn how to use the esp32-azure-kit board to send da
 
   6.  In the popup device info page, set **Device ID**, **Device Name** and then click **Create** button to create a new device.
 
-     ![IoT Central, set device info](./media/azurekit-esp32/set-device-info.png)
+      ![IoT Central, set device info](./media/azurekit-esp32/set-device-info.png)
 
   7.  In the **Devices** page, click the device you created in step 6 to enter device detail info page.
 
