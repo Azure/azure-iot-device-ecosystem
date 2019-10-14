@@ -77,13 +77,12 @@ List running modules. After a new installation, the only module you should see r
 
     iotedge list
 
-![1.png](https://emmdiag608.blob.core.chinacloudapi.cn/content/4cf3ca6f-6d23-429e-8d2f-e469b935a871.png)
+![](./media/em-dmt81h/1.png)
 
 View the messages being sent from the module you created to the cloud.
 
     iotedge logs  SimulatedTemperatureSensor
-
-![2.png](https://emmdiag608.blob.core.chinacloudapi.cn/content/ebdc2440-5aa1-4e14-92c2-4211264df8a1.png)
+![](./media/em-dmt81h/2.png)
 
   
 [setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
