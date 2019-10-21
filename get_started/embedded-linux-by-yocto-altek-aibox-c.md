@@ -151,17 +151,17 @@ Open the command prompt (Refer to "2.1.5") on your IoT Edge device , confirm tha
 
     systemctl status iotedge
 
- ![](./media/Altek-AIBox/Capture.png)
+ ![](./media/Altek-AIBox/Capture.PNG)
 
 Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
 
     sudo iotedge list
 
- ![](./media/Altek-AIBox/iotedgedaemon.png) 
+ ![](./media/Altek-AIBox/iotedgedaemon.PNG) 
 
 On the device details page of the Azure, you should see the runtime modules - edgeAgent, edgeHub and tempSensor modueles are under running status
 
- ![](./media/Altek-AIBox/tempSensor.png)
+ ![](./media/Altek-AIBox/tempSensor.PNG)
 
 
   
