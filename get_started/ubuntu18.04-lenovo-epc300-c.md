@@ -43,12 +43,13 @@ The steps in this section all take place on your Lenovo EPC300 device.
 
 The following steps shows how to How to enable Ubuntu iot-edge with EPC300
 
-###1.  Right click the mouse, choose open Terminal 
-###2.  sudo apt install curl
+**1.  Right click the mouse, choose open Terminal** 
+
+**2.  sudo apt install curl**
 
   ![](./media/lenovo-epc300/apt-install-curl.png)
 
-###3.	Register Microsoft key and software repository feed  
+**3.	Register Microsoft key and software repository feed ** 
 
 Prepare your device for the IoT Edge runtime installation.    
 *curl  https://packages.microsoft.com/config/ubuntu/18.04/prod.list > ./microsoft-prod.list*
@@ -69,14 +70,15 @@ Prepare your device for the IoT Edge runtime installation.
 
 ![](./media/lenovo-epc300/microsoft-gpg.png) 
 
-###4.	Install the container runtime  
+**4.	Install the container runtime  **
+
 -   Perform apt update.   
 
         sudo apt-get update
 
  ![](./media/lenovo-epc300/apt-get-update.png) 
 
-###5.	Install the Azure IoT Edge Security Daemon  
+**5.	Install the Azure IoT Edge Security Daemon ** 
 
 -   Install the security daemon. The package is installed at.  
 
@@ -89,7 +91,8 @@ Prepare your device for the IoT Edge runtime installation.
 
 The following steps Configure the Azure IoT Edge Security Daemon.
 
-###1.	Configure the Azure IoT Edge Security Daemon  
+**1.	Configure the Azure IoT Edge Security Daemon**  
+
 -   Option 1: Manual provisioning
 Open the configuration file.  
 
@@ -115,13 +118,13 @@ Change device_connection_string “primary connection string” Example:
 
  ![](./media/lenovo-epc300/connection-string.png)
 
-###2.Restart the daemon
+**2.Restart the daemon**
 
         sudo systemctl restart iotedge
 
  ![](./media/lenovo-epc300/Restart-the-daemon.png)
 
-###3.Verify successful installation  
+**3.Verify successful installation ** 
 
 -   You can check the status of the IoT Edge Daemon using  
 
