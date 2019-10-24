@@ -33,13 +33,13 @@ This document describes how to connect WizFi360 device with Microsoft Azure Serv
 WizFi360 is available in 2 options - with pattern antenna (WizFi360-PA) and antenna connector (WiZFi360-C).
 -   WizFi360 picture
 
-![](./media/wizfi360/WizFi360.png)
+![](./media/wizfi360/WizFi360.PNG)
 
 For experiment, test and verification of module functions development board [WizFi360-EVB-Shield] was used.
 
 -   WizFi360-EVB-Shield picture
 
-![](./media/wizfi360/wizfi360-evb.JPG)
+![](./media/wizfi360/wizfi360-evb.jpg)
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
