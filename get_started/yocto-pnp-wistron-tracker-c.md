@@ -31,12 +31,16 @@ This document describes how to connect Wistron-tracker to Azure IoT Central appl
 You should have the following items ready before beginning the process: 
 
 -   [Azure Account](https://portal.azure.com)
+
 -   [Azure IoT Hub Instance](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub)
+
 -   [Azure IoT Hub Device Provisioning Service](https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps)
+
 -   Provide Network connectivity (Wifi, LAN) supported by the device
+
 -   Its mandatory that the device code/software image is preinstalled in device to enable Plug and Play
 
-**Note:** If the device code is not preinstalled following are the [options](#preparethedevice) to choose to enable the plug and play device
+Note: If the device code is not preinstalled following are the [options](#preparethedevice) to choose to enable the plug and play device
 
 # Step 2: Device Connection Details.
 
@@ -44,20 +48,62 @@ In your Azure IoT Central application, select the Administration tab and select 
 
 # Step 3: Prepare the Device.
 
-There are two ways to connect the azure azure iot central by using 1.sim card over 3G/4G or 2.WiFi network.
+1.  Setup the GPS settings. If You don't change them, the GPS will be run with the default value.
 
-1.  The sim card over 3G/4G, please following the document in the below link.
-The Link- <https://fs.wistron.com/?ShareToken=3E625417D5943B238E786359B9DC9EF9BEA78ECA>
-          Password: 5f473cWS
-2.  WiFi 
+    i. Connect the device to your development machine using a USB cable.
 
-    i.  please download the wifion.sh file
-    <https://fs.wistron.com/?ShareToken=8620796F10320A443BFC397498434FAC93AA7E14>
+    ii. Get the adb tool from <https://dl.google.com/android/repository/platform-tools-latest-windows.zip>.
 
-    Password: p4264vXx
+    iii. Open the terminal and enter the folder, type the "adb shell ./nmea_test_app -h".
 
-    ii. Change the settings in `wifion.sh` file
+    iv. You can see the below screen and change the value you want.
+    usage:
 
+        -t <time out in sec> -i <tbf msec>
+        -t:  Time out, Defaults: 100
+        -d:  Delete all aiding data, Defaults: 0
+        -i:  Interval. Time in milliseconds between fixes, Defaults: 1000
+        -m:  nmea types subscription mask
+                NMEA_MASK_GGA        (0x00000001) Enable GGA type
+                NMEA_MASK_RMC        (0x00000002) Enable RMC type
+                NMEA_MASK_GSV        (0x00000004) Enable GSV type
+                NMEA_MASK_GSA        (0x00000008) Enable GSA type
+                NMEA_MASK_VTG        (0x00000010) Enable VTG type
+                NMEA_MASK_PQXFI      (0x00000020) Enable PQXFI type
+                NMEA_MASK_PSTIS      (0x00000040) Enable PSTIS type
+                NMEA_MASK_GLGSV      (0x00000080) Enable GLGSV type
+                NMEA_MASK_GNGSA      (0x00000100) Enable GNGSA type
+                NMEA_MASK_GNGNS      (0x00000200) Enable GNGNS type
+                NMEA_MASK_GARMC      (0x00000400) Enable GARMC type
+                NMEA_MASK_GAGSV      (0x00000800) Enable GAGSV type
+                NMEA_MASK_GAGSA      (0x00001000) Enable GAGSA type
+                NMEA_MASK_GAVTG      (0x00002000) Enable GAVTG type
+                NMEA_MASK_GAGGA      (0x00004000) Enable GAGGA type
+                NMEA_MASK_PQGSA      (0x00008000) Enable PQGSA type
+                NMEA_MASK_PQGSV      (0x00010000) Enable PQGSV type
+                NMEA_MASK_ALL        (0x0001FFFF) Enable ALL types
+
+        -p:  Print NMEA strings, Defaults: 1
+        -r:  Print position report strings
+        -c:  count : 1
+        -h:  print this help
+
+2.  Connect the network. 
+
+    There are two ways to connect the azure azure iot central by using I.sim card over 3G/4G or II.WiFi network.
+
+    I. The sim card over 3G/4G, please following the document in the below link.
+    **The Link**- <https://fs.wistron.com/?ShareToken=8192B8E94670F7B8D11E7C4C55B4C3C1D14D87A7>
+     **Password**: `2F7g1Gyj`
+
+    II. WiFi 
+
+       i.  please download the `wifion.sh` file 
+       <https://fs.wistron.com/?ShareToken=141C8994C37826C916FE86A7C36E3C1DA6A92642>
+       **Password:** `G39RgR2c`
+
+      ii. Change the settings in wifion.sh file
+ 
         wpa_cli -p /var/run/wpa_supplicant remove_network 0
         wpa_cli -p /var/run/wpa_supplicant ap_scan 1
         wpa_cli -p /var/run/wpa_supplicant add_network
@@ -66,8 +112,8 @@ The Link- <https://fs.wistron.com/?ShareToken=3E625417D5943B238E786359B9DC9EF9BE
         wpa_cli -p /var/run/wpa_supplicant set_network 0 psk '"MR00o@P"' --> change your AP password
         wpa_cli -p /var/run/wpa_supplicant enable_network 0
   
-    iii. push the file into the device and execute the following command.
-  
+      iii. push the file into the device and execute the following command.
+
         #chang local time
         adb shell date 110510102018 --> MMDDtime20YY
 
@@ -85,14 +131,14 @@ The Link- <https://fs.wistron.com/?ShareToken=3E625417D5943B238E786359B9DC9EF9BE
 
         #execute the application
         ./sensorbox_app "IoT Hub device connection string"
-The Wistron-tracker can connect to IoT hub and then starts sending data.
+
+    The Wistron-tracker can connect to IoT hub and then starts sending data.
   
 # Step 4: Integration with IoT Central
 
 Please download the document and you can see the example data showed by IoT central.
-<https://fs.wistron.com/?ShareToken=DF1C0E0F70B67D29C9C3C0CE56049E5EBCD9E62B>
-
-Password: 2753J0fM
+<https://fs.wistron.com/?ShareToken=F2C6A22C5BCF9A1523BFF15C2AE0CC6B96100ABE>
+**Password:** `mdSF2Y3M`
 
 # Step 5: Additional Links
 
