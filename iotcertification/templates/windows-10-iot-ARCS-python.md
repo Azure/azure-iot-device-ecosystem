@@ -1,10 +1,10 @@
 ---
-platform: {enter the OS name running on device}
-device: {enter your device name here}
+platform: {Windows 10}
+device: {ARCS}
 language: python
 ---
 
-Run a simple python sample on {enter your device name here} device running {enter the OS name running on device}
+Run a simple python sample on {ARCS} device running {Windows 10}
 ===
 ---
 
@@ -29,7 +29,7 @@ Run a simple python sample on {enter your device name here} device running {ente
 
 **About this document**
 
-This document describes how to connect {enter your device name here} device running {enter the OS name running on device} with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect {ARCS} device running {Windows 10} with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -47,7 +47,7 @@ You should have the following items ready before beginning the process:
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+-   {{Make sure the Internet is on the machine, make sure the OPCUA function is turned on, and then execute the azure-iot connection. Azure.}}
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
