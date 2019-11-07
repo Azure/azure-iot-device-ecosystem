@@ -74,15 +74,15 @@ This application provides users an easy and visualized way to interact with Azur
 1.  Go to the [releases tab](https://github.com/Azure/azure-iot-explorer), download the installer corresponding to your platform and install.
 2.  Fill in IoT Hub connection string and that's it.
 
-    ![image](./media/Azure-IoT-Explorer/app_configurations.png)
+    ![image](./media/Azure-IoT-Explorer/app_configurations.PNG)
 
 3.  You can see the list of devices which are connected to your IoT Hub. And also, You can create the device by clicking the **New** button.
 
-    ![image](./media/Azure-IoT-Explorer/devices_list.png)
+    ![image](./media/Azure-IoT-Explorer/devices_list.PNG)
 
 4.  You can Copy the connection string from here to the clipboard. You can now paste this connection-string into the source code of the device application you are working with. The samples in this repository use connection strings in the format `HostName=<iothub-name>.azure-devices.net;DeviceId=<device-name>;SharedAccessKey=<device-key>`.
 
-    ![image](./media/Azure-IoT-Explorer/device-identity.png)
+    ![image](./media/Azure-IoT-Explorer/device-identity.PNG)
 
 By using the Azure IOT Explorer tool you can perform more tasks such as disabling a device, monitoring a device, and sending commands to a device, etc...
 
