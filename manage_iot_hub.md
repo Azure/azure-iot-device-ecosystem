@@ -5,7 +5,7 @@ Before a device can communicate with IoT Hub, you must add details of that devic
 To add devices to your IoT hub and manage those devices, you can use either of:
 
 - The cross-platform, command-line [iothub-explorer](#iothub-explorer) tool
-- The Windows-only, graphical [Device Explorer](#device-explorer) tool
+- The Windows-only, graphical [Azure IOT Explorer](#pnp-explorer)
 
 Use either of these tools to generate a device-specific connection string that you can copy and paste in the source code of the application running on your device. Both tools are available in this [repository][lnk-this-repo].
  
@@ -66,59 +66,41 @@ For further information about using the iothub-explorer tool to perform tasks su
 - [Working with the device identity registry][lnk-iothub-explorer-identity]
 - [Working with devices][lnk-iothub-explorer-devices]
 
-<a name="device-explorer"></a>
-## Use the Device Explorer tool to provision a device
+<a name="pnp-explorer"></a>
+## Azure IOT Explorer for Windows
 
-The Device Explorer tool is a Windows-only graphical tool for managing your devices in IoT Hub. 
+This application provides users an easy and visualized way to interact with Azure IoT devices.
 
-The easiest way to install the Device Explorer tool in your environment is to download the pre-built version by clicking [Azure IoT SDKs releases][lnk-releasepage]. Scroll down to the **Downloads** section to locate the download link for the **SetupDeviceExplorer.msi** installer. Download and run the installer.
+1.  Go to the [releases tab](https://github.com/Azure/azure-iot-explorer), download the installer corresponding to your platform and install.
+2.  Fill in IoT Hub connection string and that's it.
 
-To run the Device Explorer tool, double-click the **DeviceExplorer.exe** file in Windows Explorer.
-The default installation folder for this application is **C:\Program Files (x86)\Microsoft\DeviceExplorer**.
+    ![image](./media/Azure-IoT-Explorer/app_configurations.PNG)
 
-> Tip: Pin the **DeviceExplorer.exe** application to your taskbar in Windows for easier access.
+3.  You can see the list of devices which are connected to your IoT Hub. And also, You can create the device by clicking the **New** button.
 
-Before you register a new device in the IoT Hub device identity registry, you must connect Device Explorer to your IoT hub:
+    ![image](./media/Azure-IoT-Explorer/devices_list.PNG)
 
-1. Get the connection string for your IoT hub. See [Set up IoT Hub][setup-iothub] for more details.
+4.  You can Copy the connection string from here to the clipboard. You can now paste this connection-string into the source code of the device application you are working with. The samples in this repository use connection strings in the format `HostName=<iothub-name>.azure-devices.net;DeviceId=<device-name>;SharedAccessKey=<device-key>`.
 
-2. On the **Configuration** tab, paste the IoT Hub connection-string for your IoT hub into **IoT Hub connection string** and click **Update**:
+    ![image](./media/Azure-IoT-Explorer/device-identity.PNG)
 
-    ![][img-getstarted1]
+By using the Azure IOT Explorer tool you can perform more tasks such as disabling a device, monitoring a device, and sending commands to a device, etc...
 
-To register a new device with IoT Hub:
+### Development Setup
 
-1.  Click the **Management** tab to manage the devices connected to the IoT hub.
+**Setup**
 
-    ![][img-getstarted2]
+1.  Open a Node capable command prompt
+2.  git clone https://github.com/Azure/azure-iot-explorer.git
+3.  run `npm install`
+4.  run `npm start`. A new tab in your default browser will be opened automatically and site would be running locally
+5.  (optional) stop step 3, run `npm run build` and then run `npm run electron`. The electron app would start locally using the bits generated in the dist folder
 
-2.  On the **Management** tab, click **Create** to register a new device with your IoT hub. The **Create Device** dialog appears. In the **Device ID** field, type a unique name for your device such as **mydevice**, or select **Auto Generate ID** to generate a unique ID. Then click **Create**.
-
-    ![][img-getstarted3]
-
-3.  The **Device Created** window appears, indicating that your device has been successfully registered with this IoT Hub.
-
-    ![][img-getstarted4]
-
-4. Right-click on a selected device to retrieve the connection string for your device:
-
-    ![][img-connstr]
-  
-5. Select **Copy connection string** to copy the device connection string to the clipboard. You can now paste this connection-string into the source code of the device application you are working with. The samples in this repository use connection strings in the format `HostName=<iothub-name>.azure-devices.net;DeviceId=<device-name>;SharedAccessKey=<device-key>`.
-
-For further information about using the Device Explorer tool to perform tasks such as disabling a device, monitoring a device, and sending commands to a device see [Using the Device Explorer tool][lnk-device-explorer-docs].
+If you'd like to package the app yourself, please refer to [FAQ](https://github.com/Azure/azure-iot-explorer/wiki/FAQ)
 
 
-[img-getstarted1]: media/device_explorer/iotgetstart1.png
-[img-getstarted2]: media/device_explorer/iotgetstart2.png
-[img-getstarted3]: media/device_explorer/iotgetstart3.png
-[img-getstarted4]: media/device_explorer/iotgetstart4.png
-[img-connstr]: media/device_explorer/connstr.png
-
-[lnk-this-repo]: https://github.com/Azure/azure-iot-sdks
 [setup-iothub]: setup_iothub.md
+[lnk-this-repo]: https://github.com/Azure/azure-iot-sdks
 [lnk-install-iothub-explorer]: ../tools/iothub-explorer/readme.md#install
 [lnk-iothub-explorer-identity]: ../tools/iothub-explorer/readme.md#identityregistry
 [lnk-iothub-explorer-devices]: ../tools/iothub-explorer/readme.md#devices
-[lnk-releasepage]: https://github.com/Azure/azure-iot-sdks/releases
-[lnk-device-explorer-docs]: ../tools/DeviceExplorer/readme.md
