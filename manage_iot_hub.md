@@ -5,7 +5,7 @@ Before a device can communicate with IoT Hub, you must add details of that devic
 To add devices to your IoT hub and manage those devices, you can use either of:
 
 - The cross-platform, command-line [iothub-explorer](#iothub-explorer) tool
-- Azure IoT Plug and Play (PnP) [Device Explorer](#pnp-explorer)
+- The Windows-only, graphical [Azure IOT Explorer](#pnp-explorer)
 
 Use either of these tools to generate a device-specific connection string that you can copy and paste in the source code of the application running on your device. Both tools are available in this [repository][lnk-this-repo].
  
@@ -67,14 +67,24 @@ For further information about using the iothub-explorer tool to perform tasks su
 - [Working with devices][lnk-iothub-explorer-devices]
 
 <a name="pnp-explorer"></a>
-## Azure IoT Plug and Play (PnP) Device Explorer
+## Azure IOT Explorer for Windows
 
 This application provides users an easy and visualized way to interact with Azure IoT devices.
 
-1.  Go to the releases tab, download the installer corresponding to your platform and install.
+1.  Go to the [releases tab](https://github.com/Azure/azure-iot-explorer), download the installer corresponding to your platform and install.
 2.  Fill in IoT Hub connection string and that's it.
 
-![image](https://user-images.githubusercontent.com/5489222/61984482-6af89f80-afb9-11e9-8b2f-d6905301d9a9.png)
+    ![image](./media/Azure-IoT-Explorer/app_configurations.png)
+
+3.  You can see the list of devices which are connected to your IoT Hub. And also, You can create the device by clicking the **New** button.
+
+    ![image](./media/Azure-IoT-Explorer/devices_list.png)
+
+4.  You can Copy the connection string from here to the clipboard. You can now paste this connection-string into the source code of the device application you are working with. The samples in this repository use connection strings in the format `HostName=<iothub-name>.azure-devices.net;DeviceId=<device-name>;SharedAccessKey=<device-key>`.
+
+    ![image](./media/Azure-IoT-Explorer/device-identity.png)
+
+By using the Azure IOT Explorer tool you can perform more tasks such as disabling a device, monitoring a device, and sending commands to a device, etc...
 
 ### Development Setup
 
