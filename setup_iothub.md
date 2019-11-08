@@ -40,7 +40,7 @@ The user credentials can easily be found on the [Azure portal] in the "Shared Ac
 Now you have the credentials, you can create 
 
 ### Create new device in the IoT Hub device identity registry...
-* ... using [iothub-explorer]  (node.js command line tool)
+* ... using [azure-iot-cli-extension]
 * ... using [Device Explorer]  (Windows desktop application)
 * ... using the service client SDK ...
   * ... [for C#]
@@ -77,7 +77,7 @@ To build applications to manage the IoT hub and interact with devices from the C
 [using C# and the resource provider REST APIs]: https://docs.microsoft.com/azure/iot-hub/iot-hub-rm-rest
 [azure-portal]: https://portal.azure.com
 [azure iot operations monitoring]: https://docs.microsoft.com/azure/iot-hub/iot-hub-operations-monitoring
-[iothub-explorer]: https://github.com/Azure/iothub-explorer
+[azure-iot-cli-extension]: https://github.com/azure/azure-iot-cli-extension
 [Device Explorer]: https://github.com/Azure/azure-iot-sdk-csharp/tree/master/tools/DeviceExplorer
 [for C#]: https://docs.microsoft.com/azure/iot-hub/iot-hub-csharp-csharp-getstarted#create-a-device-identity
 [for Node.js]: https://docs.microsoft.com/azure/iot-hub/iot-hub-node-node-getstarted#create-a-device-identity
