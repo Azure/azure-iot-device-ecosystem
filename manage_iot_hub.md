@@ -1,10 +1,10 @@
-# Manage IoT Hub
+# Manage IoT Hub Devices
 
 Before a device can communicate with IoT Hub, you must add details of that device to the IoT Hub device identity registry. When you add a device to your IoT Hub device identity registry, the hub generates the connection string that the device must use when it establishes its secure connection to your hub. You can also use the device identity registry to disable a device and prevent it from connecting to your hub.
 
 To add devices to your IoT hub and manage those devices, you can use either of:
 
-- The cross-platform, command-line [iothub-explorer](#iothub-explorer) tool
+- The Command-line [Azure CLi](#azure-cli) tool
 - The Windows-only, graphical [Azure IOT Explorer](#pnp-explorer)
 
 Use either of these tools to generate a device-specific connection string that you can copy and paste in the source code of the application running on your device. Both tools are available in this [repository][lnk-this-repo].
@@ -15,56 +15,47 @@ Use either of these tools to generate a device-specific connection string that y
 
 You can also use both of these tools to monitor the messages that your device sends to an IoT hub and send commands to you your devices from IoT Hub.
 
-<a name="iothub-explorer"></a>
+<a name="azure-cli"></a>
 ## Use the iothub-explorer tool to provision a device
 
-The iothub-explorer tool is a cross-platform, command-line tool (written in Node.js) for managing your devices in IoT hub. You will need to pre-install Node.js for your platform including npm package manager from [nodejs.org](https://nodejs.org)
+The Azure IoT extension for Azure CLI aims to accelerate the development, management and automation of Azure IoT solutions. It does this via addition of rich features and functionality to the official Azure CLI.
 
-To install this tool in your environment, run the following command in a terminal/shell window on your machine:
+Install [Azure CLI and CLI Extensions ](https://github.com/azure/azure-iot-cli-extension)
 
-```
-sudo npm install -g iothub-explorer
-```
+You must have at least v2.0.76, which you can verify with
 
-See [Install iothub-explorer][lnk-install-iothub-explorer] for more information.
+     az --version
 
 To provision a new device:
 
-1. Get the connection string for your IoT hub. See [Set up IoT Hub][setup-iothub] for more details.
+- Get the connection string for your IoT hub. See [Set up IoT Hub][setup-iothub] for more details.
 
-2.  Run the following command to register your device with your IoT hub. When you run the command, replace `<iothub-connection-string>` with the IoT Hub connection string from the previous step and replace `<device-name>` with a name for your device such as **mydevice**.
-  
-	```	
-	iothub-explorer login <iothub-connection-string>
-	```
+- Run the following command to register your device with your IoT hub. 
+      
+        az login
 
-	```		
-	iothub-explorer create <device-name> --connection-string
-	```	
+- Set the default subscription ID
+      
+        az account set -s 'Enter your subscritpion ID here'
 
-You should see a response like this:
+- Create your [device](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-device-identity-create) 
 
-	
-	Created device mydevice
-	
-	-
-	...
-	-
-	  connectionString: HostName=<hostname>;DeviceId=mydevice;SharedAccessKey=<device-key>
-	
+- Copy and save the device connection string information for later use
+       
+        az iot hub device-identity show-connection-string -n hubname -d devicename
+       
+- The samples in this repository use connection strings in the format 
 
-Copy the device connection string information for later use. The samples in this repository use connection strings in the format `HostName=<iothub-name>.azure-devices.net;DeviceId=<device-name>;SharedAccessKey=<device-key>`.
+        HostName=<iothub-name>.azure-devices.net;DeviceId=<device-name>;SharedAccessKey=<device-key>
 
-To get help on using the iothub-explorer tool to perform other tasks such as listing devices, deleting devices, and sending commands to devices, enter the following command:
+- To get help on using the Azure CLI IoT Extension  to perform other tasks such as listing devices, deleting devices, and sending commands to devices, enter the following command
+    
+         az iot hub device-identity --help
 
-```
-iothub-explorer --help
-```
+For further information about using the Azure CLI Extension to perform tasks such as disabling a device, monitoring a device, and sending commands to a device see:
 
-For further information about using the iothub-explorer tool to perform tasks such as disabling a device, monitoring a device, and sending commands to a device see:
-
-- [Working with the device identity registry][lnk-iothub-explorer-identity]
-- [Working with devices][lnk-iothub-explorer-devices]
+- [Working with the device identity registry](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-identity?view=azure-cli-latest)
+- [Working with monitoring devices](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-monitor-events)
 
 <a name="pnp-explorer"></a>
 ## Azure IOT Explorer for Windows
