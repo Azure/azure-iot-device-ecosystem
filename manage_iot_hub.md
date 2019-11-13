@@ -16,7 +16,7 @@ Use either of these tools to generate a device-specific connection string that y
 You can also use both of these tools to monitor the messages that your device sends to an IoT hub and send commands to you your devices from IoT Hub.
 
 <a name="azure-cli"></a>
-## Use the iothub-explorer tool to provision a device
+## Use Azure CLi and Azure Cli extensions to provision a device
 
 The Azure IoT extension for Azure CLI aims to accelerate the development, management and automation of Azure IoT solutions. It does this via addition of rich features and functionality to the official Azure CLI.
 
@@ -79,15 +79,21 @@ By using the Azure IOT Explorer tool you can perform more tasks such as disablin
 
 ### Development Setup
 
-**Setup**
+**Download a pre-built version**
+
+Go to the [Releases](https://github.com/Azure/azure-iot-explorer/releases) tab, download the installer corresponding to your platform and install.
+
+**Run it locally and build it yourself**
 
 1.  Open a Node capable command prompt
-2.  git clone https://github.com/Azure/azure-iot-explorer.git
-3.  run `npm install`
-4.  run `npm start`. A new tab in your default browser will be opened automatically and site would be running locally
-5.  (optional) stop step 3, run `npm run build` and then run `npm run electron`. The electron app would start locally using the bits generated in the dist folder
+2.  Clone the repo: `git clone https://github.com/Azure/azure-iot-explorer.git`
+3.  Run: `npm install`
+4.  Run: `npm start`
+    - A new tab in your default browser will be opened automatically pointing to the locally running site.
+5.  [optional] Stop step 4 then run: `npm run build` and then run: `npm run electron`.
+    - The electron app will spin up using the bits generated in the dist folder.
 
-If you'd like to package the app yourself, please refer to [FAQ](https://github.com/Azure/azure-iot-explorer/wiki/FAQ)
+If you'd like to package the app yourself, please refer to the [FAQ](https://github.com/Azure/azure-iot-explorer/wiki/FAQ).
 
 
 [setup-iothub]: setup_iothub.md
