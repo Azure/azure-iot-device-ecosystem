@@ -16,7 +16,7 @@ Use either of these tools to generate a device-specific connection string that y
 You can also use both of these tools to monitor the messages that your device sends to an IoT hub and send commands to you your devices from IoT Hub.
 
 <a name="azure-cli"></a>
-## Use the iothub-explorer tool to provision a device
+## Use Azure CLi and Azure Cli extensions to provision a device
 
 The Azure IoT extension for Azure CLI aims to accelerate the development, management and automation of Azure IoT solutions. It does this via addition of rich features and functionality to the official Azure CLI.
 
