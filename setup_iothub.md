@@ -40,8 +40,8 @@ The user credentials can easily be found on the [Azure portal] in the "Shared Ac
 Now you have the credentials, you can create 
 
 ### Create new device in the IoT Hub device identity registry...
-* ... using [iothub-explorer]  (node.js command line tool)
-* ... using [Device Explorer]  (Windows desktop application)
+* ... using [Azure CLI and Azure CLI extensions] to provision a device
+* ... using [Azure IOT Explorer] for Windows
 * ... using the service client SDK ...
   * ... [for C#]
   * ... [for Node.js]
@@ -57,8 +57,8 @@ Everything you need to know about IoT Hub operations monitoring is [here][azure 
 Once you have a device ID, you can provision your device with it and start interacting with it from the Cloud through IoT Hub.
 
 When developing, you can leverage some tools that will make your life easier. The below will allow you to do pretty much everything you need to do when developing and testing IoT devices connecting to Azure IoT:
-* [iothub-explorer]  (node.js command line tool)
-* [Device Explorer]  (Windows desktop application)
+* [Azure CLI and Azure CLI extensions] to provision a device
+* [Azure IOT Explorer] for Windows
 
 To build applications to manage the IoT hub and interact with devices from the Cloud, you can leverage one of our service client SDKs:
 * [Azure IoT service client SDK for C#]
@@ -77,8 +77,8 @@ To build applications to manage the IoT hub and interact with devices from the C
 [using C# and the resource provider REST APIs]: https://docs.microsoft.com/azure/iot-hub/iot-hub-rm-rest
 [azure-portal]: https://portal.azure.com
 [azure iot operations monitoring]: https://docs.microsoft.com/azure/iot-hub/iot-hub-operations-monitoring
-[iothub-explorer]: https://github.com/Azure/iothub-explorer
-[Device Explorer]: https://github.com/Azure/azure-iot-sdk-csharp/tree/master/tools/DeviceExplorer
+[Azure CLI and Azure CLI extensions]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md#use-azure-cli-and-azure-cli-extensions-to-provision-a-device
+[Azure IOT Explorer]: https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md#azure-iot-explorer-for-windows
 [for C#]: https://docs.microsoft.com/azure/iot-hub/iot-hub-csharp-csharp-getstarted#create-a-device-identity
 [for Node.js]: https://docs.microsoft.com/azure/iot-hub/iot-hub-node-node-getstarted#create-a-device-identity
 [for java]: https://docs.microsoft.com/azure/iot-hub/iot-hub-java-java-getstarted#create-a-device-identity
