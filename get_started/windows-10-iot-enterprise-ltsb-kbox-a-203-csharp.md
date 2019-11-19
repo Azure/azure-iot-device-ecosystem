@@ -91,7 +91,7 @@ You should have the following items ready before beginning the process:
 <a name="NextSteps"></a>
 # Next Steps
 
-You have now learned how to run a sample application that collects sensor data and sends it to your IoT hub. To explore how to store, analyze and visualize the data from this application in Azure using a variety of different services, please click on the following lessons:
+You have now learned how to run a sample application that collects sensor data and sends it to your IoT hub. To explore how to store, analyze and visualize the data from this application in Azure using a variety of different services, please click on the following lessons :
 
 -   [Manage cloud device messaging with iothub-explorer]
 -   [Save IoT Hub messages to Azure data storage]
