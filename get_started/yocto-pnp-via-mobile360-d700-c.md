@@ -59,7 +59,7 @@ Software Environmental Setup
 -   Prepare teraterm or putty to check message with VIA Mobile360 D700.
 -   Download [Azure IoT PnP Software](http://cdn.viaembedded.com/products/software/d700/Azure_IoT_PnP/VIA-Mobile360-D700-PnP-Package.tgz) from [VIA Mobile360 D700 AI Dash Cam Downloads](https://www.viatech.com/en/systems/mobile360/mobile360-d700-ai-dash-cam/).
 
-![](media/VIA_Mobile360-D700/via_mobile360-d700-download.png)
+![](./media/VIA_Mobile360-D700/via_mobile360-d700-download.png)
 
 -   Copy the Package into VIA Mobile360 D700 and extract the package
 
