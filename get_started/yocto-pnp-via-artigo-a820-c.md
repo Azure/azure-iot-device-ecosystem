@@ -54,7 +54,7 @@ Software Environmental Setup
 -   Open putty or any tools to connect the COM port. You can see the message from VIA ARTiGO A820.
 -   Download the [Azure IoT PnP Software](http://cdn.viaembedded.com/products/software/artigo-a820/Azure_IoT_PnP/VIA-ARTiGOA820-PnP-Package.tgz) from [VIA ARTiGO A820 Downloads](https://www.viatech.com/en/systems/small-form-factor-pcs/artigo-a820/).
 
-![](media/VIA_ARTIGO-A820/artigoa820-download.png)
+![](./media/VIA_ARTIGO-A820/artigoa820-download.png)
 
 -   Login VIA ARTiGO A820 with com port. The password is "root". Copy the __VIA-ARTiGOA820-PnP-Package.tgz__ to VIA ARTiGO A820 and extract the package by the command:
 
@@ -87,7 +87,7 @@ Azure IoT Central Setup
 -   Clicks ___Devices___, and you can see that your VIA ARTiGO A820 register to IoT Central.
 -   Click your VIA ARTiGO A820. You can see the messages from ARTiGO A820
 
- ![](media/VIA_ARTIGO-A820/artigoa820-result.png)
+ ![](./media/VIA_ARTIGO-A820/artigoa820-result.png)
 
 <a name="AdditionalLinks"></a>
 # Additional Links
