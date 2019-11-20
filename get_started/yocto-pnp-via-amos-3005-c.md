@@ -51,7 +51,7 @@ Software Environmental Setup
 -   Download and install [Ubuntu 16.04](http://releases.ubuntu.com/xenial/).
 -   Download the [Azure IoT PnP Software](http://cdn.viaembedded.com/products/software/amos-3005/Azure_IoT_PnP/VIA-AMOS3005-PnP-Package.tgz) from [VIA AMOS-3005 Downloads](https://www.viatech.com/en/systems/industrial-fanless-pcs/amos-3005/).
 
-![](media/VIA_AMOS-3005/amos3005-download.png)
+![](./media/VIA_AMOS-3005/amos3005-download.png)
 
 -   Copy the **VIA-AMOS3005-PnP-Package.tgz** to VIA AMOS-3005 and extract the package by the command:
 
@@ -87,7 +87,7 @@ Check Azure IoT Central
 -   Clicks ***Devices***, and you can see that your VIA AMOS-3005 register to IoT Central.
 -   Click your VIA AMOS-3005. You can see the messages from VIA AMOS-3005 
 
-![](media/VIA_AMOS-3005/amos3005-result.png)
+![](./media/VIA_AMOS-3005/amos3005-result.png)
 
 <a name="AdditionalLinks"></a>
 # Additional Links

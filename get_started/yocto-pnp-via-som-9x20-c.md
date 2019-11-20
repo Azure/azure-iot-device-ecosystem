@@ -56,7 +56,7 @@ You should have the following items ready before beginning the process:
 -   Open putty or any tools to connect the COM port. You can see the message from VIA SOM-9X20.
 -   Download the [Azure IoT PnP Software]() from [VIA SOM-9X20 Module Downloads](https://www.viatech.com/en/boards/modules/som-9x20/).
 
-![](media/VIA_SOM-9X20/som_9x20-download.png)
+![](./media/VIA_SOM-9X20/som_9x20-download.png)
 
 -   Login VIA SOM-9X20 with com port. The username is "root" and password is "oelinux123". Copy the VIA-SOM-9X20-PnP-Package.tgz to VIA SOM-9X20 and extract the package by the command 
 
@@ -85,7 +85,7 @@ You should have the following items ready before beginning the process:
 -   Clicks "Devices". And you can see that your VIA SOM-9X20 register to IoT Central.
 -   Click your VIA SOM-9X20. You can see the messages from SOM-9X20.
 
- ![](media/VIA_SOM-9X20/som_9x20-result.png)
+ ![](./media/VIA_SOM-9X20/som_9x20-result.png)
 
 <a name="AdditionalLinks"></a>
 # Additional Links

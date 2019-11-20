@@ -56,7 +56,7 @@ Software Environmental Setup
 -   Open putty or any tools to connect the COM port. You can see the message from VIA AMOS-820.
 -   Download the [Azure IoT PnP Software](http://cdn.viaembedded.com/products/software/amos-820/Azure_IoT_PnP/VIA-AMOS820-PnP-Package.tgz) from [VIA AMOS-820 Downloads](https://www.viatech.com/en/systems/industrial-fanless-pcs/amos-820/).
 
-![](media/VIA_AMOS-820/amos820-download.png)
+![](./media/VIA_AMOS-820/amos820-download.png)
  
 -   Login VIA AMOS-820 with com port. The username is "root". Copy the **VIA-AMOS820-PnP-Package.tgz** to VIA AMOS-825 and extract the package by the command:
 
@@ -89,7 +89,7 @@ Azure IoT Central Setup
 -   Clicks ***Devices***, and you can see that your VIA AMOS-820 register to IoT Central.
 -   Click your VIA AMOS-820. You can see the messages from VIA AMOS-820
 
- ![](media/VIA_AMOS-820/amos820-result.png)
+ ![](./media/VIA_AMOS-820/amos820-result.png)
 
 <a name="AdditionalLinks"></a>
 # Additional Links

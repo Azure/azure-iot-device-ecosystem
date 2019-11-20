@@ -53,7 +53,7 @@ Software Environmental Setup
 -   Open putty or any tools to connect the COM port. You can see the message from VIA AMOS-825.
 -   Download the [Azure IoT PnP Software](http://cdn.viaembedded.com/products/software/amos-825/Azure_IoT_PnP/VIA-AMOS825-PnP-Package.tgz) from [VIA AMOS-825 Downloads](https://www.viatech.com/en/systems/industrial-fanless-pcs/amos-825/).
 
-![](media/VIA_AMOS-825/amos825-download.png)
+![](./media/VIA_AMOS-825/amos825-download.png)
 
 -   Login VIA AMOS-825 with com port. The username is "root". Copy the **VIA-AMOS825-PnP-Package.tgz** to VIA AMOS-825 and extract the package by the command:
 
