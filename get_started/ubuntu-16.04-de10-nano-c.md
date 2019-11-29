@@ -3,7 +3,6 @@ platform: ubuntu16.04
 device: de10-nano
 language: c
 ---
-ubuntu-16.04-de10-nano-c
 Run a simple C sample on DE10-Nano Development Kit device running Ubuntu16.04
 ===
 ---
