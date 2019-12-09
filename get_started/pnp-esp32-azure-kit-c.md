@@ -28,7 +28,7 @@ In this tutorial, you will learn how to use the esp32-azure-kit board to send da
   -   Setup the ESP-IDF development environment by following this guide <https://docs.espressif.com/projects/esp-idf/en/stable/get-started/>
   -   Clone the code to your local computer with the command: 
   
-          git clone --recursive -b public-preview-symmetric-key https://pe-china.visualstudio.com/esp-azure-pnp/_git/esp-azure-pnp
+          git clone --recursive -b public-preview-symmetric-key https://github.com/espressif/esp-azure.git
 
 ### Create Azure IoT Central application
 
