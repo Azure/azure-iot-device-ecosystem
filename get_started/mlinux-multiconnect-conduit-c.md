@@ -43,6 +43,7 @@ You should have the following items ready before beginning the process:
 # Step 2: Prepare your Device
 
 Follow the appropriate Getting Started guide for your Conduit to connect to the same network as your host PC
+
 -   [Getting Started with AEP][lnk-aep]
 -   [Getting Started with mLinux][lnk-mlinux]
 
@@ -87,20 +88,18 @@ Follow the appropriate Getting Started guide for your Conduit to connect to the 
 
 -   Create a new file "toolchain.cmake" in the azure-iot-sdk-c directory and enter the text
 
-    ```
-    INCLUDE(CMakeForceCompiler)
-
-    SET(CMAKE_SYSTEM_NAME Linux)
-    SET(CMAKE_SYSTEM_PROCESSOR ARM)
-
-    SET(CMAKE_SYSTEM_VERSION 1)
-    SET(CROSS_COMPILE arm-mlinux-linux-eabi-)
-
-    SET(CMAKE_FIND_ROOT_PATH $ENV{OECORE_TARGET_SYSROOT})
-    SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
-    SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
-    SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
-    ```
+        INCLUDE(CMakeForceCompiler)
+ 
+        SET(CMAKE_SYSTEM_NAME Linux)
+        SET(CMAKE_SYSTEM_PROCESSOR ARM)
+  
+        SET(CMAKE_SYSTEM_VERSION 1)
+        SET(CROSS_COMPILE arm-mlinux-linux-eabi-)
+ 
+        SET(CMAKE_FIND_ROOT_PATH $ENV{OECORE_TARGET_SYSROOT})
+        SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+        SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+        SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 
 -   Build the SDK using following command.
 
@@ -159,6 +158,6 @@ You have now learned how to run a sample application that collects sensor data a
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
-[lnk-mlinux-toolchain]: Toolchain]:http://www.multitech.net/developer/software/mlinux/mlinux-software-development/mlinux-c-toolchain/
-[lnk-aep]: http://www.multitech.net/developer/software/aep/getting-started-aep/
+[lnk-mlinux-toolchain]: http://www.multitech.net/developer/software/mlinux/mlinux-software-development/mlinux-c-toolchain/
+[lnk-aep]: https://www.multitech.com/documents/publications/software-guides/s000727%20-%20mPower%20Edge%20Intelligence%20Conduit_AEP_software_guide.pdf
 [lnk-mlinux]: http://www.multitech.net/developer/software/mlinux/getting-started-with-conduit-mlinux/
