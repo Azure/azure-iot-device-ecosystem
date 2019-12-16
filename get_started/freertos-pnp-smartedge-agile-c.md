@@ -1,7 +1,7 @@
 ---
 platform: freertos 9.0.0
 device: smartedge agile
-language:c
+language: c
 ---
 
 Connect SmartEdge Agile device to your Azure IoT Central Application
