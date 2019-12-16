@@ -78,12 +78,22 @@ Please follow the instructions to set up:
 # Integration with IoT Central
 
 -   Go to the IoT Central app, access the **Devices** tab and choose **SmartEdgeAgile**
+
+![](./media/smartedge_agile/1.png)
  
 -   If you want to start tracking the data, tick **Tracking** and press **Run**
  
+![](./media/smartedge_agile/2.png)
+
 -   You can design your own dashboard with the necessary widgets.  On the **Dashboard** tab press **New** to create a new dashboard, enter all the paraments and press **Save** 
 
+![](./media/smartedge_agile/3.png)
+
+![](./media/smartedge_agile/4.png)
+
 -   Wait a bit and observe the telemetry coming from your PnP device
+
+![](./media/smartedge_agile/5.png)
 
 <a name="AdditionalLinks"></a>
 # Additional Links
