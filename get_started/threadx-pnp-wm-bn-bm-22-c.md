@@ -1,7 +1,7 @@
 ---
 platform: threadx
 device: wm-bn-bm-22
-language:c
+language: c
 ---
 
 Connect WM-BN-BM-22 device to your Azure IoT Central Application
