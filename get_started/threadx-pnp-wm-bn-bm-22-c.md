@@ -42,56 +42,75 @@ You should have the following items ready before beginning the process:
 <a name="preparethedevice"></a>
 # Prepare the Device.
 
-Hardware Environmental setup
+**Hardware Environmental setup**
 
--   Follow USI BM-22 Quickguide  to setup hardware environment.
+-   Follow [USI BM-22 Quickguide](https://github.com/USIWP1Module/USI_BM-22_Azure_IoT_PnP)  to setup hardware environment.
 
 **Software Environmental Setup**
 
--   Download and install WiCED SDK from Cypress.
--   Get USI BM-22 platform patch and copy to WICED SDK 43xxx_Wi-Fi folder.
--   Get USI BM-22 Azure IoT SDK and copy to WICED SDK 43xxx_Wi-Fi\libraries\protocols folder.
--   Get USI BM-22 Azure IoT PnP App and copy to WICED SDK 43xxx_Wi-Fi\apps\demo folder.
+-   Download and install [WiCED SDK](https://www.cypress.com/products/wiced-software) from Cypress.
+-   Get [USI BM-22 platform](https://github.com/USIWP1Module/USI_BM-22_Azure_IoT_PnP) patch and copy to WICED SDK 43xxx_Wi-Fi folder.
+-   Get [USI BM-22 Azure IoT SDK](https://github.com/USIWP1Module/USI_BM-22_Azure_IoT_PnP) and copy to WICED SDK 43xxx_Wi-Fi\libraries\protocols folder.
+-   Get [USI BM-22 Azure IoT PnP App](https://github.com/USIWP1Module/USI_BM-22_Azure_IoT_PnP) and copy to WICED SDK 43xxx_Wi-Fi\apps\demo folder.
 
 ### Option 1
 
-Edit Wifi Settings
+**Edit Wifi Settings**
 
-1.	Open /include/default\_wifi\_config\_dct.h to edit the CLIENT\_AP settings you wish the device to.
-Update the DPS Settings in the Code
-2.	Go to find the following lines in the project ():
-// TODO: Specify DPS scope ID if you intend on using DPS / IoT Central.
-static const char *dpsIdScope = "[DPS Id Scope]";
+-   Open /include/default\_wifi\_config\_dct.h to edit the CLIENT\_AP settings you wish the device to.
 
-    // TODO: Specify symmetric keys if you intend on using DPS / IoT Central and symmetric key based auth.
-static const char *sasKey = "[DPS symmetric key]";
+**Update the DPS Settings in the Code**
 
-    // TODO: specify your device registration ID
-static const char *registrationId = "[device registration Id]";
+-   Go to find the following lines in the project ():
+
+        // TODO: Specify DPS scope ID if you intend on using DPS / IoT Central.
+        static const char *dpsIdScope = "[DPS Id Scope]";
+
+        // TODO: Specify symmetric keys if you intend on using DPS / IoT Central and symmetric key based auth.
+        static const char *sasKey = "[DPS symmetric key]";
+
+        // TODO: specify your device registration ID
+        static const char *registrationId = "[device registration Id]";
 
 Build and Run IoT Plug and Play sample project
 Use following mk command to build the projects for the respective OS:
-ThreadX
- demo.azure\_iot\_pnp-BNBM22-ThreadX download run
+
+**ThreadX**
+
+    demo.azure\_iot\_pnp-BNBM22-ThreadX download run
 
 <a name="IntegrationwithIoTCentral"></a>
 # Integration with IoT Central
 Connect to IoT Central
 
-1.  Use your Azure account log into Azure IoT Central.
-2.  Create a free preview application.
+1.  Use your Azure account log into [Azure IoT Central](https://apps.azureiotcentral.com/).
+2.  Create a free **preview application**.
  
-3.  Select Device templates and then click + New to create device template.
+ ![](./media/bm-wm/1.png)
+ 
+3.  Select **Device templates** and then click **+ New** to create device template.
+
+ ![](./media/bm-wm/2.png)
  
 4.  Choose the pre-certified device (WM-BN-BM-22 Kit) to create Device template.
+
+ ![](./media/bm-wm/3.png)
  
-5.  Go to the Devices page select WM-BN-BM-22 Kit and click + New to create a new device.
+5.  Go to the **Devices** page select **WM-BN-BM-22 Kit** and click **+ New** to create a new device.
+
+ ![](./media/bm-wm/4.png)
  
-6.  In the popup device info page, set Device ID, Device Name and then click Create button to create a new device.
+6.  In the popup device info page, set **Device ID**, Device Name and then click **Create** button to create a new device.
+
+ ![](./media/bm-wm/5.png)
  
-7.  In the Devices page, click the device you created in **step 6** to enter device detail info page.
+7.  In the **Devices** page, click the device you created in **step 6** to enter device detail info page.
+
+ ![](./media/bm-wm/6.png)
  
-8.  Click Connect button to get Scope ID, Device ID, Primary Key, and make a note of them.
+8.  Click **Connect** button to get **Scope ID, Device ID, Primary Key,** and make a note of them.
+
+ ![](./media/bm-wm/7.png)
 
 <a name="AdditionalLinks"></a>
 # Additional Links
@@ -103,4 +122,3 @@ Please refer to the below link for additional information for Plug and Play
 -    [Plug and Play Node SDK](https://github.com/Azure/azure-iot-sdk-node/tree/digitaltwins-preview)
 -    [Plug and Play Definitions](https://github.com/Azure/IoTPlugandPlay)
 -    [USI BM-22 Azure IoT PnP]( https://github.com/USIWP1Module/USI_BM-22_Azure_IoT_PnP)
-
