@@ -55,24 +55,29 @@ You should have the following items ready before beginning the process:
 
 ### Option 1
 
-Edit Wifi Settings
+**Edit Wifi Settings**
 
-1.	Open /include/default\_wifi\_config\_dct.h to edit the CLIENT\_AP settings you wish the device to.
-Update the DPS Settings in the Code
-2.	Go to find the following lines in the project ():
-// TODO: Specify DPS scope ID if you intend on using DPS / IoT Central.
-static const char *dpsIdScope = "[DPS Id Scope]";
+-   Open /include/default\_wifi\_config\_dct.h to edit the CLIENT\_AP settings you wish the device to.
 
-    // TODO: Specify symmetric keys if you intend on using DPS / IoT Central and symmetric key based auth.
-static const char *sasKey = "[DPS symmetric key]";
+**Update the DPS Settings in the Code**
 
-    // TODO: specify your device registration ID
-static const char *registrationId = "[device registration Id]";
+-   Go to find the following lines in the project ():
+
+        // TODO: Specify DPS scope ID if you intend on using DPS / IoT Central.
+        static const char *dpsIdScope = "[DPS Id Scope]";
+
+        // TODO: Specify symmetric keys if you intend on using DPS / IoT Central and symmetric key based auth.
+        static const char *sasKey = "[DPS symmetric key]";
+
+        // TODO: specify your device registration ID
+        static const char *registrationId = "[device registration Id]";
 
 Build and Run IoT Plug and Play sample project
 Use following mk command to build the projects for the respective OS:
-ThreadX
- demo.azure\_iot\_pnp-BNBM22-ThreadX download run
+
+**ThreadX**
+
+    demo.azure\_iot\_pnp-BNBM22-ThreadX download run
 
 <a name="IntegrationwithIoTCentral"></a>
 # Integration with IoT Central
