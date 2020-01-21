@@ -293,7 +293,7 @@ Supports POE and power supply connected to the network gateway
 2.  Confirms that the 2G/3G/4G dataflow of the mobile device is closed;
 
 3.  Make sure that the AP LAN IP is changed to another value (AP, LAN, IP, default is `192.168.99.1`). If you have changed, enter the AP LAN IP in the browser and the modified value will go to the configuration page.
-**Remarks：**Use the mobile device to view the gateway WiFi AP LAN IP, WiFi property, a router is the value of AP LAN IP, or directly restore factory settings, AP LAN IP defaults to `192.168.99.1`.
+**Remarks：** Use the mobile device to view the gateway WiFi AP LAN IP, WiFi property, a router is the value of AP LAN IP, or directly restore factory settings, AP LAN IP defaults to `192.168.99.1`.
 
 **Q: Configure the network, in the dynamic six colored lamp rotation mode cannot be networked?**
 
@@ -388,22 +388,7 @@ the product material structure
 
 -   The following conditions are not covered by the free warranty:
     -   Damage caused by the use, maintenance and improper storage of the consumers;
-    -    Damage caused by repairs and modifications without the right of the company;
-    -     Damage caused by force majeure.
-    -     Failure to comply with performance faults listed in the performance fault table.
-    -     Out of warranty period
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    -   Damage caused by repairs and modifications without the right of the company;
+    -   Damage caused by force majeure.
+    -   Failure to comply with performance faults listed in the performance fault table.
+    -   Out of warranty period
