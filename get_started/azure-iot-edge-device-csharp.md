@@ -11,11 +11,11 @@ Deploy Azure Stack HCI and WAC, Azure IoT Edge
 # Table of Contents
 
 -   [Introduction](#Introduction)
--   [Step1: Deploy Azure Stack HCI, install WAC](DeployAzureStackHCIinstallWAC)
--   [Step2: Deploy Azure IoT Edge on Azure Stack HCI](DeployAzureIoTEdgeonAzureStackHCI)
+-   [Step1: Deploy Azure Stack HCI, install WAC](#DeployAzureStackHCIinstallWAC)
+-   [Step2: Deploy Azure IoT Edge on Azure Stack HCI](#DeployAzureIoTEdgeonAzureStackHCI)
 
 <a name="Introduction"></a>
-#Introduction
+# Introduction
 
 This topics provides step-by-step instructions to deploy [Azure Stack HCI](https://azure.microsoft.com/en-us/overview/azure-stack/hci/) and [Azure
 IoT Edge](https://azure.microsoft.com/en-us/services/iot-edge/). Leverage your Azure Stack HCI investment to run key virtual applications and workloads in a highly available, resilient fashion on hardware designed for Branch office and edge scenarios with industry-leading support for 2 node configurations including: [Nestedresiliency](https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/nested-resiliency), [USB thumb drive clusterwitness](https://docs.microsoft.com/en-us/windows-server/failover-clustering/file-share-witness), and browser-based administration via [Windows Admin Center](https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/understand/windows-admin-center). You can find Azure Stack HCI solutions from your preferred hardware vendors from the [Azure Stack HCIcatalog](https://www.microsoft.com/en-us/cloud-platform/azure-stack-hci-catalog?Hardware-partners=Cisco).
@@ -46,7 +46,7 @@ Step by Step guide to deploy Azure Stack HCI
     requirements, click
     [here](https://docs.microsoft.com/en-us/azure/iot-edge/support))
 
-2.  If you do not already have an Azure account, get your free account [here](https://azure.microsoft.com/account/free)
+2.  If you do not already have an Azure account, get your free account [here](https://azure.microsoft.com/en-in/free/)
 
 3.  [Create an Azure IoT Hub](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart#create-an-iot-hub) in the Azure Portal
 
