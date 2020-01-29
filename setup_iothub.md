@@ -82,7 +82,7 @@ To build applications to manage the IoT hub and interact with devices from the C
 [for C#]: https://docs.microsoft.com/azure/iot-hub/iot-hub-csharp-csharp-getstarted#create-a-device-identity
 [for Node.js]: https://docs.microsoft.com/azure/iot-hub/iot-hub-node-node-getstarted#create-a-device-identity
 [for java]: https://docs.microsoft.com/azure/iot-hub/iot-hub-java-java-getstarted#create-a-device-identity
-[for Python]: https://github.com/Azure/azure-iot-sdk-python/tree/master/service/samples
+[for Python]: https://github.com/Azure/azure-iot-sdk-python/tree/master/azure-iot-hub/samples
 [using Azure CLI v2.0]: https://docs.microsoft.com/cli/azure/iot/device#create
 [Azure IoT service client SDK for C#]: https://github.com/Azure/azure-iot-sdk-csharp/tree/master/service
 [Azure IoT service client SDK for Node.js]: https://github.com/azure/azure-iot-sdk-node/tree/master/service
