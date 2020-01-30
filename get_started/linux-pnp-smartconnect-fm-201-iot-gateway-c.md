@@ -4,7 +4,7 @@ device: smartconnect fm-201 iot gateway
 language: c
 ---
 
-Connect SmartConnect FM-201 IoT Gateway to your Azure IoT Central Application
+Instructions for using G1-B Gateway
 ===
 
 ![](./media/WM-BN-BM-22/1.png)
