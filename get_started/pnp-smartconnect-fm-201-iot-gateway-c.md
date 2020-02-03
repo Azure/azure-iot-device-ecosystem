@@ -40,7 +40,7 @@ In this tutorial, you will learn how to use the G1 gateway to send data to Azure
 
 5.  Select **Administration** and then click **Device connection**, make a note of **ID Scope**.
 
-     ![IoT Central, scope id](./media/smartconnect-fm-201-iot-gateway/scope-id.png)
+     ![IoT Central, scope id](./media/smartconnect-fm-201-iot-gateway/scope-Id.png)
 
 6.  Click **View Keys**， and make a note of **Primary Key**.
 
