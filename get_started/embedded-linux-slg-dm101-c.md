@@ -56,7 +56,7 @@ When using WIFI AP (such as Aruba AP or Samsung AP)
 -   After a while, the device (SLG-DM101) will be turned on from USB Power source of the WIFI AP.
 -   The device will automatically retrieve an IP address from DHCP Server through Ethernet over USB.
 
-![](./media/slg-dm101/AP303H_USBGW.png)
+![](./media/slg-dm101/AP303H_USBGW.PNG)
 
 When using WIFI USB Dongle (RTL8821CU, Dual-Band Chipset) 
 
@@ -64,7 +64,7 @@ When using WIFI USB Dongle (RTL8821CU, Dual-Band Chipset)
 -	Connect WIFI Dongle to the micro USB Port of SoluM device with USB Gender.
 -   Connect the device to the USB port of Power adapter or USB extension cable.
 
-![](./media/slg-dm101/WIFIDongle_USBGW.png)
+![](./media/slg-dm101/WIFIDongle_USBGW.PNG)
 
 -   Connection Setting
 
