@@ -76,14 +76,14 @@ Set up your PC first. Ensure IP Address: 192.168.1.10, Subnet Mask: 255.255.255.
 
 2.  User needs to open up Tera Term software to connect to Gateway.
 
-    ![](./media/Whiznano_Gateway_Hub/ssh_to_Gateway.png)
+    ![](./media/Whiznano_Gateway_Hub/ssh_to_Gateway.PNG)
 
 3.  Enter username as “root” with no password and proceed.
 
 4.  Key in command as shown in the figure below. 
 (For e.g. **nanogateway**(space)**connection_string**)
 
-    ![](./media/Whiznano_Gateway_Hub/IoTHub_connection.png)
+    ![](./media/Whiznano_Gateway_Hub/IoTHub_connection.PNG)
 
 ## Next steps
 
