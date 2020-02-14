@@ -31,9 +31,9 @@ In addition to the current ESP32 and ESP8266 hardware offerings, Espressif now o
 
 Sample|Description
 ---|---|
-[azure-esp-starter](./samples/azure-esp-starter)|Send telemetry data from the ESP32 Azure device to Azure IoT Hub
-[azure-esp-starter-pnp](./samples/azure-esp-pnp-starter)|Send telemetry data from ESP32 Azure device to Azure IoT Hub with Azure IoT Plug and Play
-*
+[azure-esp-starter](https://github.com/Azure-Samples/ESP-Samples/tree/master/samples/azure-esp-starter)|Send telemetry data from the ESP32 Azure device to Azure IoT Hub
+[azure-esp-starter-pnp](https://github.com/Azure-Samples/ESP-Samples/tree/master/samples/azure-esp-pnp-starter)|Send telemetry data from ESP32 Azure device to Azure IoT Hub with Azure IoT Plug and Play
+
 
 The projects in the samples folder follow the folder structure specified by Espressif for ESP-IDF projects. See more information about ESP-IDF and the ESP-IDF build system in the [Key Concepts](#key-concepts) section.
 
@@ -62,9 +62,9 @@ Please follow the steps corresponding to your operating system below to ensure y
 Using Windows Subsystem Linux (WSL):
 
 *ESP32:*
-You can install the ESP32 toolchain and ESP-IDF on your windows machine using WSL. Start Windows Subsystem for Linux by typing `WSL` in your start menu and running [this setup script](./install-script/esp-setup.sh).
+You can install the ESP32 toolchain and ESP-IDF on your windows machine using WSL. Start Windows Subsystem for Linux by typing `WSL` in your start menu and running [this setup script](https://github.com/Azure-Samples/ESP-Samples/blob/master/install-script/esp-setup.sh).
 
-For instructions on running the setup scripts, please review the details provided [here](./install-script/readme.md).
+For instructions on running the setup scripts, please review the details provided [here](https://github.com/Azure-Samples/ESP-Samples/blob/master/install-script/readme.md).
 *This is the recommended approach for novice ESP32  developers using these samples.*
 
 >For more information on setting up WSL on Windows 10 [see how to setup WSL on Windows 10](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
@@ -138,7 +138,7 @@ There are various development frameworks available for working with ESP devices.
 
 In using the ESP-IDF framework, it is recommended to utilize the ESP-IDF build system folder structure which brings a notion of “components”. Components to be used in your project, like Azure IoT, should be placed within the appropriate project folder with Makefile and/or CMakelists files at the root of each component's folder. Project code is then typically placed in the main folder.  ESP-IDF projects have the components used and the project code built and statically linked at the same time. Learn more about the ESP-IDF build system and starting ESP projects from scratch in the Espressif documentation for the [ESP-IDF build system](https://docs.espressif.com/projects/esp-idf/en/v3.3/api-guides/build-system.html).
 
-> To use Azure IoT in your own custom project, you can use the [empty project template](https://github.com/espressif/esp-iot-solution/tree/master/examples/empty_project) provided by Espressif. Once your folder structure is set up, copy the desired Azure IoT component into your components folder. The components provided in this repo are: [azure-esp-sdk](./components/esp-azure) and [esp-azure-pnp](./components/esp-azure-pnp) *(Plug and Play)*
+> To use Azure IoT in your own custom project, you can use the [empty project template](https://github.com/espressif/esp-iot-solution/tree/master/examples/empty_project) provided by Espressif. Once your folder structure is set up, copy the desired Azure IoT component into your components folder. The components provided in this repo are: [azure-esp-sdk](https://github.com/Azure-Samples/ESP-Samples/tree/master/components/esp-azure) and [esp-azure-pnp](https://github.com/Azure-Samples/ESP-Samples/tree/master/components/esp-azure-pnp) *(Plug and Play)*
 
 ## Contributing
 
