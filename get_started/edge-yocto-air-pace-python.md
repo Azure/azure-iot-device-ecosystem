@@ -55,7 +55,7 @@ This section describes how to connect the cables:
 -   Connect WAN cable
 -   Connect LAN cable
 
- ![](./media/airpace/AiRPACEAppearance.png)
+ ![](./media/airpace/AiRPACEAppearance.PNG)
 
 <a name="Step-2-2 Login2WEB-UI"></a>
 ## 2.2 Login to WEB-UI
@@ -64,7 +64,7 @@ This section explains how to log in WEB-UI:
 
 -   Open the browser and connect to WEB-UI (gateway of LAN port)
 
- ![](./media/airpace/web-ui-login.png)
+ ![](./media/airpace/web-ui-login.PNG)
 
 -   Fill in username and password for WEB-UI login
 
@@ -109,13 +109,13 @@ This section describes how to start the Azure service by WEB-UI:
 
 **Check the iotedge daemon starting:** 
 
- ![](./media/airpace/iotedege_start.png)
+ ![](./media/airpace/iotedege_start.PNG)
 
 Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
 
     iotedge list
 
- ![](./media/airpace/iotedge_list.png) 
+ ![](./media/airpace/iotedge_list.PNG) 
 
 On the device details page of the Azure, you should see the runtime modules - edgeAgent, edgeHub and tempSensor modueles are under running status
 
