@@ -73,22 +73,22 @@ Whiznano Gateway comes with pre-installed IoT Central Application.
 # Integration with IoT Central
 1. User needs to open up Tera Term software to connect to Gateway.
 
-    ![](./media/whiznano-gateway/ssh_to_Gateway.png)
+    ![](./media/whiznano-gateway/ssh_to_Gateway.PNG)
 
 2. Enter username as “root” with no password and proceed.
 
 3. Key in command as shown in the figure below. 
 (For e.g. Whiznano\_IoT\_Central\_app(space)**Device\_ID**(space)**ID\_Scope**(space)**Primary\_Key** )
 
-    ![](./media/whiznano-gateway/Run_app.png)
+    ![](./media/whiznano-gateway/Run_app.PNG)
 
 4. You should be able to see your program running the same as the figure below, indicating the Gateway connection information.
 
-    ![](./media/whiznano-gateway/Gateway_connection_information.png)
+    ![](./media/whiznano-gateway/Gateway_connection_information.PNG)
 
 5. In your IoT Central application, select **Devices** tab, select the device you added. In the **Overview** tab, you can see the telemetry from the Whiznano Gateway Device:
 
-    ![](./media/whiznano-gateway/Device_overview.png)
+    ![](./media/whiznano-gateway/Device_overview.PNG)
 
 <a name="AdditionalLinks"></a>
 # Additional Links

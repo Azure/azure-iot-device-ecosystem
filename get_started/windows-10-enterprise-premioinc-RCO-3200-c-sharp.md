@@ -39,7 +39,7 @@ You should have the following items ready before beginning the process:
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   After powering up your RCO-3200 Rugged Edge Computer device, be sure that it has established a network connection whether it is through ethernet, Wi-Fi, or cellular. For more information, please download the device's [User's Manual](https://premio.blob.core.windows.net/premio/uploads/resource/user-manual/UM-RCO-3200.pdf).
+-   After powering up your RCO-3200 Rugged Edge Computer device, be sure that it has established a network connection whether it is through ethernet, Wi-Fi, or cellular. For more information, please download the device's <a href="https://premio.blob.core.windows.net/premio/uploads/resource/user-manual/UM-RCO-3200.pdf" rel="nofollow">User's Manual</a>.
 
 <a name="Build"></a>
 # Step 3: Build and Run the sample
