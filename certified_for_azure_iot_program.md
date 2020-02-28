@@ -39,21 +39,21 @@ To certify the IoT Hub and IoT Edge Device login to the [Partner Dashboard](http
 <a name="AzureIoTHubDeviceCertificationProcess"></a>
 ### Azure IoT Hub Device Certification Process 
 
-![](./media/Qualifydevicessteps.png)
+![](./media/Qualifydevicessteps.PNG)
 
 Device test results go through technical validation and content review. After successful completion approved devices are listed on Device Catalog.
 
 <a name="AzureIoTEdgeDeviceCertificationProcess"></a>
 ### Azure IoT Edge Device Certification Process 
 
-![](./media/AzureIoTEdgeDeviceCertificationProcess.png)
+![](./media/AzureIoTEdgeDeviceCertificationProcess.PNG)
 
 Device test results go through technical validation and content review. After successful completion approved devices are listed on Device Catalog. Edge Devices are being asked to be shipped to Microsoft or authorized Microsoft partners for further validation. 
 
 <a name="IoTPlugandPlayCertificationProcess"></a>
 ### IoT Plug and Play Certification Process  
 
-![](./media/IoTPlugandPlayCertificationProcess.png)
+![](./media/IoTPlugandPlayCertificationProcess.PNG)
 
 Device test results go through technical validation and content review. After successful completion approved devices are listed on Device Catalog .For more information on Plug and Play Certification click [here](https://docs.microsoft.com/en-us/azure/iot-pnp/tutorial-certification-test).
 
