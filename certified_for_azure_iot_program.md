@@ -27,13 +27,13 @@ Steps for IoT Edge Device Certification click [here](#AzureIoTEdgeDeviceCertific
 
 Plug and Play certification helps customer and partners to simplifies device integration by enabling solution developers to connect and interact with IoT devices using device capability models defined with the [Digital Twin definition language](https://aka.ms/DTDL). Solution developers can start using [Azure IoT Central](https://azure.microsoft.com/en-us/services/iot-central/) or [Azure IoT Hub](https://azure.microsoft.com/en-us/services/iot-hub/) to build solutions that integrate seamlessly with IoT devices enabled with IoT Plug and Play. IoT Plug and Play allows device manufacturers to expand addressable market and make the cloud development simple. 
 
-To understand the Plug and Play please refer [here](https://docs.microsoft.com/en-us/azure/iot-pnp/overview-iot-plug-and-play.).
+To understand the Plug and Play please refer [here](https://docs.microsoft.com/en-us/azure/iot-pnp/overview-iot-plug-and-play).
 
 Steps for IoT Plug and Play Certification click [here](#IoTPlugandPlayCertificationProcess).
 
 ## Qualify devices steps
 
-To certify the IoT Hub and IoT Edge Device login to the [Partner Dashboard](https://catalog.azureiotsolutions.com/) and perform the steps as listed below.
+To certify the IoT Hub and IoT Edge Device login to the [Partner Dashboard](https://catalog.azureiotsolutions.com/devices) and perform the steps as listed below.
 
 
 <a name="AzureIoTHubDeviceCertificationProcess"></a>
@@ -77,21 +77,35 @@ Below is the documentation quick list for complete list of conceptual overviews,
 ## Azure Device Certification Program FAQs
 
 -   Can I certify same IoT Device as IoT Edge Device? 
-   -   Yes , you can certify the device as IoT Edge also , in your partner dashboard you will have to edit the device information and select Edge certified filter and perform the test as followed. Once the device is certify , by default Edit option on device is disabled , please contact [iotcert@microsoft.com](mailto:iotcert@microsoft.com) for enabling the edit option. 
+   
+    Yes , you can certify the device as IoT Edge also , in your partner dashboard you will have to edit the device information and select Edge certified filter and perform the test as followed. Once the device is certify , by default Edit option on device is disabled , please contact [iotcert@microsoft.com](mailto:iotcert@microsoft.com) for enabling the edit option.
+
 -   I need to update the device information.
-   -   Once the devices are certified by default Edit option is disabled , you can drop the email to [iotcert@microsft.com](mailto:iotcert@microsoft.com) to update the changes
+   
+    Once the devices are certified by default Edit option is disabled , you can drop the email to [iotcert@microsft.com](mailto:iotcert@microsoft.com) to update the changes
+
 -   Do I need to send the Edge Device to Microsoft Redmond? 
-   -   For IoT Edge Certification it is required to send the physical Edge device to Redmond for further validation. Shipping details will be shared over emails.
+    For IoT Edge Certification it is required to send the physical Edge device to Redmond for further validation. Shipping details will be shared over emails.
+
 -   Performed AICS but selected OS is not visible second time.
-   -   Once OS is selected, same OS option won’t be present for same device. If your certification is still in progress and unable to see the OS in the partner dashboard please check here <https://aics.azureiotsolutions.com/> .Select the relevant OS/device record to check the existing result.
+
+    Once OS is selected, same OS option won’t be present for same device. If your certification is still in progress and unable to see the OS in the partner dashboard please check here <https://aics.azureiotsolutions.com/> .Select the relevant OS/device record to check the existing result.
+
 -   Performed the test unable to submit the test results/facing errors when hit submit button, even-though passed the test
-   -   Please contact [iotcert@microsoft.com](mailto:iotcert@microsoft.com) 
+
+    Please contact [iotcert@microsoft.com](mailto:iotcert@microsoft.com)
+
 -   Created the partner account but unable to add device on partner dashboard 
-   -   Please contact [iotcert@microsft.com](mailto:iotcert@microsoft.com) 
+
+    Please contact [iotcert@microsft.com](mailto:iotcert@microsoft.com) 
+
 -   How much does it cost to qualify a device for listing?
-   -   Participation in the Azure Device Certification Program is made available to Partners at no additional cost.
+
+    Participation in the Azure Device Certification Program is made available to Partners at no additional cost.
+
 -   If the device is passed the IoT Edge certification, do I have to install the IoT Edge Runtime before the device is sold?
-   -   We do recommend to pre-install the certified Edge runtime because pre-installing would make the unboxing experience for the developers great.
+
+    We do recommend to pre-install the certified Edge runtime because pre-installing would make the unboxing experience for the developers great.
 
 ## Key concepts
 
