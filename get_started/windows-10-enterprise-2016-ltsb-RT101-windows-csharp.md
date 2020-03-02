@@ -1,6 +1,6 @@
 ---
-platform: {Windows 10 Enterprise 2016 LTSB}
-device: {RT101}
+platform: windows 10 enterprise 2016 ltsb
+device: rt101
 language: csharp
 ---
 
