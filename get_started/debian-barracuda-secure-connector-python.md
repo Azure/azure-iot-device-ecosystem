@@ -54,7 +54,7 @@ When your infrastructure is up and running and you have your first Secure Connec
 pre-installed Microsoft Azure IoT Edge Components in your Barracuda Firewall Control Center:
 -   Go to Secure Connector Editor and open configuration of an individual SC or a SC template
 
-    ![](./images/SecureConnectorCC.PNG)
+   ![](./media/barracuda/SecureConnectorCC.PNG)
 
 -   In the Secure Connector configuration go to Container Settings.
 -   Enable Container
@@ -62,7 +62,7 @@ pre-installed Microsoft Azure IoT Edge Components in your Barracuda Firewall Con
 -   Choose Microsoft IoTEdge as your container engine
 -   Enter the IoTEdge Device Connection String
 
-    ![](./images/Container.PNG)
+    ![](./media/barracuda/Container.PNG)
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
@@ -89,17 +89,17 @@ Open the command prompt on your IoT Edge device , confirm that the Azure IoT edg
 
     systemctl status iotedge
 
- ![](./images/Capture.png)
+ ![](./media/barracuda/Capture.png)
 
 Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
 
     sudo iotedge list
 
- ![](./images/iotedgedaemon.png) 
+ ![](./media/barracuda/iotedgedaemon.png) 
 
 On the device details page of the Azure, you should see the runtime modules - edgeAgent, edgeHub and tempSensor modueles are under running status
 
- ![](./images/tempSensor.png)
+ ![](./media/barracuda/tempSensor.png)
 
 <a name="Sample"></a>
 ## 4 Run a python sample
@@ -108,39 +108,40 @@ On the device details page of the Azure, you should see the runtime modules - ed
 
 ## 4.1 Build SDK and sample:
 
-- Open a PuTTY (or SSH) session and connect to the device
-- Install the prerequisite packages for the Microsoft Azure IoT Device SDK for Python by issuing the following commands from the command line on your Secure Connector:
-```
-    apt-get update & apt-get upgrade
-    apt-get install -y curl libcurl4-openssl-dev build-essential cmake git python2.7-dev libboost-python-dev
-```
-- Download the Microsoft Azure IoT Device SDK to the board by issuing the following command on the Secure Connector:
-```
-git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
-```
-- Install pip package manager:
-```
-    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-    python3 get-pip.py
-```
-- Install Azure IoT Device SDK:
-``` 
-    pip install azure-iot-device
-```
-- Navigate to samples folder by executing following command:
-```
-    cd azure-iot-sdk-python/device/samples/
-```
-- Configfure connection string for sample code:
-```
-    export IOTHUB_DEVICE_CONNECTION_STRING="<your connection string here>"
-```
-- Run the python sample:
-```
-    python3 simple_send_message.py
-```
-- You schould see the massege ios scessfully send to Azure IoT Hub:
-![](./images/pyMessage.PNG)
+-   Open a PuTTY (or SSH) session and connect to the device
+-   Install the prerequisite packages for the Microsoft Azure IoT Device SDK for Python by issuing the following commands from the command line on your Secure Connector:
+
+        apt-get update & apt-get upgrade
+        apt-get install -y curl libcurl4-openssl-dev build-essential cmake git python2.7-dev libboost-python-dev
+
+-   Download the Microsoft Azure IoT Device SDK to the board by issuing the following command on the Secure Connector:
+
+        git clone --recursive https://github.com/Azure/azure-iot-sdk-python.git
+
+-   Install pip package manager:
+
+        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+        python3 get-pip.py
+
+-   Install Azure IoT Device SDK:
+
+        pip install azure-iot-device
+
+-   Navigate to samples folder by executing following command:
+
+        cd azure-iot-sdk-python/device/samples/
+
+-   Configfure connection string for sample code:
+
+        export IOTHUB_DEVICE_CONNECTION_STRING="<your connection string here>"
+
+-   Run the python sample:
+
+        python3 simple_send_message.py
+
+-   You schould see the massege ios scessfully send to Azure IoT Hub:
+
+![](./media/barracuda/pyMessage.PNG)
 
 
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
