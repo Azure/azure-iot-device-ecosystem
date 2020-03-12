@@ -54,7 +54,7 @@ When your infrastructure is up and running and you have your first Secure Connec
 pre-installed Microsoft Azure IoT Edge Components in your Barracuda Firewall Control Center:
 -   Go to Secure Connector Editor and open configuration of an individual SC or a SC template
 
-   ![](./media/barracuda/SecureConnectorCC.PNG)
+   ![](./media/barracuda/SecureConnectorCC.png)
 
 -   In the Secure Connector configuration go to Container Settings.
 -   Enable Container
@@ -62,7 +62,7 @@ pre-installed Microsoft Azure IoT Edge Components in your Barracuda Firewall Con
 -   Choose Microsoft IoTEdge as your container engine
 -   Enter the IoTEdge Device Connection String
 
-    ![](./media/barracuda/Container.PNG)
+    ![](./media/barracuda/Container.png)
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
@@ -141,7 +141,7 @@ On the device details page of the Azure, you should see the runtime modules - ed
 
 -   You schould see the massege ios scessfully send to Azure IoT Hub:
 
-![](./media/barracuda/pyMessage.PNG)
+![](./media/barracuda/pyMessage.png)
 
 
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
