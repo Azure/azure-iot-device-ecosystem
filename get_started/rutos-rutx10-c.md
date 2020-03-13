@@ -62,10 +62,12 @@ You should have the following items ready before beginning the process:
     ![Alt text][main-picture]
 
 <a name="NextSteps"></a>
+￼
 # Next Steps
 
 You have now learned how to run a sample application that collects router modem data and sends it to your IoT hub. To explore how to store, analyze and visualize the data from this application in Azure using a variety of different services, please click on the following lessons:
 
+￼
 -   [Manage cloud device messaging with iothub-explorer]
 -   [Save IoT Hub messages to Azure data storage]
 -   [Use Power BI to visualize real-time sensor data from Azure IoT Hub]
@@ -83,6 +85,6 @@ You have now learned how to run a sample application that collects router modem 
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
 [main-picture]: https://wiki.teltonika-networks.com/wikibase/images/f/ff/Networking_rutx_configuration_examples_azure_iot_hub_v1.png
-[wiki-page]: https://wiki.teltonika.lt/view/Azure_IoT_Hub_cloud_connection
-[rut-login]: https://wiki.teltonika.lt/view/RUTX08_First_Start
+[wiki-page]: https://wiki.teltonika-networks.com/view/Azure_IoT_Hub_cloud_connection
+[rut-login]: https://wiki.teltonika-networks.com/view/RUTX08_First_Start#Login_to_device
 [package-manager]: https://wiki.teltonika-networks.com/wikibase/images/1/10/Networking_rutx_configuration_examples_package_manager_v1.png

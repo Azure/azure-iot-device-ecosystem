@@ -38,7 +38,6 @@ You should have the following items ready before beginning the process:
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
-
 -   [Login to device WebUI][rut-login]
 -   Make sure to have internet connection
 -   Download Azure IotHub package from Package Manager (System->Package Manager)
@@ -84,6 +83,6 @@ You have now learned how to run a sample application that collects router modem 
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
 [main-picture]: https://wiki.teltonika-networks.com/wikibase/images/f/ff/Networking_rutx_configuration_examples_azure_iot_hub_v1.png
-[wiki-page]: https://wiki.teltonika.lt/view/Azure_IoT_Hub_cloud_connection
-[rut-login]: https://wiki.teltonika.lt/view/RUTX08_First_Start
+[wiki-page]: https://wiki.teltonika-networks.com/view/Azure_IoT_Hub_cloud_connection
+[rut-login]: https://wiki.teltonika-networks.com/view/RUTX08_First_Start#Login_to_device
 [package-manager]: https://wiki.teltonika-networks.com/wikibase/images/1/10/Networking_rutx_configuration_examples_package_manager_v1.png

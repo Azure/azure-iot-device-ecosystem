@@ -34,13 +34,17 @@ You should have the following items ready before beginning the process:
 -   [Prepare your development environment][setup-devbox-linux]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   RUTX09 device.
+-   RUTX11 device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 -   [Login to device WebUI][rut-login]
 -   Make sure to have internet connection
--   Go to Azure IoTHub configuration page (System->Administration->Azure IoTHub)
+-   Download Azure IotHub package from Package Manager (System->Package Manager)
+
+    ![Alt text][package-manager]
+
+-   Go to Azure IoTHub configuration page (Services->Cloud connections->Azure Iot Hub)
 -   [More information can be found in our wiki page][wiki-page]
 
 <a name="Build"></a>
@@ -49,19 +53,13 @@ You should have the following items ready before beginning the process:
 <a name="Step-3-3-Run"></a>
 ## 3.1 Run the Sample
 
--   Check the **Enable Azure IoTHub monitoring** checkbox
--   Enter device connection string to **Connection string** placeholder
--   Enter interval in seconds to send data to **Message sending interval (sec.)** placeholder
+-   Check the "Enable Azure IoTHub monitoring" checkbox
+-   Enter device connection string to "Connection string" placeholder
+-   Enter interval in seconds to send data to "Message sending interval (sec.)" placeholder
+-   Check all the checkboxes of information needed to send to cloud (in "GSM Values" placeholder)
+-   Press "Save & Apply"
 
-![Alt text][main-picture]
-
--   Check all the checkboxes of information needed to send to cloud
-
-![Alt text][check-picture]
-
--   Press **Save**
-
-![Alt text][save-picture]
+    ![Alt text][main-picture]
 
 <a name="NextSteps"></a>
 # Next Steps
@@ -82,10 +80,9 @@ You have now learned how to run a sample application that collects router modem 
 [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning
 [Remote monitoring and notifications with Logic Apps]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
-[lnk-setup-iot-hub]: ../../setup_iothub.md
-[lnk-manage-iot-hub]: ../../manage_iot_hub.md
-[main-picture]: https://wiki.teltonika.lt/wiki/images/4/4e/01.jpg
-[check-picture]: https://wiki.teltonika.lt/wiki/images/3/3f/02.jpg
-[save-picture]: https://wiki.teltonika.lt/wiki/images/f/f9/03.jpg
-[wiki-page]: https://wiki.teltonika.lt/view/Azure_IoT_Hub_cloud_connection
-[rut-login]: https://wiki.teltonika.lt/view/RUT900_first_start#Login_to_device
+[lnk-setup-iot-hub]: ../setup_iothub.md
+[lnk-manage-iot-hub]: ../manage_iot_hub.md
+[main-picture]: https://wiki.teltonika-networks.com/wikibase/images/f/ff/Networking_rutx_configuration_examples_azure_iot_hub_v1.png
+[wiki-page]: https://wiki.teltonika-networks.com/view/Azure_IoT_Hub_cloud_connection
+[rut-login]: https://wiki.teltonika-networks.com/view/RUTX09_First_Start#Login_to_device
+[package-manager]: https://wiki.teltonika-networks.com/wikibase/images/1/10/Networking_rutx_configuration_examples_package_manager_v1.png
