@@ -70,17 +70,17 @@ Open the command prompt on your IoT Edge device , confirm that the Azure IoT edg
 
     systemctl status iotedge
 
- ![](./media/toybrick/toybrick-ai-iotedge-status.PNG)
+ ![](./media/toybrick/toybrick-ai-iotedge-status.png)
  
     sudo iotedge check
 
- ![](./media/toybrick/toybrick-ai-iotedge-check.PNG)
+ ![](./media/toybrick/toybrick-ai-iotedge-check.png)
 
 Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
 
     sudo iotedge list
 
- ![](./media/toybrick/toybrick-ai-iotedge-list.PNG) 
+ ![](./media/toybrick/toybrick-ai-iotedge-list.png) 
 
   
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
