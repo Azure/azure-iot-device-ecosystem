@@ -1,7 +1,7 @@
 ---
 platform: {enter the OS name running on device}
 device: {enter your device name here}
-language:c
+language: c
 ---
 
 Connect {enter your device name here} device to your Azure IoT Central Application
