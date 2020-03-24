@@ -75,13 +75,13 @@ List running modules. After a new installation, the only module you should see r
 
     iotedge list
 
-![](./windows_edge_images/edgemodule_status.png)
+![](./media/windows_edge_images/edgemodule_status.png)
 
 View the messages being sent from the module you created to the cloud.
 
     iotedge logs {module name}
 
-![](./windows_edge_images/edgemodule_logs.png)
+![](./media/windows_edge_images/edgemodule_logs.png)
 
 [setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
