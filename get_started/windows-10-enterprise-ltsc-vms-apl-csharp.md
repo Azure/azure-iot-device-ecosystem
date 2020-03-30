@@ -1,7 +1,7 @@
 ---
 platform: windows 10 enterprise ltsc
 device: vms-apl
-language: c#
+language: csharp
 ---
 
 Run a simple C# sample on VMS-APL device running Windows 10 Enterprise LTSC
