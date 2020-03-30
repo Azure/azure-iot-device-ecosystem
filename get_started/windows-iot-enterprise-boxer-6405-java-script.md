@@ -1,10 +1,10 @@
 ---
-platform: windows 10 enterprise ltsc
-device: apc-2132
-language: csharp
+platform: windows iot enterprise
+device: boxer-6405
+language: c
 ---
 
-Run a simple C# sample on APC-2132 device running Windows 10 Enterprise LTSC
+Run a simple C sample on BOXER-6405 device running Windows 10 IoT Enterprise 2019LTSC
 ===
 ---
 
@@ -15,18 +15,16 @@ Run a simple C# sample on APC-2132 device running Windows 10 Enterprise LTSC
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Manual Test for Azure IoT Edge on device](#Manual)
 
-<a name="Introduction"></a>
 # Introduction
 
 **About this document**
 
-This document describes how to connect APC-2132 device running Windows 10 Enterprise with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
+This document describes how to connect PICO-APL3 device running Windows 10 IoT Enterprise 2019LTSC with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and Deploy client component to test device management capability 
 
-<a name="Prerequisites"></a>
 # Step 1: Prerequisites
 
 You should have the following items ready before beginning the process:
@@ -37,22 +35,16 @@ You should have the following items ready before beginning the process:
 -   [Sign up to IOT Hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
 -   [Add the Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart)
 -   [Add the Edge Modules](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart#deploy-a-module)
--   APC-2132 device.
+-   [AAEON BOXER-6405 Device](https://www.aaeon.com/tw/p/ultra-slim-box-pc-boxer-6405)
 
-<a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   Plug in the power and press the power button on the front panel.
--   Install the Windows 10 Enterprise LTSC, 64 bits version is required.
--   Turn on the container feature from "Turn Windows features on of off" in the control panel.
-	-   Check the Hyper-V feature to turn on the container support.
+-   Install Windows 10 IoT Enterprise 2019LTSC on BOXER-6405.
 
-<a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
 
 This section walks you through the test to be performed on the Edge devices running the Windows operating system such that it can qualify for Azure IoT Edge certification.
 
-<a name="Step-3-1-IoTEdgeRunTime"></a>
 ## 3.1 Edge RuntimeEnabled (Mandatory)
 
 **Details of the requirement:**
@@ -78,14 +70,11 @@ List running modules. After a new installation, the only module you should see r
 
     iotedge list
 
-![](./media/windows_edge_images/edgemodule_status.png)
+![](./media/boxer-6405/IoT-Edge-List.JPG)
 
 View the messages being sent from the module you created to the cloud.
 
     iotedge logs {module name}
 
-![](./media/windows_edge_images/edgemodule_logs.png)
-  
-[setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
-[lnk-setup-iot-hub]: ../setup_iothub.md
-[lnk-manage-iot-hub]: ../manage_iot_hub.md
+![](./media/boxer-6405/IoT-Edge-Logs.JPG)
+

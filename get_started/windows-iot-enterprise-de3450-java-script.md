@@ -1,10 +1,10 @@
 ---
-platform: windows 10 enterprise ltsc
-device: apc-2132
-language: csharp
+platform: windows iot enterprise
+device: de3450
+language: java-script
 ---
 
-Run a simple C# sample on APC-2132 device running Windows 10 Enterprise LTSC
+Run a simple java-script sample on DE3450 device running Windows IoT Enterprise
 ===
 ---
 
@@ -20,7 +20,7 @@ Run a simple C# sample on APC-2132 device running Windows 10 Enterprise LTSC
 
 **About this document**
 
-This document describes how to connect APC-2132 device running Windows 10 Enterprise with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
+This document describes how to connect DE3450 device running Windows IoT Enterprise with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
@@ -37,15 +37,12 @@ You should have the following items ready before beginning the process:
 -   [Sign up to IOT Hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
 -   [Add the Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart)
 -   [Add the Edge Modules](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart#deploy-a-module)
--   APC-2132 device.
+-   DE3450 device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   Plug in the power and press the power button on the front panel.
--   Install the Windows 10 Enterprise LTSC, 64 bits version is required.
--   Turn on the container feature from "Turn Windows features on of off" in the control panel.
-	-   Check the Hyper-V feature to turn on the container support.
+-   DE3450 device.
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
@@ -85,6 +82,7 @@ View the messages being sent from the module you created to the cloud.
     iotedge logs {module name}
 
 ![](./media/windows_edge_images/edgemodule_logs.png)
+
   
 [setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md

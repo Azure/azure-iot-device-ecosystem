@@ -4,7 +4,7 @@ device: ai-5032
 language: c
 ---
 
-Run a simple C sample on AI-5032 running Ubuntu 16.04 
+Run a simple C  sample on  AI-5032  running Ubuntu 16.04 
 ===
 ---
 
@@ -14,7 +14,6 @@ Run a simple C sample on AI-5032 running Ubuntu 16.04
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Manual Test for Azure IoT Edge on device](#Manual)
--   [Step 4: Inference with IoT Edge and Hardware accelerator](#NextSteps)
 
 <a name="Introduction"></a>
 # Introduction
@@ -91,7 +90,6 @@ On the device details page of the Azure, you should see the runtime modules - ed
 ## 4.1 Prerequisites
 
 TinyGo AI-5032 embedded the Intel® Movidius VPUs. Before using the VPU accelerator, you need to install OpenVINO toolkit first.
-
 -   [Download OpenVINO R3.1](https://software.intel.com/en-us/openvino-toolkit/choose-download)
 -   [Install OpenVINO](https://docs.openvinotoolkit.org/2019_R3.1/_docs_install_guides_installing_openvino_linux.html#install-openvino)
 
@@ -142,9 +140,10 @@ Now you can push the docker image you build above to Container Registery which w
 
 Select Acess keys on the left panel  on the Container Registry portal. Save the **\<SERVER\>, \<USERNAME\>,\<PASSWORD\>** values.
 
-![](./media/AI-5032/container.png)
+![](./media/ai-5032/container.png)
 
 Login in your account on terminal. Then tag the image **onnxruntime-myriad** to Container Registry server and push the image.
+
 
     docker login -u <USERNAME> -p <PASSWORD> <SERVER>
     docker tag onnxruntime-myriad <SERVER>/onnxruntime-myriad:1.0
@@ -152,31 +151,31 @@ Login in your account on terminal. Then tag the image **onnxruntime-myriad** to 
 
 Select **Repositories** to check if the **onnxruntime-myraid:1.0** upload success.
 
-![](./media/AI-5032/image.png)
+![](./media/ai-5032/image.png)
 
 ## 4.4 Inference at edge with hardware accelerator
 
 Go to the IoT Edge portal, Select Add an IoT Edge Device to create a new device.
 
-![](./media/AI-5032/IoTEdge1.png)
+![](./media/ai-5032/IoTEdge1.png)
 
-![](./media/AI-5032/IoTEdge2.png)
+![](./media/ai-5032/IoTEdge2.png)
 
 Input a device ID and save.
 
-![](./media/AI-5032/IoTEdge3.png)
+![](./media/ai-5032/IoTEdge3.png)
 
-Copy the **\<CONNECT STRING>**. Then select the **Set Module**.
+Copy the `\<CONNECT STRING>`. Then select the `Set Module`.
 
-![](./media/AI-5032/IoTEdge4.png)
+![](./media/ai-5032/IoTEdge4.png)
 
 Fill the Container Registry Credentials. Then Add an IoT Edge Module.
 
-![](./media/AI-5032/IoTEdge5.png)
+![](./media/ai-5032/IoTEdge5.png)
 
 Input a module name and the **image URL** (\<server>/onnxruntime-myraid:1.0).
 
-![](./media/AI-5032/IoTEdge6.png)
+![](./media/ai-5032/IoTEdge6.png)
 
 Select the **Container Create Options** and Copy the json below.
 
@@ -189,23 +188,25 @@ Select the **Container Create Options** and Copy the json below.
             }
     }
 
-![](./media/AI-5032/IoTEdge7.png)
+![](./media/ai-5032/IoTEdge7.png)
 
 Create the Module with default settings.
 
-![](./media/AI-5032/IoTEdge9.png)
+![](./media/ai-5032/IoTEdge9.png)
 
 Check if the module set success.
 
-![](./media/AI-5032/IoTEdge8.png)
+![](./media/ai-5032/IoTEdge8.png)
 
 Open the terminal on device. Edit the line 33 in /etc/iotedge/config.yaml as below. Fill the **device_connect_string** with the **\<CONNECT STRING>** you copy above.
-![](./media/AI-5032/terminal.png)
+
+![](./media/ai-5032/terminal.png)
 
 Wait minutes to let device pull the module. 
 Check the IoT Edge module running status.
 
     iotedge list
+
   
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
