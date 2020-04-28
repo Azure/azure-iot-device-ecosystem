@@ -84,3 +84,6 @@ Open the command prompt on your IoT Edge device, confirm that the module deploye
 On the device details page of the Azure, you should see the runtime modules - edgeAgent, edgeHub and tempSensor modueles are under running status
 
  ![](./media/edge-yocto-pe100a-csharp/3_module.png)
+
+[setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
+[lnk-manage-iot-hub]: ../manage_iot_hub.md
