@@ -1,4 +1,3 @@
-
 ---
 platform: debian 9
 device: asus tinker edge r
