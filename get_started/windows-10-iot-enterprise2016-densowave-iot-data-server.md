@@ -4,7 +4,7 @@ device: iot data server
 language: csharp
 ---
 
-Run a simple Csharp sample on IoT Data Server device running Windows 10 IoT Enterprise 2016
+Connect IoT Data server to your Azure IoT Hub
 ===
 ---
 
@@ -21,7 +21,7 @@ Run a simple Csharp sample on IoT Data Server device running Windows 10 IoT Ente
 
 **About this document**
 
-This document describes how to connect IoT Data Server device running Windows 10 IoT Enterprise 2016 LTSB with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect IoT Data Server to Azure Iot Hub. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
