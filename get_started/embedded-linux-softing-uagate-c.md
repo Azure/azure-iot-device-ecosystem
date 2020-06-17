@@ -7,9 +7,9 @@ language: c
 Configure dataFEED uaGate SI, dataFEED uaGate MB or dataFEED edgeGate as Azure IoT-device
 
 For further device descriptions see:
-- [dataFEED uaGate SI](https://industrial.softing.com/en/products/plc-connectivity/integration-of-plc-data/gateways-single-protocol/uagate-si.html)
-- [dataFEED uaGate MB](https://industrial.softing.com/en/products/plc-connectivity/integration-of-plc-data/gateways-single-protocol/uagate-mb.html)
-- [dataFEED edgeGate](https://industrial.softing.com/en/products/plc-connectivity/integration-of-plc-data/gateways-multiprotocol/edgegate.html)
+- [dataFEED uaGate SI](https://data-intelligence.softing.com/products/iot-gateways/datafeed-uagate-si/)
+- [dataFEED uaGate MB](https://data-intelligence.softing.com/products/iot-gateways/datafeed-uagate-mb/)
+- [dataFEED edgeGate](https://data-intelligence.softing.com/products/iot-gateways/datafeed-edgegate/)
 
 ---
 
@@ -65,7 +65,7 @@ On the MQTT Broker Configuration page you need to enter the following:
 On the `MQTT Topic Settings` page you need to enter the following:
 -   Set the MQTT Root Topic: `devices/<device-id>/messages/events`.
 In the screenshot above: `devices/uagate/messages/events`.
--   Select flattened PLC hierarchy.
+-   Select "Suppressed PLC Symbols".
 -   Set the MQTT payload format string:
 
 ```
