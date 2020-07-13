@@ -62,19 +62,19 @@ This section walks you through the test to be performed on the Edge devices runn
     or
     iotedge --version
 
-![](./openblocks-iot-vx2w/SC1.PNG)    
+![](./media/openblocks-iot-vx2w/SC1.PNG)    
 
 3.1.4  Check the architecture of runtime installed.
     
     (Get-Process -Id $PID).StartInfo.EnvironmentVariables["PROCESSOR_ARCHITECTURE"]
 
-![](./openblocks-iot-vx2w/SC2.png) 
+![](./media/openblocks-iot-vx2w/SC2.png) 
 
 3.1.5  Check status of IoT Edge runtime
     
     Get-Service iotedge
 
-![](./openblocks-iot-vx2w/SC3.png) 
+![](./media/openblocks-iot-vx2w/SC3.png) 
 
 3.1.6  To Provision the device, open the onfiguration file
 
@@ -100,19 +100,19 @@ This section walks you through the test to be performed on the Edge devices runn
 
         Get-service iotedge
 
- ![](./openblocks-iot-vx2w/SC4.png) 
+ ![](./media/openblocks-iot-vx2w/SC4.png) 
 
 -   Examine daemon logs
 
         . {Invoke-WebRequest -useb aka.ms/iotedge-win} | Invoke-Expression; Get-IoTEdgeLog
 
-![](./openblocks-iot-vx2w/SC5.png) 
+![](./media/openblocks-iot-vx2w/SC5.png) 
 
 -   List running modules
 
         iotedge list        
 
-![](./openblocks-iot-vx2w/SC6.png) 
+![](./media/openblocks-iot-vx2w/SC6.png) 
 
 ## 3.2 Deploy Edge module on Edge Device
 
@@ -142,13 +142,13 @@ This section walks you through the test to be performed on the Edge devices runn
 
     iotedge list
 
-![](./openblocks-iot-vx2w/SC7.png) 
+![](./media/openblocks-iot-vx2w/SC7.png) 
 
 3.2.13 Check the logs for the tempSensor Edge Module.
 
     iotedge logs SimulatedTemperaturesensor -f
 
-![](./openblocks-iot-vx2w/SC8.png) 
+![](./media/openblocks-iot-vx2w/SC8.png) 
 
 [setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
