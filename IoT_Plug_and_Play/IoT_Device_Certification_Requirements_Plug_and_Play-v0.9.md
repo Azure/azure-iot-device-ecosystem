@@ -69,7 +69,7 @@ Promise of IoT Plug and Play certification are:
 | **Validation Type**                       | Manual                                                       |
 | **Validation**                            | Partners must engage with Microsoft contact ([iotcert@microsoft.com](mailto:iotcert@microsoft.com)) to make arrangements to perform additional validations on physical device. Due to COVID-19 situation, we are exploring various ways to perform physical device validation without shipping the device to Microsoft. |
 | **Resources**                             | Details are available later                                 |
-| **Azure Recommended:**       | N/A    |
+| **Azure Recommended**       | N/A    |
 
 **[If implemented] Device info Interface:  The purpose of test is to validate device info interface is implemented properly in the device code**
 
@@ -81,7 +81,7 @@ Promise of IoT Plug and Play certification are:
 | **Validation Type**     | Automated                                                    |
 | **Validation**          | [Portal workflow](https://aka.ms/acfi) validates the device code implements [device info interface](https://repo.azureiotrepository.com/Models/dtmi:azure:DeviceManagement:DeviceInformation;1?api-version=2020-05-01-previewureiot:DeviceManagement:DeviceInformation:1) **1.** Checks the values are emitted by the device code to IoT Hub **2.** Checks the interface is implemented in the DCM (this implementation will change in DTDL v2) **3.** Checks properties are not write-able (read only) **4.** Checks the schema type is string and/or long and not null |
 | **Resources**           | [Microsoft defined interface](https://docs.microsoft.com/en-us/azure/iot-pnp/overview-iot-plug-and-play-preview-updates) |
-| **Azure Recommended:**  | N/A                                                          |
+| **Azure Recommended**  | N/A                                                          |
 
 **[If implemented] Cloud to device:  The purpose of test is to make sure messages can be sent from cloud to devices**
 
