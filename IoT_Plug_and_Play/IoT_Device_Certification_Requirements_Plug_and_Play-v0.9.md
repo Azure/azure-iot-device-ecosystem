@@ -9,17 +9,15 @@ IoT Plug and Play Preview enables solution builders to integrate smart devices w
 Promise of IoT Plug and Play certification are:
 
 1.  Defined device models and interfaces are compliant with the  [Digital Twin Definition Language](https://github.com/Azure/opendigitaltwins-dtdl)  
-2.  Secure provisioning and easy transfer of ID scope ownership in Device Provisioning Services ***1**
+2.  Secure provisioning and easy transfer of ID scope ownership in Device Provisioning Services
 3.  Easy integration with Azure IoT based solutions using the [Digital Twin APIs](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-digital-twin)  : Azure IoT Hub and Azure IoT Central
 4.  Validated product truth on certified devices
-
-***1**: To meet the promise, IoT Plug and Play certification requires ‘Azure Ready certification requirement’ fulfillment as pre-requisite.
 
 ## Requirements
 
 **[Required] Device to cloud: The purpose of test is to make sure devices that send telemetry works with IoT Hub**
 
-| **Name**                | AzureReady.D2C                                               |
+| **Name**                | IoTPnP.D2C                                               |
 | ----------------------- | ------------------------------------------------------------ |
 | **Target Availability** | Available now                                                |
 | **Applies To**          | Leaf device/Edge device                                      |
@@ -30,7 +28,7 @@ Promise of IoT Plug and Play certification are:
 
 **[Required] DPS:  The purpose of test is to check the device implements and supports IoT Hub Device Provisioning Service with one of the three attestation methods**
 
-| **Name**                | AzureReady.DPS                                               |
+| **Name**                | IoTPnP.DPS                                               |
 | ----------------------- | ------------------------------------------------------------ |
 | **Target Availability** | New                                                          |
 | **Applies To**          | Any device                                                   |
@@ -87,7 +85,7 @@ Promise of IoT Plug and Play certification are:
 
 **[If implemented] Cloud to device:  The purpose of test is to make sure messages can be sent from cloud to devices**
 
-| **Name**                | AzureReady.C2D                                               |
+| **Name**                | IoTPnP.C2D                                               |
 | ----------------------- | ------------------------------------------------------------ |
 | **Target Availability** | Available now                                                |
 | **Applies To**          | Leaf device/Edge device                                      |
@@ -98,7 +96,7 @@ Promise of IoT Plug and Play certification are:
 
 **[If implemented] Direct methods:  The purpose of test is to make sure devices works with IoT Hub and supports direct methods**
 
-| **Name**                | AzureReady.DirectMethods                                     |
+| **Name**                | IoTPnP.DirectMethods                                     |
 | ----------------------- | ------------------------------------------------------------ |
 | **Target Availability** | Available now                                                |
 | **Applies To**          | Leaf device/Edge device                                      |
@@ -109,7 +107,7 @@ Promise of IoT Plug and Play certification are:
 
 **[If implemented] Device twin property:  The purpose of test is to make sure devices that send telemetry works with IoT Hub and supports some of the IoT Hub capabilities such as direct methods, and device twin property**
 
-| **Name**                | AzureReady.DeviceTwin                                        |
+| **Name**                | IoTPnP.DeviceTwin                                        |
 | ----------------------- | ------------------------------------------------------------ |
 | **Target Availability** | Available now                                                |
 | **Applies To**          | Leaf device/Edge device                                      |
