@@ -4,7 +4,7 @@ device: itg-100-al
 language: c
 ---
 
-Run a simple English sample on ITG-100-AL device running Windows 10 IoT Enterprise, build 17763
+Run a simple C sample on ITG-100-AL device running Windows 10 IoT Enterprise, build 17763
 ===
 
 # Table of Contents
@@ -66,13 +66,13 @@ List running modules. After a new installation, the only module you should see r
 
     iotedge list
 
-![](./media/itg-100/edgelist.PNG)
+![](./media/itg-100/edgelist.png)
 
 View the messages being sent from the module you created to the cloud.
 
     iotedge logs SimulatedTemperatureSensor
 
-![](./media/itg-100/edgesimulator.PNG)
+![](./media/itg-100/edgesimulator.png)
 
 <a name="NextSteps"></a>
 # Next Steps
@@ -95,9 +95,3 @@ You have now learned how to run a sample application that collects sensor data a
 [setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-csharp/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
-
- 
-
-
-
-
