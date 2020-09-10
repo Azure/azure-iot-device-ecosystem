@@ -78,13 +78,13 @@ List running modules. After a new installation, the only module you should see r
 
     iotedge list
 
-![](./media/BX-T210/edgemodule_status.png)
+![](./media/BX-T210/edgemodule_status.PNG)
 
 View the messages being sent from the module you created to the cloud.
 
     iotedge logs {module name}
 
-![](./media/BX-T210/edgemodule_logs.png)
+![](./media/BX-T210/edgemodule_logs.PNG)
 
 <a name="NextSteps"></a>
 # Step 4: Next steps
