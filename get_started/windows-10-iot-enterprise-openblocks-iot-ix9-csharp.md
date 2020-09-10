@@ -66,13 +66,13 @@ You should have the following items ready before beginning the process:
     
         (Get-Process -Id $PID).StartInfo.EnvironmentVariables["PROCESSOR_ARCHITECTURE"]
 
- ![](./media/iot-ix9/SC2.PNG) 
+ ![](./media/iot-ix9/SC2.png) 
 
 -   Check status of IoT Edge runtime
     
         Get-Service iotedge
 
- ![](./media/iot-ix9/SC3.PNG) 
+ ![](./media/iot-ix9/SC3.png) 
 
 -   To Provision the device, open the onfiguration file
 
@@ -99,19 +99,19 @@ You should have the following items ready before beginning the process:
 
         Get-service iotedge
 
- ![](./media/iot-ix9/SC4.PNG) 
+ ![](./media/iot-ix9/SC4.png) 
 
 -   Examine daemon logs
 
         . {Invoke-WebRequest -useb aka.ms/iotedge-win} | Invoke-Expression; Get-IoTEdgeLog
 
- ![](./media/iot-ix9/SC5.PNG) 
+ ![](./media/iot-ix9/SC5.png) 
 
 -   List running modules
 
         iotedge list        
 
- ![](./media/iot-ix9/SC6.PNG) 
+ ![](./media/iot-ix9/SC6.png) 
 
 ## Deploy Edge module on Edge Device
 
@@ -141,13 +141,13 @@ You should have the following items ready before beginning the process:
 
         iotedge list
 
- ![](./media/iot-ix9/SC7.PNG) 
+ ![](./media/iot-ix9/SC7.png) 
 
 -   Check the logs for the tempSensor Edge Module.
 
         iotedge logs SimulatedTemperaturesensor -f
 
- ![](./media/iot-ix9/SC8.PNG) 
+ ![](./media/iot-ix9/SC8.png) 
 
 <a name="NextSteps"></a>
 # Next Steps
