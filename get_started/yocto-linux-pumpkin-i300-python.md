@@ -1,10 +1,10 @@
 ---
-platform: windows 10 iot enterprise
-device: bx-t210
-language: csharp
+platform: yocto linux
+device: pumpkin i300
+language: python
 ---
 
-Run a simple C# sample on BX-T210 device running Windows 10 IoT Enterprise 2019 LTSC 64-bit.
+Run a simple python sample on Pumpkin i500 EVK device running Yocto Linux.
 ===
 ---
 
@@ -21,41 +21,68 @@ Run a simple C# sample on BX-T210 device running Windows 10 IoT Enterprise 2019 
 
 **About this document**
 
-This document describes how to connect BX-T210 device running Windows 10 IoT Enterprise 2019 LTSC 64-bit with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
+This document describes how to connect Pumpkin i500 EVK device running Yocto Linux with Azure IoT Edge Runtime pre-installed and Device Management. This multi-step process includes:
 
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
--   Build and Deploy client component to test device management capability 
+-   Build and Deploy client component to test device management capability
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
 
 You should have the following items ready before beginning the process:
 
--   [Prepare your development environment][setup-devbox-windows]
+-   [Prepare your development environment][setup-devbox-linux]
 -   [Setup your IoT hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
 -   [Sign up to IOT Hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
--   [Add the Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart)
--   [Add the Edge Modules](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart#deploy-a-module)
--   BX-T210 device.
+-   [Add the Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux)
+-   [Add the Edge Modules](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#deploy-a-module)
+-   Pumpkin i300 EVK Smart Audio Edition.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   Enable [Containers] under [Windows Features].
+-   The device comes with all the files and configurations needed to run IoT Edge. However, you do need to do some device specific configurations to make sure that the device works with IoT Edge. For that you need to do the following:
 
- ![](./media/BX-T210/Check-Windows-Features-Containers.png)
+# Step 2.1: Setup the network
 
--   Install Azure IoT Edge.
+-   You can connect the device to a network using two methods:
 
-        {Invoke-WebRequest -useb aka.ms/iotedge-win} | Invoke-Expression; `
-        Install-SecurityDaemon -Manual -ContainerOs Windows -DeviceConnectionString '{IoT Edge Device Connection String}'
+	1)  Ethernet Cable: Simply connect your device to a router with internet connection using an ethernet cable. This should enable network on your device immediately.
 
- Examine service 
+	2)  Wi-Fi: To setup the device to work with Wi-Fi you need the following pre-requsisites:
+
+       a. Wi-Fi SSID
+       b. Wi-Fi PASSWORD
+
+Once you have these ready, run the following commands on the device:
+
+       1. wpa_passphrase SSID PASSWORD >> /etc/wpa_supplicant.conf
+       2. wpa_supplicant -i wlan0 -B -c /etc/wpa_supplicant.conf
+
+You should have network connectivity after this step. Confirm that you are able to access the internet before proceeding.
+
+# Step 2.2: Adding a connection string
+
+-   Login to the Azure Portal and retrieve your device's connection string.
+
+-   On the device, add the connection string to the following file:
+
+        /etc/iotedge/config.yaml
+
+-   After you have added the file to the device you should be able to start the IoT Edge Daemon with the following command:
+
+        iotedged -c /etc/iotedge/config.yaml &
+
+Note: Make sure you specify the configuration file to use otherwise the IoT Edge Daemon will fail to start.
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
+
+## Edge RuntimeEnabled
+
+**Details of the requirement:**
 
 The following components come pre-installed or at the point of distribution on the device to customer(s):
 
@@ -66,25 +93,23 @@ The following components come pre-installed or at the point of distribution on t
 
 *Edge Runtime Enabled:*
 
-Open the powershell on your IoT Edge device , confirm the status of the IoT Edge service.
+**Check the iotedge daemon command:**
 
-    Get-Service iotedge
+Open the command prompt on your IoT Edge device, confirm that the Azure IoT edge Daemon is under running state
 
-Examine service logs from the last 5 minutes. If you just finished installing the IoT Edge runtime, you may see a list of errors from the time between running **Deploy-IoTEdge** and **Initialize-IoTEdge**. These errors are expected, as the service is trying to start before being configured. 
+    systemctl status iotedge
 
-    . {Invoke-WebRequest -useb aka.ms/iotedge-win} | Invoke-Expression; Get-IoTEdgeLog
+ ![](./media/ArtiGO/Capture.png)
 
-List running modules. After a new installation, the only module you should see running is **edgeAgent**. After you [deploy IoT Edge modules](how-to-deploy-modules-portal.md), you will see others. 
+Open the command prompt on your IoT Edge device, confirm that the module deployed from the cloud is running on your IoT Edge device
 
-    iotedge list
+    sudo iotedge list
 
-![](./media/BX-T210/edgemodule_status.PNG)
+ ![](./media/ArtiGO/iotedgedaemon.png)
 
-View the messages being sent from the module you created to the cloud.
+On the device details page of the Azure, you should see the runtime modules - edgeAgent, edgeHub and tempSensor modueles are under running status
 
-    iotedge logs {module name}
-
-![](./media/BX-T210/edgemodule_logs.PNG)
+ ![](./media/ArtiGO/tempSensor.png)
 
 <a name="NextSteps"></a>
 # Step 4: Next steps
@@ -104,8 +129,7 @@ You have now learned how to run a sample application that collects sensor data a
 [Use Azure Web Apps to visualize real-time sensor data from Azure IoT Hub]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-web-apps
 [Weather forecast using the sensor data from your IoT hub in Azure Machine Learning]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-weather-forecast-machine-learning
 [Remote monitoring and notifications with Logic Apps]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-monitoring-notifications-with-azure-logic-apps
-  
-[setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
+
+[setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
-

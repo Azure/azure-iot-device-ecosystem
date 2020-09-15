@@ -44,7 +44,7 @@ You should have the following items ready before beginning the process:
 
 -   [Prepare your development environment][setup-devbox-linux]
 -   [Setup your IoT hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
--   [Provision your device and get its credentials][lnk-manage-iot-hub]
+-   [Provision your device and get its credentials](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md)
 -   [Sign up to IOT Hub](https://account.windowsazure.com/signup?offer=ms-azr-0044p)
 -   [Add the Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux)
 -   [Add the Edge Modules](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux#deploy-a-module)
@@ -167,5 +167,3 @@ Once you shared the documents with us, we will contact you in the following 48 t
 Please contact engineering support on **<mailto:iotcert@microsoft.com>** for help with troubleshooting.
   
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
-[lnk-setup-iot-hub]: ../setup_iothub.md
-[lnk-manage-iot-hub]: ../manage_iot_hub.md
