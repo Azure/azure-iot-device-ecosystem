@@ -1,10 +1,10 @@
 ---
 platform: {enter the OS name running on device}
 device: {enter your device name here}
-language: c
+language: {}
 ---
 
-Connect {enter your device name here} device to your Azure IoT Central Application
+Connect {enter your device name here} device to your Azure IoT services
 ===
 
 ---
@@ -12,10 +12,8 @@ Connect {enter your device name here} device to your Azure IoT Central Applicati
 
 -   [Introduction](#Introduction)
 -   [Prerequisites](#Prerequisites)
--   [Create Azure IoT Central application](#Create_AICA)
--   [Device Connection Details](#DeviceConnectionDetails)
 -   [Prepare the Device](#preparethedevice)
--   [Integration with IoT Central](#IntegrationwithIoTCentral)
+-   [Integration with Azure IoT Explorer](#IntegrationwithAzureIoTExplorer)
 -   [Additional Links](#AdditionalLinks)
 
 # Instructions for using this template
@@ -25,77 +23,71 @@ Connect {enter your device name here} device to your Azure IoT Central Applicati
 -   It is advisable to use external links, wherever possible.
 -   Remove this section from final document.
 
+# Tips for authoring great getting started guide (remove this section)
+Following below tips reduces operational overhead via email exchange and accelerate your overall certification process
+
+- When there are multiple options to provision devices using DPS, try to define the golden path in the main flow. Put other paths in #Additional information section below
+- Provide some paragraphs to the headers and avoid headers with just a link
+- Device application must be either pre-installed on the device or download-able via various means (partner hosted website/GitHub etc). Be specific about the steps on deploying or flashing the device application
+- Be specific about how to provision a device using DPS. DPS ID scope, registration ID and attestation methods (X.509, TPM or SAS key) configuration
+
+
 <a name="Introduction"></a>
 
 # Introduction 
 
 **About this document**
 
-This document describes how to connect {enter your device name here} to Azure IoT Central application using the IoT plug and Play model. Plug and Play simplifies IoT by allowing solution developers to integrate devices without writing any device code. Using Plug and Play, device manufacturers will provide a model of their device to cloud developers to be integrated quickly into IoT Central or any solution built on the Azure IoT platform. IoT Plug and Play will be open to the community by way of a definition language and SDKs.
+This document describes how to connect {enter your device name here} to Azure IoT Hub using the Azure IoT Explorer with certified device application and device models.
+
+IoT Plug and Play certified device simplifies the process of building devices without custom device code. Using Solution builders can integrated quickly using the certified IoT Plug and Play enabled device based on Azure IoT Central as well as third-party solutions.
+
+This getting started guide provides step by step instruction on getting the device provisioned to Azure IoT Hub using Device Provisioning Service (DPS) and using Azure IoT Explorer to interact with device's capabilities.
 
 {Please provide introduction and features of your device here}
 
 <a name="Prerequisites"></a>
 # Prerequisites
 
-You should have the following items ready before beginning the process: 
+You should have the following items ready before beginning the process:
 
 -   [Azure Account](https://portal.azure.com)
 -   [Azure IoT Hub Instance](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub)
--   [Azure IoT Hub Device Provisioning Service](https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps)
--   Provide Network connectivity (Wifi, LAN) supported by the device
--   Its mandatory that the device code/software image is preinstalled in device to enable Plug and Play
--   {Provide URL here to setup guide of development environment}
+-   [Azure IoT Hub Device Provisioning Service](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision)
+-   [Azure IoT Public Model Repository](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-repository)
 
-**Note:** If the device code is not preinstalled following are the [options](#preparethedevice) to choose to enable the plug and play device.
 
 <a name="preparethedevice"></a>
 # Prepare the Device.
 
-**Hardware Environmental setup**
+**Development Environmental setup**
 
--   Please include how to setup and connect the device. Include external links for any software required for Hardware setup
+IoT Plug and Play Certification is certifying specific device code implementation against specific device model. Device builders should either pre-install device code or make the binary download-able.{Please include the below pointers specific to device in this section and add screen shots where ever necessary}
 
-**Software Environmental Setup**
+1.	Describing the capabilities of the device 
+2.	How to setup the device and connect power
+3.	How to take the DPS configuration and program the device (Note : DPS ID scope should be configured w/o recompiling the embedded code)
+4.	How to configure device over Wifi, cellular, screens, etc.
+5.	Add the links of external software/tools as required 
+6.	Add steps on how to run the device code/how and where to download binary and then run on device. If you have multiple options on how to deploy device code please mention only one option here and other options in Additional links section
 
--   Please include the prerequisite required to setup the device. Please use external links when possible pointing to your own page with device preparation steps.
+<a name="IntegrationwithAzureIoTExplorer"></a>
+# Integration with Azure IoT Explorer
 
-### Option 1
+-   Include the steps on how to connect the IoT Plug and Play Device to Azure IoT Explorer
+-   Include screenshots and comments on how IoT Explorer shows/visualize telemetry , commands and properties coming from your IoT Plug and Play device.
+-   Include the steps on how to interact with devices (telemetry, commands properties)
+-   Ensure to attach the screenshot on consuming the device models available in public repository (not local folder) when using Azure IoT Explorer
 
--   If device code not pre-installed on your device, please provide us the URL of your repository.
-
--   Specify the steps on how to flash the image on device and provide required URL's to download the flash-able image and necessary tools. **Please add the screenshots where ever necessary.**
-
-### Option 2
-
--   For the partners using the Microsoft PnP SDK samples
-
--   If recompilation of code is not required, please provide config file here, such that it can be copied in the C sdk environment to enable Plug and Play on device
-
--   Please include instruction on how to compile the code, tools and environment required to compile etc. **Please add the screenshots where ever necessary**
-
-### Option 3
-
--   If recompilation is required, then please provide the link for GitHub repo for anyone to modify.
-
--   Please include instruction on how to compile the code , tools and environment required to compile etc. **Please add the screenshots where ever necessary**
-
-<a name="IntegrationwithIoTCentral"></a>
-# Integration with IoT Central
-
--   Include the steps on how to connect the Device to IoT Central
--   Include the steps by step process on how the devices use the DPS configuration (ID Scope, SAS Key, Device ID, Registration ID) to provision to IoT Central.
--   Include screenshots and comments on how IoT Central shows/visualize telemetry coming from your PnP device.
--   Use this [Get started]( https://aka.ms/AA66he8) doc as an example
+# Additional information
+Put any additional information here such as alternative paths to deploy device application etc.
 
 <a name="AdditionalLinks"></a>
 # Additional Links
 
 Please refer to the below link for additional information for Plug and Play 
 
--    [Blog](https://azure.microsoft.com/en-us/blog/iot-plug-and-play-is-now-available-in-preview/)
--    [FAQ](TBD) 
--    [Plug and Play C SDK](https://github.com/Azure/azure-iot-sdk-c/tree/public-preview) 
--    [Plug and Play Node SDK](https://github.com/Azure/azure-iot-sdk-node/tree/digitaltwins-preview)
--    [Plug and Play Definitions](https://github.com/Azure/IoTPlugandPlay)
-
+-   [Manage cloud device messaging with Azure-IoT-Explorer](https://github.com/Azure/azure-iot-explorer/releases)
+-   [Import the Plug and Play model](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-repository)
+-   [Configure to connect to IoT Hub](https://docs.microsoft.com/en-us/azure/iot-pnp/quickstart-connect-device-c)
+-   [How to use IoT Explorer to interact with the device ](https://docs.microsoft.com/en-us/azure/iot-pnp/howto-use-iot-explorer#install-azure-iot-explorer)   
