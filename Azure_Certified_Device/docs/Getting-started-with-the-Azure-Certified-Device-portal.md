@@ -73,7 +73,7 @@ After you click the "Create" button, the new project will be saved and visible i
 
 This area allows you to provide information on the core hardware capabilities of your device, such as device name, description, processor, operating system, connectivity options, hardware interfaces, industry protocols, physical dimensions, and more. While many of the fields are optional, most of this information will be made available to potential customers on the Azure Certified Device Catalog if you choose to publish your device after it has been certified.
 
-![Image of the project details page](./images/Device_details_menu.png)
+![Image of the project details page](./images/device_details_menu.png)
 
 #### Basics: ####
 This area shows the same fields that were initially requested when creating the project: Project name, Device name, Device type, Device class.
@@ -165,11 +165,12 @@ If you so choose, you can promote additional Industry Certifications you may hav
 The second major phase of the certification process (though it can be done in any order) involves testing your device for adherence to our certification requirements.
 
 *To begin the testing phase, click the "Connect & test" link on the project summary page:*
-![Connect and test link](./images/connect_and_test_link.PNG)
+
+![Connect and test link](./images/connect_and_test_link.png)
 
 *Depending on the certification(s) selected, you will be required to run one or more sets of tests to validate your device functionality.*
 
-![Connect and test page](./images/connect_and_test.PNG)
+![Connect and test page](./images/connect_and_test.png)
 
 For testing of all certifications, you are required to connect a device to IoT Hub using the Device Provisioning Service (DPS). DPS supports connectivity options of Symmetric keys, X.509 certification, and a Trusted Platform Module (TPM). 
 
@@ -177,7 +178,7 @@ For information on connecting your device to Azure IoT Hub with Device Provision
 
 *After configuring your device with DPS, confirm the connection by clicking the "Connect" button at the bottom of the page. Upon successful connection, you can proceed to the testing phase by clicking the "Next" button:*
 
-![Connect and Test connected](./images/connected.PNG)
+![Connect and Test connected](./images/connected.png)
 
 Testing specifics on the next few pages will vary by program. Please refer to the certification requirement documents linked at the top of this page for more information on what is being validated, plus refer to other resources in our [Getting Started with Azure Certified Device program](https://certlearnmore "Getting Started with the Azure Certifed Device program") for more information.
 
@@ -191,15 +192,15 @@ Once you have completed all of the mandatory fields in the **Device details** ar
 
 *Once ready, click "Submit for review" on the project page:*
 
-![Review and Certify link](./images/review_and_certify.PNG)
+![Review and Certify link](./images/review_and_certify.png)
 
 You will see a confirmation dialog before the Azure Certified Device team is notified to complete the review. Once a device has been submitted, **devices details can no longer be edited through the portal**. Likewise, once a device is approved, all device details will be read-only. You will need to contact the Azure Certified Device team at [iotcert@microsoft.com](mailto:iotcert@microsoft.com) to request further changes.
 
-![Start Certification review dialog](./images/start_certification_review.PNG)
+![Start Certification review dialog](./images/start_certification_review.png)
 
 *Once the project is submitted, the project summary page will indicate the project is Under Certification Review:*
 
-![Under Review](./images/review_and_certify_under_review.PNG)
+![Under Review](./images/review_and_certify_under_review.png)
 
 In the case your project is not approved, you will be able to make changes to the project details and then re-submit the device for certification once ready. Email will be sent to the email address in the Company profile will information on why the project was not approved. 
 
@@ -211,9 +212,11 @@ Once your project has been reviewed and approved, you will receive a notificatio
 After your device has been certified, you can optionally publish your device details to the Azure Certified Device Catalog for a world of customers to see.
 
 *To publish your device, return to the project summary page and click Publish to Device Catalog:*
-![Publish to Catalog](./images/publish_to_catalog.PNG)
+
+![Publish to Catalog](./images/publish_to_catalog.png)
 
 *You will received a confirmation dialog before the device is published:*
-![Publish to Catalog confirmation](./images/publish_to_catalog_confirm.PNG)
+
+![Publish to Catalog confirmation](./images/publish_to_catalog_confirm.png)
 
 You will receive notification to the email address in the Company profile once the device is on the Azure Certified Device Catalog. **If you need to make further edits to the device details after the device is published, please send an email to the Azure Certified Device team.**
