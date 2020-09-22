@@ -2,7 +2,7 @@
 ### Azure Certified Device, IoT Plug and Play, and Edge Managed Certifications
 September 18th 2020
 
-###Table of Contents:
+### Table of Contents:
 
 [Q. What is the Certified for Azure IoT Device catalog?](#q.-what-is-the-certified-for-azure-iot-device-catalog)
 
