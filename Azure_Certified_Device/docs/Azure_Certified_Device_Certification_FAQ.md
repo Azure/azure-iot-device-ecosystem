@@ -1,9 +1,8 @@
-# Azure Certified Device FAQ #
+# Azure Certified Device FAQ
+### Azure Certified Device, IoT Plug and Play, and Edge Managed Certifications
+September 18th 2020
 
-Table of Contents
-==================
-
-----------
+### Table of Contents:
 
 [Q. What is the Certified for Azure IoT Device catalog?](#q.-what-is-the-certified-for-azure-iot-device-catalog)
 
@@ -45,7 +44,7 @@ Table of Contents
 
 [Q. How do I certify a gateway and sensors bundle?](#q.-how-do-i-certify-a-gateway-and-sensors-bundle)
 
-  ![](.//media/image1.png)
+  ![](./images/ACDFAQ.PNG)
 
 **Azure Certified Device FAQ**
 
@@ -55,7 +54,7 @@ Q. What is the Certified for Azure IoT Device catalog?
 
 The device catalog is a website that lets device buyers discover the right device for an IoT solution using enhanced cataloging experience and device categorization.
 
-Resource
+**Resource**
 
 -   [Certified for Azure IoT Device Catalog](https://aka.ms/devicecatalog)
 
@@ -86,8 +85,7 @@ Resources
 
 -   [Azure Certified Device submission portal](https://aka.ms/acdp)
 
--   [IoT Plug and Play certification
-    tutorial](https://aka.ms/pnpcerttutorial)
+-   [IoT Plug and Play certification tutorial](https://aka.ms/pnpcerttutorial)
 
 <a name="q.-what-is-the-azure-certified-device-submission-portal"></a>
 Q. What is the Azure Certified Device submission portal?
@@ -95,7 +93,7 @@ Q. What is the Azure Certified Device submission portal?
 
 The Azure Certified Device submission web portal is where you register product details, submit getting started guides, and run certification tests and publish your device to the catalog.
 
-Resources
+**Resources**
 
 -   [Azure Certified Device submission portal](https://aka.ms/acdp)
 
@@ -105,7 +103,7 @@ Q. Can I use SDK samples to go through the certification process?
 
 C-SDK samples can be used for evaluation only.
 
-Resources
+**Resources**
 
 [Azure IoT C-SDK Samples](https://github.com/Azure/azure-iot-sdk-c/tree/master/iothub_client/samples/pnp)
 
@@ -113,7 +111,7 @@ Resources
 Q. Are there pricing/licensing implications of the Azure Certified Device certification program?
 =================================================================================================
 
-There's no extra cost for participating in Azure Certified Device, IoT Plug and Play or Edge Managed certification programs. However, standard rates for Azure IoT Hub and other Azure services will apply.
+There's no extra cost for participating in Azure Certified Device, IoT Plug and Play or Edge Managed certification programs. However, standard rates for Azure IoT Hub and other Azure services will apply.
 
 <a name="q.-can-i-opt-out-from-publishing-to-the-catalog-site"></a>
 Q. Can I opt out from publishing to the catalog site? 
@@ -136,7 +134,7 @@ We do not have any SLAs per our [program agreement](https://catalogstorageprod.b
 However, we do our best to respond to any inquiries as soon as possible.
 Any questions can be directed to <iotcert@microsoft.com>.
 
-Resources
+**Resources**
 
 -   [Microsoft Azure Certified for IoT Program Agreement](https://catalogstorageprod.blob.core.windows.net/devicecatalogimageserver/Program%20Agreement.pdf)
 
@@ -146,15 +144,15 @@ Resources
 Q. What are the benefits of getting certified with Azure Certified Device? 
 ==========================================================================
 
-![](.//media/image2.png)
+![](./images/benifits.png)
 
-For device builders:
+**For device builders:**
 
 -   Promotion of Azure Certified Devices through a device catalog with assured quality and visibility to solution builders
 
 -   Expansion of broad partnerships with solution developers
 
-For solution builders:
+**For solution builders:**
 
 -   Easy integration of Azure IoT solutions
 
@@ -172,28 +170,28 @@ Q. What are the different certification programs offered through Azure Certified
 
 The Azure Certified Device is our baseline certification program and represents the minimum requirements to gain access to the Azure Certified Device logo and have your device published in the Azure Certified Device catalog.
 
-IoT Plug and Play (Optional)
+**IoT Plug and Play (Optional)**
 
 The incremental IoT Plug and Play certification program enables solution builders to integrate smart devices with their solutions without manual configuration. At the core of IoT Plug and Play is a model that a device uses to advertise its capabilities to an IoT Plug and Play-enabled application. This model is tructured as a set of elements: Telemetry, properties and commands.
 
-1.  Devices certified as IoT Plug and Play provide confidence that:Defined device models and interfaces are compliant with the [Digital Twin Definition Language](https://github.com/Azure/opendigitaltwins-dtdl)
+1.  Devices certified as IoT Plug and Play provide confidence that:Defined device models and interfaces are compliant with the [Digital Twin Definition Language](https://github.com/Azure/opendigitaltwins-dtdl)
 
 2.  Secure provisioning and easy transfer of ID scope ownership in Device Provisioning Services
 
-3.  Easy integration with Azure IoT-based solutions using the [Digital Twin    APIs](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-digital-twin): Azure IoT Hub and Azure IoT Central
+3.  Easy integration with Azure IoT-based solutions using the [Digital Twin    APIs](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-digital-twin): Azure IoT Hub and Azure IoT Central
 
 4.  Validated product truth on certified devices
 
-Edge Managed (Optional)
+**Edge Managed (Optional)**
 
-The incremental Edge Managed certification program is an evolution of the legacy IoT Edge device program and will provide a certification for those looking to raise viability to devices capable of device management standards. Requirements for being certified as an Edge Managed device include pre-installing [Azure IoT Edge](https://github.com/Azure/iot-edge/blob/master/README.md) runtime.
+The incremental Edge Managed certification program is an evolution of the legacy IoT Edge device program and will provide a certification for those looking to raise viability to devices capable of device management standards. Requirements for being certified as an Edge Managed device include pre-installing [Azure IoT Edge](https://github.com/Azure/iot-edge/blob/master/README.md) runtime.
 Pre-installing IoT Edge runtime in your device can occur at various stages in the value chain:
 
 -   Pre-install IoT Edge runtime at the OEM or ODM manufacturing facility.
 
 -   Pre-install IoT Edge runtime that is supplied by OEM at the point of distribution. This is the scenario where channels such as distributors, value-added resellers etc. install OEM-supplied IoT Edge runtime.
 
--   If the channel takes OEM Edge device, and installs the channel specific IoT Edge runtime, the program accepts the submission as a different submission entity. In this case, the channel and OEM need to agree on specifics regarding branding, device names, etc. that are shown in the [device catalog](https://catalog.azureiotsolutions.com/).
+-   If the channel takes OEM Edge device, and installs the channel specific IoT Edge runtime, the program accepts the submission as a different submission entity. In this case, the channel and OEM need to agree on specifics regarding branding, device names, etc. that are shown in the [device catalog](https://catalog.azureiotsolutions.com/).
 
 IoT devices like Raspberry Pi3, etc. can continue to run IoT Edge runtime. The Azure Certified for IoT program is certifying against the pre-installed Edge runtime in the device controlled by either OEMs or channels to provide the best out-of-the-box experience on IoT Edge devices.
 
@@ -205,13 +203,13 @@ We do not have any SLAs per our [program agreement](https://catalogstorageprod.b
 However, we do our best to respond to any inquiries as soon as possible.
 Any questions can be directed to <iotcert@microsoft.com>.
 
-Resources
+**Resources**
 
 -   [Microsoft Azure Certified for IoT Program Agreement](https://catalogstorageprod.blob.core.windows.net/devicecatalogimageserver/Program%20Agreement.pdf)
 
 -   Email: <iotcert@microsoft.com>
 
-  ![](.//media/image1.png)
+  ![](./images/ACDFAQ.PNG)
 
 <a name="q.-what-is-iot-plug-and-play"></a>
 Q. What is IoT Plug and Play?
@@ -220,7 +218,7 @@ Q. What is IoT Plug and Play?
 IoT Plug and Play is an open approach based on an open language to simplify IoT solution development. It enables seamless device-to-cloud solution integration experience, without needing to write embedded device code. IoT Plug and Play allows IoT devices to describe their capabilities in a "device capability model" and present it when connecting to cloud solutions like Azure IoT Central and third-party solutions from partners, which can then automatically understand and
 interact with the device.
 
-Resources
+**Resources**
 
 -   [IoT Plug and Play](https://aka.ms/iotpnp)
 
@@ -230,7 +228,7 @@ Q. What is IoT Plug and Play device certification?
 
 The IoT Plug and Play device certification program makes it easy for solutions builders and end users to pick the right device and cloud assets for any IoT project.
 
-Resource
+**Resource**
 
 -   [Prepare and certify your devices for IoT Plug and Play blog](https://aka.ms/pnpcertblog)
 
@@ -240,13 +238,13 @@ Resource
 Q. What are the benefits of getting an IoT Plug and Play device certification? 
 ==============================================================================
 
-For device builders:
+**For device builders:**
 
 -   Promotion of Azure Certified Devices through the device catalog with assured quality and visibility to solution builders
 
 -   Expansion of broad partnerships with solution developers
 
-For solution builders:
+**For solution builders:**
 
 -   Confidence of easy integration of Azure IoT solutions
 
@@ -258,7 +256,7 @@ Q. Where can I find resources on IoT Plug and Play Certification?
 
 Please check the updated documentation.
 
-Resources
+**Resources**
 
 -   [Prepare and certify your devices for IoT Plug and Play](https://aka.ms/pnpcertblog)
 
