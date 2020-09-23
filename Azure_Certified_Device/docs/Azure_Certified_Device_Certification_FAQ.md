@@ -1,3 +1,6 @@
+
+![](./images/image1.png)
+
 # Azure Certified Device FAQ
 ### Azure Certified Device, IoT Plug and Play, and Edge Managed Certifications
 September 18th 2020
@@ -44,13 +47,10 @@ September 18th 2020
 
 [Q. How do I certify a gateway and sensors bundle?](#q.-how-do-i-certify-a-gateway-and-sensors-bundle)
 
-  ![](./images/ACDFAQ.PNG)
-
-**Azure Certified Device FAQ**
+# Azure Certified Device FAQ #
 
 <a name="q.-what-is-the-certified-for-azure-iot-device-catalog"></a>
-Q. What is the Certified for Azure IoT Device catalog?
-======================================================
+## Q. What is the Certified for Azure IoT Device catalog?
 
 The device catalog is a website that lets device buyers discover the right device for an IoT solution using enhanced cataloging experience and device categorization.
 
@@ -58,9 +58,10 @@ The device catalog is a website that lets device buyers discover the right devic
 
 -   [Certified for Azure IoT Device Catalog](https://aka.ms/devicecatalog)
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-what-do-i-need-to-start-the-device-certification-process"></a>
-Q. What do I need to start the device certification process?
-============================================================
+## Q. What do I need to start the device certification process?
 
 Join the [Microsoft Partner Network](https://docs.microsoft.com/en-us/partner-center/mpn-overview)
 if you have not already.
@@ -87,9 +88,10 @@ Resources
 
 -   [IoT Plug and Play certification tutorial](https://aka.ms/pnpcerttutorial)
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-what-is-the-azure-certified-device-submission-portal"></a>
-Q. What is the Azure Certified Device submission portal?
-========================================================
+## Q. What is the Azure Certified Device submission portal?
 
 The Azure Certified Device submission web portal is where you register product details, submit getting started guides, and run certification tests and publish your device to the catalog.
 
@@ -97,9 +99,10 @@ The Azure Certified Device submission web portal is where you register product d
 
 -   [Azure Certified Device submission portal](https://aka.ms/acdp)
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-can-i-use-sdk-samples-to-go-through-the-certification-process"></a>
-Q. Can I use SDK samples to go through the certification process?
-=================================================================
+## Q. Can I use SDK samples to go through the certification process?
 
 C-SDK samples can be used for evaluation only.
 
@@ -107,28 +110,32 @@ C-SDK samples can be used for evaluation only.
 
 [Azure IoT C-SDK Samples](https://github.com/Azure/azure-iot-sdk-c/tree/master/iothub_client/samples/pnp)
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-are-there-pricinglicensing-implications-of-the-azure-certified-device-certification-program"></a>
-Q. Are there pricing/licensing implications of the Azure Certified Device certification program?
-=================================================================================================
+## Q. Are there pricing/licensing implications of the Azure Certified Device certification program?
 
 There's no extra cost for participating in Azure Certified Device, IoT Plug and Play or Edge Managed certification programs. However, standard rates for Azure IoT Hub and other Azure services will apply.
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-can-i-opt-out-from-publishing-to-the-catalog-site"></a>
-Q. Can I opt out from publishing to the catalog site? 
-=====================================================
+## Q. Can I opt out from publishing to the catalog site? 
 
 Yes, you have the option not to be listed on the catalog site.
 Publishing your device on the catalog is a separate step on the submission portal, and is optional. However, if you choose to not publish to the catalog but wish to announce your Azure Certified Device, you will still need to complete the certification process, including review and approval of your device. Please contact <iotcert@microsoft.com> for details.
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-what-happens-to-my-existing-submissions-that-used-the-older-submission-portal"></a>
-Q. What happens to my existing submissions that used the older submission portal? 
-=================================================================================
+## Q. What happens to my existing submissions that used the older submission portal? 
 
 We are planning to release migration guidance during the 4th quarter of 2020. Please contact your Microsoft representative with any questions.
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-how-long-does-the-certification-process-take-are-there-slas"></a>
-Q. How long does the certification process take? Are there SLAs? 
-================================================================
+## Q. How long does the certification process take? Are there SLAs? 
 
 We do not have any SLAs per our [program agreement](https://catalogstorageprod.blob.core.windows.net/devicecatalogimageserver/Program%20Agreement.pdf).
 However, we do our best to respond to any inquiries as soon as possible.
@@ -140,11 +147,12 @@ Any questions can be directed to <iotcert@microsoft.com>.
 
 -   Email: <iotcert@microsoft.com>
 
-<a name="q.-what-are-the-benefits-of-getting-certified-with-azure-certified-device"></a>
-Q. What are the benefits of getting certified with Azure Certified Device? 
-==========================================================================
+[Return to top](#Azure-Certified-Device-FAQ)
 
-![](./images/benifits.png)
+<a name="q.-what-are-the-benefits-of-getting-certified-with-azure-certified-device"></a>
+## Q. What are the benefits of getting certified with Azure Certified Device? 
+
+![](./images/image2sml.png)
 
 **For device builders:**
 
@@ -162,9 +170,10 @@ Q. What are the benefits of getting certified with Azure Certified Device?
 
 -   Devices certified for Edge Managed promise app management and device management standards for Azure connected devices.
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-what-are-the-different-certification-programs-offered-through-azure-certified-device"></a>
-Q. What are the different certification programs offered through Azure Certified Device? 
-========================================================================================
+## Q. What are the different certification programs offered through Azure Certified Device? 
 
 **Azure Certified Device (Required)**
 
@@ -195,9 +204,10 @@ Pre-installing IoT Edge runtime in your device can occur at various stages in th
 
 IoT devices like Raspberry Pi3, etc. can continue to run IoT Edge runtime. The Azure Certified for IoT program is certifying against the pre-installed Edge runtime in the device controlled by either OEMs or channels to provide the best out-of-the-box experience on IoT Edge devices.
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-how-long-does-the-certification-process-take"></a>
-Q. How long does the certification process take?
-================================================
+## Q. How long does the certification process take?
 
 We do not have any SLAs per our [program agreement](https://catalogstorageprod.blob.core.windows.net/devicecatalogimageserver/Program%20Agreement.pdf).
 However, we do our best to respond to any inquiries as soon as possible.
@@ -209,11 +219,12 @@ Any questions can be directed to <iotcert@microsoft.com>.
 
 -   Email: <iotcert@microsoft.com>
 
-  ![](./images/ACDFAQ.PNG)
+[Return to top](#Azure-Certified-Device-FAQ)
+
+# IoT Plug and Play Device Certification #
 
 <a name="q.-what-is-iot-plug-and-play"></a>
-Q. What is IoT Plug and Play?
-=============================
+## Q. What is IoT Plug and Play?
 
 IoT Plug and Play is an open approach based on an open language to simplify IoT solution development. It enables seamless device-to-cloud solution integration experience, without needing to write embedded device code. IoT Plug and Play allows IoT devices to describe their capabilities in a "device capability model" and present it when connecting to cloud solutions like Azure IoT Central and third-party solutions from partners, which can then automatically understand and
 interact with the device.
@@ -222,9 +233,10 @@ interact with the device.
 
 -   [IoT Plug and Play](https://aka.ms/iotpnp)
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-what-is-iot-plug-and-play-device-certification"></a>
-Q. What is IoT Plug and Play device certification?
-==================================================
+## Q. What is IoT Plug and Play device certification?
 
 The IoT Plug and Play device certification program makes it easy for solutions builders and end users to pick the right device and cloud assets for any IoT project.
 
@@ -234,9 +246,10 @@ The IoT Plug and Play device certification program makes it easy for solutions b
 
 -   [IoT Plug and Play Certification IoT show](https://aka.ms/iotshow/231/youtube)
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-what-are-the-benefits-of-getting-an-iot-plug-and-play-device-certification"></a>
-Q. What are the benefits of getting an IoT Plug and Play device certification? 
-==============================================================================
+## Q. What are the benefits of getting an IoT Plug and Play device certification? 
 
 **For device builders:**
 
@@ -250,9 +263,10 @@ Q. What are the benefits of getting an IoT Plug and Play device certification?
 
 -   Certified Plug and Play-enabled devices work without writing device-specific code
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-where-can-i-find-resources-on-iot-plug-and-play-certification"></a>
-Q. Where can I find resources on IoT Plug and Play Certification? 
-=================================================================
+## Q. Where can I find resources on IoT Plug and Play Certification? 
 
 Please check the updated documentation.
 
@@ -266,15 +280,17 @@ Please check the updated documentation.
 
 -   [IoT Plug and Play certification tutorial](https://aka.ms/pnpcerttutorial)
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-can-i-certify-devices-running-iot-plug-and-play-bridge"></a>
-Q. Can I certify devices running IoT Plug and Play bridge?
-==========================================================
+## Q. Can I certify devices running IoT Plug and Play bridge?
 
 Guidance for certifying gateways, including those that run the bridge, is coming soon.
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-what-are-the-requirements-for-iot-plug-and-play-device-certification"></a>
-Q. What are the requirements for IoT Plug and Play device certification? 
-========================================================================
+## Q. What are the requirements for IoT Plug and Play device certification? 
 
 Requirements for IoT Plug and Play device certification include:
 
@@ -290,23 +306,28 @@ Resources
 
 -   [IoT Plug and Play device certification program requirements](https://aka.ms/IoTPnPCert).
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-what-is-the-migration-path-from-the-previous-public-preview"></a>
-Q. What is the migration path from the previous public preview? 
-===============================================================
+## Q. What is the migration path from the previous public preview? 
 
 The IoT Plug and Play public preview includes several key changes, including Digital Twin Definition Language v1 changing to v2. We do not have a migration plan or documentation. If you need assistance, please contact your Microsoft technical contact.
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-what-happens-to-my-iot-plug-and-play-pre-certified-devices"></a>
-Q. What happens to my IoT Plug and Play pre-certified devices? 
-==============================================================
+## Q. What happens to my IoT Plug and Play pre-certified devices? 
 
 We are planning to remove pre-certified devices from the device catalog
 during the 4th quarter of 2020.
 
+[Return to top](#Azure-Certified-Device-FAQ)
+
 <a name="q.-how-do-i-certify-a-gateway-and-sensors-bundle"></a>
-Q. How do I certify a gateway and sensors bundle?
-=================================================
+## Q. How do I certify a gateway and sensors bundle?
 
 Please add details to the device information section of the certification request. One of the goals is to ensure the device is ready to use when delivered, so we encourage you to add as much information as possible to ensure the best user experience.
 
 We are also planning to release Microsoft's guidance in detail this fall. Please contact your Microsoft representative with any questions.
+
+[Return to top](#Azure-Certified-Device-FAQ)
