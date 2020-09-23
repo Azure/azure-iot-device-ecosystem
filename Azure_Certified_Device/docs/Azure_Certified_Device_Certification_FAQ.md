@@ -9,9 +9,9 @@ September 18th 2020
 
 [Q. What is the Certified for Azure IoT Device catalog?](#q.-what-is-the-certified-for-azure-iot-device-catalog)
 
-[Q. What do I need to start the device certification process?](#q.-what-do-i-need-to-start-the-device-certification-process)
-
 [Q. What is the Azure Certified Device submission portal?](#q.-what-is-the-azure-certified-device-submission-portal)
+
+[Q. What do I need to start the device certification process?](#q.-what-do-i-need-to-start-the-device-certification-process)
 
 [Q. Can I use SDK samples to go through the certification process?](#q.-can-i-use-sdk-samples-to-go-through-the-certification-process)
 
@@ -19,7 +19,7 @@ September 18th 2020
 
 [Q. Can I opt out from publishing to the catalog site?](#q.-can-i-opt-out-from-publishing-to-the-catalog-site)
 
-[Q. What happens to my existing submissions that used the older submission portal?](#q.-what-happens-to-my-existing-submissions-that-used-the-older-submission-portal)
+[Q. Who should certify a device?](#q.-who-should-certify-a-device)
 
 [Q. How long does the certification process take? Are there SLAs?](#q.-how-long-does-the-certification-process-take-are-there-slas)
 
@@ -27,11 +27,15 @@ September 18th 2020
 
 [Q. What are the different certification programs offered through Azure Certified Device?](#q.-what-are-the-different-certification-programs-offered-through-azure-certified-device)
 
-[Q. How long does the certification process take?](#q.-how-long-does-the-certification-process-take)
+[Q. What happens to my existing submissions using the older submission portal?](#q.-what-happens-to-my-existing-submissions-using-the-older-submission-portal)
+
+[Q. What happens to existing certified devices?](#q.-what-happens-to-existing-certified-devices)
 
 [Q. What is IoT Plug and Play?](#q.-what-is-iot-plug-and-play)
 
 [Q. What is IoT Plug and Play device certification?](#q.-what-is-iot-plug-and-play-device-certification)
+
+[Q. What are the requirements for IoT Plug and Play device certification?](#q.-what-are-the-requirements-for-iot-plug-and-play-device-certification)
 
 [Q. What are the benefits of getting an IoT Plug and Play device certification?](#q.-what-are-the-benefits-of-getting-an-iot-plug-and-play-device-certification)
 
@@ -39,54 +43,24 @@ September 18th 2020
 
 [Q. Can I certify devices running IoT Plug and Play bridge?](#q.-can-i-certify-devices-running-iot-plug-and-play-bridge)
 
-[Q. What are the requirements for IoT Plug and Play device certification?](#q.-what-are-the-requirements-for-iot-plug-and-play-device-certification)
-
 [Q. What is the migration path from the previous public preview?](#q.-what-is-the-migration-path-from-the-previous-public-preview)
 
-[Q. What happens to my IoT Plug and Play pre-certified devices?](#q.-what-happens-to-my-iot-plug-and-play-pre-certified-devices)
-
 [Q. How do I certify a gateway and sensors bundle?](#q.-how-do-i-certify-a-gateway-and-sensors-bundle)
+
+[Q. Why I cannot remove Device Model from Model Repository?](#q.-why-i-cannot-remove-device-model-from-model-repository)
+
+[Q. Why my teammates cannot publish to Model Repository?](#q.-why-my-teammates-cannot-publish-to-model-repository)
 
 # Azure Certified Device FAQ #
 
 <a name="q.-what-is-the-certified-for-azure-iot-device-catalog"></a>
 ## Q. What is the Certified for Azure IoT Device catalog?
 
-The device catalog is a website that lets device buyers discover the right device for an IoT solution using enhanced cataloging experience and device categorization.
+The device catalog is a web site that lets device buyers discover the right device for an IoT solution with enhanced cataloging experience and device categorization.
 
 **Resource**
 
 -   [Certified for Azure IoT Device Catalog](https://aka.ms/devicecatalog)
-
-[Return to top](#Azure-Certified-Device-FAQ)
-
-<a name="q.-what-do-i-need-to-start-the-device-certification-process"></a>
-## Q. What do I need to start the device certification process?
-
-Join the [Microsoft Partner Network](https://docs.microsoft.com/en-us/partner-center/mpn-overview)
-if you have not already.
-
-Prepare the following information as you begin the process.
-
--   The device being certified
-
--   Project name
-
--   Device application
-
--   Device details
-
--   Marketing details
-
--   Industrial certification (if present)
-
--   Getting-started guide template
-
-Resources
-
--   [Azure Certified Device submission portal](https://aka.ms/acdp)
-
--   [IoT Plug and Play certification tutorial](https://aka.ms/pnpcerttutorial)
 
 [Return to top](#Azure-Certified-Device-FAQ)
 
@@ -101,10 +75,43 @@ The Azure Certified Device submission web portal is where you register product d
 
 [Return to top](#Azure-Certified-Device-FAQ)
 
+<a name="q.-what-do-i-need-to-start-the-device-certification-process"></a>
+## Q. What do I need to start the device certification process?
+
+Join the [Microsoft Partner Network](https://docs.microsoft.com/en-us/partner-center/mpn-overview)
+if you have not already.
+
+Prepare the following information as you begin the process.
+
+-   The device being certified
+
+-   IoT Plug and Play device model (for IoT Plug and Play certification)
+
+-   Device application
+
+-   Device details
+
+-   Marketing details
+
+-   Distributors contact information
+
+-   Industrial certification information (if present)
+
+-   Getting-started guide template
+
+Resources
+
+-   [Azure Certified Device submission portal](https://aka.ms/acdp)
+
+-   [IoT Plug and Play certification tutorial](https://aka.ms/pnpcerttutorial)
+
+[Return to top](#Azure-Certified-Device-FAQ)
+
+
 <a name="q.-can-i-use-sdk-samples-to-go-through-the-certification-process"></a>
 ## Q. Can I use SDK samples to go through the certification process?
 
-C-SDK samples can be used for evaluation only.
+Yes, the C-SDK samples are ready for the certification for evaluation purpose.  Please use these samples to experience certification flow.  Other SDK samples will be updated soon to satisfy all IoT Plug and Play certification requirements.
 
 **Resources**
 
@@ -127,10 +134,10 @@ Publishing your device on the catalog is a separate step on the submission porta
 
 [Return to top](#Azure-Certified-Device-FAQ)
 
-<a name="q.-what-happens-to-my-existing-submissions-that-used-the-older-submission-portal"></a>
-## Q. What happens to my existing submissions that used the older submission portal? 
+<a name="q.-who-should-certify-a-device"></a>
+## Q. Who should certify a device? 
 
-We are planning to release migration guidance during the 4th quarter of 2020. Please contact your Microsoft representative with any questions.
+The certification includes both technology validation and business/marketing aspects such as making the device available through Azure Device Catalog.  The guidance is the organization has all technical and business information should drive the certification effort.  However, there is no rules or restrictions who can drive the certification process.
 
 [Return to top](#Azure-Certified-Device-FAQ)
 
@@ -206,18 +213,17 @@ IoT devices like Raspberry Pi3, etc. can continue to run IoT Edge runtime. The A
 
 [Return to top](#Azure-Certified-Device-FAQ)
 
-<a name="q.-how-long-does-the-certification-process-take"></a>
-## Q. How long does the certification process take?
+<a name="q.-what-happens-to-my-existing-submissions-using-the-older-submission-portal"></a>
+## Q. What happens to my existing submissions using the older submission portal?
 
-We do not have any SLAs per our [program agreement](https://catalogstorageprod.blob.core.windows.net/devicecatalogimageserver/Program%20Agreement.pdf).
-However, we do our best to respond to any inquiries as soon as possible.
-Any questions can be directed to <iotcert@microsoft.com>.
+We are also planning to release our migration guidance this fall.  Please contact your Microsoft representative with any questions.
 
-**Resources**
+[Return to top](#Azure-Certified-Device-FAQ)
 
--   [Microsoft Azure Certified for IoT Program Agreement](https://catalogstorageprod.blob.core.windows.net/devicecatalogimageserver/Program%20Agreement.pdf)
+<a name="q.-what-happens-to-existing-certified-devices"></a>
+## What happens to existing certified devices?
 
--   Email: <iotcert@microsoft.com>
+We are also planning to release our migration guidance this fall.  Please contact your Microsoft representative with any questions.
 
 [Return to top](#Azure-Certified-Device-FAQ)
 
@@ -245,6 +251,25 @@ The IoT Plug and Play device certification program makes it easy for solutions b
 -   [Prepare and certify your devices for IoT Plug and Play blog](https://aka.ms/pnpcertblog)
 
 -   [IoT Plug and Play Certification IoT show](https://aka.ms/iotshow/231/youtube)
+
+[Return to top](#Azure-Certified-Device-FAQ)
+
+<a name="q.-what-are-the-requirements-for-iot-plug-and-play-device-certification"></a>
+## Q. What are the requirements for IoT Plug and Play device certification? 
+
+Requirements for IoT Plug and Play device certification include:
+
+-   Certification through the Azure Certified Device baseline program
+
+-   Device model(s) describing the device and peripheral(s) following the DTDL version 2
+
+-   Model ID announcement during provisioning
+
+-   Device-to-Cloud (D2C) message support
+
+Resources
+
+-   [IoT Plug and Play device certification program requirements](https://aka.ms/IoTPnPCert).
 
 [Return to top](#Azure-Certified-Device-FAQ)
 
@@ -289,37 +314,10 @@ Guidance for certifying gateways, including those that run the bridge, is coming
 
 [Return to top](#Azure-Certified-Device-FAQ)
 
-<a name="q.-what-are-the-requirements-for-iot-plug-and-play-device-certification"></a>
-## Q. What are the requirements for IoT Plug and Play device certification? 
-
-Requirements for IoT Plug and Play device certification include:
-
--   Certification through the Azure Certified Device baseline program
-
--   Device model(s) describing the device and peripheral(s) following the DTDL version 2
-
--   Model ID announcement during provisioning
-
--   Device-to-Cloud (D2C) message support
-
-Resources
-
--   [IoT Plug and Play device certification program requirements](https://aka.ms/IoTPnPCert).
-
-[Return to top](#Azure-Certified-Device-FAQ)
-
 <a name="q.-what-is-the-migration-path-from-the-previous-public-preview"></a>
 ## Q. What is the migration path from the previous public preview? 
 
 The IoT Plug and Play public preview includes several key changes, including Digital Twin Definition Language v1 changing to v2. We do not have a migration plan or documentation. If you need assistance, please contact your Microsoft technical contact.
-
-[Return to top](#Azure-Certified-Device-FAQ)
-
-<a name="q.-what-happens-to-my-iot-plug-and-play-pre-certified-devices"></a>
-## Q. What happens to my IoT Plug and Play pre-certified devices? 
-
-We are planning to remove pre-certified devices from the device catalog
-during the 4th quarter of 2020.
 
 [Return to top](#Azure-Certified-Device-FAQ)
 
@@ -329,5 +327,23 @@ during the 4th quarter of 2020.
 Please add details to the device information section of the certification request. One of the goals is to ensure the device is ready to use when delivered, so we encourage you to add as much information as possible to ensure the best user experience.
 
 We are also planning to release Microsoft's guidance in detail this fall. Please contact your Microsoft representative with any questions.
+
+[Return to top](#Azure-Certified-Device-FAQ)
+
+<a name="q.-why-i-cannot-remove-device-model-from-model-repository"></a>
+## Q. Why I cannot remove Device Model from Model Repository?
+
+The model repository is immutable, meaning once you publish, you cannot remove.  Please test thoroughly with AZ CLI extension with a local file before you publish your device model.
+
+[Return to top](#Azure-Certified-Device-FAQ)
+
+<a name="q.-why-my-teammates-cannot-publish-to-model-repository"></a>
+## Q. Why my teammates cannot publish to Model Repository?
+
+Please make sure to the users have “Publish Model” permission.  Please work with your tenant administrator.
+
+**Resources**
+
+-   [Azure IoT model repository](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-repository)
 
 [Return to top](#Azure-Certified-Device-FAQ)
