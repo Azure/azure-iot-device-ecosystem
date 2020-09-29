@@ -30,7 +30,7 @@ Promise of IoT Plug and Play certification are:
 
 | **Name**                | IoTPnP.DPS                                               |
 | ----------------------- | ------------------------------------------------------------ |
-| **Target Availability** | New                                                          |
+| **Target Availability** | Available now                                                |
 | **Applies To**          | Any device                                                   |
 | **OS**                  | Agnostic                                                     |
 | **Validation Type**     | Automated                                                    |
@@ -41,7 +41,7 @@ Promise of IoT Plug and Play certification are:
 
 | **Name**                | IoTPnP.DTDL                                                  |
 | ----------------------- | ------------------------------------------------------------ |
-| **Target Availability** | Later this summer                                            |
+| **Target Availability** | Available now                                                |
 | **Applies To**          | Any device                                                   |
 | **OS**                  | Agnostic                                                     |
 | **Validation Type**     | Automated                                                    |
@@ -52,7 +52,7 @@ Promise of IoT Plug and Play certification are:
 
 | **Name**                | IoTPnP.ModelRepo                                             |
 | ----------------------- | ------------------------------------------------------------ |
-| **Target Availability** | Later this summer                                            |
+| **Target Availability** | Available now                                                |
 | **Applies To**          | Any device                                                   |
 | **OS**                  | Agnostic                                                     |
 | **Validation Type**     | Automated                                                    |
@@ -63,7 +63,7 @@ Promise of IoT Plug and Play certification are:
 
 | **Name**                                  | IoTPnP.Physicaldevice                                      |
 | ----------------------------------------- | ------------------------------------------------------------ |
-| **Target Availability**                   | Later this year                                            |
+| **Target Availability**                   | Available now                                                |
 | **Applies To**                            | Any device                                                   |
 | **OS**                                    | Agnostic                                                     |
 | **Validation Type**                       | Manual                                                       |
@@ -75,7 +75,7 @@ Promise of IoT Plug and Play certification are:
 
 | **Name**                | IoTPnP.DeviceInfoInterface                                   |
 | ----------------------- | ------------------------------------------------------------ |
-| **Target Availability** | Later this summer                                            |
+| **Target Availability** | Available now                                                |
 | **Applies To**          | Any device                                                   |
 | **OS**                  | Agnostic                                                     |
 | **Validation Type**     | Automated                                                    |
