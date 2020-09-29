@@ -62,10 +62,9 @@ You should have the following items ready before beginning the process:
 ## 3.1 Modify and Build the Samples
 
 1.  Start a new instance of Android Studio and open Android project from 
-[here][android-sample-code].
+[here](https://github.com/Azure/azure-iot-sdk-java/tree/master/device/iot-device-samples/android-sample).
         
-        azure-iot-sdk-java/device/samples/android-sample/
-
+       
 2.  Go to MainActivity.java, replace the [device connection string] placeholder with connection string of the device you have created in Provision your device and get its credentials and save the file. An example of IoT Hub Connection String is as below:
 
         HostName=[YourIoTHubName];SharedAccessKeyName=[YourAccessKeyName];SharedAccessKey=[YourAccessKey]
