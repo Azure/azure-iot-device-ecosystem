@@ -62,12 +62,13 @@ You should have the following items ready before beginning the process:
 ## 3.1 Modify and Build the Samples
 
 1.  Start a new instance of Android Studio and open Android project from 
-[here](https://github.com/Azure/azure-iot-sdk-java/tree/master/device/iot-device-samples/android-sample).
+[here](https://github.com/ssbomb/Azure-IoT-Client).
         
        
 2.  Go to MainActivity.java, replace the [device connection string] placeholder with connection string of the device you have created in Provision your device and get its credentials and save the file. An example of IoT Hub Connection String is as below:
 
-        HostName=[YourIoTHubName];SharedAccessKeyName=[YourAccessKeyName];SharedAccessKey=[YourAccessKey]
+        String deviceconnectionString = "HostName=[YourIoTHubName];SharedAccessKeyName=[YourAccessKeyName];SharedAccessKey=[YourAccessKey]";
+
 
 3.  Build your project by going to ***Build menu > Make Project***.
 
@@ -83,7 +84,7 @@ In this section you will run the Azure IoT client SDK samples to validate commun
 
 ### 3.2.2 Send Device Message to IoT Hub
 
--   See [Manage IoT Hub]([lnk-manage-iot-hub]) to learn how to observe the messages IoT Hub receives from the application.
+-   See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the application.
 -   Run Device explorer on your Development platform.
 -   Set your IoT Hub Connection String on Configuration tab. Then select Data tab.
 -   Select Device ID on your device, click Monitor button to start receive event hub data.
