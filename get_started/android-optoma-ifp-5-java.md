@@ -1,6 +1,6 @@
 ---
 platform: android
-device: optoma ifp 5 series
+device: optoma ifp 5
 language: java
 ---
 
@@ -43,11 +43,8 @@ You should have the following items ready before beginning the process:
 # Step 2: Prepare your Device
 
 -   Make sure desktop is ready as per instructions given in [Prepare your development environment](#Setup_DevEnv).
-
 -   Plug in your device to your development machine with a USB cable. If you're developing on Windows, you might need to install the appropriate USB driver for your device. For help installing drivers, see the [OEM USB Drivers](https://developer.android.com/studio/run/oem-usb.html) document.
-
 -   Connect the device to internet.
-
 -   On host PC, run adb shell and execute following commands:
 
         ./adb devices
@@ -58,17 +55,33 @@ You should have the following items ready before beginning the process:
 <a name="Build"></a>
 # Step 3: Build and Run the sample
 
-## Modify and Build the Samples
+## 3.1 Modify and Build the Samples
 
--   Start a new instance of Android Studio and open Android project from [here](android-sample-code):
-
-        azure-iot-sdk-java/device/samples/android-sample/
-
+-   Start a new instance of Android Studio and open Android project from 
+[here](https://github.com/ssbomb/Azure-IoT-Client).
 -   Go to MainActivity.java, replace the [device connection string] placeholder with connection string of the device you have created in Provision your device and get its credentials and save the file. An example of IoT Hub Connection String is as below:
 
-        HostName=[YourIoTHubName];SharedAccessKeyName=[YourAccessKeyName];SharedAccessKey=[YourAccessKey]
+        String deviceconnectionString = "HostName=[YourIoTHubName];SharedAccessKeyName=[YourAccessKeyName];SharedAccessKey=[YourAccessKey]";
+-   Build your project by going to **Build menu > Make Project**.
 
--   Build your project by going to ***Build menu > Make Project***.
+## 3.2 Run and Validate the Samples
+
+In this section you will run the Azure IoT client SDK samples to validate communication between your device and Azure IoT Hub. You will send messages to the Azure IoT Hub service and validate that IoT Hub has successfully receive the data. You will also monitor any messages sent from the Azure IoT Hub to client.
+
+### 3.2.1 Run the Sample:
+
+-   Select one of your project's files and click Run from the toolbar.
+-   In the Choose Device window that appears, select the Choose a running device radio button, select your device, and click OK.
+-   Android Studio will install the app on your connected device and starts it.
+
+### 3.2.2 Send Device Message to IoT Hub
+
+-   See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the application.
+-   Run Device explorer on your Development platform.
+-   Set your IoT Hub Connection String on Configuration tab. Then select Data tab.
+-   Select Device ID on your device, click Monitor button to start receive event hub data.
+-   As soon as you run the app on your device (or emulator). Click SEND MESSAGE on app of test device.
+-   Check Data Monitor window in Device explorer. Verify Receiving events message on Event Hub Data.
 
 <a name="NextSteps"></a>
 # Next Steps
