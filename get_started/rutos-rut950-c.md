@@ -42,7 +42,7 @@ You should have the following items ready before beginning the process:
 -   Make sure to have internet connection
 -   Download Azure IotHub package from Package Manager (System->Package Manager)
 
-    ![Alt text][package-manager]
+    ![Alt text](./media/rut955/Azure17.png)
 
 -   Go to Azure IoTHub configuration page (Services->IoT Platforms->Azure Iot Hub)
 -   [More information can be found in our wiki page][wiki-page]
@@ -59,7 +59,7 @@ You should have the following items ready before beginning the process:
 -   Check all the checkboxes of information needed to send to cloud
 -   Press "Save"
 
-    ![Alt text][main-picture]
+    ![Alt text](./media/rut955/Azure19-1.png)
 
 <a name="NextSteps"></a>
 # Next Steps
