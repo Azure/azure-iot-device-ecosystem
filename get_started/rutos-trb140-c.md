@@ -1,10 +1,10 @@
 ---
 platform: rutos
-device: rut950
+device: trb140
 language: c
 ---
 
-Run a simple C sample on RUT950 device running RUTOS
+Run a simple C sample on TRB140 device running RUTOS
 ===
 ---
 
@@ -21,7 +21,8 @@ Run a simple C sample on RUT950 device running RUTOS
 
 **About this document**
 
-This document describes how to connect RUT950 device running RUTOS with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect TRB140 device running RUTOS with Azure IoT SDK. This multi-step process includes:
+
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -34,32 +35,31 @@ You should have the following items ready before beginning the process:
 -   [Prepare your development environment][setup-devbox-linux]
 -   [Setup your IoT hub][lnk-setup-iot-hub]
 -   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   RUT950 device.
+-   TRB140 device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 -   [Login to device WebUI][rut-login]
 -   Make sure to have internet connection
--   Download Azure IotHub package from Package Manager (System->Package Manager)
+-   Download Azure IotHub package from Package Manager (Services->Package Manager)
 
-    ![Alt text](./media/rut955/Azure17.png)
+ ![Alt text](./media/rutx12/Networking_rutx_configuration_examples_package_manager_v1.png)
 
--   Go to Azure IoTHub configuration page (Services->IoT Platforms->Azure Iot Hub)
+-   Go to Azure IoTHub configuration page (Services->Cloud connections->Azure Iot Hub)
 -   [More information can be found in our wiki page][wiki-page]
 
 <a name="Build"></a>
 # Step 3: Run the program
 
-<a name="Step-3-3-Run"></a>
-## 3.1 Run the Sample
+## Run the Sample
 
 -   Check the "Enable Azure IoTHub monitoring" checkbox
 -   Enter device connection string to "Connection string" placeholder
 -   Enter interval in seconds to send data to "Message sending interval (sec.)" placeholder
--   Check all the checkboxes of information needed to send to cloud
--   Press "Save"
+-   Check all the checkboxes of information needed to send to cloud (in "GSM Values" placeholder)
+-   Press "Save & Apply"
 
-    ![Alt text](./media/rut955/Azure19-1.png)
+ ![Alt text](./media/rutx12/Networking_rutx_configuration_examples_azure_iot_hub_v1.png)
 
 <a name="NextSteps"></a>
 # Next Steps
@@ -82,7 +82,7 @@ You have now learned how to run a sample application that collects router modem 
 [setup-devbox-linux]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
 [lnk-setup-iot-hub]: ../setup_iothub.md
 [lnk-manage-iot-hub]: ../manage_iot_hub.md
-[main-picture]: https://wiki.teltonika-networks.com/wikibase/images/2/23/Azure19-1.png
+[main-picture]: https://wiki.teltonika-networks.com/wikibase/images/f/ff/Networking_rutx_configuration_examples_azure_iot_hub_v1.png
 [wiki-page]: https://wiki.teltonika-networks.com/view/Azure_IoT_Hub_cloud_connection
-[rut-login]: https://wiki.teltonika-networks.com/view/RUT950_First_Start#Login_to_device
-[package-manager]: https://wiki.teltonika-networks.com/wikibase/images/5/57/Azure17.png
+[rut-login]: https://wiki.teltonika-networks.com/view/RUTX08_First_Start#Login_to_device
+[package-manager]: https://wiki.teltonika-networks.com/wikibase/images/1/10/Networking_rutx_configuration_examples_package_manager_v1.png
