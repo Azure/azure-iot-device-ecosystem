@@ -32,7 +32,7 @@ This document describes how to connect [HBFBU691-3455-B](https://www.jetwayipc.c
 # Step 1: Prerequisites
 
 You should have the following items ready before beginning the process:
-- [Prepare your development environment](https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md)
+- [Prepare your development environment](https://github.com/Azure/azure-iot-sdk-node/blob/master/doc/node-devbox-setup.md)
 - [Setup your IoT hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md)
 - [Provision your device and get its credentials](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md)
 - HBFBU691-3455-B device.
@@ -45,6 +45,16 @@ You should have the following items ready before beginning the process:
 - Wait until the operating system is ready.
 
 # Step 3: Build and Run the sample
+Make sure you've setup your environment, including your IoT hub, before continuing.
+To complete this quickstart, you need Node.js on your development machine. You can download the latest recommended version for multiple platforms from [nodejs.org](https://nodejs.org/).
+
+You can verify the current version of Node.js on your development machine using the following command:
+node --version
+
+Clone the SDK repository with the sample code
+Clone the samples from a the Node SDK repository. Open a terminal window in a folder of your choice. Run the following command to clone the Microsoft Azure IoT SDK for Node.js GitHub repository:
+git clone https://github.com/Azure/azure-iot-sdk-node
+
 
 In Set up your environment, you created four environment variables to configure the sample to use the Device Provisioning Service (DPS) to connect to your IoT hub:
 
