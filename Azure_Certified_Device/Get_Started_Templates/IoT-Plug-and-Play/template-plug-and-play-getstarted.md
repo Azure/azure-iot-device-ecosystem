@@ -49,6 +49,7 @@ Make sure you've setup your environment, including your IoT hub, before continui
 To complete this quickstart, you need Node.js on your development machine. You can download the latest recommended version for multiple platforms from [nodejs.org](https://nodejs.org/).
 
 You can verify the current version of Node.js on your development machine using the following command:
+
 node --version
 
 Clone the SDK repository with the sample code
