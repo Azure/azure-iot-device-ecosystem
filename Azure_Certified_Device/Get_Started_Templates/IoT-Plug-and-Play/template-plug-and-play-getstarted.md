@@ -45,7 +45,7 @@ You should have the following items ready before beginning the process:
 - Wait until the operating system is ready.
 
 # Step 3: Build and Run the sample
-Make sure you've setup your environment, including your IoT hub, before continuing.
+Make sure you've [setup your environment](https://docs.microsoft.com/zh-tw/azure/iot-pnp/set-up-environment), including your IoT hub, before continuing.
 To complete this quickstart, you need Node.js on your development machine. You can download the latest recommended version for multiple platforms from [nodejs.org](https://nodejs.org/).
 
 You can verify the current version of Node.js on your development machine using the following command:
@@ -59,12 +59,14 @@ git clone https://github.com/Azure/azure-iot-sdk-node
 
 In Set up your environment, you created four environment variables to configure the sample to use the Device Provisioning Service (DPS) to connect to your IoT hub:
 
-- IOTHUB_DEVICE_SECURITY_TYPE with the value DPS
-- IOTHUB_DEVICE_DPS_ID_SCOPE with the DPS ID scope.
-- IOTHUB_DEVICE_DPS_DEVICE_ID with the value my-pnp-device.
-- IOTHUB_DEVICE_DPS_DEVICE_KEY with the enrollment primary key.
-- IOTHUB_DEVICE_DPS_ENDPOINT with the value global.azure-devices-provisioning.net.
-To learn more about the sample configuration, see the sample readme.
+- set IOTHUB_DEVICE_SECURITY_TYPE="DPS"
+- set IOTHUB_DEVICE_DPS_ID_SCOPE="ID Scope of DPS instance"
+- set IOTHUB_DEVICE_DPS_DEVICE_ID="Device's ID"
+- set IOTHUB_DEVICE_DPS_DEVICE_KEY="Device's security key"
+- OPTIONAL, if you do not wish to use the default endpoint "global.azure-devices-provisioning.net"
+- set IOTHUB_DEVICE_DPS_ENDPOINT="DPS endpoint"
+
+To learn more about the sample configuration, [see the sample readme](https://github.com/Azure/azure-iot-sdk-node/blob/master/device/samples/pnp/readme.md).
 
 In this quickstart, you use a sample thermostat device that's written in Node.js as the IoT Plug and Play device. To run the sample device:
 
