@@ -52,35 +52,56 @@ You can verify the current version of Node.js on your development machine using 
 
 node --version
 
-Clone the SDK repository with the sample code
-Clone the samples from a the Node SDK repository. Open a terminal window in a folder of your choice. Run the following command to clone the Microsoft Azure IoT SDK for Node.js GitHub repository:
+# Download the code
+In this quickstart, you prepare a development environment you can use to clone and build the Azure IoT Hub Device SDK for Node.js.
+Open a command prompt in the directory of your choice. Execute the following command to clone the Microsoft Azure IoT SDK for Node.js GitHub repository into this location:
+
 git clone https://github.com/Azure/azure-iot-sdk-node
 
+# Install required libraries
+You use the device SDK to build the included sample code. The application you build simulates a device that connects to an IoT hub. The application sends telemetry and properties and receives commands.
 
-In Set up your environment, you created four environment variables to configure the sample to use the Device Provisioning Service (DPS) to connect to your IoT hub:
-
-- set IOTHUB_DEVICE_SECURITY_TYPE="DPS"
-- set IOTHUB_DEVICE_DPS_ID_SCOPE="ID Scope of DPS instance"
-- set IOTHUB_DEVICE_DPS_DEVICE_ID="Device's ID"
-- set IOTHUB_DEVICE_DPS_DEVICE_KEY="Device's security key"
-- OPTIONAL, if you do not wish to use the default endpoint "global.azure-devices-provisioning.net"
-- set IOTHUB_DEVICE_DPS_ENDPOINT="DPS endpoint"
-
-To learn more about the sample configuration, [see the sample readme](https://github.com/Azure/azure-iot-sdk-node/blob/master/device/samples/pnp/readme.md).
-
-In this quickstart, you use a sample thermostat device that's written in Node.js as the IoT Plug and Play device. To run the sample device:
-
-1.Open a terminal window and navigate to the local folder that contains the Microsoft Azure IoT SDK for Node.js repository you cloned from GitHub.
-
-2.This terminal window is used as your device terminal. Go to the folder of your cloned repository, and navigate to the /azure-iot-sdk-node/device/samples/pnp folder.Install all the dependencies by running the following command:
+1. In a local terminal window, go to the folder of your cloned repository and navigate to the /azure-iot-sdk-node/device/samples/pnp folder. Then run the following command to install the required libraries:
 
 npm install
 
-3.Run the sample thermostat device with the following command:
+2. Configure the environment variable with the device connection string you made a note of previously:
+
+set IOTHUB_DEVICE_CONNECTION_STRING=<YourDeviceConnectionString>
+  
+Run the sample device
+This sample implements a simple IoT Plug and Play thermostat device. The model this sample implements doesn't use IoT Plug and Play components. The DTDL model file for the thermostat device defines the telemetry, properties, and commands the device implements.
+
+Open the simple_thermostat.js file. In this file, you can see how to:
+
+1. Import the required interfaces.
+2. Write a property update handler and a command handler.
+3. Handle desired property patches and send telemetry.
+4. Optionally, provision your device using the Azure Device Provisioning Service (DPS).
+
+In the main function, you can see how it all comes together:
+
+1. Create the device from your connection string or provision it using DPS.)
+2. Use the modelID option to specify the IoT Plug and Play device model.
+3. Enable the command handler.
+4. Send telemetry from the device to your hub.
+5. Get the devices twin and update the reported properties.
+6. Enable the desired property update handler.
+
+In Set up your environment, you created four environment variables to configure the sample to use the Device Provisioning Service (DPS) to connect to your IoT hub:
+
+- IOTHUB_DEVICE_SECURITY_TYPE with the value DPS
+- IOTHUB_DEVICE_DPS_ID_SCOPE with the DPS ID scope.
+- IOTHUB_DEVICE_DPS_DEVICE_ID with the value my-pnp-device.
+- IOTHUB_DEVICE_DPS_DEVICE_KEY with the enrollment primary key.
+- IOTHUB_DEVICE_DPS_ENDPOINT with the value global.azure-devices-provisioning.net.
+
+To learn more about the sample configuration, see the sample readme.
+Run the sample application to simulate an IoT Plug and Play device that sends telemetry to your IoT hub. To run the sample application, use the following command:
 
 node simple_thermostat.js
 
-4.You see messages saying that the device has sent some information and reported itself online. These messages indicate that the device has begun sending telemetry data to the hub, and is now ready to receive commands and property updates. Don't close this terminal, you need it to confirm the service sample is working.
+You see the following output, indicating the device has begun sending telemetry data to the hub, and is now ready to receive commands and property updates.
 
 # Next Steps
 
