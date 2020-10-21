@@ -54,7 +54,7 @@ node --version
 
 # Download the code
 In this quickstart, you prepare a development environment you can use to clone and build the Azure IoT Hub Device SDK for Node.js.
-Open a command prompt in the directory of your choice. Execute the following command to clone the Microsoft Azure IoT SDK for Node.js GitHub repository into this location:
+Open a command prompt in the directory of your choice. Execute the following command to clone the [Microsoft Azure IoT SDK for Node.js](https://github.com/Azure/azure-iot-sdk-node) GitHub repository into this location:
 
 git clone https://github.com/Azure/azure-iot-sdk-node
 
