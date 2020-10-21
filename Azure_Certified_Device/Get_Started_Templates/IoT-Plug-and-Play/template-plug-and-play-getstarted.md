@@ -67,7 +67,7 @@ npm install
 
 2. Configure the environment variable with the device connection string you made a note of previously:
 
-set IOTHUB_DEVICE_CONNECTION_STRING=<YourDeviceConnectionString>
+set IOTHUB_DEVICE_CONNECTION_STRING=<"YourDeviceConnectionString">
   
 Run the sample device
 This sample implements a simple IoT Plug and Play thermostat device. The model this sample implements doesn't use IoT Plug and Play components. The DTDL model file for the thermostat device defines the telemetry, properties, and commands the device implements.
