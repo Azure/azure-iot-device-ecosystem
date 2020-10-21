@@ -50,7 +50,7 @@ To complete this quickstart, you need Node.js on your development machine. You c
 
 You can verify the current version of Node.js on your development machine using the following command:
 
-node --version
+  node --version
 
 # Download the code
 In this quickstart, you prepare a development environment you can use to clone and build the Azure IoT Hub Device SDK for Node.js.
@@ -63,11 +63,11 @@ You use the device SDK to build the included sample code. The application you bu
 
 1. In a local terminal window, go to the folder of your cloned repository and navigate to the /azure-iot-sdk-node/device/samples/pnp folder. Then run the following command to install the required libraries:
 
-npm install
+  npm install
 
 2. Configure the environment variable with the device connection string you made a note of previously:
 
-set IOTHUB_DEVICE_CONNECTION_STRING=<"YourDeviceConnectionString">
+  set IOTHUB_DEVICE_CONNECTION_STRING=<"YourDeviceConnectionString">
   
 # Run the sample device
 This sample implements a simple IoT Plug and Play thermostat device. The model this sample implements doesn't use IoT Plug and Play components. The DTDL model file for the thermostat device defines the telemetry, properties, and commands the device implements.
@@ -75,9 +75,9 @@ This sample implements a simple IoT Plug and Play thermostat device. The model t
 Open the simple_thermostat.js file. In this file, you can see how to:
 
 - const provisioningHost = "global.azure-devices-provisioning.net";
-- const idScope = "your_idScope "
-- const registrationId = "your_registrationId"
-- const symmetricKey = "your_symmetricKey"
+- const idScope = "Your_idScope "
+- const registrationId = "Your_registrationId"
+- const symmetricKey = "Your_symmetricKey"
 - const useDps = "DPS"
 
 To learn more about the sample configuration, see the [sample readme](https://github.com/Azure/azure-iot-sdk-node/blob/master/device/samples/pnp/readme.md).
