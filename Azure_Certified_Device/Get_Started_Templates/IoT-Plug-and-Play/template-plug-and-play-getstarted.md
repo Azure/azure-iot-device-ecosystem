@@ -69,32 +69,16 @@ npm install
 
 set IOTHUB_DEVICE_CONNECTION_STRING=<"YourDeviceConnectionString">
   
-Run the sample device
+# Run the sample device
 This sample implements a simple IoT Plug and Play thermostat device. The model this sample implements doesn't use IoT Plug and Play components. The DTDL model file for the thermostat device defines the telemetry, properties, and commands the device implements.
 
 Open the simple_thermostat.js file. In this file, you can see how to:
 
-1. Import the required interfaces.
-2. Write a property update handler and a command handler.
-3. Handle desired property patches and send telemetry.
-4. Optionally, provision your device using the Azure Device Provisioning Service (DPS).
-
-In the main function, you can see how it all comes together:
-
-1. Create the device from your connection string or provision it using DPS.)
-2. Use the modelID option to specify the IoT Plug and Play device model.
-3. Enable the command handler.
-4. Send telemetry from the device to your hub.
-5. Get the devices twin and update the reported properties.
-6. Enable the desired property update handler.
-
-In Set up your environment, you created four environment variables to configure the sample to use the Device Provisioning Service (DPS) to connect to your IoT hub:
-
-- IOTHUB_DEVICE_SECURITY_TYPE with the value DPS
-- IOTHUB_DEVICE_DPS_ID_SCOPE with the DPS ID scope.
-- IOTHUB_DEVICE_DPS_DEVICE_ID with the value my-pnp-device.
-- IOTHUB_DEVICE_DPS_DEVICE_KEY with the enrollment primary key.
-- IOTHUB_DEVICE_DPS_ENDPOINT with the value global.azure-devices-provisioning.net.
+- const provisioningHost = "global.azure-devices-provisioning.net";
+- const idScope = "your_idScope "
+- const registrationId = "your_registrationId"
+- const symmetricKey = "your_symmetricKey"
+- const useDps = "PS"
 
 To learn more about the sample configuration, see the sample readme.
 Run the sample application to simulate an IoT Plug and Play device that sends telemetry to your IoT hub. To run the sample application, use the following command:
