@@ -45,7 +45,7 @@ You should have the following items ready before beginning the process:
 - Wait until the operating system is ready.
 
 # Step 3: Build and Run the sample
-Make sure you've [setup your environment](https://docs.microsoft.com/zh-tw/azure/iot-pnp/set-up-environment), including your IoT hub, before continuing.
+Make sure you've [setup your environment](https://docs.microsoft.com/en-us/azure/iot-pnp/set-up-environment), including your IoT hub, before continuing.
 To complete this quickstart, you need Node.js on your development machine. You can download the latest recommended version for multiple platforms from [nodejs.org](https://nodejs.org/).
 
 You can verify the current version of Node.js on your development machine using the following command:
