@@ -1,36 +1,20 @@
 ---
-platform: {enter the OS name running on device}
-device: {enter your device name here}
-language: {}
+platform: {Windows 10}
+device: {HBFBU691-3455-B}
+language: {Node.js}
 ---
 
-Connect {enter your device name here} device to your Azure IoT services
+Connect {HBFBU691-3455-B} device to your Azure IoT services
 ===
 
 ---
 # Table of Contents
 
--   [Introduction](#Introduction)
--   [Prerequisites](#Prerequisites)
--   [Prepare the Device](#preparethedevice)
--   [Integration with Azure IoT Explorer](#IntegrationwithAzureIoTExplorer)
--   [Additional Links](#AdditionalLinks)
-
-# Instructions for using this template
-
--   Replace the text in {placeholders} with correct values.
--   Delete the lines {{enclosed}} after following the instructions enclosed between them.
--   It is advisable to use external links, wherever possible.
--   Remove this section from final document.
-
-# Tips for authoring great getting started guide (remove this section)
-Following below tips reduces operational overhead via email exchange and accelerate your overall certification process
-
-- When there are multiple options to provision devices using DPS, try to define the golden path in the main flow. Put other paths in #Additional information section below
-- Provide some paragraphs to the headers and avoid headers with just a link
-- Device application must be either pre-installed on the device or download-able via various means (partner hosted website/GitHub etc). Be specific about the steps on deploying or flashing the device application
-- Be specific about how to provision a device using DPS. DPS ID scope, registration ID and attestation methods (X.509, TPM or SAS key) configuration
-
+- Introduction
+- Step 1: Prerequisites
+- Step 2: Prepare your Device
+- Step 3: Build and Run the Sample
+- Next Steps
 
 <a name="Introduction"></a>
 
@@ -38,52 +22,54 @@ Following below tips reduces operational overhead via email exchange and acceler
 
 **About this document**
 
-This document describes how to connect {enter your device name here} to Azure IoT Hub using the Azure IoT Explorer with certified device application and device models.
+This document describes how to connect [HBFBU691-3455-B](https://www.jetwayipc.com/product/hbfbu691-3455-b-series/) device running Windows 10 with Azure IoT SDK. This multi-step process includes:
 
-IoT Plug and Play certified device simplifies the process of building devices without custom device code. Using Solution builders can integrated quickly using the certified IoT Plug and Play enabled device based on Azure IoT Central as well as third-party solutions.
-
-This getting started guide provides step by step instruction on getting the device provisioned to Azure IoT Hub using Device Provisioning Service (DPS) and using Azure IoT Explorer to interact with device's capabilities.
-
-{Please provide introduction and features of your device here}
+- Configuring Azure IoT Hub
+- Registering your IoT device
+- Build and deploy Azure IoT SDK on device
 
 <a name="Prerequisites"></a>
-# Prerequisites
+# Step 1: Prerequisites
 
 You should have the following items ready before beginning the process:
-
--   [Azure Account](https://portal.azure.com)
--   [Azure IoT Hub Instance](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub)
--   [Azure IoT Hub Device Provisioning Service](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision)
--   [Azure IoT Public Model Repository](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-repository)
-
+- [Prepare your development environment](https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md)
+- [Setup your IoT hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md)
+- [Provision your device and get its credentials](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md)
+- HBFBU691-3455-B device.
+- VGA Cable,USB Keyboard/Mouse, and the Internet connection
 
 <a name="preparethedevice"></a>
-# Prepare the Device.
+# Step 2: Prepare the Device.
 
-**Development Environmental setup**
+- Connect the power adapter, USB Keyborad/Mouse with [HBFBU691-3455-B](https://www.jetwayipc.com/product/hbfbu691-3455-b-series/) .
+- Wait until the operating system is ready.
 
-IoT Plug and Play Certification is certifying specific device code implementation against specific device model. Device builders should either pre-install device code or make the binary download-able.{Please include the below pointers specific to device in this section and add screen shots where ever necessary}
+# Step 3: Build and Run the sample
 
-1.	Describing the capabilities of the device 
-2.	How to setup the device and connect power
-3.	How to take the DPS configuration and program the device (Note : DPS ID scope should be configured w/o recompiling the embedded code)
-4.	How to configure device over Wifi, cellular, screens, etc.
-5.	Add the links of external software/tools as required 
-6.	Add steps on how to run the device code/how and where to download binary and then run on device. If you have multiple options on how to deploy device code please mention only one option here and other options in Additional links section
+In Set up your environment, you created four environment variables to configure the sample to use the Device Provisioning Service (DPS) to connect to your IoT hub:
 
-<a name="IntegrationwithAzureIoTExplorer"></a>
-# Integration with Azure IoT Explorer
+- IOTHUB_DEVICE_SECURITY_TYPE with the value DPS
+- IOTHUB_DEVICE_DPS_ID_SCOPE with the DPS ID scope.
+- IOTHUB_DEVICE_DPS_DEVICE_ID with the value my-pnp-device.
+- IOTHUB_DEVICE_DPS_DEVICE_KEY with the enrollment primary key.
+- IOTHUB_DEVICE_DPS_ENDPOINT with the value global.azure-devices-provisioning.net.
+To learn more about the sample configuration, see the sample readme.
 
--   Include the steps on how to connect the IoT Plug and Play Device to Azure IoT Explorer
--   Include screenshots and comments on how IoT Explorer shows/visualize telemetry , commands and properties coming from your IoT Plug and Play device.
--   Include the steps on how to interact with devices (telemetry, commands properties)
--   Ensure to attach the screenshot on consuming the device models available in public repository (not local folder) when using Azure IoT Explorer
+In this quickstart, you use a sample thermostat device that's written in Node.js as the IoT Plug and Play device. To run the sample device:
 
-# Additional information
-Put any additional information here such as alternative paths to deploy device application etc.
+1.Open a terminal window and navigate to the local folder that contains the Microsoft Azure IoT SDK for Node.js repository you cloned from GitHub.
 
-<a name="AdditionalLinks"></a>
-# Additional Links
+2.This terminal window is used as your device terminal. Go to the folder of your cloned repository, and navigate to the /azure-iot-sdk-node/device/samples/pnp folder.Install all the dependencies by running the following command:
+
+npm install
+
+3.Run the sample thermostat device with the following command:
+
+node simple_thermostat.js
+
+4.You see messages saying that the device has sent some information and reported itself online. These messages indicate that the device has begun sending telemetry data to the hub, and is now ready to receive commands and property updates. Don't close this terminal, you need it to confirm the service sample is working.
+
+# Next Steps
 
 Please refer to the below link for additional information for Plug and Play 
 
