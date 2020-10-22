@@ -36,7 +36,6 @@ You should have the following items ready before beginning the process:
 - [Setup your IoT hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md)
 - [Provision your device and get its credentials](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md)
 - HBFBU691-3455-B device.
-- VGA Cable,USB Keyboard/Mouse, and the Internet connection
 
 <a name="preparethedevice"></a>
 # Step 2: Prepare the Device
@@ -45,8 +44,9 @@ You should have the following items ready before beginning the process:
 
 # Step 3: Prepare the environment
 
-- installed [Node.js v4.0+](https://nodejs.org/).on your machine.
-- installed [Git](https://git-scm.com/download/).on your machine.
+- Installed Windows 10 on your machine.
+- Installed [Node.js v4.0+](https://nodejs.org/)on your machine.
+- Installed [Git](https://git-scm.com/download/)on your machine.
 
 # Step 4: Build and Run the sample
 
