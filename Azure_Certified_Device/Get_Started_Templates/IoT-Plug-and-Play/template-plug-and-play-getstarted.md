@@ -62,7 +62,7 @@ You should have the following items ready before beginning the process:
 
 - Download latest SDK using following command:
 
-git clone https://github.com/Azure/azure-iot-sdk-node
+  git clone https://github.com/Azure/azure-iot-sdk-node
 
 - Install required libraries
   In a local terminal window, go to the folder of your cloned repository and navigate to the /azure-iot-sdk-node/device/samples/pnp folder. Then run the following command to       install the required libraries:
@@ -78,7 +78,7 @@ git clone https://github.com/Azure/azure-iot-sdk-node
   
 **4.2 Send Device Events to IoT Hub**
 
-  Run the sample application to simulate an IoT Plug and Play device that sends telemetry to your IoT hub. To run the sample application, use the following command:
+- Run the sample application to simulate an IoT Plug and Play device that sends telemetry to your IoT hub. To run the sample application, use the following command:
 
   node simple_thermostat.js
 
