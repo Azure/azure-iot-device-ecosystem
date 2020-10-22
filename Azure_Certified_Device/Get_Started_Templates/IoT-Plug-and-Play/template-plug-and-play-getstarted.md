@@ -54,7 +54,7 @@ You should have the following items ready before beginning the process:
 - Installed [Node.js v4.0+](https://nodejs.org/) on your machine.
 - Installed [Git](https://git-scm.com/download/) on your machine
 - Create a new DPS using [Azure Portal](https://portal.azure.com/) 
-- Create an Azure IoThub Azure Portal](https://portal.azure.com/) 
+- Create an Azure IoThub [Azure Portal](https://portal.azure.com/) 
 - Register a new device in the IoT hub using [Azure Portal](https://portal.azure.com/) 
 
 
