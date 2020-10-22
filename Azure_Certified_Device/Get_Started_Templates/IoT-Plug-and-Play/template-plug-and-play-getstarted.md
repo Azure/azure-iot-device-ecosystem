@@ -45,8 +45,8 @@ You should have the following items ready before beginning the process:
 # Step 3: Prepare the environment
 
 - Installed Windows 10 on your machine.
-- Installed [Node.js v4.0+](https://nodejs.org/)on your machine.
-- Installed [Git] (https://git-scm.com/download/)on your machine.
+- Installed [Node.js v4.0+](https://nodejs.org/) on your machine.
+- Installed [Git](https://git-scm.com/download/) on your machine.
 
 # Step 4: Build and Run the sample
 
