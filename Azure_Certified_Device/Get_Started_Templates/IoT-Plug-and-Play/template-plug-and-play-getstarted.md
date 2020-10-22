@@ -25,9 +25,13 @@ Connect HBFBU691-3455-B device to your Azure IoT services
 
 This document describes how to connect [HBFBU691-3455-B](https://www.jetwayipc.com/product/hbfbu691-3455-b-series/) device running Windows 10 with Azure IoT SDK. This multi-step process includes:
 
-- Configuring Azure IoT Hub
-- Registering your IoT device
-- Build and deploy Azure IoT SDK on device
+  IoT Plug and Play certified device simplifies the process of building devices without custom device
+  code. Using Solution builders can integrated quickly using the certified IoT Plug and Play enabled
+  device based on Azure IoT Central as well as third-party solutions.
+  
+  This getting started guide provides step by step instruction on getting the device provisioned to Azure
+  IoT Hub using Device Provisioning Service (DPS) and using Azure IoT Explorer to interact with
+  device's capabilities.
 
 <a name="Prerequisites"></a>
 # Step 1: Prerequisites
@@ -37,6 +41,7 @@ You should have the following items ready before beginning the process:
 - [Azure IoT Hub Device Provisioning Service](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision)
 - [Setup your IoT hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md)
 - [Provision your device and get its credentials](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md)
+
 
 <a name="preparethedevice"></a>
 # Step 2: Prepare the Device
