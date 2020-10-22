@@ -57,7 +57,7 @@ You should have the following items ready before beginning the process:
 git clone https://github.com/Azure/azure-iot-sdk-node
 
 - Install required libraries
-In a local terminal window, go to the folder of your cloned repository and navigate to the /azure-iot-sdk-node/device/samples/pnp folder. Then run the following command to install the required libraries:
+  In a local terminal window, go to the folder of your cloned repository and navigate to the /azure-iot-sdk-node/device/samples/pnp folder. Then run the following command to       install the required libraries:
 
   npm install
 
@@ -74,7 +74,7 @@ In a local terminal window, go to the folder of your cloned repository and navig
 
   node simple_thermostat.js
 
-- See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the     application.
+- See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the           application.
 
 **3.3 Receive messages from IoT Hub**
 
