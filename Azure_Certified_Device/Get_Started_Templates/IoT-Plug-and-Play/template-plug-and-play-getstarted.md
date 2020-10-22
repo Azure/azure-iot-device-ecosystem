@@ -48,9 +48,9 @@ You should have the following items ready before beginning the process:
 - installed [Node.js v4.0+](https://nodejs.org/).on your machine.
 - installed [Git](https://git-scm.com/download/).on your machine.
 
-# Step 3: Build and Run the sample
+# Step 4: Build and Run the sample
 
-**3.1 Build SDK and sample**
+**4.1 Build SDK and sample**
 
 - Download latest SDK using following command:
 
@@ -68,7 +68,7 @@ git clone https://github.com/Azure/azure-iot-sdk-node
   
   Replace [device connection string] with the connection string for your device. Save the changes.
   
-**3.2 Send Device Events to IoT Hub**
+**4.2 Send Device Events to IoT Hub**
 
   Run the sample application to simulate an IoT Plug and Play device that sends telemetry to your IoT hub. To run the sample application, use the following command:
 
@@ -76,7 +76,7 @@ git clone https://github.com/Azure/azure-iot-sdk-node
 
 - See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the           application.
 
-**3.3 Receive messages from IoT Hub**
+**4.3 Receive messages from IoT Hub**
 
 - See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to send cloud-to-device messages to the application.
 
