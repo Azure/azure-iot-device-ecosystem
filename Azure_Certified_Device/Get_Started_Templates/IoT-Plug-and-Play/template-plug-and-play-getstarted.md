@@ -53,8 +53,8 @@ You should have the following items ready before beginning the process:
 - Installed Windows 10 on your machine.
 - Installed [Node.js v4.0+](https://nodejs.org/) on your machine.
 - Installed [Git](https://git-scm.com/download/) on your machine.
-- [Create an Azure IoThub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal)
-- [Register a new device in the IoT hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#register-a-new-device-in-the-iot-hub)
+- [Create an Azure IoThub.](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal)
+- [Register a new device in the IoT hub.](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#register-a-new-device-in-the-iot-hub)
 
 # Step 4: Build and Run the sample
 
