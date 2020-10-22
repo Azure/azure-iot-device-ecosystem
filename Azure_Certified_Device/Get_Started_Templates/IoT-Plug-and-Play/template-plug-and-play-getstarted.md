@@ -78,13 +78,17 @@ You should have the following items ready before beginning the process:
   - Replace ["device connection string"](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#register-a-new-device-in-the-iot-hub) with the connection string for your device. Save the changes.
    
    //DPS connection information
+   
    const provisioningHost = "[global.azure-devices-provisioning.net]"
+   
    const idScope = "[YouridScope]"
+   
    const registrationId = "[YourID]"
+   
    const symmetricKey = "[YoursymmetricKey]"
+   
    const useDps = "[DPS]"
   
-
 - Replace [DPS connection information](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#register-a-new-device-in-the-iot-hub) with the connection string for your device. Save the changes.
   
 **4.2 Send Device Events to IoT Hub**
