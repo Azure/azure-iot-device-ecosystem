@@ -36,11 +36,10 @@ You should have the following items ready before beginning the process:
 - [Azure IoT Hub Device Provisioning Service](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision)
 - [Setup your IoT hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md)
 - [Provision your device and get its credentials](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md)
-- HBFBU691-3455-B device.
 
 <a name="preparethedevice"></a>
 # Step 2: Prepare the Device
-
+- HBFBU691-3455-B device.
 - Make sure the Internet is on the machine, and then execute the azure-iot connection Azure
 
 # Step 3: Prepare the environment
