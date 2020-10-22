@@ -13,8 +13,9 @@ Connect HBFBU691-3455-B device to your Azure IoT services
 - Introduction
 - Step 1: Prerequisites
 - Step 2: Prepare your Device
-- Step 3: Build and Run the Sample
-- Next Steps
+- Step 3: Prepare the environment
+- Step 4: Build and Run the Sample
+- Additional Links
 
 <a name="Introduction"></a>
 
@@ -80,7 +81,7 @@ git clone https://github.com/Azure/azure-iot-sdk-node
 
 - See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to send cloud-to-device messages to the application.
 
-# Next Steps
+# Additional Links
 
   Please refer to the below link for additional information for Plug and Play 
 
