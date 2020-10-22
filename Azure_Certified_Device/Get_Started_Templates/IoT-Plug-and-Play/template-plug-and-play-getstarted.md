@@ -53,9 +53,9 @@ You should have the following items ready before beginning the process:
 - Installed Windows 10 on your machine.
 - Installed [Node.js v4.0+](https://nodejs.org/) on your machine.
 - Installed [Git](https://git-scm.com/download/) on your machine
-- Create a new DPS using [Azure Portal](https://portal.azure.com/) 
-- Create an Azure IoThub using [Azure Portal](https://portal.azure.com/) 
-- Register a new device in the IoT hub using [Azure Portal](https://portal.azure.com/) 
+- Create a new DPS using the [Azure Portal](https://portal.azure.com/) 
+- Create an Azure IoThub using the [Azure Portal](https://portal.azure.com/) 
+- Register a new device in the IoT hub using the [Azure Portal](https://portal.azure.com/) 
 
 
 # Step 4: Build and Run the sample
