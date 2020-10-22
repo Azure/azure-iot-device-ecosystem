@@ -52,7 +52,8 @@ You should have the following items ready before beginning the process:
 
 - Installed Windows 10 on your machine.
 - Installed [Node.js v4.0+](https://nodejs.org/) on your machine.
-- Installed [Git](https://git-scm.com/download/) on your machine.
+- Installed [Git](https://git-scm.com/download/) on your machine
+- [Create a new DPS](Create a new IoT Hub Device Provisioning Service)
 - [Create an Azure IoThub.](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal)
 - [Register a new device in the IoT hub.](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#register-a-new-device-in-the-iot-hub)
 
@@ -72,9 +73,19 @@ You should have the following items ready before beginning the process:
 - Open the file simple_thermostat.js in a text editor.
 - Locate the following code in the file:
 
-  connectionString = "[device connection string]"
+  let connectionString = "[device connection string]"
   
-- Replace ["device connection string"](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#register-a-new-device-in-the-iot-hub) with the connection string for your device. Save the changes.
+  - Replace ["device connection string"](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#register-a-new-device-in-the-iot-hub) with the connection string for your device. Save the changes.
+   
+   //DPS connection information
+   const provisioningHost = "[global.azure-devices-provisioning.net]"
+   const idScope = "[YouridScope]"
+   const registrationId = "[YourID]"
+   const symmetricKey = "[YoursymmetricKey]"
+   const useDps = "[DPS]"
+  
+
+- Replace [DPS connection information](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#register-a-new-device-in-the-iot-hub) with the connection string for your device. Save the changes.
   
 **4.2 Send Device Events to IoT Hub**
 
