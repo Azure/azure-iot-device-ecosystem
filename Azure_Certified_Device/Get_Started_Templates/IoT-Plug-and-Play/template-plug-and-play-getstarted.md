@@ -53,7 +53,7 @@ You should have the following items ready before beginning the process:
 - Installed Windows 10 on your machine.
 - Installed [Node.js v4.0+](https://nodejs.org/) on your machine.
 - Installed [Git](https://git-scm.com/download/) on your machine
-- [Create a new DPS](Create a new IoT Hub Device Provisioning Service)
+- [Create a new DPS.](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision#create-a-new-iot-hub-device-provisioning-service)
 - [Create an Azure IoThub.](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal)
 - [Register a new device in the IoT hub.](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#register-a-new-device-in-the-iot-hub)
 
@@ -89,15 +89,15 @@ You should have the following items ready before beginning the process:
    
    const useDps = "[DPS]"
   
-- Replace [DPS connection information](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#register-a-new-device-in-the-iot-hub) with the connection string for your device. Save the changes.
+- Replace [DPS connection information](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision#create-a-new-iot-hub-device-provisioning-service) with the connection string for your device. Save the       changes.
   
 **4.2 Send Device Events to IoT Hub**
 
-- Run the sample application to simulate an IoT Plug and Play device that sends telemetry to your IoT hub. To run the sample application, use the following command:
+- Run the sample application to simulate an IoT Plug and Play device that sends telemetry to your IoT hub. To run the   sample application, use the following command:
 
   node simple_thermostat.js
 
-- See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the           application.
+- See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn    how to observe the messages IoT Hub receives from the           application.
 
 **4.3 Receive messages from IoT Hub**
 
