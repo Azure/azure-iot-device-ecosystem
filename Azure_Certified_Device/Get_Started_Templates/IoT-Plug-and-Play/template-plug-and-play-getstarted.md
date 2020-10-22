@@ -74,7 +74,7 @@ You should have the following items ready before beginning the process:
 
   connectionString = "[device connection string]"
   
-  Replace [device connection string](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) with the connection string for your device. Save the changes.
+- Replace ["device connection string"](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#register-a-new-device-in-the-iot-hub) with the connection string for your device. Save the changes.
   
 **4.2 Send Device Events to IoT Hub**
 
