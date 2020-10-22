@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "identity": {
+      "type": "string"
+    },
+    "name":{
+      "type": "string",
+      "defaultValue": "\\\"IoT solution\\\""
+    },
+    "utcValue": {
+      "type": "string",
+      "defaultValue": "[utcNow()]"
+    }
+  },
+  "resources": [{
+    "type": "Microsoft.Resources/deploymentScripts",
+    "apiVersion": "2019-10-01-preview",
+    "name": "runPowerShellInline",
+    "location": "[resourceGroup().location]",
+    "kind": "AzurePowerShell", 
+    "identity": {
+      "type": "userAssigned",
+      "userAssignedIdentities": {
+        "/subscriptions/48882085-bec2-4355-af61-53605e2247c2/resourcegroups/myResourceGroup/providers/Microsoft.ManagedIdentity/userAssignedIdentities/mj1": {}
+      }
+    },
+    "properties": {
+      "forceUpdateTag": 1,
+      "containerSettings": {
+        "containerGroupName": "mycustomaci10"
+      },
+      "storageAccountSettings": {
+        "storageAccountName": "myStorageAccount10",
+        "storageAccountKey": "myKey"
+      },
+      "azPowerShellVersion": "3.0",  
+      "arguments": "-name \\\"IoT Solution\\\"",
+      "environmentVariables": [
+        {
+          "name": "someSecret",
+          "secureValue": "if this is really a secret, don't put it here... in plain text..."
+        }
+      ],
+      "scriptContent": 
+      "az extension add --name azure-iot\r\n        az login\r\n        $deviceid = Read-Host Prompt 'enter your device id'\r\n        $deviceid\r\n        $hubname = Read-Host Prompt 'enter your hub name'\r\n        $hubname\r\n        $deploymentjson = Read-Host Prompt 'enter the path of deployment Json'\r\n        $deploymentjson\r\n        az iot edge set-modules --device-id $deviceid --hub-name $hubname --content $deploymentjson",
+
+      "supportingScriptUris":[],
+      "timeout": "PT30M",
+      "cleanupPreference": "OnSuccess",
+      "retentionInterval": "P1D"
+    }
+  }]
+}
