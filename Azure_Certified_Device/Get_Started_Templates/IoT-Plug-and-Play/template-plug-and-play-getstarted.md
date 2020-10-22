@@ -39,9 +39,14 @@ You should have the following items ready before beginning the process:
 - VGA Cable,USB Keyboard/Mouse, and the Internet connection
 
 <a name="preparethedevice"></a>
-# Step 2: Prepare the Device.
+# Step 2: Prepare the Device
 
 - Make sure the Internet is on the machine, and then execute the azure-iot connection Azure
+
+# Step 3: Prepare the environment
+
+- installed [Node.js v4.0+](https://nodejs.org/).on your machine.
+- installed [Git](https://git-scm.com/download/).on your machine.
 
 # Step 3: Build and Run the sample
 
@@ -59,17 +64,17 @@ In a local terminal window, go to the folder of your cloned repository and navig
 - Open the file simple_thermostat.js in a text editor.
 - Locate the following code in the file:
 
- connectionString = "[device connection string]"
+  connectionString = "[device connection string]"
   
   Replace [device connection string] with the connection string for your device. Save the changes.
   
 **3.2 Send Device Events to IoT Hub**
 
-Run the sample application to simulate an IoT Plug and Play device that sends telemetry to your IoT hub. To run the sample application, use the following command:
+  Run the sample application to simulate an IoT Plug and Play device that sends telemetry to your IoT hub. To run the sample application, use the following command:
 
-node simple_thermostat.js
+  node simple_thermostat.js
 
-- See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the application.
+- See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the     application.
 
 **3.3 Receive messages from IoT Hub**
 
@@ -77,7 +82,7 @@ node simple_thermostat.js
 
 # Next Steps
 
-Please refer to the below link for additional information for Plug and Play 
+  Please refer to the below link for additional information for Plug and Play 
 
 -   [Manage cloud device messaging with Azure-IoT-Explorer](https://github.com/Azure/azure-iot-explorer/releases)
 -   [Import the Plug and Play model](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-repository)
