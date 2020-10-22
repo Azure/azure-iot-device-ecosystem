@@ -84,7 +84,7 @@ You should have the following items ready before beginning the process:
    
    const idScope = "[YouridScope]"
    
-   const registrationId = "[YourID]"
+   const registrationId = "[YourregistrationId]"
    
    const symmetricKey = "[YoursymmetricKey]"
    
