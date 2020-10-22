@@ -68,7 +68,7 @@ Run the sample application to simulate an IoT Plug and Play device that sends te
 
 node simple_thermostat.js
 
-You see the following output, indicating the device has begun sending telemetry data to the hub, and is now ready to receive commands and property updates.
+- See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn how to observe the messages IoT Hub receives from the application.
 
 **3.3 Receive messages from IoT Hub**
 
