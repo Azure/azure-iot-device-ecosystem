@@ -75,11 +75,11 @@ You should have the following items ready before beginning the process:
 
   let connectionString = "[device connection string]"
   
-  - Replace ["device connection string"](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal#register-a-new-device-in-the-iot-hub) with the connection string for your device. Save the changes.
+- Replace [device connection string] with the connection string for your device. Save the changes.
    
    //DPS connection information
    
-   const provisioningHost = "[global.azure-devices-provisioning.net]"
+   const provisioningHost = "global.azure-devices-provisioning.net"
    
    const idScope = "[YouridScope]"
    
@@ -87,9 +87,9 @@ You should have the following items ready before beginning the process:
    
    const symmetricKey = "[YoursymmetricKey]"
    
-   const useDps = "[DPS]"
+   const useDps = "DPS"
   
-- Replace [DPS connection information](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision#create-a-new-iot-hub-device-provisioning-service) with the connection string for your device. Save the       changes.
+- Replace [DPS connection information] with the string for your device. Save the changes.
   
 **4.2 Send Device Events to IoT Hub**
 
