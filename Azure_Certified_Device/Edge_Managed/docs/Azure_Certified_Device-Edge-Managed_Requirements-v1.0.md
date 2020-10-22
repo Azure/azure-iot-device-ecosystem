@@ -40,7 +40,7 @@ The Edge Managed certification requires that all requirements from the Azure Cer
 
 ### Capability Template:
 
-**IoT Edge easy setup:  The purpose of test is to make sure IoT Edge device is easy to set up and preinstalls IoT EdgeRT through physical device validation**
+**IoT Edge easy setup:  The purpose of test is to make sure IoT Edge device is easy to set up and validate IoT Edge runtime is preinstalled during physical device validation**
 
 | **Name**                | EdgeManaged.PhysicalDevice                                             |
 | ----------------------- | ------------------------------------------------------------ |
