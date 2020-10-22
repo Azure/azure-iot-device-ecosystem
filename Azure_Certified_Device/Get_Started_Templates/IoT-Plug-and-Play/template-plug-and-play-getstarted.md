@@ -52,13 +52,14 @@ You should have the following items ready before beginning the process:
 git clone https://github.com/Azure/azure-iot-sdk-node
 
 - Install required libraries
-1. In a local terminal window, go to the folder of your cloned repository and navigate to the /azure-iot-sdk-node/device/samples/pnp folder. Then run the following command to install the required libraries:
+In a local terminal window, go to the folder of your cloned repository and navigate to the /azure-iot-sdk-node/device/samples/pnp folder. Then run the following command to install the required libraries:
 
   npm install
 
-2.Open the file simple_thermostat.js in a text editor.
+- Open the file simple_thermostat.js in a text editor.
+- Locate the following code in the file:
 
-  DEVICE_CONNECTION_STRING = "[device connection string]"
+ connectionString = "[device connection string]"
   
   Replace [device connection string] with the connection string for your device. Save the changes.
   
