@@ -98,40 +98,25 @@ You should have the following items ready before beginning the process:
 
   node simple_thermostat.js
 
-- See [Manage IoT Hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/manage_iot_hub.md) to learn    how to observe the messages IoT Hub receives from the           application.
 
-**4.3 Use Azure IoT explorer to validate the code
-  After the device client sample starts, use the Azure IoT explorer tool to verify it's working.
 
-  Open Azure IoT explorer.
-
-  On the IoT hubs page, if you haven't already added a connection to your IoT hub, select + Add connection. Enter the connection string for the IoT hub you created previously    and select Save.
-
-  On the IoT Plug and Play Settings page, select + Add > Local folder and select the local models folder where you saved your model files.
-
-  On the IoT hubs page, click on the name of the hub you want to work with. You see a list of devices registered to the IoT hub.
-
-  Click on the Device ID of the device you created previously.
-
-  The menu on the left shows the different types of information available for the device.
-
-  Select IoT Plug and Play components to view the model information for your device.
-
-  You can view the different components of the device. The default component and any additional ones. Select a component to work with.
-
-  Select the Telemetry page and then select Start to view the telemetry data the device is sending for this component.
-
-  Select the Properties (read-only) page to view the read-only properties reported for this component.
-
-  Select the Properties (writable) page to view the writable properties you can update for this component.
-
-  Select a property by it's name, enter a new value for it, and select Update desired value.
-
-  To see the new value show up select the Refresh button.
-
-  Select the Commands page to view all the commands for this component.
-
-  Select the command you want to test set the parameter if any. Select Send command to call the command on the device. You can see your device respond to the command in the   
+**4.3 Integration with Azure IoT Explorer
+  Connect
+- Enter the connection string from Azure CLI and press Save. You will see a device symm-key-device
+  
+  az iot hub show-connection-string --name my-sample-hub --key primary --query connectionString -o tsv
+  [pic1]
+  
+  Telemetry
+- Press the device name and choose the Telemetry Page. Press Start and wait a momnent. You will
+  see the telemetry data on the screen.
+  [pic2]
+  Property and Command
+- You can press the item in the green rectangle to show the properties.
+- You can press the item in the blue rectangle to start a command.
+  [pic3]
+  
+  
 
 # Additional Links
 
