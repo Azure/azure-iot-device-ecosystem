@@ -100,6 +100,7 @@ You should have the following items ready before beginning the process:
 
 **4.3 Integration with Azure IoT Explorer**
   Connect
+  
 - Enter the connection string from Azure CLI and press Save. You will see a device symm-key-device
   
   az iot hub show-connection-string --name my-sample-hub --key primary --query connectionString -o tsv
