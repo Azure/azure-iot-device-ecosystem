@@ -96,24 +96,30 @@ You should have the following items ready before beginning the process:
 
 - Run the sample thermostat device with the following command:
 
-  node simple_thermostat.js
+   node simple_thermostat.js
 
 **4.3 Integration with Azure IoT Explorer**
 
-  Connect
+   **Connect**
   
 - Enter the connection string from Azure CLI and press Save. You will see a device symm-key-device
   
-  az iot hub show-connection-string --name my-sample-hub --key primary --query connectionString -o tsv
-  [pic1]
+   az iot hub show-connection-string --name my-sample-hub --key primary --query connectionString -o tsv
+   [pic1]
   
-  Telemetry
+   **Telemetry**
+   
 - Press the device name and choose the Telemetry Page. Press Start and wait a momnent. You will
   see the telemetry data on the screen.
+  
   [pic2]
-  Property and Command
+  
+  **Property and Command**
+  
 - You can press the item in the green rectangle to show the properties.
+
 - You can press the item in the blue rectangle to start a command.
+
   [pic3]
   
   
