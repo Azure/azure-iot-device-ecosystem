@@ -99,6 +99,7 @@ You should have the following items ready before beginning the process:
   node simple_thermostat.js
 
 **4.3 Integration with Azure IoT Explorer**
+
   Connect
   
 - Enter the connection string from Azure CLI and press Save. You will see a device symm-key-device
