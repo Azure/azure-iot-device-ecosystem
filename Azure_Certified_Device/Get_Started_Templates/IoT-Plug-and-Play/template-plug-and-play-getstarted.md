@@ -94,11 +94,9 @@ You should have the following items ready before beginning the process:
   
 **4.2 Send Device Events to IoT Hub**
 
-- Run the sample application to simulate an IoT Plug and Play device that sends telemetry to your IoT hub. To run the   sample application, use the following command:
+- Run the sample thermostat device with the following command:
 
   node simple_thermostat.js
-
-
 
 **4.3 Integration with Azure IoT Explorer**
   Connect
