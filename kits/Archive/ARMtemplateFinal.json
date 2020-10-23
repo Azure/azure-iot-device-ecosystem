@@ -44,8 +44,17 @@
         }
       ],
       "scriptContent": 
-      "az extension add --name azure-iot\r\n        az login\r\n        $deviceid = Read-Host Prompt 'enter your device id'\r\n        $deviceid\r\n        $hubname = Read-Host Prompt 'enter your hub name'\r\n        $hubname\r\n        $deploymentjson = Read-Host Prompt 'enter the path of deployment Json'\r\n        $deploymentjson\r\n        az iot edge set-modules --device-id $deviceid --hub-name $hubname --content $deploymentjson",
-
+      "
+      az extension add --name azure-iot       
+      az login     
+      $deviceid = Read-Host Prompt 'enter your device id'    
+      $deviceid       
+      $hubname = Read-Host Prompt 'enter your hub name'
+      $hubname      
+      $deploymentjson = Read-Host Prompt 'enter the path of deployment Json'       
+      $deploymentjson      
+      az iot edge set-modules --device-id $deviceid --hub-name $hubname --content $deploymentjson
+      ",
       "supportingScriptUris":[],
       "timeout": "PT30M",
       "cleanupPreference": "OnSuccess",
