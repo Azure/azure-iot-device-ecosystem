@@ -14,6 +14,7 @@ Connect {enter your device name here} device to your Azure IoT services
 -   [Prerequisites](#Prerequisites)
 -   [Prepare the Device](#preparethedevice)
 -   [Integration with Azure IoT Explorer](#IntegrationwithAzureIoTExplorer)
+-   [Connect to Azure IoT Central](#ConnecttoCentral)
 -   [Additional Links](#AdditionalLinks)
 
 # Instructions for using this template
@@ -70,6 +71,7 @@ IoT Plug and Play Certification is certifying specific device code implementatio
 4.	How to configure device over Wifi, cellular, screens, etc.
 5.	Add the links of external software/tools as required 
 6.	Add steps on how to run the device code/how and where to download binary and then run on device. If you have multiple options on how to deploy device code please mention only one option here and other options in Additional links section
+7.  How to configure a device to connect to Azure IoT Central (see detail below)
 
 <a name="IntegrationwithAzureIoTExplorer"></a>
 # Integration with Azure IoT Explorer
@@ -78,6 +80,21 @@ IoT Plug and Play Certification is certifying specific device code implementatio
 -   Include screenshots and comments on how IoT Explorer shows/visualize telemetry , commands and properties coming from your IoT Plug and Play device.
 -   Include the steps on how to interact with devices (telemetry, commands properties)
 -   Ensure to attach the screenshot on consuming the device models available in public repository (not local folder) when using Azure IoT Explorer
+
+<a name="ConnecttoCentral"></a>
+# Connect to Azure IoT Central
+Describe how to connect to Azure IoT Central.
+To configure a device to connect to Azure IoT Central you need the following
+	
+-    ID scope: In your IoT Central application, navigate to Administration > Device Connection. Make a note of the ID scope value.
+-    Group primary key: In your IoT Central application, navigate to Administration > Device Connection > SAS-IoT-Devices. Make a note of the shared access signature Primary key value.
+
+Use the Cloud Shell to generate a device specific key from the group SAS key you just retrieved using the Azure CLI
+
+az extension add --name azure-iot
+az iot central device compute-device-key  --device-id sample-device-01 --pk <the group SAS primary key value>
+
+Make a note of the generated device key, and the ID scope for this application and flash it on the device
 
 # Additional information
 Put any additional information here such as alternative paths to deploy device application etc.
