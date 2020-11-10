@@ -71,7 +71,8 @@ IoT Plug and Play Certification is certifying specific device code implementatio
 4.	How to configure device over Wifi, cellular, screens, etc.
 5.	Add the links of external software/tools as required 
 6.	Add steps on how to run the device code/how and where to download binary and then run on device. If you have multiple options on how to deploy device code please mention only one option here and other options in Additional links section
-7.  How to configure a device to connect to Azure IoT Central (see detail below)
+7. 	(DevKit only) Add instructions for cloning the repo to download all sample device code, setup scripts and offline documentations. How to install the tools and how to compile. Make sure to provide links tot he tools to download such as GCC, CMake etc. Also, describe detail version if there is any dependency in compiling the code. Well written GSG can be [found here](https://github.com/azure-rtos/getting-started)
+8.  	How to configure a device to connect to Azure IoT Central (see detail below)
 
 <a name="IntegrationwithAzureIoTExplorer"></a>
 # Integration with Azure IoT Explorer
