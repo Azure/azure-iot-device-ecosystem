@@ -72,13 +72,13 @@ List running modules. After a new installation, the only module you should see r
 
     iotedge list
 
-![](./media/windows_edge_images/edgemodule_status.PNG)
+![](./media/windows_edge_images/edgemodule_status.png)
 
 View the messages being sent from the module you created to the cloud.
 
     iotedge logs {module name}
 
-![](./media/windows_edge_images/edgemodule_logs.PNG)
+![](./media/windows_edge_images/edgemodule_logs.png)
 
 <a name="NextSteps"></a>
 # Step 4: Next steps
