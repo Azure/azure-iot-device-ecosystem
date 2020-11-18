@@ -65,7 +65,7 @@ For Development Kits (optional otherwise), please include the following addition
 -   Include the steps on how to interact with devices (telemetry, Direct Methods and Cloud to Device Communication)
 
 <a name="AzureIoTCentral"></a>
-# Step 5: Connect to Azure IoT Central
+# Step 5: Connect to Azure IoT Central [“Required for Plug-and-play program; Optional otherwise”]
 
 Describe how to connect to Azure IoT Central. To configure a device to connect to Azure IoT Central you need the following.
 
@@ -78,7 +78,7 @@ Use the Cloud Shell to generate a device specific key from the group SAS key you
 	az extension add --name azure-iot 
 	az iot central device compute-device-key --device-id sample-device-01 --pk
 
-Make a note of the generated device key, and the ID scope for this application and flash it on the device
+Make a note of the generated device key and the ID scope. Then follow the instruction described in the ‘Prepare your device’ section about how to take the DPS configuration and program the device.
 
 <a name="AdditionalInformation"></a>
 # Step 6: Additional Information 
