@@ -65,7 +65,8 @@ For Development Kits (optional otherwise), please include the following addition
 -   Include the steps on how to interact with devices (telemetry, Direct Methods and Cloud to Device Communication)
 
 <a name="AzureIoTCentral"></a>
-## Step 5: Connect to Azure IoT Central [“Required for Plug-and-play program; Optional otherwise”]
+# Step 5: Connect to Azure IoT Central
+##[“Required for Plug-and-play program; Optional otherwise”]
 
 Describe how to connect to Azure IoT Central. To configure a device to connect to Azure IoT Central you need the following.
 
