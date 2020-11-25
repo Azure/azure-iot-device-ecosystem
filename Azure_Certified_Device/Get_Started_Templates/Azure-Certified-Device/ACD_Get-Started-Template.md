@@ -40,7 +40,7 @@ You should have the following items ready before beginning the process:
 
 -   [Prepare your development environment](https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md)
 -   [Setup your IoT hub](https://github.com/robertalorro/azure-iot-device-ecosystem/blob/master/setup_iothub.md)
--   [Provision your device over DPS](https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps#:~:text=Quotas%20%20%20%20Resource%20%20%20,%20%20100%20%203%20more%20rows%20)
+-   [Provision your device over DPS](https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps)
 
 <a name="Prepareyourdevice"></a>
 # Step 2: Prepare your Device
