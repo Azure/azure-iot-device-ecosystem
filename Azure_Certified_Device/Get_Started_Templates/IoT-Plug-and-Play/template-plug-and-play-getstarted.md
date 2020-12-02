@@ -31,6 +31,7 @@ Following below tips reduces operational overhead via email exchange and acceler
 - Provide some paragraphs to the headers and avoid headers with just a link
 - Device application must be either pre-installed on the device or download-able via various means (partner hosted website/GitHub etc). Be specific about the steps on deploying or flashing the device application
 - Be specific about how to provision a device using DPS. DPS ID scope, registration ID and attestation methods (X.509, TPM or SAS key) configuration
+- Provide estimated time to complete the end-to-end operation. For better experience, we recommend to put estimated time for each section in "Prepare your device", "Integration with Azure IoT Explorer" and "Integration with Azure IoT Central" respectively
 
 
 <a name="Introduction"></a>
