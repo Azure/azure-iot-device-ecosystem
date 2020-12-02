@@ -6,7 +6,7 @@ language: {}
 
 Connect {enter your device name here} device to your Azure IoT services
 ===
-
+*Estimated time to complete: {enter the estimated time to read this document}*
 ---
 # Table of Contents
 
