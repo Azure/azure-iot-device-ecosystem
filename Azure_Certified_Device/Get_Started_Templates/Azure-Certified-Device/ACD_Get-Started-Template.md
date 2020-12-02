@@ -4,6 +4,8 @@ device: {enter your device name here}
 language: {enter here}
 ---
 
+*Estimated time to complete: {enter the estimated time to read this document}*
+
 # Table of Contents
 
 -   [Introduction](#Introduction)
