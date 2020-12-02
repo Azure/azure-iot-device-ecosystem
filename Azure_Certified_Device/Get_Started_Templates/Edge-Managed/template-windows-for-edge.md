@@ -10,6 +10,8 @@ Run a simple {enter the language used to you edge device} sample on {enter your 
 ===
 ---
 
+*Estimated time to complete: {enter the estimated time to read this document}*
+
 # Table of Contents
 
 -   [Introduction](#Introduction)
