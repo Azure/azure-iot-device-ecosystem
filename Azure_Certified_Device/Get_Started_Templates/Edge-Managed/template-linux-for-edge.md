@@ -25,6 +25,7 @@ Run a simple {enter the language used to you edge device} sample on {enter your 
 -   Delete the lines {{enclosed}} after following the instructions enclosed between them.
 -   It is advisable to use external links, wherever possible.
 -   Remove this section from final document.
+-   Provide estimated time to complete the end-to-end operation. For better experience, we recommend to put estimated time for each section in "Prepare your device" and "Manual Test for Azure IoT Edge on device" respectively
 
 <a name="Introduction"></a>
 # Introduction

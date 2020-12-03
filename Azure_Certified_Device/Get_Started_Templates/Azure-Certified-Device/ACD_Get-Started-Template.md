@@ -21,6 +21,7 @@ language: {enter here}
 -   Delete the lines {{enclosed}} after following the instructions enclosed between them.
 -   It is advisable to use external links, wherever possible.
 -   Remove this section from final document.
+-   Provide estimated time to complete the end-to-end operation. For better experience, we recommend to put estimated time for each section in "Prepare your device", "Build SDK and Run Samples", "Integration with Azure IoT Explorer" and "Connect to Azure IoT Central" respectively
 
 <a name="Introduction"></a>
 # Introduction
