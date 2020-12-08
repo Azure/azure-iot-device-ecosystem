@@ -16,8 +16,8 @@ Run a simple {enter the language used to you edge device} sample on {enter your 
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Manual Test for Azure IoT Edge on device](#Manual)
--   [Step 4: Next Steps](#NextSteps)
--   [Step 5: Troubleshooting](#Step-5-Troubleshooting)
+-   [Step 4: Additional information](#Additionalinformation)
+-   [Step 5: Additional Links](#AdditionalLinks)
 
 # Instructions for using this template
 
@@ -96,14 +96,18 @@ View the messages being sent from the module you created to the cloud.
 
 ![](images/edgemodule_logs.PNG)
 
-<a name="NextSteps"></a>
-# Step 4: Next steps
+<a name="Additionalinformation"></a>
+# Step 4: Additional information
+Put any additional information here such as alternative paths to deploy device application etc.
 
-Once you shared the documents with us, we will contact you in the following 48 to 72 business hours with next steps.
+<a name="AdditionalLinks"></a>
+# Step 5: Additional Links
 
-<a name="Step-5-Troubleshooting"></a>
-# Step 5: Troubleshooting
+Please refer to the below link for additional information for Plug and Play 
 
-Please contact engineering support on **<mailto:iotcert@microsoft.com>** for help with troubleshooting.
+-   [Manage cloud device messaging with Azure-IoT-Explorer](https://github.com/Azure/azure-iot-explorer/releases)
+-   [Import the Plug and Play model](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-repository)
+-   [Configure to connect to IoT Hub](https://docs.microsoft.com/en-us/azure/iot-pnp/quickstart-connect-device-c)
+-   [How to use IoT Explorer to interact with the device ](https://docs.microsoft.com/en-us/azure/iot-pnp/howto-use-iot-explorer#install-azure-iot-explorer)
   
 [setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
