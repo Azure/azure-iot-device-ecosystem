@@ -16,8 +16,8 @@ Run a simple {enter the language used to you edge device} sample on {enter your 
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Manual Test for Azure IoT Edge on device](#Manual)
--   [Step 4: Next Steps](#NextSteps)
--   [Step 5: Troubleshooting](#Step-5-Troubleshooting)
+-   [Step 4: Additional information](#Additionalinformation)
+-   [Step 5: Additional Links](#AdditionalLinks)
 
 # Instructions for using this template
 
@@ -96,14 +96,16 @@ View the messages being sent from the module you created to the cloud.
 
 ![](images/edgemodule_logs.PNG)
 
-<a name="NextSteps"></a>
-# Step 4: Next steps
+<a name="Additionalinformation"></a>
+# Step 4: Additional information
+Put any additional information here such as alternative paths to deploy device application etc.
 
-Once you shared the documents with us, we will contact you in the following 48 to 72 business hours with next steps.
+<a name="AdditionalLinks"></a>
+# Step 5: Additional Links
 
-<a name="Step-5-Troubleshooting"></a>
-# Step 5: Troubleshooting
-
-Please contact engineering support on **<mailto:iotcert@microsoft.com>** for help with troubleshooting.
+-   [What is Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge?view=iotedge-2018-06)
+-   [Discover IoT Edge Module on Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/category/internet-of-things?page=1&subcategories=iot-edge-modules)
+-   [Azure IoT Edge 1.0.10 release is now available](https://azure.microsoft.com/en-us/updates/iot-edge1-0-10/)
+-   [Deploy code to a Windows device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart?view=iotedge-2018-06)
   
 [setup-devbox-windows]: https://github.com/Azure/azure-iot-sdk-c/blob/master/doc/devbox_setup.md
