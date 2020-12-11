@@ -33,11 +33,12 @@ This document describes how to connect Nordic Semiconductor's nRF9160 running Ze
 
 The sample periodically publishes telemetry messages (events) to the connected Azure IoT Hub instance. By default, telemetry messages are sent every 20 seconds. The default interval can be configured by setting the device twin property `desired.telemetryInterval`, which will be interpreted by the sample in units of seconds. The format of a telemetry message is shown below:
 
-    json
+```json
     {
        "temperature": 25.2,
        "timestamp": 151325
     }
+```
 
 where `temperature` is a value between `25.0` and `25.9`, and `timestamp` is the uptime of the device in milliseconds.
 
@@ -118,8 +119,7 @@ After programming the sample to your development kit, test it by performing the 
 
 When the sample runs, the device boots, and the sample displays an output identical to the following output in the terminal over UART:
 
-**Booting Zephyr OS build v2.3.0-rc1-ncs1-1453-gf41496cd30d5**
-
+    **Booting Zephyr OS build v2.3.0-rc1-ncs1-1453-gf41496cd30d5**
     Azure IoT Hub sample started
     Connecting to LTE network
     Connected to LTE network
