@@ -53,7 +53,7 @@ Estimated time: 30min
         sudo modprobe configs
 
   - The section *Generally Necessary* and *Network Drivers* should be all enabled (it is ok if  *CONFIG_BRIDGE_VLAN_FILTERING* is missing).
-- Stop Apache HTTP server to let IoT EdgeHub listen on port 443
+- Stop Apache HTTP server to let IoT EdgeHub listen on port 443 (to see if you need IoT EdgeHub listen on port 443 check [here](https://docs.microsoft.com/de-de/azure/iot-edge/troubleshoot?view=iotedge-2018-06#check-your-firewall-and-port-configuration-rules))
   
         sudo service apache2 stop
 
@@ -131,5 +131,7 @@ If you have questions or need support, please contact our partner erminas or use
 -   [Azure IoT Edge 1.0.10 release is now available](https://azure.microsoft.com/en-us/updates/iot-edge1-0-10/)
 -   [Azure IoT Edge supported systems](https://docs.microsoft.com/en-us/azure/iot-edge/support?view=iotedge-2018-06)
 -   [Develop your own IoT Edge modules](https://docs.microsoft.com/en-us/azure/iot-edge/module-development?view=iotedge-2018-06)
+
+---
 
 This Get Started guide was created by [erminas](https://erminas.com/) for [Kunbus](https://revolution.kunbus.com/).
