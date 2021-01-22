@@ -84,7 +84,7 @@ Certifying a device involves four major steps:
 
 1. On the home screen, click `Create new project`  
 
-    ![Image of the Create new project button](./images/create_new_project.png)
+    ![Image of the Create new project button](./images/Getting-started-with-the-Azure-Certified-Device-portal/create_new_project.png)
 
 1. Fill in the information in `Basics` tab  
 
@@ -102,7 +102,7 @@ Certifying a device involves four major steps:
 
 1. Click the `Next` button to continue to the `Certifications` tab.
 
-    ![Image of the Create new project form, Certifications tab](./images/create_new_project_form_certifications.png)
+    ![Image of the Create new project form, Certifications tab](./images/Getting-started-with-the-Azure-Certified-Device-portal/create_new_project_form_certifications.png)
 
 1. Specify which certification(s) you wish to achieve for your device.
 
@@ -111,11 +111,11 @@ Certifying a device involves four major steps:
 
 1. Click `Create` and the new project will be saved and visible in the home page of the portal.
     
-    ![Image of project table](./images/project_table.png)
+    ![Image of project table](./images/Getting-started-with-the-Azure-Certified-Device-portal/project_table.png)
 
     To edit the project, click on the Project name in the table. This will launch the project summary page where you can begin entering more details about your device:
 
-    ![Image of the project details page](./images/Device_details_section.png)
+    ![Image of the project details page](./images/Getting-started-with-the-Azure-Certified-Device-portal/Device_details_section.png)
 
 ## Activity 2 - Providing hardware capability information: `Device details`
 
@@ -128,7 +128,7 @@ The product information provided during the certification process falls into fou
 - Marketing details
 - Additional industry certifications (optional)
 
-![Image of the project details page](./images/device_details_menu.png)
+![Image of the project details page](./images/Getting-started-with-the-Azure-Certified-Device-portal/device_details_menu.png)
 
 ### 2.1: Device Details
 
@@ -162,26 +162,26 @@ With the updated Azure Certified Device program, we have added the ability for t
 
 1. Click `Add a component` on the Product details tab:
 
-    ![Add a component link](./images/Add_a_component_link.png)
+    ![Add a component link](./images/Getting-started-with-the-Azure-Certified-Device-portal/Add_a_component_link.png)
 
 1. Complete relevant form fields for the component:
 
-    ![Component details section](./images/Component_details_section.png)
+    ![Component details section](./images/Getting-started-with-the-Azure-Certified-Device-portal/Component_details_section.png)
 
     > [!NOTE]  
     > A **Customer Ready Product** component type refers to the entire device. This is different from a **Finished Product**, which is a classification of the device as being ready for customer use without further development. A **Finished Product** will contain a **Customer Ready Product** component.
 
 1. Save your information using the `Save Product Details` button at the bottom of the page:  
 
-    ![Save Product Details button](./images/Save_Product_Details_button.png)
+    ![Save Product Details button](./images/Getting-started-with-the-Azure-Certified-Device-portal/Save_Product_Details_button.png)
 
 1. Once you have saved your component, you can further tailor the hardware capabilities it supports. Click the `Edit` link by the component name:  
 
-    ![Edit Component button](./images/component_edit.png)
+    ![Edit Component button](./images/Getting-started-with-the-Azure-Certified-Device-portal/component_edit.png)
 
 1. Provide relevant hardware capability information where appropriate:  
 
-    ![Edit Component button](./images/component_selection_area.png)  
+    ![Edit Component button](./images/Getting-started-with-the-Azure-Certified-Device-portal/component_selection_area.png)  
 
     The editable component fields (shown as tabs) include:
 
@@ -223,7 +223,7 @@ Below are examples of a few scenarios, and how the new Component feature may (or
 
     Contoso is an OEM that creates a customer ready product called Falcon. Since the device is a complete finished product and the product is not integrated into a larger product, Contoso submits Falcon for certification with only one component with type "Customer Ready Product" and specifies the attachment method as  “discrete.”  
 
-    ![Image of customer ready product](./images/Customer_Ready_Product.png)
+    ![Image of customer ready product](./images/Getting-started-with-the-Azure-Certified-Device-portal/Customer_Ready_Product.png)
 
 - Customer Ready Product with peripheral component Type
 
@@ -232,7 +232,7 @@ Below are examples of a few scenarios, and how the new Component feature may (or
     > [!NOTE]  
     > Peripherals are devices that connect to the main device, but does not contribute to device primary functions. Instead, it provides additional functions. Memory, RAM, Storage, Hard disk, CPU are not peripheral devices.
 
-    ![Image of Peripheral](./images/Peripheral.png)
+    ![Image of Peripheral](./images/Getting-started-with-the-Azure-Certified-Device-portal/Peripheral.png)
 
     In this example, Contoso would submit two components in the device details. The peripheral attachment method is "Integrated" since the Camera Module is not removable. There are additional options to describe the Peripheral device specifications by adding information to the Connectivity, Sensors, Accelerators, and Additional Specs tabs.
 
@@ -242,7 +242,7 @@ Below are examples of a few scenarios, and how the new Component feature may (or
 
     Contoso is an OEM that creates a customer ready product called Falcon. Contoso wants to bring visibility to the integrated SoM SoM123 from INC Electronics. SoM123 has a built-in processor Apollo52 from Foo and has an ARM64 processor Architecture. 
 
-    ![Image of System On Module](./images/System_On_Module.png)
+    ![Image of System On Module](./images/Getting-started-with-the-Azure-Certified-Device-portal/System_On_Module.png)
 
     In this example, Contosowould submit two components in the device details. The System on Module component will have attachment Method set as "Integrated" as SoM123 is not removable from the product. Additionally, Contoso would use the additional fields to describe the SOM module in detail by adding information in the tabs Connectivity, Accelerators, Sensors, etc.
 
@@ -256,7 +256,7 @@ We provide a number of Get Started templates from which to begin, depending on b
 
 The templates are available at our [Get started templates](https://aka.ms/GSTemplate "Get started templates") GitHub location:
 
-![Get started GitHub location](./images/Get_Started_template_location.PNG)
+![Get started GitHub location](./images/Getting-started-with-the-Azure-Certified-Device-portal/Get_Started_template_location.PNG)
 
 - If you are certifying for the Azure Certified Device certification only, use [ACD_Get-Started-Template.md](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/Azure_Certified_Device/Get_Started_Templates/Azure-Certified-Device/ACD_Get-Started-Template.md) in the "Azure-Certified-Device" folder.
 - If you are certifying for IoT Plug and Play, use [template-plug-and-play-getstarted.md](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/Azure_Certified_Device/Get_Started_Templates/IoT-Plug-and-Play/template-plug-and-play-getstarted.md) in the "IoT-Plug-and-Play" folder.
@@ -277,7 +277,7 @@ These fields include:
     > [!NOTE]
     > Not the same as `Additional product details` in the `Input device details` section
 
-    ![Product description help](./images/product_description_ex.png)
+    ![Product description help](./images/Getting-started-with-the-Azure-Certified-Device-portal/product_description_ex.png)
 
 - GEO availability
 - Manufacturing URL to point to additional device information  
@@ -305,11 +305,11 @@ The next major phase of the certification process (though it can be completed be
 
 1. To begin the testing phase, click the `Connect & test` link on the project summary page:  
 
-    ![Connect and test link](./images/connect_and_test_link.png)
+    ![Connect and test link](./images/Getting-started-with-the-Azure-Certified-Device-portal/connect_and_test_link.png)
 
 1. Depending on the certification(s) selected, you will see the required tests to validate your device functionality on the Connect & test page.  
 
-    ![Connect and test page](./images/connect_and_test.png)
+    ![Connect and test page](./images/Getting-started-with-the-Azure-Certified-Device-portal/connect_and_test.png)
 
 1. Connect your device to IoT Hub using the Device Provisioning Service (DPS). DPS supports connectivity options of Symmetric keys, X.509 certification, and a Trusted Platform Module (TPM). This is required for all certifications.
 
@@ -320,7 +320,7 @@ The next major phase of the certification process (though it can be completed be
 
 1. After configuring your device with DPS, confirm the connection by clicking the `Connect` button at the bottom of the page. Upon successful connection, you can proceed to the testing phase by clicking the `Next` button  
 
-    ![Connect and Test connected](./images/connected.png)
+    ![Connect and Test connected](./images/Getting-started-with-the-Azure-Certified-Device-portal/connected.png)
 
 1. The next step depends on the certifications you are testing for. For Azure Certified Device, select the device tests you wish to run for certification. For IoT Plug and Play, carefully review the parameters that will be checked during the test that you declared in your device model.
 
@@ -338,11 +338,11 @@ While you will be able to complete the online certification process for IoT Plug
 
 - For tests that are not passing, you can view the telemetry logs from previous test runs by pressing the `View Logs` button to identify what is causing the test to fail. Both the test messaging and raw data are available for review.  
 
-    ![Review test data](./images/review_logs.png)
+    ![Review test data](./images/Getting-started-with-the-Azure-Certified-Device-portal/review_logs.png)
 
 - If the automated tests continue to fail, then you can `request a manual review` of the results to substitute. This will trigger a request for **manual validation** with the Azure Certified Device team.  
 
-    ![Review test data](./images/request_manual_review.png)
+    ![Review test data](./images/Getting-started-with-the-Azure-Certified-Device-portal/request_manual_review.png)
 
 - For IoT Plug and Play issues related to the model repository, refer to [Device model repository](https://docs.microsoft.com/azure/iot-pnp/concepts-model-repository).
 
@@ -354,17 +354,17 @@ Once you have completed all of the mandatory fields in the `Device details` sect
 
 1. Click `Submit for review` on the project page:  
 
-    ![Review and Certify link](./images/review_and_certify.png)
+    ![Review and Certify link](./images/Getting-started-with-the-Azure-Certified-Device-portal/review_and_certify.png)
 
 1. Confirm your submission  
 
     You will have to confirm your submission in the pop-up window before the Azure Certified Device team is notified to complete the review. Once a device has been submitted, all device details will be read-only until editing is requested (See [Activity 5](#activity-5-optional---publishing-to-the-azure-certified-device-catalog-publish-to-catalog)).  
 
-    ![Start Certification review dialog](./images/start_certification_review.png)
+    ![Start Certification review dialog](./images/Getting-started-with-the-Azure-Certified-Device-portal/start_certification_review.png)
 
 1. Once the project is submitted, the project summary page will indicate the project is `Under Certification Review` by the Azure Certification team:  
 
-    ![Under Review](./images/review_and_certify_under_review.png)
+    ![Under Review](./images/Getting-started-with-the-Azure-Certified-Device-portal/review_and_certify_under_review.png)
 
 1. Response from Microsoft  
 
@@ -380,11 +380,11 @@ After your device has been certified, you can optionally publish your device det
 
 1. To publish your device, return to the project summary page and click `Publish to Device Catalog`  
 
-    ![Publish to Catalog](./images/publish_to_catalog.png)
+    ![Publish to Catalog](./images/Getting-started-with-the-Azure-Certified-Device-portal/publish_to_catalog.png)
 
 1. You will received a confirmation dialog before the device is published:*
 
-    ![Publish to Catalog confirmation](./images/publish_to_catalog_confirm.png)
+    ![Publish to Catalog confirmation](./images/Getting-started-with-the-Azure-Certified-Device-portal/publish_to_catalog_confirm.png)
 
 You will receive notification to the email address in the Company profile once the device is on the Azure Certified Device Catalog.
 
@@ -396,7 +396,7 @@ After your device has been certified and published to the Azure Certified Device
 
 1. Return to the project summary page and click the `Request Metadata Edit` button on the top of the page  
 
-    ![Request metadata update](./images/request_metadata_edit.png)
+    ![Request metadata update](./images/Getting-started-with-the-Azure-Certified-Device-portal/request_metadata_edit.png)
 
 1. Acknowledge the notification on the page that you will be required to submit your product for review after editing.
 
