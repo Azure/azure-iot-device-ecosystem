@@ -241,7 +241,7 @@ Below are examples of a few scenarios, and how the new Component feature may (or
 
     Contoso is an OEM that creates a customer ready product called Falcon. Contoso wants to bring visibility to the integrated SoM SoM123 from INC Electronics. SoM123 has a built-in processor Apollo52 from Foo and has an ARM64 processor Architecture. 
 
-    ![Image of System On Module](./images/Getting-started-with-the-Azure-Certified-Device-portal/System_On_Module.PNG)
+    ![Image of System On Module](./images/Getting-started-with-the-Azure-Certified-Device-portal/System_on_Module.PNG)
 
     In this example, Contosowould submit two components in the device details. The System on Module component will have attachment Method set as "Integrated" as SoM123 is not removable from the product. Additionally, Contoso would use the additional fields to describe the SOM module in detail by adding information in the tabs Connectivity, Accelerators, Sensors, etc.
 
