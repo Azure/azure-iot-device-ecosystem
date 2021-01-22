@@ -29,7 +29,6 @@ If you have additional questions or feedback, please contact us at [The Azure Ce
 
 ### Component Type
 
-
 - Customer Ready Product   
     A component representation of the overall or primary device.
 - Development Board     
@@ -102,7 +101,7 @@ Certifying a device involves four major steps:
 
 1. Click the `Next` button to continue to the `Certifications` tab.
 
-    ![Image of the Create new project form, Certifications tab](./images/Getting-started-with-the-Azure-Certified-Device-portal/create_new_project_form_certifications.png)
+    ![Image of the Create new project form, Certifications tab](./images/Getting-started-with-the-Azure-Certified-Device-portal/create_new_project_form.png)
 
 1. Specify which certification(s) you wish to achieve for your device.
 
@@ -111,7 +110,7 @@ Certifying a device involves four major steps:
 
 1. Click `Create` and the new project will be saved and visible in the home page of the portal.
     
-    ![Image of project table](./images/Getting-started-with-the-Azure-Certified-Device-portal/project_table.png)
+    ![Image of project table](./images/Getting-started-with-the-Azure-Certified-Device-portal/project_table.PNG)
 
     To edit the project, click on the Project name in the table. This will launch the project summary page where you can begin entering more details about your device:
 
@@ -223,7 +222,7 @@ Below are examples of a few scenarios, and how the new Component feature may (or
 
     Contoso is an OEM that creates a customer ready product called Falcon. Since the device is a complete finished product and the product is not integrated into a larger product, Contoso submits Falcon for certification with only one component with type "Customer Ready Product" and specifies the attachment method as  “discrete.”  
 
-    ![Image of customer ready product](./images/Getting-started-with-the-Azure-Certified-Device-portal/Customer_Ready_Product.png)
+    ![Image of customer ready product](./images/Getting-started-with-the-Azure-Certified-Device-portal/Customer_Ready_Product.PNG)
 
 - Customer Ready Product with peripheral component Type
 
@@ -232,7 +231,7 @@ Below are examples of a few scenarios, and how the new Component feature may (or
     > [!NOTE]  
     > Peripherals are devices that connect to the main device, but does not contribute to device primary functions. Instead, it provides additional functions. Memory, RAM, Storage, Hard disk, CPU are not peripheral devices.
 
-    ![Image of Peripheral](./images/Getting-started-with-the-Azure-Certified-Device-portal/Peripheral.png)
+    ![Image of Peripheral](./images/Getting-started-with-the-Azure-Certified-Device-portal/Peripheral.PNG)
 
     In this example, Contoso would submit two components in the device details. The peripheral attachment method is "Integrated" since the Camera Module is not removable. There are additional options to describe the Peripheral device specifications by adding information to the Connectivity, Sensors, Accelerators, and Additional Specs tabs.
 
@@ -242,7 +241,7 @@ Below are examples of a few scenarios, and how the new Component feature may (or
 
     Contoso is an OEM that creates a customer ready product called Falcon. Contoso wants to bring visibility to the integrated SoM SoM123 from INC Electronics. SoM123 has a built-in processor Apollo52 from Foo and has an ARM64 processor Architecture. 
 
-    ![Image of System On Module](./images/Getting-started-with-the-Azure-Certified-Device-portal/System_On_Module.png)
+    ![Image of System On Module](./images/Getting-started-with-the-Azure-Certified-Device-portal/System_On_Module.PNG)
 
     In this example, Contosowould submit two components in the device details. The System on Module component will have attachment Method set as "Integrated" as SoM123 is not removable from the product. Additionally, Contoso would use the additional fields to describe the SOM module in detail by adding information in the tabs Connectivity, Accelerators, Sensors, etc.
 
@@ -277,7 +276,7 @@ These fields include:
     > [!NOTE]
     > Not the same as `Additional product details` in the `Input device details` section
 
-    ![Product description help](./images/Getting-started-with-the-Azure-Certified-Device-portal/product_description_ex.png)
+    ![Product description help](./images/Getting-started-with-the-Azure-Certified-Device-portal/product_description_ex.PNG)
 
 - GEO availability
 - Manufacturing URL to point to additional device information  
@@ -338,11 +337,11 @@ While you will be able to complete the online certification process for IoT Plug
 
 - For tests that are not passing, you can view the telemetry logs from previous test runs by pressing the `View Logs` button to identify what is causing the test to fail. Both the test messaging and raw data are available for review.  
 
-    ![Review test data](./images/Getting-started-with-the-Azure-Certified-Device-portal/review_logs.png)
+    ![Review test data](./images/Getting-started-with-the-Azure-Certified-Device-portal/review_logs.PNG)
 
 - If the automated tests continue to fail, then you can `request a manual review` of the results to substitute. This will trigger a request for **manual validation** with the Azure Certified Device team.  
 
-    ![Review test data](./images/Getting-started-with-the-Azure-Certified-Device-portal/request_manual_review.png)
+    ![Review test data](./images/Getting-started-with-the-Azure-Certified-Device-portal/request_manual_review.PNG)
 
 - For IoT Plug and Play issues related to the model repository, refer to [Device model repository](https://docs.microsoft.com/azure/iot-pnp/concepts-model-repository).
 
