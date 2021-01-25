@@ -278,6 +278,9 @@ These fields include:
 
     ![Product description help](./images/Getting-started-with-the-Azure-Certified-Device-portal/product_description_ex.PNG)
 
+    > [!NOTE]
+    > Device manufacturer name will be taken from the Company/Organization name of the corresponding MPN account (not the `Component Manufacturer` field).
+
 - GEO availability
 - Manufacturing URL to point to additional device information  
     Available on the catalog as 'Manufacturer's page' link
