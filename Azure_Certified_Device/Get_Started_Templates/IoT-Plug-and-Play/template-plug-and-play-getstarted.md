@@ -13,9 +13,13 @@ Connect {enter your device name here} device to your Azure IoT services
 -   [Introduction](#Introduction)
 -   [Prerequisites](#Prerequisites)
 -   [Prepare the Device](#preparethedevice)
--   [Integration with Azure IoT Explorer](#IntegrationwithAzureIoTExplorer)
 -   [Connect to Azure IoT Central](#ConnecttoCentral)
+-   [Integration with Azure IoT Explorer](#IntegrationwithAzureIoTExplorer)
 -   [Additional Links](#AdditionalLinks)
+
+# Changelist from last update - Nov2020 (remove this section)
+-   IoT Central section is a **mandatory** section that provides the value of IoT Plug and Play experience. The goal is to streamline the out of box experience
+-   Using Azure IoT Explorer is **optional** 
 
 # Instructions for using this template
 
@@ -53,11 +57,15 @@ This getting started guide provides step by step instruction on getting the devi
 
 You should have the following items ready before beginning the process:
 
+**For Azure IoT Central**
 -   [Azure Account](https://portal.azure.com)
+-   [Azure IoT Central application](https://apps.azureiotcentral.com/)
+
+
+**For Azure IoT Hub**
 -   [Azure IoT Hub Instance](https://docs.microsoft.com/en-us/azure/iot-hub/about-iot-hub)
 -   [Azure IoT Hub Device Provisioning Service](https://docs.microsoft.com/en-us/azure/iot-dps/quick-setup-auto-provision)
 -   [Azure IoT Public Model Repository](https://docs.microsoft.com/en-us/azure/iot-pnp/concepts-model-repository)
-
 
 <a name="preparethedevice"></a>
 # Prepare the Device.
@@ -81,17 +89,9 @@ A well-written GSG can be [found here](https://github.com/azure-rtos/getting-sta
 
 8.  	How to configure a device to connect to Azure IoT Central (see detail below)
 
-<a name="IntegrationwithAzureIoTExplorer"></a>
-# Integration with Azure IoT Explorer
-
--   Include the steps on how to connect the IoT Plug and Play Device to Azure IoT Explorer
--   Include screenshots and comments on how IoT Explorer shows/visualize telemetry , commands and properties coming from your IoT Plug and Play device.
--   Include the steps on how to interact with devices (telemetry, commands properties)
--   Ensure to attach the screenshot on consuming the device models available in public repository (not local folder) when using Azure IoT Explorer
-
 <a name="ConnecttoCentral"></a>
-# Connect to Azure IoT Central
-Describe how to connect to Azure IoT Central.
+# Connect to Azure IoT Central (Simple)
+This section is mandatory section. Describe how to connect to Azure IoT Central.
 To configure a device to connect to Azure IoT Central you need the following
 	
 -    ID scope: In your IoT Central application, navigate to Administration > Device Connection. Make a note of the ID scope value.
@@ -103,6 +103,15 @@ az extension add --name azure-iot
 az iot central device compute-device-key  --device-id sample-device-01 --pk <the group SAS primary key value>
 
 Make a note of the generated device key, and the ID scope for this application and flash it on the device
+
+<a name="IntegrationwithAzureIoTExplorer"></a>
+# Integration with Azure IoT Explorer (Advanced)
+This section is optional for Advanced setup
+
+-   Include the steps on how to connect the IoT Plug and Play Device to Azure IoT Explorer
+-   Include screenshots and comments on how IoT Explorer shows/visualize telemetry , commands and properties coming from your IoT Plug and Play device.
+-   Include the steps on how to interact with devices (telemetry, commands properties)
+-   Ensure to attach the screenshot on consuming the device models available in public repository (not local folder) when using Azure IoT Explorer
 
 # Additional information
 Put any additional information here such as alternative paths to deploy device application etc.
