@@ -11,7 +11,7 @@ Promise of Azure Certified Device certification are:
 
 1. Device support telemetry that works with IoT Hub
 2.	Device support IoT Hub Device Provisioning Service (DPS) to securely provisioned to Azure IoT Hub
-3.	Device support easy way of DPS ID Scope ownership transfer without requiring users to recompile the embedded code
+3.	Device supports easy input of target DPS ID scope transfer without requiring user to recompile embedded code.
 4.	Optionally validates other elements such as cloud to device messages, direct methods and device twin 
 
 ## Requirements
@@ -35,8 +35,8 @@ Promise of Azure Certified Device certification are:
 | **Applies To**          | Any device                                                   |
 | **OS**                  | Agnostic                                                     |
 | **Validation Type**     | Automated                                                    |
-| **Validation**          | Device must implement easy transfer of DPS ID Scope ownership without needing to recompile the embedded code. Microsoft provides the [portal workflow](https://aka.ms/acdp) to execute the tests to validate that the device supports DPS **1.** User must select one of the attestation methods (X.509, TPM and SAS key) **2.** Depending on the attestation method, user needs to take corresponding action such as **a)** Upload X.509 cert to AICS managed DPS scope **b)** Implement SAS key or endorsement key into the device |
-| **Resources**           | **a)** [Device provisioning service overview](https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps#:~:text=Quotas%20%20%20%20Resource%20%20%20,%20%20100%20%203%20more%20rows%20), **b)** [Sample config file for DPS ID Scope transfer](https://github.com/Azure/azure-iot-sdk-c/tree/public-preview-pnp/digitaltwin_client/samples/digitaltwin_sample_ll_device/sample_config) |
+| **Validation**          | Device supports easy input of target DPS ID scope ownership without needing to recompile the embedded code. Microsoft provides the [portal workflow](https://aka.ms/acdp) to execute the tests to validate that the device supports DPS **1.** User must select one of the attestation methods (X.509, TPM and SAS key) **2.** Depending on the attestation method, user needs to take corresponding action such as **a)** Upload X.509 cert to AICS managed DPS scope **b)** Implement SAS key or endorsement key into the device |
+| **Resources**           | [Device provisioning service overview](https://docs.microsoft.com/en-us/azure/iot-dps/about-iot-dps#:~:text=Quotas%20%20%20%20Resource%20%20%20,%20%20100%20%203%20more%20rows%20) |
 
 **[If implemented] Cloud to device:  The purpose of test is to make sure messages can be sent from cloud to devices**                                                              
 
