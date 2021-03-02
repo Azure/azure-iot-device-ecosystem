@@ -36,9 +36,7 @@ You should have the following items ready before beginning the process:
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
-You should have the following items ready before beginning the process:
-
--   
+-   [Express5800 T110j-S device](https://jpn.nec.com/pcserver/tower/t110js/index.html)
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
