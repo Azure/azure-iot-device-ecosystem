@@ -1,6 +1,6 @@
 # Azure Certified Device program: Getting started with the portal
 
-Updated: 21 Jan 2021
+Updated: March 1, 2021
   
 **Hello!**
 
@@ -79,7 +79,8 @@ Certifying a device involves four major steps:
 1. Sign into the [certification portal](https://certify.azure.com) with your company MPN account.
 
     > [!IMPORTANT]  
-    > For publishing your device on Device Catalog your company must have a work/school Azure Active Directory account and [valid MPN (Microsoft Partner Network) account](https://partner.microsoft.com/en-US/).
+    > For publishing your device on Device Catalog your company must have a work/school Azure Active Directory account and [valid MPN (Microsoft Partner Network) account](https://partner.microsoft.com/en-US/). </br> </br>
+    > If you encounter any issues related to your MPN account, please check your account status on the Partner Center dashboard. You may need to verify your account via email verification. For all other issues, please raise a support ticket on your [Partner Center dashboard](https://partner.microsoft.com/en-US/dashboard/support/servicerequests/create?stage=1). For more information about filing a ticket, view the [guidance here](https://docs.microsoft.com/en-us/partner-center/report-problems-with-partner-center). Once you completed this, please reach out to [iotcert@microsoft.com](iotcert@microsoft.com) for further assistance.
 
 1. On the home screen, click `Create new project`  
 
@@ -146,6 +147,10 @@ The first section of your project page `Input device details` allows you to prov
     Here you specify generally-applicable information for your device, including supported Operating system(s), Additional product details, component information and optional Internal Comments for the Azure Certified Device team to review.
 
     For fields where you feel that none of the supplied options are not suitable for your device, select `Other` and leave a note in the `Internal comments`. A reviewer will go over your information and provide assistance if necessary.
+
+- Dependencies
+    
+   The Dependencies section allows partners to communicate when a certified device requires an additional device, SaaS, or PaaS offering to communicate with Azure. Examples of this scenario may include combinations of gateways, sensors, and app services that must be connected together to fulfill the intended purpose on Azure. All listed device dependencies must be certified through the Azure Certified program, although other dependencies do not. You can view additional guidance on this topic [here](https://aka.ms/acdhelp-dependencies).
 
 - Review
 
@@ -241,11 +246,14 @@ Below are examples of a few scenarios, and how the new Component feature may (or
 
     Contoso is an OEM that creates a customer ready product called Falcon. Contoso wants to bring visibility to the integrated SoM SoM123 from INC Electronics. SoM123 has a built-in processor Apollo52 from Foo and has an ARM64 processor Architecture. 
 
-    ![Image of System On Module](./images/Getting-started-with-the-Azure-Certified-Device-portal/System_on_Module.PNG)
+    ![Image of System On Module](./images/Getting-started-with-the-Azure-Certified-Device-portal/System_On_Module.PNG)
 
     In this example, Contosowould submit two components in the device details. The System on Module component will have attachment Method set as "Integrated" as SoM123 is not removable from the product. Additionally, Contoso would use the additional fields to describe the SOM module in detail by adding information in the tabs Connectivity, Accelerators, Sensors, etc.
 
     This integrated System on Module would be added to project in addition to the Customer Ready Product component.
+
+### Adding dependencies for your device bundles and indirectly connected devices
+Please view [our help documentation](https://aka.ms/acdhelp-dependencies) for using the Dependencies feature for instructions on how to properly list your device, PaaS, and SaaS offerings that your device requires. 
 
 ### 2.2: Add 'Get started' guide for your customers
 
@@ -276,7 +284,7 @@ These fields include:
     > [!NOTE]
     > Not the same as `Additional product details` in the `Input device details` section
 
-    ![Product description help](./images/Getting-started-with-the-Azure-Certified-Device-portal/product_description_ex.PNG)
+    ![Product description help](./images/product_description_ex.png)
 
     > [!NOTE]
     > Device manufacturer name will be taken from the Company/Organization name of the corresponding MPN account (not the `Component Manufacturer` field).
@@ -349,6 +357,8 @@ While you will be able to complete the online certification process for IoT Plug
 - For IoT Plug and Play issues related to the model repository, refer to [Device model repository](https://docs.microsoft.com/azure/iot-pnp/concepts-model-repository).
 
 - In some instances where the logs indicate `Failed to get Digital Twin Model ID of device xx due to DeviceNotConnected`, try rebooting the device and re-starting the device provisioning process.
+
+- If AICS is failing, double-check that your device code is setting the Model ID Payload during DPS provisioning. This is a requirement for AICS to validate your device. 
 
 ## Activity 4 - Submitting and completing the review: `Review & certify`
 
