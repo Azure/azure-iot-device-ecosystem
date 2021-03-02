@@ -31,13 +31,14 @@ You should have the following items ready before beginning the process:
 -   [Setup your IoT hub](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/setup_iothub.md)
 -   [Add the Edge Device](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux)
 -   [Add the Edge Modules](https://docs.microsoft.com/en-us/azure/iot-edge/quickstart-linux?view=iotedge-2018-06#deploy-a-module)
--   {enter your device name here} device.
+-   Express5800 T110j-S device.
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
--   {{Please specify if any other software(s) or hardware(s) are required.}}
+You should have the following items ready before beginning the process:
+
+-   
 
 <a name="Manual"></a>
 # Step 3: Manual Test for Azure IoT Edge on device
