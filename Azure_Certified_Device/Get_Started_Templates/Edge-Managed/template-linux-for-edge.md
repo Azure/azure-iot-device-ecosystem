@@ -1,6 +1,6 @@
 {{*We highly recommend keeping this document current, and Microsoft reserves a right to remove devices and documents from the Azure IoT Device Catalog if document contains broken URL links, incorrect information etc.*}}
 
-Run Azure IoT Edge Runtime on {enter your device name here} device running {enter the OS name running on edge device. Specify distribution or Windows SKU information. Ex: Ubuntu Sever 16.04, Windows 10 IoT Core.}
+Run Azure IoT Edge Runtime on Express5800 T110j-S device running Ubuntu 18.04
 ===
 ---
 
@@ -10,8 +10,7 @@ Run Azure IoT Edge Runtime on {enter your device name here} device running {ente
 -   [Step 1: Prerequisites](#Prerequisites)
 -   [Step 2: Prepare your Device](#PrepareDevice)
 -   [Step 3: Manual Test for Azure IoT Edge on device](#Manual)
--   [Step 4: Additional information](#Additionalinformation)
--   [Step 5: Additional Links](#AdditionalLinks)
+-   [Step 4: Additional Links](#AdditionalLinks)
 
 # Instructions for using this template
 
@@ -87,12 +86,7 @@ On the device details page of the Azure, you should see the runtime modules - ed
 
  ![](./images/tempSensor.png)
 
-<a name="Additionalinformation"></a>
-# Step 4: Additional information
-Put any additional information here such as additional description, alternative paths etc.
-
-<a name="AdditionalLinks"></a>
-# Step 5: Additional Links
+# Step 4: Additional Links
 
 -   [What is Azure IoT Edge](https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge?view=iotedge-2018-06)
 -   [Azure IoT Edge 1.0.10 release is now available](https://azure.microsoft.com/en-us/updates/iot-edge1-0-10/)
