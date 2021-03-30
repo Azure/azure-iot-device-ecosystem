@@ -334,7 +334,7 @@ The next major phase of the certification process (though it can be completed be
 
 1. The next step depends on the certifications you are testing for. For Azure Certified Device, select the device tests you wish to run for certification. For IoT Plug and Play, carefully review the parameters that will be checked during the test that you declared in your device model.
 
-1. Testing specifics on the next few pages will vary by program. Please refer to the certification requirement documents linked at the top of this page for more information on what is being validated, plus refer to other resources in our [Getting Started with Azure Certified Device program](https://certlearnmore "Getting Started with the Azure Certified Device program") for more information.
+1. Testing specifics on the next few pages will vary by program. Please refer to the certification requirement documents linked at the top of this page for more information on what is being validated, plus refer to other resources in our [Getting Started with Azure Certified Device program](https://github.com/Azure/azure-iot-device-ecosystem/blob/master/Azure_Certified_Device/docs/Getting-Started-with-the-Azure-Certified-Device-program.md) for more information.
 
 Upon completion of automated testing, you will see the Testing status, as well as access to Log files. All automated tests must pass before you will be able to proceed on to the next stage.
 
@@ -388,7 +388,7 @@ Once you have completed all of the mandatory fields in the `Device details` sect
 
 ## Activity 5 (optional) - Publishing to the Azure Certified Device Catalog: `Publish to catalog`
 
-After your device has been certified, you can optionally publish your device details to the [Azure Certified Device catalog](devicecatalog.azure.com) for a world of customers to see.
+After your device has been certified, you can optionally publish your device details to the [Azure Certified Device catalog](https://devicecatalog.azure.com/) for a world of customers to see.
 
 1. To publish your device, return to the project summary page and click `Publish to Device Catalog`  
 
