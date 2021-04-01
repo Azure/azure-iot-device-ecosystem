@@ -45,6 +45,18 @@ You should have the following items ready before beginning the process:
 -   {enter your device name here} device.
 
 <a name="PrepareDevice"></a>
+
+## Additional Hardware & Software Requirements
+{Note: if your device does not have additional Hardware and or software requirements to connect to Azure, this section can be removed}
+
+The {device} has an additional {[hardware | software | hardware and software]} dependency that {[is | are]} required in order to connect to Azure:
+* {Add details}
+
+{For device with HW dependency}
+This device was tested with the following Azure Certified Device gateway: {add link}
+
+{Additional details on configuring HW or SW dependencies as necessary}
+
 # Step 2: Prepare your Device
 
 -   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
