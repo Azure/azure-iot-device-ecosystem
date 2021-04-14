@@ -7,17 +7,17 @@ September 18th 2020
 
 ### Table of Contents:
 
-[Q. What is the Certified for Azure IoT Device catalog?](#q.-what-is-the-certified-for-azure-iot-device-catalog)
+[Q. What is the Certified for Azure IoT Device catalog?](https://aka.ms/certlearnmore)
 
-[Q. What do I need to start the device certification process?](#q.-what-do-i-need-to-start-the-device-certification-process)
+[Q. What do I need to start the device certification process?](https://docs.microsoft.com/azure/certification/tutorial-00-selecting-your-certification)
 
-[Q. What is the Azure Certified Device submission portal?](#q.-what-is-the-azure-certified-device-submission-portal)
+[Q. What is the Azure Certified Device submission portal?](https://docs.microsoft.com/azure/certification/tutorial-01-creating-your-project)
 
 [Q. Can I use SDK samples to go through the certification process?](#q.-can-i-use-sdk-samples-to-go-through-the-certification-process)
 
-[Q. Are there pricing/licensing implications of the Azure Certified Device certification program? ](#q.-are-there-pricinglicensing-implications-of-the-azure-certified-device-certification-program)
+[Q. Are there pricing/licensing implications of the Azure Certified Device certification program? ](https://aka.ms/certlearnmore)
 
-[Q. Can I opt out from publishing to the catalog site?](#q.-can-i-opt-out-from-publishing-to-the-catalog-site)
+[Q. Can I opt out from publishing to the catalog site?](https://docs.microsoft.com/en-us/azure/certification/tutorial-04-publishing-your-device)
 
 [Q. What happens to my existing submissions that used the older submission portal?](#q.-what-happens-to-my-existing-submissions-that-used-the-older-submission-portal)
 
