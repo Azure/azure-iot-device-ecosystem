@@ -31,13 +31,13 @@ September 18th 2020
 
 [Q. What is IoT Plug and Play device certification?](#q.-what-is-iot-plug-and-play-device-certification)
 
-[Q. What are the benefits of getting an IoT Plug and Play device certification?](#q.-what-are-the-benefits-of-getting-an-iot-plug-and-play-device-certification)
+[Q. What are the benefits of getting an IoT Plug and Play device certification?](https://aka.ms/certlearnmore)
 
-[Q. Where can I find resources on IoT Plug and Play Certification?](#q.-where-can-i-find-resources-on-iot-plug-and-play-certification)
+[Q. Where can I find resources on IoT Plug and Play Certification?](https://docs.microsoft.com/azure/certification/program-requirements-pnp)
 
 [Q. Can I certify devices running IoT Plug and Play bridge?](#q.-can-i-certify-devices-running-iot-plug-and-play-bridge)
 
-[Q. What are the requirements for IoT Plug and Play device certification?](#q.-what-are-the-requirements-for-iot-plug-and-play-device-certification)
+[Q. What are the requirements for IoT Plug and Play device certification?](https://docs.microsoft.com/azure/certification/program-requirements-pnp)
 
 [Q. How do I certify a gateway and sensors bundle?](#q.-how-do-i-certify-a-gateway-and-sensors-bundle)
 
@@ -82,40 +82,7 @@ The IoT Plug and Play device certification program makes it easy for solutions b
 [Return to top](#Azure-Certified-Device-FAQ)
 
 <a name="q.-what-are-the-benefits-of-getting-an-iot-plug-and-play-device-certification"></a>
-## Q. What are the benefits of getting an IoT Plug and Play device certification? 
 
-**For device builders:**
-
--   Promotion of Azure Certified Devices through the device catalog with assured quality and visibility to solution builders
-
--   Expansion of broad partnerships with solution developers
-
-**For solution builders:**
-
--   Confidence of easy integration of Azure IoT solutions
-
--   Certified Plug and Play-enabled devices work without writing device-specific code
-
-[Return to top](#Azure-Certified-Device-FAQ)
-
-<a name="q.-where-can-i-find-resources-on-iot-plug-and-play-certification"></a>
-## Q. Where can I find resources on IoT Plug and Play Certification? 
-
-Please check the updated documentation.
-
-**Resources**
-
--   [Prepare and certify your devices for IoT Plug and Play](https://aka.ms/pnpcertblog)
-
--   [IoT Plug and Play Certification IoT Show](https://aka.ms/iotshow/231/youtube)
-
--   [How to certify IoT Plug and Play devices](http://aka.ms/pnpcertdoc)
-
--   [IoT Plug and Play certification tutorial](https://aka.ms/pnpcerttutorial)
-
-[Return to top](#Azure-Certified-Device-FAQ)
-
-<a name="q.-can-i-certify-devices-running-iot-plug-and-play-bridge"></a>
 ## Q. Can I certify devices running IoT Plug and Play bridge?
 
 Guidance for certifying gateways, including those that run the bridge, is coming soon.
@@ -123,25 +90,6 @@ Guidance for certifying gateways, including those that run the bridge, is coming
 [Return to top](#Azure-Certified-Device-FAQ)
 
 <a name="q.-what-are-the-requirements-for-iot-plug-and-play-device-certification"></a>
-## Q. What are the requirements for IoT Plug and Play device certification? 
-
-Requirements for IoT Plug and Play device certification include:
-
--   Certification through the Azure Certified Device baseline program
-
--   Device model(s) describing the device and peripheral(s) following the DTDL version 2
-
--   Model ID announcement during provisioning
-
--   Device-to-Cloud (D2C) message support
-
-Resources
-
--   [IoT Plug and Play device certification program requirements](https://aka.ms/IoTPnPCert).
-
-[Return to top](#Azure-Certified-Device-FAQ)
-
-<a name="q.-what-is-the-migration-path-from-the-previous-public-preview"></a>
 
 ## Q. How do I certify a gateway and sensors bundle?
 
