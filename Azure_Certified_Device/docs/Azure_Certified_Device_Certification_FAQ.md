@@ -50,58 +50,6 @@ September 18th 2020
 # Azure Certified Device FAQ #
 
 <a name="q.-what-is-the-certified-for-azure-iot-device-catalog"></a>
-## Q. What is the Certified for Azure IoT Device catalog?
-
-The device catalog is a website that lets device buyers discover the right device for an IoT solution using enhanced cataloging experience and device categorization.
-
-**Resource**
-
--   [Certified for Azure IoT Device Catalog](https://aka.ms/devicecatalog)
-
-[Return to top](#Azure-Certified-Device-FAQ)
-
-<a name="q.-what-do-i-need-to-start-the-device-certification-process"></a>
-## Q. What do I need to start the device certification process?
-
-Join the [Microsoft Partner Network](https://docs.microsoft.com/en-us/partner-center/mpn-overview)
-if you have not already.
-
-Prepare the following information as you begin the process.
-
--   The device being certified
-
--   Project name
-
--   Device application
-
--   Device details
-
--   Marketing details
-
--   Industrial certification (if present)
-
--   Getting-started guide template
-
-Resources
-
--   [Azure Certified Device submission portal](https://aka.ms/acdp)
-
--   [IoT Plug and Play certification tutorial](https://aka.ms/pnpcerttutorial)
-
-[Return to top](#Azure-Certified-Device-FAQ)
-
-<a name="q.-what-is-the-azure-certified-device-submission-portal"></a>
-## Q. What is the Azure Certified Device submission portal?
-
-The Azure Certified Device submission web portal is where you register product details, submit getting started guides, and run certification tests and publish your device to the catalog.
-
-**Resources**
-
--   [Azure Certified Device submission portal](https://aka.ms/acdp)
-
-[Return to top](#Azure-Certified-Device-FAQ)
-
-<a name="q.-can-i-use-sdk-samples-to-go-through-the-certification-process"></a>
 ## Q. Can I use SDK samples to go through the certification process?
 
 C-SDK samples can be used for evaluation only.
@@ -113,21 +61,6 @@ C-SDK samples can be used for evaluation only.
 [Return to top](#Azure-Certified-Device-FAQ)
 
 <a name="q.-are-there-pricinglicensing-implications-of-the-azure-certified-device-certification-program"></a>
-## Q. Are there pricing/licensing implications of the Azure Certified Device certification program?
-
-There's no extra cost for participating in Azure Certified Device, IoT Plug and Play or Edge Managed certification programs. However, standard rates for Azure IoT Hub and other Azure services will apply.
-
-[Return to top](#Azure-Certified-Device-FAQ)
-
-<a name="q.-can-i-opt-out-from-publishing-to-the-catalog-site"></a>
-## Q. Can I opt out from publishing to the catalog site? 
-
-Yes, you have the option not to be listed on the catalog site.
-Publishing your device on the catalog is a separate step on the submission portal, and is optional. However, if you choose to not publish to the catalog but wish to announce your Azure Certified Device, you will still need to complete the certification process, including review and approval of your device. Please contact <iotcert@microsoft.com> for details.
-
-[Return to top](#Azure-Certified-Device-FAQ)
-
-<a name="q.-what-happens-to-my-existing-submissions-that-used-the-older-submission-portal"></a>
 ## Q. What happens to my existing submissions that used the older submission portal? 
 
 We are planning to release migration guidance during the 4th quarter of 2020. Please contact your Microsoft representative with any questions.
