@@ -115,7 +115,7 @@ Then run following AT commands to connect to Azure services.
 
 | Command | Response |
 |:--------|:--------|
-| AT+MQTTTOPIC="/devices/{device_id}/messages/events/","/devices/{device_id}/messages/devicebound/#"<br><br>Example<br> AT+MQTTTOPIC="/devices/testDevice/messages/events/","/devices/testDevice/messages/devicebound/#"| OK |
+| AT+MQTTTOPIC="devices/{device_id}/messages/events/","devices/{device_id}/messages/devicebound/#"<br><br>Example<br> AT+MQTTTOPIC="devices/testDevice/messages/events/","devices/testDevice/messages/devicebound/#"| OK |
 
 > Note: 
 > MQTT Topic follows the rules defined in Azure IoT Hub. 
@@ -141,7 +141,7 @@ Finally, we are now able to check our transmitted data.
 To do so, it is necessary to access to [Azure Portal]
 In order to check published data, it is necessary to enter the storage service that was configured as the job output of Azure Stream Analytics.
 
-Follow eblow path through the Azure portal:
+Follow below path through the Azure portal:
 -   **Home > Storage accounts > (Account Name) - Containers > container1** 
 - Select **blob** and Click **Edit blob** tab
 
@@ -171,7 +171,7 @@ You have now learned how to run a sample application that collects sensor data a
 [WizFi360]: https://wizwiki.net/wiki/doku.php/products:wizfi360:start
 [WizFi360-EVB-Shield]: https://wizwiki.net/wiki/doku.php/products:wizfi360:board:wizfi360-evb:start
 [Quickstart: Create a Stream Analytics job by using the Azure portal]: https://docs.microsoft.com/en-us/azure/stream-analytics/stream-analytics-quick-create-portal#next-steps
-[Communicate with your IoT hub using the MQTT protocol: Using the MQTT protocol directly (as a device)]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-mqtt-support#using-the-mqtt-protocol-directly-as-a-device
+[Communicate with your IoT hub using the MQTT protocol: Using the MQTT protocol directly (as a device)]: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-mqtt-support#sending-device-to-cloud-messages
 [Azure Portal]: https://portal.azure.com
 [WizFi360]: ./media/WizFi360.PNG
 [WizFi360-EVB]: ./media/wizfi360-evb.jpg
