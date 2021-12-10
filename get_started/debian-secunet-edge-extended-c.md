@@ -48,8 +48,8 @@ You should have the following items ready before beginning the process:
 
 -   Connect secunet edge extended to power supply. The system starts automatically
 -   Connect your PC via LAN to LAN port 4 of secunet edge extended
--   Configure your PC's IP address. Default IP address of secunet edge is 111.111.111.111
--   Open a web browser and enter the URL https://111.111.111.111:4444 , ignore the certificate warning
+-   Configure your PC's IP address. Default IP address of secunet edge is 111.111.111.111 (on edge's initialized with v3.3.1 and before) or 192.168.4.1 (on edge's initialized with 3.4.0 or later)
+-   Open a web browser and enter the URL https://<Default IP address of LAN4>:4444 , ignore the certificate warning
 -   Login with user name "Admin" and default password "Secure Visibility", it's recommended to change user name and password
 -   Choose profile 2 or 3
 -   Configure the External LAN (LAN port 1) for internet connection
