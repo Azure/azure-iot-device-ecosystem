@@ -82,6 +82,7 @@ On the Raspberry Pi, build a C SDK tool that you can use to retrieve the device'
     
 2. Run the following commands to build an C SDK tool that retrieves your device provisioning information. 
 
+       mkdir azure-iot-sdk-c/cmake
        cd azure-iot-sdk-c/cmake
        cmake -Duse_prov_client:BOOL=ON ..
        cd provisioning_client/tools/tpm_device_provision
